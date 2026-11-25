@@ -13,8 +13,10 @@ from datetime import date
 from pathlib import Path
 
 BASE = Path("/home/jic823/Documents/open_empire/human_trade")
+REPO_ROOT = Path("/home/jic823/Documents/open_empire")
 GROUND = BASE / "layer1_human" / "grounding"
 OUT_HTML = GROUND / "open_empire_layer1_skos_v4.html"
+DOCS_HTML = REPO_ROOT / "docs" / "index.html"
 SCRATCH_HTML = Path("/home/jic823/.gemini/antigravity/brain/b9b2ef77-061c-49c1-9d1d-c6f007567183/scratch/open_empire_layer1_skos_v4.html")
 
 
@@ -33,6 +35,7 @@ def main():
 
     ag_cnt = stw_cnt = aat_cnt = tax_cnt = mat_cnt = 0
     def_cnt = alt_cnt = relc_cnt = comb_cnt = 0
+    sub_ids = set()
 
     for c in concepts:
         f = c["facets"]
@@ -69,6 +72,9 @@ def main():
         if c.get("skos_altLabels"): alt_cnt += 1
         if c.get("related_concepts"): relc_cnt += 1
         if c.get("combines_concepts"): comb_cnt += 1
+        br_id = ont.get("broader_id", grp_id)
+        if br_id != grp_id:
+            sub_ids.add(br_id)
 
         comps = []
         if a.get("component_substances"):
@@ -154,6 +160,7 @@ def main():
     meta_payload = {
         "generated": date.today().isoformat(),
         "total_concepts": len(concepts),
+        "total_subgroups": len(sub_ids),
         "total_comm_rows": tot_rows,
         "total_obs": 153579,
         "grounded_concepts": g_cnt,
@@ -322,12 +329,42 @@ details.tree-sub > summary {{ cursor: pointer; font-weight: 600; font-size: 0.83
 .leaf-list {{ margin: 5px 0 8px 10px; font-size: 0.81rem; display: flex; flex-wrap: wrap; gap: 6px; }}
 .leaf-chip {{ background: #f4f1e8; border: 1px solid var(--border); border-radius: 5px; padding: 2px 7px; cursor: pointer; }}
 .leaf-chip:hover {{ background: var(--accent-soft); border-color: var(--accent); }}
+/* Visual SVG Tree */
+.vtree-layout {{
+  display: grid; grid-template-columns: 1fr 350px; gap: 14px; align-items: start;
+}}
+@media (max-width: 1080px) {{
+  .vtree-layout {{ grid-template-columns: 1fr; }}
+}}
+.vtree-stage {{
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  height: 740px; position: relative; overflow: hidden; cursor: grab; user-select: none;
+}}
+.vtree-stage.dragging {{ cursor: grabbing; }}
+.vtree-stage svg {{ width: 100%; height: 100%; display: block; }}
+.vtree-side {{
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 14px 16px; max-height: 740px; overflow-y: auto; font-size: 0.83rem;
+}}
+.vtree-side h3 {{ margin: 0 0 6px 0; font-family: Georgia, serif; font-size: 1.02rem; color: var(--accent); }}
+.vtree-legend {{
+  position: absolute; bottom: 10px; left: 12px; background: rgba(255,255,255,0.92);
+  border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px;
+  font-size: 0.74rem; color: var(--muted); pointer-events: none; display: flex; gap: 10px; flex-wrap: wrap;
+}}
+.vtree-node {{ cursor: pointer; }}
+.vtree-node text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; fill: #1e242b; }}
+.vtree-node:hover text {{ fill: #1d4e6b; font-weight: 700; }}
+.vtree-link {{ fill: none; stroke: #c9c1b0; stroke-width: 1.3; }}
+.vtree-link.hi {{ stroke: #b58d3d; stroke-width: 2.6; }}
+.vtree-rel-arc {{ fill: none; stroke: #6f42c1; stroke-width: 1.5; stroke-dasharray: 4 3; opacity: 0.75; }}
+.vtree-comb-arc {{ fill: none; stroke: #c96a00; stroke-width: 1.8; opacity: 0.85; }}
 </style>
 </head>
 <body>
 <header>
   <h1>Open Empire — Layer-1 Archival Trade SKOS Inspector (v4)</h1>
-  <p>4-tier historical commodity ontology (9 Macro-Sectors → 44 Commodity Groups → 159 S14-safe Substance Groups → 2,066 persistent <code>htc:</code> concepts across 152,625 human-transcribed customs rows), enriched from 6 19th-century commercial dictionaries (Simmonds 1892 &amp; 1854, Mortimer 1823, Ure 1853, McCulloch 1880, Watt 1908) + Wikidata/AGROVOC/STW/Getty AAT/Catalogue of Life. Generated {date.today().isoformat()}.</p>
+  <p>4-tier historical commodity ontology (9 Macro-Sectors → 44 Commodity Groups → {len(sub_ids)} S14-safe Substance Groups → 2,066 persistent <code>htc:</code> concepts across 152,625 human-transcribed customs rows), enriched from 6 19th-century commercial dictionaries (Simmonds 1892 &amp; 1854, Mortimer 1823, Ure 1853, McCulloch 1880, Watt 1908) + Wikidata/AGROVOC/STW/Getty AAT/Catalogue of Life. Generated {date.today().isoformat()}.</p>
 </header>
 
 <div class="container">
@@ -335,7 +372,8 @@ details.tree-sub > summary {{ cursor: pointer; font-weight: 600; font-size: 0.83
 
   <div class="tabs">
     <button class="tab active" id="btn-concepts" onclick="switchTab('concepts', this)">Commodities Browser (2,066)</button>
-    <button class="tab" id="btn-hierarchy" onclick="switchTab('hierarchy', this)">4-Tier SKOS Hierarchy Tree</button>
+    <button class="tab" id="btn-vtree" onclick="switchTab('vtree', this)">Visual Tree (Interactive SVG)</button>
+    <button class="tab" id="btn-hierarchy" onclick="switchTab('hierarchy', this)">Outline Hierarchy Tree</button>
     <button class="tab" id="btn-places" onclick="switchTab('places', this)">Places &amp; Polities (499)</button>
   </div>
 
@@ -400,10 +438,48 @@ details.tree-sub > summary {{ cursor: pointer; font-weight: 600; font-size: 0.83
     <div class="pager" id="pager"></div>
   </div>
 
+  <!-- TAB 1B: VISUAL TREE (INTERACTIVE SVG) -->
+  <div id="tab-vtree" class="panel">
+    <div class="controls">
+      <input type="text" id="vt-q" placeholder="Find &amp; highlight in tree (e.g. 'rubber', 'tea', 'tallow', 'staves')..." oninput="vtreeSearch(this.value)">
+      <button onclick="vtreeSetDepth(1)">Sectors (9)</button>
+      <button onclick="vtreeSetDepth(2)">Groups (44)</button>
+      <button onclick="vtreeSetDepth(3)">+ Sub-groups</button>
+      <select id="vt-color" onchange="renderVTree()">
+        <option value="sector">Color by Macro-Sector</option>
+        <option value="mapping">Color by Mapping Tier</option>
+      </select>
+      <label style="font-size:0.83rem;display:flex;align-items:center;gap:4px;cursor:pointer">
+        <input type="checkbox" id="vt-arcs" checked onchange="renderVTree()"> Show <code>related</code> / <code>combines</code> arcs
+      </label>
+      <button onclick="vtreeZoom(1.25)">Zoom +</button>
+      <button onclick="vtreeZoom(0.8)">Zoom &minus;</button>
+      <button onclick="vtreeFit()">Fit View</button>
+    </div>
+    <div class="vtree-layout">
+      <div class="vtree-stage" id="vt-stage">
+        <svg id="vt-svg" xmlns="http://www.w3.org/2000/svg">
+          <g id="vt-viewport"></g>
+        </svg>
+        <div class="vtree-legend" id="vt-legend">
+          <span><strong>Click circle/label:</strong> expand or collapse branch &amp; inspect</span>
+          <span><strong>Drag:</strong> pan · <strong>Scroll:</strong> zoom</span>
+          <span style="color:#6f42c1">--- <code>skos:related</code></span>
+          <span style="color:#c96a00">&mdash; <code>oe:combinesConcept</code></span>
+        </div>
+      </div>
+      <div class="vtree-side" id="vt-side">
+        <h3>Tree Node Inspector</h3>
+        <p style="color:var(--muted)">Click any Macro-Sector, Commodity Group, Substance Group, or leaf heading in the visual tree to inspect its definition, synonyms, botanical taxa, and cross-links.</p>
+        <p style="color:var(--muted)">Tip: try typing <strong>rubber</strong>, <strong>tea</strong>, or <strong>tallow</strong> in the search box above to auto-expand matching branches and see <code>skos:related</code> / <code>oe:combinesConcept</code> arcs light up.</p>
+      </div>
+    </div>
+  </div>
+
   <!-- TAB 2: HIERARCHY -->
   <div id="tab-hierarchy" class="panel">
     <div class="card" style="margin-bottom:14px;">
-      <strong>4-Tier SKOS Hierarchy Structure:</strong> <code>htc:scheme</code> → <strong>9 Macro-Sectors</strong> (<code>skos:hasTopConcept</code>) → <strong>44 Mid-Level Commodity Groups</strong> (e.g., <em>Stimulant Beverages &amp; Infusions</em> uniting Tea, Coffee &amp; Cocoa; <em>Latexes &amp; Elastic Gums</em> uniting Caoutchouc, India Rubber &amp; Gutta Percha) → <strong>159 S14-safe Substance Groups</strong> → <strong>2,066 Verbatim Customs Headings</strong> (0 orphan concepts). Click any leaf chip to inspect it.
+      <strong>4-Tier SKOS Hierarchy Structure:</strong> <code>htc:scheme</code> → <strong>9 Macro-Sectors</strong> (<code>skos:hasTopConcept</code>) → <strong>44 Mid-Level Commodity Groups</strong> (e.g., <em>Stimulant Beverages &amp; Infusions</em> uniting Tea, Coffee &amp; Cocoa; <em>Latexes &amp; Elastic Gums</em> uniting Caoutchouc, India Rubber &amp; Gutta Percha) → <strong>{len(sub_ids)} S14-safe Substance Groups</strong> → <strong>2,066 Verbatim Customs Headings</strong> (0 orphan concepts). Click any leaf chip to inspect it.
     </div>
     <div id="tree-root"></div>
   </div>
@@ -481,7 +557,7 @@ function jumpToConcept(id) {{
 
 function initDashboard() {{
   const kpis = [
-    [fmt(META.total_concepts), 'Persistent htc: Concepts', '9 Sectors → 44 Groups → 159 Sub-groups'],
+    [fmt(META.total_concepts), 'Persistent htc: Concepts', '9 Sectors → 44 Groups → ' + fmt(META.total_subgroups) + ' Sub-groups'],
     [pct(META.grounded_rows, META.total_comm_rows), 'Wikidata Grounded', fmt(META.grounded_concepts) + ' concepts (' + pct(META.grounded_rows + META.residual_rows, META.total_comm_rows) + ' w/ residuals)'],
     [fmt(META.def_cnt) + ' / ' + fmt(META.alt_cnt), '19th-c. Defs / altLabels', 'Mined from 6 commercial dictionaries'],
     [fmt(META.relc_cnt) + ' / ' + fmt(META.comb_cnt), 'Related / Merged Links', 'skos:related & oe:combinesConcept'],
@@ -805,11 +881,412 @@ function renderPlaces() {{
   }}).join('');
 }}
 
+// =========================================================================
+// INTERACTIVE PURE-SVG VISUAL TREE (ZERO EXTERNAL DEPENDENCIES)
+// =========================================================================
+const SEC_COLORS = {{
+  'htc:sec_food_and_drink': '#1d4e6b',
+  'htc:sec_minerals_metals_manufactures': '#5c6672',
+  'htc:sec_forestry_timber': '#2f6b48',
+  'htc:sec_hides_skins_tanning': '#8c4a27',
+  'htc:sec_fibres_textiles': '#6f42c1',
+  'htc:sec_botanicals_dyes_chemicals': '#b5651d',
+  'htc:sec_livestock_fodder': '#a34832',
+  'htc:sec_oils_fats_waxes': '#a87d1a',
+  'htc:sec_unclassified_residuals': '#7a828a',
+}};
+const REL_COLORS = {{
+  'skos:exactMatch': '#146c43',
+  'skos:closeMatch': '#0d5c75',
+  'skos:broadMatch': '#b57614',
+  'skos:relatedMatch': '#6f42c1',
+  'residual': '#7a828a',
+  'ungrounded': '#b02a37',
+}};
+
+let vtRoot = null;
+let vtNodeMap = {{}};
+let vtBuilt = false;
+let vtSelectedId = null;
+let vtMatchIds = new Set();
+let vtPathIds = new Set();
+let vtTx = 28, vtTy = 24, vtScale = 0.85;
+let vtBounds = {{ w: 1000, h: 700 }};
+
+function buildVTreeData() {{
+  if (vtBuilt) return;
+  vtBuilt = true;
+
+  const bySecGrp = {{}};
+  for (const c of CONCEPTS) {{
+    bySecGrp[c.sec] = bySecGrp[c.sec] || {{}};
+    (bySecGrp[c.sec][c.grp] = bySecGrp[c.sec][c.grp] || []).push(c);
+  }}
+
+  const root = {{
+    id: 'htc:scheme', label: 'htc:scheme (Layer-1 Trade SKOS)', kind: 'root',
+    rows: META.total_comm_rows, count: META.total_concepts, sector: '',
+    expanded: true, children: [], parent: null
+  }};
+  vtNodeMap[root.id] = root;
+
+  for (const [secId, sstat] of Object.entries(META.sec_stats)) {{
+    const secNode = {{
+      id: secId, label: sstat.label, kind: 'sector',
+      rows: sstat.rows, count: sstat.cnt, sector: secId,
+      expanded: true, children: [], parent: root
+    }};
+    vtNodeMap[secId] = secNode;
+    root.children.push(secNode);
+
+    const grpMap = bySecGrp[secId] || {{}};
+    const grpEntries = Object.entries(grpMap).sort((a,b) =>
+      b[1].reduce((s,x)=>s+x.r,0) - a[1].reduce((s,x)=>s+x.r,0)
+    );
+    for (const [grpId, list] of grpEntries) {{
+      const gRows = list.reduce((s,x)=>s+x.r,0);
+      const grpNode = {{
+        id: grpId, label: META.grp_stats[grpId].label, kind: 'group',
+        rows: gRows, count: list.length, sector: secId,
+        expanded: false, children: [], parent: secNode
+      }};
+      vtNodeMap[grpId] = grpNode;
+      secNode.children.push(grpNode);
+
+      const byBr = {{}};
+      for (const c of list) {{
+        const k = c.br === grpId ? '__direct__' : c.br;
+        (byBr[k] = byBr[k] || []).push(c);
+      }}
+      const subEntries = Object.entries(byBr).filter(([k]) => k !== '__direct__')
+        .sort((a,b) => b[1].reduce((s,x)=>s+x.r,0) - a[1].reduce((s,x)=>s+x.r,0));
+      for (const [subId, mems] of subEntries) {{
+        const mRows = mems.reduce((s,x)=>s+x.r,0);
+        const subNode = {{
+          id: subId, label: mems[0].h + ' (' + mems.length + ')', kind: 'subgroup',
+          rows: mRows, count: mems.length, sector: secId,
+          expanded: false, children: [], parent: grpNode
+        }};
+        vtNodeMap[subId] = subNode;
+        grpNode.children.push(subNode);
+        for (const c of mems.sort((a,b) => b.r - a.r)) {{
+          const leaf = {{
+            id: c.id, label: c.l, kind: 'concept',
+            rows: c.r, count: 1, sector: secId, concept: c,
+            expanded: false, children: [], parent: subNode
+          }};
+          vtNodeMap[c.id] = leaf;
+          subNode.children.push(leaf);
+        }}
+      }}
+      const directs = (byBr['__direct__'] || []).sort((a,b) => b.r - a.r);
+      for (const c of directs) {{
+        const leaf = {{
+          id: c.id, label: c.l, kind: 'concept',
+          rows: c.r, count: 1, sector: secId, concept: c,
+          expanded: false, children: [], parent: grpNode
+        }};
+        vtNodeMap[c.id] = leaf;
+        grpNode.children.push(leaf);
+      }}
+    }}
+  }}
+  vtRoot = root;
+  initVTreePanZoom();
+  renderVTree();
+  vtreeFit();
+}}
+
+function initVTreePanZoom() {{
+  const stage = document.getElementById('vt-stage');
+  let dragging = false, sx = 0, sy = 0, ox = 0, oy = 0;
+  stage.addEventListener('mousedown', e => {{
+    if (e.target.closest('.vtree-node')) return;
+    dragging = true; sx = e.clientX; sy = e.clientY; ox = vtTx; oy = vtTy;
+    stage.classList.add('dragging');
+  }});
+  window.addEventListener('mousemove', e => {{
+    if (!dragging) return;
+    vtTx = ox + (e.clientX - sx);
+    vtTy = oy + (e.clientY - sy);
+    applyVTreeTransform();
+  }});
+  window.addEventListener('mouseup', () => {{
+    dragging = false; stage.classList.remove('dragging');
+  }});
+  stage.addEventListener('wheel', e => {{
+    e.preventDefault();
+    const rect = stage.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    const factor = e.deltaY < 0 ? 1.15 : 0.87;
+    const ns = Math.max(0.15, Math.min(3.0, vtScale * factor));
+    vtTx = mx - (mx - vtTx) * (ns / vtScale);
+    vtTy = my - (my - vtTy) * (ns / vtScale);
+    vtScale = ns;
+    applyVTreeTransform();
+  }}, {{ passive: false }});
+}}
+
+function applyVTreeTransform() {{
+  const vp = document.getElementById('vt-viewport');
+  if (vp) vp.setAttribute('transform', `translate(${{vtTx.toFixed(1)}},${{vtTy.toFixed(1)}}) scale(${{vtScale.toFixed(3)}})`);
+}}
+
+function vtreeZoom(factor) {{
+  const stage = document.getElementById('vt-stage');
+  const cx = stage.clientWidth / 2, cy = stage.clientHeight / 2;
+  const ns = Math.max(0.15, Math.min(3.0, vtScale * factor));
+  vtTx = cx - (cx - vtTx) * (ns / vtScale);
+  vtTy = cy - (cy - vtTy) * (ns / vtScale);
+  vtScale = ns;
+  applyVTreeTransform();
+}}
+
+function vtreeFit() {{
+  const stage = document.getElementById('vt-stage');
+  const sw = stage.clientWidth || 960, sh = stage.clientHeight || 720;
+  const pad = 36;
+  const scaleX = (sw - pad * 2) / Math.max(300, vtBounds.w);
+  const scaleY = (sh - pad * 2) / Math.max(200, vtBounds.h);
+  vtScale = Math.max(0.18, Math.min(1.15, Math.min(scaleX, scaleY)));
+  vtTx = pad;
+  vtTy = Math.max(pad, (sh - vtBounds.h * vtScale) / 2);
+  applyVTreeTransform();
+}}
+
+function vtreeSetDepth(maxDepth) {{
+  vtMatchIds.clear(); vtPathIds.clear();
+  document.getElementById('vt-q').value = '';
+  function walk(n, d) {{
+    n.expanded = d < maxDepth;
+    for (const ch of n.children) walk(ch, d + 1);
+  }}
+  walk(vtRoot, 0);
+  renderVTree();
+  vtreeFit();
+}}
+
+function vtreeSearch(raw) {{
+  const q = (raw || '').trim().toLowerCase();
+  vtMatchIds.clear();
+  vtPathIds.clear();
+  if (!q) {{
+    vtreeSetDepth(2);
+    return;
+  }}
+  function collapseAll(n) {{ n.expanded = false; for (const ch of n.children) collapseAll(ch); }}
+  collapseAll(vtRoot);
+  vtRoot.expanded = true;
+
+  let hits = 0;
+  for (const c of CONCEPTS) {{
+    const hay = (c.id + ' ' + c.l + ' ' + c.alts.join(' ') + ' ' + c.h + ' ' + c.grpl).toLowerCase();
+    if (hay.includes(q)) {{
+      vtMatchIds.add(c.id);
+      hits++;
+      if (hits <= 60) {{
+        let cur = vtNodeMap[c.id];
+        while (cur) {{
+          vtPathIds.add(cur.id);
+          if (cur.parent) cur.parent.expanded = true;
+          cur = cur.parent;
+        }}
+      }}
+    }}
+  }}
+  renderVTree();
+  vtreeFit();
+}}
+
+function focusVTreeConcept(id) {{
+  let cur = vtNodeMap[id];
+  if (!cur) return;
+  vtMatchIds.clear(); vtPathIds.clear();
+  vtMatchIds.add(id);
+  while (cur) {{
+    vtPathIds.add(cur.id);
+    if (cur.parent) cur.parent.expanded = true;
+    cur = cur.parent;
+  }}
+  vtSelectedId = id;
+  renderVTree();
+  renderVTreeInspector(vtNodeMap[id]);
+  // Center on the selected node
+  const stage = document.getElementById('vt-stage');
+  const n = vtNodeMap[id];
+  if (n && n._x !== undefined) {{
+    vtScale = Math.max(vtScale, 0.78);
+    vtTx = (stage.clientWidth || 900) * 0.48 - n._x * vtScale;
+    vtTy = (stage.clientHeight || 700) * 0.50 - n._y * vtScale;
+    applyVTreeTransform();
+  }}
+}}
+
+function vtreeNodeColor(n) {{
+  const mode = document.getElementById('vt-color').value;
+  if (vtMatchIds.has(n.id)) return '#d99b1e';
+  if (mode === 'mapping' && n.concept) return REL_COLORS[n.concept.rel] || '#5c6672';
+  if (n.kind === 'root') return '#17374b';
+  return SEC_COLORS[n.sector] || '#1d4e6b';
+}}
+
+function renderVTree() {{
+  if (!vtRoot) return;
+  const COL_X = [20, 270, 560, 880, 1140];
+  const ROW_H = 22;
+  let nextY = 18;
+  const visible = [];
+  const visById = {{}};
+  const links = [];
+
+  function layout(node, depth) {{
+    node._depth = depth;
+    node._x = COL_X[Math.min(depth, COL_X.length - 1)];
+    const kids = (node.expanded && node.children.length) ? node.children : [];
+    if (!kids.length) {{
+      node._y = nextY;
+      nextY += ROW_H;
+    }} else {{
+      const ys = [];
+      for (const ch of kids) {{
+        layout(ch, depth + 1);
+        ys.push(ch._y);
+        links.push([node, ch]);
+      }}
+      node._y = (ys[0] + ys[ys.length - 1]) / 2;
+    }}
+    visible.push(node);
+    visById[node.id] = node;
+  }}
+  layout(vtRoot, 0);
+
+  let maxX = 0;
+  for (const n of visible) maxX = Math.max(maxX, n._x + 300);
+  vtBounds = {{ w: maxX + 40, h: nextY + 30 }};
+
+  const svgParts = [];
+
+  // 1. Hierarchical Bezier edges
+  for (const [p, c] of links) {{
+    const mx = (p._x + c._x) / 2;
+    const isHi = vtPathIds.has(p.id) && vtPathIds.has(c.id);
+    svgParts.push(`<path class="vtree-link${{isHi ? ' hi' : ''}}" d="M${{p._x}},${{p._y}} C${{mx}},${{p._y}} ${{mx}},${{c._y}} ${{c._x}},${{c._y}}" />`);
+  }}
+
+  // 2. Optional cross-links for visible skos:related & oe:combinesConcept pairs
+  if (document.getElementById('vt-arcs').checked) {{
+    const drawn = new Set();
+    for (const n of visible) {{
+      if (!n.concept) continue;
+      for (const tid of (n.concept.comb || [])) {{
+        const tn = visById[tid];
+        if (!tn) continue;
+        const dx = Math.max(55, Math.abs(n._y - tn._y) * 0.32);
+        const ax = Math.max(n._x, tn._x) + 190 + dx;
+        svgParts.push(`<path class="vtree-comb-arc" d="M${{n._x+8}},${{n._y}} Q${{ax}},${{(n._y+tn._y)/2}} ${{tn._x+8}},${{tn._y}}" />`);
+      }}
+      for (const tid of (n.concept.relc || [])) {{
+        const tn = visById[tid];
+        if (!tn) continue;
+        const pairKey = [n.id, tid].sort().join('|');
+        if (drawn.has(pairKey)) continue;
+        drawn.add(pairKey);
+        const dx = Math.max(45, Math.abs(n._y - tn._y) * 0.28);
+        const ax = Math.max(n._x, tn._x) + 160 + dx;
+        svgParts.push(`<path class="vtree-rel-arc" d="M${{n._x+8}},${{n._y}} Q${{ax}},${{(n._y+tn._y)/2}} ${{tn._x+8}},${{tn._y}}" />`);
+      }}
+    }}
+  }}
+
+  // 3. Nodes & labels
+  for (const n of visible) {{
+    const hasKids = n.children.length > 0;
+    const r = n.kind === 'root' ? 8 : (n.kind === 'sector' ? 7 : (n.kind === 'group' ? 5.5 : (n.kind === 'subgroup' ? 4.5 : Math.max(3.5, Math.min(6, Math.log10(n.rows + 1) * 1.9)))));
+    const col = vtreeNodeColor(n);
+    const fill = (hasKids && !n.expanded) ? col : '#ffffff';
+    const strokeW = (n.id === vtSelectedId || vtMatchIds.has(n.id)) ? 3 : 2;
+    const lblText = n.label.length > 44 ? n.label.slice(0, 42) + '…' : n.label;
+    const countTag = hasKids ? ` (${{n.count}})` : ` · ${{fmt(n.rows)}}`;
+    const fontW = (n.kind === 'root' || n.kind === 'sector' || vtMatchIds.has(n.id) || n.id === vtSelectedId) ? '700' : (n.kind === 'group' ? '600' : '400');
+    const fontS = n.kind === 'root' ? '12.5' : (n.kind === 'sector' ? '12' : (n.kind === 'group' ? '11.2' : '10.6'));
+
+    svgParts.push(`
+      <g class="vtree-node" transform="translate(${{n._x}},${{n._y}})" onclick="onVTreeClick('${{esc(n.id)}}')">
+        <circle r="${{r.toFixed(1)}}" fill="${{fill}}" stroke="${{col}}" stroke-width="${{strokeW}}" />
+        ${{hasKids ? `<text x="0" y="3" text-anchor="middle" font-size="8.5" font-weight="700" fill="${{n.expanded ? col : '#fff'}}">${{n.expanded ? '−' : '+'}}</text>` : ''}}
+        <text x="${{(r + 6).toFixed(1)}}" y="3.8" font-size="${{fontS}}" font-weight="${{fontW}}">${{esc(lblText)}}<tspan fill="#6c757d" font-weight="400" font-size="9.8">${{esc(countTag)}}</tspan></text>
+      </g>
+    `);
+  }}
+
+  document.getElementById('vt-viewport').innerHTML = svgParts.join('');
+  applyVTreeTransform();
+}}
+
+function onVTreeClick(id) {{
+  const n = vtNodeMap[id];
+  if (!n) return;
+  vtSelectedId = id;
+  if (n.children.length) {{
+    n.expanded = !n.expanded;
+    renderVTree();
+  }} else {{
+    renderVTree();
+  }}
+  renderVTreeInspector(n);
+}}
+
+function renderVTreeInspector(n) {{
+  const box = document.getElementById('vt-side');
+  if (!n) return;
+  if (n.kind !== 'concept') {{
+    const topKids = n.children.slice(0, 12).map(ch =>
+      `<div style="margin:3px 0"><a href="#" onclick="onVTreeClick('${{esc(ch.id)}}');return false;">${{esc(ch.label)}}</a> <span class="mono" style="color:var(--muted)">(${{fmt(ch.rows)}} rows)</span></div>`
+    ).join('');
+    box.innerHTML = `
+      <span class="badge b-tag">${{n.kind.toUpperCase()}}</span>
+      <h3 style="margin-top:6px">${{esc(n.label)}}</h3>
+      <div class="mono" style="color:var(--muted);margin-bottom:8px">${{esc(n.id)}}</div>
+      <div><strong>Concepts:</strong> ${{fmt(n.count)}} · <strong>Layer-1 Rows:</strong> ${{fmt(n.rows)}} (${{pct(n.rows, META.total_comm_rows)}})</div>
+      ${{n.children.length ? `<div style="margin-top:10px"><strong>Direct Children (${{n.children.length}}):</strong>${{topKids}}${{n.children.length > 12 ? `<div style="color:var(--muted);margin-top:4px">… +${{n.children.length - 12}} more</div>` : ''}}</div>` : ''}}
+      ${{n.kind === 'sector' || n.kind === 'group' ? `<div style="margin-top:12px"><button onclick="switchTab('concepts',document.getElementById('btn-concepts'));clearFilters();document.getElementById('${{n.kind==='sector'?'f-sec':'f-grp'}}').value='${{n.id}}';resetAndRender();" style="padding:6px 10px;border:1px solid var(--border);border-radius:5px;background:#f2efe7;cursor:pointer;font-weight:600">Filter in Table Browser →</button></div>` : ''}}
+    `;
+    return;
+  }}
+  const c = n.concept;
+  const alts = c.alts.length ? '<div style="margin:6px 0">' + c.alts.map(a => `<span class="badge b-alt">${{esc(a)}}</span>`).join('') + '</div>' : '';
+  const def = c.def ? `<div class="def-quote" style="margin:8px 0">${{esc(c.def)}}</div>` : '';
+  const dsrc = c.dsrc.length ? '<div style="margin:4px 0"><strong>Sources:</strong> ' + c.dsrc.map(([cit,u]) => `<a target="_blank" href="${{esc(u)}}">${{esc(cit)}} ↗</a>`).join(' · ') + '</div>' : '';
+  const wd = c.wd.length ? `${{relBadge(c.rel)}} ` + c.wd.map(([q,l]) => `<a class="mono" target="_blank" href="https://www.wikidata.org/wiki/${{q}}">${{q}}</a> ${{esc(l)}}`).join(' + ') : relBadge(c.rel);
+  const taxa = c.tx.length ? '<div style="margin:5px 0"><strong>Taxa:</strong> ' + c.tx.map(([q,nm]) => `<a target="_blank" href="https://www.wikidata.org/wiki/${{q}}"><em>${{esc(nm||q)}}</em></a>`).join(', ') + '</div>' : '';
+  const comb = c.comb.length ? '<div style="margin:6px 0"><strong>Combines:</strong> ' + c.comb.map(id => `<span class="badge b-comb" onclick="focusVTreeConcept('${{id}}')">${{id}} ${{esc((BY_ID[id]||{{}}).l||'')}}</span>`).join('') + '</div>' : '';
+  const relc = c.relc.length ? '<div style="margin:6px 0"><strong>Related:</strong> ' + c.relc.map(id => `<span class="badge b-link" onclick="focusVTreeConcept('${{id}}')">${{id}} ${{esc((BY_ID[id]||{{}}).l||'')}}</span>`).join('') + '</div>' : '';
+
+  box.innerHTML = `
+    <span class="mono" style="color:var(--muted)">${{c.id}}</span> · ${{fmt(c.r)}} rows (${{c.y0||'?'}}–${{c.y1||'?'}})
+    <h3 style="margin-top:4px">${{esc(c.l)}}</h3>
+    ${{alts}}
+    <div style="margin:5px 0;font-size:0.79rem;color:var(--muted)">${{esc(c.secl)}} → <strong>${{esc(c.grpl)}}</strong></div>
+    <div style="margin:6px 0">${{wd}}</div>
+    <div style="margin:5px 0"><span class="badge b-tag">${{c.s}}</span> <span class="badge b-tag">${{c.lb}}</span> <span class="badge b-tag">${{c.si.replace('SITC4_','SITC ')}}</span></div>
+    ${{def}}
+    ${{dsrc}}
+    ${{taxa}}
+    ${{comb}}
+    ${{relc}}
+    <div style="margin-top:12px">
+      <button onclick="jumpToConcept('${{c.id}}')" style="padding:6px 10px;border:1px solid var(--border);border-radius:5px;background:#f2efe7;cursor:pointer;font-weight:600">Open Full Record &amp; Turtle →</button>
+    </div>
+  `;
+}}
+
 function switchTab(name, btn) {{
   document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
   document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
   btn.classList.add('active');
   document.getElementById('tab-' + name).classList.add('active');
+  if (name === 'vtree') buildVTreeData();
   if (name === 'hierarchy') buildTree();
   if (name === 'places') renderPlaces();
 }}
@@ -821,9 +1298,12 @@ renderTable();
 </html>
 """
     OUT_HTML.write_text(html_doc, encoding="utf-8")
+    DOCS_HTML.parent.mkdir(parents=True, exist_ok=True)
+    DOCS_HTML.write_text(html_doc, encoding="utf-8")
+    (DOCS_HTML.parent / ".nojekyll").write_text("", encoding="utf-8")
     SCRATCH_HTML.parent.mkdir(parents=True, exist_ok=True)
     SCRATCH_HTML.write_text(html_doc, encoding="utf-8")
-    print(f"Wrote {OUT_HTML} ({OUT_HTML.stat().st_size/1024:.1f} KB) and staged copy at {SCRATCH_HTML}")
+    print(f"Wrote {OUT_HTML} ({OUT_HTML.stat().st_size/1024:.1f} KB), {DOCS_HTML}, and staged copy at {SCRATCH_HTML}")
 
 
 if __name__ == "__main__":
