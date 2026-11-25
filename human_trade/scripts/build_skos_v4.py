@@ -266,8 +266,8 @@ BAD_DESC_RE = re.compile(
     r"rhythmic gymnastics|dental|coating for the teeth|burning of tobacco|volcanic|igneous|chemical precipitate|"
     r"biblical|climbing equipment|hard projection of digit|anchoring point of a taxonomic|corset|rope in the side|"
     r"woodworking decorative treatment|species of moth|genus of insects|region around the kneecap|gay culture|"
-    r"soldiers or troops|living-quarters|sailing vessel|southeast asian|bread making process|relative direction|"
-    r"blunt weapon|color|colour|solid remnants of fires|combustion)\b",
+    r"soldiers or troops|living-quarters|chinese sailing vessel|southeast asian|bread making process|relative direction|"
+    r"blunt weapon|deep shade of|shade of |color space|rgb color|solid remnants of fires|combustion)\b",
     re.I,
 )
 
@@ -282,12 +282,12 @@ POSITIVE_DESC_RE = re.compile(
     r"alcohol|drink|beverage|wine|beer|spirit|liquor|tobacco|drug|medicine|medication|alkaloid|livestock|herbivore|"
     r"ungulate|domesticated|poultry|mammal|horse|equine|bovine|cattle|calf|stallion|gelding|mare|feather|bone|rigid organ|permanent pointed projection|horn|hoof|ivory|"
     r"baleen|keratin|product|commodity|goods|fertilizer|excrement|guano|explosive|adhesive|soap|candle|tool|implement|instrument that measures|scientific instrument|"
-    r"time indicator|machine|machinery|mechanical|apparatus|footwear|shoe|boot|garment|covering worn|clothing|apparel|furniture|container|barrel|"
-    r"railroad|agricultural|industrial|natural|organic|dried|salted|cured|processed|rendered|edible|culinary|condiment|"
+    r"time indicator|machine|machinery|mechanical|apparatus|set of moving and fixed elements|footwear|shoe|boot|garment|garments|covering worn|head covering|floor covering|clothing|apparel|furniture|movable objects|container|barrel|"
+    r"railroad|agricultural|industrial|natural|organic|dried|salted|cured|processed|rendered|edible|culinary|condiment|nutrition|thickening agent|watercraft|protective outer layer|office or domestic supplies|"
     r"botanical|extract|exudate|sap|tincture|acid|salt|oxide|carbonate|nitrate|sulfate|sulphate|building material|"
     r"construction|board|beam|rigging|spar|mast|pole|propulsion|transport|vehicle|object intended to be played|small, coated stick|"
     r"small decorative object|medium for recording|device|equipment|cable|conductor|fastener|mooring|artillery|firearm|rifle|"
-    r"starch|tuber|rhizome|pearl|gem|silicate|mica|inflorescence|cone|flower|outgrowth|abnormal growth|"
+    r"starch|tuber|rhizome|pearl|gem|silicate|mica|inflorescence|cone|flower|flowers|outgrowth|abnormal growth|"
     r"printed|typography|movable components|long, flexible, and strong object|animal skin|sheepskin|goatskin|sealskin)\b",
     re.I,
 )
@@ -360,6 +360,28 @@ ALLIED_RELATED_PAIRS = [
     ("Cotton Seeds", "Cotton Seed Oil Refined"),
     ("Cotton Seeds", "Cotton Seed Oil Unrefined"),
     ("Cotton Seeds", "Oil Seed Cake Cotton Seed"),
+    ("Flax", "Linseed"),
+    ("Linseed", "Oil Linseed"),
+    ("Flax", "Linen"),
+    ("Hemp", "Cordage"),
+    ("Wheat", "Wheat Flour"),
+    ("Barley", "Beer"),
+    ("Cattle", "Beef"),
+    ("Cattle", "Hides"),
+    ("Cattle", "Tallow"),
+    ("Hides", "Leather"),
+    ("Sheep", "Wool"),
+    ("Sheep", "Mutton"),
+    ("Swine", "Pork"),
+    ("Swine", "Bacon"),
+    ("Codfish", "Fish Oil Cod"),
+    ("Codfish", "Tongues and Sounds"),
+    ("Tobacco", "Tobacco Manufactured Cigars"),
+    ("Tobacco", "Tobacco Manufactured Snuff"),
+    ("Indigo", "Madder"),
+    ("Indigo", "Cochineal"),
+    ("Bark For Tanners and Dyers Use", "Myrabolans"),
+    ("Bark For Tanners and Dyers Use", "Bark Extract of Hemlock"),
 ]
 
 # Curated modern common altLabels for archaic/19th-century customs terms
@@ -447,7 +469,10 @@ CANONICAL_MAP = {
     "wine": ("wine", None, "skos:exactMatch"),
     "beer": ("beer", None, "skos:exactMatch"),
     "cider": ("cider", None, "skos:exactMatch"),
-    "spirits": ("distilled beverage", None, "skos:broadMatch"),
+    "spirits": ("liquor", None, "skos:broadMatch"),
+    "spirits geneva": ("gin", None, "skos:closeMatch"),
+    "spirits unenumerated": ("liquor", None, "skos:broadMatch"),
+    "spirits unenumerated not sweetened": ("liquor", None, "skos:broadMatch"),
     "vinegar": ("vinegar", None, "skos:exactMatch"),
     "pepper": ("black pepper", None, "skos:exactMatch"),
     "cinnamon": ("cinnamon", None, "skos:exactMatch"),
@@ -503,9 +528,9 @@ CANONICAL_MAP = {
     "neat cattle": ("cattle", None, "skos:exactMatch"),
     "cattle": ("cattle", None, "skos:exactMatch"),
     "cows": ("cattle", None, "skos:broadMatch"),
-    "swine": ("pig", None, "skos:exactMatch"),
-    "hogs": ("pig", None, "skos:exactMatch"),
-    "pigs": ("pig", None, "skos:exactMatch"),
+    "swine": ("livestock", "pig", "skos:broadMatch"),
+    "hogs": ("livestock", "pig", "skos:broadMatch"),
+    "pigs": ("livestock", "pig", "skos:broadMatch"),
     "sheep": ("sheep", None, "skos:exactMatch"),
     "sheep and lambs": ("sheep", None, "skos:broadMatch"),
     "horses": ("livestock", "equus ferus caballus", "skos:broadMatch"),  # Q726 is Q16521 taxon -> sourceTaxon!
@@ -651,7 +676,12 @@ CANONICAL_MAP = {
     "cotton raw and waste of": ("cotton", "gossypium", "skos:broadMatch"),
     "cotton waste": ("cotton", "gossypium", "skos:broadMatch"),
     "flax": ("flax", "linum usitatissimum", "skos:exactMatch"),
-    "hemp": ("hemp", None, "skos:exactMatch"),
+    "hemp": ("hemp fiber", "cannabis sativa", "skos:exactMatch"),
+    "hemp rough or undressed": ("hemp fiber", "cannabis sativa", "skos:broadMatch"),
+    "hemp seeds": ("seed", "cannabis sativa", "skos:broadMatch"),
+    "hemp seed": ("seed", "cannabis sativa", "skos:broadMatch"),
+    "rapeseed oil": ("vegetable oil", "brassica napus", "skos:broadMatch"),
+    "rape seed oil": ("vegetable oil", "brassica napus", "skos:broadMatch"),
     "jute": ("jute", None, "skos:exactMatch"),
     "silk": ("silk", None, "skos:exactMatch"),
     "linen": ("linen", None, "skos:exactMatch"),
@@ -663,6 +693,29 @@ CANONICAL_MAP = {
     "down": ("down feather", None, "skos:exactMatch"),
     "bristles": ("bristle", None, "skos:exactMatch"),
     "hair": ("hair", None, "skos:exactMatch"),
+    "horse hair": ("horsehair", None, "skos:exactMatch"),
+    "seal skins undressed": ("sealskin", None, "skos:broadMatch"),
+    "bees wax": ("beeswax", "apis mellifera", "skos:exactMatch"),
+    "beeswax": ("beeswax", "apis mellifera", "skos:exactMatch"),
+    "hops": ("hops", "humulus lupulus", "skos:exactMatch"),
+    "pears raw": ("pear", None, "skos:broadMatch"),
+    "fruit green": ("fruit", None, "skos:broadMatch"),
+    "fruit dried unenumerated": ("dried fruit", None, "skos:broadMatch"),
+    "tamarinds": ("fruit", "tamarindus indica", "skos:broadMatch"),
+    "hard cheese": ("cheese", None, "skos:broadMatch"),
+    "biscuit and bread": ("bread", None, "skos:broadMatch"),
+    "chemical essential or perfumed oils": ("essential oil", None, "skos:broadMatch"),
+    "perfumery": ("perfume", None, "skos:broadMatch"),
+    "barrels empty": ("barrel", None, "skos:broadMatch"),
+    "shells of all kinds": ("seashell", None, "skos:broadMatch"),
+    "stationery other than paper": ("stationery", None, "skos:broadMatch"),
+    "cattle and other animal foods": ("fodder", None, "skos:broadMatch"),
+    "clover and grass seeds": ("seed", "trifolium", "skos:broadMatch"),
+    "ground plaster": ("gypsum", None, "skos:broadMatch"),
+    "timber ash": ("wood", "fraxinus", "skos:broadMatch"),
+    "timber square ash": ("wood", "fraxinus", "skos:broadMatch"),
+    "myrabolans": ("tannin", "terminalia chebula", "skos:broadMatch"),
+    "bark extract of hemlock": ("tannin", "tsuga canadensis", "skos:broadMatch"),
     # Oils, fats, soap
     "cocoa nut oil": ("coconut oil", "cocos nucifera", "skos:exactMatch"),
     "coco nut oil": ("coconut oil", "cocos nucifera", "skos:exactMatch"),
@@ -679,8 +732,8 @@ CANONICAL_MAP = {
     "linseed": ("seed", "linum usitatissimum", "skos:broadMatch"),
     "flaxseed": ("seed", "linum usitatissimum", "skos:broadMatch"),
     "flax seeds": ("seed", "linum usitatissimum", "skos:broadMatch"),
-    "rapeseed": ("rapeseed", None, "skos:exactMatch"),
-    "seeds rape": ("rapeseed", None, "skos:exactMatch"),
+    "rapeseed": ("seed", "brassica napus", "skos:broadMatch"),
+    "seeds rape": ("seed", "brassica napus", "skos:broadMatch"),
     "seeds": ("seed", None, "skos:broadMatch"),
     "tallow": ("tallow", None, "skos:exactMatch"),
     "stearine": ("stearin", None, "skos:exactMatch"),
@@ -740,12 +793,13 @@ CANONICAL_MAP = {
     "cubic nitre": ("sodium nitrate", None, "skos:exactMatch"),
     "brimstone": ("sulfur", None, "skos:exactMatch"),
     "guano": ("guano", None, "skos:exactMatch"),
-    "cinchona": ("cinchona", None, "skos:exactMatch"),
-    "peruvian bark": ("cinchona", None, "skos:closeMatch"),
+    "cinchona": ("herbal medicine", "cinchona", "skos:broadMatch"),
+    "peruvian bark": ("herbal medicine", "cinchona", "skos:broadMatch"),
+    "bark peruvian": ("herbal medicine", "cinchona", "skos:broadMatch"),
     "opium": ("opium", None, "skos:exactMatch"),
     "castor": ("castoreum", "castor fiber", "skos:exactMatch"),
     "manna": ("herbal medicine", "fraxinus ornus", "skos:broadMatch"),
-    "indigo": ("indigo dye", None, "skos:exactMatch"),
+    "indigo": ("indigo", "indigofera tinctoria", "skos:exactMatch"),
     "cochineal": ("dye", "dactylopius coccus", "skos:broadMatch"),
     "madder": ("dye", "rubia tinctorum", "skos:broadMatch"),
     "logwood": ("dye", "haematoxylum campechianum", "skos:broadMatch"),
@@ -991,10 +1045,26 @@ def classify_v4(raw: str, head: str):
         grp = "grp_metal_machinery_hardware"
     elif re.search(r"\bcopper\b.*\bcement|\bcement\s+copper\b", lo):
         grp = "grp_metals_semi_finished"
-    elif re.search(r"\b(soap|candles?|beeswax|wax\b|paraffin)\b", lo):
+    elif re.search(r"\b(hats?|bonnets?)\b", lo):
+        grp = "grp_woven_fabrics_apparel"
+    elif re.search(r"\b(perfumery|perfumes?|soap|candles?|beeswax|bees\s*wax|wax\b|paraffin)\b", lo):
         grp = "grp_waxes_soap_candles"
-    elif re.search(r"\bsugar\s+box(?:es)?\b", lo):
+    elif re.search(r"\bsugar\s+box(?:es)?\b|\bbarrels?\s+empty\b|\btreenails?\b", lo):
         grp = "grp_cooperage_ship_timber"
+    elif re.search(r"\b(bark\s+peruvian|peruvian\s+bark|cinchona)\b", lo):
+        grp = "grp_drugs_medicinal_botanicals"
+    elif re.search(r"\b(bark\s+extract\s+of\s+hemlock|myr[ao]b[ao]lans?)\b", lo):
+        grp = "grp_vegetable_tannins"
+    elif re.search(r"\b(timber\s+(?:square\s+)?ash|hewn\s+fir.*other\s+than\s+pit\s+wood)\b", lo):
+        grp = "grp_hewn_round_timber"
+    elif re.search(r"\brailway\s+wagg?ons?\b|\biron\s+cast\s+or\s+wrought\b", lo):
+        grp = "grp_metal_machinery_hardware"
+    elif re.search(r"\bjute\s+manufactures\s+other\s+than\s+cordage\b", lo):
+        grp = "grp_woven_fabrics_apparel"
+    elif re.search(r"\bhides\s+and\s+skins\s+other\s+than\s+fur\b|\bskins\s+furs\s+pelts.*not\s+being\s+furs\b", lo):
+        grp = "grp_raw_hides_skins"
+    elif re.search(r"\bnuts?\s+and\s+kernels?\s+for\s+expressing\s+oil\b", lo):
+        grp = "grp_oilseeds"
     elif re.search(r"\bfruit.*preserved\s+without\s+sugar\b", lo):
         grp = "grp_fruits_nuts_vegetables"
     elif re.search(r"\bcattle\s+(?:and\s+other\s+)?animal\s+foods?\b", lo):
@@ -1013,11 +1083,11 @@ def classify_v4(raw: str, head: str):
         grp = "grp_fodder_oilcakes"
     elif re.search(r"\b(butter|cheese|milk|cream|eggs?)\b", lo):
         grp = "grp_dairy_eggs"
-    elif re.search(r"\b(tallow|stearin|stearine|lard|grease|suet|dripping|margarine)\b", lo):
+    elif re.search(r"\b(tallow|stearin|stearine|lard|grease|suet|dripping|margarine|animal\s+oil)\b", lo):
         grp = "grp_animal_fats_tallow"
     elif re.search(r"\b(whale\s*oil|seal\s*oil|cod\s*oil|train\s*oil|train\s+or\s+blubber|blubber|spermaceti|fish\s*oil|porpoise\s*oil|herring\s*oil)\b", lo):
         grp = "grp_marine_oils"
-    elif re.search(r"\b(cocoa[\s-]*nut\s*oil|coco[\s-]*nut\s*oil|coconut\s*oil|palm\s*oil|olive\s*oil|linseed\s*oil|cotton\s*seed\s*oil|seed\s*oil|castor\s*oil|oil\s+palm|oil\s+olive|oil\s+linseed|oil\s+seed|oil\s+cocoa|oil\s+unenumerated|vegetable\s*oil)\b", lo):
+    elif re.search(r"\b(cocoa[\s-]*nut\s*oil|coco[\s-]*nut\s*oil|coconut\s*oil|palm\s*oil|olive\s*oil|linseed\s*oil|rape\s*seed\s*oil|rapeseed\s*oil|cotton\s*seed\s*oil|seed\s*oil|castor\s*oil|oil\s+palm|oil\s+olive|oil\s+linseed|oil\s+seed|oil\s+cocoa|oil\s+unenumerated|vegetable\s*oil)\b", lo):
         grp = "grp_vegetable_oils"
     elif re.search(r"\b(peas?\b|pease|beans?|lentils?|pulse|chick\s*peas?|haricot|kidney\s*beans?)\b", lo):
         grp = "grp_pulses_legumes"
@@ -1027,9 +1097,9 @@ def classify_v4(raw: str, head: str):
         grp = "grp_oilseeds"
     elif re.search(r"\b(lace|embroidery|needlework|stockings?|socks?|hosiery|stays\s+or\s+corsets?|corsets?)\b", lo):
         grp = "grp_woven_fabrics_apparel"
-    elif re.search(r"\b(bones?|horns?|hoofs?|ivory|elephants?\s*teeth|whalebone|whale\s*fins?|isinglass|guano|manure|phosphate|sponge|sponges|coral)\b", lo):
+    elif re.search(r"\b(bones?|horns?|hoofs?|ivory|elephants?\s*teeth|whalebone|whale\s*fins?|isinglass|guano|manure|phosphates?|sponge|sponges|coral|shells?\s+of\s+all\s+kinds)\b", lo):
         grp = "grp_fertilizers_animal_materials"
-    elif re.search(r"\b(codfish|cod\b|herrings?|mackerel|salmon|lobsters?|oysters?|halibut|haddock|ling\b|pollock|sardines?|anchovies|pilchards?|sprats?|eels?|trout|shad|fish\b|tongues\s+and\s+sounds|cod\s+sounds|tongues\b|shellfish)\b", lo) and not re.search(r"\bfurs?\s+or\s+skins?\b", lo):
+    elif re.search(r"\b(codfish|cod\b|herrings?|mackerel|salmon|lobsters?|oysters?|halibut|haddock|ling\b|pollock|sardines?|anchovies|pilchards?|sprats?|eels?|trout|shad|fish\b|fisheries|tongues\s+and\s+sounds|cod\s+sounds|tongues\b|shellfish)\b", lo) and not re.search(r"\bfurs?\s+or\s+skins?\b", lo):
         grp = "grp_fish_seafood"
     elif re.search(r"\b(tanning|tanners?|tanbark|bark\s+for\s+tanner|oak\s*bark|hemlock\s*bark|mimosa\s*bark|valonia|cutch|gambier|terra\s*japonica|sumach|shumach|sumac|myr[ao]balans?|divi[\s-]*divi|galls?|gallnuts?|catechu|kino)\b", lo):
         grp = "grp_vegetable_tannins"
@@ -1053,9 +1123,9 @@ def classify_v4(raw: str, head: str):
         grp = "grp_meats_provisions"
     elif re.search(r"\b(peas?\b|pease|beans?|lentils?|pulse)\b", lo):
         grp = "grp_pulses_legumes"
-    elif re.search(r"\b(wheat|oats?|barley|rye|maize|indian\s*corn|corn\b|flour|meal\b|oatmeal|cornmeal|semolina|biscuits?|bread|grains?|cereals?|malt\b|buckwheat|rice\b|sago|tapioca|arrowroot|farina|macaroni)\b", lo):
+    elif re.search(r"\b(wheat|oats?|barley|rye|maize|indian\s*corn|corn\b|flour|meal\b|oatmeal|cornmeal|semolina|biscuits?|bread|grains?|cereals?|malt\b|buckwheat|rice\b|sago|tapioca|arrowroot|farina|macaroni|groats?)\b", lo):
         grp = "grp_cereals_grains"
-    elif re.search(r"\b(fruits?|apples?|pears?|plums?|prunes?|cherries|peaches|cranberries|berries|grapes?|raisins?|currants?|figs?|dates?|oranges?|lemons?|limes?|bananas?|pineapples?|almonds?|chestnuts?|filberts?|hazelnuts?|coconuts?|cocoa[\s-]*nuts?|vegetables?|potatoes?|onions?|turnips?|cabbages?|tomatoes?|hops?)\b", lo) or (re.search(r"\bwalnuts?\b", lo) and not re.search(r"\b(timber|wood|lumber)\b", lo)):
+    elif re.search(r"\b(fruits?|apples?|pears?|plums?|prunes?|cherries|peaches|cranberries|berries|grapes?|raisins?|currants?|figs?|dates?|oranges?|lemons?|limes?|bananas?|pineapples?|almonds?|chestnuts?|filberts?|hazelnuts?|coconuts?|cocoa[\s-]*nuts?|tamarinds?|nuts?\s+and\s+kernels?|small\s+nuts?|vegetables?|potatoes?|onions?|turnips?|cabbages?|tomatoes?|hops?)\b", lo) or (re.search(r"\bwalnuts?\b", lo) and not re.search(r"\b(timber|wood|lumber)\b", lo)):
         grp = "grp_fruits_nuts_vegetables"
     elif re.search(r"\b(staves?|hoops?|shooks?|headings?|masts?|spars?|oars?|handspikes?|knees|futtocks?|sleepers?|railway\s*ties?|railroad\s*ties?|pit\s*wood|pit\s*props?)\b", lo):
         grp = "grp_cooperage_ship_timber"
@@ -1065,29 +1135,29 @@ def classify_v4(raw: str, head: str):
         grp = "grp_sawn_lumber"
     elif re.search(r"\b(timber|saw\s*logs?|logs?\b|billets?|other\s+woods?|wood\b|oak\b|pine\b|elm\b|birch\b|maple\b|walnut\b|fir\b|spruce\b|cedar\b|hemlock\b|tamarack?|basswood|butternut|hickory|beech\b|poplar|mahogany|teak\b|rosewood|ebony|boxwood|lignum\s*vitae)\b", lo) and not re.search(r"\b(manufactures?|furniture|household|ash\b)\b", lo):
         grp = "grp_hewn_round_timber"
-    elif re.search(r"\b(indigo|madder|garancine|cochineal|logwood|fustic|quercitron|annatto|turmeric|safflower|orch[ai]l|cudbear|woad|dye\s*stuffs?|dyestuffs?|dye\s*woods?|dyewoods?|dyes?\b|coal\s*tar\s*dyes?|paints?|colours?|blue\b)\b", lo):
+    elif re.search(r"\b(indigo|madder|garancine|cochineal|logwood|fustic|quercitron|annatto|turmeric|safflower|orch[ai]l|cudbear|woad|ultramarine|aniline|smalts?|dye\s*stuffs?|dyestuffs?|dye\s*woods?|dyewoods?|dyes?\b|coal\s*tar\s*dyes?|paints?|colours?|blue\b)\b", lo):
         grp = "grp_natural_dyestuffs"
     elif re.search(r"\b(cinchona|peruvian\s*bark|quinine|opium|castor\b|castoreum|manna|senna|rhubarb|jalap|ipecacuanha|sarsaparilla|liquorice|licorice|aloe|aloes|drugs?\b|medicines?|medicinal|leeches)\b", lo):
         grp = "grp_drugs_medicinal_botanicals"
     elif re.search(r"\b(gum\b|gums\b|resin|rosin|turpentine|tar\b|pitch\b|balsam|camphor|shellac|lac\b|myrrh|frankincense)\b", lo):
         grp = "grp_gums_resins_naval_stores"
-    elif re.search(r"\b(potash|pot\s*ash|pearl\s*ash|ashes?\b|soda\b|barilla|kelp|alkali|saltpetre|nitre|nitrate|brimstone|sulphur|sulfur|alum\b|borax|arsenic|vitriol|copperas|acid\b|ammonia|bleaching|chloride|carbonate|sulphate|sulfate|bicarbonate|caustic|chemical|gunpowder)\b", lo):
+    elif re.search(r"\b(potash|pot\s*ash|pearl\s*ash|ashes?\b|soda\b|barilla|kelp|alkali|saltpetre|nitre|nitrate|brimstone|sulphur|sulfur|alum\b|borax|arsenic|vitriol|copperas|acid\b|ammonia|bleaching|chloride|carbonate|sulphate|sulfate|bicarbonate|caustic|chemical|gunpowder|explosives?|fulminates?)\b", lo):
         grp = "grp_industrial_chemicals_alkalis"
     elif re.search(r"\b(horses?|mares?|geldings?|stallions?|colts?|mules?|asses?)\b", lo):
         grp = "grp_draft_animals"
-    elif re.search(r"\b(cattle|oxen|bulls?|cows?|calves?|steers?|heifers?|sheep|lambs?|swine|hogs?|pigs?|poultry|fowls?|turkeys?|geese|ducks?|animals?\s+living|live\s+animals?)\b", lo):
+    elif re.search(r"\b(cattle|oxen|bulls?|cows?|calves?|steers?|heifers?|sheep|lambs?|swine|hogs?|pigs?|poultry|fowls?|turkeys?|geese|ducks?|animals?\s+living|live\s+animals?|animals?\s+unenumerated)\b", lo):
         grp = "grp_live_food_animals"
     elif re.search(r"\b(coal\b|coals\b|coke\b|cinders?|peat\b|petroleum|kerosene|naphtha|asphalt|bitumen|mineral\s*oil)\b", lo):
         grp = "grp_fossil_fuels_mineral_oils"
     elif re.search(r"\b(ore\b|ores\b|pyrites|gold[\s-]*bearing\s*quartz)\b", lo):
         grp = "grp_metallic_ores"
-    elif re.search(r"\b(machinery|machine|hardware|bolts?\s+and\s+nuts?|nails?|stoves?|anchors?|wire|cutlery|tools?|sewing\s*machines?|carriages?|vehicles?|cycles?|bicycles?|steam\s*engines?|agricultural\s*implements?|clocks?|watches?|castings?|firearms?|arms\b|ammunition|shot\b|ships?\b|boats?|iron\s+manufactures|steel\s+manufactures|copper\s+manufactures|metal\s+manufactures)\b", lo):
+    elif re.search(r"\b(machinery|machine|hardware|bolts?\s+and\s+nuts?|nails?|stoves?|anchors?|wire|cutlery|tools?|sewing\s*machines?|carriages?|carts?|vehicles?|cycles?|bicycles?|steam\s*engines?|agricultural\s*implements?|clocks?|watches?|castings?|firearms?|muskets?|rifles?|pistols?|lamps?|lanterns?|arms\b|ammunition|shot\b|ships?\b|boats?|iron\s+manufactures|steel\s+manufactures|copper\s+manufactures|metal\s+manufactures)\b", lo):
         grp = "grp_metal_machinery_hardware"
-    elif re.search(r"\b(paper\b|books?|stationery|prints?|pictures?|glass|glassware|earthenware|chinaware|porcelain|pottery|bricks?|tiles?|cement|furniture|wood\s+manufactures|toys?|matches?|beads?|bugles?|musical\s*instruments?|type\b|curios?|buttons?|umbrellas?|brooms?|brushes?|baskets?|trunks?|starch|glue|varnish|leather\s+manufactures|caoutchouc\s+manufactures|gutta[\s-]*percha\s+manufactures|manufactures?\b|manufactured)\b", lo) and not re.search(r"\b(unmanufactured|re-?manufactur)", lo):
+    elif re.search(r"\b(paper\b|wallpaper|books?|maps?\s+and\s+charts?|stationery|prints?|pictures?|glass|glassware|earthenware|chinaware|porcelain|pottery|bricks?|tiles?|cement|furniture|wood\s+manufactures|boxes\b|mats?\b|matting|flowers?\s+artificial|toys?|matches?|beads?|bugles?|musical\s*instruments?|type\b|curios?|buttons?|umbrellas?|brooms?|brushes?|baskets?|trunks?|starch|glue|varnish|leather\s+manufactures|caoutchouc\s+manufactures|gutta[\s-]*percha\s+manufactures|manufactures?\b|manufactured)\b", lo) and not re.search(r"\b(unmanufactured|re-?manufactur)", lo):
         grp = "grp_glass_ceramics_paper_woodware"
     elif re.search(r"\b(iron\b|steel\b|copper\b|tin\b|lead\b|zinc\b|spelter|quicksilver|mercury|silver\b|gold\b|platinum|antimony|manganese|cobalt|nickel|brass|bronze|pewter|bullion|specie|metals?)\b", lo):
         grp = "grp_metals_semi_finished"
-    elif re.search(r"\b(salt\b|plumbago|graphite|clay\b|gypsum|plaster|lime\b|limestone|chalk|slate|marble|granite|stone\b|stones\b|sand\b|gravel|mica\b|asbestos|quartz|minerals?|precious\s*stones?|diamonds?)\b", lo):
+    elif re.search(r"\b(salt\b|plumbago|graphite|clay\b|gypsum|plaster|lime\b|limestone|chalk|slate|marble|granite|grindstones?|stone\b|stones\b|sand\b|gravel|mica\b|asbestos|quartz|minerals?|precious\s*stones?|diamonds?)\b", lo):
         grp = "grp_industrial_minerals"
 
     _, sector, domain = GROUPS[grp]
@@ -1456,7 +1526,7 @@ def main():
                 r"^(?:see\s+|the\s+duties\s+on|by\s+\d+\s+geo|an\s+act\s+|stat\.|duties\s+on\s+|import\s+duty)|"
                 r"\b(barque|square\s+sterned\s+ship|clapper\s+of\s+a\s+bell|american\s+term\s+for\s+a\s+note\s+or\s+draft|"
                 r"vegetable\s+ivory|phytelephas|raised\s+from\s+the\s+pit|eatty|schminke|face[\s-]*paint|cosmetic|"
-                r"founding\s+process|for\s+raising\s+ore|charred\s+or\s+burnt\s+wood)\b",
+                r"founding\s+process|for\s+raising\s+ore|charred\s+or\s+burnt\s+wood|lobelia\s+inflata|indian\s+tobacco|per\s+proof\s+gallon|the\s+art\s+of\s+founding|process\s+of\s+pouring\s+liquid\s+metal)\b",
                 re.I,
             )
             good_def = None
@@ -1537,10 +1607,12 @@ def main():
             matched_prod = None
             for ppat, pterm in [
                 (r"\bscientific\s+instruments?\b", "scientific instrument"),
-                (r"\belectric(?:al)?\s+(?:wires?|cables?)\b", "electrical cable"),
+                (r"\b(electric(?:al)?\s+(?:wires?|cables?)|(?:telegraph|telephone)(?:\s+and\s+telephone)?\s+cables?)\b", "electrical cable"),
                 (r"\bcannon\b.*\bcarriage|\bgun\s*carriage", "gun carriage"),
                 (r"\bcannon\b", "cannon"),
                 (r"\b(boots?|shoes?|footwear)\b", "footwear"),
+                (r"\b(hats?|bonnets?)\b", "hat"),
+                (r"\bcarpets?\b", "carpet"),
                 (r"\bgloves?\b", "glove"),
                 (r"\b(stockings?|socks?)\b", "stocking"),
                 (r"\b(corsets?|stays\s+or\s+corsets?)\b", "corset"),
@@ -1552,13 +1624,16 @@ def main():
                 (r"\bnails?\b", "nail"),
                 (r"\banchors?\b", "anchor"),
                 (r"\bbolts?\s+and\s+nuts?\b", "fastener"),
-                (r"\b(cordage|ropes?|cables?)\b", "rope"),
-                (r"\btwine\b", "twine"),
+                (r"\b(piece\s*goods|cloth|fabrics?|(cotton|silk|wooll?en|linen|jute)\s+manufactures|wooll?en\b)\b", "textile"),
+                (r"(?<!other than )\b(cordage|ropes?|cables?)\b", "rope"),
+                (r"(?<!other than cordage )\btwine\b", "twine"),
                 (r"\b(clothing|apparel)\b", "clothing"),
                 (r"\byarns?\b", "yarn"),
-                (r"\b(piece\s*goods|cloth|fabrics?|(cotton|silk|wooll?en|linen)\s+manufactures)\b", "textile"),
                 (r"\bfurniture\b", "furniture"),
                 (r"\bcarriages?\b", "carriage"),
+                (r"\bcarts?\b", "cart"),
+                (r"\bships?\b", "ship"),
+                (r"\bagricultural\s+implements?\b", "agricultural machinery"),
                 (r"\bmachinery\b", "machine"),
                 (r"\bhardware\b", "household hardware"),
                 (r"\bsewing\s*machines?\b", "sewing machine"),
@@ -1567,7 +1642,9 @@ def main():
                 (r"\bwatches?\b", "watch"),
                 (r"\btoys?\b", "toy"),
                 (r"\bbooks?\b", "book"),
-                (r"\bpaper\b", "paper"),
+                (r"\bstationery\b", "stationery"),
+                (r"(?<!other than )\bpaper\b", "paper"),
+                (r"\bmats?\b|\bmatting\b", "mat"),
                 (r"\bglass\b", "glass"),
                 (r"\b(earthenware|pottery)\b", "earthenware"),
                 (r"\b(chinaware|porcelain)\b", "porcelain"),
@@ -1665,7 +1742,7 @@ def main():
         if grp in ("grp_metal_machinery_hardware", "grp_glass_ceramics_paper_woodware", "grp_yarns_cordage", "grp_woven_fabrics_apparel", "grp_metallic_ores") or pstate == "manufactured" or "rag" in k_raw:
             mats, seen_m = [], set()
             for pat, mterm in MATERIAL_DETECT:
-                if re.search(pat, k_raw) and not re.search(r"\b(?:not\s+(?:of|with)|other\s+than)\s+(?:[a-z]+\s+){0,2}" + re.escape(mterm), k_raw):
+                if re.search(pat, k_raw) and not re.search(r"\b(?:not\s+(?:of|with|being(?:\s+of)?)|other\s+than)\s+(?:[a-z]+\s+){0,4}" + re.escape(mterm), k_raw):
                     mh = material_qids.get(mterm)
                     if mh and mh["qid"] not in seen_m:
                         mats.append(mh); seen_m.add(mh["qid"])
@@ -1890,10 +1967,11 @@ def main():
             cands = [
                 c for c in concepts
                 if (c.get("wikidata_anchor") or {}).get("qid") == mq
-                and c["ontology"]["group_id"] not in ("htc:grp_metal_machinery_hardware", "htc:grp_glass_ceramics_paper_woodware", "htc:grp_metallic_ores")
+                and c["ontology"]["group_id"] not in ("htc:grp_metal_machinery_hardware", "htc:grp_glass_ceramics_paper_woodware", "htc:grp_metallic_ores", "htc:grp_cooperage_ship_timber")
+                and "waste" not in c["skos_prefLabel"].lower()
             ]
             if cands:
-                cands.sort(key=lambda x: (len(x["skos_prefLabel"]), -x["total_rows"]))
+                cands.sort(key=lambda x: (not x["skos_prefLabel"].lower().startswith(mterm), -x["total_rows"]))
                 base_by_qid[mq] = cands[0]["concept_id"]
 
     for c in concepts:

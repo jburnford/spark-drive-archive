@@ -19,14 +19,14 @@ All QIDs strictly read from verified local authorities (`ceylon/spine`, `empire-
 - **Year-aware Empire Evolution `IN_POLITY` links:** **1,067** `(place, year)` pairs in `place_year_polities.tsv`.
 
 ## 2. 4-Tier Archival Commodity SKOS v4 Ontology (`2,066` Persistent `htc:` Concepts)
-- **Hierarchy:** `htc:scheme` → **9 Macro-Sectors** (`skos:hasTopConcept`) → **44 Mid-Level Commodity Groups** (e.g., *Stimulant Beverages & Infusions* uniting Tea/Coffee/Cocoa; *Latexes & Elastic Gums* uniting Caoutchouc/India Rubber/Gutta Percha; *Animal Fats, Tallow, Stearine & Lard*) → **163 S14-safe Substance Groups** (`htc:sub_*`) → **2,066 Verbatim Customs Concepts**.
-- **6-Dictionary Historical Enrichment (Post-Opus v4 P0/P1 Remediation):**
+- **Hierarchy:** `htc:scheme` → **9 Macro-Sectors** (`skos:hasTopConcept`) → **44 Mid-Level Commodity Groups** → **181 S14-safe Substance Groups** (`htc:sub_*`) → **2,066 Verbatim Customs Concepts** (residuals cut to **3.08%** / 4,697 rows).
+- **6-Dictionary Historical Enrichment & Multi-Sector Audit (Opus 5.5 Verdict: ✅ PUBLISHABLE — `OPUS_SKOS_REVIEW_V5.md`):**
   - **`skos:definition` + clickable `oe:dictionarySource`:** **447** concepts (sense-filtered, zero `"See X"` stubs or homonym mismatches)
-  - **`skos:altLabel` (unambiguous common & archaic synonyms, e.g., `rubber`, `natural rubber`, `gum-elastic`, `graphite`):** **67** concepts
-  - **Bidirectional `skos:related` (vetted curated & compound pairs only — zero bogus cross-refs):** **54** concepts
-  - **Merged customs headings (`oe:combinesConcept`, e.g., `Tallow and Stearine` → `Tallow` + `Stearine`):** **11** concepts
-  - **Wikidata Grounding:** **1,247** concepts / **118,184** rows (**77.4%**, or **79.2%** with explicit customs residuals)
-  - **Verified Linnaean `oe:sourceTaxon`:** **208** concepts | **SSSOM mappings:** **3,321** rows (`commodities_mappings.sssom.tsv`)
+  - **`skos:altLabel` (unambiguous common & archaic synonyms):** **69** concepts
+  - **Bidirectional `skos:related` (vetted curated, compound & cross-stage pairs — 0 S27 overlaps):** **273** concepts
+  - **Merged customs headings (`oe:combinesConcept`):** **11** concepts | **Cross-stage base-material links (`oe:materialConcept`):** active across metals, fibres, leather, and wood
+  - **Wikidata Grounding:** **1,421** concepts / **131,256** rows (**86.0%**, or **87.8%** with explicit customs residuals; **0 homonyms** across all 1,421 anchors)
+  - **Verified Linnaean `oe:sourceTaxon`:** **233** concepts | **SSSOM mappings:** **3,707** rows (`commodities_mappings.sssom.tsv`)
 
 | Mapping Relation (Layer B — Positive-Allowlisted Non-Taxon Commodity Anchors) | Concepts | Layer-1 Rows | Row Share |
 | --- | ---: | ---: | ---: |
