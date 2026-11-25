@@ -82,7 +82,10 @@ prefs = Counter()
 for n in graph:
     pl = n.get("skos:prefLabel")
     if isinstance(pl, dict):
-        prefs[pl["@value"].lower()] += 1
+        # S14 is per concept scheme: htc: and the htc1866: bridge scheme may legitimately share a label
+        sch = n.get("skos:inScheme")
+        sch = sch.get("@id") if isinstance(sch, dict) else str(sch)
+        prefs[(sch, pl["@value"].lower())] += 1
 s14_dups = {k: v for k, v in prefs.items() if v > 1}
 
 # S13 prefLabel == altLabel on same concept
@@ -106,4 +109,4 @@ print(f"  Cat 3 untagged rdfs:label:     {len(untagged_label)} {untagged_label[:
 print(f"  Cat 10 dangling local URIs:    {len(dangling)} {sorted(dangling)[:10]}")
 print(f"  Cat 11 blank nodes in TTL:     {len(bnode_hits)}")
 print(f"  SKOS S13 pref==alt clashes:    {len(s13_hits)} {s13_hits[:5]}")
-print(f"  SKOS S14 duplicate prefLabels: {len(s14_dups)} {list(s14_dups.items())[:5]}")
+print(f"  Repeated prefLabels within a scheme (editorial policy; not SKOS S14, which is per resource): {len(s14_dups)} {list(s14_dups.items())[:5]}")

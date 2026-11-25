@@ -71,6 +71,9 @@ CANON_FIELDS = [
 ]
 
 
+PLAUSIBLE_YEARS = (1600, 1950)
+
+
 def parse_year_field(raw: str):
     s = (raw or "").strip()
     if s.endswith(".0"):
@@ -80,11 +83,17 @@ def parse_year_field(raw: str):
         y1 = int(m_span.group(1))
         y2s = m_span.group(2)
         y2 = int(y2s) if len(y2s) == 4 else int(str(y1)[:2] + y2s)
-        return s, y1, y2, "fiscal_or_span"
+        if PLAUSIBLE_YEARS[0] <= y1 <= PLAUSIBLE_YEARS[1] and y1 <= y2 <= PLAUSIBLE_YEARS[1]:
+            return s, y1, y2, "fiscal_or_span"
+        return s, "", "", "unparsed"
     m_single = re.fullmatch(r"(\d{4})", s)
     if m_single:
         y = int(m_single.group(1))
-        return s, y, y, "calendar_year"
+        # A four-digit value outside the corpus period is a shifted cell (e.g. the quantity 2449 or 9601
+        # repeated in the year column), not a year: keep the printed value, derive no date from it.
+        if PLAUSIBLE_YEARS[0] <= y <= PLAUSIBLE_YEARS[1]:
+            return s, y, y, "calendar_year"
+        return s, "", "", "unparsed"
     return s, "", "", "unparsed"
 
 
@@ -106,7 +115,7 @@ def classify_row(origin: str, dest: str, commodity: str, year_s: str, year_start
     if not year_s:
         flags.append("missing_year")
     elif not year_start:
-        flags.append("non_numeric_year")
+        flags.append("implausible_year" if re.fullmatch(r"\d{4}(?:\.0)?", year_s.strip()) else "non_numeric_year")
         if year_s.strip().lower() == "mille":
             flags.append("unit_in_year_col")
     if not commodity:

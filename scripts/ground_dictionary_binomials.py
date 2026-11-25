@@ -63,7 +63,7 @@ def main():
     FROM '{WD_SLIM_GLOB}'
     WHERE lower(label_en) IN (SELECT b FROM want)
       AND list_contains(instance_of, 'Q16521')
-    ORDER BY lkey, sitelinks DESC
+    ORDER BY lkey, sitelinks DESC, length(qid), qid
     """
     rows = con.execute(sql).fetchall()
     wd_by_b = {}

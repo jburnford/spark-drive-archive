@@ -2,7 +2,7 @@
 
 - **Canonical file:** `/home/jic823/Documents/open_empire/human_trade/layer1_human/human_trade_observations.tsv.gz`
 - **Total Layer-1 records:** **153,579** (`tc_2021_full_database.csv`: 144,742; `British Imports Database 1910-1940.xlsx`: +8,837 unique, 75 exact overlaps skipped, 1,039,663 blank rows skipped)
-- **Row kinds:** {'malformed_year': 40, 'origin_detail': 117030, 'export_total': 26784, 'import_total': 8892, 'incomplete': 151, 'blank': 168, 'qa_check_row': 514}
+- **Row kinds:** {'malformed_year': 42, 'origin_detail': 117028, 'export_total': 26784, 'import_total': 8892, 'incomplete': 151, 'blank': 168, 'qa_check_row': 514}
 - **Unique printed places (origin + destination, excl. World/Total):** **499**
 - **Unique printed commodities:** **2,066**
 - **Unique printed unit pairs:** **336**

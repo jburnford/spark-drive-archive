@@ -13,14 +13,14 @@ htc:0001	Wheat	skos:closeMatch	stw:14098-1		semapv:MappingChaining	build_skos_v4
 htc:0002	Butter	skos:exactMatch	wd:Q34172	butter	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=butter
 htc:0002	Butter	skos:closeMatch	agrovoc:c_1162		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
 htc:0002	Butter	skos:closeMatch	aat:300389819		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:0003	Oats	skos:broadMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=cereal
+htc:0003	Oats	skos:exactMatch	wd:Q24265484	oats	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=oats
 htc:0004	Planks and Boards	skos:relatedMatch	wd:Q354757	lumber	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	compound; via=lumber
 htc:0004	Planks and Boards	skos:relatedMatch	stw:14794-2		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0005	Horses	skos:broadMatch	wd:Q103459	livestock	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=livestock
 htc:0005	Horses	skos:broadMatch	agrovoc:c_4397		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
 htc:0005	Horses	skos:broadMatch	stw:14145-4		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
-htc:0006	Peas	skos:broadMatch	wd:Q12034432	legume	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=legume
-htc:0007	Barley	skos:broadMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=cereal
+htc:0006	Peas	skos:closeMatch	wd:Q29472543	pea	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=pea
+htc:0007	Barley	skos:exactMatch	wd:Q61665121	barley	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=barley
 htc:0008	Wheat Meal and Flour	skos:broadMatch	wd:Q2249305	wheat flour	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=wheat flour
 htc:0009	Flour	skos:broadMatch	wd:Q36465	flour	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=flour
 htc:0009	Flour	skos:broadMatch	aat:300389812		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
@@ -31,8 +31,8 @@ htc:0011	Cheese	skos:closeMatch	aat:300390514		semapv:MappingChaining	build_skos
 htc:0012	Seeds Unenumerated Other Sorts	skos:broadMatch	wd:Q40763	seed	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=seed
 htc:0012	Seeds Unenumerated Other Sorts	skos:broadMatch	stw:14079-5		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0012	Seeds Unenumerated Other Sorts	skos:broadMatch	aat:300400469		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:0013	Barley and Rye	skos:relatedMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	compound; via=cereal
-htc:0013	Barley and Rye	skos:relatedMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	compound; via=cereal
+htc:0013	Barley and Rye	skos:relatedMatch	wd:Q61665121	barley	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	compound; via=barley
+htc:0013	Barley and Rye	skos:relatedMatch	wd:Q61670635	rye	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	compound; via=rye
 htc:0014	Eggs	skos:exactMatch	wd:Q93189	egg as food	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=egg as food
 htc:0015	Caoutchouc	skos:exactMatch	wd:Q131877	natural rubber	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=natural rubber
 htc:0015	Caoutchouc	skos:closeMatch	agrovoc:c_6678		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
@@ -110,11 +110,13 @@ htc:0045	Hides or Pieces of - Raw or Undressed Unenumerated	skos:broadMatch	wd:Q
 htc:0045	Hides or Pieces of - Raw or Undressed Unenumerated	skos:broadMatch	agrovoc:c_3609		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
 htc:0045	Hides or Pieces of - Raw or Undressed Unenumerated	skos:broadMatch	stw:14127-6		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0045	Hides or Pieces of - Raw or Undressed Unenumerated	skos:broadMatch	aat:300011844		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:0046	Peas not fresh other than Split Peas	skos:broadMatch	wd:Q12034432	legume	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=legume
-htc:0047	Indian Corn	skos:broadMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=cereal
+htc:0046	Peas not fresh other than Split Peas	skos:broadMatch	wd:Q29472543	pea	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=pea
+htc:0047	Indian Corn	skos:closeMatch	wd:Q25618328	maize	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=maize
+htc:0047	Indian Corn	skos:closeMatch	aat:300011903		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0048	Fruit Green	skos:broadMatch	wd:Q1364	fruit	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=fruit
 htc:0048	Fruit Green	skos:broadMatch	aat:300011868		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:0049	Maize	skos:broadMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=cereal
+htc:0049	Maize	skos:exactMatch	wd:Q25618328	maize	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=maize
+htc:0049	Maize	skos:closeMatch	aat:300011903		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0050	Wool Sheep and Lambs	skos:broadMatch	wd:Q42329	wool	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=wool
 htc:0050	Wool Sheep and Lambs	skos:broadMatch	stw:14130-3		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0050	Wool Sheep and Lambs	skos:broadMatch	aat:300014074		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
@@ -212,7 +214,7 @@ htc:0093	Oars	skos:broadMatch	aat:300213077		semapv:MappingChaining	build_skos_v
 htc:0094	Soap	skos:broadMatch	wd:Q34396	soap	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=soap
 htc:0094	Soap	skos:broadMatch	stw:14738-5		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0094	Soap	skos:broadMatch	aat:300014329		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:0095	Rye	skos:broadMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=cereal
+htc:0095	Rye	skos:exactMatch	wd:Q61670635	rye	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=rye
 htc:0096	Dye Woods Logwood	skos:broadMatch	wd:Q189720	dye	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=dye
 htc:0096	Dye Woods Logwood	skos:broadMatch	aat:300013029		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0097	Honey	skos:exactMatch	wd:Q10987	honey	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=honey
@@ -314,8 +316,6 @@ htc:0137	Timber Elm	skos:broadMatch	aat:300011914		semapv:MappingChaining	build_
 htc:0138	Cocoa	skos:closeMatch	wd:Q208008	cocoa bean	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=cocoa bean
 htc:0138	Cocoa	skos:closeMatch	stw:14065-2		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0139	Wood and Timber Basswood Butternut and Hickory	skos:relatedMatch	wd:Q287	wood	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	compound; via=wood
-htc:0139	Wood and Timber Basswood Butternut and Hickory	skos:relatedMatch	wd:Q287	wood	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	compound; via=wood
-htc:0139	Wood and Timber Basswood Butternut and Hickory	skos:relatedMatch	wd:Q287	wood	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	compound; via=wood
 htc:0139	Wood and Timber Basswood Butternut and Hickory	skos:relatedMatch	agrovoc:c_8421		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
 htc:0139	Wood and Timber Basswood Butternut and Hickory	skos:relatedMatch	stw:14150-4		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0139	Wood and Timber Basswood Butternut and Hickory	skos:relatedMatch	aat:300011914		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
@@ -395,7 +395,7 @@ htc:0170	Tobacco Unmanufactured	skos:broadMatch	wd:Q1566	tobacco	semapv:LexicalM
 htc:0170	Tobacco Unmanufactured	skos:broadMatch	stw:14082-2		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0170	Tobacco Unmanufactured	skos:broadMatch	aat:300011896		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0171	Beans and Peas	skos:relatedMatch	wd:Q379813	bean	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	compound; via=bean
-htc:0171	Beans and Peas	skos:relatedMatch	wd:Q12034432	legume	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	compound; via=legume
+htc:0171	Beans and Peas	skos:relatedMatch	wd:Q29472543	pea	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	compound; via=pea
 htc:0171	Beans and Peas	skos:relatedMatch	aat:300011863		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0172	Olive Oil	skos:broadMatch	wd:Q93165	olive oil	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=olive oil
 htc:0172	Olive Oil	skos:broadMatch	agrovoc:c_25491		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
@@ -476,7 +476,8 @@ htc:0206	Cutch and Gambier	skos:relatedMatch	wd:Q19840126	gambier	semapv:Lexical
 htc:0206	Cutch and Gambier	skos:relatedMatch	aat:300013357		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0207	Tar	skos:exactMatch	wd:Q186209	tar	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=tar
 htc:0207	Tar	skos:closeMatch	aat:300012991		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:0208	Indian Corn or Maize	skos:broadMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=cereal
+htc:0208	Indian Corn or Maize	skos:closeMatch	wd:Q25618328	maize	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=maize
+htc:0208	Indian Corn or Maize	skos:closeMatch	aat:300011903		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0209	flour of wheat	skos:broadMatch	wd:Q36465	flour	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=flour
 htc:0209	flour of wheat	skos:broadMatch	aat:300389812		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0210	Lumber Unenumerated	skos:broadMatch	wd:Q354757	lumber	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=lumber
@@ -764,7 +765,7 @@ htc:0335	Wood and Timber Firewood	skos:broadMatch	wd:Q287	wood	semapv:LexicalMat
 htc:0335	Wood and Timber Firewood	skos:broadMatch	agrovoc:c_8421		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
 htc:0335	Wood and Timber Firewood	skos:broadMatch	stw:14150-4		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0335	Wood and Timber Firewood	skos:broadMatch	aat:300011914		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:0336	Oats Other Sorts including Groats and Rolled Oats	skos:broadMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=cereal
+htc:0336	Oats Other Sorts including Groats and Rolled Oats	skos:broadMatch	wd:Q24265484	oats	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=oats
 htc:0340	Hats and Caps	skos:broadMatch	wd:Q80151	hat	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=manufactured_product_class; via=hat
 htc:0340	Hats and Caps	skos:broadMatch	aat:300046106		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0341	Beef Salted	skos:broadMatch	wd:Q192628	beef	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=beef
@@ -1042,7 +1043,7 @@ htc:0472	Furs manufactured	skos:broadMatch	stw:14916-0		semapv:MappingChaining	b
 htc:0472	Furs manufactured	skos:broadMatch	aat:300011811		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0473	Rags Woollen applicable to other uses than Manure torn up or not	skos:broadMatch	wd:Q1567420	rag	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=rag_guard; via=rag
 htc:0474	Figs	skos:exactMatch	wd:Q2746643	fig	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=fig
-htc:0477	Peas Whole	skos:broadMatch	wd:Q12034432	legume	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=legume
+htc:0477	Peas Whole	skos:broadMatch	wd:Q29472543	pea	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=pea
 htc:0479	Timber Handspikes under 7ft in length	skos:broadMatch	wd:Q287	wood	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=wood
 htc:0479	Timber Handspikes under 7ft in length	skos:broadMatch	agrovoc:c_8421		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
 htc:0479	Timber Handspikes under 7ft in length	skos:broadMatch	stw:14150-4		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
@@ -1051,7 +1052,7 @@ htc:0480	Cotton Manufactures Piece Goods Printed	skos:broadMatch	wd:Q28823	texti
 htc:0480	Cotton Manufactures Piece Goods Printed	skos:broadMatch	stw:14846-2		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0480	Cotton Manufactures Piece Goods Printed	skos:broadMatch	aat:300231565		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0480	Cotton Manufactures Piece Goods Printed	skos:broadMatch	aat:300014063		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:0481	Barley Pot and Pearl	skos:broadMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=cereal
+htc:0481	Barley Pot and Pearl	skos:broadMatch	wd:Q61665121	barley	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=barley
 htc:0482	Wine Rhenish	skos:broadMatch	wd:Q282	wine	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=wine
 htc:0482	Wine Rhenish	skos:broadMatch	stw:14985-2		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0482	Wine Rhenish	skos:broadMatch	aat:300379442		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
@@ -1440,7 +1441,7 @@ htc:0664	Rags Woollen	skos:broadMatch	wd:Q1567420	rag	semapv:LexicalMatching	bui
 htc:0665	Iron Steel Unwrought	skos:broadMatch	wd:Q677	iron	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=iron
 htc:0665	Iron Steel Unwrought	skos:broadMatch	stw:14281-3		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0665	Iron Steel Unwrought	skos:broadMatch	aat:300011002		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:0667	Peas Split	skos:broadMatch	wd:Q12034432	legume	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=legume
+htc:0667	Peas Split	skos:broadMatch	wd:Q29472543	pea	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=pea
 htc:0668	Vegetables Canned or Preserved	skos:broadMatch	wd:Q11004	vegetable	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=vegetable
 htc:0668	Vegetables Canned or Preserved	skos:broadMatch	stw:14105-2		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0669	Books Unbound	skos:broadMatch	wd:Q571	book	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=manufactured_product_class; via=book
@@ -2642,7 +2643,8 @@ htc:1370	Poultry and Game alive or dead Poultry	skos:broadMatch	stw:14135-0		sem
 htc:1370	Poultry and Game alive or dead Poultry	skos:broadMatch	aat:300250036		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:1372	Joists	skos:closeMatch	wd:Q6587065	joist	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=curated_override; via=joist
 htc:1372	Joists	skos:closeMatch	aat:300001544		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:1373	Maize Other Sorts	skos:broadMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=cereal
+htc:1373	Maize Other Sorts	skos:broadMatch	wd:Q25618328	maize	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=maize
+htc:1373	Maize Other Sorts	skos:broadMatch	aat:300011903		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:1374	Anchovies	skos:exactMatch	wd:Q4589261	anchovy	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=lexical_allowlisted; via=anchovy
 htc:1375	Gum Senegal	skos:broadMatch	wd:Q903081	natural gum	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=natural gum
 htc:1376	Silk Waste	skos:broadMatch	wd:Q37681	silk	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=silk
@@ -2815,7 +2817,8 @@ htc:1473	Paper Strawboard	skos:broadMatch	aat:300014109		semapv:MappingChaining	
 htc:1475	Leather Undressed Goat Skins	skos:broadMatch	wd:Q286	leather	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=leather
 htc:1475	Leather Undressed Goat Skins	skos:broadMatch	stw:14829-2		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:1475	Leather Undressed Goat Skins	skos:broadMatch	aat:300011845		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:1476	Indian Corn Canned	skos:broadMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=cereal
+htc:1476	Indian Corn Canned	skos:broadMatch	wd:Q25618328	maize	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=maize
+htc:1476	Indian Corn Canned	skos:broadMatch	aat:300011903		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:1479	Almonds Jordan	skos:broadMatch	wd:Q184357	almond	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=almond
 htc:1479	Almonds Jordan	skos:broadMatch	agrovoc:c_8734		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
 htc:1479	Almonds Jordan	skos:broadMatch	aat:300404293		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
@@ -3058,7 +3061,7 @@ htc:1628	Lentils	skos:exactMatch	wd:Q61505177	lentil	semapv:LexicalMatching	buil
 htc:1631	Parts of Musical Instruments	skos:broadMatch	wd:Q34379	musical instrument	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=manufactured_product_class; via=musical instrument
 htc:1631	Parts of Musical Instruments	skos:broadMatch	stw:14573-4		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:1631	Parts of Musical Instruments	skos:broadMatch	aat:300041620		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:1632	Peas not fresh Split	skos:broadMatch	wd:Q12034432	legume	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=legume
+htc:1632	Peas not fresh Split	skos:broadMatch	wd:Q29472543	pea	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=pea
 htc:1633	Petroleum Lamp Oils	skos:broadMatch	wd:Q22656	petroleum	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=petroleum
 htc:1633	Petroleum Lamp Oils	skos:broadMatch	stw:14197-6		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:1633	Petroleum Lamp Oils	skos:broadMatch	aat:300013001		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
@@ -3404,7 +3407,8 @@ htc:1822	Stone Wrought	skos:broadMatch	aat:300011176		semapv:MappingChaining	bui
 htc:1823	Furs and skins of marine animal	skos:broadMatch	wd:Q197204	fur	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=fur
 htc:1823	Furs and skins of marine animal	skos:broadMatch	stw:14916-0		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:1823	Furs and skins of marine animal	skos:broadMatch	aat:300011811		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
-htc:1824	Maize Flat white	skos:broadMatch	wd:Q12117	cereal	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=cereal
+htc:1824	Maize Flat white	skos:broadMatch	wd:Q25618328	maize	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=maize
+htc:1824	Maize Flat white	skos:broadMatch	aat:300011903		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:1825	Arsenic	skos:exactMatch	wd:Q871	arsenic	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=arsenic
 htc:1827	Beads Coral	skos:broadMatch	wd:Q1053956	bead	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=bead
 htc:1827	Beads Coral	skos:broadMatch	aat:300234006		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed

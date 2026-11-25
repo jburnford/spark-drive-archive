@@ -2,48 +2,49 @@
 {"binomial": "Sorghum vulgare", "dict_mentions": 13, "qid": "Q119167789", "taxon_name": "Sorghum vulgare", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Butea frondosa", "dict_mentions": 12, "qid": "Q87613622", "taxon_name": "Butea frondosa", "description": "type of flowering tree", "col_id": "", "col_accepted": ""}
 {"binomial": "Acacia arabica", "dict_mentions": 10, "qid": "Q15289503", "taxon_name": "Acacia arabica", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Cannabis sativa", "dict_mentions": 10, "qid": "Q26726", "taxon_name": "Cannabis sativa", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Sesamum orientale", "dict_mentions": 10, "qid": "Q17813478", "taxon_name": "Sesamum orientale", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Abrus precatorius", "dict_mentions": 9, "qid": "Q190887", "taxon_name": "Abrus precatorius", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Shorea robusta", "dict_mentions": 9, "qid": "Q909828", "taxon_name": "Shorea robusta", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Sesamum orientale", "dict_mentions": 9, "qid": "Q17813478", "taxon_name": "Sesamum orientale", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Arenga saccharifera", "dict_mentions": 8, "qid": "Q50826618", "taxon_name": "Arenga saccharifera", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Cannabis sativa", "dict_mentions": 8, "qid": "Q26726", "taxon_name": "Cannabis sativa", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Cicer arietinum", "dict_mentions": 8, "qid": "Q81375", "taxon_name": "cicer arietinum", "description": "species of legume plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Prunus domestica", "dict_mentions": 8, "qid": "Q44120", "taxon_name": "Prunus domestica", "description": "species of plant in the rose family (Rosaceae)", "col_id": "", "col_accepted": ""}
 {"binomial": "Acer saccharinum", "dict_mentions": 7, "qid": "Q158301", "taxon_name": "Acer saccharinum", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Cicer arietinum", "dict_mentions": 7, "qid": "Q81375", "taxon_name": "cicer arietinum", "description": "species of legume plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cocos nucifera", "dict_mentions": 7, "qid": "Q13187", "taxon_name": "Cocos nucifera", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Prunus domestica", "dict_mentions": 7, "qid": "Q44120", "taxon_name": "Prunus domestica", "description": "species of plant in the rose family (Rosaceae)", "col_id": "", "col_accepted": ""}
 {"binomial": "Crotalaria juncea", "dict_mentions": 7, "qid": "Q2855436", "taxon_name": "Crotalaria juncea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Bassia latifolia", "dict_mentions": 7, "qid": "Q50836772", "taxon_name": "Bassia latifolia", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Pterocarpus santalinus", "dict_mentions": 7, "qid": "Q2392887", "taxon_name": "Pterocarpus santalinus", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Bixa orellana", "dict_mentions": 6, "qid": "Q147701", "taxon_name": "Bixa orellana", "description": "species of South American plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Hibiscus cannabinus", "dict_mentions": 6, "qid": "Q1137540", "taxon_name": "Hibiscus cannabinus", "description": "fibrous plant used for paper pulp", "col_id": "", "col_accepted": ""}
-{"binomial": "Penicillaria spicata", "dict_mentions": 6, "qid": "Q98109079", "taxon_name": "Penicillaria spicata", "description": "", "col_id": "", "col_accepted": ""}
+{"binomial": "Agave americana", "dict_mentions": 6, "qid": "Q161115", "taxon_name": "Agave americana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Musa textilis", "dict_mentions": 6, "qid": "Q161097", "taxon_name": "Musa textilis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Hibiscus esculentus", "dict_mentions": 6, "qid": "Q21874502", "taxon_name": "Hibiscus esculentus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Batatas edulis", "dict_mentions": 6, "qid": "Q98076353", "taxon_name": "Batatas edulis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Solanum melongena", "dict_mentions": 6, "qid": "Q7540", "taxon_name": "Solanum melongena", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Vateria indica", "dict_mentions": 6, "qid": "Q2576684", "taxon_name": "Vateria indica", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Lathyrus sativus", "dict_mentions": 6, "qid": "Q162093", "taxon_name": "Lathyrus sativus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Reseda luteola", "dict_mentions": 6, "qid": "Q157927", "taxon_name": "Reseda luteola", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Panicum italicum", "dict_mentions": 6, "qid": "Q21876090", "taxon_name": "Panicum italicum", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Pterocarpus santalinus", "dict_mentions": 6, "qid": "Q2392887", "taxon_name": "Pterocarpus santalinus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Convolvulus batatas", "dict_mentions": 6, "qid": "Q21872687", "taxon_name": "Convolvulus batatas", "description": "species of morning glory plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Bixa orellana", "dict_mentions": 5, "qid": "Q147701", "taxon_name": "Bixa orellana", "description": "species of South American plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Maranta arundinacea", "dict_mentions": 5, "qid": "Q767103", "taxon_name": "Maranta arundinacea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ricinus communis", "dict_mentions": 5, "qid": "Q155867", "taxon_name": "Ricinus communis", "description": "species of plant, Castor oil plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Agave americana", "dict_mentions": 5, "qid": "Q161115", "taxon_name": "Agave americana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Nipa fruticans", "dict_mentions": 5, "qid": "Q85192860", "taxon_name": "Nipa fruticans", "description": "", "col_id": "", "col_accepted": ""}
+{"binomial": "Penicillaria spicata", "dict_mentions": 5, "qid": "Q98109079", "taxon_name": "Penicillaria spicata", "description": "", "col_id": "", "col_accepted": ""}
 {"binomial": "Bassia butyracea", "dict_mentions": 5, "qid": "Q50829044", "taxon_name": "Bassia butyracea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Theobroma cacao", "dict_mentions": 5, "qid": "Q42385", "taxon_name": "Theobroma cacao", "description": "tree native to tropical South America producing cocoa beans - the source plant of cacao and chocolate", "col_id": "", "col_accepted": ""}
 {"binomial": "Caryota urens", "dict_mentions": 5, "qid": "Q766995", "taxon_name": "Caryota urens", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Lathyrus sativus", "dict_mentions": 5, "qid": "Q162093", "taxon_name": "Lathyrus sativus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Eleusine coracana", "dict_mentions": 5, "qid": "Q932258", "taxon_name": "Eleusine coracana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Nigella sativa", "dict_mentions": 5, "qid": "Q160575", "taxon_name": "Nigella sativa", "description": "species of annual flowering plant in the family Ranunculaceae", "col_id": "", "col_accepted": ""}
+{"binomial": "Calophyllum inophyllum", "dict_mentions": 5, "qid": "Q311471", "taxon_name": "Calophyllum inophyllum", "description": "species of plant living on tropical shores", "col_id": "", "col_accepted": ""}
 {"binomial": "Isatis tinctoria", "dict_mentions": 5, "qid": "Q212547", "taxon_name": "Isatis tinctoria", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Linum usitatissimum", "dict_mentions": 5, "qid": "Q45108", "taxon_name": "Linum usitatissimum", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Rhus cotinus", "dict_mentions": 5, "qid": "Q21877231", "taxon_name": "Rhus cotinus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Phaseolus radiatus", "dict_mentions": 5, "qid": "Q21876210", "taxon_name": "Phaseolus radiatus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Soja hispida", "dict_mentions": 5, "qid": "Q109875156", "taxon_name": "Soja hispida", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Curcuma longa", "dict_mentions": 5, "qid": "Q42562", "taxon_name": "Curcuma longa", "description": "plant used as spice", "col_id": "", "col_accepted": ""}
+{"binomial": "Panicum italicum", "dict_mentions": 5, "qid": "Q21876090", "taxon_name": "Panicum italicum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Mullus barbatus", "dict_mentions": 5, "qid": "Q7171", "taxon_name": "Mullus barbatus", "description": "species of fish", "col_id": "", "col_accepted": ""}
 {"binomial": "Aquilaria agallocha", "dict_mentions": 5, "qid": "Q50827286", "taxon_name": "Aquilaria agallocha", "description": "species of tree native to southeast Asia", "col_id": "", "col_accepted": ""}
 {"binomial": "Vicia sativa", "dict_mentions": 4, "qid": "Q157071", "taxon_name": "Vicia sativa", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ceratonia siliqua", "dict_mentions": 4, "qid": "Q68763", "taxon_name": "Ceratonia siliqua", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Illicium anisatum", "dict_mentions": 4, "qid": "Q27019", "taxon_name": "Illicium anisatum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Helianthus tuberosus", "dict_mentions": 4, "qid": "Q146190", "taxon_name": "Helianthus tuberosus", "description": "species of sunflower native to eastern North America (for the root vegetable use Q55706475)", "col_id": "", "col_accepted": ""}
 {"binomial": "Corylus avellana", "dict_mentions": 4, "qid": "Q124969", "taxon_name": "Corylus avellana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Morinda citrifolia", "dict_mentions": 4, "qid": "Q234238", "taxon_name": "Morinda citrifolia", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -51,6 +52,8 @@
 {"binomial": "Moringa pterygosperma", "dict_mentions": 4, "qid": "Q50844138", "taxon_name": "Moringa pterygosperma", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Areca catechu", "dict_mentions": 4, "qid": "Q156969", "taxon_name": "Areca catechu", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Dryobalanops camphora", "dict_mentions": 4, "qid": "Q111474106", "taxon_name": "Dryobalanops camphora", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Carapa guianensis", "dict_mentions": 4, "qid": "Q309552", "taxon_name": "Carapa guianensis", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Carthamus tinctorius", "dict_mentions": 4, "qid": "Q156625", "taxon_name": "Carthamus tinctorius", "description": "species of plant, safflower", "col_id": "", "col_accepted": ""}
 {"binomial": "Acacia catechu", "dict_mentions": 4, "qid": "Q15535916", "taxon_name": "Acacia catechu", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cedrela toona", "dict_mentions": 4, "qid": "Q50838988", "taxon_name": "Cedrela toona", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Calamus rotang", "dict_mentions": 4, "qid": "Q416369", "taxon_name": "Calamus rotang", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -58,17 +61,15 @@
 {"binomial": "Phytelephas macrocarpa", "dict_mentions": 4, "qid": "Q160336", "taxon_name": "Phytelephas macrocarpa", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Croton tiglium", "dict_mentions": 4, "qid": "Q2089847", "taxon_name": "Croton tiglium", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cucumis sativus", "dict_mentions": 4, "qid": "Q23425", "taxon_name": "Cucumis sativus", "description": "species of plant in the Cucurbitaceae family", "col_id": "", "col_accepted": ""}
-{"binomial": "Andropogon muricatus", "dict_mentions": 4, "qid": "Q50827018", "taxon_name": "Andropogon muricatus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Camelina sativa", "dict_mentions": 4, "qid": "Q163958", "taxon_name": "Camelina sativa", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Calophyllum inophyllum", "dict_mentions": 4, "qid": "Q311471", "taxon_name": "Calophyllum inophyllum", "description": "species of plant living on tropical shores", "col_id": "", "col_accepted": ""}
 {"binomial": "Sambucus nigra", "dict_mentions": 4, "qid": "Q22701", "taxon_name": "Sambucus nigra", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Linum usitatissimum", "dict_mentions": 4, "qid": "Q45108", "taxon_name": "Linum usitatissimum", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Rhus cotinus", "dict_mentions": 4, "qid": "Q21877231", "taxon_name": "Rhus cotinus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Guaiacum officinale", "dict_mentions": 4, "qid": "Q2051175", "taxon_name": "Guaiacum officinale", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cassia fistula", "dict_mentions": 4, "qid": "Q161117", "taxon_name": "Cassia fistula", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Curcuma longa", "dict_mentions": 4, "qid": "Q42562", "taxon_name": "Curcuma longa", "description": "plant used as spice", "col_id": "", "col_accepted": ""}
 {"binomial": "Nardostachys jatamansi", "dict_mentions": 4, "qid": "Q24853263", "taxon_name": "Nardostachys jatamansi", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Sorghum saccharatum", "dict_mentions": 4, "qid": "Q116961345", "taxon_name": "Sorghum saccharatum", "description": "", "col_id": "", "col_accepted": ""}
-{"binomial": "Pandanus odoratissimus", "dict_mentions": 4, "qid": "Q104852123", "taxon_name": "Pandanus odoratissimus", "description": "", "col_id": "", "col_accepted": ""}
+{"binomial": "Pisum sativum", "dict_mentions": 4, "qid": "Q25237", "taxon_name": "Pisum sativum", "description": "species of plant with edible seeds", "col_id": "", "col_accepted": ""}
+{"binomial": "Papaver somniferum", "dict_mentions": 4, "qid": "Q131584", "taxon_name": "Papaver somniferum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pterocarpus marsupium", "dict_mentions": 4, "qid": "Q2385259", "taxon_name": "Pterocarpus marsupium", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Laminaria digitata", "dict_mentions": 4, "qid": "Q1093337", "taxon_name": "Laminaria digitata", "description": "species of alga", "col_id": "", "col_accepted": ""}
 {"binomial": "Chloroxylon swietenia", "dict_mentions": 4, "qid": "Q2229595", "taxon_name": "Chloroxylon swietenia", "description": "species of plants", "col_id": "", "col_accepted": ""}
@@ -79,9 +80,11 @@
 {"binomial": "Calotropis gigantea", "dict_mentions": 3, "qid": "Q525166", "taxon_name": "Calotropis gigantea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Anthemis pyrethrum", "dict_mentions": 3, "qid": "Q21870236", "taxon_name": "Anthemis pyrethrum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Dolichos catjang", "dict_mentions": 3, "qid": "Q109902156", "taxon_name": "Dolichos catjang", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Persea gratissima", "dict_mentions": 3, "qid": "Q50850604", "taxon_name": "Persea gratissima", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Eugenia pimenta", "dict_mentions": 3, "qid": "Q110515420", "taxon_name": "Eugenia pimenta", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Canarium commune", "dict_mentions": 3, "qid": "Q15246728", "taxon_name": "Canarium commune", "description": "species of tree in the family Burseraceae", "col_id": "", "col_accepted": ""}
 {"binomial": "Emblica officinalis", "dict_mentions": 3, "qid": "Q87638460", "taxon_name": "Emblica officinalis", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Illicium anisatum", "dict_mentions": 3, "qid": "Q27019", "taxon_name": "Illicium anisatum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Thuja articulata", "dict_mentions": 3, "qid": "Q17363916", "taxon_name": "Thuja articulata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Terminalia alata", "dict_mentions": 3, "qid": "Q18119920", "taxon_name": "Terminalia alata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ficus religiosa", "dict_mentions": 3, "qid": "Q3071706", "taxon_name": "Ficus religiosa", "description": "species of fig", "col_id": "", "col_accepted": ""}
@@ -94,42 +97,45 @@
 {"binomial": "Platanus occidentalis", "dict_mentions": 3, "qid": "Q157739", "taxon_name": "Platanus occidentalis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Acorus calamus", "dict_mentions": 3, "qid": "Q158008", "taxon_name": "Acorus calamus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Holcus spicatus", "dict_mentions": 3, "qid": "Q50842626", "taxon_name": "Holcus spicatus", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Laurus camphora", "dict_mentions": 3, "qid": "Q21975977", "taxon_name": "Laurus camphora", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Terminalia chebula", "dict_mentions": 3, "qid": "Q3595915", "taxon_name": "Terminalia chebula", "description": "species of flowering plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Carapa guianensis", "dict_mentions": 3, "qid": "Q309552", "taxon_name": "Carapa guianensis", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Carthamus tinctorius", "dict_mentions": 3, "qid": "Q156625", "taxon_name": "Carthamus tinctorius", "description": "species of plant, safflower", "col_id": "", "col_accepted": ""}
+{"binomial": "Genipa americana", "dict_mentions": 3, "qid": "Q1353278", "taxon_name": "Genipa americana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Allium ascalonicum", "dict_mentions": 3, "qid": "Q193498", "taxon_name": "Allium ascalonicum", "description": "botanical variety of the onion species Allium cepa", "col_id": "", "col_accepted": ""}
 {"binomial": "Capsicum annuum", "dict_mentions": 3, "qid": "Q1380", "taxon_name": "Capsicum annuum", "description": "species of the plant genus Capsicum", "col_id": "", "col_accepted": ""}
 {"binomial": "Amaranthus frumentaceus", "dict_mentions": 3, "qid": "Q50827263", "taxon_name": "Amaranthus frumentaceus", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Caryophyllus aromaticus", "dict_mentions": 3, "qid": "Q21872197", "taxon_name": "Caryophyllus aromaticus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Colocasia esculenta", "dict_mentions": 3, "qid": "Q227997", "taxon_name": "Colocasia esculenta", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Wrightia antidysenterica", "dict_mentions": 3, "qid": "Q2248340", "taxon_name": "Wrightia antidysenterica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Dolichos uniflorus", "dict_mentions": 3, "qid": "Q39158643", "taxon_name": "Dolichos uniflorus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Costus arabicus", "dict_mentions": 3, "qid": "Q14568379", "taxon_name": "Costus arabicus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Lepidium sativum", "dict_mentions": 3, "qid": "Q27033", "taxon_name": "Lepidium sativum", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Andropogon muricatus", "dict_mentions": 3, "qid": "Q50827018", "taxon_name": "Andropogon muricatus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pleuronectes limanda", "dict_mentions": 3, "qid": "Q106427808", "taxon_name": "Pleuronectes limanda", "description": "species of fish", "col_id": "", "col_accepted": ""}
-{"binomial": "Cytisus cajan", "dict_mentions": 3, "qid": "Q21873417", "taxon_name": "Cytisus cajan", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Ervum lens", "dict_mentions": 3, "qid": "Q21874210", "taxon_name": "Ervum lens", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Xylopia aromatica", "dict_mentions": 3, "qid": "Q8045504", "taxon_name": "Xylopia aromatica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cervus dama", "dict_mentions": 3, "qid": "Q122181964", "taxon_name": "Cervus dama", "description": "species of mammal", "col_id": "", "col_accepted": ""}
 {"binomial": "Paspalum exile", "dict_mentions": 3, "qid": "Q39547026", "taxon_name": "Paspalum exile", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ulex europaeus", "dict_mentions": 3, "qid": "Q161794", "taxon_name": "Ulex europaeus", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Maclura tinctoria", "dict_mentions": 3, "qid": "Q168042", "taxon_name": "Maclura tinctoria", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Abelmoschus esculentus", "dict_mentions": 3, "qid": "Q80531", "taxon_name": "Abelmoschus esculentus", "description": "species of edible plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Larix americana", "dict_mentions": 3, "qid": "Q50846532", "taxon_name": "Larix americana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Clupea harengus", "dict_mentions": 3, "qid": "Q2396858", "taxon_name": "Clupea harengus", "description": "species of herring in the family Clupeidae", "col_id": "", "col_accepted": ""}
 {"binomial": "Carya alba", "dict_mentions": 3, "qid": "Q15376224", "taxon_name": "Carya alba", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Tectona grandis", "dict_mentions": 3, "qid": "Q156938", "taxon_name": "Tectona grandis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Curcuma zerumbet", "dict_mentions": 3, "qid": "Q111243081", "taxon_name": "Curcuma zerumbet", "description": "plant species", "col_id": "", "col_accepted": ""}
+{"binomial": "Pandanus odoratissimus", "dict_mentions": 3, "qid": "Q104852123", "taxon_name": "Pandanus odoratissimus", "description": "", "col_id": "", "col_accepted": ""}
 {"binomial": "Andrographis paniculata", "dict_mentions": 3, "qid": "Q1551608", "taxon_name": "Andrographis paniculata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Carissa carandas", "dict_mentions": 3, "qid": "Q1036374", "taxon_name": "Carissa carandas", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Lecanora tartarea", "dict_mentions": 3, "qid": "Q20875215", "taxon_name": "Lecanora tartarea", "description": "species of fungi", "col_id": "", "col_accepted": ""}
-{"binomial": "Melia azadirachta", "dict_mentions": 3, "qid": "Q21976318", "taxon_name": "Melia azadirachta", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Phaseolus mungo", "dict_mentions": 3, "qid": "Q39184090", "taxon_name": "Phaseolus mungo", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Abelmoschus moschatus", "dict_mentions": 3, "qid": "Q2086536", "taxon_name": "Abelmoschus moschatus", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Pisum sativum", "dict_mentions": 3, "qid": "Q25237", "taxon_name": "Pisum sativum", "description": "species of plant with edible seeds", "col_id": "", "col_accepted": ""}
-{"binomial": "Papaver somniferum", "dict_mentions": 3, "qid": "Q131584", "taxon_name": "Papaver somniferum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Wrightia tinctoria", "dict_mentions": 3, "qid": "Q8038287", "taxon_name": "Wrightia tinctoria", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pinus pinea", "dict_mentions": 3, "qid": "Q106094", "taxon_name": "Pinus pinea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Phytolacca decandra", "dict_mentions": 3, "qid": "Q2917659", "taxon_name": "Phytolacca decandra", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Thespesia populnea", "dict_mentions": 3, "qid": "Q715739", "taxon_name": "Thespesia populnea", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Typha elephantina", "dict_mentions": 3, "qid": "Q15231386", "taxon_name": "Typha elephantina", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Sapindus emarginatus", "dict_mentions": 3, "qid": "Q22112290", "taxon_name": "Sapindus emarginatus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Crocus sativus", "dict_mentions": 3, "qid": "Q15041677", "taxon_name": "Crocus sativus", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Sapindus saponaria", "dict_mentions": 3, "qid": "Q2672802", "taxon_name": "Sapindus saponaria", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Mimosa abstergens", "dict_mentions": 3, "qid": "Q109905512", "taxon_name": "Mimosa abstergens", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ovis aries", "dict_mentions": 3, "qid": "Q29350771", "taxon_name": "Ovis aries", "description": "species of domesticated mammal", "col_id": "", "col_accepted": ""}
 {"binomial": "Oxalis acetosella", "dict_mentions": 3, "qid": "Q158576", "taxon_name": "Oxalis acetosella", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -140,18 +146,20 @@
 {"binomial": "Citrus nobilis", "dict_mentions": 3, "qid": "Q67192697", "taxon_name": "Citrus nobilis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cactus opuntia", "dict_mentions": 3, "qid": "Q13409575", "taxon_name": "Cactus opuntia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pinus resinosa", "dict_mentions": 3, "qid": "Q2045958", "taxon_name": "Pinus resinosa", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Brassica napus", "dict_mentions": 3, "qid": "Q177932", "taxon_name": "Brassica napus", "description": "plant species grown for its oil-rich seed", "col_id": "", "col_accepted": ""}
+{"binomial": "Oldenlandia umbellata", "dict_mentions": 3, "qid": "Q7085552", "taxon_name": "Oldenlandia umbellata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Rubia tinctorum", "dict_mentions": 3, "qid": "Q163641", "taxon_name": "Rubia tinctorum", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Pinus abies", "dict_mentions": 3, "qid": "Q17358067", "taxon_name": "Pinus abies", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Laurus cassia", "dict_mentions": 3, "qid": "Q21975978", "taxon_name": "Laurus cassia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Borassus flabellifer", "dict_mentions": 3, "qid": "Q500857", "taxon_name": "Borassus flabellifer", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Salsola soda", "dict_mentions": 3, "qid": "Q2713171", "taxon_name": "Salsola soda", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Catha edulis", "dict_mentions": 2, "qid": "Q207642", "taxon_name": "Catha edulis", "description": "species of plant, commonly used by humans for its psychoactive effects", "col_id": "", "col_accepted": ""}
 {"binomial": "Morinda tinctoria", "dict_mentions": 2, "qid": "Q10536257", "taxon_name": "Morinda tinctoria", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ptychotis ajowan", "dict_mentions": 2, "qid": "Q110306973", "taxon_name": "Ptychotis ajowan", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Armeniaca vulgaris", "dict_mentions": 2, "qid": "Q24853184", "taxon_name": "Armeniaca vulgaris", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Capparis spinosa", "dict_mentions": 2, "qid": "Q156251", "taxon_name": "Capparis spinosa", "description": "species of plant, caper", "col_id": "", "col_accepted": ""}
 {"binomial": "Quercus suber", "dict_mentions": 2, "qid": "Q156137", "taxon_name": "Quercus suber", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Nepeta glechoma", "dict_mentions": 2, "qid": "Q110070183", "taxon_name": "Nepeta glechoma", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pistacia terebinthus", "dict_mentions": 2, "qid": "Q63045", "taxon_name": "Pistacia terebinthus", "description": "species of plant native to the Mediterranean region and o valado", "col_id": "", "col_accepted": ""}
-{"binomial": "Persea gratissima", "dict_mentions": 2, "qid": "Q50850604", "taxon_name": "Persea gratissima", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Terminalia catappa", "dict_mentions": 2, "qid": "Q271179", "taxon_name": "Terminalia catappa", "description": "species of flowering plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Oxalis corniculata", "dict_mentions": 2, "qid": "Q162795", "taxon_name": "Oxalis corniculata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Dorema ammoniacum", "dict_mentions": 2, "qid": "Q957914", "taxon_name": "Dorema ammoniacum", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -176,21 +184,22 @@
 {"binomial": "Eucalyptus globulus", "dict_mentions": 2, "qid": "Q159528", "taxon_name": "Eucalyptus globulus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Hibiscus tiliaceus", "dict_mentions": 2, "qid": "Q15768656", "taxon_name": "Hibiscus tiliaceus", "description": "species of flowering tree", "col_id": "", "col_accepted": ""}
 {"binomial": "Lagenaria vulgaris", "dict_mentions": 2, "qid": "Q15290823", "taxon_name": "Lagenaria vulgaris", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Saponaria officinalis", "dict_mentions": 2, "qid": "Q156841", "taxon_name": "Saponaria officinalis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cornus florida", "dict_mentions": 2, "qid": "Q887221", "taxon_name": "Cornus florida", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Brosimum alicastrum", "dict_mentions": 2, "qid": "Q990886", "taxon_name": "Brosimum alicastrum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Argemone mexicana", "dict_mentions": 2, "qid": "Q683404", "taxon_name": "Argemone mexicana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Arctium lappa", "dict_mentions": 2, "qid": "Q26932", "taxon_name": "Arctium lappa", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Manicaria saccifera", "dict_mentions": 2, "qid": "Q10387126", "taxon_name": "Manicaria saccifera", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Juniperus oxycedrus", "dict_mentions": 2, "qid": "Q184300", "taxon_name": "Juniperus oxycedrus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Khaya senegalensis", "dict_mentions": 2, "qid": "Q927609", "taxon_name": "Khaya senegalensis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cinchona calisaya", "dict_mentions": 2, "qid": "Q15399753", "taxon_name": "Cinchona calisaya", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Dipteryx odorata", "dict_mentions": 2, "qid": "Q901484", "taxon_name": "Dipteryx odorata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Anthemis nobilis", "dict_mentions": 2, "qid": "Q15281388", "taxon_name": "Anthemis nobilis", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Laurus camphora", "dict_mentions": 2, "qid": "Q21975977", "taxon_name": "Laurus camphora", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Camphora officinarum", "dict_mentions": 2, "qid": "Q110692156", "taxon_name": "Camphora officinarum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Zizania aquatica", "dict_mentions": 2, "qid": "Q15251393", "taxon_name": "Zizania aquatica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cleome pentaphylla", "dict_mentions": 2, "qid": "Q87616356", "taxon_name": "Cleome pentaphylla", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Bignonia chica", "dict_mentions": 2, "qid": "Q85202209", "taxon_name": "Bignonia chica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pinus cembra", "dict_mentions": 2, "qid": "Q147278", "taxon_name": "Pinus cembra", "description": "species of plant, Swiss pine", "col_id": "", "col_accepted": ""}
-{"binomial": "Genipa americana", "dict_mentions": 2, "qid": "Q1353278", "taxon_name": "Genipa americana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cinnamomum cassia", "dict_mentions": 2, "qid": "Q204148", "taxon_name": "Cinnamomum cassia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cajanus flavus", "dict_mentions": 2, "qid": "Q50829218", "taxon_name": "Cajanus flavus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Veratrum album", "dict_mentions": 2, "qid": "Q157547", "taxon_name": "Veratrum album", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -201,7 +210,6 @@
 {"binomial": "Cicca disticha", "dict_mentions": 2, "qid": "Q87638287", "taxon_name": "Cicca disticha", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Thrinax argentea", "dict_mentions": 2, "qid": "Q38480423", "taxon_name": "Thrinax argentea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cinnamomum verum", "dict_mentions": 2, "qid": "Q370239", "taxon_name": "Cinnamomum verum", "description": "species of flowering plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Caryophyllus aromaticus", "dict_mentions": 2, "qid": "Q21872197", "taxon_name": "Caryophyllus aromaticus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Chrysobalanus icaco", "dict_mentions": 2, "qid": "Q577669", "taxon_name": "Chrysobalanus icaco", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Garcinia purpurea", "dict_mentions": 2, "qid": "Q104846962", "taxon_name": "Garcinia purpurea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cucumis colocynthis", "dict_mentions": 2, "qid": "Q21872946", "taxon_name": "Cucumis colocynthis", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -212,18 +220,19 @@
 {"binomial": "Vaccinium myrtillus", "dict_mentions": 2, "qid": "Q5413585", "taxon_name": "Vaccinium myrtillus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Virola sebifera", "dict_mentions": 2, "qid": "Q1634458", "taxon_name": "Virola sebifera", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Gardenia lucida", "dict_mentions": 2, "qid": "Q50841250", "taxon_name": "Gardenia lucida", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Cytisus cajan", "dict_mentions": 2, "qid": "Q21873417", "taxon_name": "Cytisus cajan", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Arundo festucoides", "dict_mentions": 2, "qid": "Q98080531", "taxon_name": "Arundo festucoides", "description": "", "col_id": "", "col_accepted": ""}
 {"binomial": "Fucus vesiculosus", "dict_mentions": 2, "qid": "Q754755", "taxon_name": "Fucus vesiculosus", "description": "species of Phaeophyceae", "col_id": "", "col_accepted": ""}
 {"binomial": "Calamus draco", "dict_mentions": 2, "qid": "Q21248456", "taxon_name": "Calamus draco", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Equisetum hyemale", "dict_mentions": 2, "qid": "Q263881", "taxon_name": "Equisetum hyemale", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Genista tinctoria", "dict_mentions": 2, "qid": "Q162777", "taxon_name": "Genista tinctoria", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Ervum lens", "dict_mentions": 2, "qid": "Q21874210", "taxon_name": "Ervum lens", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Helix pomatia", "dict_mentions": 2, "qid": "Q245314", "taxon_name": "Helix pomatia", "description": "species of mollusc", "col_id": "", "col_accepted": ""}
 {"binomial": "Stipa tenacissima", "dict_mentions": 2, "qid": "Q831011", "taxon_name": "Stipa tenacissima", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Mauritia flexuosa", "dict_mentions": 2, "qid": "Q1016320", "taxon_name": "Mauritia flexuosa", "description": "species of palm tree", "col_id": "", "col_accepted": ""}
 {"binomial": "Ficus carica", "dict_mentions": 2, "qid": "Q36146", "taxon_name": "Ficus carica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pleuronectes flesus", "dict_mentions": 2, "qid": "Q106427790", "taxon_name": "Pleuronectes flesus", "description": "species of fish", "col_id": "", "col_accepted": ""}
 {"binomial": "Dipsacus fullonum", "dict_mentions": 2, "qid": "Q160099", "taxon_name": "Dipsacus fullonum", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Maclura tinctoria", "dict_mentions": 2, "qid": "Q168042", "taxon_name": "Maclura tinctoria", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Allium sativum", "dict_mentions": 2, "qid": "Q23400", "taxon_name": "Allium sativum", "description": "species of plant (for the food, use Q21546392)", "col_id": "", "col_accepted": ""}
 {"binomial": "Triticum repens", "dict_mentions": 2, "qid": "Q21877658", "taxon_name": "Triticum repens", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Lawsonia inermis", "dict_mentions": 2, "qid": "Q182448", "taxon_name": "Lawsonia inermis", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -242,15 +251,14 @@
 {"binomial": "Tylophora asthmatica", "dict_mentions": 2, "qid": "Q15378986", "taxon_name": "Tylophora asthmatica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Arum colocasia", "dict_mentions": 2, "qid": "Q21871169", "taxon_name": "Arum colocasia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pongamia glabra", "dict_mentions": 2, "qid": "Q50851433", "taxon_name": "Pongamia glabra", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Costus speciosus", "dict_mentions": 2, "qid": "Q15250450", "taxon_name": "Costus speciosus", "description": "synonym of plant name", "col_id": "", "col_accepted": ""}
 {"binomial": "Cochlospermum gossypium", "dict_mentions": 2, "qid": "Q50831255", "taxon_name": "Cochlospermum gossypium", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Hirudo medicinalis", "dict_mentions": 2, "qid": "Q30041", "taxon_name": "Hirudo medicinalis", "description": "medicinal leech", "col_id": "", "col_accepted": ""}
 {"binomial": "Medicago sativa", "dict_mentions": 2, "qid": "Q156106", "taxon_name": "Medicago sativa", "description": "species of plant, alfalfa", "col_id": "", "col_accepted": ""}
 {"binomial": "Acrocomia sclerocarpa", "dict_mentions": 2, "qid": "Q50826404", "taxon_name": "Acrocomia sclerocarpa", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Euryale ferox", "dict_mentions": 2, "qid": "Q310795", "taxon_name": "Euryale ferox", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Beta vulgaris", "dict_mentions": 2, "qid": "Q165191", "taxon_name": "Beta vulgaris", "description": "species of the genus beet", "col_id": "", "col_accepted": ""}
 {"binomial": "Rhizophora mangle", "dict_mentions": 2, "qid": "Q853914", "taxon_name": "Rhizophora mangle", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Alhagi maurorum", "dict_mentions": 2, "qid": "Q2918709", "taxon_name": "Alhagi maurorum", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Melia azadirachta", "dict_mentions": 2, "qid": "Q21976318", "taxon_name": "Melia azadirachta", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Origanum vulgare", "dict_mentions": 2, "qid": "Q134283", "taxon_name": "Origanum vulgare", "description": "species of flowering plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pistacia lentiscus", "dict_mentions": 2, "qid": "Q159812", "taxon_name": "Pistacia lentiscus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Mentha viridis", "dict_mentions": 2, "qid": "Q65943376", "taxon_name": "Mentha viridis", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -260,7 +268,9 @@
 {"binomial": "Mycoderma aceti", "dict_mentions": 2, "qid": "Q108080401", "taxon_name": "Mycoderma aceti", "description": "", "col_id": "", "col_accepted": ""}
 {"binomial": "Dioscorea aculeata", "dict_mentions": 2, "qid": "Q21873831", "taxon_name": "Dioscorea aculeata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Aconitum ferox", "dict_mentions": 2, "qid": "Q2647500", "taxon_name": "Aconitum ferox", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Phormium tenax", "dict_mentions": 2, "qid": "Q607380", "taxon_name": "Phormium tenax", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cerasus occidentalis", "dict_mentions": 2, "qid": "Q15535369", "taxon_name": "Cerasus occidentalis", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Avena sativa", "dict_mentions": 2, "qid": "Q12104", "taxon_name": "Avena sativa", "description": "type of cereal", "col_id": "", "col_accepted": ""}
 {"binomial": "Brosmus vulgaris", "dict_mentions": 2, "qid": "Q107325036", "taxon_name": "Brosmus vulgaris", "description": "species of fish", "col_id": "", "col_accepted": ""}
 {"binomial": "Tacca pinnatifida", "dict_mentions": 2, "qid": "Q66604178", "taxon_name": "Tacca pinnatifida", "description": "", "col_id": "", "col_accepted": ""}
 {"binomial": "Petroselinum sativum", "dict_mentions": 2, "qid": "Q87637897", "taxon_name": "Petroselinum sativum", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -269,21 +279,19 @@
 {"binomial": "Saccharum sara", "dict_mentions": 2, "qid": "Q87623176", "taxon_name": "Saccharum sara", "description": "", "col_id": "", "col_accepted": ""}
 {"binomial": "Capsicum baccatum", "dict_mentions": 2, "qid": "Q132263", "taxon_name": "Capsicum baccatum", "description": "species of chili pepper", "col_id": "", "col_accepted": ""}
 {"binomial": "Carya glabra", "dict_mentions": 2, "qid": "Q1406355", "taxon_name": "Carya glabra", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Bromelia pinguin", "dict_mentions": 2, "qid": "Q5158994", "taxon_name": "Bromelia pinguin", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pleuronectes platessa", "dict_mentions": 2, "qid": "Q27098", "taxon_name": "Pleuronectes platessa", "description": "flatfish", "col_id": "", "col_accepted": ""}
 {"binomial": "Cucurbita pepo", "dict_mentions": 2, "qid": "Q7229863", "taxon_name": "Cucurbita pepo", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Thespesia populnea", "dict_mentions": 2, "qid": "Q715739", "taxon_name": "Thespesia populnea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cordia gerascanthus", "dict_mentions": 2, "qid": "Q15290191", "taxon_name": "Cordia gerascanthus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Citrus decumana", "dict_mentions": 2, "qid": "Q87616157", "taxon_name": "Citrus decumana", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Typha elephantina", "dict_mentions": 2, "qid": "Q15231386", "taxon_name": "Typha elephantina", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Quassia amara", "dict_mentions": 2, "qid": "Q135389", "taxon_name": "Quassia amara", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cydonia vulgaris", "dict_mentions": 2, "qid": "Q10262679", "taxon_name": "Cydonia vulgaris", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Sinapis nigra", "dict_mentions": 2, "qid": "Q21877455", "taxon_name": "Sinapis nigra", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Sapindus emarginatus", "dict_mentions": 2, "qid": "Q22112290", "taxon_name": "Sapindus emarginatus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Typha angustifolia", "dict_mentions": 2, "qid": "Q146572", "taxon_name": "Typha angustifolia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Secale cereale", "dict_mentions": 2, "qid": "Q12099", "taxon_name": "Secale cereale", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Salicornia annua", "dict_mentions": 2, "qid": "Q110769646", "taxon_name": "Salicornia annua", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Panicum frumentaceum", "dict_mentions": 2, "qid": "Q87621678", "taxon_name": "Panicum frumentaceum", "description": "", "col_id": "", "col_accepted": ""}
 {"binomial": "Caryocar tomentosum", "dict_mentions": 2, "qid": "Q50829528", "taxon_name": "Caryocar tomentosum", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Sapindus saponaria", "dict_mentions": 2, "qid": "Q2672802", "taxon_name": "Sapindus saponaria", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Corypha umbraculifera", "dict_mentions": 2, "qid": "Q856001", "taxon_name": "Corypha umbraculifera", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Crangon vulgaris", "dict_mentions": 2, "qid": "Q107088785", "taxon_name": "Crangon vulgaris", "description": "species of crustacean", "col_id": "", "col_accepted": ""}
 {"binomial": "Anethum sowa", "dict_mentions": 2, "qid": "Q15561164", "taxon_name": "Anethum sowa", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -291,6 +299,7 @@
 {"binomial": "Cucurbita melopepo", "dict_mentions": 2, "qid": "Q21872952", "taxon_name": "Cucurbita melopepo", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Urginea scilla", "dict_mentions": 2, "qid": "Q50874396", "taxon_name": "Urginea scilla", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Nicotiana rustica", "dict_mentions": 2, "qid": "Q602633", "taxon_name": "Nicotiana rustica", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Tamarindus indica", "dict_mentions": 2, "qid": "Q80235", "taxon_name": "Tamarindus indica", "description": "species of plant, Tamarind", "col_id": "", "col_accepted": ""}
 {"binomial": "Thea bohea", "dict_mentions": 2, "qid": "Q50874386", "taxon_name": "Thea bohea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Phleum pratense", "dict_mentions": 2, "qid": "Q256508", "taxon_name": "Phleum pratense", "description": "species of grass", "col_id": "", "col_accepted": ""}
 {"binomial": "Arnica montana", "dict_mentions": 2, "qid": "Q207848", "taxon_name": "Arnica montana", "description": "species of European flowering plant", "col_id": "", "col_accepted": ""}
@@ -316,17 +325,16 @@
 {"binomial": "Bauhinia variegata", "dict_mentions": 2, "qid": "Q840341", "taxon_name": "Bauhinia variegata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Rhus succedanea", "dict_mentions": 2, "qid": "Q38424157", "taxon_name": "Rhus succedanea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Anabas scandens", "dict_mentions": 2, "qid": "Q106396975", "taxon_name": "Anabas scandens", "description": "species of fishes", "col_id": "", "col_accepted": ""}
+{"binomial": "Trapa bicornis", "dict_mentions": 2, "qid": "Q3332013", "taxon_name": "Trapa bicornis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Morinda umbellata", "dict_mentions": 2, "qid": "Q3281853", "taxon_name": "Morinda umbellata", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Achillea millefolium", "dict_mentions": 2, "qid": "Q25408", "taxon_name": "Achillea millefolium", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Mesua ferrea", "dict_mentions": 2, "qid": "Q2001737", "taxon_name": "Mesua ferrea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Guilandina bonduc", "dict_mentions": 2, "qid": "Q21874434", "taxon_name": "Guilandina bonduc", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Juniperus bermudiana", "dict_mentions": 2, "qid": "Q822052", "taxon_name": "Juniperus bermudiana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Jambosa vulgaris", "dict_mentions": 2, "qid": "Q110506511", "taxon_name": "Jambosa vulgaris", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Brassica napus", "dict_mentions": 2, "qid": "Q177932", "taxon_name": "Brassica napus", "description": "plant species grown for its oil-rich seed", "col_id": "", "col_accepted": ""}
+{"binomial": "Juniperus virginiana", "dict_mentions": 2, "qid": "Q157522", "taxon_name": "Juniperus virginiana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Santalum album", "dict_mentions": 2, "qid": "Q210858", "taxon_name": "Santalum album", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Oldenlandia umbellata", "dict_mentions": 2, "qid": "Q7085552", "taxon_name": "Oldenlandia umbellata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Rhus typhina", "dict_mentions": 2, "qid": "Q148986", "taxon_name": "Rhus typhina", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cassia auriculata", "dict_mentions": 2, "qid": "Q21872201", "taxon_name": "Cassia auriculata", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Colocasia antiquorum", "dict_mentions": 2, "qid": "Q15225458", "taxon_name": "Colocasia antiquorum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Nicotiana persica", "dict_mentions": 2, "qid": "Q16861019", "taxon_name": "Nicotiana persica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Serratula tinctoria", "dict_mentions": 2, "qid": "Q7215753", "taxon_name": "Serratula tinctoria", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Rhus coriaria", "dict_mentions": 2, "qid": "Q159546", "taxon_name": "Rhus coriaria", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -334,13 +342,14 @@
 {"binomial": "Elettaria cardamomum", "dict_mentions": 2, "qid": "Q33466", "taxon_name": "Elettaria cardamomum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Indigofera tinctoria", "dict_mentions": 2, "qid": "Q165213", "taxon_name": "Indigofera tinctoria", "description": "species of legume", "col_id": "", "col_accepted": ""}
 {"binomial": "Indigofera anil", "dict_mentions": 2, "qid": "Q87629235", "taxon_name": "Indigofera anil", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Nicotiana tabacum", "dict_mentions": 2, "qid": "Q181095", "taxon_name": "Nicotiana tabacum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Anogeissus latifolia", "dict_mentions": 2, "qid": "Q45166", "taxon_name": "Anogeissus latifolia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Dolichos biflorus", "dict_mentions": 2, "qid": "Q21873842", "taxon_name": "Dolichos biflorus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Picrorhiza kurroa", "dict_mentions": 2, "qid": "Q2562125", "taxon_name": "Picrorhiza kurroa", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Azadirachta indica", "dict_mentions": 2, "qid": "Q170461", "taxon_name": "Azadirachta indica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Vigna catjang", "dict_mentions": 2, "qid": "Q50878724", "taxon_name": "Vigna catjang", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Orchis mascula", "dict_mentions": 2, "qid": "Q157435", "taxon_name": "Orchis mascula", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Sclerospora graminicola", "dict_mentions": 2, "qid": "Q7434194", "taxon_name": "Sclerospora graminicola", "description": "species of fungus", "col_id": "", "col_accepted": ""}
+{"binomial": "Salsola soda", "dict_mentions": 2, "qid": "Q2713171", "taxon_name": "Salsola soda", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Menispermum cocculus", "dict_mentions": 2, "qid": "Q21976336", "taxon_name": "Menispermum cocculus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Nauclea gambir", "dict_mentions": 2, "qid": "Q50852915", "taxon_name": "Nauclea gambir", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Liquidambar styraciflua", "dict_mentions": 2, "qid": "Q469652", "taxon_name": "Liquidambar styraciflua", "description": "tree species", "col_id": "", "col_accepted": ""}
@@ -348,7 +357,6 @@
 {"binomial": "Myrtus pimenta", "dict_mentions": 2, "qid": "Q21977564", "taxon_name": "Myrtus pimenta", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Artemisia absinthium", "dict_mentions": 1, "qid": "Q25686", "taxon_name": "Artemisia absinthium", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Sansevieria guineensis", "dict_mentions": 1, "qid": "Q50862089", "taxon_name": "Sansevieria guineensis", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Capparis spinosa", "dict_mentions": 1, "qid": "Q156251", "taxon_name": "Capparis spinosa", "description": "species of plant, caper", "col_id": "", "col_accepted": ""}
 {"binomial": "Betula alnus", "dict_mentions": 1, "qid": "Q21872007", "taxon_name": "Betula alnus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ruscus racemosus", "dict_mentions": 1, "qid": "Q21877259", "taxon_name": "Ruscus racemosus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Prosopis pallida", "dict_mentions": 1, "qid": "Q50847702", "taxon_name": "Prosopis pallida", "description": "species of legume", "col_id": "", "col_accepted": ""}
@@ -406,7 +414,6 @@
 {"binomial": "Bignonia longissima", "dict_mentions": 1, "qid": "Q38530962", "taxon_name": "Bignonia longissima", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cassia rufa", "dict_mentions": 1, "qid": "Q39132197", "taxon_name": "Cassia rufa", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Rhododendron arboreum", "dict_mentions": 1, "qid": "Q2659683", "taxon_name": "Rhododendron arboreum", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Saponaria officinalis", "dict_mentions": 1, "qid": "Q156841", "taxon_name": "Saponaria officinalis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Buxus balearica", "dict_mentions": 1, "qid": "Q163278", "taxon_name": "Buxus balearica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Stachytarpheta mutabilis", "dict_mentions": 1, "qid": "Q7595918", "taxon_name": "Stachytarpheta mutabilis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Terminalia latifolia", "dict_mentions": 1, "qid": "Q5437169", "taxon_name": "Terminalia latifolia", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -422,12 +429,10 @@
 {"binomial": "Dorstenia brasiliensis", "dict_mentions": 1, "qid": "Q5239869", "taxon_name": "Dorstenia brasiliensis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cissampelos pareira", "dict_mentions": 1, "qid": "Q3291604", "taxon_name": "Cissampelos pareira", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Oreodoxa oleracea", "dict_mentions": 1, "qid": "Q85193792", "taxon_name": "Oreodoxa oleracea", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Juniperus oxycedrus", "dict_mentions": 1, "qid": "Q184300", "taxon_name": "Juniperus oxycedrus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Attalea cohune", "dict_mentions": 1, "qid": "Q4818078", "taxon_name": "Attalea cohune", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Crescentia cujete", "dict_mentions": 1, "qid": "Q214542", "taxon_name": "Crescentia cujete", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Camelus bactrianus", "dict_mentions": 1, "qid": "Q132922", "taxon_name": "Camelus bactrianus", "description": "species of mammal", "col_id": "", "col_accepted": ""}
 {"binomial": "Camellia oleifera", "dict_mentions": 1, "qid": "Q2498293", "taxon_name": "Camellia oleifera", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Camphora officinarum", "dict_mentions": 1, "qid": "Q110692156", "taxon_name": "Camphora officinarum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Hydrastis canadensis", "dict_mentions": 1, "qid": "Q1051710", "taxon_name": "Hydrastis canadensis", "description": "species of plant, Goldenseal", "col_id": "", "col_accepted": ""}
 {"binomial": "Parmelia perlata", "dict_mentions": 1, "qid": "Q58649446", "taxon_name": "Parmelia perlata", "description": "species of fungus", "col_id": "", "col_accepted": ""}
 {"binomial": "Phalaris canariensis", "dict_mentions": 1, "qid": "Q2086586", "taxon_name": "Phalaris canariensis", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -566,6 +571,7 @@
 {"binomial": "Fagopyrum esculentum", "dict_mentions": 1, "qid": "Q132734", "taxon_name": "Fagopyrum esculentum", "description": "species of flowering plant in the family Polygonaceae", "col_id": "", "col_accepted": ""}
 {"binomial": "Schleichera trijuga", "dict_mentions": 1, "qid": "Q87643823", "taxon_name": "Schleichera trijuga", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Myrica sapida", "dict_mentions": 1, "qid": "Q111828096", "taxon_name": "Myrica sapida", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Costus speciosus", "dict_mentions": 1, "qid": "Q15250450", "taxon_name": "Costus speciosus", "description": "synonym of plant name", "col_id": "", "col_accepted": ""}
 {"binomial": "Sterculia urens", "dict_mentions": 1, "qid": "Q3498736", "taxon_name": "Sterculia urens", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cistus creticus", "dict_mentions": 1, "qid": "Q891305", "taxon_name": "Cistus creticus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ledum latifolium", "dict_mentions": 1, "qid": "Q50846249", "taxon_name": "Ledum latifolium", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -585,6 +591,7 @@
 {"binomial": "Hippomane mancinella", "dict_mentions": 1, "qid": "Q636480", "taxon_name": "Hippomane mancinella", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Convolvulus reptans", "dict_mentions": 1, "qid": "Q21872748", "taxon_name": "Convolvulus reptans", "description": "species of morning glory plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Mandragora officinarum", "dict_mentions": 1, "qid": "Q545550", "taxon_name": "Mandragora officinarum", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Beta vulgaris", "dict_mentions": 1, "qid": "Q165191", "taxon_name": "Beta vulgaris", "description": "species of the genus beet", "col_id": "", "col_accepted": ""}
 {"binomial": "Polynemus longifilis", "dict_mentions": 1, "qid": "Q106415892", "taxon_name": "Polynemus longifilis", "description": "species of fish", "col_id": "", "col_accepted": ""}
 {"binomial": "Curcuma amada", "dict_mentions": 1, "qid": "Q3031235", "taxon_name": "Curcuma amada", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Garcinia mangostana", "dict_mentions": 1, "qid": "Q170662", "taxon_name": "Garcinia mangostana", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -619,9 +626,7 @@
 {"binomial": "Achras zapotilla", "dict_mentions": 1, "qid": "Q50826875", "taxon_name": "Achras zapotilla", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Daphne papyracea", "dict_mentions": 1, "qid": "Q3205576", "taxon_name": "Daphne papyracea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Celtis australis", "dict_mentions": 1, "qid": "Q255375", "taxon_name": "Celtis australis", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Phormium tenax", "dict_mentions": 1, "qid": "Q607380", "taxon_name": "Phormium tenax", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Anticharis arabica", "dict_mentions": 1, "qid": "Q15591106", "taxon_name": "Anticharis arabica", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Avena sativa", "dict_mentions": 1, "qid": "Q12104", "taxon_name": "Avena sativa", "description": "type of cereal", "col_id": "", "col_accepted": ""}
 {"binomial": "Caladium esculentum", "dict_mentions": 1, "qid": "Q50839088", "taxon_name": "Caladium esculentum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Nerium oleander", "dict_mentions": 1, "qid": "Q155833", "taxon_name": "Nerium oleander", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Diospyros ebenaster", "dict_mentions": 1, "qid": "Q17241557", "taxon_name": "Diospyros ebenaster", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -650,7 +655,6 @@
 {"binomial": "Guettarda speciosa", "dict_mentions": 1, "qid": "Q772689", "taxon_name": "Guettarda speciosa", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ranunculus ficaria", "dict_mentions": 1, "qid": "Q19796483", "taxon_name": "Ranunculus ficaria", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Opuntia tuna", "dict_mentions": 1, "qid": "Q149347", "taxon_name": "Opuntia tuna", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Bromelia pinguin", "dict_mentions": 1, "qid": "Q5158994", "taxon_name": "Bromelia pinguin", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Spigelia marilandica", "dict_mentions": 1, "qid": "Q7577149", "taxon_name": "Spigelia marilandica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Spigelia anthelmia", "dict_mentions": 1, "qid": "Q10373743", "taxon_name": "Spigelia anthelmia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pistacia vera", "dict_mentions": 1, "qid": "Q36071", "taxon_name": "Pistacia vera", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -661,7 +665,6 @@
 {"binomial": "Copaifera pubiflora", "dict_mentions": 1, "qid": "Q15529693", "taxon_name": "Copaifera pubiflora", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Aucklandia costus", "dict_mentions": 1, "qid": "Q24850280", "taxon_name": "Aucklandia costus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Bauhinia racemosa", "dict_mentions": 1, "qid": "Q35608", "taxon_name": "Bauhinia racemosa", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Quassia amara", "dict_mentions": 1, "qid": "Q135389", "taxon_name": "Quassia amara", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Quercus alba", "dict_mentions": 1, "qid": "Q469555", "taxon_name": "Quercus alba", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Raphanus sativus", "dict_mentions": 1, "qid": "Q7224565", "taxon_name": "Raphanus sativus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Krameria triandra", "dict_mentions": 1, "qid": "Q50843188", "taxon_name": "Krameria triandra", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -734,7 +737,6 @@
 {"binomial": "Flacourtia cataphracta", "dict_mentions": 1, "qid": "Q87625136", "taxon_name": "Flacourtia cataphracta", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Acacia sassa", "dict_mentions": 1, "qid": "Q4671007", "taxon_name": "Acacia sassa", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Stillingia sebifera", "dict_mentions": 1, "qid": "Q50864935", "taxon_name": "Stillingia sebifera", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Tamarindus indica", "dict_mentions": 1, "qid": "Q80235", "taxon_name": "Tamarindus indica", "description": "species of plant, Tamarind", "col_id": "", "col_accepted": ""}
 {"binomial": "Tanacetum vulgare", "dict_mentions": 1, "qid": "Q27079", "taxon_name": "Tanacetum vulgare", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Phoenix sylvestris", "dict_mentions": 1, "qid": "Q2285767", "taxon_name": "Phoenix sylvestris", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cinnamomum tamala", "dict_mentions": 1, "qid": "Q1661611", "taxon_name": "Cinnamomum tamala", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -827,7 +829,6 @@
 {"binomial": "Cassis rufa", "dict_mentions": 1, "qid": "Q106122232", "taxon_name": "Cassis rufa", "description": "species of mollusc", "col_id": "", "col_accepted": ""}
 {"binomial": "Corypha australis", "dict_mentions": 1, "qid": "Q50836619", "taxon_name": "Corypha australis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Asarum europaeum", "dict_mentions": 1, "qid": "Q156853", "taxon_name": "Asarum europaeum", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Pomadasys panamensis", "dict_mentions": 1, "qid": "Q3760273", "taxon_name": "Pomadasys panamensis", "description": "species of fish", "col_id": "", "col_accepted": ""}
 {"binomial": "Dioscorea alata", "dict_mentions": 1, "qid": "Q1932852", "taxon_name": "Dioscorea alata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Physostigma venenosum", "dict_mentions": 1, "qid": "Q1721924", "taxon_name": "Physostigma venenosum", "description": "species of plant, Calabar bean", "col_id": "", "col_accepted": ""}
 {"binomial": "Monodora myristica", "dict_mentions": 1, "qid": "Q6901558", "taxon_name": "Monodora myristica", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -860,7 +861,7 @@
 {"binomial": "Holarrhena antidysenterica", "dict_mentions": 1, "qid": "Q87605530", "taxon_name": "Holarrhena antidysenterica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Zamia integrifolia", "dict_mentions": 1, "qid": "Q3506489", "taxon_name": "Zamia integrifolia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Populus monilifera", "dict_mentions": 1, "qid": "Q39907441", "taxon_name": "Populus monilifera", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Callinectes hastatus", "dict_mentions": 1, "qid": "Q140961915", "taxon_name": "Callinectes hastatus", "description": "species of the crab genus Callinectes", "col_id": "", "col_accepted": ""}
+{"binomial": "Callinectes hastatus", "dict_mentions": 1, "qid": "Q40328779", "taxon_name": "Callinectes hastatus", "description": "species of crustacean", "col_id": "", "col_accepted": ""}
 {"binomial": "Geranium maculatum", "dict_mentions": 1, "qid": "Q5549871", "taxon_name": "Geranium maculatum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Micropogon undulatus", "dict_mentions": 1, "qid": "Q107329345", "taxon_name": "Micropogon undulatus", "description": "species of fish", "col_id": "", "col_accepted": ""}
 {"binomial": "Magnolia acuminata", "dict_mentions": 1, "qid": "Q1249099", "taxon_name": "Magnolia acuminata", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -884,7 +885,6 @@
 {"binomial": "Quercus sessiliflora", "dict_mentions": 1, "qid": "Q50852450", "taxon_name": "Quercus sessiliflora", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Voandzeia subterranea", "dict_mentions": 1, "qid": "Q98127845", "taxon_name": "Voandzeia subterranea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Momordica elaterium", "dict_mentions": 1, "qid": "Q21977484", "taxon_name": "Momordica elaterium", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Inula helenium", "dict_mentions": 1, "qid": "Q697416", "taxon_name": "Inula helenium", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ulmus fulva", "dict_mentions": 1, "qid": "Q50873850", "taxon_name": "Ulmus fulva", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Bassia longifolia", "dict_mentions": 1, "qid": "Q87632607", "taxon_name": "Bassia longifolia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Echinus esculentus", "dict_mentions": 1, "qid": "Q664443", "taxon_name": "Echinus esculentus", "description": "species of echinoderm", "col_id": "", "col_accepted": ""}
@@ -912,14 +912,11 @@
 {"binomial": "Banksia australis", "dict_mentions": 1, "qid": "Q65931576", "taxon_name": "Banksia australis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Chelonia mydas", "dict_mentions": 1, "qid": "Q199458", "taxon_name": "Chelonia mydas", "description": "species of sea turtle", "col_id": "", "col_accepted": ""}
 {"binomial": "Psidium albidum", "dict_mentions": 1, "qid": "Q21325574", "taxon_name": "Psidium albidum", "description": "species of guava plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Pilocarpus pennatifolius", "dict_mentions": 1, "qid": "Q2051497", "taxon_name": "Pilocarpus pennatifolius", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Columba cucullata", "dict_mentions": 1, "qid": "Q21255125", "taxon_name": "Columba cucullata", "description": "species of bird", "col_id": "", "col_accepted": ""}
 {"binomial": "Alectoria sarmentosa", "dict_mentions": 1, "qid": "Q587433", "taxon_name": "Alectoria sarmentosa", "description": "species of fungus", "col_id": "", "col_accepted": ""}
 {"binomial": "Lagerstroemia macrocarpa", "dict_mentions": 1, "qid": "Q17583599", "taxon_name": "Lagerstroemia macrocarpa", "description": "species of flowering plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cryptomeria japonica", "dict_mentions": 1, "qid": "Q147388", "taxon_name": "Cryptomeria japonica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Lagerstroemia reginae", "dict_mentions": 1, "qid": "Q50844430", "taxon_name": "Lagerstroemia reginae", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Eucalyptus rostrata", "dict_mentions": 1, "qid": "Q5850228", "taxon_name": "Eucalyptus rostrata", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Loxia oryzivora", "dict_mentions": 1, "qid": "Q25185327", "taxon_name": "Loxia oryzivora", "description": "species of bird", "col_id": "", "col_accepted": ""}
 {"binomial": "Galaxias attenuatus", "dict_mentions": 1, "qid": "Q106395563", "taxon_name": "Galaxias attenuatus", "description": "species of fish", "col_id": "", "col_accepted": ""}
 {"binomial": "Gallinago gallinula", "dict_mentions": 1, "qid": "Q106447334", "taxon_name": "Gallinago gallinula", "description": "species of birds", "col_id": "", "col_accepted": ""}
 {"binomial": "Gelidium corneum", "dict_mentions": 1, "qid": "Q5876636", "taxon_name": "Gelidium corneum", "description": "species of alga", "col_id": "", "col_accepted": ""}
@@ -930,7 +927,6 @@
 {"binomial": "Amomum angustifolium", "dict_mentions": 1, "qid": "Q40086771", "taxon_name": "Amomum angustifolium", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Lota vulgaris", "dict_mentions": 1, "qid": "Q106390431", "taxon_name": "Lota vulgaris", "description": "species of fish", "col_id": "", "col_accepted": ""}
 {"binomial": "Patella vulgata", "dict_mentions": 1, "qid": "Q182258", "taxon_name": "Patella vulgata", "description": "species of mollusc", "col_id": "", "col_accepted": ""}
-{"binomial": "Trapa bicornis", "dict_mentions": 1, "qid": "Q3332013", "taxon_name": "Trapa bicornis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Hemerocallis graminea", "dict_mentions": 1, "qid": "Q41777724", "taxon_name": "Hemerocallis graminea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Lilium bulbiferum", "dict_mentions": 1, "qid": "Q163766", "taxon_name": "Lilium bulbiferum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Helix nemoralis", "dict_mentions": 1, "qid": "Q40472486", "taxon_name": "Helix nemoralis", "description": "species of mollusc", "col_id": "", "col_accepted": ""}
@@ -966,7 +962,6 @@
 {"binomial": "Bombyx textor", "dict_mentions": 1, "qid": "Q15669552", "taxon_name": "Bombyx textor", "description": "species of insect", "col_id": "", "col_accepted": ""}
 {"binomial": "Pinnotheres ostreum", "dict_mentions": 1, "qid": "Q40628380", "taxon_name": "Pinnotheres ostreum", "description": "species of crustacean", "col_id": "", "col_accepted": ""}
 {"binomial": "Dolichos soja", "dict_mentions": 1, "qid": "Q21873850", "taxon_name": "Dolichos soja", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Juniperus bermudiana", "dict_mentions": 1, "qid": "Q822052", "taxon_name": "Juniperus bermudiana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Eucalyptus amygdalina", "dict_mentions": 1, "qid": "Q5405517", "taxon_name": "Eucalyptus amygdalina", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Dianthus caryophyllus", "dict_mentions": 1, "qid": "Q158984", "taxon_name": "Dianthus caryophyllus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Stizostedion vitreum", "dict_mentions": 1, "qid": "Q107329229", "taxon_name": "Stizostedion vitreum", "description": "species of fish", "col_id": "", "col_accepted": ""}
@@ -979,7 +974,6 @@
 {"binomial": "Guilielma speciosa", "dict_mentions": 1, "qid": "Q87612522", "taxon_name": "Guilielma speciosa", "description": "", "col_id": "", "col_accepted": ""}
 {"binomial": "Portulaca oleracea", "dict_mentions": 1, "qid": "Q158015", "taxon_name": "Portulaca oleracea", "description": "species of flowering plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Santalum acuminatum", "dict_mentions": 1, "qid": "Q2702923", "taxon_name": "Santalum acuminatum", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Juniperus virginiana", "dict_mentions": 1, "qid": "Q157522", "taxon_name": "Juniperus virginiana", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Quercus rubra", "dict_mentions": 1, "qid": "Q147525", "taxon_name": "Quercus rubra", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Calceolaria arachnoides", "dict_mentions": 1, "qid": "Q125198226", "taxon_name": "Calceolaria arachnoides", "description": "taxon", "col_id": "", "col_accepted": ""}
 {"binomial": "Galium chilense", "dict_mentions": 1, "qid": "Q21271663", "taxon_name": "Galium chilense", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -1009,6 +1003,7 @@
 {"binomial": "Phyllocladus trichomanoides", "dict_mentions": 1, "qid": "Q5409426", "taxon_name": "Phyllocladus trichomanoides", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Broussonetia papyrifera", "dict_mentions": 1, "qid": "Q389185", "taxon_name": "Broussonetia papyrifera", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Chrysomitris spinus", "dict_mentions": 1, "qid": "Q48993950", "taxon_name": "Chrysomitris spinus", "description": "species of bird", "col_id": "", "col_accepted": ""}
+{"binomial": "Colocasia antiquorum", "dict_mentions": 1, "qid": "Q15225458", "taxon_name": "Colocasia antiquorum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Weinmannia racemosa", "dict_mentions": 1, "qid": "Q1351625", "taxon_name": "Weinmannia racemosa", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Camellia sasanqua", "dict_mentions": 1, "qid": "Q2590046", "taxon_name": "Camellia sasanqua", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Poa abyssinica", "dict_mentions": 1, "qid": "Q50849179", "taxon_name": "Poa abyssinica", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -1029,6 +1024,7 @@
 {"binomial": "Totanus glottis", "dict_mentions": 1, "qid": "Q106447523", "taxon_name": "Totanus glottis", "description": "species of birds", "col_id": "", "col_accepted": ""}
 {"binomial": "Trapa natans", "dict_mentions": 1, "qid": "Q161110", "taxon_name": "Trapa natans", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Phyllostachys nigra", "dict_mentions": 1, "qid": "Q983798", "taxon_name": "Phyllostachys nigra", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Achillea millefolium", "dict_mentions": 1, "qid": "Q25408", "taxon_name": "Achillea millefolium", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Quercus castanea", "dict_mentions": 1, "qid": "Q6323405", "taxon_name": "Quercus castanea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Podocarpus elongatus", "dict_mentions": 1, "qid": "Q5410640", "taxon_name": "Podocarpus elongatus", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Flindersia oxleyana", "dict_mentions": 1, "qid": "Q50841031", "taxon_name": "Flindersia oxleyana", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -1045,14 +1041,22 @@
 {"binomial": "Corylus rostrata", "dict_mentions": 1, "qid": "Q95984129", "taxon_name": "Corylus rostrata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Aloe succotrina", "dict_mentions": 1, "qid": "Q24380", "taxon_name": "Aloe succotrina", "description": "medicinal aloe", "col_id": "", "col_accepted": ""}
 {"binomial": "Curcuma angustifolia", "dict_mentions": 1, "qid": "Q3596013", "taxon_name": "Curcuma angustifolia", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Fraxinus excelsior", "dict_mentions": 1, "qid": "Q156907", "taxon_name": "Fraxinus excelsior", "description": "species of tree", "col_id": "", "col_accepted": ""}
+{"binomial": "Copaifera multijuga", "dict_mentions": 1, "qid": "Q15529973", "taxon_name": "Copaifera multijuga", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Pinus balsamea", "dict_mentions": 1, "qid": "Q17357252", "taxon_name": "Pinus balsamea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Carum carvi", "dict_mentions": 1, "qid": "Q26811", "taxon_name": "Carum carvi", "description": "species of plant in the carrot family", "col_id": "", "col_accepted": ""}
 {"binomial": "Elettaria major", "dict_mentions": 1, "qid": "Q50834781", "taxon_name": "Elettaria major", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cassia senna", "dict_mentions": 1, "qid": "Q21872220", "taxon_name": "Cassia senna", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Pinus cedrus", "dict_mentions": 1, "qid": "Q21876253", "taxon_name": "Pinus cedrus", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Gossypium herbaceum", "dict_mentions": 1, "qid": "Q177615", "taxon_name": "Gossypium herbaceum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Piper cubeba", "dict_mentions": 1, "qid": "Q161927", "taxon_name": "Piper cubeba", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Cuminum cyminum", "dict_mentions": 1, "qid": "Q132624", "taxon_name": "Cuminum cyminum", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Morus tinctoria", "dict_mentions": 1, "qid": "Q21977499", "taxon_name": "Morus tinctoria", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Pisum arvense", "dict_mentions": 1, "qid": "Q21876275", "taxon_name": "Pisum arvense", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Piper longum", "dict_mentions": 1, "qid": "Q685336", "taxon_name": "Piper longum", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Pinus sylvestris", "dict_mentions": 1, "qid": "Q133128", "taxon_name": "Pinus sylvestris", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Smilax sarsaparilla", "dict_mentions": 1, "qid": "Q21877482", "taxon_name": "Smilax sarsaparilla", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Laurus sassafras", "dict_mentions": 1, "qid": "Q21975988", "taxon_name": "Laurus sassafras", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Capra hircus", "dict_mentions": 1, "qid": "Q45320358", "taxon_name": "Capra hircus", "description": "species of mammal", "col_id": "", "col_accepted": ""}
 {"binomial": "Epidendrum vanilla", "dict_mentions": 1, "qid": "Q21874189", "taxon_name": "Epidendrum vanilla", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Agathis australis", "dict_mentions": 1, "qid": "Q955413", "taxon_name": "Agathis australis", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Liquidambar orientalis", "dict_mentions": 1, "qid": "Q2093169", "taxon_name": "Liquidambar orientalis", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -1098,12 +1102,12 @@
 {"binomial": "Cervus axis", "dict_mentions": 1, "qid": "Q109647136", "taxon_name": "Cervus axis", "description": "species of mammal", "col_id": "", "col_accepted": ""}
 {"binomial": "Linum angustifolium", "dict_mentions": 1, "qid": "Q87631618", "taxon_name": "Linum angustifolium", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ovis hodgsoni", "dict_mentions": 1, "qid": "Q104528476", "taxon_name": "Ovis hodgsoni", "description": "species of mammals", "col_id": "", "col_accepted": ""}
+{"binomial": "Phaseolus lunatus", "dict_mentions": 1, "qid": "Q1166136", "taxon_name": "Phaseolus lunatus", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Azadirachta indica", "dict_mentions": 1, "qid": "Q170461", "taxon_name": "Azadirachta indica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Morinda angustifolia", "dict_mentions": 1, "qid": "Q11177601", "taxon_name": "Morinda angustifolia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Fusarium tabacivorum", "dict_mentions": 1, "qid": "Q80968204", "taxon_name": "Fusarium tabacivorum", "description": "", "col_id": "", "col_accepted": ""}
 {"binomial": "Erysiphe cichoracearum", "dict_mentions": 1, "qid": "Q48703112", "taxon_name": "Erysiphe cichoracearum", "description": "Synonym of fungus (basionym)", "col_id": "", "col_accepted": ""}
-{"binomial": "Cedrus libani", "dict_mentions": 1, "qid": "Q61105", "taxon_name": "Cedrus libani", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Lens esculenta", "dict_mentions": 1, "qid": "Q50844461", "taxon_name": "Lens esculenta", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Acer saccharum", "dict_mentions": 1, "qid": "Q214733", "taxon_name": "Acer saccharum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Colletotrichum falcatum", "dict_mentions": 1, "qid": "Q105051121", "taxon_name": "Colletotrichum falcatum", "description": "species of fungus", "col_id": "", "col_accepted": ""}
 {"binomial": "Ustilago sacchari", "dict_mentions": 1, "qid": "Q59578612", "taxon_name": "Ustilago sacchari", "description": "species of fungus", "col_id": "", "col_accepted": ""}
 {"binomial": "Cercospora longipes", "dict_mentions": 1, "qid": "Q5064002", "taxon_name": "Cercospora longipes", "description": "species of fungus", "col_id": "", "col_accepted": ""}
@@ -1114,15 +1118,14 @@
 {"binomial": "Mansonia gagei", "dict_mentions": 1, "qid": "Q17196835", "taxon_name": "Mansonia gagei", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Quillaja saponaria", "dict_mentions": 1, "qid": "Q2382775", "taxon_name": "Quillaja saponaria", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Acacia concinna", "dict_mentions": 1, "qid": "Q310208", "taxon_name": "Acacia concinna", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Saussurea lappa", "dict_mentions": 1, "qid": "Q18774030", "taxon_name": "Saussurea lappa", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Turbinella rapa", "dict_mentions": 1, "qid": "Q61692810", "taxon_name": "Turbinella rapa", "description": "species of mollusc", "col_id": "", "col_accepted": ""}
 {"binomial": "Sida rhombifolia", "dict_mentions": 1, "qid": "Q3595921", "taxon_name": "Sida rhombifolia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Ficus benjamina", "dict_mentions": 1, "qid": "Q275160", "taxon_name": "Ficus benjamina", "description": "species of flowering plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Lagerstroemia indica", "dict_mentions": 1, "qid": "Q1148692", "taxon_name": "Lagerstroemia indica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Careya arborea", "dict_mentions": 1, "qid": "Q2718249", "taxon_name": "Careya arborea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Terminalia arjuna", "dict_mentions": 1, "qid": "Q2719381", "taxon_name": "Terminalia arjuna", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Scilla indica", "dict_mentions": 1, "qid": "Q38489698", "taxon_name": "Scilla indica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Urginea indica", "dict_mentions": 1, "qid": "Q50872020", "taxon_name": "Urginea indica", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Scilla indica", "dict_mentions": 1, "qid": "Q38489698", "taxon_name": "Scilla indica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Crinum asiaticum", "dict_mentions": 1, "qid": "Q713472", "taxon_name": "Crinum asiaticum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pancratium triflorum", "dict_mentions": 1, "qid": "Q15523025", "taxon_name": "Pancratium triflorum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Gynocardia odorata", "dict_mentions": 1, "qid": "Q5625192", "taxon_name": "Gynocardia odorata", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -1130,11 +1133,7 @@
 {"binomial": "Oryza coarctata", "dict_mentions": 1, "qid": "Q21396728", "taxon_name": "Oryza coarctata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pavonia odorata", "dict_mentions": 1, "qid": "Q14558111", "taxon_name": "Pavonia odorata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Dolichos lablab", "dict_mentions": 1, "qid": "Q3712638", "taxon_name": "Dolichos lablab", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Phyllanthus emblica", "dict_mentions": 1, "qid": "Q310050", "taxon_name": "Phyllanthus emblica", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Cytisus pseudocajan", "dict_mentions": 1, "qid": "Q109901592", "taxon_name": "Cytisus pseudocajan", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Eragrostis cynosuroides", "dict_mentions": 1, "qid": "Q50839863", "taxon_name": "Eragrostis cynosuroides", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Funtumia elastica", "dict_mentions": 1, "qid": "Q3018415", "taxon_name": "Funtumia elastica", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Mimosa cineraria", "dict_mentions": 1, "qid": "Q39169138", "taxon_name": "Mimosa cineraria", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Myroxylon peruiferum", "dict_mentions": 1, "qid": "Q9047598", "taxon_name": "Myroxylon peruiferum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Hordeum vulgare", "dict_mentions": 1, "qid": "Q11577", "taxon_name": "Hordeum vulgare", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Hordeum hexastichon", "dict_mentions": 1, "qid": "Q21874553", "taxon_name": "Hordeum hexastichon", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -1145,7 +1144,6 @@
 {"binomial": "Jatropha elastica", "dict_mentions": 1, "qid": "Q110367924", "taxon_name": "Jatropha elastica", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Mimosa catechu", "dict_mentions": 1, "qid": "Q39105635", "taxon_name": "Mimosa catechu", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Laurus cinnamomum", "dict_mentions": 1, "qid": "Q21975982", "taxon_name": "Laurus cinnamomum", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Rhamnus frangula", "dict_mentions": 1, "qid": "Q11122869", "taxon_name": "Rhamnus frangula", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Rhus copallinum", "dict_mentions": 1, "qid": "Q7245720", "taxon_name": "Rhus copallinum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Gossypium religiosum", "dict_mentions": 1, "qid": "Q87626557", "taxon_name": "Gossypium religiosum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Daphne alpina", "dict_mentions": 1, "qid": "Q1657872", "taxon_name": "Daphne alpina", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -1154,10 +1152,8 @@
 {"binomial": "Bubon galbanum", "dict_mentions": 1, "qid": "Q17137181", "taxon_name": "Bubon galbanum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Acacia senegal", "dict_mentions": 1, "qid": "Q950866", "taxon_name": "Acacia senegal", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Fucus nodosus", "dict_mentions": 1, "qid": "Q21874287", "taxon_name": "Fucus nodosus", "description": "species of Phaeophyceae", "col_id": "", "col_accepted": ""}
-{"binomial": "Quercus ilex", "dict_mentions": 1, "qid": "Q218155", "taxon_name": "Quercus ilex", "description": "Oak tree species native to the Mediterranean", "col_id": "", "col_accepted": ""}
 {"binomial": "Rhamnus jujuba", "dict_mentions": 1, "qid": "Q21877210", "taxon_name": "Rhamnus jujuba", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Fraxinus ornus", "dict_mentions": 1, "qid": "Q161421", "taxon_name": "Fraxinus ornus", "description": "species of plant", "col_id": "", "col_accepted": ""}
-{"binomial": "Nicotiana tabacum", "dict_mentions": 1, "qid": "Q181095", "taxon_name": "Nicotiana tabacum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Lichen dealbatus", "dict_mentions": 1, "qid": "Q107993915", "taxon_name": "Lichen dealbatus", "description": "", "col_id": "", "col_accepted": ""}
 {"binomial": "Bromelia ananas", "dict_mentions": 1, "qid": "Q21872061", "taxon_name": "Bromelia ananas", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Anthemis cotula", "dict_mentions": 1, "qid": "Q571357", "taxon_name": "Anthemis cotula", "description": "species of plant", "col_id": "", "col_accepted": ""}
@@ -1170,10 +1166,17 @@
 {"binomial": "Delphinus edentulus", "dict_mentions": 1, "qid": "Q122842270", "taxon_name": "Delphinus edentulus", "description": "species of mammal", "col_id": "", "col_accepted": ""}
 {"binomial": "Strychnos ignatia", "dict_mentions": 1, "qid": "Q1296183", "taxon_name": "Strychnos ignatia", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Testudo imbricata", "dict_mentions": 1, "qid": "Q107055814", "taxon_name": "Testudo imbricata", "description": "species of reptile", "col_id": "", "col_accepted": ""}
-{"binomial": "Pinus abies", "dict_mentions": 1, "qid": "Q17358067", "taxon_name": "Pinus abies", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pinus larix", "dict_mentions": 1, "qid": "Q21876255", "taxon_name": "Pinus larix", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pinus picea", "dict_mentions": 1, "qid": "Q21876257", "taxon_name": "Pinus picea", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Pinus canadensis", "dict_mentions": 1, "qid": "Q17359215", "taxon_name": "Pinus canadensis", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Willughbeia edulis", "dict_mentions": 1, "qid": "Q8022505", "taxon_name": "Willughbeia edulis", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Marattia alata", "dict_mentions": 1, "qid": "Q17395808", "taxon_name": "Marattia alata", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Dicksonia antarctica", "dict_mentions": 1, "qid": "Q630002", "taxon_name": "Dicksonia antarctica", "description": "species of fern endemic to Australia", "col_id": "", "col_accepted": ""}
+{"binomial": "Mimosa decurrens", "dict_mentions": 1, "qid": "Q15448105", "taxon_name": "Mimosa decurrens", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Eucalyptus resinifera", "dict_mentions": 1, "qid": "Q151013", "taxon_name": "Eucalyptus resinifera", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Plectranthus graveolens", "dict_mentions": 1, "qid": "Q7204394", "taxon_name": "Plectranthus graveolens", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Pogostemon patchouly", "dict_mentions": 1, "qid": "Q49520131", "taxon_name": "Pogostemon patchouly", "description": "species of plant", "col_id": "", "col_accepted": ""}
+{"binomial": "Cassia obovata", "dict_mentions": 1, "qid": "Q19701232", "taxon_name": "Cassia obovata", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Polygonum fagopyrum", "dict_mentions": 1, "qid": "Q21876809", "taxon_name": "Polygonum fagopyrum", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Lilium pomponium", "dict_mentions": 1, "qid": "Q984311", "taxon_name": "Lilium pomponium", "description": "species of plant", "col_id": "", "col_accepted": ""}
 {"binomial": "Dioscorea triphylla", "dict_mentions": 1, "qid": "Q21873833", "taxon_name": "Dioscorea triphylla", "description": "species of plant", "col_id": "", "col_accepted": ""}

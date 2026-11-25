@@ -1,751 +1,647 @@
 total_rows	queue_type	concept_id	commodity_as_printed	substance_head	ghost_acres_domain	sitc_code
-1255	local_concept_only	htc:0006	Peas	Peas	food_grain	SITC4_05_Vegetables_and_Fruit
-565	local_concept_only	htc:0037	Swine	Swine	food_animal	SITC4_00_Live_Animals
-518	local_concept_only	htc:0046	Peas not fresh other than Split Peas	Peas	food_grain	SITC4_05_Vegetables_and_Fruit
-505	local_concept_only	htc:0048	Fruit Green	Fruit Green	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-382	local_concept_only	htc:0077	Spirits Unenumerated not Sweetened	Spirits	food_colonial_grocery	SITC4_11_Beverages
-349	local_concept_only	htc:0086	Pears Raw	Pears Raw	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-319	local_concept_only	htc:0101	Lobsters Canned	Lobsters Canned	fisheries_marine	SITC4_03_Fish_and_Seafood
-313	local_concept_only	htc:0102	Wood Manufactures Unenumerated	Wood Manufactures	manufactured_goods	SITC4_82_Furniture_and_Wood_Articles
-297	local_concept_only	htc:0108	Wood Manufactures	Wood Manufactures	manufactured_goods	SITC4_82_Furniture_and_Wood_Articles
-284	local_concept_only	htc:0110	Spirits Unenumerated	Spirits	food_colonial_grocery	SITC4_11_Beverages
-253	local_concept_only	htc:0129	Bees Wax	Bees Wax	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-231	local_concept_only	htc:0146	Leather Manufactures Manufactures Unenumerated	Leather Manufactures Manufactures	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-225	local_concept_only	htc:0151	Fruit Preserved without Sugar Canned or Bottled	Fruit Preserved without Sugar Canned or Bottled	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-201	local_concept_only	htc:0173	Woollen	Woollen	fibres_textiles	SITC4_26_Textile_Fibres
-189	local_concept_only	htc:0182	Mahogany - Furniture, Hardwoods or Veneers	Mahogany	manufactured_goods	SITC4_82_Furniture_and_Wood_Articles
-188	local_concept_only	htc:0184	Seal Skins Undressed	Seal Skins	fisheries_marine	SITC4_21_Hides_Skins_Furskins_Raw
-186	local_concept_only	htc:0186	Chemical Essential or Perfumed Oils	Chemical Essential or Perfumed Oils	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-185	local_concept_only	htc:0191	Ships Sold to other Countries	Ships Sold to other Countries	manufactured_goods	SITC4_7_Machinery_and_Transport_Equipment
-184	local_concept_only	htc:0192	Caoutchouc Manufactures of	Caoutchouc Manufactures of	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
+1120	customs_residual_category	htc:0010	Other Articles	Other Articles	other	oe:sitcUnassigned
+840	customs_residual_category	htc:0019	Other woods	Other woods	timber_forestry	SITC4_24_Cork_and_Wood
+349	customs_residual_category	htc:0087	Manufactures Unenumerated	Manufactures	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+313	local_concept_only	htc:0102	Wood Manufactures Unenumerated	Wood Manufactures	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+297	local_concept_only	htc:0108	Wood Manufactures	Wood Manufactures	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+257	local_concept_only	htc:0127	Tongues	Tongues	food_animal	SITC4_01_Meat_and_Preparations
+242	customs_residual_category	htc:0140	Goods Unenumerated Unmanufactured	Goods	other	oe:sitcUnassigned
+231	local_concept_only	htc:0146	Leather Manufactures Manufactures Unenumerated	Leather Manufactures Manufactures	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+200	customs_residual_category	htc:0175	Goods Unenumerated Manufactured	Goods	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+189	local_concept_only	htc:0182	Mahogany - Furniture, Hardwoods or Veneers	Mahogany	timber_forestry	SITC4_24_Cork_and_Wood
+184	local_concept_only	htc:0192	Caoutchouc Manufactures of	Caoutchouc Manufactures of	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 181	local_concept_only	htc:0194	Agricultural Products Unenumerated	Agricultural Products	other	oe:sitcUnassigned
 178	local_concept_only	htc:0198	Plants Shrubs Trees and Flower Roots	Plants Shrubs Trees and Flower Roots	other	oe:sitcUnassigned
-177	local_concept_only	htc:0201	Oxen and Bulls	Oxen and Bulls	food_animal	SITC4_00_Live_Animals
-177	local_concept_only	htc:0199	Bark Peruvian	Bark Peruvian	timber_forestry	SITC4_24_Cork_and_Wood
-170	local_concept_only	htc:0212	Hard Cheese	Hard Cheese	food_animal	SITC4_02_Dairy_and_Eggs
-168	local_concept_only	htc:0215	Oxen	Oxen	food_animal	SITC4_00_Live_Animals
-164	local_concept_only	htc:0223	Nuts and Kernels for expressing Oil	Nuts and Kernels for expressing Oil	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-163	local_concept_only	htc:0227	Manufactures Agricultural Implements	Manufactures Agricultural Implements	manufactured_goods	SITC4_7_Machinery_and_Transport_Equipment
+177	local_concept_only	htc:0199	Bark Peruvian	Bark Peruvian	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+164	local_concept_only	htc:0223	Nuts and Kernels for expressing Oil	Nuts and Kernels for expressing Oil	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
 162	local_concept_only	htc:0230	Mine Products Unenumerated	Mine Products	other	oe:sitcUnassigned
-162	local_concept_only	htc:0229	Copper Old (fit only to be re-manufactured from 1876 onward)	Copper Old	manufactured_goods	SITC4_69_Manufactures_of_Metal
-161	local_concept_only	htc:0231	Seeds Rape	Seeds Rape	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
-159	local_concept_only	htc:0237	Leather Manufactures Sole and Upper	Leather Manufactures Sole and Upper	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
 159	local_concept_only	htc:0236	Animal and Products Unenumerated	Animal and Products	other	oe:sitcUnassigned
-152	local_concept_only	htc:0244	Salmon Canned	Salmon Canned	fisheries_marine	SITC4_03_Fish_and_Seafood
-149	local_concept_only	htc:0254	lumber, planks, boards and joists	lumber, planks, boards and joists	timber_forestry	SITC4_24_Cork_and_Wood
-149	local_concept_only	htc:0253	Hats and Bonnets of Straw	Hats and Bonnets of Straw	manufactured_goods	SITC4_84_Apparel_and_Clothing
+159	local_concept_only	htc:0237	Leather Manufactures Sole and Upper	Leather Manufactures Sole and Upper	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 148	local_concept_only	htc:0255	Horse Hair	Horse Hair	fibres_textiles	SITC4_26_Textile_Fibres
-143	local_concept_only	htc:0266	Bark Extract of Hemlock	Bark Extract of Hemlock	timber_forestry	SITC4_24_Cork_and_Wood
-141	local_concept_only	htc:0272	Ground Plaster	Ground Plaster	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-141	local_concept_only	htc:0270	Iron Manufactures Unenumerated	Iron Manufactures	manufactured_goods	SITC4_69_Manufactures_of_Metal
-140	local_concept_only	htc:0274	Leather Manufactures Harness and Saddlery	Leather Manufactures Harness and Saddlery	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-140	local_concept_only	htc:0273	Spirits Geneva	Spirits Geneva	food_colonial_grocery	SITC4_11_Beverages
-139	local_concept_only	htc:0277	Animals Unenumerated	Animals	other	oe:sitcUnassigned
-130	local_concept_only	htc:0294	Shells of all kinds	Shells of all kinds	other	oe:sitcUnassigned
-130	local_concept_only	htc:0289	Hemp Rough or Undressed	Hemp Rough or	fibres_textiles	SITC4_26_Textile_Fibres
-128	local_concept_only	htc:0297	Fruit Dried unenumerated	Fruit Dried	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-126	local_concept_only	htc:0301	Plate of Silver gilt or ungilt	Plate of Silver gilt or ungilt	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-123	local_concept_only	htc:0311	Leather Manufactures	Leather Manufactures	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-122	local_concept_only	htc:0319	Steel Manufactures	Steel Manufactures	manufactured_goods	SITC4_69_Manufactures_of_Metal
-122	local_concept_only	htc:0316	Clover and Grass Seeds	Clover and Grass Seeds	fodder_feed	SITC4_08_Animal_Feeding_Stuff
-121	local_concept_only	htc:0321	Essence of Spruce	Essence of Spruce	timber_forestry	SITC4_24_Cork_and_Wood
-118	local_concept_only	htc:0327	Oil Castor	Oil Castor	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
+141	local_concept_only	htc:0270	Iron Manufactures Unenumerated	Iron Manufactures	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+140	local_concept_only	htc:0274	Leather Manufactures Harness and Saddlery	Leather Manufactures Harness and Saddlery	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+139	local_concept_only	htc:0277	Animals Unenumerated	Animals	food_animal	SITC4_00_Live_Animals
+126	local_concept_only	htc:0301	Plate of Silver gilt or ungilt	Plate of Silver gilt or ungilt	minerals_metals_energy	SITC4_67_68_Metals
+123	local_concept_only	htc:0311	Leather Manufactures	Leather Manufactures	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+122	local_concept_only	htc:0319	Steel Manufactures	Steel Manufactures	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+121	local_concept_only	htc:0321	Essence of Spruce	Essence of Spruce	food_colonial_grocery	SITC4_11_Beverages
+118	local_concept_only	htc:0327	Oil Castor	Oil Castor	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
 117	local_concept_only	htc:0330	Other Nuts used as Fruit	Other Nuts used as Fruit	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
 116	local_concept_only	htc:0332	Indian Meal	Indian Meal	food_grain	SITC4_04_Cereals_and_Preparations
-115	local_concept_only	htc:0334	Farinaceous Substances and Manufactures thereof	Farinaceous Substances and Manufactures thereof	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-113	local_concept_only	htc:0340	Hats and Caps	Hats and Caps	manufactured_goods	SITC4_84_Apparel_and_Clothing
-113	local_concept_only	htc:0339	Safflower	Safflower	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+115	local_concept_only	htc:0334	Farinaceous Substances and Manufactures thereof	Farinaceous Substances and Manufactures thereof	food_grain	SITC4_04_Cereals_and_Preparations
+113	local_concept_only	htc:0337	Castings Unenumerated	Castings	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
 113	local_concept_only	htc:0338	Cow Ox Bull or Elk Hair	Cow Ox Bull or Elk Hair	fibres_textiles	SITC4_26_Textile_Fibres
-113	local_concept_only	htc:0337	Castings Unenumerated	Castings	manufactured_goods	SITC4_69_Manufactures_of_Metal
-111	local_concept_only	htc:0349	Other Manufactured Cereals	Other	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-111	local_concept_only	htc:0348	Manufactures Lime	Manufactures Lime	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-111	local_concept_only	htc:0347	Coin and Bullion	Coin and Bullion	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+113	local_concept_only	htc:0339	Safflower	Safflower	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+111	local_concept_only	htc:0347	Coin and Bullion	Coin and Bullion	minerals_metals_energy	SITC4_67_68_Metals
+111	local_concept_only	htc:0348	Manufactures Lime	Manufactures Lime	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+111	local_concept_only	htc:0349	Other Manufactured Cereals	Other	food_grain	SITC4_04_Cereals_and_Preparations
 110	local_concept_only	htc:0351	Fisheries Articles Unenumerated	Fisheries Articles	fisheries_marine	SITC4_03_Fish_and_Seafood
-108	local_concept_only	htc:0354	Mineral or Earth Oil	Mineral or Earth Oil	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-108	local_concept_only	htc:0353	Iron and Steel, Manufactures of, Unenumerated	Iron and Steel, Manufactures of	manufactured_goods	SITC4_69_Manufactures_of_Metal
 108	local_concept_only	htc:0352	Nuts and Kernels Unenumerated	Nuts and Kernels	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-104	local_concept_only	htc:0365	Metal Manufactures not Iron or Steel	Metal Manufactures not Iron or Steel	manufactured_goods	SITC4_69_Manufactures_of_Metal
-102	local_concept_only	htc:0373	Wood Manufactures Doors Sashes and Blinds	Wood Manufactures Doors Sashes and Blinds	manufactured_goods	SITC4_82_Furniture_and_Wood_Articles
+108	local_concept_only	htc:0353	Iron and Steel, Manufactures of, Unenumerated	Iron and Steel, Manufactures of	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+108	local_concept_only	htc:0354	Mineral or Earth Oil	Mineral or Earth Oil	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+104	local_concept_only	htc:0365	Metal Manufactures not Iron or Steel	Metal Manufactures not Iron or Steel	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+102	local_concept_only	htc:0373	Wood Manufactures Doors Sashes and Blinds	Wood Manufactures Doors Sashes and Blinds	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 100	local_concept_only	htc:0377	Currants	Currants	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-98	local_concept_only	htc:0384	Hogs	Hogs	food_animal	SITC4_00_Live_Animals
-98	local_concept_only	htc:0381	Embroidery and Needlework	Embroidery and Needlework	other	oe:sitcUnassigned
-97	local_concept_only	htc:0387	Sea Fish Unenumerated Pickled	Sea Fish	fisheries_marine	SITC4_03_Fish_and_Seafood
 97	local_concept_only	htc:0386	Train Blubber and Spermaceti (Whale Oils)	Train Blubber and Spermaceti	fisheries_marine	SITC4_41_Animal_Oils_and_Fats
-93	local_concept_only	htc:0397	Tin Manufactures Unenumerated	Tin Manufactures	manufactured_goods	SITC4_69_Manufactures_of_Metal
-93	local_concept_only	htc:0393	Copper Manufactures Unenumerated including Copper Coin	Copper Manufactures	manufactured_goods	SITC4_69_Manufactures_of_Metal
-92	local_concept_only	htc:0402	Fruit Raw unenumerated	Fruit Raw	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+97	local_concept_only	htc:0387	Sea Fish Unenumerated Pickled	Sea Fish	fisheries_marine	SITC4_03_Fish_and_Seafood
+93	local_concept_only	htc:0393	Copper Manufactures Unenumerated including Copper Coin	Copper Manufactures	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+93	local_concept_only	htc:0397	Tin Manufactures Unenumerated	Tin Manufactures	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
 92	local_concept_only	htc:0400	Sarsaparilla	Sarsaparilla	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+92	local_concept_only	htc:0402	Fruit Raw unenumerated	Fruit Raw	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
 91	local_concept_only	htc:0406	Mink Furs	Mink Furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
 90	local_concept_only	htc:0409	Pears Fresh or Raw	Pears Fresh or Raw	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-89	local_concept_only	htc:0414	Vegetable Substances applicable to the same uses as Hemp or Flax	Vegetable Substances applicable to the same uses as Hemp or Flax	fibres_textiles	SITC4_26_Textile_Fibres
-89	local_concept_only	htc:0413	Metal Old fit only to be re-manufactured	Metal Old fit only to be re	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-89	local_concept_only	htc:0411	Cat Furs	Cat Furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
 89	local_concept_only	htc:0410	Goats Wool or Hair	Goats Wool or Hair	fibres_textiles	SITC4_26_Textile_Fibres
-87	local_concept_only	htc:0429	Meats Canned	Meats Canned	food_animal	SITC4_01_Meat_and_Preparations
-87	local_concept_only	htc:0426	Wood Manufactures Pails Tubs Churns and other Hollow Wooden Ware	Wood Manufactures Pails Tubs Churns and other Hollow Wooden Ware	manufactured_goods	SITC4_82_Furniture_and_Wood_Articles
-87	local_concept_only	htc:0423	Hemp Dressed or Undressed	Hemp Dressed or	fibres_textiles	SITC4_26_Textile_Fibres
-86	local_concept_only	htc:0433	Straw Platting for Hats	Straw Platting for Hats	manufactured_goods	SITC4_84_Apparel_and_Clothing
+89	local_concept_only	htc:0411	Cat Furs	Cat Furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
+89	local_concept_only	htc:0413	Metal Old fit only to be re-manufactured	Metal Old fit only to be re	minerals_metals_energy	SITC4_67_68_Metals
+89	local_concept_only	htc:0414	Vegetable Substances applicable to the same uses as Hemp or Flax	Vegetable Substances applicable to the same uses as Hemp or Flax	fibres_textiles	SITC4_26_Textile_Fibres
+88	local_concept_only	htc:0419	Grease	Grease	fats_oils_soap	SITC4_41_Animal_Oils_and_Fats
+88	local_concept_only	htc:0420	Sponge	Sponge	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+87	local_concept_only	htc:0426	Wood Manufactures Pails Tubs Churns and other Hollow Wooden Ware	Wood Manufactures Pails Tubs Churns and other Hollow Wooden Ware	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+84	local_concept_only	htc:0444	Scrap Iron	Scrap Iron	minerals_metals_energy	SITC4_67_68_Metals
 84	local_concept_only	htc:0446	Mutton	Mutton	food_animal	SITC4_01_Meat_and_Preparations
-84	local_concept_only	htc:0444	Scrap Iron	Scrap Iron	minerals_metals_energy	SITC4_67_Iron_and_Steel
-84	local_concept_only	htc:0442	Barrels Empty	Barrels Empty	other	oe:sitcUnassigned
-80	local_concept_only	htc:0462	Grass Seeds	Grass Seeds	fodder_feed	SITC4_08_Animal_Feeding_Stuff
-80	local_concept_only	htc:0461	Wolverine Furs	Wolverine Furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
+81	local_concept_only	htc:0457	Tin Ore	Tin Ore	minerals_metals_energy	SITC4_28_Metalliferous_Ores
 80	local_concept_only	htc:0460	Spices Cinnamon	Spices Cinnamon	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+80	local_concept_only	htc:0461	Wolverine Furs	Wolverine Furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
+80	local_concept_only	htc:0462	Grass Seeds	Grass Seeds	fodder_feed	SITC4_08_Animal_Feeding_Stuff
+79	local_concept_only	htc:0464	Succades	Succades	food_colonial_grocery	SITC4_06_Sugars_and_Honey
+79	local_concept_only	htc:0467	Asphalt or Bitumen	Asphalt or Bitumen	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
 79	local_concept_only	htc:0468	Pyrites of Iron or Copper	Pyrites of Iron or Copper	minerals_metals_energy	SITC4_28_Metalliferous_Ores
-79	local_concept_only	htc:0467	Asphalt or Bitumen	Asphalt or Bitumen	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+79	local_concept_only	htc:0469	Wood and Timber House Frames Fittings and Joiners Work	Wood and Timber House Frames Fittings and Joiners Work	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 78	local_concept_only	htc:0471	Orchal	Orchal	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
-76	local_concept_only	htc:0478	Lath and firewood	Lath and firewood	timber_forestry	SITC4_24_Cork_and_Wood
-76	local_concept_only	htc:0477	Peas Whole	Peas Whole	food_grain	SITC4_05_Vegetables_and_Fruit
+76	local_concept_only	htc:0475	Painters Colours and Pigments	Painters Colours and Pigments	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
 76	local_concept_only	htc:0476	Fruits Canned or Preserved	Fruits Canned or Preserved	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-76	local_concept_only	htc:0475	Painters Colours and Pigments	Painters Colours and Pigments	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
+76	local_concept_only	htc:0478	Lath and firewood	Lath and firewood	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
+73	local_concept_only	htc:0486	Flowers Artificial	Flowers Artificial	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 73	local_concept_only	htc:0490	Spruce Logs	Spruce Logs	timber_forestry	SITC4_24_Cork_and_Wood
-73	local_concept_only	htc:0486	Flowers Artificial	Flowers Artificial	other	oe:sitcUnassigned
-72	local_concept_only	htc:0500	Spirits Sweetened or Mixed Tested	Spirits Sweetened or Mixed Tested	food_colonial_grocery	SITC4_11_Beverages
-72	local_concept_only	htc:0497	Stones Marble Slate and other Sorts of Stone Rough Hewn or Manufactured	Stones Marble Slate and	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-72	local_concept_only	htc:0495	Mats and Matting	Mats and Matting	other	oe:sitcUnassigned
-71	local_concept_only	htc:0510	Mutton Fresh	Mutton Fresh	food_animal	SITC4_01_Meat_and_Preparations
-71	local_concept_only	htc:0508	Junk and Oakum	Junk and Oakum	fibres_textiles	SITC4_26_Textile_Fibres
+72	local_concept_only	htc:0497	Stones Marble Slate and other Sorts of Stone Rough Hewn or Manufactured	Stones Marble Slate and	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+71	local_concept_only	htc:0506	Chemical Manufactures and Products Unenumerated	Chemical Manufactures and Products	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
 71	local_concept_only	htc:0507	Grease and Scraps	Grease and Scraps	fats_oils_soap	SITC4_41_Animal_Oils_and_Fats
-71	local_concept_only	htc:0506	Chemical Manufactures and Products Unenumerated	Chemical Manufactures and Products	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-70	local_concept_only	htc:0515	Art, Works of, other than Pictures	Art, Works of, other than Pictures	manufactured_goods	SITC4_64_Paper_and_Paperboard
+71	local_concept_only	htc:0508	Junk and Oakum	Junk and Oakum	manufactured_goods	SITC4_65_Textile_Yarn_and_Fabrics
+71	local_concept_only	htc:0510	Mutton Fresh	Mutton Fresh	food_animal	SITC4_01_Meat_and_Preparations
 70	local_concept_only	htc:0512	Specimens illustrative of Natural Science	Specimens illustrative of Natural Science	other	oe:sitcUnassigned
-69	local_concept_only	htc:0525	Pictures and Drawings by hand	Pictures and Drawings by hand	manufactured_goods	SITC4_64_Paper_and_Paperboard
-68	local_concept_only	htc:0532	Other Fresh Fish	Other Fresh Fish	fisheries_marine	SITC4_03_Fish_and_Seafood
-68	local_concept_only	htc:0531	Brass, Bronze, and Metal, Bronzed or Lacquered	Brass, Bronze, and Metal, Bronzed or Lacquered	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
+70	local_concept_only	htc:0515	Art, Works of, other than Pictures	Art, Works of, other than Pictures	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+69	local_concept_only	htc:0525	Pictures and Drawings by hand	Pictures and Drawings by hand	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 68	local_concept_only	htc:0527	Pine Logs	Pine Logs	timber_forestry	SITC4_24_Cork_and_Wood
-67	local_concept_only	htc:0542	Phosphate of Lime and Rock	Phosphate of Lime and Rock	drugs_botanicals_chemicals	SITC4_27_Crude_Fertilizers_and_Minerals
-67	local_concept_only	htc:0538	Fruit Preserved without Sugar Unenumerated	Fruit Preserved without Sugar	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-67	local_concept_only	htc:0537	Hemp Tow or Codilla of Hemp	Hemp Tow or Codilla of Hemp	fibres_textiles	SITC4_26_Textile_Fibres
-66	local_concept_only	htc:0548	Lobsters Preserved	Lobsters Preserved	fisheries_marine	SITC4_03_Fish_and_Seafood
-66	local_concept_only	htc:0546	Buttons and Studs, not of Metal	Buttons and Studs, not of Metal	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
+68	local_concept_only	htc:0531	Brass, Bronze, and Metal, Bronzed or Lacquered	Brass, Bronze, and Metal, Bronzed or Lacquered	minerals_metals_energy	SITC4_67_68_Metals
+68	local_concept_only	htc:0532	Other Fresh Fish	Other Fresh Fish	fisheries_marine	SITC4_03_Fish_and_Seafood
+67	local_concept_only	htc:0542	Phosphate of Lime and Rock	Phosphate of Lime and Rock	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
 66	local_concept_only	htc:0544	Plums Dried or Preserved	Plums Dried or Preserved	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-65	local_concept_only	htc:0561	Household Effects Unenumerated	Household Effects	other	oe:sitcUnassigned
-65	local_concept_only	htc:0560	Lamps and Lanterns	Lamps and Lanterns	other	oe:sitcUnassigned
+66	local_concept_only	htc:0546	Buttons and Studs, not of Metal	Buttons and Studs, not of Metal	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 65	local_concept_only	htc:0559	Gold Ore of, or Ore of which the greater part in Value is Gold	Gold Ore of, or Ore of which the greater part in Value is Gold	minerals_metals_energy	SITC4_28_Metalliferous_Ores
-63	local_concept_only	htc:0570	Animal Oil	Animal Oil	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-63	local_concept_only	htc:0568	Baskets	Baskets	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-62	local_concept_only	htc:0576	Gold-bearing Quartz Dust Nuggets &c	Gold-bearing Quartz Dust Nuggets &c	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-62	local_concept_only	htc:0574	Trees, Shrubs and Plants	Trees, Shrubs and Plants	other	oe:sitcUnassigned
+65	local_concept_only	htc:0560	Lamps and Lanterns	Lamps and Lanterns	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+65	local_concept_only	htc:0561	Household Effects Unenumerated	Household Effects	other	oe:sitcUnassigned
+63	local_concept_only	htc:0568	Baskets	Baskets	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+63	local_concept_only	htc:0569	Seed Oil of All Kinds	Seed Oil of All Kinds	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
+63	local_concept_only	htc:0570	Animal Oil	Animal Oil	fats_oils_soap	SITC4_41_Animal_Oils_and_Fats
 62	local_concept_only	htc:0573	Spices Cloves	Spices Cloves	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
-61	local_concept_only	htc:0585	Hop Hoop Telegraph and other Poles	Hop Hoop Telegraph and other Poles	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
-60	local_concept_only	htc:0594	Explosives and Fulminates of all Kinds	Explosives and Fulminates of all Kinds	other	oe:sitcUnassigned
-60	local_concept_only	htc:0592	Chemical Manufactures and Products	Chemical Manufactures and Products	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-59	local_concept_only	htc:0607	Wood Manufactures Mouldings Trimmings and other House Furnishings	Wood Manufactures Mouldings Trimmings and other House Furnishings	manufactured_goods	SITC4_82_Furniture_and_Wood_Articles
+62	local_concept_only	htc:0574	Trees, Shrubs and Plants	Trees, Shrubs and Plants	other	oe:sitcUnassigned
+62	local_concept_only	htc:0576	Gold-bearing Quartz Dust Nuggets &c	Gold-bearing Quartz Dust Nuggets &c	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+61	local_concept_only	htc:0585	Hop Hoop Telegraph and other Poles	Hop Hoop Telegraph and other Poles	timber_forestry	SITC4_24_Cork_and_Wood
+60	local_concept_only	htc:0592	Chemical Manufactures and Products	Chemical Manufactures and Products	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+60	local_concept_only	htc:0594	Explosives and Fulminates of all Kinds	Explosives and Fulminates of all Kinds	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+59	local_concept_only	htc:0598	Arms and Ammunition Gunpowder	Arms and Ammunition Gunpowder	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+59	local_concept_only	htc:0603	Leached Ashes	Leached Ashes	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
 59	local_concept_only	htc:0605	Asbestos 3rd Class	Asbestos 3rd Class	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-59	local_concept_only	htc:0603	Leached Ashes	Leached Ashes	other	oe:sitcUnassigned
-59	local_concept_only	htc:0602	Hats and Bonnets of other Material	Hats and Bonnets of other Material	manufactured_goods	SITC4_84_Apparel_and_Clothing
-59	local_concept_only	htc:0597	Tamarinds	Tamarinds	other	oe:sitcUnassigned
-59	local_concept_only	htc:0596	Ashes of all other Sorts	Ashes of all	other	oe:sitcUnassigned
-58	local_concept_only	htc:0612	Spirits Unenumerated not Sweetened or Mixed	Spirits	food_colonial_grocery	SITC4_11_Beverages
+59	local_concept_only	htc:0607	Wood Manufactures Mouldings Trimmings and other House Furnishings	Wood Manufactures Mouldings Trimmings and other House Furnishings	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+58	local_concept_only	htc:0609	Elephants Teeth	Elephants Teeth	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+58	local_concept_only	htc:0610	Iron and Steel Wrought or Manufactured	Iron and Steel Wrought or	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
 58	local_concept_only	htc:0611	Tares Seeds	Tares Seeds	fodder_feed	SITC4_08_Animal_Feeding_Stuff
-58	local_concept_only	htc:0610	Iron and Steel Wrought or Manufactured	Iron and Steel Wrought or	manufactured_goods	SITC4_69_Manufactures_of_Metal
-58	local_concept_only	htc:0609	Elephants Teeth	Elephants Teeth	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-57	local_concept_only	htc:0624	Swine and Hogs	Swine and Hogs	food_animal	SITC4_00_Live_Animals
-57	local_concept_only	htc:0623	Manufactures of Gypsum Plaster Lime &c	Manufactures of Gypsum Plaster Lime &c	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
 57	local_concept_only	htc:0618	Spices Nutmegs	Spices Nutmegs	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
-56	local_concept_only	htc:0637	Skins Furs and Pelts Manufactures of including Rugs	Skins Furs and Pelts Manufactures of including Rugs	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-56	local_concept_only	htc:0631	Bricks	Bricks	manufactured_goods	SITC4_66_Non_Metallic_Mineral_Manufactures
-56	local_concept_only	htc:0630	Skins Furs and Pelts Articles manufactured of Skins and Furs	Skins Furs and Pelts Articles	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-55	local_concept_only	htc:0644	Indian Bark Work	Indian Bark Work	timber_forestry	SITC4_24_Cork_and_Wood
-54	local_concept_only	htc:0651	Asbestos 2nd Class	Asbestos 2nd Class	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+57	local_concept_only	htc:0623	Manufactures of Gypsum Plaster Lime &c	Manufactures of Gypsum Plaster Lime &c	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+56	local_concept_only	htc:0631	Bricks	Bricks	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+55	local_concept_only	htc:0644	Indian Bark Work	Indian Bark Work	other	oe:sitcUnassigned
 54	local_concept_only	htc:0650	Asbestos 1st Class	Asbestos 1st Class	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-54	local_concept_only	htc:0649	Hemp	Hemp	fibres_textiles	SITC4_26_Textile_Fibres
-53	local_concept_only	htc:0656	Rabbit Skins Undressed	Rabbit Skins	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
-53	local_concept_only	htc:0655	Household Manufactures Unenumerated	Household Manufactures	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
+54	local_concept_only	htc:0651	Asbestos 2nd Class	Asbestos 2nd Class	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
 53	local_concept_only	htc:0653	Precious Stones Unset	Precious Stones Unset	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-51	local_concept_only	htc:0668	Vegetables Canned or Preserved	Vegetables Canned or Preserved	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-51	local_concept_only	htc:0667	Peas Split	Peas Split	food_grain	SITC4_05_Vegetables_and_Fruit
-51	local_concept_only	htc:0666	Sauces or Condiments Unenumerated	Sauces or Condiments	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-50	local_concept_only	htc:0679	Oil N.E.S.	Oil N.E.S.	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-50	local_concept_only	htc:0678	Clay Manufactures	Clay Manufactures	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-50	local_concept_only	htc:0670	Perfumed Spirits and Cologne Water	Perfumed Spirits and Cologne Water	food_colonial_grocery	SITC4_11_Beverages
-49	local_concept_only	htc:0688	Other Vehicles	Other Vehicles	manufactured_goods	SITC4_7_Machinery_and_Transport_Equipment
-49	local_concept_only	htc:0687	Prints Engravings and Photographs	Prints Engravings and Photographs	manufactured_goods	SITC4_64_Paper_and_Paperboard
-49	local_concept_only	htc:0683	Senna	Senna	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+53	local_concept_only	htc:0655	Household Manufactures Unenumerated	Household Manufactures	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+53	local_concept_only	htc:0656	Rabbit Skins Undressed	Rabbit Skins	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
+51	local_concept_only	htc:0666	Sauces or Condiments Unenumerated	Sauces or Condiments	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+50	local_concept_only	htc:0670	Perfumed Spirits and Cologne Water	Perfumed Spirits and Cologne Water	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
+50	local_concept_only	htc:0678	Clay Manufactures	Clay Manufactures	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+50	local_concept_only	htc:0679	Oil N.E.S.	Oil N.E.S.	other	oe:sitcUnassigned
 49	local_concept_only	htc:0682	Rhubarb	Rhubarb	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
-48	local_concept_only	htc:0697	Spirits	Spirits	food_colonial_grocery	SITC4_11_Beverages
-48	local_concept_only	htc:0695	Liquorice	Liquorice	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+49	local_concept_only	htc:0683	Senna	Senna	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+49	local_concept_only	htc:0687	Prints Engravings and Photographs	Prints Engravings and Photographs	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+49	local_concept_only	htc:0688	Other Vehicles	Other Vehicles	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
 48	local_concept_only	htc:0690	Goat Skins	Goat Skins	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
+48	local_concept_only	htc:0695	Liquorice	Liquorice	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
 47	local_concept_only	htc:0706	Sand and Gravel	Sand and Gravel	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-46	local_concept_only	htc:0718	Fruit Preserved without Sugar Canned or Bottled Other Sorts	Fruit Preserved without Sugar Canned or Bottled	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-46	local_concept_only	htc:0708	Hats and Bonnets of Felt	Hats and Bonnets of Felt	manufactured_goods	SITC4_84_Apparel_and_Clothing
-45	local_concept_only	htc:0725	Pickles and Vegetables Preserved in Salt or Vinegar	Pickles and Vegetables Preserved in Salt or Vinegar	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-45	local_concept_only	htc:0723	Hardwares and Cutlery Unenumerated	Hardwares and Cutlery	manufactured_goods	SITC4_69_Manufactures_of_Metal
-45	local_concept_only	htc:0720	Fruit Raw or otherwise not described	Fruit Raw or otherwise not described	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+46	customs_residual_category	htc:0713	Value of Articles Imported by Parcel Post	Value of Articles Imported by Parcel Post	other	oe:sitcUnassigned
 45	local_concept_only	htc:0719	Spices Cassia Lignea	Spices Cassia Lignea	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
-44	local_concept_only	htc:0733	Cocoa or Chocolate ground prepared or in anyway manufactured	Cocoa or Chocolate ground prepared or in anyway	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-43	local_concept_only	htc:0748	Stone Ornamental, Granite, Marble &c	Stone Ornamental, Granite, Marble &c	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-43	local_concept_only	htc:0746	Canes and Sticks unmounted	Canes and Sticks unmounted	other	oe:sitcUnassigned
-43	local_concept_only	htc:0745	Beef Preserved not by Salting	Beef Preserved not by Salting	food_animal	SITC4_01_Meat_and_Preparations
-43	local_concept_only	htc:0744	Lobsters Fresh	Lobsters Fresh	fisheries_marine	SITC4_03_Fish_and_Seafood
-43	local_concept_only	htc:0743	Straw Manufactures	Straw Manufactures	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-43	local_concept_only	htc:0738	Candles of all Sorts	Candles of all Sorts	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
-43	local_concept_only	htc:0736	Maps and Charts	Maps and Charts	other	oe:sitcUnassigned
+45	local_concept_only	htc:0720	Fruit Raw or otherwise not described	Fruit Raw or otherwise not described	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+45	local_concept_only	htc:0722	Hair Manufactures of Hair not being of Goats Hair or Wool	Hair Manufactures of Hair not being of Goats Hair or Wool	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+45	local_concept_only	htc:0723	Hardwares and Cutlery Unenumerated	Hardwares and Cutlery	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+45	local_concept_only	htc:0725	Pickles and Vegetables Preserved in Salt or Vinegar	Pickles and Vegetables Preserved in Salt or Vinegar	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
 43	local_concept_only	htc:0734	Coney Wool	Coney Wool	fibres_textiles	SITC4_26_Textile_Fibres
-42	local_concept_only	htc:0758	Wood Blocks and Other for Pulp	Wood Blocks and Other for Pulp	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
-42	local_concept_only	htc:0757	Jewellers Sweepings	Jewellers Sweepings	other	oe:sitcUnassigned
+43	local_concept_only	htc:0736	Maps and Charts	Maps and Charts	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+43	local_concept_only	htc:0746	Canes and Sticks unmounted	Canes and Sticks unmounted	other	oe:sitcUnassigned
 42	local_concept_only	htc:0755	Succades including all Fruits and Vegetables preserved in Sugar	Succades including all Fruits and Vegetables preserved in Sugar	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-42	local_concept_only	htc:0753	Ginger Preserved	Ginger Preserved	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
-41	local_concept_only	htc:0761	Teeth Elephants Sea Cow and Sea Horses	Teeth Elephants Sea Cow and Sea Horses	food_animal	SITC4_00_Live_Animals
-40	local_concept_only	htc:0779	Rolled Oats including Quaker Oats	Rolled Oats including Quaker Oats	food_grain	SITC4_04_Cereals_and_Preparations
-40	local_concept_only	htc:0775	Sea Fish Unenumerated Preserved	Sea Fish	fisheries_marine	SITC4_03_Fish_and_Seafood
-40	local_concept_only	htc:0773	Gold Leave	Gold Leave	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-40	local_concept_only	htc:0772	Metals Ores unenumerated	Metals Ores	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+42	local_concept_only	htc:0757	Jewellers Sweepings	Jewellers Sweepings	other	oe:sitcUnassigned
+40	local_concept_only	htc:0769	Muskets Rifles and Guns of any other Sort and Pistols	Muskets Rifles and Guns of any other Sort and Pistols	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
 40	local_concept_only	htc:0771	Chicory Raw or Kiln-Dried	Chicory Raw or Kiln-Dried	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
-40	local_concept_only	htc:0769	Muskets Rifles and Guns of any other Sort and Pistols	Muskets Rifles and Guns of any other Sort and Pistols	other	oe:sitcUnassigned
-40	local_concept_only	htc:0767	Spirits Unenumerated including Shrub	Spirits	food_colonial_grocery	SITC4_11_Beverages
-39	local_concept_only	htc:0792	Joists and Scantling	Joists and Scantling	timber_forestry	SITC4_24_Cork_and_Wood
-39	local_concept_only	htc:0789	Sea Fish Unenumerated Fresh	Sea Fish	fisheries_marine	SITC4_03_Fish_and_Seafood
-39	local_concept_only	htc:0788	Oil Mineral or Earth Refined	Oil Mineral or Earth Refined	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-39	local_concept_only	htc:0787	Meats Preserved not otherwise specified	Meats Preserved not otherwise specified	food_animal	SITC4_01_Meat_and_Preparations
-39	local_concept_only	htc:0784	Wood or Timber Deals Battens Boards (Sawn or Split)	Wood or Timber Deals Battens Boards	timber_forestry	SITC4_24_Cork_and_Wood
-39	local_concept_only	htc:0783	Brass Manufactures of	Brass Manufactures of	manufactured_goods	SITC4_69_Manufactures_of_Metal
+40	local_concept_only	htc:0772	Metals Ores unenumerated	Metals Ores	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+40	local_concept_only	htc:0773	Gold Leave	Gold Leave	minerals_metals_energy	SITC4_67_68_Metals
+40	local_concept_only	htc:0775	Sea Fish Unenumerated Preserved	Sea Fish	fisheries_marine	SITC4_03_Fish_and_Seafood
+40	local_concept_only	htc:0779	Rolled Oats including Quaker Oats	Rolled Oats including Quaker Oats	food_grain	SITC4_04_Cereals_and_Preparations
 39	local_concept_only	htc:0780	Barilla	Barilla	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-38	local_concept_only	htc:0806	Stone and Marble, Wrought	Stone and Marble, Wrought	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-38	local_concept_only	htc:0803	Rockets and other Combustibles for purposes of War Explosives Percussion Caps and Ammunition	Rockets and other Combustibles for purposes of War Explosives Percussion Caps and Ammunition	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-38	local_concept_only	htc:0801	Mackerel Canned	Mackerel Canned	fisheries_marine	SITC4_03_Fish_and_Seafood
+39	local_concept_only	htc:0783	Brass Manufactures of	Brass Manufactures of	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+39	local_concept_only	htc:0788	Oil Mineral or Earth Refined	Oil Mineral or Earth Refined	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+39	local_concept_only	htc:0789	Sea Fish Unenumerated Fresh	Sea Fish	fisheries_marine	SITC4_03_Fish_and_Seafood
+39	local_concept_only	htc:0792	Joists and Scantling	Joists and Scantling	timber_forestry	SITC4_24_Cork_and_Wood
+39	local_concept_only	htc:0793	Wallpaper	Wallpaper	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 38	local_concept_only	htc:0797	Currants Dried	Currants Dried	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-37	local_concept_only	htc:0816	Fruit Juice Not Sweetened All Other Sorts	Fruit Juice Not Sweetened All	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-37	local_concept_only	htc:0815	Perfumery and Articles used in the Manufacture thereof except Perfumed Spirits	Perfumery and Articles used in the Manufacture thereof except Perfumed Spirits	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
+38	local_concept_only	htc:0803	Rockets and other Combustibles for purposes of War Explosives Percussion Caps and Ammunition	Rockets and other Combustibles for purposes of War Explosives Percussion Caps and Ammunition	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+37	local_concept_only	htc:0807	Smalts	Smalts	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+37	local_concept_only	htc:0808	Boxes	Boxes	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 37	local_concept_only	htc:0811	Chicory Roasted or Ground	Chicory Roasted or Ground	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
-36	local_concept_only	htc:0826	Sardines Cured or Salted	Sardines Cured or Salted	fisheries_marine	SITC4_03_Fish_and_Seafood
-36	local_concept_only	htc:0825	Jute Manufactures	Jute Manufactures	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-36	local_concept_only	htc:0824	Iron Cast or Wrought and other Manufactures except Ordnance unenumerated	Iron Cast or Wrought and other Manufactures except Ordnance	manufactured_goods	SITC4_69_Manufactures_of_Metal
-36	local_concept_only	htc:0823	Perfumery and Articles used in the Manufacture thereof	Perfumery and Articles used in the Manufacture thereof	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-36	local_concept_only	htc:0821	Hemp Dressed	Hemp Dressed	fibres_textiles	SITC4_26_Textile_Fibres
+37	local_concept_only	htc:0814	Paper Making Materials Other Paper Making Materials	Paper Making Materials Other Paper Making Materials	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
+37	local_concept_only	htc:0816	Fruit Juice Not Sweetened All Other Sorts	Fruit Juice Not Sweetened All	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
 36	local_concept_only	htc:0817	Small Nuts	Small Nuts	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-35	local_concept_only	htc:0840	Oil Mineral Coal and Kerosene Refined	Oil Mineral Coal and Kerosene Refined	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-35	local_concept_only	htc:0839	Wood Manufactures Spool Wood and Spools	Wood Manufactures Spool Wood and Spools	manufactured_goods	SITC4_82_Furniture_and_Wood_Articles
-35	local_concept_only	htc:0837	Worsted Stuffs of Wool mixed with other Materials	Worsted Stuffs of Wool mixed with other Materials	fibres_textiles	SITC4_26_Textile_Fibres
-35	local_concept_only	htc:0836	Pictures Drawings and Photographs	Pictures Drawings and Photographs	manufactured_goods	SITC4_64_Paper_and_Paperboard
-35	local_concept_only	htc:0835	Paraffin	Paraffin	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-35	local_concept_only	htc:0834	Nitre Cubic	Nitre Cubic	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-35	local_concept_only	htc:0832	Liquorice Juice	Liquorice Juice	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-35	local_concept_only	htc:0830	Frames for Pictures	Frames for Pictures	manufactured_goods	SITC4_64_Paper_and_Paperboard
+36	local_concept_only	htc:0824	Iron Cast or Wrought and other Manufactures except Ordnance unenumerated	Iron Cast or Wrought and other Manufactures except Ordnance	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+36	local_concept_only	htc:0826	Sardines Cured or Salted	Sardines Cured or Salted	fisheries_marine	SITC4_03_Fish_and_Seafood
+36	local_concept_only	htc:0828	Photographs	Photographs	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 35	local_concept_only	htc:0829	Badger Furs	Badger Furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
-34	local_concept_only	htc:0857	stone, building, free stone, limestone, &c, unrought	stone, building, free stone, limestone, &c, unrought	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+35	local_concept_only	htc:0830	Frames for Pictures	Frames for Pictures	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+35	local_concept_only	htc:0832	Liquorice Juice	Liquorice Juice	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+35	local_concept_only	htc:0834	Nitre Cubic	Nitre Cubic	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+35	local_concept_only	htc:0835	Paraffin	Paraffin	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
+35	local_concept_only	htc:0836	Pictures Drawings and Photographs	Pictures Drawings and Photographs	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+35	local_concept_only	htc:0837	Worsted Stuffs of Wool mixed with other Materials	Worsted Stuffs of Wool mixed with other Materials	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+35	local_concept_only	htc:0839	Wood Manufactures Spool Wood and Spools	Wood Manufactures Spool Wood and Spools	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+35	local_concept_only	htc:0840	Oil Mineral Coal and Kerosene Refined	Oil Mineral Coal and Kerosene Refined	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+34	local_concept_only	htc:0846	Iron Manufactures of Steel or Steel and Iron	Iron Manufactures of Steel or Steel and Iron	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+34	local_concept_only	htc:0847	Glue Stock and Pieces for Making Glue	Glue Stock and Pieces for Making Glue	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+34	local_concept_only	htc:0848	Playing Cards	Playing Cards	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+34	local_concept_only	htc:0853	Electrotypes	Electrotypes	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 34	local_concept_only	htc:0855	Milk Condensed	Milk Condensed	food_animal	SITC4_02_Dairy_and_Eggs
-34	local_concept_only	htc:0853	Electrotypes	Electrotypes	other	oe:sitcUnassigned
-34	local_concept_only	htc:0849	Spermaceiti or Head Matter (Whale Oils)	Spermaceiti or Head Matter	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-34	local_concept_only	htc:0848	Playing Cards	Playing Cards	other	oe:sitcUnassigned
-34	local_concept_only	htc:0847	Glue Stock and Pieces for Making Glue	Glue Stock and Pieces for Making Glue	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-34	local_concept_only	htc:0846	Iron Manufactures of Steel or Steel and Iron	Iron Manufactures of Steel or Steel and Iron	manufactured_goods	SITC4_69_Manufactures_of_Metal
-34	local_concept_only	htc:0845	Spirits Cordials or Strong Waters	Spirits Cordials or Strong Waters	food_colonial_grocery	SITC4_11_Beverages
-33	local_concept_only	htc:0870	Fruit Preserved without sugar by Chemicals or Artificial Heat or Artificial Cold Other Sorts	Fruit Preserved without sugar by Chemicals or Artificial Heat or Artificial Cold	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-33	local_concept_only	htc:0869	Piassava Fibre and other Fibres for Brush Making	Piassava Fibre and other Fibres for Brush Making	other	oe:sitcUnassigned
-33	local_concept_only	htc:0864	Candles Stearine	Candles Stearine	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
-33	local_concept_only	htc:0863	Brooms and Brushes	Brooms and Brushes	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-33	local_concept_only	htc:0861	Mother of Pearl Shells	Mother of Pearl Shells	fisheries_marine	SITC4_03_Fish_and_Seafood
-32	local_concept_only	htc:0883	Sails Manufactures	Sails Manufactures	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-32	local_concept_only	htc:0878	Basswood	Basswood	timber_forestry	SITC4_24_Cork_and_Wood
+33	local_concept_only	htc:0861	Mother of Pearl Shells	Mother of Pearl Shells	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+33	local_concept_only	htc:0863	Brooms and Brushes	Brooms and Brushes	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+33	local_concept_only	htc:0868	Paper Making Materials Pulp of Wood	Paper Making Materials Pulp of Wood	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
+33	local_concept_only	htc:0869	Piassava Fibre and other Fibres for Brush Making	Piassava Fibre and other Fibres for Brush Making	fibres_textiles	SITC4_26_Textile_Fibres
+32	local_concept_only	htc:0871	Argol	Argol	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+32	local_concept_only	htc:0872	Prints and Drawings Colored	Prints and Drawings Colored	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 32	local_concept_only	htc:0875	Other poles	Other poles	timber_forestry	SITC4_24_Cork_and_Wood
-32	local_concept_only	htc:0872	Prints and Drawings Colored	Prints and Drawings Colored	manufactured_goods	SITC4_64_Paper_and_Paperboard
-32	local_concept_only	htc:0871	Argol	Argol	other	oe:sitcUnassigned
-31	local_concept_only	htc:0894	Posts Cedar Tamarac &c	Posts Cedar Tamarac &c	timber_forestry	SITC4_24_Cork_and_Wood
-31	local_concept_only	htc:0892	Metal Old other than Iron or Copper for re-manufacture	Metal Old other than Iron or Copper for re-manufacture	manufactured_goods	SITC4_69_Manufactures_of_Metal
-31	local_concept_only	htc:0890	Swords Cutlasses Bayonets and Arms of other Sorts Unenumerated	Swords Cutlasses Bayonets and Arms of	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-31	local_concept_only	htc:0888	Plums French and Prunelloes	Plums French and Prunelloes	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-31	local_concept_only	htc:0887	Animal Tails	Animal Tails	other	oe:sitcUnassigned
+32	local_concept_only	htc:0878	Basswood	Basswood	timber_forestry	SITC4_24_Cork_and_Wood
+32	local_concept_only	htc:0883	Sails Manufactures	Sails Manufactures	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
 31	local_concept_only	htc:0885	Stones Slabs and Marble	Stones Slabs and Marble	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-30	local_concept_only	htc:0926	Shredded Wheat	Shredded Wheat	food_grain	SITC4_04_Cereals_and_Preparations
-30	local_concept_only	htc:0924	Rabbits Skins Dressed	Rabbits Skins Dressed	tannins_leather	SITC4_61_Leather_and_Dressed_Furskins
-30	local_concept_only	htc:0923	Sauces or Condiments Unenumerated including Table Salt	Sauces or Condiments	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-30	local_concept_only	htc:0922	Curios	Curios	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-30	local_concept_only	htc:0921	Asbestos Raw	Asbestos Raw	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-30	local_concept_only	htc:0920	Mica Talc etc	Mica Talc etc	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-30	local_concept_only	htc:0917	Zinc Manufactures Unenumerated	Zinc Manufactures	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-30	local_concept_only	htc:0915	Varnish Not containing Alcohol	Varnish Not containing Alcohol	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-30	local_concept_only	htc:0914	Stave Bolts	Stave Bolts	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
+31	local_concept_only	htc:0887	Animal Tails	Animal Tails	other	oe:sitcUnassigned
+31	local_concept_only	htc:0888	Plums French and Prunelloes	Plums French and Prunelloes	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+31	local_concept_only	htc:0890	Swords Cutlasses Bayonets and Arms of other Sorts Unenumerated	Swords Cutlasses Bayonets and Arms of	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+31	local_concept_only	htc:0892	Metal Old other than Iron or Copper for re-manufacture	Metal Old other than Iron or Copper for re-manufacture	minerals_metals_energy	SITC4_67_68_Metals
+31	local_concept_only	htc:0894	Posts Cedar Tamarac &c	Posts Cedar Tamarac &c	timber_forestry	SITC4_24_Cork_and_Wood
+30	local_concept_only	htc:0902	Silk Goods Taffeties &c	Silk Goods Taffeties &c	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+30	local_concept_only	htc:0903	Liqueurs Cordials &c not tested or ascertaining the strength	Liqueurs Cordials &c not tested or ascertaining the strength	food_colonial_grocery	SITC4_11_Beverages
 30	local_concept_only	htc:0908	Yeast Dried	Yeast Dried	other	oe:sitcUnassigned
-30	local_concept_only	htc:0903	Liqueurs Cordials &c not tested or ascertaining the strength	Liqueurs Cordials &c not tested or ascertaining the strength	other	oe:sitcUnassigned
-29	local_concept_only	htc:0939	Mutton Preserved not by Salting	Mutton Preserved not by Salting	food_animal	SITC4_01_Meat_and_Preparations
-29	local_concept_only	htc:0938	Goats Wool or Hair Mohair	Goats Wool or Hair Mohair	fibres_textiles	SITC4_26_Textile_Fibres
+30	local_concept_only	htc:0913	Percussion Caps	Percussion Caps	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+30	local_concept_only	htc:0914	Stave Bolts	Stave Bolts	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
+30	local_concept_only	htc:0915	Varnish Not containing Alcohol	Varnish Not containing Alcohol	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+30	local_concept_only	htc:0917	Zinc Manufactures Unenumerated	Zinc Manufactures	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+30	local_concept_only	htc:0919	Yeast	Yeast	other	oe:sitcUnassigned
+30	local_concept_only	htc:0920	Mica Talc etc	Mica Talc etc	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+30	local_concept_only	htc:0921	Asbestos Raw	Asbestos Raw	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+30	local_concept_only	htc:0922	Curios	Curios	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+30	local_concept_only	htc:0923	Sauces or Condiments Unenumerated including Table Salt	Sauces or Condiments	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+30	local_concept_only	htc:0924	Rabbits Skins Dressed	Rabbits Skins Dressed	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
+30	local_concept_only	htc:0926	Shredded Wheat	Shredded Wheat	food_grain	SITC4_04_Cereals_and_Preparations
+29	local_concept_only	htc:0928	Marmalade	Marmalade	food_colonial_grocery	SITC4_06_Sugars_and_Honey
+29	local_concept_only	htc:0929	Water Cologne in Flasks	Water Cologne in Flasks	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
+29	local_concept_only	htc:0931	Metal Leaf not Gold	Metal Leaf not Gold	minerals_metals_energy	SITC4_67_68_Metals
+29	local_concept_only	htc:0934	Lead Manufactures Unenumerated	Lead Manufactures	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
 29	local_concept_only	htc:0937	Wood Manufactures Wood Pulp	Wood Manufactures Wood Pulp	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
-29	local_concept_only	htc:0934	Lead Manufactures Unenumerated	Lead Manufactures	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-29	local_concept_only	htc:0931	Metal Leaf not Gold	Metal Leaf not Gold	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-29	local_concept_only	htc:0930	Oil Fish Cod Liver	Oil Fish Cod Liver	fisheries_marine	SITC4_41_Animal_Oils_and_Fats
-29	local_concept_only	htc:0929	Water Cologne in Flasks	Water Cologne in Flasks	other	oe:sitcUnassigned
-28	local_concept_only	htc:0958	Bicycles	Bicycles	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-28	local_concept_only	htc:0953	Jewellery Unenumerated	Jewellery	other	oe:sitcUnassigned
-28	local_concept_only	htc:0952	Oxen Bulls and Cows	Oxen Bulls and Cows	food_animal	SITC4_00_Live_Animals
-28	local_concept_only	htc:0951	Quinine Sulphate of	Quinine Sulphate of	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
-28	local_concept_only	htc:0949	Cannon and Mortars	Cannon and Mortars	other	oe:sitcUnassigned
+29	local_concept_only	htc:0938	Goats Wool or Hair Mohair	Goats Wool or Hair Mohair	fibres_textiles	SITC4_26_Textile_Fibres
+29	local_concept_only	htc:0939	Mutton Preserved not by Salting	Mutton Preserved not by Salting	food_animal	SITC4_01_Meat_and_Preparations
+28	local_concept_only	htc:0942	Tortoise or Turtle Shell Unmanufactured	Tortoise or Turtle Shell	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+28	local_concept_only	htc:0945	Quills Goose	Quills Goose	fibres_textiles	SITC4_26_Textile_Fibres
 28	local_concept_only	htc:0946	Stones Marble	Stones Marble	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-28	local_concept_only	htc:0945	Quills Goose	Quills Goose	other	oe:sitcUnassigned
-28	local_concept_only	htc:0942	Tortoise or Turtle Shell Unmanufactured	Tortoise or Turtle Shell	other	oe:sitcUnassigned
-27	local_concept_only	htc:0979	Glue stock	Glue stock	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-27	local_concept_only	htc:0977	Iron Castings	Iron Castings	manufactured_goods	SITC4_69_Manufactures_of_Metal
-27	local_concept_only	htc:0976	Oleo Margarine or Oleo Oil	Oleo Margarine or Oleo Oil	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-27	local_concept_only	htc:0975	Sulphuric Acid	Sulphuric Acid	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-27	local_concept_only	htc:0974	Manufactures of Felt	Manufactures of Felt	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-27	local_concept_only	htc:0972	Halibut Fresh	Halibut Fresh	fisheries_marine	SITC4_03_Fish_and_Seafood
-27	local_concept_only	htc:0970	Platina Wrought and Unwrought	Platina Wrought and Unwrought	other	oe:sitcUnassigned
-27	local_concept_only	htc:0965	Oil Coco-nut	Oil Coco-nut	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
+28	local_concept_only	htc:0949	Cannon and Mortars	Cannon and Mortars	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+28	local_concept_only	htc:0951	Quinine Sulphate of	Quinine Sulphate of	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+28	local_concept_only	htc:0953	Jewellery Unenumerated	Jewellery	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+28	local_concept_only	htc:0958	Bicycles	Bicycles	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+27	local_concept_only	htc:0959	Quills Goose and Swan	Quills Goose and Swan	fibres_textiles	SITC4_26_Textile_Fibres
 27	local_concept_only	htc:0964	Extract of Bark or Other Vegetable Substance for Tanning or Dyeing	Extract of Bark or Other Vegetable Substance for Tanning or Dyeing	tannins_leather	SITC4_29_Crude_Animal_Vegetable_Materials
-27	local_concept_only	htc:0961	Wood Balks	Wood Balks	timber_forestry	SITC4_24_Cork_and_Wood
-27	local_concept_only	htc:0959	Quills Goose and Swan	Quills Goose and Swan	other	oe:sitcUnassigned
-26	local_concept_only	htc:0999	Fancy Goods	Fancy Goods	other	oe:sitcUnassigned
-26	local_concept_only	htc:0998	Rifles Carbines Muskets and Fowling Pieces	Rifles Carbines Muskets and Fowling Pieces	other	oe:sitcUnassigned
-26	local_concept_only	htc:0981	Mattresses and Bedding	Mattresses and Bedding	other	oe:sitcUnassigned
-25	local_concept_only	htc:1016	Fruit preserved Canned or Bottled	Fruit preserved Canned or Bottled	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-25	local_concept_only	htc:1015	Glue Size and Gelatine	Glue Size and Gelatine	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-25	local_concept_only	htc:1014	Plums Raw	Plums Raw	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-25	local_concept_only	htc:1013	Mica Ground	Mica Ground	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-25	local_concept_only	htc:1012	Clams or other	Clams or other	other	oe:sitcUnassigned
-25	local_concept_only	htc:1011	Iron Galvanized not Wire	Iron Galvanized not Wire	manufactured_goods	SITC4_69_Manufactures_of_Metal
-25	local_concept_only	htc:1009	Indian Barkwood	Indian Barkwood	other	oe:sitcUnassigned
+27	local_concept_only	htc:0965	Oil Coco-nut	Oil Coco-nut	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
+27	local_concept_only	htc:0970	Platina Wrought and Unwrought	Platina Wrought and Unwrought	minerals_metals_energy	SITC4_67_68_Metals
+27	local_concept_only	htc:0972	Halibut Fresh	Halibut Fresh	fisheries_marine	SITC4_03_Fish_and_Seafood
+27	local_concept_only	htc:0974	Manufactures of Felt	Manufactures of Felt	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+27	local_concept_only	htc:0975	Sulphuric Acid	Sulphuric Acid	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+27	local_concept_only	htc:0976	Oleo Margarine or Oleo Oil	Oleo Margarine or Oleo Oil	fats_oils_soap	SITC4_41_Animal_Oils_and_Fats
+27	local_concept_only	htc:0977	Iron Castings	Iron Castings	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+27	local_concept_only	htc:0979	Glue stock	Glue stock	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+26	local_concept_only	htc:0981	Mattresses and Bedding	Mattresses and Bedding	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+26	local_concept_only	htc:0982	Hair Manufactures of Goats Hair or Wool	Hair Manufactures of Goats Hair or Wool	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+26	local_concept_only	htc:0998	Rifles Carbines Muskets and Fowling Pieces	Rifles Carbines Muskets and Fowling Pieces	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+26	local_concept_only	htc:0999	Fancy Goods	Fancy Goods	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 25	local_concept_only	htc:1004	Maccaroni and Vermicelli	Maccaroni and Vermicelli	food_grain	SITC4_04_Cereals_and_Preparations
-24	local_concept_only	htc:1034	Precious Stones Unset not Diamonds	Precious Stones Unset not Diamonds	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-24	local_concept_only	htc:1024	Prints and Drawings	Prints and Drawings	manufactured_goods	SITC4_64_Paper_and_Paperboard
-24	local_concept_only	htc:1023	Mineral Pigment Iron Oxides Ochres &c	Mineral Pigment Iron Oxides Ochres &c	minerals_metals_energy	SITC4_67_Iron_and_Steel
+25	local_concept_only	htc:1009	Indian Barkwood	Indian Barkwood	other	oe:sitcUnassigned
+25	local_concept_only	htc:1011	Iron Galvanized not Wire	Iron Galvanized not Wire	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+25	local_concept_only	htc:1012	Clams or other	Clams or other	fisheries_marine	SITC4_03_Fish_and_Seafood
+25	local_concept_only	htc:1013	Mica Ground	Mica Ground	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+25	local_concept_only	htc:1014	Plums Raw	Plums Raw	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+25	local_concept_only	htc:1015	Glue Size and Gelatine	Glue Size and Gelatine	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+25	local_concept_only	htc:1016	Fruit preserved Canned or Bottled	Fruit preserved Canned or Bottled	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+24	local_concept_only	htc:1020	Aloes	Aloes	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
 24	local_concept_only	htc:1021	Muskrat furs	Muskrat furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
-24	local_concept_only	htc:1020	Aloes	Aloes	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-23	local_concept_only	htc:1056	Oil Mineral Coal and Kerosene Crude	Oil Mineral Coal and Kerosene Crude	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-23	local_concept_only	htc:1053	Shell Fish Other sorts	Shell Fish	fisheries_marine	SITC4_29_Crude_Animal_Vegetable_Materials
-23	local_concept_only	htc:1049	Wrought Iron Tubes and Pipes	Wrought Iron Tubes and Pipes	manufactured_goods	SITC4_69_Manufactures_of_Metal
-23	local_concept_only	htc:1048	Woollen and Worsted Manufactures Carpets not being Rugs	Woollen and Worsted Manufactures Carpets not being Rugs	manufactured_goods	SITC4_65_Textile_Yarn_and_Fabrics
-23	local_concept_only	htc:1046	Fish Preserved and Spiced	Fish Preserved and Spiced	fisheries_marine	SITC4_03_Fish_and_Seafood
-23	local_concept_only	htc:1044	Pictures Oil Paintings	Pictures Oil Paintings	manufactured_goods	SITC4_64_Paper_and_Paperboard
-23	local_concept_only	htc:1037	Gunstocks in the rough, or Wood	Gunstocks in the rough, or Wood	timber_forestry	SITC4_24_Cork_and_Wood
+24	local_concept_only	htc:1023	Mineral Pigment Iron Oxides Ochres &c	Mineral Pigment Iron Oxides Ochres &c	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+24	local_concept_only	htc:1024	Prints and Drawings	Prints and Drawings	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+24	local_concept_only	htc:1034	Precious Stones Unset not Diamonds	Precious Stones Unset not Diamonds	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+23	local_concept_only	htc:1035	Marten Tails Undressed	Marten Tails	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
 23	local_concept_only	htc:1036	Canes or Sticks Unenumerated	Canes or Sticks	other	oe:sitcUnassigned
-23	local_concept_only	htc:1035	Marten Tails Undressed	Marten Tails	other	oe:sitcUnassigned
-22	local_concept_only	htc:1082	Palings	Palings	timber_forestry	SITC4_24_Cork_and_Wood
-22	local_concept_only	htc:1080	Stone, ornamental, granite, marble, &c., unwrought	Stone, ornamental, granite, marble, &c., unwrought	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-22	local_concept_only	htc:1078	Methylic Alcohol	Methylic Alcohol	other	oe:sitcUnassigned
-22	local_concept_only	htc:1076	Buttons	Buttons	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-22	local_concept_only	htc:1074	Soap Transparent in the manufacture of which Spirit has been used	Soap Transparent in the manufacture of which Spirit has been used	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
-22	local_concept_only	htc:1072	Shingle Bolts	Shingle Bolts	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
+23	local_concept_only	htc:1037	Gunstocks in the rough, or Wood	Gunstocks in the rough, or Wood	timber_forestry	SITC4_24_Cork_and_Wood
+23	local_concept_only	htc:1044	Pictures Oil Paintings	Pictures Oil Paintings	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+23	local_concept_only	htc:1049	Wrought Iron Tubes and Pipes	Wrought Iron Tubes and Pipes	minerals_metals_energy	SITC4_67_68_Metals
+23	local_concept_only	htc:1053	Shell Fish Other sorts	Shell Fish	fisheries_marine	SITC4_03_Fish_and_Seafood
+23	local_concept_only	htc:1056	Oil Mineral Coal and Kerosene Crude	Oil Mineral Coal and Kerosene Crude	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+23	local_concept_only	htc:1060	Piling	Piling	timber_forestry	SITC4_24_Cork_and_Wood
+22	local_concept_only	htc:1068	Millet Seeds	Millet Seeds	food_grain	SITC4_04_Cereals_and_Preparations
 22	local_concept_only	htc:1070	Oil Lard	Oil Lard	fats_oils_soap	SITC4_41_Animal_Oils_and_Fats
-22	local_concept_only	htc:1069	Embroidery and Needlework Of Other Sorts Unenumerated	Embroidery and Needlework Of	other	oe:sitcUnassigned
-22	local_concept_only	htc:1068	Millet Seeds	Millet Seeds	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
-21	local_concept_only	htc:1102	Tomatoes	Tomatoes	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+22	local_concept_only	htc:1072	Shingle Bolts	Shingle Bolts	timber_forestry	SITC4_24_Cork_and_Wood
+22	local_concept_only	htc:1076	Buttons	Buttons	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+22	local_concept_only	htc:1078	Methylic Alcohol	Methylic Alcohol	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+22	local_concept_only	htc:1082	Palings	Palings	timber_forestry	SITC4_24_Cork_and_Wood
+21	local_concept_only	htc:1094	Manufactures of Silk and other Materials Broad Stuffs	Manufactures of Silk and other Materials Broad Stuffs	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+21	local_concept_only	htc:1095	Seed Oil not Essential or Medicinal	Seed Oil not Essential or Medicinal	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
+21	local_concept_only	htc:1097	Yellow or Mixed Copper Metal Sheathing	Yellow or Mixed Copper Metal Sheathing	minerals_metals_energy	SITC4_67_68_Metals
+21	local_concept_only	htc:1098	Plated and Gilt Ware	Plated and Gilt Ware	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 21	local_concept_only	htc:1099	Rabbits	Rabbits	food_animal	SITC4_01_Meat_and_Preparations
-21	local_concept_only	htc:1098	Plated and Gilt Ware	Plated and Gilt Ware	other	oe:sitcUnassigned
-21	local_concept_only	htc:1097	Yellow or Mixed Copper Metal Sheathing	Yellow or Mixed Copper Metal Sheathing	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-21	local_concept_only	htc:1089	Lace and Articles thereof Silk	Lace and Articles thereof Silk	fibres_textiles	SITC4_26_Textile_Fibres
-21	local_concept_only	htc:1087	Platting of other kinds for Hats	Platting of	manufactured_goods	SITC4_84_Apparel_and_Clothing
-20	local_concept_only	htc:1129	Pole Hop	Pole Hop	timber_forestry	SITC4_24_Cork_and_Wood
-20	local_concept_only	htc:1127	Seal Skins Dressed	Seal Skins Dressed	fisheries_marine	SITC4_21_Hides_Skins_Furskins_Raw
-20	local_concept_only	htc:1126	Rockets and other Combustibles for Warlike purposes Explosives and Ammunition unenumerated	Rockets and other Combustibles for Warlike purposes Explosives and Ammunition	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-20	local_concept_only	htc:1123	Iron Manufactures Girders Beams and Pillars	Iron Manufactures Girders Beams and Pillars	manufactured_goods	SITC4_69_Manufactures_of_Metal
-20	local_concept_only	htc:1120	Stone Unwrought	Stone Unwrought	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-20	local_concept_only	htc:1119	Fresh Herrings	Fresh Herrings	fisheries_marine	SITC4_03_Fish_and_Seafood
-20	local_concept_only	htc:1118	Ordnance Stores and Ammunition Unenumerated	Ordnance Stores and Ammunition	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-20	local_concept_only	htc:1117	Ether Sulphuric	Ether Sulphuric	other	oe:sitcUnassigned
-20	local_concept_only	htc:1110	Lace and Articles thereof Other Materials	Lace and Articles thereof Other Materials	other	oe:sitcUnassigned
-20	local_concept_only	htc:1109	Grindstones Millstones and other Sorts of Stone	Grindstones Millstones and	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-20	local_concept_only	htc:1108	Stones Sawn or otherwise Manufactured	Stones Sawn or otherwise	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
+21	local_concept_only	htc:1100	Paper Wood Pulp Board	Paper Wood Pulp Board	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
+21	local_concept_only	htc:1102	Tomatoes	Tomatoes	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+20	local_concept_only	htc:1105	Bark Of other sorts	Bark Of	other	oe:sitcUnassigned
+20	local_concept_only	htc:1106	Prints and Drawings Plain	Prints and Drawings Plain	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 20	local_concept_only	htc:1107	Fruits and Vegetables Preserved in Sugar	Fruits and Vegetables Preserved in Sugar	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-20	local_concept_only	htc:1106	Prints and Drawings Plain	Prints and Drawings Plain	manufactured_goods	SITC4_64_Paper_and_Paperboard
-20	local_concept_only	htc:1105	Bark Of other sorts	Bark Of	timber_forestry	SITC4_24_Cork_and_Wood
-19	local_concept_only	htc:1169	Woollen Rags Not Pulled	Woollen Rags Not Pulled	fibres_textiles	SITC4_26_Textile_Fibres
-19	local_concept_only	htc:1165	Scientific Instruments other than Electrical	Scientific Instruments other than Electrical	other	oe:sitcUnassigned
-19	local_concept_only	htc:1163	Meat Preserved not Salted Other Sorts not Bacon and Hams	Meat Preserved not Salted	food_animal	SITC4_01_Meat_and_Preparations
-19	local_concept_only	htc:1161	Bladders Casings and Sausage Skins	Bladders Casings and Sausage Skins	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
-19	local_concept_only	htc:1160	Baskets and Basketware	Baskets and Basketware	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-19	local_concept_only	htc:1159	Cherries Raw	Cherries Raw	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-19	local_concept_only	htc:1157	Vines Grape and Other	Vines Grape and Other	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-19	local_concept_only	htc:1155	Moss Litter	Moss Litter	other	oe:sitcUnassigned
-19	local_concept_only	htc:1154	Swords Cutlasses Matchets Bayonets	Swords Cutlasses Matchets Bayonets	other	oe:sitcUnassigned
-19	local_concept_only	htc:1149	Spirits Sweetened or Mixed Perfumed Spirits including Water Cologne	Spirits Sweetened or Mixed Perfumed Spirits including Water Cologne	food_colonial_grocery	SITC4_11_Beverages
-19	local_concept_only	htc:1146	Zinc Rolled but not otherwise manufactured	Zinc Rolled but not otherwise	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-19	local_concept_only	htc:1143	Canes Rattans not Ground	Canes Rattans not Ground	other	oe:sitcUnassigned
-19	local_concept_only	htc:1138	Merchandize	Merchandize	other	oe:sitcUnassigned
-19	local_concept_only	htc:1137	Hemp Seeds	Hemp Seeds	fibres_textiles	SITC4_26_Textile_Fibres
-19	local_concept_only	htc:1136	Weasel Furs	Weasel Furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
+20	local_concept_only	htc:1108	Stones Sawn or otherwise Manufactured	Stones Sawn or otherwise	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+20	local_concept_only	htc:1109	Grindstones Millstones and other Sorts of Stone	Grindstones Millstones and	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+20	local_concept_only	htc:1111	Nickel Ore	Nickel Ore	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+20	local_concept_only	htc:1117	Ether Sulphuric	Ether Sulphuric	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+20	local_concept_only	htc:1118	Ordnance Stores and Ammunition Unenumerated	Ordnance Stores and Ammunition	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+20	local_concept_only	htc:1119	Fresh Herrings	Fresh Herrings	fisheries_marine	SITC4_03_Fish_and_Seafood
+20	local_concept_only	htc:1123	Iron Manufactures Girders Beams and Pillars	Iron Manufactures Girders Beams and Pillars	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+20	local_concept_only	htc:1126	Rockets and other Combustibles for Warlike purposes Explosives and Ammunition unenumerated	Rockets and other Combustibles for Warlike purposes Explosives and Ammunition	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+20	local_concept_only	htc:1127	Seal Skins Dressed	Seal Skins Dressed	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
+20	local_concept_only	htc:1129	Pole Hop	Pole Hop	timber_forestry	SITC4_24_Cork_and_Wood
+19	local_concept_only	htc:1133	Rape and Linseed Cakes	Rape and Linseed Cakes	fodder_feed	SITC4_08_Animal_Feeding_Stuff
 19	local_concept_only	htc:1135	Stave ends	Stave ends	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
-19	local_concept_only	htc:1133	Rape and Linseed Cakes	Rape and Linseed Cakes	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
-18	local_concept_only	htc:1200	Fruit Preserved without sugar by chemicals or artificial heat or artificial cold Tinned or bottled Apples including gallon apples	Fruit Preserved without sugar by chemicals or artificial heat or artificial cold Tinned or bottled Apples including gallon apples	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-18	local_concept_only	htc:1199	Parts of Bicycles	Parts of Bicycles	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-18	local_concept_only	htc:1196	Synthetic Indigo	Synthetic Indigo	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
-18	local_concept_only	htc:1195	Vegetables Preserved by Canning	Vegetables Preserved by Canning	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-18	local_concept_only	htc:1194	Vegetables Dried	Vegetables Dried	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-18	local_concept_only	htc:1193	Implements and Tools including parts thereof	Implements and Tools including parts thereof	manufactured_goods	SITC4_69_Manufactures_of_Metal
-18	local_concept_only	htc:1192	Fruit preserved Not Canned or Bottled	Fruit preserved Not Canned or Bottled	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-18	local_concept_only	htc:1191	Imitation Rum	Imitation Rum	food_colonial_grocery	SITC4_11_Beverages
-18	local_concept_only	htc:1189	Woollen and Worsted Manufactures Blankets and Blanketing	Woollen and Worsted Manufactures Blankets and Blanketing	manufactured_goods	SITC4_65_Textile_Yarn_and_Fabrics
+19	local_concept_only	htc:1136	Weasel Furs	Weasel Furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
+19	local_concept_only	htc:1138	Merchandize	Merchandize	other	oe:sitcUnassigned
+19	local_concept_only	htc:1143	Canes Rattans not Ground	Canes Rattans not Ground	other	oe:sitcUnassigned
+19	local_concept_only	htc:1154	Swords Cutlasses Matchets Bayonets	Swords Cutlasses Matchets Bayonets	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+19	local_concept_only	htc:1155	Moss Litter	Moss Litter	other	oe:sitcUnassigned
+19	local_concept_only	htc:1157	Vines Grape and Other	Vines Grape and Other	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+19	local_concept_only	htc:1159	Cherries Raw	Cherries Raw	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+19	local_concept_only	htc:1160	Baskets and Basketware	Baskets and Basketware	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+19	local_concept_only	htc:1161	Bladders Casings and Sausage Skins	Bladders Casings and Sausage Skins	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
+19	local_concept_only	htc:1164	Paper Making Materials Pulp of Wood Chemical Dry	Paper Making Materials Pulp of Wood Chemical Dry	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
+19	local_concept_only	htc:1170	Telegraph	Telegraph	other	oe:sitcUnassigned
+18	local_concept_only	htc:1173	Bottles of Earth or Stone	Bottles of Earth or Stone	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+18	local_concept_only	htc:1176	Basket Rods Peeled	Basket Rods Peeled	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+18	local_concept_only	htc:1177	Liquorice Paste	Liquorice Paste	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+18	local_concept_only	htc:1183	Plate of Gold	Plate of Gold	minerals_metals_energy	SITC4_67_68_Metals
+18	local_concept_only	htc:1184	Silver Coin and Bullion	Silver Coin and Bullion	minerals_metals_energy	SITC4_67_68_Metals
 18	local_concept_only	htc:1186	Halibut Pickled	Halibut Pickled	fisheries_marine	SITC4_03_Fish_and_Seafood
-18	local_concept_only	htc:1184	Silver Coin and Bullion	Silver Coin and Bullion	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-18	local_concept_only	htc:1183	Plate of Gold	Plate of Gold	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-18	local_concept_only	htc:1182	Meat Preserved not Salted	Meat Preserved not Salted	food_animal	SITC4_01_Meat_and_Preparations
-18	local_concept_only	htc:1177	Liquorice Paste	Liquorice Paste	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-18	local_concept_only	htc:1176	Basket Rods Peeled	Basket Rods Peeled	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-18	local_concept_only	htc:1173	Bottles of Earth or Stone	Bottles of Earth or Stone	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-17	local_concept_only	htc:1228	Painters Colours and Pigments Unenumerated	Painters Colours and Pigments	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
+18	local_concept_only	htc:1191	Imitation Rum	Imitation Rum	food_colonial_grocery	SITC4_11_Beverages
+18	local_concept_only	htc:1192	Fruit preserved Not Canned or Bottled	Fruit preserved Not Canned or Bottled	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+18	local_concept_only	htc:1193	Implements and Tools including parts thereof	Implements and Tools including parts thereof	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+18	local_concept_only	htc:1196	Synthetic Indigo	Synthetic Indigo	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+18	local_concept_only	htc:1199	Parts of Bicycles	Parts of Bicycles	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+17	local_concept_only	htc:1208	Plate Silver	Plate Silver	minerals_metals_energy	SITC4_67_68_Metals
+17	local_concept_only	htc:1211	Corks Ready Made	Corks Ready Made	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
+17	local_concept_only	htc:1217	Gold Coin and Bullion	Gold Coin and Bullion	minerals_metals_energy	SITC4_67_68_Metals
+17	local_concept_only	htc:1225	Carbide of Calcium	Carbide of Calcium	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
 17	local_concept_only	htc:1226	Dead Rabbits	Dead Rabbits	food_animal	SITC4_01_Meat_and_Preparations
-17	local_concept_only	htc:1225	Carbide of Calcium	Carbide of Calcium	other	oe:sitcUnassigned
-17	local_concept_only	htc:1221	Spirits Unenumerated not tested	Spirits	food_colonial_grocery	SITC4_11_Beverages
-17	local_concept_only	htc:1217	Gold Coin and Bullion	Gold Coin and Bullion	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-17	local_concept_only	htc:1215	Lace Machine or Imitation Lace	Lace Machine or Imitation Lace	other	oe:sitcUnassigned
-17	local_concept_only	htc:1211	Corks Ready Made	Corks Ready Made	other	oe:sitcUnassigned
-17	local_concept_only	htc:1209	Water Mineral	Water Mineral	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-17	local_concept_only	htc:1208	Plate Silver	Plate Silver	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-16	local_concept_only	htc:1264	Building, Free Stone, Limestone, &c	Building, Free Stone, Limestone, &c	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-16	local_concept_only	htc:1258	Platinum wrought or unwrought	Platinum wrought or unwrought	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-16	local_concept_only	htc:1257	Paraffin and Paraffin Wax	Paraffin and Paraffin Wax	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-16	local_concept_only	htc:1255	Milk Condensed Unsweetened	Milk Condensed Unsweetened	food_animal	SITC4_02_Dairy_and_Eggs
-16	local_concept_only	htc:1253	Locust Beans	Locust Beans	food_grain	SITC4_05_Vegetables_and_Fruit
-16	local_concept_only	htc:1251	Fruit Preserved without sugar not dried	Fruit Preserved without sugar not dried	food_colonial_grocery	SITC4_06_Sugars_and_Honey
+17	local_concept_only	htc:1228	Painters Colours and Pigments Unenumerated	Painters Colours and Pigments	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+16	local_concept_only	htc:1229	Adianthum	Adianthum	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+16	local_concept_only	htc:1231	Mustard Seeds	Mustard Seeds	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+16	local_concept_only	htc:1232	Pipes of Clay Wood or other Materials for Smoking Tobacco	Pipes of Clay Wood or other Materials for Smoking Tobacco	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+16	local_concept_only	htc:1234	Chesnuts	Chesnuts	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+16	local_concept_only	htc:1237	Blacking and Polishes	Blacking and Polishes	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+16	local_concept_only	htc:1238	Pickles preserved in Vinegar	Pickles preserved in Vinegar	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+16	local_concept_only	htc:1241	Basket Rods Unpeeled	Basket Rods Unpeeled	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+16	local_concept_only	htc:1243	Pickles and Vegetables preserved in Salt	Pickles and Vegetables preserved in Salt	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+16	local_concept_only	htc:1244	Varnish containing Alcohol	Varnish containing Alcohol	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 16	local_concept_only	htc:1249	Imitation Lard	Imitation Lard	fats_oils_soap	SITC4_41_Animal_Oils_and_Fats
-16	local_concept_only	htc:1244	Varnish containing Alcohol	Varnish containing Alcohol	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-16	local_concept_only	htc:1243	Pickles and Vegetables preserved in Salt	Pickles and Vegetables preserved in Salt	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-16	local_concept_only	htc:1241	Basket Rods Unpeeled	Basket Rods Unpeeled	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-16	local_concept_only	htc:1238	Pickles preserved in Vinegar	Pickles preserved in Vinegar	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-16	local_concept_only	htc:1237	Blacking and Polishes	Blacking and Polishes	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-16	local_concept_only	htc:1236	Pillow Lace of Thread or Cotton	Pillow Lace of Thread or Cotton	fibres_textiles	SITC4_26_Textile_Fibres
-16	local_concept_only	htc:1234	Chesnuts	Chesnuts	other	oe:sitcUnassigned
-16	local_concept_only	htc:1232	Pipes of Clay Wood or other Materials for Smoking Tobacco	Pipes of Clay Wood or other Materials for Smoking Tobacco	manufactured_goods	SITC4_82_Furniture_and_Wood_Articles
-16	local_concept_only	htc:1231	Mustard Seeds	Mustard Seeds	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
-16	local_concept_only	htc:1229	Adianthum	Adianthum	other	oe:sitcUnassigned
-15	local_concept_only	htc:1299	Small Arms Ammunition	Small Arms Ammunition	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-15	local_concept_only	htc:1298	Metals viz. Silver, metallic, contained in ore, concentrates, &c.	Metals viz. Silver, metallic, contained in ore, concentrates, &c.	minerals_metals_energy	SITC4_28_Metalliferous_Ores
-15	local_concept_only	htc:1297	Metals viz. Nickle, fine, contained in ore, matte, or speiss	Metals viz. Nickle, fine, contained in ore, matte, or speiss	minerals_metals_energy	SITC4_28_Metalliferous_Ores
-15	local_concept_only	htc:1296	Metallic Lead contained in Ore &c	Metallic Lead contained in Ore &c	minerals_metals_energy	SITC4_28_Metalliferous_Ores
-15	local_concept_only	htc:1295	Dynamite and High Explosives	Dynamite and High Explosives	other	oe:sitcUnassigned
-15	local_concept_only	htc:1292	Lace and Articles thereof Cotton	Lace and Articles thereof Cotton	fibres_textiles	SITC4_26_Textile_Fibres
-15	local_concept_only	htc:1291	Oil Refined	Oil Refined	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-15	local_concept_only	htc:1290	Herring Canned	Herring Canned	fisheries_marine	SITC4_03_Fish_and_Seafood
-15	local_concept_only	htc:1289	Woollen and Worsted Manufactures Flannels	Woollen and Worsted Manufactures Flannels	manufactured_goods	SITC4_65_Textile_Yarn_and_Fabrics
-15	local_concept_only	htc:1287	Iron or Steel Wire not Telegraph Wire	Iron or Steel Wire not Telegraph Wire	manufactured_goods	SITC4_69_Manufactures_of_Metal
-15	local_concept_only	htc:1281	Spices Mace	Spices Mace	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
-15	local_concept_only	htc:1272	Hickory	Hickory	timber_forestry	SITC4_24_Cork_and_Wood
+16	local_concept_only	htc:1253	Locust Beans	Locust Beans	food_grain	SITC4_05_Vegetables_and_Fruit
+16	local_concept_only	htc:1255	Milk Condensed Unsweetened	Milk Condensed Unsweetened	food_animal	SITC4_02_Dairy_and_Eggs
+16	local_concept_only	htc:1257	Paraffin and Paraffin Wax	Paraffin and Paraffin Wax	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
+16	local_concept_only	htc:1258	Platinum wrought or unwrought	Platinum wrought or unwrought	minerals_metals_energy	SITC4_67_68_Metals
+16	local_concept_only	htc:1264	Building, Free Stone, Limestone, &c	Building, Free Stone, Limestone, &c	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+15	local_concept_only	htc:1265	Berries Yellow	Berries Yellow	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
 15	local_concept_only	htc:1269	Buffalo Robes	Buffalo Robes	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
-15	local_concept_only	htc:1268	Soap Hard	Soap Hard	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
-15	local_concept_only	htc:1265	Berries Yellow	Berries Yellow	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-14	local_concept_only	htc:1328	Cutlery	Cutlery	manufactured_goods	SITC4_69_Manufactures_of_Metal
-14	local_concept_only	htc:1327	Ammunition Fuzes Tubes Primers	Ammunition Fuzes Tubes Primers	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-14	local_concept_only	htc:1326	Bananas	Bananas	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-14	local_concept_only	htc:1324	Woollen and Worsted Manufactures Shawls	Woollen and Worsted Manufactures Shawls	manufactured_goods	SITC4_65_Textile_Yarn_and_Fabrics
-14	local_concept_only	htc:1323	Jewellery and Plated Ware	Jewellery and Plated Ware	other	oe:sitcUnassigned
-14	local_concept_only	htc:1322	Bleaching Materials	Bleaching Materials	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-14	local_concept_only	htc:1321	Metal Unenumerated Wrought or Manufactured	Metal	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-14	local_concept_only	htc:1320	Prints and Engravings	Prints and Engravings	manufactured_goods	SITC4_64_Paper_and_Paperboard
+15	local_concept_only	htc:1272	Hickory	Hickory	timber_forestry	SITC4_24_Cork_and_Wood
+15	local_concept_only	htc:1281	Spices Mace	Spices Mace	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+15	local_concept_only	htc:1287	Iron or Steel Wire not Telegraph Wire	Iron or Steel Wire not Telegraph Wire	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+15	local_concept_only	htc:1291	Oil Refined	Oil Refined	other	oe:sitcUnassigned
+15	local_concept_only	htc:1295	Dynamite and High Explosives	Dynamite and High Explosives	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+15	local_concept_only	htc:1296	Metallic Lead contained in Ore &c	Metallic Lead contained in Ore &c	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+15	local_concept_only	htc:1297	Metals viz. Nickle, fine, contained in ore, matte, or speiss	Metals viz. Nickle, fine, contained in ore, matte, or speiss	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+15	local_concept_only	htc:1298	Metals viz. Silver, metallic, contained in ore, concentrates, &c.	Metals viz. Silver, metallic, contained in ore, concentrates, &c.	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+15	local_concept_only	htc:1299	Small Arms Ammunition	Small Arms Ammunition	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+14	local_concept_only	htc:1303	Ginseng	Ginseng	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+14	local_concept_only	htc:1304	Bark Quercitron	Bark Quercitron	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+14	local_concept_only	htc:1305	Casks Empty	Casks Empty	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
 14	local_concept_only	htc:1307	Apricots and Peaches Raw	Apricots and Peaches Raw	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-14	local_concept_only	htc:1305	Casks Empty	Casks Empty	other	oe:sitcUnassigned
-14	local_concept_only	htc:1304	Bark Quercitron	Bark Quercitron	tannins_leather	SITC4_29_Crude_Animal_Vegetable_Materials
-13	local_concept_only	htc:1371	Oil, Lard, Neat's foot and other Animal	Oil, Lard, Neat's foot and other Animal	fats_oils_soap	SITC4_41_Animal_Oils_and_Fats
-13	local_concept_only	htc:1368	Plaiting of Straw and other Materials	Plaiting of Straw and other Materials	fodder_feed	SITC4_08_Animal_Feeding_Stuff
-13	local_concept_only	htc:1367	Muriate of Ammonia	Muriate of Ammonia	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-13	local_concept_only	htc:1366	Jet Rockingham and Glazed Terra Cotta Ware	Jet Rockingham and Glazed Terra Cotta Ware	other	oe:sitcUnassigned
-13	local_concept_only	htc:1362	Ammunition Metal Cartridge Cases not Small Arms Empty	Ammunition Metal Cartridge Cases not Small Arms Empty	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-13	local_concept_only	htc:1359	Animals Living Horses Mares Geldings Colts and Foals	Animals Living Horses Mares Geldings Colts and Foals	food_animal	SITC4_00_Live_Animals
-13	local_concept_only	htc:1358	Worsted Stuffs all Wool	Worsted Stuffs all Wool	fibres_textiles	SITC4_26_Textile_Fibres
-13	local_concept_only	htc:1357	Woollen and Worsted Manufactures Rugs Coverlets or Wrappers	Woollen and Worsted Manufactures Rugs Coverlets or Wrappers	manufactured_goods	SITC4_65_Textile_Yarn_and_Fabrics
-13	local_concept_only	htc:1353	Gutta Percha Manufactures of	Gutta Percha Manufactures of	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-13	local_concept_only	htc:1349	Scammony	Scammony	other	oe:sitcUnassigned
-13	local_concept_only	htc:1348	Leeches	Leeches	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-13	local_concept_only	htc:1346	Cubebs	Cubebs	other	oe:sitcUnassigned
-13	local_concept_only	htc:1345	Copper Wire	Copper Wire	manufactured_goods	SITC4_69_Manufactures_of_Metal
-13	local_concept_only	htc:1344	Staves Pipe	Staves Pipe	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-13	local_concept_only	htc:1343	Alkali of other Sorts Unenumerated	Alkali of	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-13	local_concept_only	htc:1342	Fruit Juice not containing Spirit	Fruit Juice not containing Spirit	food_colonial_grocery	SITC4_11_Beverages
-13	local_concept_only	htc:1340	Lacquered Ware	Lacquered Ware	other	oe:sitcUnassigned
-13	local_concept_only	htc:1339	Paint	Paint	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
+14	local_concept_only	htc:1315	Pearls	Pearls	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+14	local_concept_only	htc:1320	Prints and Engravings	Prints and Engravings	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+14	local_concept_only	htc:1321	Metal Unenumerated Wrought or Manufactured	Metal	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+14	local_concept_only	htc:1322	Bleaching Materials	Bleaching Materials	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+14	local_concept_only	htc:1323	Jewellery and Plated Ware	Jewellery and Plated Ware	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+14	local_concept_only	htc:1326	Bananas	Bananas	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+14	local_concept_only	htc:1327	Ammunition Fuzes Tubes Primers	Ammunition Fuzes Tubes Primers	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+14	local_concept_only	htc:1328	Cutlery	Cutlery	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
 13	local_concept_only	htc:1337	Onion Seeds	Onion Seeds	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
-12	local_concept_only	htc:1421	Mica, cut	Mica, cut	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-12	local_concept_only	htc:1411	Willows and Rods for making Baskets	Willows and Rods for making Baskets	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-12	local_concept_only	htc:1409	Revolvers and Pistols	Revolvers and Pistols	other	oe:sitcUnassigned
-12	local_concept_only	htc:1405	Mouldings for Picture Frames and Gilt Mouldings	Mouldings for Picture Frames and Gilt Mouldings	manufactured_goods	SITC4_64_Paper_and_Paperboard
-12	local_concept_only	htc:1404	Milk Cream	Milk Cream	food_animal	SITC4_02_Dairy_and_Eggs
-12	local_concept_only	htc:1402	Felspar	Felspar	other	oe:sitcUnassigned
-12	local_concept_only	htc:1401	Confectionery not liable to Duty	Confectionery not liable to Duty	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-12	local_concept_only	htc:1400	Fresh Milk	Fresh Milk	food_animal	SITC4_02_Dairy_and_Eggs
-12	local_concept_only	htc:1398	Ether Acetic	Ether Acetic	other	oe:sitcUnassigned
-12	local_concept_only	htc:1396	Lace and Articles thereof	Lace and Articles thereof	other	oe:sitcUnassigned
-12	local_concept_only	htc:1394	Lace Pillow Lace	Lace Pillow Lace	other	oe:sitcUnassigned
-12	local_concept_only	htc:1392	Water Cologne Sweetened of all Kinds	Water Cologne Sweetened of all Kinds	other	oe:sitcUnassigned
-12	local_concept_only	htc:1391	Nuts and Kernels Ground Nuts	Nuts and Kernels Ground Nuts	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
-12	local_concept_only	htc:1386	Zinc or Spelter Manufactures of	Zinc or Spelter Manufactures of	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
+13	local_concept_only	htc:1339	Paint	Paint	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+13	local_concept_only	htc:1340	Lacquered Ware	Lacquered Ware	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+13	local_concept_only	htc:1342	Fruit Juice not containing Spirit	Fruit Juice not containing Spirit	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+13	local_concept_only	htc:1343	Alkali of other Sorts Unenumerated	Alkali of	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+13	local_concept_only	htc:1345	Copper Wire	Copper Wire	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+13	local_concept_only	htc:1346	Cubebs	Cubebs	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+13	local_concept_only	htc:1348	Leeches	Leeches	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+13	local_concept_only	htc:1349	Scammony	Scammony	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+13	local_concept_only	htc:1353	Gutta Percha Manufactures of	Gutta Percha Manufactures of	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+13	local_concept_only	htc:1358	Worsted Stuffs all Wool	Worsted Stuffs all Wool	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+13	local_concept_only	htc:1359	Animals Living Horses Mares Geldings Colts and Foals	Animals Living Horses Mares Geldings Colts and Foals	food_animal	SITC4_00_Live_Animals
+13	local_concept_only	htc:1362	Ammunition Metal Cartridge Cases not Small Arms Empty	Ammunition Metal Cartridge Cases not Small Arms Empty	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+13	local_concept_only	htc:1366	Jet Rockingham and Glazed Terra Cotta Ware	Jet Rockingham and Glazed Terra Cotta Ware	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+13	local_concept_only	htc:1367	Muriate of Ammonia	Muriate of Ammonia	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+13	local_concept_only	htc:1368	Plaiting of Straw and other Materials	Plaiting of Straw and other Materials	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+13	local_concept_only	htc:1371	Oil, Lard, Neat's foot and other Animal	Oil, Lard, Neat's foot and other Animal	fats_oils_soap	SITC4_41_Animal_Oils_and_Fats
 12	local_concept_only	htc:1381	Butternut	Butternut	timber_forestry	SITC4_24_Cork_and_Wood
-12	local_concept_only	htc:1378	Meats viz Tongues	Meats viz Tongues	fisheries_marine	SITC4_03_Fish_and_Seafood
-11	local_concept_only	htc:1477	Mica, crude	Mica, crude	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-11	local_concept_only	htc:1476	Indian Corn Canned	Indian Corn Canned	food_grain	SITC4_04_Cereals_and_Preparations
-11	local_concept_only	htc:1474	Glycerine Crude	Glycerine Crude	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-11	local_concept_only	htc:1467	Goats Hair not Mohair	Goats Hair not Mohair	fibres_textiles	SITC4_26_Textile_Fibres
-11	local_concept_only	htc:1466	Canned Fish other than Sardines	Canned Fish other than Sardines	fisheries_marine	SITC4_03_Fish_and_Seafood
-11	local_concept_only	htc:1465	Bleaching Powder	Bleaching Powder	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-11	local_concept_only	htc:1463	Automatic Machine and Quickfiring Guns	Automatic Machine and Quickfiring Guns	other	oe:sitcUnassigned
-11	local_concept_only	htc:1460	stone, ornamental, granite, marble, &c, unwrought	stone, ornamental, granite, marble, &c, unwrought	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-11	local_concept_only	htc:1459	Ether Butyric	Ether Butyric	other	oe:sitcUnassigned
-11	local_concept_only	htc:1453	Fowling Pieces	Fowling Pieces	other	oe:sitcUnassigned
-11	local_concept_only	htc:1452	Coke and Cinders	Coke and Cinders	minerals_metals_energy	SITC4_32_Coal_Coke_Briquettes
-11	local_concept_only	htc:1449	Ethyl Iodide of	Ethyl Iodide of	other	oe:sitcUnassigned
-11	local_concept_only	htc:1446	Succades and Confectionery including Fruits and Vegetables except Plums preserved in Sugar	Succades and Confectionery including Fruits and Vegetables except Plums preserved in Sugar	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-11	local_concept_only	htc:1445	Shot of Iron	Shot of Iron	manufactured_goods	SITC4_69_Manufactures_of_Metal
-11	local_concept_only	htc:1442	Trefoil Seeds	Trefoil Seeds	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-11	local_concept_only	htc:1441	Platina Metallic	Platina Metallic	other	oe:sitcUnassigned
-11	local_concept_only	htc:1437	Spices Pimento	Spices Pimento	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+12	local_concept_only	htc:1386	Zinc or Spelter Manufactures of	Zinc or Spelter Manufactures of	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+12	local_concept_only	htc:1391	Nuts and Kernels Ground Nuts	Nuts and Kernels Ground Nuts	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
+12	local_concept_only	htc:1392	Water Cologne Sweetened of all Kinds	Water Cologne Sweetened of all Kinds	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
+12	local_concept_only	htc:1398	Ether Acetic	Ether Acetic	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+12	local_concept_only	htc:1400	Fresh Milk	Fresh Milk	food_animal	SITC4_02_Dairy_and_Eggs
+12	local_concept_only	htc:1401	Confectionery not liable to Duty	Confectionery not liable to Duty	food_colonial_grocery	SITC4_06_Sugars_and_Honey
+12	local_concept_only	htc:1402	Felspar	Felspar	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+12	local_concept_only	htc:1404	Milk Cream	Milk Cream	food_animal	SITC4_02_Dairy_and_Eggs
+12	local_concept_only	htc:1405	Mouldings for Picture Frames and Gilt Mouldings	Mouldings for Picture Frames and Gilt Mouldings	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+12	local_concept_only	htc:1407	Paper Making Materials Pulp of Wood Mechanical Wet	Paper Making Materials Pulp of Wood Mechanical Wet	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
+12	local_concept_only	htc:1409	Revolvers and Pistols	Revolvers and Pistols	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+12	local_concept_only	htc:1411	Willows and Rods for making Baskets	Willows and Rods for making Baskets	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+12	local_concept_only	htc:1419	Bullion	Bullion	minerals_metals_energy	SITC4_67_68_Metals
+12	local_concept_only	htc:1421	Mica, cut	Mica, cut	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+11	local_concept_only	htc:1424	Antimonium Crudum	Antimonium Crudum	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+11	local_concept_only	htc:1431	Verdegris	Verdegris	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
 11	local_concept_only	htc:1433	Loupcervier furs	Loupcervier furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
-11	local_concept_only	htc:1431	Verdegris	Verdegris	other	oe:sitcUnassigned
-11	local_concept_only	htc:1428	Mats of Russia	Mats of Russia	other	oe:sitcUnassigned
-11	local_concept_only	htc:1424	Antimonium Crudum	Antimonium Crudum	other	oe:sitcUnassigned
-10	local_concept_only	htc:1519	Stone and Marble, Unwrought	Stone and Marble, Unwrought	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-10	local_concept_only	htc:1511	Chemical Manufactures and Products Borate of Lime	Chemical Manufactures and Products Borate of Lime	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-10	local_concept_only	htc:1508	Gooseberries Raw	Gooseberries Raw	other	oe:sitcUnassigned
-10	local_concept_only	htc:1507	Flowers Fresh	Flowers Fresh	other	oe:sitcUnassigned
-10	local_concept_only	htc:1506	Cordite and other Smokeless Propellants	Cordite and other Smokeless Propellants	other	oe:sitcUnassigned
-10	local_concept_only	htc:1505	Ammunition Shot and Shell	Ammunition Shot and Shell	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-10	local_concept_only	htc:1503	Arms and Ammunition Shot Large and Small	Arms and Ammunition Shot Large and Small	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-10	local_concept_only	htc:1502	Railway Waggons Trucks etc not of Iron	Railway Waggons Trucks etc not of Iron	minerals_metals_energy	SITC4_67_Iron_and_Steel
-10	local_concept_only	htc:1501	Linen and Jute Manufactures Thread for Sewing	Linen and Jute Manufactures Thread for Sewing	manufactured_goods	SITC4_65_Textile_Yarn_and_Fabrics
-10	local_concept_only	htc:1500	Fuel Manufactured	Fuel	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-10	local_concept_only	htc:1499	Zinc Crude and Manufactured	Zinc Crude and	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-10	local_concept_only	htc:1495	Dari Seeds	Dari Seeds	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
-10	local_concept_only	htc:1490	Metallic Nickel and Oxide of and Arseniate of	Metallic Nickel and Oxide of and Arseniate of	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-10	local_concept_only	htc:1489	Embroidery and Needlework Curtains Embroidered on Muslin or Net	Embroidery and Needlework Curtains Embroidered on Muslin or Net	other	oe:sitcUnassigned
+11	local_concept_only	htc:1437	Spices Pimento	Spices Pimento	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+11	local_concept_only	htc:1441	Platina Metallic	Platina Metallic	minerals_metals_energy	SITC4_67_68_Metals
+11	local_concept_only	htc:1442	Trefoil Seeds	Trefoil Seeds	fodder_feed	SITC4_08_Animal_Feeding_Stuff
+11	local_concept_only	htc:1444	Turtle Shell	Turtle Shell	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+11	local_concept_only	htc:1445	Shot of Iron	Shot of Iron	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+11	local_concept_only	htc:1446	Succades and Confectionery including Fruits and Vegetables except Plums preserved in Sugar	Succades and Confectionery including Fruits and Vegetables except Plums preserved in Sugar	food_colonial_grocery	SITC4_06_Sugars_and_Honey
+11	local_concept_only	htc:1449	Ethyl Iodide of	Ethyl Iodide of	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+11	local_concept_only	htc:1452	Coke and Cinders	Coke and Cinders	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+11	local_concept_only	htc:1453	Fowling Pieces	Fowling Pieces	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+11	local_concept_only	htc:1455	Oil and Floor Cloth including India Rubber Cloth	Oil and Floor Cloth including India Rubber Cloth	drugs_botanicals_chemicals	SITC4_23_Crude_Rubber
+11	local_concept_only	htc:1459	Ether Butyric	Ether Butyric	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+11	local_concept_only	htc:1463	Automatic Machine and Quickfiring Guns	Automatic Machine and Quickfiring Guns	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+11	local_concept_only	htc:1465	Bleaching Powder	Bleaching Powder	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+11	local_concept_only	htc:1466	Canned Fish other than Sardines	Canned Fish other than Sardines	fisheries_marine	SITC4_03_Fish_and_Seafood
+11	local_concept_only	htc:1467	Goats Hair not Mohair	Goats Hair not Mohair	fibres_textiles	SITC4_26_Textile_Fibres
+11	local_concept_only	htc:1469	Paper Making Materials Pulp of Wood Mechanical Dry	Paper Making Materials Pulp of Wood Mechanical Dry	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
+11	local_concept_only	htc:1472	Paper Millboard and Wood Pulp Board	Paper Millboard and Wood Pulp Board	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
+11	local_concept_only	htc:1474	Glycerine Crude	Glycerine Crude	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+11	local_concept_only	htc:1477	Mica, crude	Mica, crude	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+11	local_concept_only	htc:1478	Pianos unenumerated	Pianos	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+10	local_concept_only	htc:1483	Bark work	Bark work	other	oe:sitcUnassigned
 10	local_concept_only	htc:1487	Boracic Acid	Boracic Acid	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-10	local_concept_only	htc:1483	Bark work	Bark work	timber_forestry	SITC4_24_Cork_and_Wood
-9	local_concept_only	htc:1578	Stone for Manufacture of Grindstones Rough	Stone for Manufacture of Grindstones Rough	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-9	local_concept_only	htc:1576	Cinders	Cinders	minerals_metals_energy	SITC4_32_Coal_Coke_Briquettes
-9	local_concept_only	htc:1574	Aerated and Mineral Waters	Aerated and Mineral Waters	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-9	local_concept_only	htc:1572	Starch and Farina	Starch and Farina	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-9	local_concept_only	htc:1571	Soap Toilet	Soap Toilet	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
-9	local_concept_only	htc:1570	Soap Household	Soap Household	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
-9	local_concept_only	htc:1567	Fish Canned	Fish Canned	fisheries_marine	SITC4_03_Fish_and_Seafood
-9	local_concept_only	htc:1566	Electrical Goods and Apparatus Unenumerated	Electrical Goods and Apparatus	other	oe:sitcUnassigned
-9	local_concept_only	htc:1564	Chemical Manufactures and Products not liable to duty Glycerine	Chemical Manufactures and Products not liable to duty Glycerine	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-9	local_concept_only	htc:1562	Strawberries Raw	Strawberries Raw	other	oe:sitcUnassigned
-9	local_concept_only	htc:1561	Starch Farina and Dextrine	Starch Farina and Dextrine	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-9	local_concept_only	htc:1560	Milk Preserved other kind	Milk Preserved other kind	food_animal	SITC4_02_Dairy_and_Eggs
-9	local_concept_only	htc:1559	Mica Edges Trimmed	Mica Edges Trimmed	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-9	local_concept_only	htc:1558	Mica Cut to Size	Mica Cut to Size	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-9	local_concept_only	htc:1556	Electrical Goods and Apparatus	Electrical Goods and Apparatus	other	oe:sitcUnassigned
-9	local_concept_only	htc:1555	Camels Hair	Camels Hair	fibres_textiles	SITC4_26_Textile_Fibres
-9	local_concept_only	htc:1554	Precious Stones Diamonds	Precious Stones Diamonds	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-9	local_concept_only	htc:1552	Shell fish all sorts	Shell fish all sorts	fisheries_marine	SITC4_29_Crude_Animal_Vegetable_Materials
-9	local_concept_only	htc:1551	Spirits British and Irish	Spirits British and Irish	food_colonial_grocery	SITC4_11_Beverages
-9	local_concept_only	htc:1543	Coir Fibre	Coir Fibre	fibres_textiles	SITC4_26_Textile_Fibres
-9	local_concept_only	htc:1536	Stays or Corsets of Linen or Cotton	Stays or Corsets of Linen or Cotton	fibres_textiles	SITC4_26_Textile_Fibres
-9	local_concept_only	htc:1534	Poppy Seeds	Poppy Seeds	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
-9	local_concept_only	htc:1532	Balsam Peru	Balsam Peru	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
-9	local_concept_only	htc:1531	Liqueurs Cordials Mixtures and other Not Sweetened Unenumerated Tested	Liqueurs Cordials Mixtures and other Not Sweetened	other	oe:sitcUnassigned
-9	local_concept_only	htc:1530	Pea meal	Pea meal	food_grain	SITC4_05_Vegetables_and_Fruit
-9	local_concept_only	htc:1527	Canes Mounted or Ornamented	Canes Mounted or Ornamented	other	oe:sitcUnassigned
-9	local_concept_only	htc:1526	Boat hook handles	Boat hook handles	manufactured_goods	SITC4_7_Machinery_and_Transport_Equipment
-9	local_concept_only	htc:1525	Metal Bell	Metal Bell	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-9	local_concept_only	htc:1522	Succus Liquoritiae	Succus Liquoritiae	other	oe:sitcUnassigned
+10	local_concept_only	htc:1490	Metallic Nickel and Oxide of and Arseniate of	Metallic Nickel and Oxide of and Arseniate of	minerals_metals_energy	SITC4_67_68_Metals
+10	local_concept_only	htc:1495	Dari Seeds	Dari Seeds	food_grain	SITC4_04_Cereals_and_Preparations
+10	local_concept_only	htc:1502	Railway Waggons Trucks etc not of Iron	Railway Waggons Trucks etc not of Iron	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+10	local_concept_only	htc:1503	Arms and Ammunition Shot Large and Small	Arms and Ammunition Shot Large and Small	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+10	local_concept_only	htc:1505	Ammunition Shot and Shell	Ammunition Shot and Shell	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+10	local_concept_only	htc:1506	Cordite and other Smokeless Propellants	Cordite and other Smokeless Propellants	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+10	local_concept_only	htc:1507	Flowers Fresh	Flowers Fresh	other	oe:sitcUnassigned
+10	local_concept_only	htc:1508	Gooseberries Raw	Gooseberries Raw	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+10	local_concept_only	htc:1511	Chemical Manufactures and Products Borate of Lime	Chemical Manufactures and Products Borate of Lime	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
 9	local_concept_only	htc:1520	Juniper Berries	Juniper Berries	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-8	local_concept_only	htc:1638	Preserved unenumarated	Preserved unenumarated	other	oe:sitcUnassigned
-8	local_concept_only	htc:1634	Woollen Rags Pulled	Woollen Rags Pulled	fibres_textiles	SITC4_26_Textile_Fibres
-8	local_concept_only	htc:1632	Peas not fresh Split	Peas	food_grain	SITC4_05_Vegetables_and_Fruit
-8	local_concept_only	htc:1630	Milk Powder Unsweetened	Milk Powder Unsweetened	food_animal	SITC4_02_Dairy_and_Eggs
-8	local_concept_only	htc:1627	Iron and Steel Wire	Iron and Steel Wire	manufactured_goods	SITC4_69_Manufactures_of_Metal
-8	local_concept_only	htc:1622	Soap and Soap Powder	Soap and Soap Powder	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
-8	local_concept_only	htc:1619	Other Bleaching Materials	Other Bleaching Materials	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-8	local_concept_only	htc:1618	Manufactures of Iron and Steel Cycles including those with Motors	Manufactures of Iron and Steel Cycles including those with Motors	manufactured_goods	SITC4_69_Manufactures_of_Metal
-8	local_concept_only	htc:1614	Cocoa Cocoa or Chocolate in the manufacture of which Spirit has been used	Cocoa Cocoa or Chocolate in the manufacture of which Spirit has been used	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-8	local_concept_only	htc:1613	oils, mineral, coal and kerosene, crude	oils, mineral, coal and kerosene, crude	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-8	local_concept_only	htc:1610	Mica Crude and Cut	Mica Crude and Cut	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-8	local_concept_only	htc:1609	Metal Manufactured	Metal	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-8	local_concept_only	htc:1608	Butterine	Butterine	other	oe:sitcUnassigned
-8	local_concept_only	htc:1606	Naphtha Crude	Naphtha Crude	minerals_metals_energy	SITC4_33_Petroleum
-8	local_concept_only	htc:1604	Candles and Soap	Candles and Soap	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
-8	local_concept_only	htc:1602	Stones Emery Stones	Stones Emery Stones	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-8	local_concept_only	htc:1600	Other Vegetable Substances of the Nature and Quality of Undressed Hemp Except Coir and Flax	Other Vegetable Substances of the Nature and Quality of	fibres_textiles	SITC4_26_Textile_Fibres
-8	local_concept_only	htc:1596	Embroidery and Needlework embroidery on silk not being silk net	Embroidery and Needlework embroidery on silk not being silk net	fibres_textiles	SITC4_26_Textile_Fibres
-8	local_concept_only	htc:1592	Bean Meal and Pea Meal	Bean Meal and Pea Meal	food_grain	SITC4_05_Vegetables_and_Fruit
-8	local_concept_only	htc:1589	Painters Colours Manufactured	Painters Colours	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-8	local_concept_only	htc:1587	Shad	Shad	fisheries_marine	SITC4_03_Fish_and_Seafood
-8	local_concept_only	htc:1586	Beaver coating	Beaver coating	other	oe:sitcUnassigned
-8	local_concept_only	htc:1585	Bark canoe	Bark canoe	timber_forestry	SITC4_24_Cork_and_Wood
-8	local_concept_only	htc:1584	Turkey	Turkey	food_animal	SITC4_01_Meat_and_Preparations
+9	local_concept_only	htc:1522	Succus Liquoritiae	Succus Liquoritiae	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+9	local_concept_only	htc:1523	Vermicelli	Vermicelli	food_grain	SITC4_04_Cereals_and_Preparations
+9	local_concept_only	htc:1525	Metal Bell	Metal Bell	minerals_metals_energy	SITC4_67_68_Metals
+9	local_concept_only	htc:1526	Boat hook handles	Boat hook handles	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
+9	local_concept_only	htc:1527	Canes Mounted or Ornamented	Canes Mounted or Ornamented	other	oe:sitcUnassigned
+9	local_concept_only	htc:1530	Pea meal	Pea meal	food_grain	SITC4_05_Vegetables_and_Fruit
+9	local_concept_only	htc:1531	Liqueurs Cordials Mixtures and other Not Sweetened Unenumerated Tested	Liqueurs Cordials Mixtures and other Not Sweetened	food_colonial_grocery	SITC4_11_Beverages
+9	local_concept_only	htc:1534	Poppy Seeds	Poppy Seeds	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
+9	local_concept_only	htc:1541	Vegetable Fibre for Making Paper	Vegetable Fibre for Making Paper	fibres_textiles	SITC4_26_Textile_Fibres
+9	local_concept_only	htc:1543	Coir Fibre	Coir Fibre	fibres_textiles	SITC4_26_Textile_Fibres
+9	local_concept_only	htc:1549	Rifles	Rifles	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+9	local_concept_only	htc:1552	Shell fish all sorts	Shell fish all sorts	fisheries_marine	SITC4_03_Fish_and_Seafood
+9	local_concept_only	htc:1554	Precious Stones Diamonds	Precious Stones Diamonds	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+9	local_concept_only	htc:1555	Camels Hair	Camels Hair	fibres_textiles	SITC4_26_Textile_Fibres
+9	local_concept_only	htc:1556	Electrical Goods and Apparatus	Electrical Goods and Apparatus	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+9	local_concept_only	htc:1558	Mica Cut to Size	Mica Cut to Size	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+9	local_concept_only	htc:1559	Mica Edges Trimmed	Mica Edges Trimmed	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+9	local_concept_only	htc:1560	Milk Preserved other kind	Milk Preserved other kind	food_animal	SITC4_02_Dairy_and_Eggs
+9	local_concept_only	htc:1562	Strawberries Raw	Strawberries Raw	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+9	local_concept_only	htc:1564	Chemical Manufactures and Products not liable to duty Glycerine	Chemical Manufactures and Products not liable to duty Glycerine	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+9	local_concept_only	htc:1566	Electrical Goods and Apparatus Unenumerated	Electrical Goods and Apparatus	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+9	local_concept_only	htc:1576	Cinders	Cinders	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+8	local_concept_only	htc:1580	Essence of Lemons	Essence of Lemons	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
 8	local_concept_only	htc:1583	Buffaloe skins	Buffaloe skins	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
-8	local_concept_only	htc:1580	Essence of Lemons	Essence of Lemons	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-8	local_concept_only	htc:1579	Balsam Copaiba	Balsam Copaiba	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
-7	local_concept_only	htc:1697	Hornes	Hornes	other	oe:sitcUnassigned
-7	local_concept_only	htc:1695	Small Arms Ammunition Sporting	Small Arms Ammunition Sporting	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-7	local_concept_only	htc:1694	Other Parts of Small Arms	Other Parts of Small Arms	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-7	local_concept_only	htc:1693	Electrical Ware Door Fittings and Chemical Ware	Electrical Ware Door Fittings and Chemical Ware	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-7	local_concept_only	htc:1692	Chemical Manufactures Acetic Acid	Chemical Manufactures Acetic Acid	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-7	local_concept_only	htc:1687	Steel Castings	Steel Castings	manufactured_goods	SITC4_69_Manufactures_of_Metal
-7	local_concept_only	htc:1686	Rapeseed Oil	Rapeseed Oil	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-7	local_concept_only	htc:1685	Quinine and Quinine Salts	Quinine and Quinine Salts	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
-7	local_concept_only	htc:1683	Painters Colours and Pigments White Lead	Painters Colours and Pigments White Lead	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-7	local_concept_only	htc:1678	Iron and Steel Pipes and Fittings Cast	Iron and Steel Pipes and Fittings Cast	manufactured_goods	SITC4_69_Manufactures_of_Metal
-7	local_concept_only	htc:1673	Electrical Goods and Apparatus Telegraph and Telephone Apparatus	Electrical Goods and Apparatus Telegraph and Telephone Apparatus	other	oe:sitcUnassigned
-7	local_concept_only	htc:1669	Metals, viz. Platinum, contained in concentrates or other forms	Metals, viz. Platinum, contained in concentrates or other forms	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-7	local_concept_only	htc:1668	Margarine Cheese	Margarine Cheese	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-7	local_concept_only	htc:1664	Other Kinds of Manufactured Tobacco Manufactured in the United Kingdom	Other Kinds of Manufactured Tobacco Manufactured in the United Kingdom	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-7	local_concept_only	htc:1661	Iron Old for Re-manufacture	Iron Old for Re-manufacture	manufactured_goods	SITC4_69_Manufactures_of_Metal
-7	local_concept_only	htc:1658	Pulp of Rags and Wood	Pulp of Rags and Wood	fibres_textiles	SITC4_26_Textile_Fibres
-7	local_concept_only	htc:1657	Painters Colours Unmanufactured	Painters Colours	other	oe:sitcUnassigned
-7	local_concept_only	htc:1656	Ink	Ink	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-7	local_concept_only	htc:1651	Bean meal	Bean meal	food_grain	SITC4_05_Vegetables_and_Fruit
-7	local_concept_only	htc:1646	Bark Extracts of Bark or other Substances to be used in Tanning or Dyeing	Bark Extracts of Bark or other Substances to be used in Tanning or Dyeing	tannins_leather	SITC4_29_Crude_Animal_Vegetable_Materials
-7	local_concept_only	htc:1645	Axes	Axes	other	oe:sitcUnassigned
+8	local_concept_only	htc:1584	Turkey	Turkey	food_animal	SITC4_00_Live_Animals
+8	local_concept_only	htc:1585	Bark canoe	Bark canoe	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+8	local_concept_only	htc:1586	Beaver coating	Beaver coating	other	oe:sitcUnassigned
+8	local_concept_only	htc:1587	Shad	Shad	fisheries_marine	SITC4_03_Fish_and_Seafood
+8	local_concept_only	htc:1589	Painters Colours Manufactured	Painters Colours	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+8	local_concept_only	htc:1592	Bean Meal and Pea Meal	Bean Meal and Pea Meal	food_grain	SITC4_05_Vegetables_and_Fruit
+8	local_concept_only	htc:1600	Other Vegetable Substances of the Nature and Quality of Undressed Hemp Except Coir and Flax	Other Vegetable Substances of the Nature and Quality of	fibres_textiles	SITC4_26_Textile_Fibres
+8	local_concept_only	htc:1602	Stones Emery Stones	Stones Emery Stones	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+8	local_concept_only	htc:1606	Naphtha Crude	Naphtha Crude	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+8	local_concept_only	htc:1608	Butterine	Butterine	fats_oils_soap	SITC4_41_Animal_Oils_and_Fats
+8	local_concept_only	htc:1609	Metal Manufactured	Metal	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+8	local_concept_only	htc:1610	Mica Crude and Cut	Mica Crude and Cut	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+8	local_concept_only	htc:1613	oils, mineral, coal and kerosene, crude	oils, mineral, coal and kerosene, crude	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+8	local_concept_only	htc:1618	Manufactures of Iron and Steel Cycles including those with Motors	Manufactures of Iron and Steel Cycles including those with Motors	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+8	local_concept_only	htc:1619	Other Bleaching Materials	Other Bleaching Materials	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+8	local_concept_only	htc:1621	Paper Making Materials Pulp of Wood Chemical Wet	Paper Making Materials Pulp of Wood Chemical Wet	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
+8	local_concept_only	htc:1627	Iron and Steel Wire	Iron and Steel Wire	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+8	local_concept_only	htc:1629	Mica	Mica	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+8	local_concept_only	htc:1630	Milk Powder Unsweetened	Milk Powder Unsweetened	food_animal	SITC4_02_Dairy_and_Eggs
+8	local_concept_only	htc:1638	Preserved unenumarated	Preserved unenumarated	other	oe:sitcUnassigned
+7	local_concept_only	htc:1639	Aniseed	Aniseed	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
 7	local_concept_only	htc:1643	Stones Rough or Hewn	Stones Rough or Hewn	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-7	local_concept_only	htc:1639	Aniseed	Aniseed	other	oe:sitcUnassigned
-6	local_concept_only	htc:1753	Small Arms Sporting Guns Carbines and Rifles	Small Arms Sporting Guns Carbines and Rifles	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-6	local_concept_only	htc:1752	Chemical Manufactures and Products Acetone	Chemical Manufactures and Products Acetone	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-6	local_concept_only	htc:1750	Soap Powder	Soap Powder	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
-6	local_concept_only	htc:1744	Iron and Steel Wire Rods	Iron and Steel Wire Rods	manufactured_goods	SITC4_69_Manufactures_of_Metal
-6	local_concept_only	htc:1742	Chemical Manufactures and Products Boracite	Chemical Manufactures and Products Boracite	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-6	local_concept_only	htc:1740	Mica Edges Untrimmed	Mica Edges Untrimmed	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-6	local_concept_only	htc:1739	Ethyl Chloride	Ethyl Chloride	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-6	local_concept_only	htc:1738	Confectionery in the Manufacture of which Spirit has been used	Confectionery in the Manufacture of which Spirit has been used	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-6	local_concept_only	htc:1737	Chicory Other Vegetable matter	Chicory Other Vegetable matter	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
-6	local_concept_only	htc:1735	Mutton Unenumerated Preserved otherwise than by Salting	Mutton	food_animal	SITC4_01_Meat_and_Preparations
-6	local_concept_only	htc:1730	Hemp British Dressed	Hemp British Dressed	fibres_textiles	SITC4_26_Textile_Fibres
-6	local_concept_only	htc:1729	Ships built at Quebec during the Fiscal Year ended June 30, 1870	Ships built at Quebec during the Fiscal Year ended June 30, 1870	manufactured_goods	SITC4_7_Machinery_and_Transport_Equipment
-6	local_concept_only	htc:1727	Pyrites of Iron or Copper or Sulphur Ore	Pyrites of Iron or Copper or Sulphur Ore	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-6	local_concept_only	htc:1722	Teasles	Teasles	other	oe:sitcUnassigned
-6	local_concept_only	htc:1718	Lentils Seeds	Lentils Seeds	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
-6	local_concept_only	htc:1717	Iron and Steel Wrought or Manufactured Ornamental	Iron and Steel Wrought or	manufactured_goods	SITC4_69_Manufactures_of_Metal
-6	local_concept_only	htc:1712	Alkali and Barila	Alkali and Barila	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+7	local_concept_only	htc:1645	Axes	Axes	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+7	local_concept_only	htc:1646	Bark Extracts of Bark or other Substances to be used in Tanning or Dyeing	Bark Extracts of Bark or other Substances to be used in Tanning or Dyeing	tannins_leather	SITC4_29_Crude_Animal_Vegetable_Materials
+7	local_concept_only	htc:1651	Bean meal	Bean meal	food_grain	SITC4_05_Vegetables_and_Fruit
+7	local_concept_only	htc:1657	Painters Colours Unmanufactured	Painters Colours	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+7	local_concept_only	htc:1664	Other Kinds of Manufactured Tobacco Manufactured in the United Kingdom	Other Kinds of Manufactured Tobacco Manufactured in the United Kingdom	food_colonial_grocery	SITC4_12_Tobacco
+7	local_concept_only	htc:1668	Margarine Cheese	Margarine Cheese	food_animal	SITC4_02_Dairy_and_Eggs
+7	local_concept_only	htc:1669	Metals, viz. Platinum, contained in concentrates or other forms	Metals, viz. Platinum, contained in concentrates or other forms	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+7	local_concept_only	htc:1673	Electrical Goods and Apparatus Telegraph and Telephone Apparatus	Electrical Goods and Apparatus Telegraph and Telephone Apparatus	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+7	local_concept_only	htc:1683	Painters Colours and Pigments White Lead	Painters Colours and Pigments White Lead	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+7	local_concept_only	htc:1685	Quinine and Quinine Salts	Quinine and Quinine Salts	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+7	local_concept_only	htc:1687	Steel Castings	Steel Castings	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+7	customs_residual_category	htc:1689	All other Tiles except for Roofing and Street Paving	All other Tiles except for Roofing and Street Paving	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+7	local_concept_only	htc:1692	Chemical Manufactures Acetic Acid	Chemical Manufactures Acetic Acid	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+7	local_concept_only	htc:1693	Electrical Ware Door Fittings and Chemical Ware	Electrical Ware Door Fittings and Chemical Ware	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+7	local_concept_only	htc:1694	Other Parts of Small Arms	Other Parts of Small Arms	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+7	local_concept_only	htc:1695	Small Arms Ammunition Sporting	Small Arms Ammunition Sporting	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+7	local_concept_only	htc:1697	Hornes	Hornes	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+6	local_concept_only	htc:1698	Annotto	Annotto	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+6	local_concept_only	htc:1699	Bugle Great	Bugle Great	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+6	local_concept_only	htc:1701	Lignum Quassia	Lignum Quassia	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+6	local_concept_only	htc:1703	Orchelia	Orchelia	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+6	local_concept_only	htc:1705	Thread Sisters	Thread Sisters	manufactured_goods	SITC4_65_Textile_Yarn_and_Fabrics
+6	local_concept_only	htc:1709	Canoes	Canoes	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+6	local_concept_only	htc:1710	Buttons of Metal	Buttons of Metal	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
 6	local_concept_only	htc:1711	Stones Marble Sawn	Stones Marble Sawn	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-6	local_concept_only	htc:1710	Buttons of Metal	Buttons of Metal	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-6	local_concept_only	htc:1706	Wood Red or Guinea	Wood Red or Guinea	timber_forestry	SITC4_24_Cork_and_Wood
-6	local_concept_only	htc:1705	Thread Sisters	Thread Sisters	other	oe:sitcUnassigned
-6	local_concept_only	htc:1703	Orchelia	Orchelia	other	oe:sitcUnassigned
-6	local_concept_only	htc:1701	Lignum Quassia	Lignum Quassia	other	oe:sitcUnassigned
-6	local_concept_only	htc:1699	Bugle Great	Bugle Great	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-6	local_concept_only	htc:1698	Annotto	Annotto	other	oe:sitcUnassigned
-5	local_concept_only	htc:1822	Stone Wrought	Stone Wrought	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-5	local_concept_only	htc:1821	Sanitary Ware	Sanitary Ware	other	oe:sitcUnassigned
-5	local_concept_only	htc:1818	Soap Stock	Soap Stock	fats_oils_soap	SITC4_55_Oils_Perfumes_Cleansing
-5	local_concept_only	htc:1814	Dextrine	Dextrine	other	oe:sitcUnassigned
-5	local_concept_only	htc:1811	Floorcloth Linoleum and Kamptulicon	Floorcloth Linoleum and Kamptulicon	other	oe:sitcUnassigned
-5	local_concept_only	htc:1810	Ammunition Metal Cartridge Cases not Small Arms Filled	Ammunition Metal Cartridge Cases not Small Arms Filled	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-5	local_concept_only	htc:1806	Barytes Ground and Underground	Barytes Ground and Underground	other	oe:sitcUnassigned
-5	local_concept_only	htc:1805	Manures Unrated	Manures Unrated	other	oe:sitcUnassigned
-5	local_concept_only	htc:1802	Oil Mineral or Earth Crude	Oil Mineral or Earth Crude	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-5	local_concept_only	htc:1798	Ordinance Stores Explosives and Ammunition Unenumerated	Ordinance Stores Explosives and Ammunition	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-5	local_concept_only	htc:1797	Stone and Sand	Stone and Sand	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-5	local_concept_only	htc:1795	Shot of Lead	Shot of Lead	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-5	local_concept_only	htc:1793	Chromate of Iron	Chromate of Iron	minerals_metals_energy	SITC4_67_Iron_and_Steel
-5	local_concept_only	htc:1792	Canary Seeds	Canary Seeds	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
-5	local_concept_only	htc:1789	Syrup or Vegetable Juice	Syrup or Vegetable Juice	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-5	local_concept_only	htc:1784	Lace Mohair or Worsted	Lace Mohair or Worsted	fibres_textiles	SITC4_26_Textile_Fibres
-5	local_concept_only	htc:1783	Embroidery and Needlework Silk and Cotton Net being Imitation Lace	Embroidery and Needlework Silk and Cotton Net being Imitation Lace	fibres_textiles	SITC4_26_Textile_Fibres
-5	local_concept_only	htc:1778	Potato Flour	Potato Flour	food_grain	SITC4_04_Cereals_and_Preparations
-5	local_concept_only	htc:1775	Lake Trout	Lake Trout	fisheries_marine	SITC4_03_Fish_and_Seafood
+6	local_concept_only	htc:1712	Alkali and Barila	Alkali and Barila	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+6	local_concept_only	htc:1717	Iron and Steel Wrought or Manufactured Ornamental	Iron and Steel Wrought or	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+6	local_concept_only	htc:1718	Lentils Seeds	Lentils Seeds	food_grain	SITC4_05_Vegetables_and_Fruit
+6	local_concept_only	htc:1722	Teasles	Teasles	other	oe:sitcUnassigned
+6	local_concept_only	htc:1727	Pyrites of Iron or Copper or Sulphur Ore	Pyrites of Iron or Copper or Sulphur Ore	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+6	local_concept_only	htc:1731	Muskets	Muskets	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+6	local_concept_only	htc:1735	Mutton Unenumerated Preserved otherwise than by Salting	Mutton	food_animal	SITC4_01_Meat_and_Preparations
+6	local_concept_only	htc:1737	Chicory Other Vegetable matter	Chicory Other Vegetable matter	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+6	local_concept_only	htc:1738	Confectionery in the Manufacture of which Spirit has been used	Confectionery in the Manufacture of which Spirit has been used	food_colonial_grocery	SITC4_06_Sugars_and_Honey
+6	local_concept_only	htc:1739	Ethyl Chloride	Ethyl Chloride	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+6	local_concept_only	htc:1740	Mica Edges Untrimmed	Mica Edges Untrimmed	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+6	local_concept_only	htc:1742	Chemical Manufactures and Products Boracite	Chemical Manufactures and Products Boracite	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+6	local_concept_only	htc:1744	Iron and Steel Wire Rods	Iron and Steel Wire Rods	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+6	local_concept_only	htc:1752	Chemical Manufactures and Products Acetone	Chemical Manufactures and Products Acetone	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+6	local_concept_only	htc:1753	Small Arms Sporting Guns Carbines and Rifles	Small Arms Sporting Guns Carbines and Rifles	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+5	local_concept_only	htc:1757	Coculus Indus	Coculus Indus	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+5	local_concept_only	htc:1761	Radix Serpentarioe	Radix Serpentarioe	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+5	local_concept_only	htc:1763	Rock Moss	Rock Moss	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+5	local_concept_only	htc:1764	Truffles	Truffles	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+5	local_concept_only	htc:1765	Vermillion	Vermillion	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+5	local_concept_only	htc:1771	Castorum	Castorum	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
 5	local_concept_only	htc:1773	Peppermint	Peppermint	other	oe:sitcUnassigned
-5	local_concept_only	htc:1771	Castorum	Castorum	other	oe:sitcUnassigned
-5	local_concept_only	htc:1765	Vermillion	Vermillion	other	oe:sitcUnassigned
-5	local_concept_only	htc:1763	Rock Moss	Rock Moss	other	oe:sitcUnassigned
-5	local_concept_only	htc:1761	Radix Serpentarioe	Radix Serpentarioe	other	oe:sitcUnassigned
-5	local_concept_only	htc:1760	Lace Bone	Lace Bone	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
-5	local_concept_only	htc:1757	Coculus Indus	Coculus Indus	other	oe:sitcUnassigned
-4	local_concept_only	htc:1888	Match Blocks	Match Blocks	other	oe:sitcUnassigned
-4	local_concept_only	htc:1885	Dry Goods manufactured	Dry Goods	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-4	local_concept_only	htc:1883	Tiles for Roofing and Street Paving	Tiles for Roofing and Street Paving	manufactured_goods	SITC4_66_Non_Metallic_Mineral_Manufactures
-4	local_concept_only	htc:1882	Small Arms Military Rifles and Carbines	Small Arms Military Rifles and Carbines	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-4	local_concept_only	htc:1881	Small Arms Air Guns and Rifles of all Sorts	Small Arms Air Guns and Rifles of all Sorts	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-4	local_concept_only	htc:1880	Glycerine Distilled	Glycerine Distilled	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-4	local_concept_only	htc:1879	Chemical Manufactures and Products Acetate of Lime	Chemical Manufactures and Products Acetate of Lime	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-4	local_concept_only	htc:1874	Kieselguhr and Infusorial Earth	Kieselguhr and Infusorial Earth	other	oe:sitcUnassigned
-4	local_concept_only	htc:1872	Arms Guns Howitzers Mortars and parts thereof	Arms Guns Howitzers Mortars and parts thereof	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-4	local_concept_only	htc:1871	Ethyl Bromide	Ethyl Bromide	other	oe:sitcUnassigned
-4	local_concept_only	htc:1869	Confectionery containing not more than 50% chocolate	Confectionery containing not more than 50% chocolate	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-4	local_concept_only	htc:1868	Confectionery containing not more than 50% Chocolate in the manufacture of which Spirit has been use	Confectionery containing not more than 50% Chocolate in the manufacture of which Spirit has been use	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-4	local_concept_only	htc:1866	Canned Beans	Canned Beans	food_grain	SITC4_05_Vegetables_and_Fruit
-4	local_concept_only	htc:1865	Naphtha Wood not potable	Naphtha Wood not potable	timber_forestry	SITC4_24_Cork_and_Wood
-4	local_concept_only	htc:1858	Metal Bell Leaf, not Gold	Metal Bell Leaf, not Gold	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-4	local_concept_only	htc:1856	Pillow Lace of Silk	Pillow Lace of Silk	fibres_textiles	SITC4_26_Textile_Fibres
-4	local_concept_only	htc:1855	Stones Marble Rough	Stones Marble Rough	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-4	local_concept_only	htc:1847	Other Vegetable substances of the nature and quality of Undressed Hemp	Other Vegetable substances of the nature and quality of	fibres_textiles	SITC4_26_Textile_Fibres
-4	local_concept_only	htc:1845	Jewels Emeralds and other Precious Stones Set	Jewels Emeralds and other Precious Stones Set	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-4	local_concept_only	htc:1843	Shot	Shot	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-4	local_concept_only	htc:1841	Birds Stuffed	Birds Stuffed	other	oe:sitcUnassigned
-4	local_concept_only	htc:1838	Pyrola Umbellata	Pyrola Umbellata	other	oe:sitcUnassigned
-4	local_concept_only	htc:1836	Kit furs	Kit furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
-4	local_concept_only	htc:1835	Capston Bars	Capston Bars	other	oe:sitcUnassigned
-4	local_concept_only	htc:1834	Alewives	Alewives	fisheries_marine	SITC4_03_Fish_and_Seafood
-4	local_concept_only	htc:1833	Wood Brazilletto	Wood Brazilletto	timber_forestry	SITC4_24_Cork_and_Wood
-4	local_concept_only	htc:1832	Saccharum Saturni	Saccharum Saturni	other	oe:sitcUnassigned
+5	local_concept_only	htc:1775	Lake Trout	Lake Trout	fisheries_marine	SITC4_03_Fish_and_Seafood
+5	local_concept_only	htc:1776	Silk Goods India Crape	Silk Goods India Crape	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+5	local_concept_only	htc:1778	Potato Flour	Potato Flour	food_grain	SITC4_04_Cereals_and_Preparations
+5	local_concept_only	htc:1789	Syrup or Vegetable Juice	Syrup or Vegetable Juice	food_colonial_grocery	SITC4_06_Sugars_and_Honey
+5	local_concept_only	htc:1792	Canary Seeds	Canary Seeds	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
+5	local_concept_only	htc:1793	Chromate of Iron	Chromate of Iron	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+5	local_concept_only	htc:1795	Shot of Lead	Shot of Lead	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+5	local_concept_only	htc:1798	Ordinance Stores Explosives and Ammunition Unenumerated	Ordinance Stores Explosives and Ammunition	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+5	local_concept_only	htc:1802	Oil Mineral or Earth Crude	Oil Mineral or Earth Crude	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+5	local_concept_only	htc:1805	Manures Unrated	Manures Unrated	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+5	local_concept_only	htc:1806	Barytes Ground and Underground	Barytes Ground and Underground	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+5	local_concept_only	htc:1810	Ammunition Metal Cartridge Cases not Small Arms Filled	Ammunition Metal Cartridge Cases not Small Arms Filled	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+5	local_concept_only	htc:1811	Floorcloth Linoleum and Kamptulicon	Floorcloth Linoleum and Kamptulicon	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+5	local_concept_only	htc:1814	Dextrine	Dextrine	food_grain	SITC4_04_Cereals_and_Preparations
+5	local_concept_only	htc:1821	Sanitary Ware	Sanitary Ware	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+4	local_concept_only	htc:1826	Assafoetida	Assafoetida	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+4	local_concept_only	htc:1828	Cantharides	Cantharides	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+4	local_concept_only	htc:1830	Hellebore	Hellebore	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
 4	local_concept_only	htc:1831	Manna	Manna	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
-4	local_concept_only	htc:1830	Hellebore	Hellebore	other	oe:sitcUnassigned
-4	local_concept_only	htc:1828	Cantharides	Cantharides	other	oe:sitcUnassigned
-4	local_concept_only	htc:1826	Assafoetida	Assafoetida	other	oe:sitcUnassigned
-3	local_concept_only	htc:1928	Torpedoes and Submarine Mine Appliances	Torpedoes and Submarine Mine Appliances	other	oe:sitcUnassigned
-3	local_concept_only	htc:1926	Painters Colours and Pigments Nickel Oxide	Painters Colours and Pigments Nickel Oxide	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-3	local_concept_only	htc:1925	Metals, viz. Copper, fine, contained in ore, matte, regulus, &c.	Metals, viz. Copper, fine, contained in ore, matte, regulus, &c.	minerals_metals_energy	SITC4_28_Metalliferous_Ores
-3	local_concept_only	htc:1919	Gold Bars	Gold Bars	minerals_metals_energy	SITC4_68_Non_Ferrous_Metals
-3	local_concept_only	htc:1914	Olibanum	Olibanum	other	oe:sitcUnassigned
-3	local_concept_only	htc:1913	Manufactures of Bronze or of Metal Bronzed or Lacquered	Manufactures of Bronze or of Metal Bronzed or Lacquered	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-3	local_concept_only	htc:1909	Succades and Confectionary Plums Preserved in Sugar	Succades and Confectionary Plums Preserved in Sugar	food_colonial_grocery	SITC4_06_Sugars_and_Honey
-3	local_concept_only	htc:1904	Timothy Seed	Timothy Seed	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
-3	local_concept_only	htc:1902	Varnish	Varnish	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-3	local_concept_only	htc:1901	Gun stocks	Gun stocks	other	oe:sitcUnassigned
-3	local_concept_only	htc:1900	Cart Wheels	Cart Wheels	other	oe:sitcUnassigned
-3	local_concept_only	htc:1899	Weld	Weld	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+4	local_concept_only	htc:1832	Saccharum Saturni	Saccharum Saturni	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+4	local_concept_only	htc:1834	Alewives	Alewives	fisheries_marine	SITC4_03_Fish_and_Seafood
+4	local_concept_only	htc:1835	Capston Bars	Capston Bars	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
+4	local_concept_only	htc:1836	Kit furs	Kit furs	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
+4	local_concept_only	htc:1838	Pyrola Umbellata	Pyrola Umbellata	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+4	local_concept_only	htc:1841	Birds Stuffed	Birds Stuffed	other	oe:sitcUnassigned
+4	local_concept_only	htc:1843	Shot	Shot	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+4	local_concept_only	htc:1845	Jewels Emeralds and other Precious Stones Set	Jewels Emeralds and other Precious Stones Set	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+4	local_concept_only	htc:1847	Other Vegetable substances of the nature and quality of Undressed Hemp	Other Vegetable substances of the nature and quality of	fibres_textiles	SITC4_26_Textile_Fibres
+4	local_concept_only	htc:1854	Pictures Photographs or Sun pictures not on paper	Pictures Photographs or Sun pictures not on paper	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+4	local_concept_only	htc:1855	Stones Marble Rough	Stones Marble Rough	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+4	local_concept_only	htc:1857	Tin Ore and Regulus	Tin Ore and Regulus	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+4	local_concept_only	htc:1858	Metal Bell Leaf, not Gold	Metal Bell Leaf, not Gold	minerals_metals_energy	SITC4_67_68_Metals
+4	local_concept_only	htc:1862	Revolvers	Revolvers	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+4	local_concept_only	htc:1865	Naphtha Wood not potable	Naphtha Wood not potable	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+4	local_concept_only	htc:1868	Confectionery containing not more than 50% Chocolate in the manufacture of which Spirit has been use	Confectionery containing not more than 50% Chocolate in the manufacture of which Spirit has been use	food_colonial_grocery	SITC4_06_Sugars_and_Honey
+4	local_concept_only	htc:1869	Confectionery containing not more than 50% chocolate	Confectionery containing not more than 50% chocolate	food_colonial_grocery	SITC4_06_Sugars_and_Honey
+4	local_concept_only	htc:1871	Ethyl Bromide	Ethyl Bromide	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+4	local_concept_only	htc:1872	Arms Guns Howitzers Mortars and parts thereof	Arms Guns Howitzers Mortars and parts thereof	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+4	local_concept_only	htc:1874	Kieselguhr and Infusorial Earth	Kieselguhr and Infusorial Earth	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
+4	local_concept_only	htc:1879	Chemical Manufactures and Products Acetate of Lime	Chemical Manufactures and Products Acetate of Lime	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+4	local_concept_only	htc:1880	Glycerine Distilled	Glycerine Distilled	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+4	local_concept_only	htc:1881	Small Arms Air Guns and Rifles of all Sorts	Small Arms Air Guns and Rifles of all Sorts	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+4	local_concept_only	htc:1882	Small Arms Military Rifles and Carbines	Small Arms Military Rifles and Carbines	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+4	local_concept_only	htc:1883	Tiles for Roofing and Street Paving	Tiles for Roofing and Street Paving	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+4	local_concept_only	htc:1885	Dry Goods manufactured	Dry Goods	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+4	local_concept_only	htc:1888	Match Blocks	Match Blocks	timber_forestry	SITC4_24_Cork_and_Wood
+3	local_concept_only	htc:1890	Camphire Refined	Camphire Refined	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+3	local_concept_only	htc:1894	Incle Wrought	Incle Wrought	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
 3	local_concept_only	htc:1895	Kelp	Kelp	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-3	local_concept_only	htc:1894	Incle Wrought	Incle Wrought	other	oe:sitcUnassigned
-3	local_concept_only	htc:1890	Camphire Refined	Camphire Refined	other	oe:sitcUnassigned
-2	local_concept_only	htc:1989	pine logs (duty $3 and $2 per M. ft, board measure)	pine logs	timber_forestry	SITC4_24_Cork_and_Wood
-2	local_concept_only	htc:1987	Oil Mineral or Earth	Oil Mineral or Earth	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-2	local_concept_only	htc:1986	Stave & Shingle Bolts	Stave & Shingle Bolts	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
-2	local_concept_only	htc:1984	Tea for the Manufacture of Caffeine	Tea for the Manufacture of Caffeine	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-2	local_concept_only	htc:1983	Nuts for expressing oil	Nuts for expressing oil	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-2	local_concept_only	htc:1981	Ships Foreign wrecked broken up or to be broken up	Ships Foreign wrecked broken up or to be broken up	manufactured_goods	SITC4_7_Machinery_and_Transport_Equipment
-2	local_concept_only	htc:1980	Naphtha or Methylic Alcohol purified	Naphtha or Methylic Alcohol purified	minerals_metals_energy	SITC4_33_Petroleum
-2	local_concept_only	htc:1978	Spices Cassia Vera	Spices Cassia Vera	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
-2	local_concept_only	htc:1977	Liquid Ammonia	Liquid Ammonia	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-2	local_concept_only	htc:1975	Woollen and Worsted Manufactures	Woollen and Worsted Manufactures	manufactured_goods	SITC4_65_Textile_Yarn_and_Fabrics
-2	local_concept_only	htc:1970	Colouring	Colouring	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
-2	local_concept_only	htc:1968	Pine Plank and Scantling	Pine Plank and Scantling	timber_forestry	SITC4_24_Cork_and_Wood
-2	local_concept_only	htc:1967	Olives	Olives	other	oe:sitcUnassigned
-2	local_concept_only	htc:1965	Moose Deer	Moose Deer	other	oe:sitcUnassigned
-2	local_concept_only	htc:1963	Coach Spokes	Coach Spokes	other	oe:sitcUnassigned
-2	local_concept_only	htc:1961	Ash Plank and Scantling	Ash Plank and Scantling	timber_forestry	SITC4_24_Cork_and_Wood
-2	local_concept_only	htc:1960	Ships Hulls and Materials	Ships Hulls and Materials	manufactured_goods	SITC4_7_Machinery_and_Transport_Equipment
-2	local_concept_only	htc:1959	Quills Unrated	Quills Unrated	other	oe:sitcUnassigned
-2	local_concept_only	htc:1958	Quills Swan	Quills Swan	other	oe:sitcUnassigned
-2	local_concept_only	htc:1954	Lintseed Oil	Lintseed Oil	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
-2	local_concept_only	htc:1953	Indian Curiosities	Indian Curiosities	other	oe:sitcUnassigned
-2	local_concept_only	htc:1951	Pig	Pig	food_animal	SITC4_00_Live_Animals
-2	local_concept_only	htc:1948	Ash pans	Ash pans	timber_forestry	SITC4_24_Cork_and_Wood
-2	local_concept_only	htc:1947	Stockings Woollen and Worsted	Stockings Woollen and Worsted	fibres_textiles	SITC4_26_Textile_Fibres
-2	local_concept_only	htc:1943	Radix Ipecacoanhoe	Radix Ipecacoanhoe	other	oe:sitcUnassigned
+3	local_concept_only	htc:1899	Weld	Weld	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+3	local_concept_only	htc:1901	Gun stocks	Gun stocks	other	oe:sitcUnassigned
+3	local_concept_only	htc:1902	Varnish	Varnish	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+3	local_concept_only	htc:1904	Timothy Seed	Timothy Seed	fodder_feed	SITC4_08_Animal_Feeding_Stuff
+3	local_concept_only	htc:1908	Blue	Blue	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+3	local_concept_only	htc:1909	Succades and Confectionary Plums Preserved in Sugar	Succades and Confectionary Plums Preserved in Sugar	food_colonial_grocery	SITC4_06_Sugars_and_Honey
+3	local_concept_only	htc:1913	Manufactures of Bronze or of Metal Bronzed or Lacquered	Manufactures of Bronze or of Metal Bronzed or Lacquered	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+3	local_concept_only	htc:1914	Olibanum	Olibanum	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+3	local_concept_only	htc:1919	Gold Bars	Gold Bars	minerals_metals_energy	SITC4_67_68_Metals
+3	local_concept_only	htc:1925	Metals, viz. Copper, fine, contained in ore, matte, regulus, &c.	Metals, viz. Copper, fine, contained in ore, matte, regulus, &c.	minerals_metals_energy	SITC4_28_Metalliferous_Ores
+3	local_concept_only	htc:1926	Painters Colours and Pigments Nickel Oxide	Painters Colours and Pigments Nickel Oxide	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+3	local_concept_only	htc:1928	Torpedoes and Submarine Mine Appliances	Torpedoes and Submarine Mine Appliances	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+2	local_concept_only	htc:1934	Benjamin	Benjamin	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+2	local_concept_only	htc:1935	Camphire Unrefined	Camphire Unrefined	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+2	local_concept_only	htc:1937	Cassia Buds	Cassia Buds	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
 2	local_concept_only	htc:1940	Paving Stones	Paving Stones	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-2	local_concept_only	htc:1939	Mats Cane	Mats Cane	other	oe:sitcUnassigned
-2	local_concept_only	htc:1937	Cassia Buds	Cassia Buds	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-2	local_concept_only	htc:1936	Carpets Turkey	Carpets Turkey	food_animal	SITC4_01_Meat_and_Preparations
-2	local_concept_only	htc:1935	Camphire Unrefined	Camphire Unrefined	other	oe:sitcUnassigned
-2	local_concept_only	htc:1934	Benjamin	Benjamin	other	oe:sitcUnassigned
-1	local_concept_only	htc:2066	Ships built at Quebec during the fiscal year ended 30th June, 1874	Ships built at Quebec during the fiscal year ended 30th June, 1874	manufactured_goods	SITC4_7_Machinery_and_Transport_Equipment
-1	local_concept_only	htc:2065	Barks for Tanning Chestnut	Barks for Tanning Chestnut	tannins_leather	SITC4_21_Hides_Skins_Furskins_Raw
-1	local_concept_only	htc:2064	Small Arms Miniature and Cadet Rifles and Carbines	Small Arms Miniature and Cadet Rifles and Carbines	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-1	local_concept_only	htc:2063	Small Arms Ammunition Military	Small Arms Ammunition Military	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-1	local_concept_only	htc:2060	Spice of all Other Kinds	Spice of all	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
-1	local_concept_only	htc:2058	Other Firearms	Other Firearms	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-1	local_concept_only	htc:2057	Naphtha purified so as to be potable	Naphtha purified so as to be potable	minerals_metals_energy	SITC4_33_Petroleum
-1	local_concept_only	htc:2055	Herring Preserved	Herring Preserved	fisheries_marine	SITC4_03_Fish_and_Seafood
-1	local_concept_only	htc:2054	Halibut Smoked	Halibut Smoked	fisheries_marine	SITC4_03_Fish_and_Seafood
-1	local_concept_only	htc:2053	Halibut Dry Salted	Halibut Dry Salted	fisheries_marine	SITC4_03_Fish_and_Seafood
-1	local_concept_only	htc:2052	Fishing Nets Twines and Lines	Fishing Nets Twines and Lines	other	oe:sitcUnassigned
-1	local_concept_only	htc:2051	Spirits Tafla	Spirits Tafla	food_colonial_grocery	SITC4_11_Beverages
-1	local_concept_only	htc:2047	Windlasses	Windlasses	other	oe:sitcUnassigned
-1	local_concept_only	htc:2046	Specie	Specie	minerals_metals_energy	SITC4_27_Crude_Fertilizers_and_Minerals
-1	local_concept_only	htc:2045	Moose Deer Heads and Horns	Moose Deer Heads and Horns	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
-1	local_concept_only	htc:2044	Granadilla Wood	Granadilla Wood	timber_forestry	SITC4_24_Cork_and_Wood
-1	local_concept_only	htc:2039	Whiting	Whiting	other	oe:sitcUnassigned
-1	local_concept_only	htc:2037	Lancewood Spars	Lancewood Spars	timber_forestry	SITC4_24_Cork_and_Wood
-1	local_concept_only	htc:2036	Gun Flints	Gun Flints	other	oe:sitcUnassigned
-1	local_concept_only	htc:2035	Grates	Grates	other	oe:sitcUnassigned
-1	local_concept_only	htc:2034	Corn Brooms	Corn Brooms	manufactured_goods	SITC4_89_Miscellaneous_Manufactured_Articles
-1	local_concept_only	htc:2033	Corkwood	Corkwood	other	oe:sitcUnassigned
-1	local_concept_only	htc:2032	Boathook Staffs	Boathook Staffs	other	oe:sitcUnassigned
-1	local_concept_only	htc:2027	Boats	Boats	manufactured_goods	SITC4_7_Machinery_and_Transport_Equipment
-1	local_concept_only	htc:2026	Bags, Empty	Bags, Empty	other	oe:sitcUnassigned
-1	local_concept_only	htc:2025	Axe Handles	Axe Handles	other	oe:sitcUnassigned
-1	local_concept_only	htc:2023	Specimens of Natural History	Specimens of Natural History	other	oe:sitcUnassigned
-1	local_concept_only	htc:2022	Ploughshare Moulds	Ploughshare Moulds	other	oe:sitcUnassigned
-1	local_concept_only	htc:2020	Claret	Claret	other	oe:sitcUnassigned
-1	local_concept_only	htc:2019	Church Ornaments	Church Ornaments	other	oe:sitcUnassigned
-1	local_concept_only	htc:2015	Bedsteads	Bedsteads	other	oe:sitcUnassigned
-1	local_concept_only	htc:2012	Citrate of Lime	Citrate of Lime	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
-1	local_concept_only	htc:2011	Canes Bamboo	Canes Bamboo	other	oe:sitcUnassigned
-1	local_concept_only	htc:2009	Cucumbers Pickled	Cucumbers Pickled	other	oe:sitcUnassigned
-1	local_concept_only	htc:2005	Goats	Goats	other	oe:sitcUnassigned
-1	local_concept_only	htc:2004	Birds Dried	Birds Dried	other	oe:sitcUnassigned
-1	local_concept_only	htc:2002	Copperas	Copperas	other	oe:sitcUnassigned
-1	local_concept_only	htc:2001	Ash bolts	Ash bolts	timber_forestry	SITC4_24_Cork_and_Wood
-1	local_concept_only	htc:2000	Fowls	Fowls	food_animal	SITC4_00_Live_Animals
-1	local_concept_only	htc:1999	Wood Buckets	Wood Buckets	timber_forestry	SITC4_24_Cork_and_Wood
-1	local_concept_only	htc:1998	Window stiles	Window stiles	other	oe:sitcUnassigned
-1	local_concept_only	htc:1997	Lampblack	Lampblack	other	oe:sitcUnassigned
-1	local_concept_only	htc:1995	Dutch Ovens	Dutch Ovens	other	oe:sitcUnassigned
-1	local_concept_only	htc:1993	Magnesia	Magnesia	other	oe:sitcUnassigned
-1	local_concept_only	htc:1991	Cul plates	Cul plates	other	oe:sitcUnassigned
+2	local_concept_only	htc:1943	Radix Ipecacoanhoe	Radix Ipecacoanhoe	drugs_botanicals_chemicals	SITC4_54_Medicinal_Pharmaceutical
+2	local_concept_only	htc:1948	Ash pans	Ash pans	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+2	local_concept_only	htc:1949	Belts	Belts	other	oe:sitcUnassigned
+2	local_concept_only	htc:1951	Pig	Pig	food_animal	SITC4_00_Live_Animals
+2	local_concept_only	htc:1953	Indian Curiosities	Indian Curiosities	other	oe:sitcUnassigned
+2	local_concept_only	htc:1954	Lintseed Oil	Lintseed Oil	fats_oils_soap	SITC4_42_Fixed_Vegetable_Fats_and_Oils
+2	local_concept_only	htc:1955	Coral	Coral	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+2	local_concept_only	htc:1958	Quills Swan	Quills Swan	fibres_textiles	SITC4_26_Textile_Fibres
+2	local_concept_only	htc:1959	Quills Unrated	Quills Unrated	fibres_textiles	SITC4_26_Textile_Fibres
+2	local_concept_only	htc:1961	Ash Plank and Scantling	Ash Plank and Scantling	timber_forestry	SITC4_24_Cork_and_Wood
+2	local_concept_only	htc:1963	Coach Spokes	Coach Spokes	timber_forestry	SITC4_24_Cork_and_Wood
+2	local_concept_only	htc:1964	Gigs	Gigs	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+2	local_concept_only	htc:1965	Moose Deer	Moose Deer	other	oe:sitcUnassigned
+2	local_concept_only	htc:1967	Olives	Olives	food_colonial_grocery	SITC4_05_Vegetables_and_Fruit
+2	local_concept_only	htc:1968	Pine Plank and Scantling	Pine Plank and Scantling	timber_forestry	SITC4_24_Cork_and_Wood
+2	local_concept_only	htc:1970	Colouring	Colouring	other	oe:sitcUnassigned
+2	local_concept_only	htc:1976	Telescopes	Telescopes	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+2	local_concept_only	htc:1977	Liquid Ammonia	Liquid Ammonia	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+2	local_concept_only	htc:1978	Spices Cassia Vera	Spices Cassia Vera	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+2	local_concept_only	htc:1980	Naphtha or Methylic Alcohol purified	Naphtha or Methylic Alcohol purified	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+2	local_concept_only	htc:1983	Nuts for expressing oil	Nuts for expressing oil	fats_oils_soap	SITC4_22_Oil_Seeds_and_Oleaginous_Fruits
+2	local_concept_only	htc:1986	Stave & Shingle Bolts	Stave & Shingle Bolts	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
+2	local_concept_only	htc:1987	Oil Mineral or Earth	Oil Mineral or Earth	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+2	local_concept_only	htc:1989	pine logs (duty $3 and $2 per M. ft, board measure)	pine logs	timber_forestry	SITC4_24_Cork_and_Wood
 1	local_concept_only	htc:1990	Cariboux	Cariboux	other	oe:sitcUnassigned
+1	local_concept_only	htc:1991	Cul plates	Cul plates	other	oe:sitcUnassigned
+1	local_concept_only	htc:1993	Magnesia	Magnesia	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+1	local_concept_only	htc:1994	Mittens	Mittens	manufactured_goods	SITC4_65_84_85_Textiles_Apparel_Footwear
+1	local_concept_only	htc:1995	Dutch Ovens	Dutch Ovens	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+1	local_concept_only	htc:1996	Iron Kettles	Iron Kettles	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+1	local_concept_only	htc:1997	Lampblack	Lampblack	drugs_botanicals_chemicals	SITC4_53_Dyeing_Tanning_Colouring
+1	local_concept_only	htc:1998	Window stiles	Window stiles	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+1	local_concept_only	htc:1999	Wood Buckets	Wood Buckets	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+1	local_concept_only	htc:2000	Fowls	Fowls	food_animal	SITC4_00_Live_Animals
+1	local_concept_only	htc:2001	Ash bolts	Ash bolts	timber_forestry	SITC4_24_Cork_and_Wood
+1	local_concept_only	htc:2002	Copperas	Copperas	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+1	local_concept_only	htc:2004	Birds Dried	Birds Dried	other	oe:sitcUnassigned
+1	local_concept_only	htc:2005	Goats	Goats	other	oe:sitcUnassigned
+1	local_concept_only	htc:2007	Iron Shutters	Iron Shutters	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+1	local_concept_only	htc:2009	Cucumbers Pickled	Cucumbers Pickled	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+1	local_concept_only	htc:2011	Canes Bamboo	Canes Bamboo	other	oe:sitcUnassigned
+1	local_concept_only	htc:2012	Citrate of Lime	Citrate of Lime	drugs_botanicals_chemicals	SITC4_51_52_Chemicals
+1	local_concept_only	htc:2015	Bedsteads	Bedsteads	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+1	local_concept_only	htc:2019	Church Ornaments	Church Ornaments	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+1	local_concept_only	htc:2020	Claret	Claret	food_colonial_grocery	SITC4_11_Beverages
+1	local_concept_only	htc:2021	Iron Pots	Iron Pots	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+1	local_concept_only	htc:2022	Ploughshare Moulds	Ploughshare Moulds	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+1	local_concept_only	htc:2023	Specimens of Natural History	Specimens of Natural History	other	oe:sitcUnassigned
+1	local_concept_only	htc:2025	Axe Handles	Axe Handles	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+1	local_concept_only	htc:2026	Bags, Empty	Bags, Empty	other	oe:sitcUnassigned
+1	local_concept_only	htc:2027	Boats	Boats	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+1	local_concept_only	htc:2028	Bear	Bear	other	oe:sitcUnassigned
+1	local_concept_only	htc:2032	Boathook Staffs	Boathook Staffs	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
+1	local_concept_only	htc:2033	Corkwood	Corkwood	timber_forestry	SITC4_25_Pulp_and_Waste_Paper
+1	local_concept_only	htc:2034	Corn Brooms	Corn Brooms	manufactured_goods	SITC4_64_66_89_Paper_Glass_Misc_Manufactures
+1	local_concept_only	htc:2035	Grates	Grates	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+1	local_concept_only	htc:2036	Gun Flints	Gun Flints	other	oe:sitcUnassigned
+1	local_concept_only	htc:2037	Lancewood Spars	Lancewood Spars	timber_forestry	SITC4_63_Cork_and_Wood_Manufactures
+1	local_concept_only	htc:2039	Whiting	Whiting	other	oe:sitcUnassigned
+1	local_concept_only	htc:2041	Specimens	Specimens	other	oe:sitcUnassigned
+1	local_concept_only	htc:2044	Granadilla Wood	Granadilla Wood	timber_forestry	SITC4_24_Cork_and_Wood
+1	local_concept_only	htc:2045	Moose Deer Heads and Horns	Moose Deer Heads and Horns	drugs_botanicals_chemicals	SITC4_29_Crude_Animal_Vegetable_Materials
+1	local_concept_only	htc:2046	Specie	Specie	minerals_metals_energy	SITC4_67_68_Metals
+1	local_concept_only	htc:2047	Windlasses	Windlasses	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+1	local_concept_only	htc:2052	Fishing Nets Twines and Lines	Fishing Nets Twines and Lines	manufactured_goods	SITC4_65_Textile_Yarn_and_Fabrics
+1	local_concept_only	htc:2053	Halibut Dry Salted	Halibut Dry Salted	fisheries_marine	SITC4_03_Fish_and_Seafood
+1	local_concept_only	htc:2054	Halibut Smoked	Halibut Smoked	fisheries_marine	SITC4_03_Fish_and_Seafood
+1	local_concept_only	htc:2057	Naphtha purified so as to be potable	Naphtha purified so as to be potable	minerals_metals_energy	SITC4_32_33_Mineral_Fuels
+1	local_concept_only	htc:2058	Other Firearms	Other Firearms	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+1	local_concept_only	htc:2060	Spice of all Other Kinds	Spice of all	food_colonial_grocery	SITC4_07_Coffee_Tea_Cocoa_Spices
+1	local_concept_only	htc:2061	Metals viz. Copper black or coarse, cement copper and copper in pigs	Metals viz. Copper black or coarse, cement copper and copper in pigs	minerals_metals_energy	SITC4_67_68_Metals
+1	local_concept_only	htc:2063	Small Arms Ammunition Military	Small Arms Ammunition Military	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+1	local_concept_only	htc:2064	Small Arms Miniature and Cadet Rifles and Carbines	Small Arms Miniature and Cadet Rifles and Carbines	manufactured_goods	SITC4_69_7_Metalwares_and_Machinery
+1	local_concept_only	htc:2065	Barks for Tanning Chestnut	Barks for Tanning Chestnut	tannins_leather	SITC4_29_Crude_Animal_Vegetable_Materials

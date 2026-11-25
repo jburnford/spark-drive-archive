@@ -8,15 +8,16 @@ Triticum durum	triticum durum	latin_binomial	htc:0001	Wheat	customs_enumerated	h
 Triticum	triticum	latin_binomial	htc:0001	Wheat	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q15645384	Triticum vulgare; Triticum aestivum; Triticum spelta; Triticum dicoccum; Triticum durum; Triticum	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
 Butter	butter	prefLabel	htc:0002	Butter	customs_enumerated	htc:grp_dairy_eggs	htc:sec_food_and_drink		dairy	Q34172		CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade (1910-1940 ext)
 ghee	ghee	altLabel	htc:0002	Butter	customs_enumerated	htc:grp_dairy_eggs	htc:sec_food_and_drink		dairy	Q34172		CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade (1910-1940 ext)
-Oats	oats	prefLabel	htc:0003	Oats	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q12117	Avena sativa	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade (1910-1940 ext)
-Avena sativa	avena sativa	latin_binomial	htc:0003	Oats	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q12117	Avena sativa	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade (1910-1940 ext)
+Oats	oats	prefLabel	htc:0003	Oats	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q24265484	Avena sativa	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade (1910-1940 ext)
+Avena sativa	avena sativa	latin_binomial	htc:0003	Oats	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q24265484	Avena sativa	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade (1910-1940 ext)
 Planks and Boards	planks and boards	prefLabel	htc:0004	Planks and Boards	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber			Q354757		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Horses	horses	prefLabel	htc:0005	Horses	customs_enumerated	htc:grp_draft_animals	htc:sec_livestock_fodder		Animal	Q103459	Equus ferus caballus	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
 Equus ferus caballus	equus ferus caballus	latin_binomial	htc:0005	Horses	customs_enumerated	htc:grp_draft_animals	htc:sec_livestock_fodder		Animal	Q103459	Equus ferus caballus	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
-Peas	peas	prefLabel	htc:0006	Peas	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q12034432	Pisum sativum	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
-Pisum sativum	pisum sativum	latin_binomial	htc:0006	Peas	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q12034432	Pisum sativum	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
-Barley	barley	prefLabel	htc:0007	Barley	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q12117	Hordeum vulgare	HCPP_Annual Statement of Trade (1910-1940 ext); HCPP_Annual Statement of Trade
-Hordeum vulgare	hordeum vulgare	latin_binomial	htc:0007	Barley	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q12117	Hordeum vulgare	HCPP_Annual Statement of Trade (1910-1940 ext); HCPP_Annual Statement of Trade
+Peas	peas	prefLabel	htc:0006	Peas	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink		Corn	Q29472543	Pisum sativum	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
+pea	pea	altLabel	htc:0006	Peas	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink		Corn	Q29472543	Pisum sativum	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
+Pisum sativum	pisum sativum	latin_binomial	htc:0006	Peas	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink		Corn	Q29472543	Pisum sativum	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
+Barley	barley	prefLabel	htc:0007	Barley	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q61665121	Hordeum vulgare	HCPP_Annual Statement of Trade (1910-1940 ext); HCPP_Annual Statement of Trade
+Hordeum vulgare	hordeum vulgare	latin_binomial	htc:0007	Barley	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q61665121	Hordeum vulgare	HCPP_Annual Statement of Trade (1910-1940 ext); HCPP_Annual Statement of Trade
 Wheat Meal and Flour	wheat meal and flour	prefLabel	htc:0008	Wheat Meal and Flour	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q2249305	Triticum aestivum	HCPP_Annual Statement of Trade; HCPP_Annual Statement of Trade (1910-1940 ext)
 Triticum aestivum	triticum aestivum	latin_binomial	htc:0008	Wheat Meal and Flour	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q2249305	Triticum aestivum	HCPP_Annual Statement of Trade; HCPP_Annual Statement of Trade (1910-1940 ext)
 Flour	flour	prefLabel	htc:0009	Flour	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q36465		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
@@ -24,9 +25,9 @@ Other Articles	other articles	prefLabel	htc:0010	Other Articles	customs_enumerat
 Cheese	cheese	prefLabel	htc:0011	Cheese	customs_enumerated	htc:grp_dairy_eggs	htc:sec_food_and_drink		Dairy Product	Q10943		CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade (1910-1940 ext)
 cheddar	cheddar	altLabel	htc:0011	Cheese	customs_enumerated	htc:grp_dairy_eggs	htc:sec_food_and_drink		Dairy Product	Q10943		CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade (1910-1940 ext)
 Seeds Unenumerated Other Sorts	seeds unenumerated other sorts	prefLabel	htc:0012	Seeds Unenumerated Other Sorts	customs_enumerated	htc:grp_oilseeds	htc:sec_oils_fats_waxes			Q40763		CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
-Barley and Rye	barley and rye	prefLabel	htc:0013	Barley and Rye	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q12117	Hordeum vulgare; Secale cereale	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
-Hordeum vulgare	hordeum vulgare	latin_binomial	htc:0013	Barley and Rye	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q12117	Hordeum vulgare; Secale cereale	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
-Secale cereale	secale cereale	latin_binomial	htc:0013	Barley and Rye	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q12117	Hordeum vulgare; Secale cereale	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
+Barley and Rye	barley and rye	prefLabel	htc:0013	Barley and Rye	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q61665121	Hordeum vulgare; Secale cereale	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
+Hordeum vulgare	hordeum vulgare	latin_binomial	htc:0013	Barley and Rye	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q61665121	Hordeum vulgare; Secale cereale	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
+Secale cereale	secale cereale	latin_binomial	htc:0013	Barley and Rye	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q61665121	Hordeum vulgare; Secale cereale	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Eggs	eggs	prefLabel	htc:0014	Eggs	customs_enumerated	htc:grp_dairy_eggs	htc:sec_food_and_drink			Q93189	Aves	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade (1910-1940 ext)
 egg as food	egg as food	altLabel	htc:0014	Eggs	customs_enumerated	htc:grp_dairy_eggs	htc:sec_food_and_drink			Q93189	Aves	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade (1910-1940 ext)
 Aves	aves	latin_binomial	htc:0014	Eggs	customs_enumerated	htc:grp_dairy_eggs	htc:sec_food_and_drink			Q93189	Aves	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade (1910-1940 ext)
@@ -102,12 +103,14 @@ Hams	hams	prefLabel	htc:0043	Hams	customs_enumerated	htc:grp_meats_provisions	ht
 ham	ham	altLabel	htc:0043	Hams	customs_enumerated	htc:grp_meats_provisions	htc:sec_food_and_drink		Food	Q170486		HCPP_Annual Statement of Trade (1910-1940 ext); CSP_Canadian_Exports_BlankSeries
 Firewood	firewood	prefLabel	htc:0044	Firewood	customs_enumerated	htc:grp_wood_pulp_fuel	htc:sec_forestry_timber			Q35808		CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
 Hides or Pieces of - Raw or Undressed Unenumerated	hides or pieces of raw or undressed unenumerated	prefLabel	htc:0045	Hides or Pieces of - Raw or Undressed Unenumerated	customs_enumerated	htc:grp_raw_hides_skins	htc:sec_hides_skins_tanning			Q3291230		HCPP_Other; HCPP_Annual Statement of Trade
-Peas not fresh other than Split Peas	peas not fresh other than split peas	prefLabel	htc:0046	Peas not fresh other than Split Peas	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q12034432	Pisum sativum	HCPP_Annual Statement of Trade (1910-1940 ext); HCPP_Annual Statement of Trade
-Pisum sativum	pisum sativum	latin_binomial	htc:0046	Peas not fresh other than Split Peas	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q12034432	Pisum sativum	HCPP_Annual Statement of Trade (1910-1940 ext); HCPP_Annual Statement of Trade
-Indian Corn	indian corn	prefLabel	htc:0047	Indian Corn	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q12117		CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
-Indian maize	indian maize	altLabel	htc:0047	Indian Corn	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q12117		CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
+Peas not fresh other than Split Peas	peas not fresh other than split peas	prefLabel	htc:0046	Peas not fresh other than Split Peas	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q29472543	Pisum sativum	HCPP_Annual Statement of Trade (1910-1940 ext); HCPP_Annual Statement of Trade
+Pisum sativum	pisum sativum	latin_binomial	htc:0046	Peas not fresh other than Split Peas	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q29472543	Pisum sativum	HCPP_Annual Statement of Trade (1910-1940 ext); HCPP_Annual Statement of Trade
+Indian Corn	indian corn	prefLabel	htc:0047	Indian Corn	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q25618328	Zea mays	CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
+Indian maize	indian maize	altLabel	htc:0047	Indian Corn	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q25618328	Zea mays	CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
+Zea mays	zea mays	latin_binomial	htc:0047	Indian Corn	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q25618328	Zea mays	CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
 Fruit Green	fruit green	prefLabel	htc:0048	Fruit Green	customs_enumerated	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink			Q1364		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
-Maize	maize	prefLabel	htc:0049	Maize	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q12117		HCPP_Annual Statement of Trade (1910-1940 ext)
+Maize	maize	prefLabel	htc:0049	Maize	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q25618328	Zea mays	HCPP_Annual Statement of Trade (1910-1940 ext)
+Zea mays	zea mays	latin_binomial	htc:0049	Maize	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q25618328	Zea mays	HCPP_Annual Statement of Trade (1910-1940 ext)
 Wool Sheep and Lambs	wool sheep and lambs	prefLabel	htc:0050	Wool Sheep and Lambs	customs_enumerated	htc:grp_animal_fibres	htc:sec_fibres_textiles			Q42329		HCPP_Annual Statement of Trade; HCPP_Other
 Machinery Manufactures	machinery manufactures	prefLabel	htc:0051	Machinery Manufactures	customs_enumerated	htc:grp_metal_machinery_hardware	htc:sec_minerals_metals_manufactures			Q11019		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Skins Furs Pelts Seal	skins furs pelts seal	prefLabel	htc:0052	Skins Furs Pelts Seal	customs_enumerated	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning			Q302780		HCPP_Annual Statement of Trade; HCPP_Other
@@ -178,8 +181,8 @@ sheepskin	sheepskin	altLabel	htc:0092	Sheep's Pelts	customs_enumerated	htc:grp_f
 Ovis aries	ovis aries	latin_binomial	htc:0092	Sheep's Pelts	customs_enumerated	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning			Q1083901	Ovis aries	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Oars	oars	prefLabel	htc:0093	Oars	customs_enumerated	htc:grp_cooperage_ship_timber	htc:sec_forestry_timber			Q2003749		CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
 Soap	soap	prefLabel	htc:0094	Soap	customs_enumerated	htc:grp_waxes_soap_candles	htc:sec_oils_fats_waxes			Q34396		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
-Rye	rye	prefLabel	htc:0095	Rye	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q12117	Secale cereale	HCPP_Annual Statement of Trade (1910-1940 ext); CSP_Canadian_Exports_BlankSeries
-Secale cereale	secale cereale	latin_binomial	htc:0095	Rye	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q12117	Secale cereale	HCPP_Annual Statement of Trade (1910-1940 ext); CSP_Canadian_Exports_BlankSeries
+Rye	rye	prefLabel	htc:0095	Rye	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q61670635	Secale cereale	HCPP_Annual Statement of Trade (1910-1940 ext); CSP_Canadian_Exports_BlankSeries
+Secale cereale	secale cereale	latin_binomial	htc:0095	Rye	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink		Corn	Q61670635	Secale cereale	HCPP_Annual Statement of Trade (1910-1940 ext); CSP_Canadian_Exports_BlankSeries
 Dye Woods Logwood	dye woods logwood	prefLabel	htc:0096	Dye Woods Logwood	customs_enumerated	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals			Q189720	Haematoxylum campechianum	HCPP_Annual Statement of Trade; HCPP_Other
 Logwood	logwood	altLabel	htc:0096	Dye Woods Logwood	customs_enumerated	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals			Q189720	Haematoxylum campechianum	HCPP_Annual Statement of Trade; HCPP_Other
 Haematoxylum campechianum	haematoxylum campechianum	latin_binomial	htc:0096	Dye Woods Logwood	customs_enumerated	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals			Q189720	Haematoxylum campechianum	HCPP_Annual Statement of Trade; HCPP_Other
@@ -266,7 +269,8 @@ Nicotiana tabacum	nicotiana tabacum	latin_binomial	htc:0145	Tobacco Manufactured
 Leather Manufactures Manufactures Unenumerated	leather manufactures manufactures unenumerated	prefLabel	htc:0146	Leather Manufactures Manufactures Unenumerated	customs_enumerated	htc:grp_glass_ceramics_paper_woodware	htc:sec_minerals_metals_manufactures					HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
 Spirits Brandy	spirits brandy	prefLabel	htc:0147	Spirits Brandy	customs_enumerated	htc:grp_alcoholic_beverages	htc:sec_food_and_drink			Q146470		HCPP_Other; HCPP_Annual Statement of Trade
 Candles	candles	prefLabel	htc:0148	Candles	customs_enumerated	htc:grp_waxes_soap_candles	htc:sec_oils_fats_waxes			Q12888135		CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
-Pepper (Spice)	pepper spice	prefLabel	htc:0149	Pepper (Spice)	customs_enumerated	htc:grp_spices_condiments	htc:sec_food_and_drink			Q22915010		HCPP_Annual Statement of Trade; HCPP_Other
+Pepper (Spice)	pepper spice	prefLabel	htc:0149	Pepper (Spice)	customs_enumerated	htc:grp_spices_condiments	htc:sec_food_and_drink			Q22915010	Piper nigrum	HCPP_Annual Statement of Trade; HCPP_Other
+Piper nigrum	piper nigrum	latin_binomial	htc:0149	Pepper (Spice)	customs_enumerated	htc:grp_spices_condiments	htc:sec_food_and_drink			Q22915010	Piper nigrum	HCPP_Annual Statement of Trade; HCPP_Other
 Pearl Ashes	pearl ashes	prefLabel	htc:0150	Pearl Ashes	customs_enumerated	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals		Alkali	Q379885		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 potassium carbonate	potassium carbonate	altLabel	htc:0150	Pearl Ashes	customs_enumerated	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals		Alkali	Q379885		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 pearl ash	pearl ash	altLabel	htc:0150	Pearl Ashes	customs_enumerated	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals		Alkali	Q379885		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
@@ -320,8 +324,10 @@ Myrabolans	myrabolans	prefLabel	htc:0180	Myrabolans	customs_enumerated	htc:grp_v
 Terminalia chebula	terminalia chebula	latin_binomial	htc:0180	Myrabolans	customs_enumerated	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning			Q187607	Terminalia chebula	HCPP_Annual Statement of Trade
 Palm Oil	palm oil	prefLabel	htc:0181	Palm Oil	customs_enumerated	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes			Q231458	Elaeis guineensis	HCPP_Annual Statement of Trade; HCPP_Other
 Elaeis guineensis	elaeis guineensis	latin_binomial	htc:0181	Palm Oil	customs_enumerated	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes			Q231458	Elaeis guineensis	HCPP_Annual Statement of Trade; HCPP_Other
-Mahogany - Furniture, Hardwoods or Veneers	mahogany furniture hardwoods or veneers	prefLabel	htc:0182	Mahogany - Furniture, Hardwoods or Veneers	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber		Timber		Swietenia mahagoni	HCPP_Annual Statement of Trade; HCPP_Other
-Swietenia mahagoni	swietenia mahagoni	latin_binomial	htc:0182	Mahogany - Furniture, Hardwoods or Veneers	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber		Timber		Swietenia mahagoni	HCPP_Annual Statement of Trade; HCPP_Other
+Mahogany - Furniture, Hardwoods or Veneers	mahogany furniture hardwoods or veneers	prefLabel	htc:0182	Mahogany - Furniture, Hardwoods or Veneers	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber		Timber		Swietenia mahagoni; Khaya senegalensis; Cedrela toona	HCPP_Annual Statement of Trade; HCPP_Other
+Swietenia mahagoni	swietenia mahagoni	latin_binomial	htc:0182	Mahogany - Furniture, Hardwoods or Veneers	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber		Timber		Swietenia mahagoni; Khaya senegalensis; Cedrela toona	HCPP_Annual Statement of Trade; HCPP_Other
+Khaya senegalensis	khaya senegalensis	latin_binomial	htc:0182	Mahogany - Furniture, Hardwoods or Veneers	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber		Timber		Swietenia mahagoni; Khaya senegalensis; Cedrela toona	HCPP_Annual Statement of Trade; HCPP_Other
+Cedrela toona	cedrela toona	latin_binomial	htc:0182	Mahogany - Furniture, Hardwoods or Veneers	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber		Timber		Swietenia mahagoni; Khaya senegalensis; Cedrela toona	HCPP_Annual Statement of Trade; HCPP_Other
 Herring Pickled	herring pickled	prefLabel	htc:0183	Herring Pickled	customs_enumerated	htc:grp_fish_seafood	htc:sec_food_and_drink			Q3127419		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Seal Skins Undressed	seal skins undressed	prefLabel	htc:0184	Seal Skins Undressed	customs_enumerated	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning			Q302780		Newfoundland_data; HCPP_Annual Statement of Trade
 Gum Arabic	gum arabic	prefLabel	htc:0185	Gum Arabic	customs_enumerated	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals		Drug; Food	Q535814		HCPP_Annual Statement of Trade; HCPP_Other
@@ -356,7 +362,8 @@ Stone	stone	prefLabel	htc:0205	Stone	customs_enumerated	htc:grp_industrial_miner
 Cutch and Gambier	cutch and gambier	prefLabel	htc:0206	Cutch and Gambier	customs_enumerated	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning			Q2046743		HCPP_Annual Statement of Trade
 Tar	tar	prefLabel	htc:0207	Tar	customs_enumerated	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals		Drug	Q186209		HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
 Pine tar	pine tar	altLabel	htc:0207	Tar	customs_enumerated	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals		Drug	Q186209		HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
-Indian Corn or Maize	indian corn or maize	prefLabel	htc:0208	Indian Corn or Maize	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q12117		HCPP_Annual Statement of Trade
+Indian Corn or Maize	indian corn or maize	prefLabel	htc:0208	Indian Corn or Maize	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q25618328	Zea mays	HCPP_Annual Statement of Trade
+Zea mays	zea mays	latin_binomial	htc:0208	Indian Corn or Maize	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q25618328	Zea mays	HCPP_Annual Statement of Trade
 flour of wheat	flour of wheat	prefLabel	htc:0209	flour of wheat	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q36465		CSP_Canadian_Exports_BlankSeries
 Lumber Unenumerated	lumber unenumerated	prefLabel	htc:0210	Lumber Unenumerated	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber			Q354757		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Knees	knees	prefLabel	htc:0211	Knees	customs_enumerated	htc:grp_cooperage_ship_timber	htc:sec_forestry_timber			Q287		CSP_Canadian_Exports_BlankSeries
@@ -376,17 +383,22 @@ Skins Furs Pelts Musquash	skins furs pelts musquash	prefLabel	htc:0222	Skins Fur
 Musquash	musquash	altLabel	htc:0222	Skins Furs Pelts Musquash	customs_enumerated	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning			Q197204		KEW_CUST 4; HCPP_Annual Statement of Trade
 muskrat	muskrat	altLabel	htc:0222	Skins Furs Pelts Musquash	customs_enumerated	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning			Q197204		KEW_CUST 4; HCPP_Annual Statement of Trade
 Nuts and Kernels for expressing Oil	nuts and kernels for expressing oil	prefLabel	htc:0223	Nuts and Kernels for expressing Oil	customs_enumerated	htc:grp_oilseeds	htc:sec_oils_fats_waxes					HCPP_Annual Statement of Trade
-Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	ivory elephant sea cow sea horse or sea moose teeth	prefLabel	htc:0224	Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	customs_enumerated	htc:grp_fertilizers_animal_materials	htc:sec_botanicals_dyes_chemicals			Q82001		HCPP_Annual Statement of Trade; KEW_CUST 4
+Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	ivory elephant sea cow sea horse or sea moose teeth	prefLabel	htc:0224	Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	customs_enumerated	htc:grp_fertilizers_animal_materials	htc:sec_botanicals_dyes_chemicals			Q82001	Loxodonta africana; Elephas maximus; Odobenus rosmarus	HCPP_Annual Statement of Trade; KEW_CUST 4
+Loxodonta africana	loxodonta africana	latin_binomial	htc:0224	Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	customs_enumerated	htc:grp_fertilizers_animal_materials	htc:sec_botanicals_dyes_chemicals			Q82001	Loxodonta africana; Elephas maximus; Odobenus rosmarus	HCPP_Annual Statement of Trade; KEW_CUST 4
+Elephas maximus	elephas maximus	latin_binomial	htc:0224	Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	customs_enumerated	htc:grp_fertilizers_animal_materials	htc:sec_botanicals_dyes_chemicals			Q82001	Loxodonta africana; Elephas maximus; Odobenus rosmarus	HCPP_Annual Statement of Trade; KEW_CUST 4
+Odobenus rosmarus	odobenus rosmarus	latin_binomial	htc:0224	Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	customs_enumerated	htc:grp_fertilizers_animal_materials	htc:sec_botanicals_dyes_chemicals			Q82001	Loxodonta africana; Elephas maximus; Odobenus rosmarus	HCPP_Annual Statement of Trade; KEW_CUST 4
 Bristles	bristles	prefLabel	htc:0225	Bristles	customs_enumerated	htc:grp_animal_fibres	htc:sec_fibres_textiles		Brush	Q894231		HCPP_Annual Statement of Trade; HCPP_Other
 bristle	bristle	altLabel	htc:0225	Bristles	customs_enumerated	htc:grp_animal_fibres	htc:sec_fibres_textiles		Brush	Q894231		HCPP_Annual Statement of Trade; HCPP_Other
 Flax	flax	prefLabel	htc:0226	Flax	customs_enumerated	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles		Fiber	Q47089651	Linum usitatissimum	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Linum usitatissimum	linum usitatissimum	latin_binomial	htc:0226	Flax	customs_enumerated	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles		Fiber	Q47089651	Linum usitatissimum	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Manufactures Agricultural Implements	manufactures agricultural implements	prefLabel	htc:0227	Manufactures Agricultural Implements	customs_enumerated	htc:grp_metal_machinery_hardware	htc:sec_minerals_metals_manufactures			Q16000047		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
-Wine Other Sorts	wine other sorts	prefLabel	htc:0228	Wine Other Sorts	customs_enumerated	htc:grp_alcoholic_beverages	htc:sec_food_and_drink			Q282		HCPP_Other; KEW_CUST 4
+Wine Other Sorts	wine other sorts	prefLabel	htc:0228	Wine Other Sorts	customs_enumerated	htc:grp_alcoholic_beverages	htc:sec_food_and_drink			Q282	Vitis vinifera	HCPP_Other; KEW_CUST 4
+Vitis vinifera	vitis vinifera	latin_binomial	htc:0228	Wine Other Sorts	customs_enumerated	htc:grp_alcoholic_beverages	htc:sec_food_and_drink			Q282	Vitis vinifera	HCPP_Other; KEW_CUST 4
 Copper Old (fit only to be re-manufactured from 1876 onward)	copper old fit only to be re manufactured from 1876 onward	prefLabel	htc:0229	Copper Old (fit only to be re-manufactured from 1876 onward)	customs_enumerated	htc:grp_metals_semi_finished	htc:sec_minerals_metals_manufactures			Q753		HCPP_Annual Statement of Trade; KEW_CUST 4
 Mine Products Unenumerated	mine products unenumerated	prefLabel	htc:0230	Mine Products Unenumerated	customs_enumerated	htc:grp_customs_residuals	htc:sec_unclassified_residuals					CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Seeds Rape	seeds rape	prefLabel	htc:0231	Seeds Rape	customs_enumerated	htc:grp_oilseeds	htc:sec_oils_fats_waxes			Q40763	Brassica napus	HCPP_Annual Statement of Trade; HCPP_Other
 Colza	colza	altLabel	htc:0231	Seeds Rape	customs_enumerated	htc:grp_oilseeds	htc:sec_oils_fats_waxes			Q40763	Brassica napus	HCPP_Annual Statement of Trade; HCPP_Other
+Rape	rape	altLabel	htc:0231	Seeds Rape	customs_enumerated	htc:grp_oilseeds	htc:sec_oils_fats_waxes			Q40763	Brassica napus	HCPP_Annual Statement of Trade; HCPP_Other
 Rape seed	rape seed	altLabel	htc:0231	Seeds Rape	customs_enumerated	htc:grp_oilseeds	htc:sec_oils_fats_waxes			Q40763	Brassica napus	HCPP_Annual Statement of Trade; HCPP_Other
 Brassica napus	brassica napus	latin_binomial	htc:0231	Seeds Rape	customs_enumerated	htc:grp_oilseeds	htc:sec_oils_fats_waxes			Q40763	Brassica napus	HCPP_Annual Statement of Trade; HCPP_Other
 Leather Varnished	leather varnished	prefLabel	htc:0232	Leather Varnished	customs_enumerated	htc:grp_tanned_leather	htc:sec_hides_skins_tanning			Q286		HCPP_Annual Statement of Trade
@@ -414,6 +426,7 @@ ostrich which	ostrich which	altLabel	htc:0247	Feathers	customs_enumerated	htc:gr
 Aves	aves	latin_binomial	htc:0247	Feathers	customs_enumerated	htc:grp_animal_fibres	htc:sec_fibres_textiles		Bedding; Ornanmental	Q50998618	Aves	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Deals Spruce and other	deals spruce and other	prefLabel	htc:0248	Deals Spruce and other	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber			Q354757		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Skins Furs Pelts Racoon	skins furs pelts racoon	prefLabel	htc:0249	Skins Furs Pelts Racoon	customs_enumerated	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning			Q197204		KEW_CUST 4; HCPP_Annual Statement of Trade
+Raccoon	raccoon	altLabel	htc:0249	Skins Furs Pelts Racoon	customs_enumerated	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning			Q197204		KEW_CUST 4; HCPP_Annual Statement of Trade
 Train or Blubber (Whale Oils)	train or blubber whale oils	prefLabel	htc:0250	Train or Blubber (Whale Oils)	customs_enumerated	htc:grp_marine_oils	htc:sec_oils_fats_waxes		Oil	Q1053334		HCPP_Annual Statement of Trade; HCPP_Other
 whale oil	whale oil	altLabel	htc:0250	Train or Blubber (Whale Oils)	customs_enumerated	htc:grp_marine_oils	htc:sec_oils_fats_waxes		Oil	Q1053334		HCPP_Annual Statement of Trade; HCPP_Other
 blubber	blubber	altLabel	htc:0250	Train or Blubber (Whale Oils)	customs_enumerated	htc:grp_marine_oils	htc:sec_oils_fats_waxes		Oil	Q1053334		HCPP_Annual Statement of Trade; HCPP_Other
@@ -429,6 +442,7 @@ Nicotiana tabacum	nicotiana tabacum	latin_binomial	htc:0256	Tobacco Manufactured
 Salt	salt	prefLabel	htc:0257	Salt	customs_enumerated	htc:grp_industrial_minerals	htc:sec_minerals_metals_manufactures		Mineral	Q11254		CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
 table salt	table salt	altLabel	htc:0257	Salt	customs_enumerated	htc:grp_industrial_minerals	htc:sec_minerals_metals_manufactures		Mineral	Q11254		CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
 Lead Ore	lead ore	prefLabel	htc:0258	Lead Ore	customs_enumerated	htc:grp_metallic_ores	htc:sec_minerals_metals_manufactures			Q4410773		HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
+Galena	galena	altLabel	htc:0258	Lead Ore	customs_enumerated	htc:grp_metallic_ores	htc:sec_minerals_metals_manufactures			Q4410773		HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
 Herring Smoked	herring smoked	prefLabel	htc:0259	Herring Smoked	customs_enumerated	htc:grp_fish_seafood	htc:sec_food_and_drink			Q3127419		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Timber White Pine	timber white pine	prefLabel	htc:0260	Timber White Pine	customs_enumerated	htc:grp_hewn_round_timber	htc:sec_forestry_timber			Q287	Pinus strobus	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Pinus strobus	pinus strobus	latin_binomial	htc:0260	Timber White Pine	customs_enumerated	htc:grp_hewn_round_timber	htc:sec_forestry_timber			Q287	Pinus strobus	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
@@ -443,7 +457,8 @@ Bark Extract of Hemlock	bark extract of hemlock	prefLabel	htc:0266	Bark Extract 
 Tsuga canadensis	tsuga canadensis	latin_binomial	htc:0266	Bark Extract of Hemlock	customs_enumerated	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning			Q187607	Tsuga canadensis	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Lead Pig and Sheet	lead pig and sheet	prefLabel	htc:0267	Lead Pig and Sheet	customs_enumerated	htc:grp_metals_semi_finished	htc:sec_minerals_metals_manufactures			Q708		HCPP_Annual Statement of Trade; KEW_CUST 4
 Feathers Ornamental	feathers ornamental	prefLabel	htc:0268	Feathers Ornamental	customs_enumerated	htc:grp_animal_fibres	htc:sec_fibres_textiles			Q50998618		HCPP_Annual Statement of Trade
-Wine	wine	prefLabel	htc:0269	Wine	customs_enumerated	htc:grp_alcoholic_beverages	htc:sec_food_and_drink			Q282		CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
+Wine	wine	prefLabel	htc:0269	Wine	customs_enumerated	htc:grp_alcoholic_beverages	htc:sec_food_and_drink			Q282	Vitis vinifera	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
+Vitis vinifera	vitis vinifera	latin_binomial	htc:0269	Wine	customs_enumerated	htc:grp_alcoholic_beverages	htc:sec_food_and_drink			Q282	Vitis vinifera	CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
 Iron Manufactures Unenumerated	iron manufactures unenumerated	prefLabel	htc:0270	Iron Manufactures Unenumerated	customs_enumerated	htc:grp_metal_machinery_hardware	htc:sec_minerals_metals_manufactures					CSP_Canadian Trade and Navigation; HCPP_Annual Statement of Trade
 Guano	guano	prefLabel	htc:0271	Guano	customs_enumerated	htc:grp_fertilizers_animal_materials	htc:sec_botanicals_dyes_chemicals		Fertiliser	Q170185		HCPP_Annual Statement of Trade; KEW_CUST 4
 Ground Plaster	ground plaster	prefLabel	htc:0272	Ground Plaster	customs_enumerated	htc:grp_industrial_minerals	htc:sec_minerals_metals_manufactures			Q82658		CSP_Canadian_Exports_BlankSeries
@@ -487,9 +502,10 @@ Copper	copper	prefLabel	htc:0296	Copper	customs_enumerated	htc:grp_metals_semi_f
 Fruit Dried unenumerated	fruit dried unenumerated	prefLabel	htc:0297	Fruit Dried unenumerated	customs_enumerated	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink			Q234901		HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
 Lathwood	lathwood	prefLabel	htc:0298	Lathwood	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber			Q3092965		CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
 Manganese Ore	manganese ore	prefLabel	htc:0299	Manganese Ore	customs_enumerated	htc:grp_metallic_ores	htc:sec_minerals_metals_manufactures			Q102798		HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
-Cotton	cotton	prefLabel	htc:0300	Cotton	customs_enumerated	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles		Fabric	Q11457	Gossypium barbadense; Gossypium hirsutum	CSP_Canadian_Exports_BlankSeries
-Gossypium barbadense	gossypium barbadense	latin_binomial	htc:0300	Cotton	customs_enumerated	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles		Fabric	Q11457	Gossypium barbadense; Gossypium hirsutum	CSP_Canadian_Exports_BlankSeries
-Gossypium hirsutum	gossypium hirsutum	latin_binomial	htc:0300	Cotton	customs_enumerated	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles		Fabric	Q11457	Gossypium barbadense; Gossypium hirsutum	CSP_Canadian_Exports_BlankSeries
+Cotton	cotton	prefLabel	htc:0300	Cotton	customs_enumerated	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles		Fabric	Q11457	Gossypium herbaceum; Gossypium barbadense; Gossypium hirsutum	CSP_Canadian_Exports_BlankSeries
+Gossypium herbaceum	gossypium herbaceum	latin_binomial	htc:0300	Cotton	customs_enumerated	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles		Fabric	Q11457	Gossypium herbaceum; Gossypium barbadense; Gossypium hirsutum	CSP_Canadian_Exports_BlankSeries
+Gossypium barbadense	gossypium barbadense	latin_binomial	htc:0300	Cotton	customs_enumerated	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles		Fabric	Q11457	Gossypium herbaceum; Gossypium barbadense; Gossypium hirsutum	CSP_Canadian_Exports_BlankSeries
+Gossypium hirsutum	gossypium hirsutum	latin_binomial	htc:0300	Cotton	customs_enumerated	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles		Fabric	Q11457	Gossypium herbaceum; Gossypium barbadense; Gossypium hirsutum	CSP_Canadian_Exports_BlankSeries
 Plate of Silver gilt or ungilt	plate of silver gilt or ungilt	prefLabel	htc:0301	Plate of Silver gilt or ungilt	customs_enumerated	htc:grp_metals_semi_finished	htc:sec_minerals_metals_manufactures					HCPP_Annual Statement of Trade; KEW_CUST 4
 Madder	madder	prefLabel	htc:0302	Madder	customs_enumerated	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals		Dye Stuff	Q189720	Rubia tinctorum	HCPP_Annual Statement of Trade; HCPP_Other
 munjeet	munjeet	altLabel	htc:0302	Madder	customs_enumerated	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals		Dye Stuff	Q189720	Rubia tinctorum	HCPP_Annual Statement of Trade; HCPP_Other
@@ -544,8 +560,8 @@ Indian Meal	indian meal	prefLabel	htc:0332	Indian Meal	customs_enumerated	htc:gr
 Laths	laths	prefLabel	htc:0333	Laths	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber			Q3092965		CSP_Canadian_Exports_BlankSeries
 Farinaceous Substances and Manufactures thereof	farinaceous substances and manufactures thereof	prefLabel	htc:0334	Farinaceous Substances and Manufactures thereof	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink					HCPP_Annual Statement of Trade
 Wood and Timber Firewood	wood and timber firewood	prefLabel	htc:0335	Wood and Timber Firewood	customs_enumerated	htc:grp_wood_pulp_fuel	htc:sec_forestry_timber			Q287		CSP_Canadian Trade and Navigation; CSP_Canadian_Exports_BlankSeries
-Oats Other Sorts including Groats and Rolled Oats	oats other sorts including groats and rolled oats	prefLabel	htc:0336	Oats Other Sorts including Groats and Rolled Oats	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q12117	Avena sativa	HCPP_Annual Statement of Trade (1910-1940 ext)
-Avena sativa	avena sativa	latin_binomial	htc:0336	Oats Other Sorts including Groats and Rolled Oats	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q12117	Avena sativa	HCPP_Annual Statement of Trade (1910-1940 ext)
+Oats Other Sorts including Groats and Rolled Oats	oats other sorts including groats and rolled oats	prefLabel	htc:0336	Oats Other Sorts including Groats and Rolled Oats	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q24265484	Avena sativa	HCPP_Annual Statement of Trade (1910-1940 ext)
+Avena sativa	avena sativa	latin_binomial	htc:0336	Oats Other Sorts including Groats and Rolled Oats	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q24265484	Avena sativa	HCPP_Annual Statement of Trade (1910-1940 ext)
 Castings Unenumerated	castings unenumerated	prefLabel	htc:0337	Castings Unenumerated	customs_enumerated	htc:grp_metal_machinery_hardware	htc:sec_minerals_metals_manufactures					CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Cow Ox Bull or Elk Hair	cow ox bull or elk hair	prefLabel	htc:0338	Cow Ox Bull or Elk Hair	customs_enumerated	htc:grp_animal_fibres	htc:sec_fibres_textiles					HCPP_Annual Statement of Trade; KEW_CUST 5
 Safflower	safflower	prefLabel	htc:0339	Safflower	customs_enumerated	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals		Dye Stuff		Carthamus tinctorius	HCPP_Annual Statement of Trade; HCPP_Other
@@ -628,11 +644,12 @@ Barley Meal and Flour	barley meal and flour	prefLabel	htc:0398	Barley Meal and F
 Hordeum vulgare	hordeum vulgare	latin_binomial	htc:0398	Barley Meal and Flour	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q36465	Hordeum vulgare	HCPP_Annual Statement of Trade (1910-1940 ext)
 Quicksilver	quicksilver	prefLabel	htc:0399	Quicksilver	customs_enumerated	htc:grp_metals_semi_finished	htc:sec_minerals_metals_manufactures		Drug; Metal	Q925		HCPP_Annual Statement of Trade; HCPP_Other
 mercury	mercury	altLabel	htc:0399	Quicksilver	customs_enumerated	htc:grp_metals_semi_finished	htc:sec_minerals_metals_manufactures		Drug; Metal	Q925		HCPP_Annual Statement of Trade; HCPP_Other
-Sarsaparilla	sarsaparilla	prefLabel	htc:0400	Sarsaparilla	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Smilax	HCPP_Other; HCPP_Annual Statement of Trade
-Sasparilla	sasparilla	altLabel	htc:0400	Sarsaparilla	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Smilax	HCPP_Other; HCPP_Annual Statement of Trade
-Jamacian Sasparilla	jamacian sasparilla	altLabel	htc:0400	Sarsaparilla	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Smilax	HCPP_Other; HCPP_Annual Statement of Trade
-smilax regelii	smilax regelii	altLabel	htc:0400	Sarsaparilla	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Smilax	HCPP_Other; HCPP_Annual Statement of Trade
-Smilax	smilax	latin_binomial	htc:0400	Sarsaparilla	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Smilax	HCPP_Other; HCPP_Annual Statement of Trade
+Sarsaparilla	sarsaparilla	prefLabel	htc:0400	Sarsaparilla	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Smilax sarsaparilla; Smilax	HCPP_Other; HCPP_Annual Statement of Trade
+Sasparilla	sasparilla	altLabel	htc:0400	Sarsaparilla	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Smilax sarsaparilla; Smilax	HCPP_Other; HCPP_Annual Statement of Trade
+Jamacian Sasparilla	jamacian sasparilla	altLabel	htc:0400	Sarsaparilla	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Smilax sarsaparilla; Smilax	HCPP_Other; HCPP_Annual Statement of Trade
+smilax regelii	smilax regelii	altLabel	htc:0400	Sarsaparilla	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Smilax sarsaparilla; Smilax	HCPP_Other; HCPP_Annual Statement of Trade
+Smilax sarsaparilla	smilax sarsaparilla	latin_binomial	htc:0400	Sarsaparilla	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Smilax sarsaparilla; Smilax	HCPP_Other; HCPP_Annual Statement of Trade
+Smilax	smilax	latin_binomial	htc:0400	Sarsaparilla	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Smilax sarsaparilla; Smilax	HCPP_Other; HCPP_Annual Statement of Trade
 Wine French	wine french	prefLabel	htc:0401	Wine French	customs_enumerated	htc:grp_alcoholic_beverages	htc:sec_food_and_drink			Q282		HCPP_Other; KEW_CUST 4
 Fruit Raw unenumerated	fruit raw unenumerated	prefLabel	htc:0402	Fruit Raw unenumerated	customs_enumerated	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink					HCPP_Annual Statement of Trade; KEW_CUST 4
 Hair Unenumerated	hair unenumerated	prefLabel	htc:0403	Hair Unenumerated	customs_enumerated	htc:grp_animal_fibres	htc:sec_fibres_textiles			Q28472		HCPP_Annual Statement of Trade; CSP_Canadian Trade and Navigation
@@ -676,11 +693,12 @@ Timber Deals and Deal ends	timber deals and deal ends	prefLabel	htc:0432	Timber 
 Straw Platting for Hats	straw platting for hats	prefLabel	htc:0433	Straw Platting for Hats	customs_enumerated	htc:grp_woven_fabrics_apparel	htc:sec_fibres_textiles			Q80151		HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
 Hides Skins Horns and Hoofs	hides skins horns and hoofs	prefLabel	htc:0434	Hides Skins Horns and Hoofs	customs_enumerated	htc:grp_fertilizers_animal_materials	htc:sec_botanicals_dyes_chemicals			Q3291230		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Books, Pamphlets, Maps and other	books pamphlets maps and other	prefLabel	htc:0435	Books, Pamphlets, Maps and other	customs_enumerated	htc:grp_glass_ceramics_paper_woodware	htc:sec_minerals_metals_manufactures			Q571		CSP_Canadian_Exports_BlankSeries
-Castor	castor	prefLabel	htc:0436	Castor	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q162724		KEW_CUST 4; KEW_CUST 5
-castoreum	castoreum	altLabel	htc:0436	Castor	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q162724		KEW_CUST 4; KEW_CUST 5
-beaver castor	beaver castor	altLabel	htc:0436	Castor	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q162724		KEW_CUST 4; KEW_CUST 5
-Oil	oil	altLabel	htc:0436	Castor	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q162724		KEW_CUST 4; KEW_CUST 5
-ricinus communis	ricinus communis	altLabel	htc:0436	Castor	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q162724		KEW_CUST 4; KEW_CUST 5
+Castor	castor	prefLabel	htc:0436	Castor	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q162724	Castor canadensis	KEW_CUST 4; KEW_CUST 5
+castoreum	castoreum	altLabel	htc:0436	Castor	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q162724	Castor canadensis	KEW_CUST 4; KEW_CUST 5
+beaver castor	beaver castor	altLabel	htc:0436	Castor	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q162724	Castor canadensis	KEW_CUST 4; KEW_CUST 5
+Oil	oil	altLabel	htc:0436	Castor	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q162724	Castor canadensis	KEW_CUST 4; KEW_CUST 5
+ricinus communis	ricinus communis	altLabel	htc:0436	Castor	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q162724	Castor canadensis	KEW_CUST 4; KEW_CUST 5
+Castor canadensis	castor canadensis	latin_binomial	htc:0436	Castor	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q162724	Castor canadensis	KEW_CUST 4; KEW_CUST 5
 Skins Undressed Wolf	skins undressed wolf	prefLabel	htc:0437	Skins Undressed Wolf	customs_enumerated	htc:grp_raw_hides_skins	htc:sec_hides_skins_tanning			Q3291230		KEW_CUST 4; CSP_Canadian_Exports_BlankSeries
 Timber viz Boards Unenumerated	timber viz boards unenumerated	prefLabel	htc:0438	Timber viz Boards Unenumerated	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber			Q287		KEW_CUST 4; CSP_Canadian_Exports_BlankSeries
 Wood and Timber Lathwood	wood and timber lathwood	prefLabel	htc:0439	Wood and Timber Lathwood	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber			Q287		KEW_CUST 4; CSP_Canadian Trade and Navigation
@@ -742,13 +760,13 @@ Ficus carica	ficus carica	latin_binomial	htc:0474	Figs	customs_enumerated	htc:gr
 Ficus	ficus	latin_binomial	htc:0474	Figs	customs_enumerated	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink			Q2746643	Ficus carica; Ficus	HCPP_Other; HCPP_Annual Statement of Trade
 Painters Colours and Pigments	painters colours and pigments	prefLabel	htc:0475	Painters Colours and Pigments	customs_enumerated	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals					HCPP_Annual Statement of Trade
 Fruits Canned or Preserved	fruits canned or preserved	prefLabel	htc:0476	Fruits Canned or Preserved	customs_enumerated	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink					CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
-Peas Whole	peas whole	prefLabel	htc:0477	Peas Whole	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q12034432	Pisum sativum	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
-Pisum sativum	pisum sativum	latin_binomial	htc:0477	Peas Whole	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q12034432	Pisum sativum	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
+Peas Whole	peas whole	prefLabel	htc:0477	Peas Whole	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q29472543	Pisum sativum	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
+Pisum sativum	pisum sativum	latin_binomial	htc:0477	Peas Whole	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q29472543	Pisum sativum	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Lath and firewood	lath and firewood	prefLabel	htc:0478	Lath and firewood	customs_enumerated	htc:grp_wood_pulp_fuel	htc:sec_forestry_timber					CSP_Canadian_Exports_BlankSeries
 Timber Handspikes under 7ft in length	timber handspikes under 7ft in length	prefLabel	htc:0479	Timber Handspikes under 7ft in length	customs_enumerated	htc:grp_cooperage_ship_timber	htc:sec_forestry_timber			Q287		KEW_CUST 4
 Cotton Manufactures Piece Goods Printed	cotton manufactures piece goods printed	prefLabel	htc:0480	Cotton Manufactures Piece Goods Printed	customs_enumerated	htc:grp_woven_fabrics_apparel	htc:sec_fibres_textiles			Q28823		HCPP_Annual Statement of Trade; HCPP_Other
-Barley Pot and Pearl	barley pot and pearl	prefLabel	htc:0481	Barley Pot and Pearl	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q12117	Hordeum vulgare	CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
-Hordeum vulgare	hordeum vulgare	latin_binomial	htc:0481	Barley Pot and Pearl	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q12117	Hordeum vulgare	CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
+Barley Pot and Pearl	barley pot and pearl	prefLabel	htc:0481	Barley Pot and Pearl	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q61665121	Hordeum vulgare	CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
+Hordeum vulgare	hordeum vulgare	latin_binomial	htc:0481	Barley Pot and Pearl	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q61665121	Hordeum vulgare	CSP_Canadian_Exports_BlankSeries; KEW_CUST 4
 Wine Rhenish	wine rhenish	prefLabel	htc:0482	Wine Rhenish	customs_enumerated	htc:grp_alcoholic_beverages	htc:sec_food_and_drink			Q282		HCPP_Other; KEW_CUST 4
 Confectionery	confectionery	prefLabel	htc:0483	Confectionery	customs_enumerated	htc:grp_sugars_sweeteners	htc:sec_food_and_drink			Q5159627		HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
 Zinc Crude in Cakes	zinc crude in cakes	prefLabel	htc:0484	Zinc Crude in Cakes	customs_enumerated	htc:grp_metals_semi_finished	htc:sec_minerals_metals_manufactures			Q758		HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
@@ -1004,8 +1022,8 @@ Larix laricina	larix laricina	latin_binomial	htc:0663	Timber Tamarac	customs_enu
 Rags Woollen	rags woollen	prefLabel	htc:0664	Rags Woollen	customs_enumerated	htc:grp_animal_fibres	htc:sec_fibres_textiles			Q1567420		HCPP_Annual Statement of Trade
 Iron Steel Unwrought	iron steel unwrought	prefLabel	htc:0665	Iron Steel Unwrought	customs_enumerated	htc:grp_metals_semi_finished	htc:sec_minerals_metals_manufactures			Q677		HCPP_Annual Statement of Trade
 Sauces or Condiments Unenumerated	sauces or condiments unenumerated	prefLabel	htc:0666	Sauces or Condiments Unenumerated	customs_enumerated	htc:grp_spices_condiments	htc:sec_food_and_drink					HCPP_Annual Statement of Trade
-Peas Split	peas split	prefLabel	htc:0667	Peas Split	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q12034432	Pisum sativum	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
-Pisum sativum	pisum sativum	latin_binomial	htc:0667	Peas Split	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q12034432	Pisum sativum	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
+Peas Split	peas split	prefLabel	htc:0667	Peas Split	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q29472543	Pisum sativum	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
+Pisum sativum	pisum sativum	latin_binomial	htc:0667	Peas Split	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q29472543	Pisum sativum	CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Vegetables Canned or Preserved	vegetables canned or preserved	prefLabel	htc:0668	Vegetables Canned or Preserved	customs_enumerated	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink			Q11004		CSP_Canadian_Exports_BlankSeries; CSP_Canadian Trade and Navigation
 Books Unbound	books unbound	prefLabel	htc:0669	Books Unbound	customs_enumerated	htc:grp_glass_ceramics_paper_woodware	htc:sec_minerals_metals_manufactures			Q571		KEW_CUST 4; KEW_CUST 5
 Perfumed Spirits and Cologne Water	perfumed spirits and cologne water	prefLabel	htc:0670	Perfumed Spirits and Cologne Water	customs_enumerated	htc:grp_waxes_soap_candles	htc:sec_oils_fats_waxes					HCPP_Annual Statement of Trade; KEW_CUST 4
@@ -1026,8 +1044,9 @@ Oil N.E.S.	oil n e s	prefLabel	htc:0679	Oil N.E.S.	customs_enumerated	htc:grp_cu
 Cows and Oxen	cows and oxen	prefLabel	htc:0680	Cows and Oxen	customs_enumerated	htc:grp_live_food_animals	htc:sec_livestock_fodder			Q830		KEW_CUST 4; KEW_CUST 5
 Hides Raw Buffalo Cow or Ox	hides raw buffalo cow or ox	prefLabel	htc:0681	Hides Raw Buffalo Cow or Ox	customs_enumerated	htc:grp_raw_hides_skins	htc:sec_hides_skins_tanning			Q3291230		KEW_CUST 4; KEW_CUST 5
 Rhubarb	rhubarb	prefLabel	htc:0682	Rhubarb	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Vegetable			HCPP_Other; HCPP_Annual Statement of Trade
-Senna	senna	prefLabel	htc:0683	Senna	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug		Senna alexandrina	HCPP_Other; HCPP_Annual Statement of Trade
-Senna alexandrina	senna alexandrina	latin_binomial	htc:0683	Senna	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug		Senna alexandrina	HCPP_Other; HCPP_Annual Statement of Trade
+Senna	senna	prefLabel	htc:0683	Senna	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug		Cassia obovata; Senna alexandrina	HCPP_Other; HCPP_Annual Statement of Trade
+Cassia obovata	cassia obovata	latin_binomial	htc:0683	Senna	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug		Cassia obovata; Senna alexandrina	HCPP_Other; HCPP_Annual Statement of Trade
+Senna alexandrina	senna alexandrina	latin_binomial	htc:0683	Senna	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug		Cassia obovata; Senna alexandrina	HCPP_Other; HCPP_Annual Statement of Trade
 Turpentine	turpentine	prefLabel	htc:0684	Turpentine	customs_enumerated	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals		Drug; Oil	Q201382		HCPP_Annual Statement of Trade; KEW_CUST 5
 China or Porcelain and Earthenware	china or porcelain and earthenware	prefLabel	htc:0685	China or Porcelain and Earthenware	customs_enumerated	htc:grp_glass_ceramics_paper_woodware	htc:sec_minerals_metals_manufactures			Q1377111		HCPP_Annual Statement of Trade; KEW_CUST 4
 Watches	watches	prefLabel	htc:0686	Watches	customs_enumerated	htc:grp_metal_machinery_hardware	htc:sec_minerals_metals_manufactures			Q178794		HCPP_Annual Statement of Trade; KEW_CUST 4
@@ -1088,6 +1107,7 @@ guatapana	guatapana	altLabel	htc:0730	Divi Divi	customs_enumerated	htc:grp_veget
 nacascol	nacascol	altLabel	htc:0730	Divi Divi	customs_enumerated	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning		Leather Tanning	Q187607		HCPP_Annual Statement of Trade
 watapana	watapana	altLabel	htc:0730	Divi Divi	customs_enumerated	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning		Leather Tanning	Q187607		HCPP_Annual Statement of Trade
 Hides Russia or Muscovy	hides russia or muscovy	prefLabel	htc:0731	Hides Russia or Muscovy	customs_enumerated	htc:grp_raw_hides_skins	htc:sec_hides_skins_tanning			Q3291230		HCPP_Annual Statement of Trade
+Russia Leather	russia leather	altLabel	htc:0731	Hides Russia or Muscovy	customs_enumerated	htc:grp_raw_hides_skins	htc:sec_hides_skins_tanning			Q3291230		HCPP_Annual Statement of Trade
 Glucose	glucose	prefLabel	htc:0732	Glucose	customs_enumerated	htc:grp_sugars_sweeteners	htc:sec_food_and_drink			Q37525		HCPP_Annual Statement of Trade; CSP_Canadian Trade and Navigation
 Cocoa or Chocolate ground prepared or in anyway manufactured	cocoa or chocolate ground prepared or in anyway manufactured	prefLabel	htc:0733	Cocoa or Chocolate ground prepared or in anyway manufactured	customs_enumerated	htc:grp_stimulant_beverages	htc:sec_food_and_drink			Q208008	Theobroma cacao	HCPP_Annual Statement of Trade
 Theobroma cacao	theobroma cacao	latin_binomial	htc:0733	Cocoa or Chocolate ground prepared or in anyway manufactured	customs_enumerated	htc:grp_stimulant_beverages	htc:sec_food_and_drink			Q208008	Theobroma cacao	HCPP_Annual Statement of Trade
@@ -1405,8 +1425,9 @@ Oleo Margarine or Oleo Oil	oleo margarine or oleo oil	prefLabel	htc:0976	Oleo Ma
 Iron Castings	iron castings	prefLabel	htc:0977	Iron Castings	customs_enumerated	htc:grp_metal_machinery_hardware	htc:sec_minerals_metals_manufactures					CSP_Canadian_Exports_BlankSeries; HCPP_Annual Statement of Trade
 Wine in wood	wine in wood	prefLabel	htc:0978	Wine in wood	customs_enumerated	htc:grp_alcoholic_beverages	htc:sec_food_and_drink			Q282		CSP_Canadian_Exports_BlankSeries
 Glue stock	glue stock	prefLabel	htc:0979	Glue stock	customs_enumerated	htc:grp_glass_ceramics_paper_woodware	htc:sec_minerals_metals_manufactures					CSP_Canadian_Exports_BlankSeries
-Mace	mace	prefLabel	htc:0980	Mace	customs_enumerated	htc:grp_spices_condiments	htc:sec_food_and_drink			Q1882876	Myristica fragrans	HCPP_Other; KEW_CUST 5
-Myristica fragrans	myristica fragrans	latin_binomial	htc:0980	Mace	customs_enumerated	htc:grp_spices_condiments	htc:sec_food_and_drink			Q1882876	Myristica fragrans	HCPP_Other; KEW_CUST 5
+Mace	mace	prefLabel	htc:0980	Mace	customs_enumerated	htc:grp_spices_condiments	htc:sec_food_and_drink			Q1882876	Tamarix indica; Myristica fragrans	HCPP_Other; KEW_CUST 5
+Tamarix indica	tamarix indica	latin_binomial	htc:0980	Mace	customs_enumerated	htc:grp_spices_condiments	htc:sec_food_and_drink			Q1882876	Tamarix indica; Myristica fragrans	HCPP_Other; KEW_CUST 5
+Myristica fragrans	myristica fragrans	latin_binomial	htc:0980	Mace	customs_enumerated	htc:grp_spices_condiments	htc:sec_food_and_drink			Q1882876	Tamarix indica; Myristica fragrans	HCPP_Other; KEW_CUST 5
 Mattresses and Bedding	mattresses and bedding	prefLabel	htc:0981	Mattresses and Bedding	customs_enumerated	htc:grp_glass_ceramics_paper_woodware	htc:sec_minerals_metals_manufactures					KEW_CUST 4
 Hair Manufactures of Goats Hair or Wool	hair manufactures of goats hair or wool	prefLabel	htc:0982	Hair Manufactures of Goats Hair or Wool	customs_enumerated	htc:grp_woven_fabrics_apparel	htc:sec_fibres_textiles					HCPP_Annual Statement of Trade; KEW_CUST 4
 Gum Lac	gum lac	prefLabel	htc:0983	Gum Lac	customs_enumerated	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals		Varnish	Q903081		HCPP_Other; HCPP_Annual Statement of Trade
@@ -1681,6 +1702,8 @@ Zaffre	zaffre	prefLabel	htc:1202	Zaffre	customs_enumerated	htc:grp_natural_dyest
 Horns Buffalo	horns buffalo	prefLabel	htc:1203	Horns Buffalo	customs_enumerated	htc:grp_fertilizers_animal_materials	htc:sec_botanicals_dyes_chemicals			Q82025		HCPP_Annual Statement of Trade; KEW_CUST 4
 Poultry and Game	poultry and game	prefLabel	htc:1204	Poultry and Game	customs_enumerated	htc:grp_live_food_animals	htc:sec_livestock_fodder			Q178559		CSP_Canadian Trade and Navigation; KEW_CUST 4
 Wood and Timber Hardwoods Rosewood	wood and timber hardwoods rosewood	prefLabel	htc:1205	Wood and Timber Hardwoods Rosewood	customs_enumerated	htc:grp_hewn_round_timber	htc:sec_forestry_timber			Q287		HCPP_Annual Statement of Trade; KEW_CUST 4
+Dalbergia	dalbergia	altLabel	htc:1205	Wood and Timber Hardwoods Rosewood	customs_enumerated	htc:grp_hewn_round_timber	htc:sec_forestry_timber			Q287		HCPP_Annual Statement of Trade; KEW_CUST 4
+Rosewood	rosewood	altLabel	htc:1205	Wood and Timber Hardwoods Rosewood	customs_enumerated	htc:grp_hewn_round_timber	htc:sec_forestry_timber			Q287		HCPP_Annual Statement of Trade; KEW_CUST 4
 Skins Furs Pelts Chinchilla	skins furs pelts chinchilla	prefLabel	htc:1206	Skins Furs Pelts Chinchilla	customs_enumerated	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning			Q197204		HCPP_Annual Statement of Trade; KEW_CUST 4
 Chinchilla	chinchilla	altLabel	htc:1206	Skins Furs Pelts Chinchilla	customs_enumerated	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning			Q197204		HCPP_Annual Statement of Trade; KEW_CUST 4
 Silk Thrown Dyed Organzine or Crape	silk thrown dyed organzine or crape	prefLabel	htc:1207	Silk Thrown Dyed Organzine or Crape	customs_enumerated	htc:grp_animal_fibres	htc:sec_fibres_textiles			Q37681		HCPP_Annual Statement of Trade; KEW_CUST 4
@@ -1837,11 +1860,13 @@ Fruit Juice not containing Spirit	fruit juice not containing spirit	prefLabel	ht
 Alkali of other Sorts Unenumerated	alkali of other sorts unenumerated	prefLabel	htc:1343	Alkali of other Sorts Unenumerated	customs_enumerated	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals					HCPP_Annual Statement of Trade; KEW_CUST 4
 Staves Pipe	staves pipe	prefLabel	htc:1344	Staves Pipe	customs_enumerated	htc:grp_cooperage_ship_timber	htc:sec_forestry_timber			Q10289		CSP_Canadian_Exports_BlankSeries
 Copper Wire	copper wire	prefLabel	htc:1345	Copper Wire	customs_enumerated	htc:grp_metal_machinery_hardware	htc:sec_minerals_metals_manufactures					HCPP_Annual Statement of Trade
-Cubebs	cubebs	prefLabel	htc:1346	Cubebs	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals					HCPP_Annual Statement of Trade
-Cubibs	cubibs	altLabel	htc:1346	Cubebs	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals					HCPP_Annual Statement of Trade
-Java pepper	java pepper	altLabel	htc:1346	Cubebs	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals					HCPP_Annual Statement of Trade
+Cubebs	cubebs	prefLabel	htc:1346	Cubebs	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Piper cubeba	HCPP_Annual Statement of Trade
+Cubibs	cubibs	altLabel	htc:1346	Cubebs	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Piper cubeba	HCPP_Annual Statement of Trade
+Java pepper	java pepper	altLabel	htc:1346	Cubebs	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Piper cubeba	HCPP_Annual Statement of Trade
+Piper cubeba	piper cubeba	latin_binomial	htc:1346	Cubebs	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals				Piper cubeba	HCPP_Annual Statement of Trade
 Hides not Tanned Tawed Curried or in any way Dressed Dry	hides not tanned tawed curried or in any way dressed dry	prefLabel	htc:1347	Hides not Tanned Tawed Curried or in any way Dressed Dry	customs_enumerated	htc:grp_raw_hides_skins	htc:sec_hides_skins_tanning			Q3291230		HCPP_Annual Statement of Trade
 Leeches	leeches	prefLabel	htc:1348	Leeches	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Worm		Hirudo medicinalis	HCPP_Annual Statement of Trade
+Leech Fishery	leech fishery	altLabel	htc:1348	Leeches	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Worm		Hirudo medicinalis	HCPP_Annual Statement of Trade
 Hirudo medicinalis	hirudo medicinalis	latin_binomial	htc:1348	Leeches	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug; Worm		Hirudo medicinalis	HCPP_Annual Statement of Trade
 Scammony	scammony	prefLabel	htc:1349	Scammony	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug		Convolvulus scammonia	HCPP_Annual Statement of Trade
 scammonium	scammonium	altLabel	htc:1349	Scammony	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals		Drug		Convolvulus scammonia	HCPP_Annual Statement of Trade
@@ -1872,7 +1897,7 @@ Oil, Lard, Neat's foot and other Animal	oil lard neat s foot and other animal	pr
 Neat's Foot Oil	neat s foot oil	altLabel	htc:1371	Oil, Lard, Neat's foot and other Animal	customs_enumerated	htc:grp_animal_fats_tallow	htc:sec_oils_fats_waxes					CSP_Canadian_Exports_BlankSeries
 Joists	joists	prefLabel	htc:1372	Joists	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber			Q6587065		CSP_Canadian_Exports_BlankSeries
 joist	joist	altLabel	htc:1372	Joists	customs_enumerated	htc:grp_sawn_lumber	htc:sec_forestry_timber			Q6587065		CSP_Canadian_Exports_BlankSeries
-Maize Other Sorts	maize other sorts	prefLabel	htc:1373	Maize Other Sorts	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q12117		HCPP_Annual Statement of Trade (1910-1940 ext)
+Maize Other Sorts	maize other sorts	prefLabel	htc:1373	Maize Other Sorts	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q25618328		HCPP_Annual Statement of Trade (1910-1940 ext)
 Anchovies	anchovies	prefLabel	htc:1374	Anchovies	customs_enumerated	htc:grp_fish_seafood	htc:sec_food_and_drink			Q4589261		KEW_CUST 5; KEW_CUST 4
 Gum Senegal	gum senegal	prefLabel	htc:1375	Gum Senegal	customs_enumerated	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals		Food	Q903081		KEW_CUST 5; KEW_CUST 4
 acacia senegal	acacia senegal	altLabel	htc:1375	Gum Senegal	customs_enumerated	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals		Food	Q903081		KEW_CUST 5; KEW_CUST 4
@@ -1993,7 +2018,7 @@ Glycerine Crude	glycerine crude	prefLabel	htc:1474	Glycerine Crude	customs_enume
 Glycerin	glycerin	altLabel	htc:1474	Glycerine Crude	customs_enumerated	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals					HCPP_Annual Statement of Trade
 Glycerine	glycerine	altLabel	htc:1474	Glycerine Crude	customs_enumerated	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals					HCPP_Annual Statement of Trade
 Leather Undressed Goat Skins	leather undressed goat skins	prefLabel	htc:1475	Leather Undressed Goat Skins	customs_enumerated	htc:grp_tanned_leather	htc:sec_hides_skins_tanning			Q286		HCPP_Annual Statement of Trade
-Indian Corn Canned	indian corn canned	prefLabel	htc:1476	Indian Corn Canned	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q12117		CSP_Canadian_Exports_BlankSeries
+Indian Corn Canned	indian corn canned	prefLabel	htc:1476	Indian Corn Canned	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q25618328		CSP_Canadian_Exports_BlankSeries
 Mica, crude	mica crude	prefLabel	htc:1477	Mica, crude	customs_enumerated	htc:grp_industrial_minerals	htc:sec_minerals_metals_manufactures					CSP_Canadian_Exports_BlankSeries
 Pianos unenumerated	pianos unenumerated	prefLabel	htc:1478	Pianos unenumerated	customs_enumerated	htc:grp_glass_ceramics_paper_woodware	htc:sec_minerals_metals_manufactures					CSP_Canadian_Exports_BlankSeries
 Almonds Jordan	almonds jordan	prefLabel	htc:1479	Almonds Jordan	customs_enumerated	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink			Q184357		KEW_CUST 5; KEW_CUST 4
@@ -2185,8 +2210,8 @@ Lens esculenta	lens esculenta	latin_binomial	htc:1628	Lentils	customs_enumerated
 Mica	mica	prefLabel	htc:1629	Mica	customs_enumerated	htc:grp_industrial_minerals	htc:sec_minerals_metals_manufactures					HCPP_Annual Statement of Trade
 Milk Powder Unsweetened	milk powder unsweetened	prefLabel	htc:1630	Milk Powder Unsweetened	customs_enumerated	htc:grp_dairy_eggs	htc:sec_food_and_drink					HCPP_Annual Statement of Trade
 Parts of Musical Instruments	parts of musical instruments	prefLabel	htc:1631	Parts of Musical Instruments	customs_enumerated	htc:grp_glass_ceramics_paper_woodware	htc:sec_minerals_metals_manufactures			Q34379		HCPP_Annual Statement of Trade
-Peas not fresh Split	peas not fresh split	prefLabel	htc:1632	Peas not fresh Split	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q12034432	Pisum sativum	HCPP_Annual Statement of Trade
-Pisum sativum	pisum sativum	latin_binomial	htc:1632	Peas not fresh Split	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q12034432	Pisum sativum	HCPP_Annual Statement of Trade
+Peas not fresh Split	peas not fresh split	prefLabel	htc:1632	Peas not fresh Split	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q29472543	Pisum sativum	HCPP_Annual Statement of Trade
+Pisum sativum	pisum sativum	latin_binomial	htc:1632	Peas not fresh Split	customs_enumerated	htc:grp_pulses_legumes	htc:sec_food_and_drink			Q29472543	Pisum sativum	HCPP_Annual Statement of Trade
 Petroleum Lamp Oils	petroleum lamp oils	prefLabel	htc:1633	Petroleum Lamp Oils	customs_enumerated	htc:grp_fossil_fuels_mineral_oils	htc:sec_minerals_metals_manufactures			Q22656		HCPP_Annual Statement of Trade
 Woollen Rags Pulled	woollen rags pulled	prefLabel	htc:1634	Woollen Rags Pulled	customs_enumerated	htc:grp_animal_fibres	htc:sec_fibres_textiles			Q1567420		HCPP_Annual Statement of Trade
 Boots and Shoes of other Materials	boots and shoes of other materials	prefLabel	htc:1635	Boots and Shoes of other Materials	customs_enumerated	htc:grp_woven_fabrics_apparel	htc:sec_fibres_textiles			Q161928		HCPP_Annual Statement of Trade
@@ -2362,6 +2387,7 @@ Wool Beaver	wool beaver	prefLabel	htc:1770	Wool Beaver	customs_enumerated	htc:gr
 Castorum	castorum	prefLabel	htc:1771	Castorum	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals					CSP_Canadian_Exports_BlankSeries
 Copper Coin	copper coin	prefLabel	htc:1772	Copper Coin	customs_enumerated	htc:grp_metals_semi_finished	htc:sec_minerals_metals_manufactures			Q753		HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
 Peppermint	peppermint	prefLabel	htc:1773	Peppermint	customs_enumerated	htc:grp_customs_residuals	htc:sec_unclassified_residuals					CSP_Canadian_Exports_BlankSeries
+Oil of Peppermint	oil of peppermint	altLabel	htc:1773	Peppermint	customs_enumerated	htc:grp_customs_residuals	htc:sec_unclassified_residuals					CSP_Canadian_Exports_BlankSeries
 Pepermint oil	pepermint oil	altLabel	htc:1773	Peppermint	customs_enumerated	htc:grp_customs_residuals	htc:sec_unclassified_residuals					CSP_Canadian_Exports_BlankSeries
 Peppermint oil	peppermint oil	altLabel	htc:1773	Peppermint	customs_enumerated	htc:grp_customs_residuals	htc:sec_unclassified_residuals					CSP_Canadian_Exports_BlankSeries
 Tobacco Stemmed	tobacco stemmed	prefLabel	htc:1774	Tobacco Stemmed	customs_enumerated	htc:grp_tobacco	htc:sec_food_and_drink			Q1566		HCPP_Annual Statement of Trade; CSP_Canadian_Exports_BlankSeries
@@ -2414,11 +2440,10 @@ Earthenware Floor Tiles for Tesselated Pavement	earthenware floor tiles for tess
 Sanitary Ware	sanitary ware	prefLabel	htc:1821	Sanitary Ware	customs_enumerated	htc:grp_glass_ceramics_paper_woodware	htc:sec_minerals_metals_manufactures					HCPP_Annual Statement of Trade
 Stone Wrought	stone wrought	prefLabel	htc:1822	Stone Wrought	customs_enumerated	htc:grp_industrial_minerals	htc:sec_minerals_metals_manufactures			Q22731		CSP_Canadian_Exports_BlankSeries
 Furs and skins of marine animal	furs and skins of marine animal	prefLabel	htc:1823	Furs and skins of marine animal	customs_enumerated	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning			Q197204		CSP_Canadian_Exports_BlankSeries
-Maize Flat white	maize flat white	prefLabel	htc:1824	Maize Flat white	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q12117		HCPP_Annual Statement of Trade (1910-1940 ext)
+Maize Flat white	maize flat white	prefLabel	htc:1824	Maize Flat white	customs_enumerated	htc:grp_cereals_grains	htc:sec_food_and_drink			Q25618328		HCPP_Annual Statement of Trade (1910-1940 ext)
 Arsenic	arsenic	prefLabel	htc:1825	Arsenic	customs_enumerated	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals		Drug; Chemical	Q871		KEW_CUST 5
 Assafoetida	assafoetida	prefLabel	htc:1826	Assafoetida	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals					KEW_CUST 5
 Asafetida	asafetida	altLabel	htc:1826	Assafoetida	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals					KEW_CUST 5
-Asafoetida	asafoetida	altLabel	htc:1826	Assafoetida	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals					KEW_CUST 5
 Beads Coral	beads coral	prefLabel	htc:1827	Beads Coral	customs_enumerated	htc:grp_fertilizers_animal_materials	htc:sec_botanicals_dyes_chemicals			Q1053956		KEW_CUST 5
 Cantharides	cantharides	prefLabel	htc:1828	Cantharides	customs_enumerated	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals					KEW_CUST 5
 Ginger Dry	ginger dry	prefLabel	htc:1829	Ginger Dry	customs_enumerated	htc:grp_spices_condiments	htc:sec_food_and_drink			Q15046077		KEW_CUST 5
@@ -2492,7 +2517,9 @@ Seed Lac	seed lac	altLabel	htc:1891	Gum Shellac or Seedlac	customs_enumerated	ht
 Hair Human	hair human	prefLabel	htc:1892	Hair Human	customs_enumerated	htc:grp_animal_fibres	htc:sec_fibres_textiles			Q28472		KEW_CUST 5
 Herrings Red	herrings red	prefLabel	htc:1893	Herrings Red	customs_enumerated	htc:grp_fish_seafood	htc:sec_food_and_drink			Q3127419		KEW_CUST 5
 Incle Wrought	incle wrought	prefLabel	htc:1894	Incle Wrought	customs_enumerated	htc:grp_woven_fabrics_apparel	htc:sec_fibres_textiles					KEW_CUST 5
-Kelp	kelp	prefLabel	htc:1895	Kelp	customs_enumerated	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals					KEW_CUST 5
+Kelp	kelp	prefLabel	htc:1895	Kelp	customs_enumerated	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals				Fucus vesiculosus; Fucus nodosus	KEW_CUST 5
+Fucus vesiculosus	fucus vesiculosus	latin_binomial	htc:1895	Kelp	customs_enumerated	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals				Fucus vesiculosus; Fucus nodosus	KEW_CUST 5
+Fucus nodosus	fucus nodosus	latin_binomial	htc:1895	Kelp	customs_enumerated	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals				Fucus vesiculosus; Fucus nodosus	KEW_CUST 5
 Piece Goods of India Calicoes	piece goods of india calicoes	prefLabel	htc:1896	Piece Goods of India Calicoes	customs_enumerated	htc:grp_woven_fabrics_apparel	htc:sec_fibres_textiles			Q1132695		KEW_CUST 5
 Piece Goods of India Muslin	piece goods of india muslin	prefLabel	htc:1897	Piece Goods of India Muslin	customs_enumerated	htc:grp_woven_fabrics_apparel	htc:sec_fibres_textiles			Q725457		KEW_CUST 5
 Raisins Lipari	raisins lipari	prefLabel	htc:1898	Raisins Lipari	customs_enumerated	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink			Q13186		KEW_CUST 5
@@ -2641,7 +2668,8 @@ Type	type	prefLabel	htc:2024	Type	customs_enumerated	htc:grp_glass_ceramics_pape
 Axe Handles	axe handles	prefLabel	htc:2025	Axe Handles	customs_enumerated	htc:grp_glass_ceramics_paper_woodware	htc:sec_minerals_metals_manufactures					CSP_Canadian_Exports_BlankSeries
 Bags, Empty	bags empty	prefLabel	htc:2026	Bags, Empty	customs_enumerated	htc:grp_customs_residuals	htc:sec_unclassified_residuals					CSP_Canadian_Exports_BlankSeries
 Boats	boats	prefLabel	htc:2027	Boats	customs_enumerated	htc:grp_metal_machinery_hardware	htc:sec_minerals_metals_manufactures					CSP_Canadian_Exports_BlankSeries
-Bear	bear	prefLabel	htc:2028	Bear	customs_enumerated	htc:grp_customs_residuals	htc:sec_unclassified_residuals		Skin; Fur			CSP_Canadian_Exports_BlankSeries
+Bear	bear	prefLabel	htc:2028	Bear	customs_enumerated	htc:grp_customs_residuals	htc:sec_unclassified_residuals		Skin; Fur		Ursus americanus	CSP_Canadian_Exports_BlankSeries
+Ursus americanus	ursus americanus	latin_binomial	htc:2028	Bear	customs_enumerated	htc:grp_customs_residuals	htc:sec_unclassified_residuals		Skin; Fur		Ursus americanus	CSP_Canadian_Exports_BlankSeries
 Billets	billets	prefLabel	htc:2029	Billets	customs_enumerated	htc:grp_hewn_round_timber	htc:sec_forestry_timber			Q287		CSP_Canadian_Exports_BlankSeries
 Cod Sounds	cod sounds	prefLabel	htc:2030	Cod Sounds	customs_enumerated	htc:grp_fish_seafood	htc:sec_food_and_drink			Q600396		CSP_Canadian_Exports_BlankSeries
 Adzes	adzes	prefLabel	htc:2031	Adzes	customs_enumerated	htc:grp_metal_machinery_hardware	htc:sec_minerals_metals_manufactures			Q2517447		CSP_Canadian_Exports_BlankSeries
@@ -2736,7 +2764,7 @@ Anchilica	anchilica	altLabel	htc:doc_archangel	Archangel	document_attested	htc:g
 Arnica	arnica	prefLabel	htc:doc_arnica	Arnica	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Arnica montana	simmonds_1892
 Arnica montana	arnica montana	latin_binomial	htc:doc_arnica	Arnica	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Arnica montana	simmonds_1892
 Atropa Belladonna	atropa belladonna	prefLabel	htc:doc_atropa_belladonna	Atropa Belladonna	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			watt_1908
-Azure	azure	prefLabel	htc:doc_azure	Azure	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			ure_gutenberg; simmonds_1892
+Azure	azure	prefLabel	htc:doc_azure	Azure	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			simmonds_1892; ure_gutenberg
 Balachong	balachong	prefLabel	htc:doc_balachong	Balachong	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices			simmonds_1892; mcculloch_1880
 Barwood	barwood	prefLabel	htc:doc_barwood	Barwood	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Wood, Forest Product		Pterocarpus angolensis	1866 British Customs Commodities List (Danika / HGIS Lab)
 pterocarpus erinaceus	pterocarpus erinaceus	altLabel	htc:doc_barwood	Barwood	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Wood, Forest Product		Pterocarpus angolensis	1866 British Customs Commodities List (Danika / HGIS Lab)
@@ -2756,9 +2784,9 @@ Bdellium	bdellium	prefLabel	htc:doc_bdellium	Bdellium	document_attested	htc:grp_
 Heudelotia africana	heudelotia africana	latin_binomial	htc:doc_bdellium	Bdellium	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q558871	Heudelotia africana	simmonds_1892
 Bergamot	bergamot	prefLabel	htc:doc_bergamot	Bergamot	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Essential Oil		Mentha citrata	1866 British Customs Commodities List (Danika / HGIS Lab)
 mentha citrata	mentha citrata	altLabel	htc:doc_bergamot	Bergamot	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Essential Oil		Mentha citrata	1866 British Customs Commodities List (Danika / HGIS Lab)
-Betel Leaf	betel leaf	prefLabel	htc:doc_betel_leaf	Betel Leaf	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Piper betel	simmonds_1892; simmonds_1854
-Betel	betel	altLabel	htc:doc_betel_leaf	Betel Leaf	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Piper betel	simmonds_1892; simmonds_1854
-Piper betel	piper betel	latin_binomial	htc:doc_betel_leaf	Betel Leaf	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Piper betel	simmonds_1892; simmonds_1854
+Betel Leaf	betel leaf	prefLabel	htc:doc_betel_leaf	Betel Leaf	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Piper betel	simmonds_1892
+Betel	betel	altLabel	htc:doc_betel_leaf	Betel Leaf	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Piper betel	simmonds_1892
+Piper betel	piper betel	latin_binomial	htc:doc_betel_leaf	Betel Leaf	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Piper betel	simmonds_1892
 Betel Nut	betel nut	prefLabel	htc:doc_betel_nut	Betel Nut	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Areca catechu	simmonds_1892
 Areca Catechu	areca catechu	altLabel	htc:doc_betel_nut	Betel Nut	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Areca catechu	simmonds_1892
 Bezoar	bezoar	prefLabel	htc:doc_bezoar	Bezoar	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1892; mortimer_1823
@@ -2781,6 +2809,7 @@ Eucalyptus globulus	eucalyptus globulus	latin_binomial	htc:doc_blue_gum	Blue Gum
 Blue Vitriol	blue vitriol	prefLabel	htc:doc_blue_vitriol	Blue Vitriol	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			simmonds_1892; ure_gutenberg
 Copperas Blue	copperas blue	altLabel	htc:doc_blue_vitriol	Blue Vitriol	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			simmonds_1892; ure_gutenberg
 copper sulfate	copper sulfate	altLabel	htc:doc_blue_vitriol	Blue Vitriol	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			simmonds_1892; ure_gutenberg
+Bone Black	bone black	prefLabel	htc:doc_bone_black	Bone Black	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye	Q49094766		simmonds_1892; ure_gutenberg
 Bowstring Hemp	bowstring hemp	prefLabel	htc:doc_bowstring_hemp	Bowstring Hemp	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable			simmonds_1892
 Sansevieria Roxburghiana	sansevieria roxburghiana	altLabel	htc:doc_bowstring_hemp	Bowstring Hemp	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable			simmonds_1892
 Sansevieria Zeylanica	sansevieria zeylanica	altLabel	htc:doc_bowstring_hemp	Bowstring Hemp	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable			simmonds_1892
@@ -2805,7 +2834,6 @@ Juniperus oxycedrus	juniperus oxycedrus	latin_binomial	htc:doc_cade_oil	Cade Oil
 Cajeput Oil	cajeput oil	prefLabel	htc:doc_cajeput_oil	Cajeput Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil	Q857162		ure_gutenberg
 Cajeput	cajeput	altLabel	htc:doc_cajeput_oil	Cajeput Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil	Q857162		ure_gutenberg
 Calamander Wood	calamander wood	prefLabel	htc:doc_calamander_wood	Calamander Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood			simmonds_1892
-Calcareous Earth	calcareous earth	prefLabel	htc:doc_calcareous_earth	Calcareous Earth	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			ure_gutenberg; simmonds_1892
 Calisata Bank	calisata bank	prefLabel	htc:doc_calisata_bank	Calisata Bank	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Cinchona calisaya	simmonds_1892
 Cinchona calisaya	cinchona calisaya	latin_binomial	htc:doc_calisata_bank	Calisata Bank	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Cinchona calisaya	simmonds_1892
 Calomel	calomel	prefLabel	htc:doc_calomel	Calomel	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug	Q172949		Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)
@@ -2835,7 +2863,7 @@ Carbolic Acid	carbolic acid	prefLabel	htc:doc_carbolic_acid	Carbolic Acid	docume
 Cardamom	cardamom	prefLabel	htc:doc_cardamom	Cardamom	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug; Spice	Q14625808		Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865); 1866 British Customs Commodities List (Danika / HGIS Lab)
 elettaria	elettaria	altLabel	htc:doc_cardamom	Cardamom	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug; Spice	Q14625808		Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865); 1866 British Customs Commodities List (Danika / HGIS Lab)
 amomum	amomum	altLabel	htc:doc_cardamom	Cardamom	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug; Spice	Q14625808		Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865); 1866 British Customs Commodities List (Danika / HGIS Lab)
-Carlock	carlock	prefLabel	htc:doc_carlock	Carlock	document_attested	htc:grp_fertilizers_animal_materials	htc:sec_botanicals_dyes_chemicals	htc:0290				mortimer_1823; simmonds_1892
+Carlock	carlock	prefLabel	htc:doc_carlock	Carlock	document_attested	htc:grp_fertilizers_animal_materials	htc:sec_botanicals_dyes_chemicals	htc:0290				simmonds_1892; mortimer_1823
 Carmine	carmine	prefLabel	htc:doc_carmine	Carmine	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			1866 British Customs Commodities List (Danika / HGIS Lab)
 crimson lake	crimson lake	altLabel	htc:doc_carmine	Carmine	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			1866 British Customs Commodities List (Danika / HGIS Lab)
 natural red 4	natural red 4	altLabel	htc:doc_carmine	Carmine	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			1866 British Customs Commodities List (Danika / HGIS Lab)
@@ -2843,9 +2871,9 @@ Polish cochineal	polish cochineal	altLabel	htc:doc_carmine	Carmine	document_atte
 Carrot Seed	carrot seed	prefLabel	htc:doc_carrot_seed	Carrot Seed	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0010	Seed			1866 British Customs Commodities List (Danika / HGIS Lab)
 Cascara Sagrada	cascara sagrada	prefLabel	htc:doc_cascara_sagrada	Cascara Sagrada	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Rhamnus purshiana	simmonds_1892
 Rhamnus purshiana	rhamnus purshiana	latin_binomial	htc:doc_cascara_sagrada	Cascara Sagrada	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Rhamnus purshiana	simmonds_1892
-Cascarilla Bark	cascarilla bark	prefLabel	htc:doc_cascarilla_bark	Cascarilla Bark	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1854
-Cascarilla	cascarilla	altLabel	htc:doc_cascarilla_bark	Cascarilla Bark	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1854
-croton eluteria	croton eluteria	altLabel	htc:doc_cascarilla_bark	Cascarilla Bark	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1854
+Cascarilla	cascarilla	prefLabel	htc:doc_cascarilla	Cascarilla	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug; Flavouring		Croton cascarilla	Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865); Danika Drugs.xlsx (SKOS Sheet)
+croton eluteria	croton eluteria	altLabel	htc:doc_cascarilla	Cascarilla	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug; Flavouring		Croton cascarilla	Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865); Danika Drugs.xlsx (SKOS Sheet)
+Croton cascarilla	croton cascarilla	latin_binomial	htc:doc_cascarilla	Cascarilla	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug; Flavouring		Croton cascarilla	Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865); Danika Drugs.xlsx (SKOS Sheet)
 Casein	casein	prefLabel	htc:doc_casein	Casein	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical	Q193970		simmonds_1892; simmonds_1892
 Cashew Nut	cashew nut	prefLabel	htc:doc_cashew_nut	Cashew Nut	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds	Q7885904		simmonds_1892
 Cashew Nuts	cashew nuts	altLabel	htc:doc_cashew_nut	Cashew Nut	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds	Q7885904		simmonds_1892
@@ -2859,7 +2887,8 @@ golden shower tree	golden shower tree	altLabel	htc:doc_cassia_fistula	Cassia Fis
 Cassia oil	cassia oil	prefLabel	htc:doc_cassia_oil	Cassia oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Essential Oil			1866 British Customs Commodities List (Danika / HGIS Lab)
 Cassis	cassis	prefLabel	htc:doc_cassis	Cassis	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			ure_gutenberg; simmonds_1892
 Caviar	caviar	prefLabel	htc:doc_caviar	Caviar	document_attested	htc:grp_fish_seafood	htc:sec_food_and_drink	htc:0351		Q186385		1866 British Customs Commodities List (Danika / HGIS Lab)
-Cedar	cedar	prefLabel	htc:doc_cedar	Cedar	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood			simmonds_1892; mortimer_1823
+Cedar	cedar	prefLabel	htc:doc_cedar	Cedar	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Pinus cedrus	mcculloch_1880; simmonds_1892
+Pinus cedrus	pinus cedrus	latin_binomial	htc:doc_cedar	Cedar	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Pinus cedrus	mcculloch_1880; simmonds_1892
 Cedra	cedra	prefLabel	htc:doc_cedra	Cedra	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil			simmonds_1892; ure_gutenberg
 Celery	celery	prefLabel	htc:doc_celery	Celery	document_attested	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink	htc:0085		Q23012379	Apium graveolens	simmonds_1892
 Apium graveolens	apium graveolens	latin_binomial	htc:doc_celery	Celery	document_attested	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink	htc:0085		Q23012379	Apium graveolens	simmonds_1892
@@ -2871,6 +2900,8 @@ Anthemis nobilis	anthemis nobilis	latin_binomial	htc:doc_chamomile	Chamomile	doc
 Chaulmoogra	chaulmoogra	prefLabel	htc:doc_chaulmoogra	Chaulmoogra	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1892
 Chay	chay	prefLabel	htc:doc_chay	Chay	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye		Oldenlandia umbellata	simmonds_1892; mcculloch_1880
 Oldenlandia umbellata	oldenlandia umbellata	latin_binomial	htc:doc_chay	Chay	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye		Oldenlandia umbellata	simmonds_1892; mcculloch_1880
+Chay Root	chay root	prefLabel	htc:doc_chay_root	Chay Root	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye		Oldenlandia umbellata	simmonds_1854
+Oldenlandia umbellata	oldenlandia umbellata	latin_binomial	htc:doc_chay_root	Chay Root	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye		Oldenlandia umbellata	simmonds_1854
 Chicken Mother of Pearl	chicken mother of pearl	prefLabel	htc:doc_chicken_mother_of_pearl	Chicken Mother of Pearl	document_attested	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning	htc:0071	Furs			simmonds_1892
 Chicle	chicle	prefLabel	htc:doc_chicle	Chicle	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q4504783	Achras sapota	simmonds_1892
 Achras sapota	achras sapota	latin_binomial	htc:doc_chicle	Chicle	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q4504783	Achras sapota	simmonds_1892
@@ -2887,6 +2918,7 @@ Cinnamon Oil	cinnamon oil	prefLabel	htc:doc_cinnamon_oil	Cinnamon Oil	document_a
 Cinnamomum verum	cinnamomum verum	latin_binomial	htc:doc_cinnamon_oil	Cinnamon Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil	Q72460907	Cinnamomum verum	simmonds_1892
 Citric Acid	citric acid	prefLabel	htc:doc_citric_acid	Citric Acid	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical	Q159683		ure_gutenberg; simmonds_1892
 Citronella	citronella	prefLabel	htc:doc_citronella	Citronella	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil			simmonds_1892
+Citronella Oil	citronella oil	altLabel	htc:doc_citronella	Citronella	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil			simmonds_1892
 Cobalt	cobalt	prefLabel	htc:doc_cobalt	Cobalt	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Alloys	Q740		1866 British Customs Commodities List (Danika / HGIS Lab)
 colbalt	colbalt	altLabel	htc:doc_cobalt	Cobalt	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Alloys	Q740		1866 British Customs Commodities List (Danika / HGIS Lab)
 Cobalt Bloom	cobalt bloom	prefLabel	htc:doc_cobalt_bloom	Cobalt Bloom	document_attested	htc:grp_metallic_ores	htc:sec_minerals_metals_manufactures	htc:0382				simmonds_1892
@@ -2921,6 +2953,8 @@ Corrosive Sublimate	corrosive sublimate	prefLabel	htc:doc_corrosive_sublimate	Co
 Coto Bark	coto bark	prefLabel	htc:doc_coto_bark	Coto Bark	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1892
 Courbaril	courbaril	prefLabel	htc:doc_courbaril	Courbaril	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220				simmonds_1892
 Court Plaster	court plaster	prefLabel	htc:doc_court_plaster	Court Plaster	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			mortimer_1823; simmonds_1892
+Crab Wood	crab wood	prefLabel	htc:doc_crab_wood	Crab Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070			Carapa guianensis	simmonds_1892
+Carapa guianensis	carapa guianensis	latin_binomial	htc:doc_crab_wood	Crab Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070			Carapa guianensis	simmonds_1892
 Creosote	creosote	prefLabel	htc:doc_creosote	Creosote	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical	Q909808		ure_gutenberg
 Crin Vegetal	crin vegetal	prefLabel	htc:doc_crin_vegetal	Crin Vegetal	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable			simmonds_1892
 Croton Oil	croton oil	prefLabel	htc:doc_croton_oil	Croton Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil	Q456053	Croton tiglium	mcculloch_1880
@@ -2955,6 +2989,8 @@ Camelina sativa	camelina sativa	latin_binomial	htc:doc_dodder_cake	Dodder Cake	d
 Dogwood	dogwood	prefLabel	htc:doc_dogwood	Dogwood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Piscidia erythrina; Cornus florida	simmonds_1892; simmonds_1892
 Piscidia erythrina	piscidia erythrina	latin_binomial	htc:doc_dogwood	Dogwood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Piscidia erythrina; Cornus florida	simmonds_1892; simmonds_1892
 Cornus florida	cornus florida	latin_binomial	htc:doc_dogwood	Dogwood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Piscidia erythrina; Cornus florida	simmonds_1892; simmonds_1892
+Domba Oil	domba oil	prefLabel	htc:doc_domba_oil	Domba Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124			Calophyllum inophyllum	simmonds_1892; simmonds_1854
+Calophyllum inophyllum	calophyllum inophyllum	latin_binomial	htc:doc_domba_oil	Domba Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124			Calophyllum inophyllum	simmonds_1892; simmonds_1854
 Dragon's Blood	dragon s blood	prefLabel	htc:doc_dragon_s_blood	Dragon's Blood	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum		Calamus draco	simmonds_1892; mortimer_1823
 Gum Dragon's Blood	gum dragon s blood	altLabel	htc:doc_dragon_s_blood	Dragon's Blood	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum		Calamus draco	simmonds_1892; mortimer_1823
 sanguis draconis	sanguis draconis	altLabel	htc:doc_dragon_s_blood	Dragon's Blood	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum		Calamus draco	simmonds_1892; mortimer_1823
@@ -2966,6 +3002,9 @@ Elder	elder	prefLabel	htc:doc_elder	Elder	document_attested	htc:grp_drugs_medici
 Sambucus nigra	sambucus nigra	latin_binomial	htc:doc_elder	Elder	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Sambucus nigra	simmonds_1892
 Elemi	elemi	prefLabel	htc:doc_elemi	Elemi	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q1029875	Amyris elemifera	simmonds_1892; ure_gutenberg
 Amyris elemifera	amyris elemifera	latin_binomial	htc:doc_elemi	Elemi	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q1029875	Amyris elemifera	simmonds_1892; ure_gutenberg
+Elm Bark	elm bark	prefLabel	htc:doc_elm_bark	Elm Bark	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Ulmus fulva	simmonds_1892
+Ulmus fulva	ulmus fulva	latin_binomial	htc:doc_elm_bark	Elm Bark	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Ulmus fulva	simmonds_1892
+Emerald	emerald	prefLabel	htc:doc_emerald	Emerald	document_attested	htc:grp_industrial_minerals	htc:sec_minerals_metals_manufactures	htc:0653				simmonds_1892; ure_gutenberg
 Ether	ether	prefLabel	htc:doc_ether	Ether	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			ure_gutenberg
 Euphorbium	euphorbium	prefLabel	htc:doc_euphorbium	Euphorbium	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum			simmonds_1892
 Gum Euphorbium	gum euphorbium	altLabel	htc:doc_euphorbium	Euphorbium	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum			simmonds_1892
@@ -2979,7 +3018,8 @@ Frankfort Black	frankfort black	prefLabel	htc:doc_frankfort_black	Frankfort Blac
 Fullers' Earth	fullers earth	prefLabel	htc:doc_fullers_earth	Fullers' Earth	document_attested	htc:grp_industrial_minerals	htc:sec_minerals_metals_manufactures	htc:1905				mortimer_1823; simmonds_1892
 Galangal	galangal	prefLabel	htc:doc_galangal	Galangal	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices	Q734727	Alpinia galanga	simmonds_1892
 Alpinia galanga	alpinia galanga	latin_binomial	htc:doc_galangal	Galangal	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices	Q734727	Alpinia galanga	simmonds_1892
-Galbanum	galbanum	prefLabel	htc:doc_galbanum	Galbanum	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q909191		ure_gutenberg; simmonds_1892
+Galbanum	galbanum	prefLabel	htc:doc_galbanum	Galbanum	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q909191	Bubon galbanum	ure_gutenberg; simmonds_1892
+Bubon galbanum	bubon galbanum	latin_binomial	htc:doc_galbanum	Galbanum	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q909191	Bubon galbanum	ure_gutenberg; simmonds_1892
 Galipot	galipot	prefLabel	htc:doc_galipot	Galipot	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220		Q13424818		simmonds_1892; ure_gutenberg
 Gallic Acid	gallic acid	prefLabel	htc:doc_gallic_acid	Gallic Acid	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye	Q375837		simmonds_1892; ure_gutenberg
 Gamboge	gamboge	prefLabel	htc:doc_gamboge	Gamboge	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye Stuff		Garcinia morella	1866 British Customs Commodities List (Danika / HGIS Lab)
@@ -3019,6 +3059,8 @@ Wood Oil	wood oil	altLabel	htc:doc_gurjun	Gurjun	document_attested	htc:grp_veget
 Gursoonder	gursoonder	prefLabel	htc:doc_gursoonder	Gursoonder	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Acacia arabica	simmonds_1892
 Acacia arabica	acacia arabica	latin_binomial	htc:doc_gursoonder	Gursoonder	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Acacia arabica	simmonds_1892
 Hartshorn	hartshorn	prefLabel	htc:doc_hartshorn	Hartshorn	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical	Q5675278		simmonds_1892; ure_gutenberg
+Hemlock Spruce	hemlock spruce	prefLabel	htc:doc_hemlock_spruce	Hemlock Spruce	document_attested	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning	htc:0041	Tanning		Abies canadensis	simmonds_1892
+Abies canadensis	abies canadensis	latin_binomial	htc:doc_hemlock_spruce	Hemlock Spruce	document_attested	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning	htc:0041	Tanning		Abies canadensis	simmonds_1892
 Henbane	henbane	prefLabel	htc:doc_henbane	Henbane	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Hyoscyamus niger	simmonds_1892
 Hyoscyamus niger	hyoscyamus niger	latin_binomial	htc:doc_henbane	Henbane	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Hyoscyamus niger	simmonds_1892
 Hermanant Seeds	hermanant seeds	prefLabel	htc:doc_hermanant_seeds	Hermanant Seeds	document_attested	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning	htc:0041	Tanning		Hernandia ovigera	simmonds_1892
@@ -3032,6 +3074,12 @@ Illipe Oil	illipe oil	prefLabel	htc:doc_illipe_oil	Illipe Oil	document_attested	
 Indrajow	indrajow	prefLabel	htc:doc_indrajow	Indrajow	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Wrightia antidysenterica	simmonds_1892
 Wrightia antidysenterica	wrightia antidysenterica	latin_binomial	htc:doc_indrajow	Indrajow	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Wrightia antidysenterica	simmonds_1892
 Iodine	iodine	prefLabel	htc:doc_iodine	Iodine	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs	Q1103		ure_gutenberg
+Iron Wood	iron wood	prefLabel	htc:doc_iron_wood	Iron Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Ostrya virginica; Argania sideroxylon	simmonds_1892; mortimer_1823
+Ostrya virginica	ostrya virginica	latin_binomial	htc:doc_iron_wood	Iron Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Ostrya virginica; Argania sideroxylon	simmonds_1892; mortimer_1823
+Argania sideroxylon	argania sideroxylon	latin_binomial	htc:doc_iron_wood	Iron Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Ostrya virginica; Argania sideroxylon	simmonds_1892; mortimer_1823
+Jaborandi	jaborandi	prefLabel	htc:doc_jaborandi	Jaborandi	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1892
+Jarrah	jarrah	prefLabel	htc:doc_jarrah	Jarrah	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood	Q27693311	Eucalyptus rostrata	simmonds_1892
+Eucalyptus rostrata	eucalyptus rostrata	latin_binomial	htc:doc_jarrah	Jarrah	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood	Q27693311	Eucalyptus rostrata	simmonds_1892
 Jatropha	jatropha	prefLabel	htc:doc_jatropha	Jatropha	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds			watt_1908
 Kamala	kamala	prefLabel	htc:doc_kamala	Kamala	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			simmonds_1892
 Kapok	kapok	prefLabel	htc:doc_kapok	Kapok	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable	Q1728687	Bombax pentandrum	simmonds_1892
@@ -3049,7 +3097,7 @@ Kiriatha	kiriatha	prefLabel	htc:doc_kiriatha	Kiriatha	document_attested	htc:grp_
 Andrographis paniculata	andrographis paniculata	latin_binomial	htc:doc_kiriatha	Kiriatha	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Andrographis paniculata	simmonds_1892
 Kittool Fibre	kittool fibre	prefLabel	htc:doc_kittool_fibre	Kittool Fibre	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable		Caryota urens	simmonds_1892
 Caryota urens	caryota urens	latin_binomial	htc:doc_kittool_fibre	Kittool Fibre	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable		Caryota urens	simmonds_1892
-Knoppern	knoppern	prefLabel	htc:doc_knoppern	Knoppern	document_attested	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning	htc:0041	Tanning			simmonds_1892; ure_gutenberg
+Knoppern	knoppern	prefLabel	htc:doc_knoppern	Knoppern	document_attested	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning	htc:0041	Tanning			ure_gutenberg; simmonds_1892
 Kokum Oil	kokum oil	prefLabel	htc:doc_kokum_oil	Kokum Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124			Garcinia purpurea	simmonds_1892
 Garcinia purpurea	garcinia purpurea	latin_binomial	htc:doc_kokum_oil	Kokum Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124			Garcinia purpurea	simmonds_1892
 Kola Nuts	kola nuts	prefLabel	htc:doc_kola_nuts	Kola Nuts	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Sterculia acuminata	simmonds_1892
@@ -3082,6 +3130,8 @@ Lucerne Seed	lucerne seed	altLabel	htc:doc_lucerne	Lucerne	document_attested	htc
 alfalfa seed	alfalfa seed	altLabel	htc:doc_lucerne	Lucerne	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Medicago sativa	simmonds_1892
 Medicago sativa	medicago sativa	latin_binomial	htc:doc_lucerne	Lucerne	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Medicago sativa	simmonds_1892
 Luffa	luffa	prefLabel	htc:doc_luffa	Luffa	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable			watt_1908
+Magenta	magenta	prefLabel	htc:doc_magenta	Magenta	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0756				simmonds_1892
+Magnesite	magnesite	prefLabel	htc:doc_magnesite	Magnesite	document_attested	htc:grp_industrial_minerals	htc:sec_minerals_metals_manufactures	htc:1905		Q425450		simmonds_1892
 Mahoe	mahoe	prefLabel	htc:doc_mahoe	Mahoe	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood			simmonds_1892; simmonds_1892
 Mai Tikien	mai tikien	prefLabel	htc:doc_mai_tikien	Mai Tikien	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Metrosideros vera	simmonds_1892
 Metrosideros vera	metrosideros vera	latin_binomial	htc:doc_mai_tikien	Mai Tikien	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Metrosideros vera	simmonds_1892
@@ -3098,18 +3148,18 @@ Melia azadirachta	melia azadirachta	latin_binomial	htc:doc_margosa_oil	Margosa O
 Marjoram	marjoram	prefLabel	htc:doc_marjoram	Marjoram	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices		Origanum vulgare	simmonds_1892; mortimer_1823
 Origanum vulgare	origanum vulgare	latin_binomial	htc:doc_marjoram	Marjoram	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices		Origanum vulgare	simmonds_1892; mortimer_1823
 Marking Nut	marking nut	prefLabel	htc:doc_marking_nut	Marking Nut	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds			simmonds_1892
-Mate	mate	prefLabel	htc:doc_mate	Mate	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices			simmonds_1892
 Menthol	menthol	prefLabel	htc:doc_menthol	Menthol	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1892
 Mezereon Bark	mezereon bark	prefLabel	htc:doc_mezereon_bark	Mezereon Bark	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Daphne mezereum	simmonds_1892
 Daphne mezereum	daphne mezereum	latin_binomial	htc:doc_mezereon_bark	Mezereon Bark	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Daphne mezereum	simmonds_1892
 Millet Rice	millet rice	prefLabel	htc:doc_millet_rice	Millet Rice	document_attested	htc:grp_cereals_grains	htc:sec_food_and_drink	htc:0421			Panicum colonum	simmonds_1892
 Panicum colonum	panicum colonum	latin_binomial	htc:doc_millet_rice	Millet Rice	document_attested	htc:grp_cereals_grains	htc:sec_food_and_drink	htc:0421			Panicum colonum	simmonds_1892
-Mimosa Bark	mimosa bark	prefLabel	htc:doc_mimosa_bark	Mimosa Bark	document_attested	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning	htc:0041	Tanning			simmonds_1854
+Mimosa Bark	mimosa bark	prefLabel	htc:doc_mimosa_bark	Mimosa Bark	document_attested	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning	htc:0041	Tanning		Mimosa decurrens	simmonds_1854
+Mimosa decurrens	mimosa decurrens	latin_binomial	htc:doc_mimosa_bark	Mimosa Bark	document_attested	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning	htc:0041	Tanning		Mimosa decurrens	simmonds_1854
 Minium	minium	prefLabel	htc:doc_minium	Minium	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye	Q408757		ure_gutenberg; simmonds_1892
 Mordant	mordant	prefLabel	htc:doc_mordant	Mordant	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye	Q5857145		simmonds_1892; ure_gutenberg
 Morinda	morinda	prefLabel	htc:doc_morinda	Morinda	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			watt_1908
 Moringa Pterygosperma	moringa pterygosperma	prefLabel	htc:doc_moringa_pterygosperma	Moringa Pterygosperma	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil			watt_1908
-Morphia	morphia	prefLabel	htc:doc_morphia	Morphia	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1892; ure_gutenberg
+Morphia	morphia	prefLabel	htc:doc_morphia	Morphia	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			ure_gutenberg; simmonds_1892
 Mudar	mudar	prefLabel	htc:doc_mudar	Mudar	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable		Calotropis gigantea	simmonds_1892
 Calotropis Gigantea	calotropis gigantea	altLabel	htc:doc_mudar	Mudar	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable		Calotropis gigantea	simmonds_1892
 Muriatic Acid	muriatic acid	prefLabel	htc:doc_muriatic_acid	Muriatic Acid	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			simmonds_1892
@@ -3130,9 +3180,6 @@ myrobalan berry	myrobalan berry	altLabel	htc:doc_myrobalans	Myrobalans	document_
 Naples Yellow	naples yellow	prefLabel	htc:doc_naples_yellow	Naples Yellow	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			mortimer_1823; simmonds_1892
 Narwhal	narwhal	prefLabel	htc:doc_narwhal	Narwhal	document_attested	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning	htc:0071	Furs			simmonds_1892
 Natron	natron	prefLabel	htc:doc_natron	Natron	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:1343		Q427329		simmonds_1892; ure_gutenberg
-Neb Neb	neb neb	prefLabel	htc:doc_neb_neb	Neb Neb	document_attested	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning	htc:0041	Tanning		Acacia nilotica; Acacia arabica	simmonds_1892; simmonds_1892
-Acacia nilotica	acacia nilotica	latin_binomial	htc:doc_neb_neb	Neb Neb	document_attested	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning	htc:0041	Tanning		Acacia nilotica; Acacia arabica	simmonds_1892; simmonds_1892
-Acacia arabica	acacia arabica	latin_binomial	htc:doc_neb_neb	Neb Neb	document_attested	htc:grp_vegetable_tannins	htc:sec_hides_skins_tanning	htc:0041	Tanning		Acacia nilotica; Acacia arabica	simmonds_1892; simmonds_1892
 Neem Oil	neem oil	prefLabel	htc:doc_neem_oil	Neem Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil	Q910656		simmonds_1892; simmonds_1892
 Neroli Oil	neroli oil	prefLabel	htc:doc_neroli_oil	Neroli Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil			simmonds_1892
 Neroli	neroli	altLabel	htc:doc_neroli_oil	Neroli Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil			simmonds_1892
@@ -3153,21 +3200,26 @@ poison nut	poison nut	altLabel	htc:doc_nux_vomica	Nux Vomica	document_attested	h
 semen strychnos	semen strychnos	altLabel	htc:doc_nux_vomica	Nux Vomica	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug			Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865); Danika Drugs.xlsx (SKOS Sheet)
 quaker buttons	quaker buttons	altLabel	htc:doc_nux_vomica	Nux Vomica	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug			Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865); Danika Drugs.xlsx (SKOS Sheet)
 Strychnos Nux Vomica	strychnos nux vomica	altLabel	htc:doc_nux_vomica	Nux Vomica	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug			Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865); Danika Drugs.xlsx (SKOS Sheet)
+Ochro	ochro	prefLabel	htc:doc_ochro	Ochro	document_attested	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink	htc:0085			Abelmoschus esculentus	simmonds_1892
+Abelmoschus esculentus	abelmoschus esculentus	latin_binomial	htc:doc_ochro	Ochro	document_attested	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink	htc:0085			Abelmoschus esculentus	simmonds_1892
 Oleanthic Ether	oleanthic ether	prefLabel	htc:doc_oleanthic_ether	Oleanthic Ether	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			simmonds_1892
 Olive Wood	olive wood	prefLabel	htc:doc_olive_wood	Olive Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood	Q35101402		simmonds_1892
 Ondee Oil	ondee oil	prefLabel	htc:doc_ondee_oil	Ondee Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124			Calophyllum inophyllum	simmonds_1892
 Calophyllum inophyllum	calophyllum inophyllum	latin_binomial	htc:doc_ondee_oil	Ondee Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124			Calophyllum inophyllum	simmonds_1892
 Opobalsam	opobalsam	prefLabel	htc:doc_opobalsam	Opobalsam	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1892; ure_gutenberg
-Opoponax	opoponax	prefLabel	htc:doc_opoponax	Opoponax	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum			simmonds_1892; mortimer_1823
+Opoponax	opoponax	prefLabel	htc:doc_opoponax	Opoponax	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum			simmonds_1892; mcculloch_1880
 Orange peel	orange peel	prefLabel	htc:doc_orange_peel	Orange peel	document_attested	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink	htc:0010		Q102035949		1866 British Customs Commodities List (Danika / HGIS Lab)
 Orpiment	orpiment	prefLabel	htc:doc_orpiment	Orpiment	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Pigment; Poison	Q419183		1866 British Customs Commodities List (Danika / HGIS Lab)
 Otto of Roses	otto of roses	prefLabel	htc:doc_otto_of_roses	Otto of Roses	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Essential Oil			1866 British Customs Commodities List (Danika / HGIS Lab)
 Attar of Roses	attar of roses	altLabel	htc:doc_otto_of_roses	Otto of Roses	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Essential Oil			1866 British Customs Commodities List (Danika / HGIS Lab)
-Oxalic Acid	oxalic acid	prefLabel	htc:doc_oxalic_acid	Oxalic Acid	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical	Q184832		ure_gutenberg; simmonds_1892
+Oxalic Acid	oxalic acid	prefLabel	htc:doc_oxalic_acid	Oxalic Acid	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical	Q184832	Oxalis acetosella	ure_gutenberg; simmonds_1892
+Oxalis acetosella	oxalis acetosella	latin_binomial	htc:doc_oxalic_acid	Oxalic Acid	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical	Q184832	Oxalis acetosella	ure_gutenberg; simmonds_1892
 Padouk	padouk	prefLabel	htc:doc_padouk	Padouk	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood	Q947327	Pterocarpus dalbergioides	simmonds_1892
 Pterocarpus dalbergioides	pterocarpus dalbergioides	latin_binomial	htc:doc_padouk	Padouk	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood	Q947327	Pterocarpus dalbergioides	simmonds_1892
 Pareira Brava	pareira brava	prefLabel	htc:doc_pareira_brava	Pareira Brava	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			mortimer_1823
-Partridge Wood	partridge wood	prefLabel	htc:doc_partridge_wood	Partridge Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood			simmonds_1892
+Partridge Wood	partridge wood	prefLabel	htc:doc_partridge_wood	Partridge Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Heisteria coccinea; Andira inermis	simmonds_1892
+Heisteria coccinea	heisteria coccinea	latin_binomial	htc:doc_partridge_wood	Partridge Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Heisteria coccinea; Andira inermis	simmonds_1892
+Andira inermis	andira inermis	latin_binomial	htc:doc_partridge_wood	Partridge Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Heisteria coccinea; Andira inermis	simmonds_1892
 Pellitory	pellitory	prefLabel	htc:doc_pellitory	Pellitory	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Anthemis pyrethrum	simmonds_1892; mcculloch_1880
 Anthemis pyrethrum	anthemis pyrethrum	latin_binomial	htc:doc_pellitory	Pellitory	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Anthemis pyrethrum	simmonds_1892; mcculloch_1880
 Pencil Cedar	pencil cedar	prefLabel	htc:doc_pencil_cedar	Pencil Cedar	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Juniperus bermudiana	simmonds_1892
@@ -3188,29 +3240,30 @@ Pomegranate Bark	pomegranate bark	prefLabel	htc:doc_pomegranate_bark	Pomegranate
 Poppy Seed Oil	poppy seed oil	prefLabel	htc:doc_poppy_seed_oil	Poppy Seed Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil	Q1757003		simmonds_1892
 Prince's Wood	prince s wood	prefLabel	htc:doc_prince_s_wood	Prince's Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Cordia gerascanthus	simmonds_1892; simmonds_1892
 Cordia gerascanthus	cordia gerascanthus	latin_binomial	htc:doc_prince_s_wood	Prince's Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Cordia gerascanthus	simmonds_1892; simmonds_1892
-Prussian Blue	prussian blue	prefLabel	htc:doc_prussian_blue	Prussian Blue	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			mortimer_1823; ure_gutenberg
+Prussian Blue	prussian blue	prefLabel	htc:doc_prussian_blue	Prussian Blue	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			ure_gutenberg; mortimer_1823
 Pumice Stone	pumice stone	prefLabel	htc:doc_pumice_stone	Pumice Stone	document_attested	htc:grp_industrial_minerals	htc:sec_minerals_metals_manufactures	htc:1905				simmonds_1892; ure_gutenberg
 Putchuk	putchuk	prefLabel	htc:doc_putchuk	Putchuk	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Aucklandia costus; Costus arabicus	simmonds_1892; simmonds_1892
 costus	costus	altLabel	htc:doc_putchuk	Putchuk	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Aucklandia costus; Costus arabicus	simmonds_1892; simmonds_1892
 Aucklandia costus	aucklandia costus	latin_binomial	htc:doc_putchuk	Putchuk	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Aucklandia costus; Costus arabicus	simmonds_1892; simmonds_1892
 Costus arabicus	costus arabicus	latin_binomial	htc:doc_putchuk	Putchuk	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Aucklandia costus; Costus arabicus	simmonds_1892; simmonds_1892
-Raccoon	raccoon	prefLabel	htc:doc_raccoon	Raccoon	document_attested	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning	htc:0071	Fur			1866 British Customs Commodities List (Danika / HGIS Lab)
 Realgar	realgar	prefLabel	htc:doc_realgar	Realgar	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye	Q109746		mortimer_1823; simmonds_1892
 Red Liquor	red liquor	prefLabel	htc:doc_red_liquor	Red Liquor	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			simmonds_1892; ure_gutenberg
 Red Ochre	red ochre	prefLabel	htc:doc_red_ochre	Red Ochre	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			mortimer_1823
 Red Sanders Wood	red sanders wood	prefLabel	htc:doc_red_sanders_wood	Red Sanders Wood	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye		Pterocarpus santalinus	simmonds_1892
+Sandal	sandal	altLabel	htc:doc_red_sanders_wood	Red Sanders Wood	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye		Pterocarpus santalinus	simmonds_1892
 Sanders Wood	sanders wood	altLabel	htc:doc_red_sanders_wood	Red Sanders Wood	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye		Pterocarpus santalinus	simmonds_1892
 Pterocarpus santalinus	pterocarpus santalinus	latin_binomial	htc:doc_red_sanders_wood	Red Sanders Wood	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye		Pterocarpus santalinus	simmonds_1892
 Rhea	rhea	prefLabel	htc:doc_rhea	Rhea	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable			simmonds_1892
 Ricinus Communis	ricinus communis	prefLabel	htc:doc_ricinus_communis	Ricinus Communis	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds			watt_1908
+Rocambolle	rocambolle	prefLabel	htc:doc_rocambolle	Rocambolle	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices		Allium scorodoprasum	simmonds_1892
+Allium scorodoprasum	allium scorodoprasum	latin_binomial	htc:doc_rocambolle	Rocambolle	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices		Allium scorodoprasum	simmonds_1892
 Rouge	rouge	prefLabel	htc:doc_rouge	Rouge	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical		Carthamus tinctorius	ure_gutenberg; simmonds_1892
 Carthamus tinctorius	carthamus tinctorius	latin_binomial	htc:doc_rouge	Rouge	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical		Carthamus tinctorius	ure_gutenberg; simmonds_1892
 Rusa Oil	rusa oil	prefLabel	htc:doc_rusa_oil	Rusa Oil	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil			simmonds_1892
 Sagapenum	sagapenum	prefLabel	htc:doc_sagapenum	Sagapenum	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum		Ferula persica	simmonds_1892
 Ferula persica	ferula persica	latin_binomial	htc:doc_sagapenum	Sagapenum	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum		Ferula persica	simmonds_1892
-Sage	sage	prefLabel	htc:doc_sage	Sage	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices		Tarchonanthus camphoratus; Salvia officinalis	simmonds_1892
-Tarchonanthus camphoratus	tarchonanthus camphoratus	latin_binomial	htc:doc_sage	Sage	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices		Tarchonanthus camphoratus; Salvia officinalis	simmonds_1892
-Salvia officinalis	salvia officinalis	latin_binomial	htc:doc_sage	Sage	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices		Tarchonanthus camphoratus; Salvia officinalis	simmonds_1892
+Sage	sage	prefLabel	htc:doc_sage	Sage	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices		Salvia officinalis	simmonds_1892
+Salvia officinalis	salvia officinalis	latin_binomial	htc:doc_sage	Sage	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices		Salvia officinalis	simmonds_1892
 Sainfoin	sainfoin	prefLabel	htc:doc_sainfoin	Sainfoin	document_attested	htc:grp_fodder_oilcakes	htc:sec_livestock_fodder	htc:0316			Hedysarum onobrychis	simmonds_1892
 Hedysarum onobrychis	hedysarum onobrychis	latin_binomial	htc:doc_sainfoin	Sainfoin	document_attested	htc:grp_fodder_oilcakes	htc:sec_livestock_fodder	htc:0316			Hedysarum onobrychis	simmonds_1892
 Sal Ammoniac	sal ammoniac	prefLabel	htc:doc_sal_ammoniac	Sal Ammoniac	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			simmonds_1892
@@ -3219,7 +3272,8 @@ volatile alkali	volatile alkali	altLabel	htc:doc_sal_volatile	Sal Volatile	docum
 Salicine	salicine	prefLabel	htc:doc_salicine	Salicine	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Extract from poplar bark		Salix alba; Salix helix	1866 British Customs Commodities List (Danika / HGIS Lab)
 Salix alba	salix alba	latin_binomial	htc:doc_salicine	Salicine	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Extract from poplar bark		Salix alba; Salix helix	1866 British Customs Commodities List (Danika / HGIS Lab)
 Salix helix	salix helix	latin_binomial	htc:doc_salicine	Salicine	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Extract from poplar bark		Salix alba; Salix helix	1866 British Customs Commodities List (Danika / HGIS Lab)
-Sandal wood	sandal wood	prefLabel	htc:doc_sandal_wood	Sandal wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0010	overharvested today			1866 British Customs Commodities List (Danika / HGIS Lab)
+Sandal wood	sandal wood	prefLabel	htc:doc_sandal_wood	Sandal wood	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	overharvested today		Rhamnus dahuricus	1866 British Customs Commodities List (Danika / HGIS Lab)
+Rhamnus dahuricus	rhamnus dahuricus	latin_binomial	htc:doc_sandal_wood	Sandal wood	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	overharvested today		Rhamnus dahuricus	1866 British Customs Commodities List (Danika / HGIS Lab)
 Sandarac	sandarac	prefLabel	htc:doc_sandarac	Sandarac	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q201703	Thuja articulata	simmonds_1892
 Gum Sandarac(k)	gum sandarac k	altLabel	htc:doc_sandarac	Sandarac	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q201703	Thuja articulata	simmonds_1892
 gum sandarac	gum sandarac	altLabel	htc:doc_sandarac	Sandarac	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q201703	Thuja articulata	simmonds_1892
@@ -3239,12 +3293,12 @@ Senika Root	senika root	prefLabel	htc:doc_senika_root	Senika Root	document_attes
 seneca root	seneca root	altLabel	htc:doc_senika_root	Senika Root	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug			Danika Drugs.xlsx (SKOS Sheet); 1866 British Customs Commodities List (Danika / HGIS Lab)
 Senika	senika	altLabel	htc:doc_senika_root	Senika Root	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug			Danika Drugs.xlsx (SKOS Sheet); 1866 British Customs Commodities List (Danika / HGIS Lab)
 Sepia	sepia	prefLabel	htc:doc_sepia	Sepia	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			ure_gutenberg; simmonds_1892
-Sesame	sesame	prefLabel	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892
-Sesamum Indicum	sesamum indicum	altLabel	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892
-Sesamum Seed	sesamum seed	altLabel	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892
-Teel Seed	teel seed	altLabel	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892
-Wangala	wangala	altLabel	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892
-Sesamum orientale	sesamum orientale	latin_binomial	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892
+Sesame	sesame	prefLabel	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892; simmonds_1854
+Sesamum Indicum	sesamum indicum	altLabel	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892; simmonds_1854
+Sesamum Seed	sesamum seed	altLabel	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892; simmonds_1854
+Teel Seed	teel seed	altLabel	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892; simmonds_1854
+Wangala	wangala	altLabel	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892; simmonds_1854
+Sesamum orientale	sesamum orientale	latin_binomial	htc:doc_sesame	Sesame	document_attested	htc:grp_oilseeds	htc:sec_oils_fats_waxes	htc:0012	Seeds		Sesamum orientale	simmonds_1892; simmonds_1854
 Shagreen	shagreen	prefLabel	htc:doc_shagreen	Shagreen	document_attested	htc:grp_furs_marine_pelts	htc:sec_hides_skins_tanning	htc:0071	Furs	Q1058858		ure_gutenberg; simmonds_1892
 Shea Butter	shea butter	prefLabel	htc:doc_shea_butter	Shea Butter	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil	Q495857	Bassia parkii	simmonds_1892
 Bassia parkii	bassia parkii	latin_binomial	htc:doc_shea_butter	Shea Butter	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil	Q495857	Bassia parkii	simmonds_1892
@@ -3263,13 +3317,14 @@ Soy Bean	soy bean	prefLabel	htc:doc_soy_bean	Soy Bean	document_attested	htc:grp_
 Spearmint	spearmint	prefLabel	htc:doc_spearmint	Spearmint	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil		Mentha viridis	simmonds_1892
 Mentha viridis	mentha viridis	latin_binomial	htc:doc_spearmint	Spearmint	document_attested	htc:grp_vegetable_oils	htc:sec_oils_fats_waxes	htc:0124	Oil		Mentha viridis	simmonds_1892
 Spirit of Ammonia	spirit of ammonia	prefLabel	htc:doc_spirit_of_ammonia	Spirit of Ammonia	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			ure_gutenberg
-Squill	squill	prefLabel	htc:doc_squill	Squill	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Urginea scilla; Scilla maritima	simmonds_1892; mortimer_1823
-Urginea scilla	urginea scilla	latin_binomial	htc:doc_squill	Squill	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Urginea scilla; Scilla maritima	simmonds_1892; mortimer_1823
-Scilla maritima	scilla maritima	latin_binomial	htc:doc_squill	Squill	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Urginea scilla; Scilla maritima	simmonds_1892; mortimer_1823
+Squill	squill	prefLabel	htc:doc_squill	Squill	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Urginea scilla; Scilla maritima	simmonds_1892; mcculloch_1880
+Urginea scilla	urginea scilla	latin_binomial	htc:doc_squill	Squill	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Urginea scilla; Scilla maritima	simmonds_1892; mcculloch_1880
+Scilla maritima	scilla maritima	latin_binomial	htc:doc_squill	Squill	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Urginea scilla; Scilla maritima	simmonds_1892; mcculloch_1880
 Star Anise	star anise	prefLabel	htc:doc_star_anise	Star Anise	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408		Q1760637	Illicium anisatum	simmonds_1892
 Illicium anisatum	illicium anisatum	latin_binomial	htc:doc_star_anise	Star Anise	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408		Q1760637	Illicium anisatum	simmonds_1892
 Steatite	steatite	prefLabel	htc:doc_steatite	Steatite	document_attested	htc:grp_industrial_minerals	htc:sec_minerals_metals_manufactures	htc:1905		Q18364120		simmonds_1892; ure_gutenberg
 Storax	storax	prefLabel	htc:doc_storax	Storax	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs	Q907000	Liquidambar styraciflua	ure_gutenberg; mortimer_1823
+Altingia Excelsa	altingia excelsa	altLabel	htc:doc_storax	Storax	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs	Q907000	Liquidambar styraciflua	ure_gutenberg; mortimer_1823
 Liquidambar styraciflua	liquidambar styraciflua	latin_binomial	htc:doc_storax	Storax	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs	Q907000	Liquidambar styraciflua	ure_gutenberg; mortimer_1823
 Strontia	strontia	prefLabel	htc:doc_strontia	Strontia	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			ure_gutenberg
 Strychnine	strychnine	prefLabel	htc:doc_strychnine	Strychnine	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug	Q194406		Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)
@@ -3277,8 +3332,8 @@ nux vomica alkaloid	nux vomica alkaloid	altLabel	htc:doc_strychnine	Strychnine	d
 Strychnia	strychnia	altLabel	htc:doc_strychnine	Strychnine	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drug	Q194406		Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)
 Sugar of Lead	sugar of lead	prefLabel	htc:doc_sugar_of_lead	Sugar of Lead	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			ure_gutenberg; simmonds_1892
 Sulphate of Ammonia	sulphate of ammonia	prefLabel	htc:doc_sulphate_of_ammonia	Sulphate of Ammonia	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical			ure_gutenberg
-Tacamahac	tacamahac	prefLabel	htc:doc_tacamahac	Tacamahac	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q2389105		ure_gutenberg; mcculloch_1880
-Tacamahaca	tacamahaca	altLabel	htc:doc_tacamahac	Tacamahac	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q2389105		ure_gutenberg; mcculloch_1880
+Tacamahac	tacamahac	prefLabel	htc:doc_tacamahac	Tacamahac	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q2389105		mcculloch_1880; ure_gutenberg
+Tacamahaca	tacamahaca	altLabel	htc:doc_tacamahac	Tacamahac	document_attested	htc:grp_gums_resins_naval_stores	htc:sec_botanicals_dyes_chemicals	htc:0220	Gum	Q2389105		mcculloch_1880; ure_gutenberg
 Tamarind Fish	tamarind fish	prefLabel	htc:doc_tamarind_fish	Tamarind Fish	document_attested	htc:grp_fish_seafood	htc:sec_food_and_drink	htc:0351				simmonds_1892
 Tampico Fibre	tampico fibre	prefLabel	htc:doc_tampico_fibre	Tampico Fibre	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable		Yucca baccata	simmonds_1892
 Yucca baccata	yucca baccata	latin_binomial	htc:doc_tampico_fibre	Tampico Fibre	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable		Yucca baccata	simmonds_1892
@@ -3322,9 +3377,15 @@ verdigres	verdigres	altLabel	htc:doc_verdigris	Verdigris	document_attested	htc:g
 Verditer	verditer	prefLabel	htc:doc_verditer	Verditer	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			mortimer_1823; simmonds_1892
 Vermilion	vermilion	prefLabel	htc:doc_vermilion	Vermilion	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye			simmonds_1892
 Vinegar of Cantharides	vinegar of cantharides	prefLabel	htc:doc_vinegar_of_cantharides	Vinegar of Cantharides	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1892
-Vitriol	vitriol	prefLabel	htc:doc_vitriol	Vitriol	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical	Q427282		simmonds_1892; simmonds_1892
+Violet Wood	violet wood	prefLabel	htc:doc_violet_wood	Violet Wood	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood			simmonds_1892
+Vitriol	vitriol	prefLabel	htc:doc_vitriol	Vitriol	document_attested	htc:grp_industrial_chemicals_alkalis	htc:sec_botanicals_dyes_chemicals	htc:0506	Chemical	Q427282		simmonds_1892; ure_gutenberg
+Vulture Feathers	vulture feathers	prefLabel	htc:doc_vulture_feathers	Vulture Feathers	document_attested	htc:grp_animal_fibres	htc:sec_fibres_textiles	htc:1590				simmonds_1892; simmonds_1892
+Wadaduri	wadaduri	prefLabel	htc:doc_wadaduri	Wadaduri	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Lecythis grandiflora	simmonds_1892
+Lecythis grandiflora	lecythis grandiflora	latin_binomial	htc:doc_wadaduri	Wadaduri	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Lecythis grandiflora	simmonds_1892
 Wallaba	wallaba	prefLabel	htc:doc_wallaba	Wallaba	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Eperua falcata	simmonds_1892
 Eperua falcata	eperua falcata	latin_binomial	htc:doc_wallaba	Wallaba	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Eperua falcata	simmonds_1892
+Wild Sage	wild sage	prefLabel	htc:doc_wild_sage	Wild Sage	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices		Tarchonanthus camphoratus	simmonds_1892
+Tarchonanthus camphoratus	tarchonanthus camphoratus	latin_binomial	htc:doc_wild_sage	Wild Sage	document_attested	htc:grp_spices_condiments	htc:sec_food_and_drink	htc:0408	Spices		Tarchonanthus camphoratus	simmonds_1892
 Woad	woad	prefLabel	htc:doc_woad	Woad	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye		Isatis tinctoria	ure_gutenberg; mortimer_1823
 Isatis tinctoria	isatis tinctoria	latin_binomial	htc:doc_woad	Woad	document_attested	htc:grp_natural_dyestuffs	htc:sec_botanicals_dyes_chemicals	htc:0054	Dye		Isatis tinctoria	ure_gutenberg; mortimer_1823
 Wolfram	wolfram	prefLabel	htc:doc_wolfram	Wolfram	document_attested	htc:grp_metallic_ores	htc:sec_minerals_metals_manufactures	htc:0382				simmonds_1892; ure_gutenberg
@@ -3332,9 +3393,10 @@ Woodroof	woodroof	prefLabel	htc:doc_woodroof	Woodroof	document_attested	htc:grp_
 Asperula odorata	asperula odorata	latin_binomial	htc:doc_woodroof	Woodroof	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Asperula odorata	simmonds_1892
 Worm Seed	worm seed	prefLabel	htc:doc_worm_seed	Worm Seed	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Chenopodium anthelminticum	simmonds_1892
 Chenopodium anthelminticum	chenopodium anthelminticum	latin_binomial	htc:doc_worm_seed	Worm Seed	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Chenopodium anthelminticum	simmonds_1892
-Yam	yam	prefLabel	htc:doc_yam	Yam	document_attested	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink	htc:0085		Q8047551		simmonds_1892
-Yarrow	yarrow	prefLabel	htc:doc_yarrow	Yarrow	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Achillea millefolium	simmonds_1892
-Achillea millefolium	achillea millefolium	latin_binomial	htc:doc_yarrow	Yarrow	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs		Achillea millefolium	simmonds_1892
+Yam	yam	prefLabel	htc:doc_yam	Yam	document_attested	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink	htc:0085		Q8047551	Dioscorea sativa	simmonds_1892
+Affoo Yam	affoo yam	altLabel	htc:doc_yam	Yam	document_attested	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink	htc:0085		Q8047551	Dioscorea sativa	simmonds_1892
+Dioscorea sativa	dioscorea sativa	latin_binomial	htc:doc_yam	Yam	document_attested	htc:grp_fruits_nuts_vegetables	htc:sec_food_and_drink	htc:0085		Q8047551	Dioscorea sativa	simmonds_1892
+Yerba Mate	yerba mate	prefLabel	htc:doc_yerba_mate	Yerba Mate	document_attested	htc:grp_drugs_medicinal_botanicals	htc:sec_botanicals_dyes_chemicals	htc:0122	Drugs			simmonds_1892
 Yew	yew	prefLabel	htc:doc_yew	Yew	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Taxus baccata	simmonds_1892
 Taxus baccata	taxus baccata	latin_binomial	htc:doc_yew	Yew	document_attested	htc:grp_hewn_round_timber	htc:sec_forestry_timber	htc:0070	Wood		Taxus baccata	simmonds_1892
 Zacaton	zacaton	prefLabel	htc:doc_zacaton	Zacaton	document_attested	htc:grp_bast_plant_fibres	htc:sec_fibres_textiles	htc:0822	Vegetable			simmonds_1892

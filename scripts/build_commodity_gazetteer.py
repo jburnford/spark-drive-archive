@@ -899,6 +899,7 @@ def main():
                 "processing_state": cp["state"],
                 "ghost_acres_domain": cp["domain"],
                 "land_basis": cp["land_basis"],
+                "harvest_mode": v4.harvest_mode(cp["land_basis"]),
                 "theodoridis_category": cp["theodoridis"],
                 "sitc_code": cp["sitc"],
                 "is_aggregate": False,
@@ -1028,13 +1029,11 @@ def main():
         "# ============================================================================",
         "# EXTENDED DOCUMENT-ATTESTED TIER (TEXT-MINING VOCABULARY — htc:doc_*)",
         "# ============================================================================",
-        'oe:attestationBasis a owl:DatatypeProperty ; rdfs:label "attestation basis (customs_enumerated vs document_attested)"@en ; rdfs:domain skos:Concept ; rdfs:range xsd:string .',
         'oe:subsumedInCustomsHeading a owl:ObjectProperty ; rdfs:label "customs catch-all heading under which this minor commodity was typically subsumed"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept ; owl:inverseOf oe:subsumesDocumentConcept .',
         'oe:subsumesDocumentConcept a owl:ObjectProperty ; rdfs:label "document-attested minor commodity subsumed inside this unenumerated customs heading"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept ; owl:inverseOf oe:subsumedInCustomsHeading .',
         "",
     ]
     base_jld["@graph"].extend([
-        {"@id": "oe:attestationBasis", "@type": "owl:DatatypeProperty", "rdfs:label": {"@value": "attestation basis (customs_enumerated vs document_attested)", "@language": "en"}, "rdfs:domain": {"@id": "skos:Concept"}, "rdfs:range": {"@id": "xsd:string"}},
         {"@id": "oe:subsumedInCustomsHeading", "@type": "owl:ObjectProperty", "rdfs:label": {"@value": "customs catch-all heading under which this minor commodity was typically subsumed", "@language": "en"}, "rdfs:domain": {"@id": "skos:Concept"}, "rdfs:range": {"@id": "skos:Concept"}, "owl:inverseOf": {"@id": "oe:subsumesDocumentConcept"}},
         {"@id": "oe:subsumesDocumentConcept", "@type": "owl:ObjectProperty", "rdfs:label": {"@value": "document-attested minor commodity subsumed inside this unenumerated customs heading", "@language": "en"}, "rdfs:domain": {"@id": "skos:Concept"}, "rdfs:range": {"@id": "skos:Concept"}, "owl:inverseOf": {"@id": "oe:subsumedInCustomsHeading"}},
     ])
@@ -1060,6 +1059,7 @@ def main():
             f"oe:groundingStatus {v4.ttl_str(c['status'])}",
             f"oe:ghostAcresDomain {v4.ttl_str(f['ghost_acres_domain'])}",
             f"oe:landBasis {v4.ttl_str(f['land_basis'])}",
+            f"oe:harvestMode {v4.ttl_str(f['harvest_mode'])}",
             f"oe:sitcCode {v4.ttl_str(f['sitc_code'])}",
         ]
         node = {
@@ -1074,6 +1074,7 @@ def main():
             "oe:groundingStatus": c["status"],
             "oe:ghostAcresDomain": f["ghost_acres_domain"],
             "oe:landBasis": f["land_basis"],
+            "oe:harvestMode": f["harvest_mode"],
             "oe:sitcCode": f["sitc_code"],
         }
         if c["skos_altLabels"]:

@@ -27,6 +27,7 @@ ZERO QIDs from memory.
 """
 
 import csv
+import os
 import gzip
 import json
 import re
@@ -304,22 +305,22 @@ RESIDUAL_RE = re.compile(
 # Explicit merged customs lines -> (component_targets, component_htc_labels_for_combinesConcept)
 COMPOUND_HEADINGS = {
     "tallow and stearine": ([("tallow", None), ("stearin", None)], ["Tallow", "Stearine"]),
-    "barley and rye": ([("cereal", "hordeum vulgare"), ("cereal", "secale cereale")], ["Barley", "Rye"]),
+    "barley and rye": ([("barley", "hordeum vulgare"), ("rye", "secale cereale")], ["Barley", "Rye"]),
     "bacon and hams": ([("bacon", None), ("ham", None)], ["Bacon", "Hams"]),
-    "ale beer and cider": ([("beer", None), ("cider", None)], ["Beer", "Cider"]),
+    "ale beer and cider": ([("beer", None), ("cider", None)], ["Beer and Ale", "Cider"]),
     "ale and beer": ([("beer", None)], ["Beer"]),
-    "beans and peas": ([("bean", None), ("legume", "pisum sativum")], ["Beans", "Peas"]),
-    "peas and beans": ([("legume", "pisum sativum"), ("bean", None)], ["Peas", "Beans"]),
+    "beans and peas": ([("bean", None), ("pea", "pisum sativum")], ["Beans", "Peas"]),
+    "peas and beans": ([("pea", "pisum sativum"), ("bean", None)], ["Peas", "Beans"]),
     "oranges and lemons": ([("orange", None), ("lemon", None)], ["Oranges", "Lemons"]),
     "lemons and oranges": ([("lemon", None), ("orange", None)], ["Lemons", "Oranges"]),
-    "cutch and gambier": ([("catechu", None), ("gambier", "uncaria gambir")], ["Cutch", "Terra Japonica"]),
+    "cutch and gambier": ([("catechu", None), ("gambier", "uncaria gambir")], ["Cutch", "Gambier"]),
     "masts and spars": ([("mast", None), ("spar", None)], ["Masts", "Spars"]),
-    "furs and skins": ([("fur", None), ("hide", None)], ["Furs"]),
+    "furs and skins": ([("fur", None), ("hide", None)], ["Furs", "Skins Unenumerated Undressed"]),
     "planks and boards": ([("lumber", None)], ["Planks", "Boards"]),
     "flaxseed and linseed": ([("seed", "linum usitatissimum")], ["Linseed"]),
     "pearl and pot ashes": ([("potash", None), ("potassium carbonate", None)], ["Ashes Pot", "Pearl Ashes"]),
     "pot and pearl ashes": ([("potash", None), ("potassium carbonate", None)], ["Ashes Pot", "Pearl Ashes"]),
-    "pig and scrap iron": ([("pig iron", None)], ["Iron Pig"]),
+    "pig and scrap iron": ([("pig iron", None)], ["Iron Pig", "Scrap Iron"]),
     "boots and shoes": ([("footwear", None)], []),
     "leather manufactures boots and shoes": ([("footwear", None)], []),
     "wood and timber basswood butternut and hickory": ([("wood", "tilia"), ("wood", "juglans cinerea"), ("wood", "carya")], []),
@@ -518,16 +519,16 @@ CANONICAL_MAP = {
     "barley meal": ("flour", "hordeum vulgare", "skos:broadMatch"),
     "barley meal and flour": ("flour", "hordeum vulgare", "skos:broadMatch"),
     "rye meal": ("flour", "secale cereale", "skos:broadMatch"),
-    "oats": ("cereal", "avena sativa", "skos:broadMatch"),
-    "barley": ("cereal", "hordeum vulgare", "skos:broadMatch"),
-    "rye": ("cereal", "secale cereale", "skos:broadMatch"),
-    "indian corn": ("cereal", "zea mays", "skos:broadMatch"),
-    "indian corn or maize": ("cereal", "zea mays", "skos:broadMatch"),
-    "maize": ("cereal", "zea mays", "skos:broadMatch"),
+    "oats": ("oats", "avena sativa", "skos:exactMatch"),
+    "barley": ("barley", "hordeum vulgare", "skos:exactMatch"),
+    "rye": ("rye", "secale cereale", "skos:exactMatch"),
+    "indian corn": ("maize", "zea mays", "skos:closeMatch"),
+    "indian corn or maize": ("maize", "zea mays", "skos:closeMatch"),
+    "maize": ("maize", "zea mays", "skos:exactMatch"),
     "buckwheat": ("cereal", "fagopyrum esculentum", "skos:broadMatch"),
     "rice": ("rice", None, "skos:exactMatch"),
-    "peas": ("legume", "pisum sativum", "skos:broadMatch"),
-    "pease": ("legume", "pisum sativum", "skos:broadMatch"),
+    "peas": ("pea", "pisum sativum", "skos:closeMatch"),
+    "pease": ("pea", "pisum sativum", "skos:closeMatch"),
     "beans": ("bean", None, "skos:exactMatch"),
     "malt": ("malt", None, "skos:exactMatch"),
     "hops": ("hops", None, "skos:exactMatch"),
@@ -962,7 +963,30 @@ VALID_STATES = {"unspecified", "manufactured", "raw_unprocessed", "refined_extra
                 "dressed_tanned", "live", "milled_ground", "raw_ore", "wet_salted", "dried_cured", "byproduct_cake",
                 "dairy_processed", "processed_pulp", "processed_fibre"}
 VALID_LAND = {"terrestrial_crop", "industrial_manufactured", "terrestrial_pasture", "mineral", "terrestrial_forest",
-              "unclassified", "marine"}
+              "unclassified", "marine", "terrestrial_wild_hunted"}
+
+# Wild-taken land animals (trapped, hunted, collected): not the product of pasture or cropland.
+WILD_ANIMAL_RE = re.compile(
+    r"\b(beaver|martens?|mink|otter|musquash|muskrat|fox|racc?oon|lynx|loupcervier|wolverine|carcajoux|wolf|bear|"
+    r"deer|elk|moose|cariboux?|buffalo\s+robes|buffaloe|badger|weasel|ermine|fitch|sable|squirrel|calabar|"
+    r"chinchilla|kolinski|nutria|marmottes?|fisher|tiger|hare|kit\s+furs|elephants?|ivory|venison|castor|castorum|"
+    r"leeches|buck)\b", re.I)
+DOMESTIC_PELT_RE = re.compile(r"\b(sheep'?s?|lambs?|goats?|kids?|rabbits?|coney|cats?)\b", re.I)
+WILD_ELIGIBLE_GROUPS = {"grp_furs_marine_pelts", "grp_raw_hides_skins", "grp_tanned_leather", "grp_meats_provisions",
+                        "grp_fertilizers_animal_materials", "grp_drugs_medicinal_botanicals", "grp_animal_fibres",
+                        "grp_live_food_animals", "grp_customs_residuals"}
+
+
+def harvest_mode(land_basis: str) -> str:
+    """How the commodity leaves the ecosystem. `wild_hunted_fished` deliberately joins wild land animals
+    (furs, game, ivory, castoreum) to the fisheries and whaling (land_basis `marine`): none of them rests on
+    cultivated or grazed acres."""
+    return {
+        "marine": "wild_hunted_fished", "terrestrial_wild_hunted": "wild_hunted_fished",
+        "terrestrial_crop": "cultivated", "terrestrial_pasture": "animal_husbandry",
+        "terrestrial_forest": "forest_harvest", "mineral": "mineral_extraction",
+        "industrial_manufactured": "manufacture",
+    }.get(land_basis, "unclassified")
 
 
 def load_curated_overrides(reg):
@@ -1044,6 +1068,16 @@ def apply_curated_field_fixes(concepts, fixes, rejections):
             lex[d["source_work"]].append(d)
     add_names = {r["value"].lower() for rs in fixes.values() for r in rs if r["field"] == "source_taxon" and r["action"] == "add"}
     wd = query_wikidata(add_names) if add_names else {}
+    by_alias = find_taxa_by_alias({n for n in add_names if not pick_taxon(wd.get(n, []))})
+    stale_rows = []
+
+    def stale(msg):
+        """A fix that no longer matches means its root cause changed upstream. Fail loudly by default;
+        OE_LENIENT_FIXES=1 lists the stale rows instead so they can be reviewed and pruned."""
+        if not os.environ.get("OE_LENIENT_FIXES"):
+            raise ValueError(msg)
+        stale_rows.append(msg)
+
     for c in concepts:
         cid = c["concept_id"]
         notes = []
@@ -1058,13 +1092,15 @@ def apply_curated_field_fixes(concepts, fixes, rejections):
                     parts = [x.strip() for x in val.split("||")]
                     for x in parts:
                         if x not in body:
-                            raise ValueError(f"curated_field_fixes.tsv: {cid} excerpt not found in current definition: {x[:50]!r}")
+                            stale(f"curated_field_fixes.tsv: {cid} excerpt not found in current definition: {x[:50]!r}")
+                            continue
                     c["skos_definition"] = f"{' … '.join(parts)} [{cite}"
                 elif act == "use":
                     work, _, start = val.partition("::")
                     hits = [d for d in lex.get(work, []) if (d.get("definition") or "").startswith(start)]
                     if len(hits) != 1:
-                        raise ValueError(f"curated_field_fixes.tsv: {cid} 'use' matched {len(hits)} lexicon entries for {val[:60]!r}")
+                        stale(f"curated_field_fixes.tsv: {cid} 'use' matched {len(hits)} lexicon entries for {val[:60]!r}")
+                        continue
                     d = hits[0]
                     c["skos_definition"] = f"{d['definition']} [{d['source_citation']}]"
                     src = {"work": d["source_work"], "citation": d["source_citation"], "uri": d["source_uri"], "see_also": d.get("see_also", [])[:5]}
@@ -1073,18 +1109,21 @@ def apply_curated_field_fixes(concepts, fixes, rejections):
                 if act == "remove":
                     keep = [t for t in c["source_taxa"] if t["taxon_name"].lower() != val.lower()]
                     if len(keep) == len(c["source_taxa"]):
-                        raise ValueError(f"curated_field_fixes.tsv: {cid} taxon to remove not present: {val}")
+                        stale(f"curated_field_fixes.tsv: {cid} taxon to remove not present: {val}")
+                        continue
                     c["source_taxa"] = keep
                 else:
-                    th = pick_taxon(wd.get(val.lower(), []))
+                    th = pick_taxon(wd.get(val.lower(), [])) or (dict(by_alias[val.lower()], label=val) if val.lower() in by_alias else None)
                     if not th:
-                        raise ValueError(f"curated_field_fixes.tsv: {cid} taxon {val!r} not found as a Q16521 taxon in the Wikidata snapshot")
+                        stale(f"curated_field_fixes.tsv: {cid} taxon {val!r} not found as a Q16521 taxon in the Wikidata snapshot")
+                        continue
                     if th["qid"] not in {t["qid"] for t in c["source_taxa"]}:
                         c["source_taxa"].append({"qid": th["qid"], "taxon_name": th["label"], "col_id": "", "relation": "curated_source_taxon"})
             elif f == "altLabel":
                 if act == "remove":
                     if val.lower() not in {x.lower() for x in c["skos_altLabels"]}:
-                        raise ValueError(f"curated_field_fixes.tsv: {cid} altLabel to remove not present: {val}")
+                        stale(f"curated_field_fixes.tsv: {cid} altLabel to remove not present: {val}")
+                        continue
                     c["skos_altLabels"] = [x for x in c["skos_altLabels"] if x.lower() != val.lower()]
                 elif val.lower() not in {x.lower() for x in c["skos_altLabels"]}:
                     c["skos_altLabels"].append(val)
@@ -1092,7 +1131,8 @@ def apply_curated_field_fixes(concepts, fixes, rejections):
                 c["skos_scopeNote"] = None if act == "drop" else val
             elif f == "bridge_1866":
                 if not c.get("skos_1866_bridge"):
-                    raise ValueError(f"curated_field_fixes.tsv: {cid} has no 1866 bridge")
+                    stale(f"curated_field_fixes.tsv: {cid} has no 1866 bridge")
+                    continue
                 if act == "drop":
                     c["skos_1866_bridge"] = None
                 else:
@@ -1100,6 +1140,8 @@ def apply_curated_field_fixes(concepts, fixes, rejections):
             notes.append(f"{f} {act}: {r['rationale']}")
         if notes:
             c["field_curation"] = notes
+    for m in stale_rows:
+        print("STALE " + m, flush=True)
 
 
 def trade_evidence_summary(st):
@@ -1400,6 +1442,15 @@ def classify_v4(raw: str, head: str, force_grp=None, force_state=None, force_lan
     else:
         land_basis = "terrestrial_crop"
 
+    # Wild-taken land animals: generic and wild-species furs, game, ivory, castoreum (not pasture!)
+    if land_basis in ("terrestrial_pasture", "terrestrial_crop", "unclassified") and grp in WILD_ELIGIBLE_GROUPS \
+            and not re.search(r"\b(oil|vegetable|poultry|cow|ox|bull)\b", lo):
+        is_fur_grp = grp == "grp_furs_marine_pelts"
+        if (WILD_ANIMAL_RE.search(lo) or (is_fur_grp and not DOMESTIC_PELT_RE.search(lo))) and not (
+                DOMESTIC_PELT_RE.search(lo) and not WILD_ANIMAL_RE.search(lo)):
+            land_basis = "terrestrial_wild_hunted"
+    if grp == "grp_furs_marine_pelts" and re.search(r"\b(marine|sea)\b|\bof\s+fish\b", lo):
+        land_basis = "marine"
     if force_land:
         land_basis = force_land
 
@@ -1498,7 +1549,7 @@ def query_wikidata(terms: set):
     rows = con.execute(f"""
         SELECT lower(label_en) AS lkey, qid, label_en, description_en, sitelinks, instance_of, aliases
         FROM '{WD_SLIM_GLOB}'
-        WHERE lower(label_en) IN (SELECT term FROM want) AND sitelinks >= 2
+        WHERE lower(label_en) IN (SELECT term FROM want) AND sitelinks >= 1
     """).fetchall()
     by_term = defaultdict(list)
     for lkey, qid, lbl, desc, sl, inst, aliases in rows:
@@ -1519,11 +1570,18 @@ def query_wikidata(terms: set):
     return by_term
 
 
+# Commodity-sense items that exist in the snapshot with a single sitelink (the taxon item carries the rest).
+# Only these curated terms may anchor below the usual 2-sitelink floor.
+LOW_SITELINK_OK = {"oats", "barley", "rye", "pea"}
+
+
 def pick_commodity(term: str, cands: list, rejections: set):
     k = norm_key(term)
     scored = []
     for c in cands:
         qid = c["qid"]
+        if c["sitelinks"] < 2 and k not in LOW_SITELINK_OK:
+            continue
         if (k, qid) in rejections or ("*", qid) in rejections:
             continue
         if c["label"] and c["label"] != c["label"].lower():
@@ -1542,6 +1600,23 @@ def pick_commodity(term: str, cands: list, rejections: set):
         return None
     scored.sort(key=lambda x: x[0], reverse=True)
     return scored[0][1]
+
+
+def find_taxa_by_alias(names):
+    """Resolve Linnaean names whose Wikidata item is labelled in English (e.g. Castor canadensis -> 'Canadian
+    beaver') by exact alias match on Q16521 taxon items in the local snapshot."""
+    out = {}
+    if not names:
+        return out
+    con = duckdb.connect()
+    for n in sorted(names):
+        rows = con.execute(
+            f"SELECT qid, label_en, sitelinks FROM '{WD_SLIM_GLOB}' "
+            "WHERE list_contains(instance_of, 'Q16521') AND aliases ILIKE ? ORDER BY sitelinks DESC LIMIT 5",
+            [f'%"{n}"%']).fetchall()
+        if rows:
+            out[n.lower()] = {"qid": rows[0][0], "label": n}
+    return out
 
 
 def pick_taxon(cands: list):
@@ -1614,7 +1689,7 @@ def main():
     rejections = load_rejections()
 
     # 1. Read exact archival provenance from Layer-1 observations (drop "NULL and other errors" from prov:hadPrimarySource!)
-    comm_stats = defaultdict(lambda: {"rows": 0, "years": set(), "series": Counter(), "units": Counter(), "routes": Counter()})
+    comm_stats = defaultdict(lambda: {"rows": 0, "years": set(), "end_years": set(), "series": Counter(), "units": Counter(), "routes": Counter()})
     total_obs = 0
     excluded = Counter()
     with gzip.open(LAYER1 / "human_trade_observations.tsv.gz", "rt", encoding="utf-8") as fh:
@@ -1633,6 +1708,7 @@ def main():
             d["routes"][(r["origin_as_printed"].strip(), r["destination_as_printed"].strip())] += 1
             if r["year_start"].isdigit():
                 d["years"].add(int(r["year_start"]))
+                d["end_years"].add(int(r["year_end"]) if r["year_end"].isdigit() else int(r["year_start"]))
             ser = r["series_name"].strip() or "CSP_Canadian_Exports_BlankSeries"
             if "null and other errors" not in ser.lower():
                 d["series"][ser] += 1
@@ -1682,7 +1758,7 @@ def main():
             "total_rows": st["rows"],
             "provenance": {
                 "first_attested": yrs[0] if yrs else None,
-                "last_attested": yrs[-1] if yrs else None,
+                "last_attested": max(st["end_years"]) if st["end_years"] else None,
                 "series": [s for s, _ in st["series"].most_common()],
             },
             "ontology": {
@@ -1697,6 +1773,7 @@ def main():
                 "processing_state": pstate,
                 "ghost_acres_domain": domain,
                 "land_basis": land_basis,
+                "harvest_mode": harvest_mode(land_basis),
                 "theodoridis_category": theodoridis,
                 "sitc_code": sitc,
                 "is_aggregate": is_agg,
@@ -2233,6 +2310,8 @@ def main():
         ("oe:processingState", "owl:DatatypeProperty", "processing state facet", "skos:Concept", "xsd:string", None),
         ("oe:ghostAcresDomain", "owl:DatatypeProperty", "Ghost Acres analytical domain", "skos:Concept", "xsd:string", None),
         ("oe:landBasis", "owl:DatatypeProperty", "ecological land/marine/mineral basis", "skos:Concept", "xsd:string", None),
+        ("oe:attestationBasis", "owl:DatatypeProperty", "attestation basis (customs_enumerated vs document_attested)", "skos:Concept", "xsd:string", None),
+        ("oe:harvestMode", "owl:DatatypeProperty", "harvest mode (wild_hunted_fished joins wild land animals to fisheries and whaling)", "skos:Concept", "xsd:string", None),
         ("oe:theodoridisBucket", "owl:DatatypeProperty", "Theodoridis (2018) 5-bucket rollup", "skos:Concept", "xsd:string", None),
         ("oe:sitcCode", "owl:DatatypeProperty", "SITC Rev. 4 division code", "skos:Concept", "xsd:string", None),
         ("oe:isAggregate", "owl:DatatypeProperty", "is printed total/aggregate heading", "skos:Concept", "xsd:boolean", None),
@@ -2380,7 +2459,9 @@ def main():
             f"oe:substanceHead {ttl_str(f['substance_head'])}",
             f"oe:processingState {ttl_str(f['processing_state'])}",
             f"oe:ghostAcresDomain {ttl_str(f['ghost_acres_domain'])}",
+            'oe:attestationBasis "customs_enumerated"',
             f"oe:landBasis {ttl_str(f['land_basis'])}",
+            f"oe:harvestMode {ttl_str(f['harvest_mode'])}",
             f"oe:theodoridisBucket {ttl_str(f['theodoridis_category'])}",
             f"oe:sitcCode {ttl_str(f['sitc_code'])}",
             f'oe:isAggregate "{"true" if f["is_aggregate"] else "false"}"^^xsd:boolean',
@@ -2397,7 +2478,9 @@ def main():
             "oe:substanceHead": f["substance_head"],
             "oe:processingState": f["processing_state"],
             "oe:ghostAcresDomain": f["ghost_acres_domain"],
+            "oe:attestationBasis": "customs_enumerated",
             "oe:landBasis": f["land_basis"],
+            "oe:harvestMode": f["harvest_mode"],
             "oe:theodoridisBucket": f["theodoridis_category"],
             "oe:sitcCode": f["sitc_code"],
             "oe:isAggregate": bool(f["is_aggregate"]),
@@ -2415,10 +2498,14 @@ def main():
             triples.append(f"skos:scopeNote {ttl_str(c['skos_scopeNote'])}@en")
             node["skos:scopeNote"] = {"@value": c["skos_scopeNote"], "@language": "en"}
 
+        enotes = []
         if c.get("curation"):
-            enote = f"Curated classification ({'; '.join(f'{k}={v}' for k, v in c['curation']['overrides'].items()) or 'note only'}): {c['curation']['rationale']} {c['curation']['trade_evidence']}"
-            triples.append(f"skos:editorialNote {ttl_str(enote)}@en")
-            node["skos:editorialNote"] = {"@value": enote, "@language": "en"}
+            enotes.append(f"Curated classification ({'; '.join(f'{k}={v}' for k, v in c['curation']['overrides'].items()) or 'note only'}): {c['curation']['rationale']} {c['curation']['trade_evidence']}")
+        if c.get("field_curation"):
+            enotes.append("Curated fields — " + " | ".join(c["field_curation"]))
+        if enotes:
+            triples.append("skos:editorialNote " + ", ".join(f"{ttl_str(x)}@en" for x in enotes))
+            node["skos:editorialNote"] = [{"@value": x, "@language": "en"} for x in enotes]
 
         if c["dictionary_sources"]:
             drefs = [f"<{d['uri']}>" for d in c["dictionary_sources"]]
@@ -2547,6 +2634,15 @@ def main():
     jsonld_path = GROUND / "commodities_skos.jsonld"
     jsonld_path.write_text(json.dumps(jsonld_obj, indent=2, ensure_ascii=False), encoding="utf-8")
 
+    _seen = set()
+    sssom_rows = [r for r in sssom_rows if not (tuple(r[:4]) in _seen or _seen.add(tuple(r[:4])))]
+    # Review queue regenerated from THIS build: headings with no external anchor, largest first
+    with open(GROUND / "commodities_review_queue.tsv", "w", encoding="utf-8", newline="") as fh:
+        w = csv.writer(fh, delimiter="\t")
+        w.writerow(["total_rows", "queue_type", "concept_id", "commodity_as_printed", "substance_head", "ghost_acres_domain", "sitc_code"])
+        for c in sorted(concepts, key=lambda x: (-x["total_rows"], x["concept_id"])):
+            if not c.get("wikidata_anchor"):
+                w.writerow([c["total_rows"], c["status"], c["concept_id"], c["skos_prefLabel"], c["facets"]["substance_head"], c["facets"]["ghost_acres_domain"], c["facets"]["sitc_code"]])
     sssom_path = GROUND / "commodities_mappings.sssom.tsv"
     with open(sssom_path, "w", encoding="utf-8", newline="") as fh:
         fh.write(f"#curie_map:\n#  htc: {BASE_URI}\n#  wd: http://www.wikidata.org/entity/\n#  agrovoc: http://aims.fao.org/aos/agrovoc/\n#  stw: http://zbw.eu/stw/descriptor/\n#  aat: http://vocab.getty.edu/aat/\n#mapping_set_id: {BASE_URI}mappings/v4\n#mapping_date: {TODAY}\n#license: https://creativecommons.org/licenses/by/4.0/\n")

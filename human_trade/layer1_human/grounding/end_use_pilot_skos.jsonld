@@ -1,7 +1,7 @@
 {
   "@context": {
-    "htc": "https://openempire.hgis.usask.ca/vocab/commodities/",
-    "oe": "https://openempire.hgis.usask.ca/ontology/",
+    "htc": "https://open-empire.hgislab.usask.ca/vocab/human-trade-commodities/",
+    "oe": "https://open-empire.hgislab.usask.ca/ns#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "crm": "http://www.cidoc-crm.org/cidoc-crm/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -112,6 +112,9 @@
           "@id": "htc:0022"
         },
         {
+          "@id": "htc:0562"
+        },
+        {
           "@id": "htc:0025"
         },
         {
@@ -119,9 +122,6 @@
         },
         {
           "@id": "htc:0257"
-        },
-        {
-          "@id": "htc:0562"
         },
         {
           "@id": "htc:0445"
@@ -415,6 +415,9 @@
           "@id": "htc:0719"
         },
         {
+          "@id": "htc:1639"
+        },
+        {
           "@id": "htc:0855"
         },
         {
@@ -427,9 +430,6 @@
           "@id": "htc:1492"
         },
         {
-          "@id": "htc:1639"
-        },
-        {
           "@id": "htc:0695"
         },
         {
@@ -437,6 +437,12 @@
         },
         {
           "@id": "htc:0097"
+        },
+        {
+          "@id": "htc:0290"
+        },
+        {
+          "@id": "htc:doc_pistachio_nuts"
         }
       ]
     },
@@ -829,6 +835,22 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0290",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Isinglass",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
         }
       ]
     },
@@ -1688,6 +1710,22 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_pistachio_nuts",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Pistachio Nuts",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
         }
       ]
     },

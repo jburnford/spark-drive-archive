@@ -1,7 +1,7 @@
 {
   "@context": {
-    "htc": "https://openempire.hgis.usask.ca/vocab/commodities/",
-    "oe": "https://openempire.hgis.usask.ca/ontology/",
+    "htc": "https://open-empire.hgislab.usask.ca/vocab/human-trade-commodities/",
+    "oe": "https://open-empire.hgislab.usask.ca/ns#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "crm": "http://www.cidoc-crm.org/cidoc-crm/",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -157,19 +157,19 @@
           "@id": "htc:0557"
         },
         {
+          "@id": "htc:0562"
+        },
+        {
           "@id": "htc:1895"
         },
         {
-          "@id": "htc:0562"
+          "@id": "htc:0257"
         },
         {
           "@id": "htc:0025"
         },
         {
           "@id": "htc:0445"
-        },
-        {
-          "@id": "htc:0257"
         },
         {
           "@id": "htc:0780"
@@ -430,6 +430,9 @@
           "@id": "htc:0302"
         },
         {
+          "@id": "htc:0136"
+        },
+        {
           "@id": "htc:0536"
         },
         {
@@ -442,12 +445,6 @@
           "@id": "htc:doc_woad"
         },
         {
-          "@id": "htc:0339"
-        },
-        {
-          "@id": "htc:0136"
-        },
-        {
           "@id": "htc:0364"
         },
         {
@@ -457,6 +454,9 @@
           "@id": "htc:0096"
         },
         {
+          "@id": "htc:0203"
+        },
+        {
           "@id": "htc:1377"
         },
         {
@@ -464,9 +464,6 @@
         },
         {
           "@id": "htc:0975"
-        },
-        {
-          "@id": "htc:doc_citric_acid"
         },
         {
           "@id": "htc:1899"
@@ -520,10 +517,10 @@
           "@id": "htc:1937"
         },
         {
-          "@id": "htc:1400"
+          "@id": "htc:1639"
         },
         {
-          "@id": "htc:0168"
+          "@id": "htc:1400"
         },
         {
           "@id": "htc:1492"
@@ -533,9 +530,6 @@
         },
         {
           "@id": "htc:0573"
-        },
-        {
-          "@id": "htc:1639"
         },
         {
           "@id": "htc:doc_musk"
@@ -551,6 +545,9 @@
         },
         {
           "@id": "htc:0097"
+        },
+        {
+          "@id": "htc:0290"
         }
       ]
     },
@@ -586,25 +583,25 @@
           "@id": "htc:0275"
         },
         {
-          "@id": "htc:0072"
-        },
-        {
           "@id": "htc:0132"
         },
         {
-          "@id": "htc:1932"
+          "@id": "htc:0072"
         },
         {
           "@id": "htc:0730"
         },
         {
-          "@id": "htc:0975"
+          "@id": "htc:1932"
+        },
+        {
+          "@id": "htc:0180"
         },
         {
           "@id": "htc:2002"
         },
         {
-          "@id": "htc:0180"
+          "@id": "htc:0975"
         },
         {
           "@id": "htc:0036"
@@ -625,13 +622,13 @@
           "@id": "htc:0022"
         },
         {
+          "@id": "htc:doc_mimosa_bark"
+        },
+        {
           "@id": "htc:0028"
         },
         {
           "@id": "htc:0257"
-        },
-        {
-          "@id": "htc:doc_mimosa_bark"
         },
         {
           "@id": "htc:0250"
@@ -734,6 +731,9 @@
         },
         {
           "@id": "htc:0529"
+        },
+        {
+          "@id": "htc:0807"
         }
       ]
     },
@@ -781,6 +781,9 @@
           "@id": "htc:1504"
         },
         {
+          "@id": "htc:doc_sandarac"
+        },
+        {
           "@id": "htc:1538"
         },
         {
@@ -790,7 +793,7 @@
           "@id": "htc:1790"
         },
         {
-          "@id": "htc:doc_sandarac"
+          "@id": "htc:doc_verdigris"
         },
         {
           "@id": "htc:doc_amber"
@@ -802,13 +805,13 @@
           "@id": "htc:0015"
         },
         {
+          "@id": "htc:0562"
+        },
+        {
           "@id": "htc:0207"
         },
         {
           "@id": "htc:1683"
-        },
-        {
-          "@id": "htc:doc_verdigris"
         },
         {
           "@id": "htc:0118"
@@ -820,16 +823,13 @@
           "@id": "htc:1023"
         },
         {
-          "@id": "htc:0562"
+          "@id": "htc:1765"
         },
         {
           "@id": "htc:doc_gamboge"
         },
         {
           "@id": "htc:doc_dammer"
-        },
-        {
-          "@id": "htc:1765"
         },
         {
           "@id": "htc:1599"
@@ -877,10 +877,10 @@
           "@id": "htc:0136"
         },
         {
-          "@id": "htc:doc_litharge"
+          "@id": "htc:doc_china_clay"
         },
         {
-          "@id": "htc:doc_china_clay"
+          "@id": "htc:doc_litharge"
         },
         {
           "@id": "htc:1873"
@@ -892,6 +892,9 @@
           "@id": "htc:1115"
         },
         {
+          "@id": "htc:1895"
+        },
+        {
           "@id": "htc:0299"
         },
         {
@@ -901,22 +904,19 @@
           "@id": "htc:0257"
         },
         {
-          "@id": "htc:1895"
-        },
-        {
           "@id": "htc:0557"
         },
         {
           "@id": "htc:0328"
         },
         {
+          "@id": "htc:1202"
+        },
+        {
           "@id": "htc:0364"
         },
         {
           "@id": "htc:0162"
-        },
-        {
-          "@id": "htc:1202"
         }
       ]
     },
@@ -1006,6 +1006,9 @@
           "@id": "htc:1520"
         },
         {
+          "@id": "htc:doc_cocculus_indicus"
+        },
+        {
           "@id": "htc:0290"
         },
         {
@@ -1013,9 +1016,6 @@
         },
         {
           "@id": "htc:0695"
-        },
-        {
-          "@id": "htc:doc_cocculus_indicus"
         }
       ]
     },
@@ -1044,9 +1044,6 @@
         "@language": "en"
       },
       "oe:usesCommodityInput": [
-        {
-          "@id": "htc:0103"
-        },
         {
           "@id": "htc:0162"
         },
@@ -1102,6 +1099,9 @@
           "@id": "htc:0394"
         },
         {
+          "@id": "htc:0029"
+        },
+        {
           "@id": "htc:doc_abaca"
         },
         {
@@ -1109,9 +1109,6 @@
         },
         {
           "@id": "htc:1443"
-        },
-        {
-          "@id": "htc:0029"
         }
       ]
     },
@@ -1189,13 +1186,16 @@
       },
       "oe:usesCommodityInput": [
         {
+          "@id": "htc:1599"
+        },
+        {
           "@id": "htc:0573"
         },
         {
           "@id": "htc:0697"
         },
         {
-          "@id": "htc:1599"
+          "@id": "htc:doc_vanilla"
         },
         {
           "@id": "htc:0025"
@@ -1207,16 +1207,13 @@
           "@id": "htc:0445"
         },
         {
-          "@id": "htc:doc_vanilla"
+          "@id": "htc:doc_musk"
         },
         {
           "@id": "htc:1914"
         },
         {
           "@id": "htc:doc_otto_of_roses"
-        },
-        {
-          "@id": "htc:doc_musk"
         },
         {
           "@id": "htc:0618"
@@ -1264,19 +1261,22 @@
       },
       "oe:usesCommodityInput": [
         {
+          "@id": "htc:1701"
+        },
+        {
+          "@id": "htc:0578"
+        },
+        {
           "@id": "htc:0285"
         },
         {
           "@id": "htc:0360"
         },
         {
-          "@id": "htc:0578"
-        },
-        {
           "@id": "htc:doc_morphia"
         },
         {
-          "@id": "htc:1701"
+          "@id": "htc:doc_gamboge"
         },
         {
           "@id": "htc:0697"
@@ -1294,13 +1294,16 @@
           "@id": "htc:doc_iodine"
         },
         {
+          "@id": "htc:doc_nux_vomica"
+        },
+        {
           "@id": "htc:0327"
         },
         {
-          "@id": "htc:doc_gamboge"
+          "@id": "htc:0750"
         },
         {
-          "@id": "htc:0750"
+          "@id": "htc:0682"
         },
         {
           "@id": "htc:0185"
@@ -1309,19 +1312,19 @@
           "@id": "htc:0951"
         },
         {
-          "@id": "htc:0682"
+          "@id": "htc:doc_calomel"
         },
         {
-          "@id": "htc:doc_calomel"
+          "@id": "htc:doc_cardamom"
+        },
+        {
+          "@id": "htc:doc_storax"
         },
         {
           "@id": "htc:doc_atropa_belladonna"
         },
         {
           "@id": "htc:0399"
-        },
-        {
-          "@id": "htc:doc_nux_vomica"
         },
         {
           "@id": "htc:1020"
@@ -1345,9 +1348,6 @@
           "@id": "htc:0097"
         },
         {
-          "@id": "htc:doc_storax"
-        },
-        {
           "@id": "htc:doc_gentian"
         },
         {
@@ -1355,9 +1355,6 @@
         },
         {
           "@id": "htc:0172"
-        },
-        {
-          "@id": "htc:doc_cardamom"
         },
         {
           "@id": "htc:doc_neem_oil"
@@ -1462,9 +1459,6 @@
           "@id": "htc:doc_sal_ammoniac"
         },
         {
-          "@id": "htc:0267"
-        },
-        {
           "@id": "htc:0111"
         },
         {
@@ -1519,6 +1513,9 @@
       },
       "oe:usesCommodityInput": [
         {
+          "@id": "htc:1143"
+        },
+        {
           "@id": "htc:0188"
         },
         {
@@ -1528,9 +1525,6 @@
           "@id": "htc:0291"
         },
         {
-          "@id": "htc:1143"
-        },
-        {
           "@id": "htc:0225"
         },
         {
@@ -1538,6 +1532,9 @@
         },
         {
           "@id": "htc:0677"
+        },
+        {
+          "@id": "htc:0096"
         },
         {
           "@id": "htc:2002"
@@ -1553,9 +1550,6 @@
         },
         {
           "@id": "htc:doc_kapok"
-        },
-        {
-          "@id": "htc:0096"
         },
         {
           "@id": "htc:doc_verdigris"
@@ -1912,22 +1906,6 @@
       ]
     },
     {
-      "@id": "htc:0103",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Sugar Unrefined Total",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_sugar_refining"
-        }
-      ]
-    },
-    {
       "@id": "htc:0109",
       "@type": [
         "skos:Concept",
@@ -2164,9 +2142,6 @@
           "@id": "oe:ind_calico_printing"
         },
         {
-          "@id": "oe:ind_chocolate_confectionery"
-        },
-        {
           "@id": "oe:ind_paper_making"
         }
       ]
@@ -2308,6 +2283,9 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_woollen_silk_dyeing"
         }
       ]
     },
@@ -2468,22 +2446,6 @@
       ]
     },
     {
-      "@id": "htc:0267",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Lead Pig and Sheet",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_metallurgy_tinplate"
-        }
-      ]
-    },
-    {
       "@id": "htc:0275",
       "@type": [
         "skos:Concept",
@@ -2547,6 +2509,9 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_brewing_distilling"
+        },
+        {
+          "@id": "oe:ind_chocolate_confectionery"
         }
       ]
     },
@@ -2658,9 +2623,6 @@
         },
         {
           "@id": "oe:ind_perfumery_cosmetics"
-        },
-        {
-          "@id": "oe:ind_woollen_silk_dyeing"
         }
       ]
     },
@@ -3298,6 +3260,22 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0807",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Smalts",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_paper_making"
         }
       ]
     },
@@ -4567,9 +4545,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_calico_printing"
-        },
-        {
-          "@id": "oe:ind_woollen_silk_dyeing"
         }
       ]
     },

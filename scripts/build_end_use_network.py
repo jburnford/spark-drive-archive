@@ -37,8 +37,10 @@ OCR_ROOT = Path("/mnt/data/jic823/open_empire_corpus/ocr_chandra/dictionaries_al
 GUT_ROOT = Path("/mnt/data/jic823/open_empire_corpus/raw/gutenberg")
 
 TODAY = date.today().isoformat()
-BASE_URI = "https://openempire.hgis.usask.ca/vocab/commodities/"
-OE_NS = "https://openempire.hgis.usask.ca/ontology/"
+# MUST be the namespaces of the commodity vocabulary (build_skos_v4.BASE_URI / OE_NS): with any other value
+# the industry graph and the commodity graph share compact ids but never join by IRI.
+BASE_URI = "https://open-empire.hgislab.usask.ca/vocab/human-trade-commodities/"
+OE_NS = "https://open-empire.hgislab.usask.ca/ns#"
 
 PAGE_MARK_RE = re.compile(r"^(\d+)-{35,}\s*$", re.M)
 
@@ -53,6 +55,8 @@ ROLE_LABELS = {
     "flavouring_or_scent": "Flavouring, Spice & Perfume",
     "solvent_or_fuel": "Solvent, Flux, Fuel & Lubricant",
     "filler_or_admixture": "Binder, Dairy, Fibre & Admixture",
+    "preservative_or_coating": "Preservative, Coating & Caulking",
+    "refractory_material": "Refractory, Crucible & Mould Material",
 }
 
 # ============================================================================
@@ -1268,6 +1272,10 @@ def apply_curated_link_decisions(links):
                           "attestation_basis": c.get("attestation_basis", "customs_enumerated"),
                           "layer1_rows": c.get("total_rows", 0), "commodity_group": c["ontology"]["group_label"],
                           "wikidata_qid": a.get("qid", "")})
+            if d.get("new_role"):
+                if d["new_role"] not in ROLE_LABELS:
+                    raise ValueError(f"curated_end_use_link_decisions.tsv: unknown role {d['new_role']}")
+                l["production_role"], l["production_role_label"] = d["new_role"], ROLE_LABELS[d["new_role"]]
             l["curation"] = {"action": d["action"], "rationale": d["rationale"]}
         key = (l["industry_id"], l["commodity_id"])
         if key in index:  # re-pointed onto an existing link: merge evidence

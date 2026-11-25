@@ -1,7 +1,5 @@
 place_as_printed	place_qid	year	empire_colony_id	polity_name	polity_qid	hops	lineage_path
 Quebec QC	Q2145	1883	canada_dominion_of_1867_ongoing	Canada, Dominion of	Q16	0	
-Quebec QC	Q2145	2449	canada_independent_1931	Canada	Q16	0	
-Quebec QC	Q2145	9601	canada_independent_1931	Canada	Q16	0	
 Gibraltar	Q1410	1800	gibraltar_1704_ongoing	Gibraltar	Q1410	0	
 Gibraltar	Q1410	1802	gibraltar_1704_ongoing	Gibraltar	Q1410	0	
 Gibraltar	Q1410	1803	gibraltar_1704_ongoing	Gibraltar	Q1410	0	

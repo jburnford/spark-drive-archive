@@ -1,71 +1,122 @@
 # Hand-reviewed decisions on regex-mined commodity->industry links, applied by scripts/build_end_use_network.py.
 # Every quote in the network is verbatim, but keyword co-occurrence is not evidence of use; these rows record where reading the quotes contradicted the mined link.
-industry_id	commodity_id	commodity_label	action	target	drop_quotes	rationale
-oe:ind_brewing_distilling	htc:0103	Sugar Unrefined Total	repoint	htc:0360	grape-sugar||GRAPE-SUGAR||caramel	Quotes speak of sugar generally; the aggregate statistical line 'Sugar Unrefined Total' was the wrong target.
-oe:ind_brewing_distilling	htc:1639	Aniseed	drop			All quotes describe distilling the essential oil of aniseed, not brewing or spirit distilling.
-oe:ind_calico_printing	htc:2002	Copperas	drop			All three quotes are off-target (acetate of iron; a trade list; an OCR-garbled entry).
-oe:ind_calico_printing	htc:0267	Lead Pig and Sheet	repoint	htc:doc_sugar_of_lead		Quotes are about nitrate/acetate of lead (lead salts), not pig and sheet lead.
-oe:ind_calico_printing	htc:1142	Tartaric Acid	repoint	htc:0871	SAPEK	Quote is about tartar (argol) as a mordant, not tartaric acid.
-oe:ind_calico_printing	htc:doc_sal_ammoniac	Sal Ammoniac	drop			The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
-oe:ind_calico_printing	htc:0257	Salt	drop			Only quote is a cross-reference list ('muriate of soda ... see SALT; muriate of tin, see CALICO-PRINTING').
-oe:ind_calico_printing	htc:0587	Aniline	drop			Matched the colour word 'mauve', not aniline.
-oe:ind_calico_printing	htc:doc_albumin	Albumin	drop			Albumen is mentioned as present in the dung bath, not as an input.
-oe:ind_calico_printing	htc:1758	Gum Tragacanth	drop			The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
-oe:ind_calico_printing	htc:doc_orpiment	Orpiment	drop			The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
-oe:ind_candle_manufacture	htc:0025	Lard	drop			Quote is a negation or prohibition ('makes no reference to', 'prohibits', 'have nothing to do with').
-oe:ind_chocolate_confectionery	htc:0103	Sugar Unrefined Total	repoint	htc:0360	grape-sugar||GRAPE-SUGAR||caramel	Quotes speak of sugar generally; the aggregate statistical line 'Sugar Unrefined Total' was the wrong target.
-oe:ind_chocolate_confectionery	htc:0719	Spices Cassia Lignea	repoint	htc:1937		Quote is about cassia buds.
-oe:ind_chocolate_confectionery	htc:0008	Wheat Meal and Flour	drop			Quote is about gram (chickpea) flour, not wheat flour.
-oe:ind_chocolate_confectionery	htc:0855	Milk Condensed	repoint	htc:1400		Quote is about fresh milk boiled down, not condensed milk.
-oe:ind_chocolate_confectionery	htc:0185	Gum Arabic	drop			Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
-oe:ind_cordage_shipbuilding	htc:0578	Turpentine Oil	drop			Quotes come from Ure's ROSIN GAS text, which spilled into the rope-making essay span.
-oe:ind_cordage_shipbuilding	htc:0562	Rosin	drop			Quotes come from Ure's ROSIN GAS text, which spilled into the rope-making essay span.
-oe:ind_cordage_shipbuilding	htc:0226	Flax	drop			Sentence is about hemp linen ('never so fine as that from flax').
-oe:ind_cordage_shipbuilding	htc:0529	Jute	drop			Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
-oe:ind_glass_ceramics	htc:0702	Flint Glass	drop			Flint glass is the product of the industry, not an input.
-oe:ind_glass_ceramics	htc:0267	Lead Pig and Sheet	repoint	htc:doc_litharge		Quotes are about litharge and minium (lead oxides), not pig and sheet lead.
-oe:ind_glass_ceramics	htc:0348	Manufactures Lime	drop			Displayed quotes do not show the use (incidental mention); a true link needs a supporting quote before it is re-admitted.
-oe:ind_glass_ceramics	htc:1825	Arsenic	drop			Displayed quotes do not show the use (incidental mention); a true link needs a supporting quote before it is re-admitted.
-oe:ind_glass_ceramics	htc:0807	Smalts	repoint	htc:1202		Quote is the ZAFFRE entry.
-oe:ind_gunpowder_matches	htc:0136	Pearl and Pot Ashes	drop			All quotes are chlorate of potash, not pot/pearl ashes.
-oe:ind_gunpowder_matches	htc:1015	Glue Size and Gelatine	drop			Matched 'size' in the sense of dimension, not glue size.
-oe:ind_hats_brushes_upholstery	htc:1015	Glue Size and Gelatine	drop			Matched 'size' in the sense of dimension, not glue size.
-oe:ind_hats_brushes_upholstery	htc:0077	Spirits Unenumerated not Sweetened	drop			Quotes are about essence of ginger for gingerade and a substitute 'instead of spirits of wine'; neither shows spirits as a hat-making input.
-oe:ind_hats_brushes_upholstery	htc:0021	Wool	drop			Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
-oe:ind_leather_tanning	htc:0008	Wheat Meal and Flour	repoint	htc:0884		Quote is about unbolted rye flour.
-oe:ind_leather_tanning	htc:0348	Manufactures Lime	drop			Displayed quotes do not show the use (incidental mention); a true link needs a supporting quote before it is re-admitted.
-oe:ind_metallurgy_tinplate	htc:0427	Zinc Ore	repoint	htc:0484		Quotes are about zinc metal/spelter, not zinc ore.
-oe:ind_metallurgy_tinplate	htc:0107	Pig and Scrap Iron	repoint	htc:0196	Such crucibles resisted	Quote is about smelting iron ore.
-oe:ind_metallurgy_tinplate	htc:0328	Saltpetre	drop			Quotes are about chrome yellow and sal prunella 'in a crucible', not metallurgy.
-oe:ind_metallurgy_tinplate	htc:0022	Tallow	drop			Displayed quotes do not show the use (incidental mention); a true link needs a supporting quote before it is re-admitted.
-oe:ind_paper_making	htc:0289	Hemp Rough or Undressed	drop			Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
-oe:ind_paper_making	htc:0136	Pearl and Pot Ashes	drop			The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
-oe:ind_perfumery_cosmetics	htc:0077	Spirits Unenumerated not Sweetened	repoint	htc:0697	instead of spirits of wine	Quotes are about alcohol / spirits of wine; the residual line 'Spirits Unenumerated not Sweetened' was the wrong target.
-oe:ind_perfumery_cosmetics	htc:0719	Spices Cassia Lignea	drop			'Pommade of cassia' is cassie (acacia flowers), not cassia lignea bark.
-oe:ind_perfumery_cosmetics	htc:0172	Olive Oil	drop			Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
-oe:ind_perfumery_cosmetics	htc:0625	Cocoa-nut Oil	drop			Quote is a running page header.
-oe:ind_pharmaceuticals	htc:0103	Sugar Unrefined Total	repoint	htc:0360	grape-sugar||GRAPE-SUGAR||caramel	Quotes speak of sugar generally; the aggregate statistical line 'Sugar Unrefined Total' was the wrong target.
-oe:ind_pharmaceuticals	htc:0077	Spirits Unenumerated not Sweetened	repoint	htc:0697	instead of spirits of wine	Quotes are about alcohol / spirits of wine; the residual line 'Spirits Unenumerated not Sweetened' was the wrong target.
-oe:ind_pharmaceuticals	htc:1142	Tartaric Acid	repoint	htc:0750		Quotes are about argol / cream of tartar.
-oe:ind_pharmaceuticals	htc:doc_citric_acid	Citric Acid	drop			The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
-oe:ind_pharmaceuticals	htc:1375	Gum Senegal	drop			The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
-oe:ind_pharmaceuticals	htc:0591	Ginger Raw	drop			Preserved ginger plus a bibliographic '(British Pharmacopoeia, 1867)' reference.
-oe:ind_pharmaceuticals	htc:1790	Camphor Refined	drop			The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
-oe:ind_pharmaceuticals	htc:1579	Balsam Copaiba	drop			The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
-oe:ind_pharmaceuticals	htc:0562	Rosin	drop			The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
-oe:ind_pharmaceuticals	htc:1538	Gum Mastic	drop			The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
-oe:ind_pharmaceuticals	htc:doc_cocculus_indicus	Cocculus Indicus	drop			Quote is a negation or prohibition ('makes no reference to', 'prohibits', 'have nothing to do with').
-oe:ind_rubber_waterproofing	htc:0207	Tar	drop			Quote is about coal-tar naphtha, not tar as an input.
-oe:ind_soap_manufacture	htc:0138	Cocoa	drop			Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
-oe:ind_sugar_refining	htc:0135	Molasses	drop			Molasses/treacle is the by-product of sugar refining, not its feedstock.
-oe:ind_varnish_paint_lacquer	htc:0077	Spirits Unenumerated not Sweetened	repoint	htc:0697	instead of spirits of wine	Quotes are about alcohol / spirits of wine; the residual line 'Spirits Unenumerated not Sweetened' was the wrong target.
-oe:ind_varnish_paint_lacquer	htc:0543	Pitch	repoint	htc:0467	stains of pitch	Quotes are about asphaltum (mineral pitch).
-oe:ind_varnish_paint_lacquer	htc:0062	Indigo	drop			Quote is a negation or prohibition ('makes no reference to', 'prohibits', 'have nothing to do with').
-oe:ind_varnish_paint_lacquer	htc:0267	Lead Pig and Sheet	repoint	htc:doc_minium		Quote is about minium (red lead) in house-painting.
-oe:ind_varnish_paint_lacquer	htc:0427	Zinc Ore	drop			Quote is sulphate of zinc as a drier for oils, not zinc ore as a colourant.
-oe:ind_varnish_paint_lacquer	htc:doc_vermilion	Vermilion	repoint	htc:1765		A Layer-1 heading 'Vermillion' exists.
-oe:ind_varnish_paint_lacquer	htc:doc_bichromate_of_potash	Bichromate Of Potash	drop			The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
-oe:ind_woollen_silk_dyeing	htc:1142	Tartaric Acid	repoint	htc:0871		Quote is 'alum or tartar' (argol).
-oe:ind_woollen_silk_dyeing	htc:doc_prussian_blue	Prussian Blue	drop			Quote is about calico-printing, not woollen/silk dyeing.
-oe:ind_woollen_silk_dyeing	htc:doc_nitric_acid	Nitric acid	drop			Nitric acid appears as an analytical test, not a process input.
-oe:ind_calico_printing	htc:doc_albumen	Albumen	drop			Albumen is mentioned as present in the dung bath, not as an input.
+industry_id	commodity_id	commodity_label	action	target	drop_quotes	new_role	rationale
+oe:ind_brewing_distilling	htc:0103	Sugar Unrefined Total	repoint	htc:0360	grape-sugar||GRAPE-SUGAR||caramel		Quotes speak of sugar generally; the aggregate statistical line 'Sugar Unrefined Total' was the wrong target.
+oe:ind_brewing_distilling	htc:1639	Aniseed	drop				All quotes describe distilling the essential oil of aniseed, not brewing or spirit distilling.
+oe:ind_calico_printing	htc:2002	Copperas	drop				All three quotes are off-target (acetate of iron; a trade list; an OCR-garbled entry).
+oe:ind_calico_printing	htc:0267	Lead Pig and Sheet	repoint	htc:doc_sugar_of_lead			Quotes are about nitrate/acetate of lead (lead salts), not pig and sheet lead.
+oe:ind_calico_printing	htc:1142	Tartaric Acid	repoint	htc:0871	SAPEK		Quote is about tartar (argol) as a mordant, not tartaric acid.
+oe:ind_calico_printing	htc:doc_sal_ammoniac	Sal Ammoniac	drop				The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
+oe:ind_calico_printing	htc:0257	Salt	drop				Only quote is a cross-reference list ('muriate of soda ... see SALT; muriate of tin, see CALICO-PRINTING').
+oe:ind_calico_printing	htc:0587	Aniline	drop				Matched the colour word 'mauve', not aniline.
+oe:ind_calico_printing	htc:1758	Gum Tragacanth	drop				The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
+oe:ind_calico_printing	htc:doc_orpiment	Orpiment	drop				The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
+oe:ind_candle_manufacture	htc:0025	Lard	drop				Quote is a negation or prohibition ('makes no reference to', 'prohibits', 'have nothing to do with').
+oe:ind_chocolate_confectionery	htc:0103	Sugar Unrefined Total	repoint	htc:0360	grape-sugar||GRAPE-SUGAR||caramel		Quotes speak of sugar generally; the aggregate statistical line 'Sugar Unrefined Total' was the wrong target.
+oe:ind_chocolate_confectionery	htc:0719	Spices Cassia Lignea	repoint	htc:1937			Quote is about cassia buds.
+oe:ind_chocolate_confectionery	htc:0008	Wheat Meal and Flour	drop				Quote is about gram (chickpea) flour, not wheat flour.
+oe:ind_chocolate_confectionery	htc:0855	Milk Condensed	repoint	htc:1400			Quote is about fresh milk boiled down, not condensed milk.
+oe:ind_chocolate_confectionery	htc:0185	Gum Arabic	drop				Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
+oe:ind_cordage_shipbuilding	htc:0578	Turpentine Oil	drop				Quotes come from Ure's ROSIN GAS text, which spilled into the rope-making essay span.
+oe:ind_cordage_shipbuilding	htc:0562	Rosin	drop				Quotes come from Ure's ROSIN GAS text, which spilled into the rope-making essay span.
+oe:ind_cordage_shipbuilding	htc:0226	Flax	drop				Sentence is about hemp linen ('never so fine as that from flax').
+oe:ind_cordage_shipbuilding	htc:0529	Jute	drop				Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
+oe:ind_glass_ceramics	htc:0702	Flint Glass	drop				Flint glass is the product of the industry, not an input.
+oe:ind_glass_ceramics	htc:0267	Lead Pig and Sheet	repoint	htc:doc_litharge			Quotes are about litharge and minium (lead oxides), not pig and sheet lead.
+oe:ind_glass_ceramics	htc:0348	Manufactures Lime	drop				Displayed quotes do not show the use (incidental mention); a true link needs a supporting quote before it is re-admitted.
+oe:ind_glass_ceramics	htc:1825	Arsenic	drop				Displayed quotes do not show the use (incidental mention); a true link needs a supporting quote before it is re-admitted.
+oe:ind_glass_ceramics	htc:0807	Smalts	repoint	htc:1202			Quote is the ZAFFRE entry.
+oe:ind_gunpowder_matches	htc:0136	Pearl and Pot Ashes	drop				All quotes are chlorate of potash, not pot/pearl ashes.
+oe:ind_gunpowder_matches	htc:1015	Glue Size and Gelatine	drop				Matched 'size' in the sense of dimension, not glue size.
+oe:ind_hats_brushes_upholstery	htc:1015	Glue Size and Gelatine	drop				Matched 'size' in the sense of dimension, not glue size.
+oe:ind_hats_brushes_upholstery	htc:0077	Spirits Unenumerated not Sweetened	drop				Quotes are about essence of ginger for gingerade and a substitute 'instead of spirits of wine'; neither shows spirits as a hat-making input.
+oe:ind_hats_brushes_upholstery	htc:0021	Wool	drop				Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
+oe:ind_leather_tanning	htc:0008	Wheat Meal and Flour	repoint	htc:0884			Quote is about unbolted rye flour.
+oe:ind_leather_tanning	htc:0348	Manufactures Lime	drop				Displayed quotes do not show the use (incidental mention); a true link needs a supporting quote before it is re-admitted.
+oe:ind_metallurgy_tinplate	htc:0427	Zinc Ore	repoint	htc:0484			Quotes are about zinc metal/spelter, not zinc ore.
+oe:ind_metallurgy_tinplate	htc:0107	Pig and Scrap Iron	repoint	htc:0196	Such crucibles resisted		Quote is about smelting iron ore.
+oe:ind_metallurgy_tinplate	htc:0328	Saltpetre	drop				Quotes are about chrome yellow and sal prunella 'in a crucible', not metallurgy.
+oe:ind_metallurgy_tinplate	htc:0022	Tallow	drop				Displayed quotes do not show the use (incidental mention); a true link needs a supporting quote before it is re-admitted.
+oe:ind_paper_making	htc:0289	Hemp Rough or Undressed	drop				Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
+oe:ind_paper_making	htc:0136	Pearl and Pot Ashes	drop				The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
+oe:ind_perfumery_cosmetics	htc:0077	Spirits Unenumerated not Sweetened	repoint	htc:0697	instead of spirits of wine		Quotes are about alcohol / spirits of wine; the residual line 'Spirits Unenumerated not Sweetened' was the wrong target.
+oe:ind_perfumery_cosmetics	htc:0719	Spices Cassia Lignea	drop				'Pommade of cassia' is cassie (acacia flowers), not cassia lignea bark.
+oe:ind_perfumery_cosmetics	htc:0172	Olive Oil	drop				Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
+oe:ind_perfumery_cosmetics	htc:0625	Cocoa-nut Oil	drop				Quote is a running page header.
+oe:ind_pharmaceuticals	htc:0103	Sugar Unrefined Total	repoint	htc:0360	grape-sugar||GRAPE-SUGAR||caramel		Quotes speak of sugar generally; the aggregate statistical line 'Sugar Unrefined Total' was the wrong target.
+oe:ind_pharmaceuticals	htc:0077	Spirits Unenumerated not Sweetened	repoint	htc:0697	instead of spirits of wine		Quotes are about alcohol / spirits of wine; the residual line 'Spirits Unenumerated not Sweetened' was the wrong target.
+oe:ind_pharmaceuticals	htc:1142	Tartaric Acid	repoint	htc:0750			Quotes are about argol / cream of tartar.
+oe:ind_pharmaceuticals	htc:doc_citric_acid	Citric Acid	drop				The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
+oe:ind_pharmaceuticals	htc:1375	Gum Senegal	drop				The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
+oe:ind_pharmaceuticals	htc:0591	Ginger Raw	drop				Preserved ginger plus a bibliographic '(British Pharmacopoeia, 1867)' reference.
+oe:ind_pharmaceuticals	htc:1790	Camphor Refined	drop				The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
+oe:ind_pharmaceuticals	htc:1579	Balsam Copaiba	drop				The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
+oe:ind_pharmaceuticals	htc:0562	Rosin	drop				The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
+oe:ind_pharmaceuticals	htc:1538	Gum Mastic	drop				The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
+oe:ind_pharmaceuticals	htc:doc_cocculus_indicus	Cocculus Indicus	drop				Quote is a negation or prohibition ('makes no reference to', 'prohibits', 'have nothing to do with').
+oe:ind_rubber_waterproofing	htc:0207	Tar	drop				Quote is about coal-tar naphtha, not tar as an input.
+oe:ind_soap_manufacture	htc:0138	Cocoa	drop				Quote names the commodity only as a comparison or substitute ('substitute for', 'resembles', 'takes the place of', 'passed off as').
+oe:ind_sugar_refining	htc:0135	Molasses	drop				Molasses/treacle is the by-product of sugar refining, not its feedstock.
+oe:ind_varnish_paint_lacquer	htc:0077	Spirits Unenumerated not Sweetened	repoint	htc:0697	instead of spirits of wine		Quotes are about alcohol / spirits of wine; the residual line 'Spirits Unenumerated not Sweetened' was the wrong target.
+oe:ind_varnish_paint_lacquer	htc:0543	Pitch	repoint	htc:0467	stains of pitch		Quotes are about asphaltum (mineral pitch).
+oe:ind_varnish_paint_lacquer	htc:0062	Indigo	drop				Quote is a negation or prohibition ('makes no reference to', 'prohibits', 'have nothing to do with').
+oe:ind_varnish_paint_lacquer	htc:0267	Lead Pig and Sheet	repoint	htc:doc_minium			Quote is about minium (red lead) in house-painting.
+oe:ind_varnish_paint_lacquer	htc:0427	Zinc Ore	drop				Quote is sulphate of zinc as a drier for oils, not zinc ore as a colourant.
+oe:ind_varnish_paint_lacquer	htc:doc_vermilion	Vermilion	repoint	htc:1765			A Layer-1 heading 'Vermillion' exists.
+oe:ind_varnish_paint_lacquer	htc:doc_bichromate_of_potash	Bichromate Of Potash	drop				The 'used in ...' sentence refers to the preceding substance; the sentence splitter fused it with the next headword.
+oe:ind_woollen_silk_dyeing	htc:1142	Tartaric Acid	repoint	htc:0871			Quote is 'alum or tartar' (argol).
+oe:ind_woollen_silk_dyeing	htc:doc_prussian_blue	Prussian Blue	drop				Quote is about calico-printing, not woollen/silk dyeing.
+oe:ind_woollen_silk_dyeing	htc:doc_nitric_acid	Nitric acid	drop				Nitric acid appears as an analytical test, not a process input.
+oe:ind_calico_printing	htc:doc_albumen	Albumen	drop				Albumen is mentioned as present in the dung bath, not as an input.
+oe:ind_calico_printing	htc:0275	Cutch	prune			dye_or_colorant	Role corrected from the quote itself: catechu 'affords a fine permanent substantive brown' — a dye, not a mordant.
+oe:ind_calico_printing	htc:1115	Borax	prune			mordant_or_fixer	Role corrected from the quote itself: 'Borax is employed extensively as a MORDANT'.
+oe:ind_cordage_shipbuilding	htc:0207	Tar	prune			preservative_or_coating	Role corrected from the quote itself: tar is used for 'smearing or covering ships' bottoms' and tarring rope yarn.
+oe:ind_cordage_shipbuilding	htc:0543	Pitch	prune			preservative_or_coating	Role corrected from the quote itself: pitch is used for covering ships' bottoms.
+oe:ind_glass_ceramics	htc:1683	Painters Colours and Pigments White Lead	prune			solvent_or_fuel	Role corrected from the quote itself: white lead is a glaze flux in the quoted recipes.
+oe:ind_glass_ceramics	htc:0328	Saltpetre	prune			solvent_or_fuel	Role corrected from the quote itself: nitre is a frit/flux ingredient in the quoted recipe.
+oe:ind_metallurgy_tinplate	htc:0130	Plumbago	prune			refractory_material	Role corrected from the quote itself: plumbago is 'used for making crucibles'.
+oe:ind_metallurgy_tinplate	htc:1451	Clay unmanufactured	prune			refractory_material	Role corrected from the quote itself: fire clay for Hessian crucibles.
+oe:ind_metallurgy_tinplate	htc:0299	Manganese Ore	prune			primary_feedstock	Role corrected from the quote itself: the quote is the reduction of manganese oxide to metal.
+oe:ind_calico_printing	htc:0136	Pearl and Pot Ashes	prune		BICHROMATE OF POTASH	alkali_or_reagent	Role corrected from the quote itself: potash as an alkali; the bichromate quote belongs to a different salt.
+oe:ind_calico_printing	htc:doc_bichromate_of_potash	Bichromate Of Potash	prune		Nitrate of lead is much employed	mordant_or_fixer	Role corrected from the quote itself: bichromate is the oxidiser/mordant of the chrome styles, not itself the dye; nitrate-of-lead quote removed.
+oe:ind_calico_printing	htc:0141	Cotton Raw	prune		COTTON YARN AND COTTON MANUFACTURES		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_calico_printing	htc:0364	Tin in Blocks Ingots Bars or Slabs	prune		The only muriates much used		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_sugar_refining	htc:1248	Charcoal	prune		ANIMAL CHARCOAL||Animal charcoal has great value		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_hats_brushes_upholstery	htc:0224	Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	prune		COROZO||lac-turnery		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_hats_brushes_upholstery	htc:0291	Skins Furs Pelts Rabbit	prune		HARES' WOOL		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_metallurgy_tinplate	htc:1873	Cobalt Ore	prune		This azure is made		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_brewing_distilling	htc:0135	Molasses	prune		Molasses Committee||The skin is carefully tanned		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_cordage_shipbuilding	htc:0022	Tallow	prune		The manufactories of sail-cloth||Those shipped for Turkey		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_leather_tanning	htc:0975	Sulphuric Acid	prune		Its principal use, however||E U R E U R		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_metallurgy_tinplate	htc:0975	Sulphuric Acid	prune		The edges of sheet lead||The block machinery		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_metallurgy_tinplate	htc:0065	Copper Ore	prune		This trough||It is not a legal tender		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_metallurgy_tinplate	htc:0348	Manufactures Lime	prune		In either case, the mixture||Borax is much employed		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_paper_making	htc:0168	Starch	prune		It is employed to give a blue tinge||Finally the stems		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_pharmaceuticals	htc:0578	Turpentine Oil	prune		When the silk coated		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_pharmaceuticals	htc:doc_iodine	Iodine	prune		When a drop of tincture||A decoction when cold		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_brewing_distilling	htc:1520	Juniper Berries	prune		Oil of Juniper, is obtained		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_calico_printing	htc:0118	Cochineal	prune		Silk is seldom dyed with madder		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_calico_printing	htc:doc_nitric_acid	Nitric acid	prune		Sulphuric acid is much used by dyers		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_calico_printing	htc:0557	Alkali	prune		It is obtained tolerably pure		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_glass_ceramics	htc:0257	Salt	prune		This is to be intimately mixed		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_hats_brushes_upholstery	htc:0255	Horse Hair	prune		The dogwood of America		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_paper_making	htc:1015	Glue Size and Gelatine	prune		One, four feet long		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_pharmaceuticals	htc:0682	Rhubarb	prune		The tartrate is made		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_pharmaceuticals	htc:0399	Quicksilver	prune		Macaroni is made		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_pharmaceuticals	htc:doc_nux_vomica	Nux Vomica	prune		Nux-vomica has been more than suspected		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_pharmaceuticals	htc:1914	Olibanum	prune		They have been occasionally employed in medicine		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_soap_manufacture	htc:0445	Almonds	prune		They yield on pressure		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_brewing_distilling	htc:0007	Barley	prune		It is now to be taken out		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_calico_printing	htc:1932	Alum Roach	prune		It is employed in bleaching, making alum		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_calico_printing	htc:doc_citric_acid	Citric Acid	prune		It is used in medicine, and by calico-printers		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_calico_printing	htc:0852	Dye Stuffs Alizarine and Alizarine Dyes	prune		has no faith in alizarine||Medicinally the oil		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_perfumery_cosmetics	htc:0573	Spices Cloves	prune		Benzoin is of great use		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_varnish_paint_lacquer	htc:doc_umber	Umber	prune		It has the uncommon property		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_woollen_silk_dyeing	htc:0021	Wool	prune		The heat may be clearly referred||A large mill for the purpose		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_woollen_silk_dyeing	htc:1932	Alum Roach	prune		BRAZIL WOOD.--||It is employed in bleaching		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_woollen_silk_dyeing	htc:0263	Silk Raw	prune		SILK BOMBYX||The other articles of import		Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison).
+oe:ind_woollen_silk_dyeing	htc:doc_citric_acid	Citric Acid	drop				Quote is lemon juice used on feathers, not citric acid in wool/silk dyeing.
+oe:ind_woollen_silk_dyeing	htc:0339	Safflower	drop				One quote is cotton dyeing, the other feathers; neither shows safflower on wool or silk.
+oe:ind_metallurgy_tinplate	htc:0267	Lead Pig and Sheet	drop				Lead is the product in both quotes, not an input.
+oe:ind_sugar_refining	htc:0103	Sugar Unrefined Total	drop				Quotes are barley sugar, powder sugar and cane juice on a plantation; none shows raw sugar entering a refinery. Re-admit when a supporting quote is found.
+oe:ind_chocolate_confectionery	htc:0168	Starch	drop				The only quote describes confectioners using dextrine, a starch derivative; it does not show starch itself as an input.

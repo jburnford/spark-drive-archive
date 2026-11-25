@@ -39,8 +39,10 @@ OCR_ROOT = Path("/mnt/data/jic823/open_empire_corpus/ocr_chandra/dictionaries_al
 GUT_ROOT = Path("/mnt/data/jic823/open_empire_corpus/raw/gutenberg")
 
 TODAY = date.today().isoformat()
-BASE_URI = "https://openempire.hgis.usask.ca/vocab/commodities/"
-OE_NS = "https://openempire.hgis.usask.ca/ontology/"
+# MUST be the namespaces of the commodity vocabulary (build_skos_v4.BASE_URI / OE_NS): with any other value
+# the industry graph and the commodity graph share compact ids but never join by IRI.
+BASE_URI = "https://open-empire.hgislab.usask.ca/vocab/human-trade-commodities/"
+OE_NS = "https://open-empire.hgislab.usask.ca/ns#"
 
 PAGE_MARK_RE = re.compile(r"^(\d+)-{35,}\s*$", re.M)
 

@@ -11,16 +11,6 @@ htc:0498	Tobacco Unmanufactured Unstemmed	definition	use	simmonds_1892::species 
 htc:0627	Tobacco Manufactured Cavendish or Negrohead	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
 htc:0674	Tobacco Unmanufactured Stemmed or Stripped	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
 htc:0989	Tobacco Manufactured Cigars and Snuff	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
-htc:0128	Tobacco	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
-htc:0145	Tobacco Manufactured Other Sorts	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
-htc:0160	Tobacco Manufactured Cigars	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
-htc:0170	Tobacco Unmanufactured	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
-htc:0256	Tobacco Manufactured Snuff	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
-htc:0376	Tobacco Unenumerated	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
-htc:0498	Tobacco Unmanufactured Unstemmed	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
-htc:0627	Tobacco Manufactured Cavendish or Negrohead	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
-htc:0674	Tobacco Unmanufactured Stemmed or Stripped	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
-htc:0989	Tobacco Manufactured Cigars and Snuff	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
 htc:0128	Tobacco	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
 htc:0145	Tobacco Manufactured Other Sorts	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
 htc:0160	Tobacco Manufactured Cigars	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
@@ -135,17 +125,13 @@ htc:1951	Pig	definition	excerpt	a well-known domestic animal whose valuable comm
 htc:1964	Gigs	definition	excerpt	a light two-wheeled carriage for general use.	Unrelated homonym senses in the same dictionary entry removed.
 htc:2029	Billets	definition	excerpt	a small clump of fire-wood	Unrelated homonym senses in the same dictionary entry removed.
 htc:0064	Carriages	definition	excerpt	a carrying vehicle of any kind, whether for private use or for the conveyance of goods	Unrelated homonym senses in the same dictionary entry removed.
-htc:0080	Vegetables	source_taxon	remove	Phytelephas macrocarpa	Vegetable-ivory palm picked up from the 'Vegetable Ivory' headword.
-htc:0085	Vegetables Unenumerated	source_taxon	remove	Phytelephas macrocarpa	Vegetable-ivory palm picked up from the 'Vegetable Ivory' headword.
-htc:0224	Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	source_taxon	remove	Phytelephas macrocarpa	Vegetable-ivory palm attached to animal ivory.
-htc:0247	Feathers	source_taxon	remove	Ficus carica	Fig tree attached to feathers.
-htc:0587	Aniline	source_taxon	remove	Illicium anisatum	Star anise attached to aniline, a coal-tar chemical.
-htc:0149	Pepper (Spice)	source_taxon	remove	Xylopia aromatica	Tangential 'pepper' mentioned in the dictionary entry.
-htc:0149	Pepper (Spice)	source_taxon	remove	Capsicum baccatum	Tangential 'pepper' mentioned in the dictionary entry.
-htc:0081	Tea	source_taxon	remove	Catha edulis	Khat ('Arabian tea'), a tangential mention.
+htc:0224	Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	source_taxon	add	Loxodonta africana	Heading enumerates elephant, sea-cow (hippopotamus) and sea-horse (walrus) teeth; cf. Simmonds 1892 s.v. IVORY.
+htc:0224	Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	source_taxon	add	Elephas maximus	Heading enumerates elephant, sea-cow (hippopotamus) and sea-horse (walrus) teeth; cf. Simmonds 1892 s.v. IVORY.
+htc:0224	Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	source_taxon	add	Odobenus rosmarus	Heading enumerates elephant, sea-cow (hippopotamus) and sea-horse (walrus) teeth; cf. Simmonds 1892 s.v. IVORY.
+htc:0149	Pepper (Spice)	source_taxon	add	Piper nigrum	Pepper the spice; matches the black-pepper anchor.
 htc:0015	Caoutchouc	source_taxon	remove	Ficus religiosa	Incidental mention in Ure's list; not a rubber source.
-htc:0436	Castor	source_taxon	remove	Ricinus communis	Contradicts the heading's castoreum sense (lbs, Canada/Hudson's Bay).
 htc:0436	Castor	source_taxon	remove	Castor fiber	Eurasian beaver; the rows are Canadian.
+htc:0436	Castor	source_taxon	add	Castor canadensis	North American beaver, source of the castoreum exported from Canada and Hudson's Bay.
 htc:1377	Turmeric	source_taxon	remove	Anethum sowa	Indian dill, unrelated to turmeric.
 htc:0014	Eggs	source_taxon	remove	Reptilia	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
 htc:0042	Eggs in Shell	source_taxon	remove	Reptilia	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
@@ -164,7 +150,7 @@ htc:0076	Coffee	source_taxon	remove	Coffea stenophylla	Not a 19th-century trade 
 htc:0079	Maple Sugar	source_taxon	remove	Acer saccharinum	Silver maple; maple sugar is from Acer saccharum.
 htc:0312	Venison	source_taxon	remove	Cervus dama	Fallow deer; heading occurs only in Canadian exports.
 htc:2028	Bear	source_taxon	remove	Ursus maritimus	Only the polar bear had been attached; single Canadian row (1839).
-htc:0649	Hemp	source_taxon	remove	Musa textilis	Manila hemp is a different fibre.
+htc:2028	Bear	source_taxon	add	Ursus americanus	American black bear, the common bear of the Canadian trade.
 htc:0859	Cork	source_taxon	remove	Phellodendron amurense	Amur cork tree, not commercial cork (Quercus suber).
 htc:0302	Madder	source_taxon	remove	Morinda citrifolia	Indian mulberry (al dye), tangential.
 htc:0986	Madder Munjeet	source_taxon	remove	Rubia tinctorum	Munjeet is Indian madder.
@@ -185,3 +171,5 @@ htc:1311	Sugar Other Sorts including Sugar Candy	bridge_1866	set_relation	broade
 htc:1373	Maize Other Sorts	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
 htc:0372	Cork Unmanufactured	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
 htc:1042	Dates	bridge_1866	set_relation	exact_or_synonym	Same concept ('Dates').
+htc:0980	Mace	definition	use	simmonds_1892::the arillus, or branching membrane covering the nutmeg	Auto-match picked the supplement homonym (Indian tamarisk gall-nuts); the customs heading is the nutmeg spice (lbs, East Indies and China).
+htc:0980	Mace	definition	excerpt	the arillus, or branching membrane covering the nutmeg, used as a spile	Official-staff and Chinese-weight senses removed.

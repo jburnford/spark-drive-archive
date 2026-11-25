@@ -63,18 +63,47 @@ def norm_key(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def clean_def(s: str, max_len: int = 420) -> str:
+CATCHWORD_RE = re.compile(r"\s*\\?\*?\s*\[[^\]\[]{1,25}\]?\.?\s*$")
+# A new ALL-CAPS headword that begins after a finished sentence inside the same paragraph (OCR merged two
+# entries, or the next entry's opening did not match the headword patterns). Never a "See X" cross-reference.
+INLINE_HEADWORD_RE = re.compile(
+    r"(?<=[.\]])\s+(?:\*\*)?([A-Z][A-Z'\-]{3,}(?:[ ,]+(?:or\s+)?[A-Z][A-Z'\-]{1,}){0,4})(?:\*\*)?(?=\s*\((?:[A-Z][a-z]|GER|Fr|_)|,\s+[_*]*(?:or\s+)?[A-Za-z(]|\s+\*[a-z]+\*,|\.\s+[A-Z][a-z])")
+NOT_HEADWORDS = {"PORT", "GERM", "LINN", "ROXB", "RUSS", "SPAN", "ITAL", "DUTCH", "SWED", "WILLD", "WALL", "LESCH", "LABILL"}
+
+
+def cut_at_inline_headword(body: str) -> str:
+    """Stop an entry body where the next dictionary entry begins inside the same text run."""
+    for m in INLINE_HEADWORD_RE.finditer(body, 20):
+        if re.sub(r"[^A-Z]", "", m.group(1)) in NOT_HEADWORDS:
+            continue
+        prev_sentence = re.split(r"\.\s", body[:m.start()])[-1]
+        if re.search(r"\b[Ss]ee\b[^.]*$", prev_sentence) and not body[:m.start()].rstrip(" *_").endswith((".", "]")):
+            continue
+        return body[:m.start()].rstrip()
+    return body
+
+
+def clean_def(s: str, max_len: int = 700) -> str:
+    """Whitespace/markup clean-up, strip the printer's trailing catchword ("[jar.]"), and shorten at the LAST
+    sentence boundary inside max_len (the old version kept only the first sentence, or cut mid-word)."""
     s = re.sub(r"\s+", " ", (s or "")).strip()
     s = re.sub(r"<[^>]+>", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
+    s = re.split(r"\s\+-{3,}|\s\|\s", s)[0].strip()  # ASCII tables are not definition text
+    s = CATCHWORD_RE.sub("", s).strip()
+    s = re.sub(r"\s*\\?\*\s*$", "", s).strip()
     if len(s) <= max_len:
         return s
-    # Cut cleanly at sentence boundary if possible
-    cut = s[:max_len]
-    m = re.search(r"^(.*?\.)\s", cut)
-    if m and len(m.group(1)) >= 80:
-        return m.group(1)
-    return cut.rsplit(" ", 1)[0] + "..."
+    gloss_end = 0
+    if s.startswith("("):  # Mortimer/McCulloch language gloss "(GER. ... LAT. ...,)": sentence stops inside it are not ends
+        g = re.match(r"\((?:[^()]|\([^()]*\))*\)", s)
+        gloss_end = g.end() if g else 0
+    cut = s[:gloss_end + max_len]
+    ends = [m.end() for m in re.finditer(r"[.;]\s", cut) if m.end() > gloss_end + 80
+            and not re.search(r"\b(?:[A-Z][a-z]?|[A-Z]{2,5}|vol|viz|etc|Fr|Ger|Lat|Linn|Roxb|No|pp?|St|Dr|Mr|cwt|lbs?|oz|gal)\.\s$", cut[:m.end()])]
+    if ends:
+        return cut[:ends[-1]].strip()
+    return cut.rsplit(" ", 1)[0] + " …"
 
 
 def extract_binomials(text: str, allow_lower_genus: bool = False) -> list:
@@ -151,22 +180,52 @@ def parse_simmonds_1892():
     """Simmonds 1892 (b21780535): crisp **HEADWORD**, definition paragraphs."""
     entries = []
     hw_re = re.compile(r"^\*\*([A-Z][A-Z0-9\s,'&./()-]{1,75}?)\*\*((?:,\s*(?:or\s+)?\*\*[A-Z][A-Z0-9\s,'&./()-]{1,50}?\*\*)*)\s*(?:\([^)]+\))?\s*[,;:.—-]?\s*(.*)$")
+    # An entry that starts mid-paragraph (OCR merged two entries): "... ACID**. **VIVRES** (French), provisions"
+    inline_split = re.compile(r"(?<=[.\]])\s+(?=\*\*[A-Z][A-Z0-9\s,'&./()-]{1,75}?\*\*\s*(?:\([^)]+\))?\s*,\s+[a-z(])")
+    raw = []
     for page_no, ptxt in iter_ocr_pages("b21780535"):
         if page_no < 10:
             continue  # front matter
         paras = [p.strip() for p in re.split(r"\n\s*\n", ptxt) if p.strip()]
         for para in paras:
-            flat = re.sub(r"\s+", " ", para)
-            m = hw_re.match(flat)
-            if not m:
-                continue
-            hw_block = m.group(1) + (m.group(2) or "")
-            body = m.group(3).strip()
-            if len(body) < 8:
-                continue
-            primary, alts = split_alt_headwords(hw_block)
-            if not primary:
-                continue
+            for flat in inline_split.split(re.sub(r"\s+", " ", para)):
+                m = hw_re.match(flat.strip())
+                if not m:
+                    continue
+                body = m.group(3).strip()
+                if len(body) < 8:
+                    continue
+                raw.append((page_no, m.group(1).strip(" .,;:-"), m.group(2) or "", body))
+
+    # Pass 2: "**TOBACCO, MOUNTAIN**" inside ONE bold run is an inverted sub-entry (mountain tobacco), not a
+    # synonym of TOBACCO, whenever the dictionary also has a plain entry for the base word. Synonyms are
+    # printed as separate bold runs ("**CAMOMILE**, **CHAMOMILE**") or joined by "or".
+    from difflib import SequenceMatcher
+    plain = {norm_key(h) for _, h, more, _ in raw if "," not in h}
+    comma_bases = Counter(norm_key(h.partition(",")[0]) for _, h, more, _ in raw if "," in h and not more)
+    stems = {norm_key(h.split("-")[0]) for _, h, more, _ in raw if "-" in h and "," not in h}
+    for page_no, hw1, more, body in raw:
+        inverted = None
+        if "," in hw1 and not more and not re.search(r"\bor\b", hw1, re.I):
+            base, _, qual = hw1.partition(",")
+            base, qual = base.strip(), qual.strip(" .,;:-")
+            nb = norm_key(base)
+            known_base = nb in plain or comma_bases[nb] >= 2 or nb in stems
+            variant = SequenceMatcher(None, nb, norm_key(qual)).ratio() >= 0.5  # GAGE, GAUGE / THRAVE, THREAVE
+            if qual and "," not in qual and known_base and len(qual.split()) <= 3 and not variant:
+                inverted = (base, qual)
+        if inverted:
+            base, qual = inverted
+            connective = qual.upper().split()[-1] in ("OF", "FOR", "AND", "DE", "IN")
+            primary = f"{base} {qual}" if connective else f"{qual} {base}"
+            alts = [hw1]
+            if connective:  # "VITRIOL, OIL OF" -> "OIL OF VITRIOL"
+                primary = f"{qual} {base}"
+        else:
+            primary, alts = split_alt_headwords(hw1 + more)
+        if not primary:
+            continue
+        if True:
             entries.append({
                 "headword": primary,
                 "alt_headwords": alts,
@@ -175,6 +234,7 @@ def parse_simmonds_1892():
                 "source_citation": f"P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. {page_no}",
                 "source_uri": f"https://archive.org/details/b21780535/page/n{page_no}",
                 "pdf_page": page_no,
+                "inverted_subentry": bool(inverted),
                 "definition": clean_def(body),
                 "latin_binomials": extract_binomials(body),
                 "see_also": extract_see_also(body),
@@ -188,6 +248,10 @@ def parse_allcaps_ocr_dict(ia_id: str, work_key: str, citation_prefix: str, min_
     # Match bold or ALL-CAPS headword at start of paragraph
     pat_bold = re.compile(r"^(?:#+\s*)?\*\*([A-Z][A-Z0-9\s,'&./-]{1,65}?)\*\*\s*[.,;:—-]+\s*(.+)$")
     pat_caps = re.compile(r"^([A-Z][A-Z\s,'&-]{2,55}?)(?:,\s+(?:or\s+)?([A-Z][A-Z\s'-]{2,40}?))?\s*[.,;—-]+\s+([A-Z(].+)$")
+    # "ABANDONMENT (Fr. délaissement). In Commerce ..." - headword followed directly by its language gloss
+    pat_paren = re.compile(r"^([A-Z][A-Z\s,'&-]{2,55}?)\s+(\((?:[A-Z][a-z]{1,3}|GER|DU|FR|IT|SP|LAT)\.?\s.+)$")
+    # Watt opens every entry with authorities and references up to the plant family (COMBRETACEÆ.) - not a definition
+    watt_preamble = re.compile(r"^.{0,900}?\b[A-Z]{3,}(?:ACEÆ|ACEAE|IFERÆ|OSÆ|INEÆ|IDEÆ|ATÆ|EÆ|Æ)\.\s+(?:D\.\s?E\.\s?P\.[^.]*\.(?:[^.]{0,25}\.)?\s+)?")
 
     cur = None
     cur_body_parts = []
@@ -196,8 +260,19 @@ def parse_allcaps_ocr_dict(ia_id: str, work_key: str, citation_prefix: str, min_
         nonlocal cur, cur_body_parts
         if not cur:
             return
-        full_body = " ".join(cur_body_parts)
-        cur["definition"] = clean_def(full_body, 480)
+        full_body = cut_at_inline_headword(" ".join(cur_body_parts))
+        if work_key == "watt_1908":
+            full_body = watt_preamble.sub("", full_body, count=1)
+            full_body = re.sub(r"^\**D\.\s?E\.\s?P\.\**,?\s*(?:[ivxlc]+\.,?\s*)?[\d\-–, ]*\.?\s*", "", full_body)
+            # leading bibliography: "Author, *Title*, 1881, 59-119; ..." segments carry a year or volume/page numerals
+            while True:
+                seg = re.match(r"^[^;]{0,220}?;\s+", full_body)
+                if seg and re.search(r"\b1[6-9]\d\d\b|\b[ivxlc]+\.,\s*\d", seg.group(0)):
+                    full_body = full_body[seg.end():]
+                else:
+                    break
+            full_body = re.sub(r"\s*#+\s*[A-Z][A-Z ]{3,}(?:[A-Z][a-z]+ ?){0,4}", " ", full_body)  # running heads
+        cur["definition"] = clean_def(full_body)
         cur["latin_binomials"] = extract_binomials(full_body[:5000])
         cur["see_also"] = extract_see_also(full_body[:4000])
         entries.append(cur)
@@ -213,7 +288,7 @@ def parse_allcaps_ocr_dict(ia_id: str, work_key: str, citation_prefix: str, min_
             # Skip short running headers / page numbers
             if len(flat) < 25 or flat.startswith("<table"):
                 continue
-            m = pat_bold.match(flat) or pat_caps.match(flat)
+            m = pat_bold.match(flat) or pat_caps.match(flat) or pat_paren.match(flat)
             if m:
                 if len(m.groups()) == 2:
                     hw_raw, body = m.group(1), m.group(2)
@@ -222,7 +297,7 @@ def parse_allcaps_ocr_dict(ia_id: str, work_key: str, citation_prefix: str, min_
                     body = m.group(3)
                 # Reject obvious non-headword section subheads like "TRADE IN INDIAN TEA" or "TABLE OF"
                 hw_clean = hw_raw.strip(" .,;:-*")
-                if len(hw_clean.split()) <= 5 and not re.match(r"^(TABLE|ACCOUNT|STATEMENT|RETURN|VALUE|QUANTITY|EXPORTS|IMPORTS|PRICES|DUTY|DUTIES|AREA|TRADE IN|PRODUCTION|CULTIVATION|HISTORY|NOTE|APPENDIX)\b", hw_clean):
+                if len(hw_clean.split()) <= 5 and not re.match(r"^(TABLE|ACCOUNT|STATEMENT|RETURN|VALUE|QUANTITY|EXPORTS|IMPORTS|PRICES|DUTY|DUTIES|AREA|TRADE|USES|PRODUCTION|CULTIVATION|MANUFACTURE|HISTORY|HABITAT|PROPERTIES|NOTE|APPENDIX)\b", hw_clean):
                     primary, alts = split_alt_headwords(hw_clean)
                     if primary and len(primary) >= 3:
                         flush()
@@ -263,8 +338,8 @@ def parse_ure_gutenberg():
         nonlocal cur, cur_parts
         if not cur:
             return
-        fb = " ".join(cur_parts)
-        cur["definition"] = clean_def(fb, 480)
+        fb = cut_at_inline_headword(" ".join(cur_parts))
+        cur["definition"] = clean_def(fb)
         cur["latin_binomials"] = extract_binomials(fb[:4000], allow_lower_genus=True)
         cur["see_also"] = extract_see_also(fb[:3000])
         entries.append(cur)
@@ -308,9 +383,29 @@ def parse_simmonds_1854_gutenberg():
     start = txt.find("*** START OF")
     end = txt.find("*** END OF")
     body = txt[start:end] if start > 0 and end > start else txt
+    # The book opens with a subscriber list, works consulted and an analytical table of contents whose
+    # summaries are not definitions: the text proper starts at the SECOND "SECTION I."
+    starts = [m.start() for m in re.finditer(r"^SECTION I\.", body, re.M)]
+    if len(starts) >= 2:
+        body = body[starts[1]:]
     paras = [re.sub(r"\s+", " ", x).strip() for x in re.split(r"\n\s*\n", body) if x.strip()]
 
     entries = []
+    runin = re.compile(r"^([A-Z][A-Z\s,'&-]{2,60}?)\.--([A-Z].{60,})$")
+    for p1 in paras:
+        m = runin.match(p1)
+        if m:
+            primary, alts = split_alt_headwords(m.group(1))
+            if primary and len(primary.split()) <= 6:
+                entries.append({
+                    "headword": primary, "alt_headwords": alts, "norm_headword": norm_key(primary),
+                    "source_work": "simmonds_1854",
+                    "source_citation": "P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854, Project Gutenberg #15191)",
+                    "source_uri": "https://www.gutenberg.org/ebooks/15191", "pdf_page": None,
+                    "definition": clean_def(m.group(2)),
+                    "latin_binomials": extract_binomials(m.group(2)[:4000], allow_lower_genus=True),
+                    "see_also": extract_see_also(m.group(2)[:2000]),
+                })
     # Section headings are ALL CAPS on their own short paragraph followed by prose
     i = 0
     while i < len(paras) - 1:
@@ -328,7 +423,7 @@ def parse_simmonds_1854_gutenberg():
                         "source_citation": "P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854, Project Gutenberg #15191)",
                         "source_uri": "https://www.gutenberg.org/ebooks/15191",
                         "pdf_page": None,
-                        "definition": clean_def(nxt, 480),
+                        "definition": clean_def(nxt),
                         "latin_binomials": extract_binomials(nxt[:4000], allow_lower_genus=True),
                         "see_also": extract_see_also(nxt[:2000]),
                     })

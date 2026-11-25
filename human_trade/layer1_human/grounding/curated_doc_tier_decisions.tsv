@@ -18,7 +18,6 @@ htc:doc_animi	Animi	same_as_layer1	htc:1213	Gum Animi	Already a standalone Layer
 htc:doc_archil	Archil	same_as_layer1	htc:0471	Orchal	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
 htc:doc_areca_catechu	Areca Catechu	merge_into	htc:doc_betel_nut	Betel Nut	Same commodity as another document-attested concept (spelling/synonym variant); merged as an altLabel.
 htc:doc_asafetida	Asafetida	same_as_layer1	htc:1826	Assafoetida	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
-htc:doc_asafoetida	Asafoetida	same_as_layer1	htc:1826	Assafoetida	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
 htc:doc_attar_of_roses	Attar Of Roses	merge_into	htc:doc_otto_of_roses	Otto of Roses	Same commodity as another document-attested concept (spelling/synonym variant); merged as an altLabel.
 htc:doc_avignon_berries	Avignon Berries	same_as_layer1	htc:1265	Berries Yellow	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
 htc:doc_bar_wood	Bar Wood	merge_into	htc:doc_barwood	Barwood	Same commodity as another document-attested concept (spelling/synonym variant); merged as an altLabel.
@@ -49,7 +48,6 @@ htc:doc_carapace	Carapace	same_as_layer1	htc:1181	Tortoise Shell	Already a stand
 htc:doc_carlock	Carlock	refile	htc:0290	Isinglass	Filed under the wrong catch-all by a keyword match (e.g. 'amber', 'musk', 'anchovy', 'mango'); re-pointed to the customs heading that would actually have covered it.
 htc:doc_carob_bean	Carob Bean	same_as_layer1	htc:1253	Locust Beans	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
 htc:doc_carpenter_s_mate	Carpenter'S Mate	drop			Occupation or ship's rank, not a commodity (admitted because the headword contains a commodity keyword such as 'mate').
-htc:doc_cascarilla	Cascarilla	merge_into	htc:doc_cascarilla_bark	Cascarilla Bark	Same commodity as another document-attested concept (spelling/synonym variant); merged as an altLabel.
 htc:doc_cashew_nuts	Cashew Nuts	merge_into	htc:doc_cashew_nut	Cashew Nut	Same commodity as another document-attested concept (spelling/synonym variant); merged as an altLabel.
 htc:doc_cassava_sifter	Cassava Sifter	drop			Tool, instrument or equipment, not a traded raw commodity of this tier.
 htc:doc_cassia_bark	Cassia Bark	same_as_layer1	htc:0719	Spices Cassia Lignea	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
@@ -98,7 +96,6 @@ htc:doc_druggist	Druggist	drop			Occupation or ship's rank, not a commodity (adm
 htc:doc_dry_salter	Dry Salter	drop			Occupation or ship's rank, not a commodity (admitted because the headword contains a commodity keyword such as 'mate').
 htc:doc_earth_nut	Earth Nut	same_as_layer1	htc:1391	Nuts and Kernels Ground Nuts	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
 htc:doc_efflorescence	Efflorescence	drop			Process, technique, phenomenon or colour, not a commodity.
-htc:doc_elenthier	Elenthier	drop			Garbled OCR headword or fragment; the cited entry does not define this commodity.
 htc:doc_emery	Emery	same_as_layer1	htc:1602	Stones Emery Stones	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
 htc:doc_emery_stone	Emery Stone	same_as_layer1	htc:1602	Stones Emery Stones	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
 htc:doc_ermine	Ermine	same_as_layer1	htc:0563	Skins Furs Pelts Ermine	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
@@ -267,7 +264,6 @@ htc:doc_tortoise_shell_dealer	Tortoise Shell Dealer	drop			Occupation or ship's 
 htc:doc_tragacanth	Tragacanth	same_as_layer1	htc:1758	Gum Tragacanth	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
 htc:doc_trek_kino	Trek Kino	drop			Garbled OCR headword or fragment; the cited entry does not define this commodity.
 htc:doc_tungsten	Tungsten	refile	htc:0382	Ore Unenumerated	Mineral, stone or ore, not a chemical manufacture; re-pointed to the ore / mineral / alkali catch-all.
-htc:doc_turkey_red	Turkey Red	drop			Process, technique, phenomenon or colour, not a commodity.
 htc:doc_valonea	Valonea	same_as_layer1	htc:0132	Valonia	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
 htc:doc_volatile	Volatile	drop			Garbled OCR headword or fragment; the cited entry does not define this commodity.
 htc:doc_wangala	Wangala	merge_into	htc:doc_sesame	Sesame	Same commodity as another document-attested concept (spelling/synonym variant); merged as an altLabel.
@@ -277,4 +273,29 @@ htc:doc_wolverine	Wolverine	same_as_layer1	htc:0461	Wolverine Furs	Already a sta
 htc:doc_wood_oil	Wood Oil	merge_into	htc:doc_gurjun	Gurjun	Same commodity as another document-attested concept (spelling/synonym variant); merged as an altLabel.
 htc:doc_yam	Yam	refile	htc:0085	Vegetables Unenumerated	Re-pointed from a keyword-matched catch-all to the customs heading that fits the commodity (spices, fruit, vegetables, nuts, grain, forage seed, oil, leather, oil cake).
 htc:doc_yellow_berries	Yellow Berries	same_as_layer1	htc:1265	Berries Yellow	Already a standalone Layer-1 customs heading, so not 'absent from the customs ledgers'; kept only as a gazetteer surface form of that heading.
-htc:doc_zechin	Zechin	drop			Unit of weight / coin, not a commodity.
+htc:doc_acids	Acids	drop			Class of substances, not a single traded commodity.
+htc:doc_oleaginous_plants	Oleaginous Plants	drop			Class of substances, not a single traded commodity.
+htc:doc_dyeing	Dyeing	drop			Process / colour effect, not a commodity.
+htc:doc_violet_dye	Violet Dye	drop			Process / colour effect, not a commodity.
+htc:doc_hull	Hull	drop			Cited entry is the body of a ship / the act of husking; not a commodity.
+htc:doc_sida_carpinifolia	Sida Carpinifolia	drop			Watt botanical entry for a plant genus; no trade commodity is defined.
+htc:doc_dalbergia	Dalbergia	same_as_layer1	htc:1205	Wood and Timber Hardwoods Rosewood	Watt's genus entry for the rosewoods; the commodity is the Layer-1 rosewood heading.
+htc:doc_rosewood	Rosewood	same_as_layer1	htc:1205	Wood and Timber Hardwoods Rosewood	Already a standalone Layer-1 customs heading.
+htc:doc_leech_fishery	Leech Fishery	same_as_layer1	htc:1348	Leeches	Leeches are already a Layer-1 customs heading.
+htc:doc_galena	Galena	same_as_layer1	htc:0258	Lead Ore	Galena is lead ore, already a Layer-1 customs heading.
+htc:doc_oil_of_peppermint	Oil of Peppermint	same_as_layer1	htc:1773	Peppermint	Peppermint (oil) is already a Layer-1 customs heading.
+htc:doc_rape	Rape	same_as_layer1	htc:0231	Seeds Rape	Rape seed is already a Layer-1 customs heading.
+htc:doc_russia_leather	Russia Leather	same_as_layer1	htc:0731	Hides Russia or Muscovy	Russia leather is already a Layer-1 customs heading (Hides Russia or Muscovy).
+htc:doc_altingia_excelsa	Altingia Excelsa	merge_into	htc:doc_storax	Storax	Watt's entry for the Burmese storax tree; the commodity is storax.
+htc:doc_citronella_oil	Citronella Oil	merge_into	htc:doc_citronella	Citronella	Same commodity as Citronella (the essential oil).
+htc:doc_sandal	Sandal	merge_into	htc:doc_red_sanders_wood	Red Sanders Wood	Ure's SANDAL is red saunders wood (Pterocarpus santalinus).
+htc:doc_affoo_yam	Affoo Yam	merge_into	htc:doc_yam	Yam	A variety of yam.
+htc:doc_magenta	Magenta	refile	htc:0756	Coal Tar Dyes Unenumerated	Coal-tar (aniline) dye; subsumed under Coal Tar Dyes Unenumerated.
+htc:doc_emerald	Emerald	refile	htc:0653	Precious Stones Unset	Gemstone; subsumed under Precious Stones Unset, not chemical manufactures.
+htc:doc_magnesite	Magnesite	refile	htc:1905	Minerals Unenumerated	Native mineral; subsumed under Minerals Unenumerated.
+htc:doc_crab_wood	Crab Wood	refile	htc:0070	Wood Unenumerated	A timber (Carapa guianensis wood), not an oil.
+htc:doc_domba_oil	Domba Oil	refile	htc:0124	Oil Unenumerated	A fixed oil; subsumed under Oil Unenumerated.
+htc:doc_ochro	Ochro	refile	htc:0085	Vegetables Unenumerated	Okra is a vegetable, not a fibre.
+htc:doc_vulture_feathers	Vulture Feathers	refile	htc:1590	Feathers of other sorts Unenumerated	Feathers; subsumed under Feathers of other sorts Unenumerated.
+htc:doc_mate	Mate	drop			Cited entry is the ship's officer; Paraguay tea is htc:doc_yerba_mate.
+htc:doc_raccoon	Raccoon	same_as_layer1	htc:0249	Skins Furs Pelts Racoon	Already a Layer-1 customs heading under the spelling 'Racoon' (150 rows).
