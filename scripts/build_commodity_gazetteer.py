@@ -410,9 +410,9 @@ def load_danika_and_1866():
         if "strychnine" in (notes + " " + " ".join(r[3:])).lower():
             upsert("Strychnine", alts=["nux vomica alkaloid"], roles=["Drug"], src="Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)")
         if "laudanum" in (notes + " " + " ".join(r[3:])).lower():
-            upsert("Laudanum", alts=["tincture of opium", "Dover's powder"], roles=["Drug"], src="Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)")
+            upsert("Laudanum", alts=["tincture of opium"], roles=["Drug"], src="Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)")
         if "calomel" in (notes + " " + " ".join(r[3:])).lower():
-            upsert("Calomel", alts=["mercurous chloride", "blue pill"], roles=["Drug"], src="Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)")
+            upsert("Calomel", alts=["mercurous chloride"], roles=["Drug"], src="Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)")
         if "sal volatile" in (notes + " " + " ".join(r[3:])).lower():
             upsert("Sal Volatile", alts=["liquid ammonia", "volatile alkali"], roles=["Drug", "Chemical"], src="Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)")
 
@@ -450,6 +450,60 @@ def load_danika_and_1866():
         upsert(name, alts=alts, roles=roles, notes=note, src="1866 British Customs Commodities List (Danika / HGIS Lab)")
 
     return items
+
+
+DOC_DECISIONS_PATH = GROUND / "curated_doc_tier_decisions.tsv"
+SMALL_WORDS = {"of", "and", "or", "the", "de", "in", "for"}
+
+
+def smart_title(s: str) -> str:
+    """Title-case without the str.title() artefacts ("Dragon'S Blood", "Attar Of Roses")."""
+    out = []
+    for i, w in enumerate(s.lower().split()):
+        out.append(w if (i and w in SMALL_WORDS) else w[:1].upper() + w[1:])
+    return " ".join(out)
+
+
+NEXT_HEADWORD_RE = re.compile(r"[\s.;,]\s*\**(?:##\s*)?[A-Z][A-Z'\-]{3,}(?:[ ,][A-Z'\-]{2,})*\**(?=[,.( \[]|$)")
+
+
+def clean_definition(text: str, limit: int = 380) -> str:
+    """Cut a lexicon definition where it runs on into the NEXT dictionary headword (but never inside a
+    "See HEADWORD" cross-reference), drop trailing bracketed catchwords, and shorten at a sentence boundary
+    (measured after Mortimer-style "(GER. ... SP. ...)" language glosses) instead of a blind character cut."""
+    t = (text or "").strip()
+    for m in NEXT_HEADWORD_RE.finditer(t, 30):
+        if re.sub(r"[^A-Z]", "", m.group(0)) in ("PORT", "GERM", "LINN", "ROXB", "RUSS", "SPAN", "ITAL", "DUTCH", "SWED"):
+            continue  # language / authority abbreviation inside a gloss, not a headword
+        before = t[:m.start()].rstrip(" *_")
+        sentence = re.split(r"\.\s", before)[-1]
+        if t[m.start()] != "." and not before.endswith(".") and re.search(r"\b[Ss]ee\b", sentence):
+            continue  # cross-reference target, not a new entry
+        t = t[:m.start() + 1].rstrip(" ,;")
+        break
+    t = re.sub(r"\s*\\?\*?\s*\[[^\]]{0,30}\.?\]?\s*$", "", t).strip()
+    gloss_end = 0
+    if t.startswith("("):
+        g = re.match(r"\((?:[^()]|\([^()]*\))*\)", t)
+        gloss_end = g.end() if g else (t.find(")") + 1 if 0 < t.find(")") < 450 else 0)
+    if len(t) > gloss_end + limit:
+        cut = t[:gloss_end + limit]
+        end = max(cut.rfind(". ", gloss_end), cut.rfind("; ", gloss_end))
+        t = cut[:end + 1] if end >= gloss_end + 100 else cut.rsplit(" ", 1)[0] + " …"
+    return t
+
+
+def load_doc_decisions():
+    out = {}
+    if DOC_DECISIONS_PATH.exists():
+        with open(DOC_DECISIONS_PATH, encoding="utf-8") as fh:
+            for r in csv.DictReader((l for l in fh if not l.startswith("#")), delimiter="\t"):
+                if r["action"] not in ("drop", "same_as_layer1", "merge_into", "refile"):
+                    raise ValueError(f"curated_doc_tier_decisions.tsv: bad action {r['action']} for {r['concept_id']}")
+                if not r["rationale"].strip():
+                    raise ValueError(f"curated_doc_tier_decisions.tsv: no rationale for {r['concept_id']}")
+                out[r["concept_id"]] = r
+    return out
 
 
 def main():
@@ -578,7 +632,7 @@ def main():
             _, _, _, st, lb, sitc, theo, _ = v4.classify_v4(di["label"], di["label"])
 
         cand_pool[dk] = {
-            "label": di["label"].title() if di["label"].islower() or di["label"].isupper() else di["label"],
+            "label": smart_title(di["label"]) if di["label"].islower() or di["label"].isupper() else di["label"],
             "alts": list(di["alts"]),
             "roles": list(di["roles"]),
             "subsumed_id": b_id,
@@ -589,14 +643,14 @@ def main():
             "land_basis": lb,
             "sitc": sitc,
             "theodoridis": theo,
-            "definition": di["definition"] or (f"{dict_hits[0]['definition'][:380]} [{dict_hits[0]['source_citation']}]" if dict_hits else ""),
+            "definition": di["definition"] or (f"{clean_definition(dict_hits[0]['definition'])} [{dict_hits[0]['source_citation']}]" if dict_hits else ""),
             "dict_hits": dict_hits[:4],
             "extra_sources": list(di["sources"]),
             "danika_notes": "; ".join(di["notes"]),
         }
 
     # 4b. Admit high-confidence non-enumerated commodities from all 6 commercial books!
-    prio = {"simmonds_1892": 100, "watt_1908": 95, "simmonds_1854": 90, "ure_gutenberg": 85, "mcculloch_1880": 80, "mortimer_1823": 75}
+    prio = {"simmonds_1892": 100, "ure_gutenberg": 85, "mcculloch_1880": 80, "mortimer_1823": 75, "watt_1908": 45, "simmonds_1854": 30}
     for k, entries in sorted(by_hw.items()):
         if k in l1_exact_keys or (len(k.split()) == 1 and v4.singularize(k) in l1_exact_keys):
             continue
@@ -632,7 +686,7 @@ def main():
         # Clean Victorian dictionary compound hyphens like "Almond-Oil" -> "Almond Oil"
         disp = re.sub(r"(?<=[A-Za-z])-(?=[A-Za-z])", " ", disp)
         if disp.isupper() or disp.islower():
-            disp = disp.title()
+            disp = smart_title(disp)
         # Clean dictionary-derived synonym altLabels ("or X")
         alts = []
         for dh in entries[:3]:
@@ -646,7 +700,7 @@ def main():
         cand_pool[k] = {
             "label": disp,
             "alts": alts,
-            "roles": [EXT_BUCKETS[b_id]["label"].split(" ")[0]],
+            "roles": [EXT_BUCKETS[b_id]["label"].split(" ")[0].strip(",")],
             "subsumed_id": b_id,
             "group": grp,
             "sector": sec,
@@ -655,7 +709,7 @@ def main():
             "land_basis": lb,
             "sitc": sitc,
             "theodoridis": theo,
-            "definition": f"{best['definition'][:380]} [{best['source_citation']}]",
+            "definition": f"{clean_definition(best['definition'])} [{best['source_citation']}]",
             "dict_hits": entries[:4],
             "extra_sources": [],
             "danika_notes": "",
@@ -700,16 +754,42 @@ def main():
 
     wd_by_term = v4.query_wikidata(lookup_terms)
 
+    decisions = load_doc_decisions()
+    l1_by_cid = {c["concept_id"]: c for c in l1_concepts}
+    used_decisions, merged_alts, decision_log = set(), defaultdict(list), []
     doc_concepts = []
     for k in sorted(cand_pool.keys()):
         cp = cand_pool[k]
         lbl = cp["label"]
         if lbl.lower() in used_prefs or v4.norm_key(lbl) in used_prefs:
             continue
+        cid = f"htc:doc_{v4.slugify(k)}"
+        dec = decisions.get(cid)
+        if dec:
+            used_decisions.add(cid)
+            decision_log.append(dec)
+            if dec["action"] == "drop":
+                continue
+            if dec["action"] == "same_as_layer1":
+                if dec["target"] not in l1_by_cid:
+                    raise ValueError(f"curated_doc_tier_decisions.tsv: {cid} target {dec['target']} is not a Layer-1 concept")
+                for a in [lbl] + list(cp["alts"]):
+                    if a.lower() not in {x.lower() for x in l1_extra_alts[dec["target"]]} and a.lower() != l1_by_cid[dec["target"]]["skos_prefLabel"].lower():
+                        l1_extra_alts[dec["target"]].append(a)
+                continue
+            if dec["action"] == "merge_into":
+                merged_alts[dec["target"]].extend([lbl] + list(cp["alts"]))
+                continue
+            if dec["action"] == "refile":
+                tgt = l1_by_cid.get(dec["target"])
+                if not tgt:
+                    raise ValueError(f"curated_doc_tier_decisions.tsv: {cid} refile target {dec['target']} is not a Layer-1 concept")
+                grp = tgt["ontology"]["group_id"].replace("htc:", "")
+                _, sec, dom, st, lb, sitc, theo, _ = v4.classify_v4(lbl, lbl, grp)
+                cp.update({"subsumed_id": dec["target"], "group": grp, "sector": sec, "domain": dom, "state": st,
+                           "land_basis": lb, "sitc": sitc, "theodoridis": theo, "roles": []})
         used_prefs.add(lbl.lower())
         used_prefs.add(v4.norm_key(lbl))
-
-        cid = f"htc:doc_{v4.slugify(k)}"
 
         # Ground via verified positive-allowlisted Wikidata matcher (zero QIDs from memory!)
         wd_hit = None
@@ -726,8 +806,11 @@ def main():
         # Verified Linnaean taxa from dictionary binomials + Danika altLabels + Wikidata taxon fallback
         taxa, seen_tq = [], set()
         for dh in cp["dict_hits"][:3]:
+            dh_txt = re.sub(r"[*_]", "", clean_definition(dh.get("definition") or "", 10000)).lower()
             for b in dh.get("latin_binomials") or []:
                 bl = b.lower().strip()
+                if bl not in dh_txt:
+                    continue  # leaked from a neighbouring entry or from text after the next headword
                 bg = binom_map.get(bl) or binom_map.get(ARCHAIC_BINOM_MAP.get(bl, ""))
                 if bg and bg["qid"] and bg["qid"] not in seen_tq:
                     seen_tq.add(bg["qid"])
@@ -773,7 +856,7 @@ def main():
 
         # Build concise scopeNote for document-attested status
         sub_id = cp["subsumed_id"]
-        sub_lbl = EXT_BUCKETS[sub_id]["label"] if sub_id in EXT_BUCKETS else "Other Articles"
+        sub_lbl = l1_by_cid[sub_id]["skos_prefLabel"] if sub_id in l1_by_cid else "Other Articles"
         src_desc = ", ".join(cp["extra_sources"] + [d["citation"] for d in dsrc[:2]])
         scope_note = (
             f"Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 "
@@ -794,6 +877,7 @@ def main():
             "skos_altLabels": clean_alts[:8],
             "skos_definition": cp["definition"] or None,
             "skos_scopeNote": scope_note,
+            "curation": ({"action": dec["action"], "target": dec["target"], "rationale": dec["rationale"]} if dec else None),
             "dictionary_sources": dsrc,
             "extra_sources": cp["extra_sources"],
             "multi_use_roles": cp["roles"],
@@ -837,6 +921,18 @@ def main():
             "status": "document_attested_grounded" if wd_hit else "document_attested_local",
         }
         doc_concepts.append(rec)
+
+    stale = sorted(set(decisions) - used_decisions)
+    if stale:
+        print(f"NOTE: {len(stale)} curated doc-tier decisions no longer match a candidate: {stale[:12]}", flush=True)
+    by_doc = {r["concept_id"]: r for r in doc_concepts}
+    for tgt, alts in merged_alts.items():
+        if tgt not in by_doc:
+            raise ValueError(f"curated_doc_tier_decisions.tsv: merge target {tgt} was not emitted")
+        have = {x.lower() for x in by_doc[tgt]["skos_altLabels"]} | {by_doc[tgt]["skos_prefLabel"].lower()}
+        for a in alts:
+            if a.lower() not in have:
+                by_doc[tgt]["skos_altLabels"].append(a); have.add(a.lower())
 
     # Save document_attested_concepts.jsonl
     doc_out = GROUND / "document_attested_concepts.jsonl"

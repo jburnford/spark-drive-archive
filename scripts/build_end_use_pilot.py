@@ -352,7 +352,7 @@ def iter_all_corpus_pages():
     """Yield (work_id, citation_prefix, page_num, uri, clean_text) across all 6 full-text books."""
     # 1. Project Gutenberg full texts (chunked into pseudo-pages of ~4,500 chars for fast sentence indexing)
     gut_specs = [
-        ("ure_gutenberg", "Ure (1853), Dictionary of Arts, Manufactures, and Mines", "https://www.gutenberg.org/ebooks/44562", GUT_ROOT / "pg44562_ure_dictionary_arts_manufactures.txt"),
+        ("ure_gutenberg", "Ure (1840), Dictionary of Arts, Manufactures, and Mines", "https://www.gutenberg.org/ebooks/44562", GUT_ROOT / "pg44562_ure_dictionary_arts_manufactures.txt"),
         ("simmonds_1854", "Simmonds (1854), Commercial Products of the Vegetable Kingdom", "https://www.gutenberg.org/ebooks/15191", GUT_ROOT / "pg15191_simmonds_1854_vegetable_kingdom.txt"),
     ]
     for wid, cit, uri, path in gut_specs:
@@ -757,7 +757,7 @@ def main():
     md = [
         "# 19th-Century Industrial End-Use Pilot Report (Soap, Calico Printing, Chocolate)",
         "",
-        f"Generated {TODAY} by `scripts/build_end_use_pilot.py` across **{pages_scanned:,} full-text pages** from 6 19th-century commercial & manufacturing dictionaries (Ure 1853, Simmonds 1854, Simmonds 1892, McCulloch 1880, Mortimer 1823, Watt 1908). Every link is grounded in at least one verbatim primary-source quote.",
+        f"Generated {TODAY} by `scripts/build_end_use_pilot.py` across **{pages_scanned:,} full-text pages** from 6 19th-century commercial & manufacturing dictionaries (Ure 1840, Simmonds 1854, Simmonds 1892, McCulloch 1880, Mortimer 1823, Watt 1908). Every link is grounded in at least one verbatim primary-source quote.",
         "",
         "## Summary",
         "| Industry | Attested Commodities | Layer-1 Customs | Document-Attested (`htc:doc_*`) | Total Attested Sentences |",

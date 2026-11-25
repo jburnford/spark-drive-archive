@@ -25,7 +25,7 @@ oe:ind_soap_manufacture a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Soap Manufacture"@en ;
     skos:definition "19th-century hard, soft, yellow, mottled, curd, Castile, and toilet soap manufacture — combining animal tallow and tropical/vegetable oils with caustic alkalis (barilla, kelp, soda ash, potash, lime), rosin, common salt for salting out, and essential oils for scenting."@en ;
-    oe:usesCommodityInput htc:0136, htc:0557, htc:0172, htc:0181, htc:0022, htc:0025, htc:1895, htc:0257, htc:0562, htc:0445, htc:1504, htc:0780, htc:0250, htc:2002, htc:0348, htc:0910, htc:0460, htc:doc_bergamot, htc:doc_musk, htc:0573, htc:doc_ochre, htc:doc_neem_oil, htc:0719, htc:0625, htc:0138 .
+    oe:usesCommodityInput htc:0136, htc:0557, htc:0172, htc:0181, htc:0022, htc:0025, htc:1895, htc:0257, htc:0562, htc:0445, htc:1504, htc:0780, htc:0250, htc:2002, htc:0348, htc:0910, htc:0460, htc:doc_bergamot, htc:doc_musk, htc:0573, htc:1023, htc:doc_neem_oil, htc:0719, htc:0625, htc:0138 .
 
 oe:ind_calico_printing a skos:Concept, crm:E55_Type ;
     rdfs:label "Calico Cloth & Calico Printing"@en ;
@@ -33,7 +33,7 @@ oe:ind_calico_printing a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Calico Cloth & Calico Printing"@en ;
     skos:definition "19th-century cotton weaving, bleaching, dyeing, and calico printing — combining raw cotton with bleaching powder and alkalis, natural, insect, mineral, and coal-tar dyestuffs (madder, garancine, munjeet, alizarine, indigo, cochineal, lac dye, kermes, logwood, quercitron, fustic, brazil wood, safflower, orchal/archil, persian berries, prussian blue, chrome yellow, aniline), metallic mordants (alum, copperas, tin/lead/copper salts, sumach, galls, cutch), and thickeners (gum senegal, gum arabic, tragacanth, starch, British gum, flour, albumen)."@en ;
-    oe:usesCommodityInput htc:0302, htc:0136, htc:0141, htc:1932, htc:2002, htc:1322, htc:0062, htc:0267, htc:doc_bichromate_of_potash, htc:doc_citric_acid, htc:0364, htc:0557, htc:1825, htc:0852, htc:0168, htc:0036, htc:doc_prussian_blue, htc:1142, htc:1304, htc:0096, htc:0975, htc:0118, htc:doc_oxalic_acid, htc:doc_nitric_acid, htc:0185, htc:1692, htc:0172, htc:0275, htc:1265, htc:0536, htc:doc_blue_vitriol, htc:0299, htc:0203, htc:0109, htc:0348, htc:0008, htc:doc_sal_ammoniac, htc:doc_muriatic_acid, htc:1375, htc:0072, htc:doc_verdigris, htc:0257, htc:0587, htc:0562, htc:doc_albumin, htc:1758, htc:0524, htc:0677, htc:1492, htc:0339, htc:1115, htc:0986, htc:1899, htc:doc_orpiment .
+    oe:usesCommodityInput htc:0302, htc:0136, htc:0141, htc:1932, htc:2002, htc:1322, htc:0062, htc:0267, htc:doc_bichromate_of_potash, htc:doc_citric_acid, htc:0364, htc:0557, htc:1825, htc:0852, htc:0168, htc:0036, htc:doc_prussian_blue, htc:1142, htc:1304, htc:0096, htc:0975, htc:0118, htc:doc_oxalic_acid, htc:doc_nitric_acid, htc:0185, htc:1692, htc:0172, htc:0275, htc:1265, htc:0536, htc:doc_blue_vitriol, htc:0299, htc:0203, htc:0109, htc:0348, htc:0008, htc:doc_sal_ammoniac, htc:doc_muriatic_acid, htc:1375, htc:0072, htc:doc_verdigris, htc:0257, htc:0587, htc:0562, htc:doc_albumen, htc:1758, htc:0524, htc:0677, htc:1492, htc:0339, htc:1115, htc:0986, htc:1899, htc:doc_orpiment .
 
 oe:ind_chocolate_confectionery a skos:Concept, crm:E55_Type ;
     rdfs:label "Chocolate & Confectionery"@en ;
@@ -227,6 +227,10 @@ htc:0986 a skos:Concept, crm:E55_Type ;
     rdfs:label "Madder Munjeet"@en ;
     oe:usedInIndustry oe:ind_calico_printing .
 
+htc:1023 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Mineral Pigment Iron Oxides Ochres &c"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
 htc:1115 a skos:Concept, crm:E55_Type ;
     rdfs:label "Borax"@en ;
     oe:usedInIndustry oe:ind_calico_printing .
@@ -291,8 +295,8 @@ htc:2002 a skos:Concept, crm:E55_Type ;
     rdfs:label "Copperas"@en ;
     oe:usedInIndustry oe:ind_calico_printing, oe:ind_soap_manufacture .
 
-htc:doc_albumin a skos:Concept, crm:E55_Type ;
-    rdfs:label "Albumin"@en ;
+htc:doc_albumen a skos:Concept, crm:E55_Type ;
+    rdfs:label "Albumen"@en ;
     oe:usedInIndustry oe:ind_calico_printing .
 
 htc:doc_ambergris a skos:Concept, crm:E55_Type ;
@@ -304,7 +308,7 @@ htc:doc_bergamot a skos:Concept, crm:E55_Type ;
     oe:usedInIndustry oe:ind_soap_manufacture .
 
 htc:doc_bichromate_of_potash a skos:Concept, crm:E55_Type ;
-    rdfs:label "Bichromate Of Potash"@en ;
+    rdfs:label "Bichromate of Potash"@en ;
     oe:usedInIndustry oe:ind_calico_printing .
 
 htc:doc_blue_vitriol a skos:Concept, crm:E55_Type ;
@@ -330,10 +334,6 @@ htc:doc_neem_oil a skos:Concept, crm:E55_Type ;
 htc:doc_nitric_acid a skos:Concept, crm:E55_Type ;
     rdfs:label "Nitric acid"@en ;
     oe:usedInIndustry oe:ind_calico_printing .
-
-htc:doc_ochre a skos:Concept, crm:E55_Type ;
-    rdfs:label "Ochre"@en ;
-    oe:usedInIndustry oe:ind_soap_manufacture .
 
 htc:doc_orpiment a skos:Concept, crm:E55_Type ;
     rdfs:label "Orpiment"@en ;

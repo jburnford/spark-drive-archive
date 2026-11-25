@@ -1,0 +1,289 @@
+# Hand-curated, evidence-backed corrections applied by human_trade/scripts/build_skos_v4.py on top of the regex classifier and lexical Wikidata anchoring.
+# Blank cell = keep the automatic value. wd_term is resolved against the local Wikidata slim snapshot (never a QID from memory); NONE suppresses a wrong anchor.
+# The builder appends each heading's Layer-1 trade evidence (series, years, units, routes) and publishes rationale + evidence as skos:editorialNote.
+concept_id	commodity_as_printed	group	processing_state	land_basis	wd_term	wd_relation	scope_note	rationale
+htc:0046	Peas not fresh other than Split Peas		raw_unprocessed					Processing state: whole nuts/kernels/seeds/peas are unprocessed; classifier matched 'expressing Oil', 'Ground (nuts)' or 'Split'.
+htc:0127	Tongues	grp_meats_provisions			NONE		Ambiguous heading: read as salted neats' (ox) tongues from the provisions context of the Quebec export lists and CUST 4 ('Meats viz Tongues'); cod tongues are entered separately as 'Tongues and Sounds'.	Tongues exported from Quebec in kegs / by number and in lbs sit in the provisions list beside beef and pork (cf. htc:1378 'Meats viz Tongues' in the same CUST 4 ledgers); fish tongues are separately headed 'Tongues and Sounds' (htc:0513).
+htc:0132	Valonia				tannin	skos:broadMatch		Valonia is acorn cups, not bark (Ure 1853 s.v. VALONIA: 'a kind of acorn ... the husk or cup contains abundance of tannin').
+htc:0168	Starch	grp_cereals_grains	manufactured					Farinaceous preparations (macaroni, vermicelli, crackers/biscuit, starch, dextrine) belong with Cereals; other starch headings (htc:1561, htc:1572) are already here.
+htc:0186	Chemical Essential or Perfumed Oils	grp_waxes_soap_candles		terrestrial_crop				Essential and perfumed oils (incl. essence of lemons) belong with Perfumery (SITC 55), not mineral chemicals or fruit.
+htc:0203	Wood and Timber Dye Woods Fustic	grp_natural_dyestuffs		terrestrial_forest				Heading is explicitly a dyewood (fustic, Brazil wood, sapan, Nicaragua wood, red/Guinea wood, braziletto); filed with Dye Woods Logwood (htc:0096) rather than building timber.
+htc:0223	Nuts and Kernels for expressing Oil		raw_unprocessed					Processing state: whole nuts/kernels/seeds/peas are unprocessed; classifier matched 'expressing Oil', 'Ground (nuts)' or 'Split'.
+htc:0294	Shells of all kinds			marine				Marine origin (whalebone, shells, sea otter, marine-animal and fish skins).
+htc:0304	Seeds Unenumerated for expressing Oil therefrom		raw_unprocessed					Processing state: whole nuts/kernels/seeds/peas are unprocessed; classifier matched 'expressing Oil', 'Ground (nuts)' or 'Split'.
+htc:0321	Essence of Spruce	grp_alcoholic_beverages	refined_extract	terrestrial_forest				Essence of spruce is the concentrated decoction used to make spruce beer (Simmonds 1892 s.v. SPRUCE: foliage 'used ... to give flavour to beer, either in the form of decoction or extract'); exported from Quebec in boxes/kegs/gallons. Not timber.
+htc:0334	Farinaceous Substances and Manufactures thereof	grp_cereals_grains	manufactured					Farinaceous preparations (macaroni, vermicelli, crackers/biscuit, starch, dextrine) belong with Cereals; other starch headings (htc:1561, htc:1572) are already here.
+htc:0348	Manufactures Lime	grp_industrial_minerals	manufactured	mineral				Lime here is burnt lime/plaster (Canadian 'Manufactures: Lime', 'Gypsum Plaster Lime &c'), a building mineral; classifier matched the citrus fruit 'lime'.
+htc:0353	Iron and Steel, Manufactures of, Unenumerated	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:0354	Mineral or Earth Oil	grp_fossil_fuels_mineral_oils						'Mineral or Earth Oil' is petroleum (Canadian exports in gallons, incl. Sarnia ON → United States); same commodity as htc:0840/htc:1056.
+htc:0355	Gambier				gambier	skos:exactMatch		Gambier (Uncaria gambir extract) has its own Wikidata item; it had been close-matched to catechu (Acacia cutch).
+htc:0397	Tin Manufactures Unenumerated	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:0458	Furs or Skins of Fish			marine				Marine origin (whalebone, shells, sea otter, marine-animal and fish skins).
+htc:0469	Wood and Timber House Frames Fittings and Joiners Work	grp_glass_ceramics_paper_woodware	manufactured					Joinery / finished woodware (house frames and joiners' work; buckets), not unwrought timber.
+htc:0473	Rags Woollen applicable to other uses than Manure torn up or not	grp_animal_fibres	unspecified					Woollen rags (shoddy/mungo stock, 'for use as wool') are recovered animal fibre; filed with Wool Waste (htc:1688) rather than as manufactures or manure.
+htc:0497	Stones Marble Slate and other Sorts of Stone Rough Hewn or Manufactured	grp_industrial_minerals		mineral				Sawn/hewn stone and marble are quarry products; classifier matched 'sawn' (lumber) or 'manufactured'.
+htc:0509	Phosphates			mineral				Mineral phosphates (phosphate of lime and rock) have a mineral, not pasture, land basis.
+htc:0536	Wood and Timber Dye Woods Brazil Wood	grp_natural_dyestuffs		terrestrial_forest				Heading is explicitly a dyewood (fustic, Brazil wood, sapan, Nicaragua wood, red/Guinea wood, braziletto); filed with Dye Woods Logwood (htc:0096) rather than building timber.
+htc:0542	Phosphate of Lime and Rock			mineral				Mineral phosphates (phosphate of lime and rock) have a mineral, not pasture, land basis.
+htc:0572	Whalebone			marine				Marine origin (whalebone, shells, sea otter, marine-animal and fish skins).
+htc:0585	Hop Hoop Telegraph and other Poles	grp_hewn_round_timber						Hop poles, hoop/telegraph poles and piling are round timber; classifier matched 'hop' (the brewing crop) or left the heading in residuals.
+htc:0610	Iron and Steel Wrought or Manufactured	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:0623	Manufactures of Gypsum Plaster Lime &c	grp_industrial_minerals	manufactured	mineral				Lime here is burnt lime/plaster (Canadian 'Manufactures: Lime', 'Gypsum Plaster Lime &c'), a building mineral; classifier matched the citrus fruit 'lime'.
+htc:0633	Wood and Timber Dye Woods Sapan Wood	grp_natural_dyestuffs		terrestrial_forest				Heading is explicitly a dyewood (fustic, Brazil wood, sapan, Nicaragua wood, red/Guinea wood, braziletto); filed with Dye Woods Logwood (htc:0096) rather than building timber.
+htc:0647	Timber viz Anchor Stocks	grp_cooperage_ship_timber						Naval/cooperage woodware (anchor stocks, capstan bars, boat-hook staffs, bowsprits, empty casks).
+htc:0664	Rags Woollen	grp_animal_fibres	unspecified					Woollen rags (shoddy/mungo stock, 'for use as wool') are recovered animal fibre; filed with Wool Waste (htc:1688) rather than as manufactures or manure.
+htc:0677	Gum Lac, Seed, Shell, Stick, and Dye	grp_gums_resins_naval_stores	unspecified	terrestrial_forest				Gum lac in its trade forms (seed-, shell-, stick-lac and lac dye); 'Seed' here is seed-lac, not an oilseed.
+htc:0722	Hair Manufactures of Hair not being of Goats Hair or Wool	grp_woven_fabrics_apparel						Textile manufactures (jute, silk broad stuffs, hair cloth, felt, dry goods, sails) belong with Woven Textiles, not paper/glass/sundries.
+htc:0751	Wood and Timber Dye Woods Nicaragua Wood	grp_natural_dyestuffs		terrestrial_forest				Heading is explicitly a dyewood (fustic, Brazil wood, sapan, Nicaragua wood, red/Guinea wood, braziletto); filed with Dye Woods Logwood (htc:0096) rather than building timber.
+htc:0761	Teeth Elephants Sea Cow and Sea Horses	grp_fertilizers_animal_materials	unspecified		ivory	skos:broadMatch		'Teeth: Elephants, Sea Cow and Sea Horses' is ivory by weight (cwt; origins Egypt, South Africa, Malta), the same commodity as htc:0224/htc:0609; classifier matched 'horses' and filed it as live draft animals.
+htc:0778	Saw Logs and Shingle Bolts - Pine ($1 per M. Feet)	grp_hewn_round_timber	unspecified					Saw logs / shingle bolts / timber 'not sawn or split' are unsawn round wood; classifier filed them as sawn lumber.
+htc:0783	Brass Manufactures of	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:0788	Oil Mineral or Earth Refined	grp_fossil_fuels_mineral_oils						'Mineral or Earth Oil' is petroleum (Canadian exports in gallons, incl. Sarnia ON → United States); same commodity as htc:0840/htc:1056.
+htc:0805	Vegetable Ivory			terrestrial_forest				Vegetable ivory is the tagua palm nut: forest, not pasture.
+htc:0814	Paper Making Materials Other Paper Making Materials				NONE			Anchor contradicted the heading ('not on paper' / 'Other Paper Making Materials' are not paper).
+htc:0825	Jute Manufactures	grp_woven_fabrics_apparel						Textile manufactures (jute, silk broad stuffs, hair cloth, felt, dry goods, sails) belong with Woven Textiles, not paper/glass/sundries.
+htc:0828	Photographs	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:0837	Worsted Stuffs of Wool mixed with other Materials	grp_woven_fabrics_apparel	manufactured					Worsted stuffs and silk piece goods (taffeties, crape) are woven fabrics, not raw animal fibre.
+htc:0843	Cocoa nuts	grp_fruits_nuts_vegetables			coconut	skos:relatedMatch	Period-dependent heading: in 1856–66 Annual Statements 'Cocoa nuts' are coconuts (entered by number, from the West Indies and Guiana); the 9 earlier CUST 4/5 rows entered by weight (1800–1840) may be cacao, which early ledgers also called 'cocoa nuts'.	25 of 34 rows (Annual Statement 1856–66) are counted by Number from the British West Indies and British Guiana, i.e. coconuts; the cocoa-bean anchor was wrong.
+htc:0848	Playing Cards	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:0849	Spermaceiti or Head Matter (Whale Oils)	grp_marine_oils			spermaceti	skos:broadMatch		Spermaceti / head matter is a sperm-whale product explicitly headed '(Whale Oils)'.
+htc:0853	Electrotypes	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:0854	Fertilizers	grp_fertilizers_animal_materials						Fertilizers / manures left in the residual bin (cf. Manure Unenumerated, htc:0448).
+htc:0858	Wagons	grp_metal_machinery_hardware	manufactured		wagon	skos:closeMatch		Vehicles and craft (wagons, gigs, canoes), cf. Carriages and Carts. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:0861	Mother of Pearl Shells	grp_fertilizers_animal_materials		marine				Marine animal raw material (mother-of-pearl, tortoise/turtle shell, pearls) left in the residual bin.
+htc:0869	Piassava Fibre and other Fibres for Brush Making	grp_bast_plant_fibres						Vegetable fibre for paper-/brush-making (esparto class, piassava).
+htc:0871	Argol	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:0875	Other poles	grp_hewn_round_timber						Hop poles, hoop/telegraph poles and piling are round timber; classifier matched 'hop' (the brewing crop) or left the heading in residuals.
+htc:0883	Sails Manufactures	grp_woven_fabrics_apparel						Textile manufactures (jute, silk broad stuffs, hair cloth, felt, dry goods, sails) belong with Woven Textiles, not paper/glass/sundries.
+htc:0902	Silk Goods Taffeties &c	grp_woven_fabrics_apparel	manufactured					Worsted stuffs and silk piece goods (taffeties, crape) are woven fabrics, not raw animal fibre.
+htc:0903	Liqueurs Cordials &c not tested or ascertaining the strength	grp_alcoholic_beverages						Liqueurs, cordials, claret and bitters are alcoholic beverages left in the residual bin.
+htc:0912	Chloral Hydrate	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:0913	Percussion Caps	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:0917	Zinc Manufactures Unenumerated	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:0928	Marmalade	grp_sugars_sweeteners	manufactured					Marmalade is a sugar preserve (cf. Succades, htc:0464).
+htc:0930	Oil Fish Cod Liver	grp_marine_oils			cod liver oil	skos:broadMatch		Cod-liver oil is a fish oil; filed with Fish Oil Cod (htc:0286).
+htc:0934	Lead Manufactures Unenumerated	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:0942	Tortoise or Turtle Shell Unmanufactured	grp_fertilizers_animal_materials		marine				Marine animal raw material (mother-of-pearl, tortoise/turtle shell, pearls) left in the residual bin.
+htc:0945	Quills Goose	grp_animal_fibres						Quills are feathers (cf. Feathers, htc:0247).
+htc:0950	Wood and Timber (Not Sawn or Split)	grp_hewn_round_timber	unspecified					Saw logs / shingle bolts / timber 'not sawn or split' are unsawn round wood; classifier filed them as sawn lumber.
+htc:0953	Jewellery Unenumerated	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:0955	Rags Woollen for use as wool	grp_animal_fibres	unspecified					Woollen rags (shoddy/mungo stock, 'for use as wool') are recovered animal fibre; filed with Wool Waste (htc:1688) rather than as manufactures or manure.
+htc:0959	Quills Goose and Swan	grp_animal_fibres						Quills are feathers (cf. Feathers, htc:0247).
+htc:0962	Nuts	grp_fruits_nuts_vegetables						Named fruit, nut or vegetable left in the residual bin.
+htc:0965	Oil Coco-nut	grp_vegetable_oils						Named vegetable oil left in the residual bin (coconut oil; 'lintseed' = linseed oil).
+htc:0968	Skins Furs Pelts Otter Sea			marine				Marine origin (whalebone, shells, sea otter, marine-animal and fish skins).
+htc:0970	Platina Wrought and Unwrought	grp_metals_semi_finished						Coin and platina (platinum) belong with precious metals and bullion.
+htc:0974	Manufactures of Felt	grp_woven_fabrics_apparel						Textile manufactures (jute, silk broad stuffs, hair cloth, felt, dry goods, sails) belong with Woven Textiles, not paper/glass/sundries.
+htc:0981	Mattresses and Bedding	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:0982	Hair Manufactures of Goats Hair or Wool	grp_woven_fabrics_apparel						Textile manufactures (jute, silk broad stuffs, hair cloth, felt, dry goods, sails) belong with Woven Textiles, not paper/glass/sundries.
+htc:0999	Fancy Goods	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:1004	Maccaroni and Vermicelli	grp_cereals_grains	manufactured					Farinaceous preparations (macaroni, vermicelli, crackers/biscuit, starch, dextrine) belong with Cereals; other starch headings (htc:1561, htc:1572) are already here.
+htc:1012	Clams or other	grp_fish_seafood						Shellfish / alewives (a herring) belong with Fish & Shellfish.
+htc:1023	Mineral Pigment Iron Oxides Ochres &c	grp_natural_dyestuffs	unspecified	mineral				Mineral pigments (iron-oxide ochres; zinc white) belong with Painters' Colours and Pigments, not smelted metals.
+htc:1035	Marten Tails Undressed	grp_furs_marine_pelts						Marten tails are fur-trade pelts.
+htc:1060	Piling	grp_hewn_round_timber						Hop poles, hoop/telegraph poles and piling are round timber; classifier matched 'hop' (the brewing crop) or left the heading in residuals.
+htc:1064	Woolens	grp_woven_fabrics_apparel	manufactured		woolen	skos:closeMatch		Named textile/apparel article (woollens, moccasins, mittens, wrought inkle = linen tape per Simmonds 1892 s.v. INKLE, floorcloth) left in the residual bin. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:1068	Millet Seeds	grp_cereals_grains						Millet and dari (sorghum) are grains, not oilseeds.
+htc:1077	Zinc Manufactured	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:1078	Methylic Alcohol	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1079	Slates	grp_industrial_minerals						Named mineral (slates, felspar, barytes, kieselguhr) left in the residual bin.
+htc:1094	Manufactures of Silk and other Materials Broad Stuffs	grp_woven_fabrics_apparel						Textile manufactures (jute, silk broad stuffs, hair cloth, felt, dry goods, sails) belong with Woven Textiles, not paper/glass/sundries.
+htc:1098	Plated and Gilt Ware	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:1099	Rabbits	grp_meats_provisions						Rabbits here are imported by weight (cwt, Annual Statement 1886–1900, from Holland, Belgium, New Zealand), i.e. carcasses, not live animals.
+htc:1108	Stones Sawn or otherwise Manufactured	grp_industrial_minerals		mineral				Sawn/hewn stone and marble are quarry products; classifier matched 'sawn' (lumber) or 'manufactured'.
+htc:1116	Chloroform	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1117	Ether Sulphuric	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1128	Cigarettes	grp_tobacco	manufactured		cigarette	skos:closeMatch		Cigarettes are manufactured tobacco. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:1129	Pole Hop	grp_hewn_round_timber						Hop poles, hoop/telegraph poles and piling are round timber; classifier matched 'hop' (the brewing crop) or left the heading in residuals.
+htc:1133	Rape and Linseed Cakes	grp_fodder_oilcakes	byproduct_cake					Rape and linseed cakes are oil-press residues fed to cattle, same class as Oil Seed Cake (htc:0323).
+htc:1146	Zinc Rolled but not otherwise manufactured	grp_metals_semi_finished	smelted_semi					Crude/rolled zinc 'not otherwise manufactured' is semi-finished metal, like htc:0484/htc:1779.
+htc:1150	Collodion	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1154	Swords Cutlasses Matchets Bayonets	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:1169	Woollen Rags Not Pulled	grp_animal_fibres	unspecified					Woollen rags (shoddy/mungo stock, 'for use as wool') are recovered animal fibre; filed with Wool Waste (htc:1688) rather than as manufactures or manure.
+htc:1173	Bottles of Earth or Stone	grp_glass_ceramics_paper_woodware	manufactured	industrial_manufactured				Earthen/stone bottles are stoneware pottery.
+htc:1174	Iron Anchors Grapnels Chains and Cables	grp_metal_machinery_hardware						Iron anchors, grapnels, chains and (chain) cables are ironwork; classifier matched 'cables' as cordage.
+htc:1181	Tortoise Shell	grp_fertilizers_animal_materials		marine				Marine animal raw material (mother-of-pearl, tortoise/turtle shell, pearls) left in the residual bin.
+htc:1202	Zaffre	grp_natural_dyestuffs						Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin.
+htc:1211	Corks Ready Made	grp_wood_pulp_fuel						Cork articles / corkwood belong with Cork (htc:0859).
+htc:1225	Carbide of Calcium	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1226	Dead Rabbits	grp_meats_provisions						Tripe / dead rabbits are meat.
+htc:1229	Adianthum	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1232	Pipes of Clay Wood or other Materials for Smoking Tobacco	grp_glass_ceramics_paper_woodware	manufactured					Tobacco pipes of clay or wood are manufactured articles, not tobacco.
+htc:1234	Chesnuts	grp_fruits_nuts_vegetables						Named fruit, nut or vegetable left in the residual bin.
+htc:1235	Ships with the Tackle Apparel and Furniture Broken up or to be Broken Up				ship	skos:broadMatch		Heading is ships (with tackle, apparel and furniture) to be broken up; the anchor matched 'apparel' as clothing.
+htc:1237	Blacking and Polishes	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:1261	Coal Products not Dyes	grp_industrial_chemicals_alkalis						Heading is explicitly coal products 'not Dyes'.
+htc:1265	Berries Yellow	grp_natural_dyestuffs						Yellow berries are the dye berries of Rhamnus infectorius (Simmonds 1892 s.v. YELLOW BERRIES: 'imported ... from the South of Europe and the Levant, for the use of dyers'); Layer-1 origin 'Turkey Proper', in cwt.
+htc:1267	Lead Black	grp_industrial_minerals	unspecified		graphite	skos:broadMatch		Black lead / plumbago is graphite (Simmonds 1892 s.v. BLACK LEAD: 'See GRAPHITE and PLUMBAGO'; McCulloch 1880 s.v. BLACK LEAD); filed with Plumbago (htc:0130), not with lead metal or metallic ores.
+htc:1303	Ginseng	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1305	Casks Empty	grp_cooperage_ship_timber						Naval/cooperage woodware (anchor stocks, capstan bars, boat-hook staffs, bowsprits, empty casks).
+htc:1314	Oil Turpentine Oil or Spirit of	grp_gums_resins_naval_stores						Oil/spirit of turpentine is a naval store distilled from pine resin, not a potable spirit; classifier matched 'Spirit'.
+htc:1315	Pearls	grp_fertilizers_animal_materials		marine				Marine animal raw material (mother-of-pearl, tortoise/turtle shell, pearls) left in the residual bin.
+htc:1321	Metal Unenumerated Wrought or Manufactured	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:1323	Jewellery and Plated Ware	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:1334	Coin	grp_metals_semi_finished			coin	skos:closeMatch		Coin and platina (platinum) belong with precious metals and bullion. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:1340	Lacquered Ware	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:1342	Fruit Juice not containing Spirit	grp_fruits_nuts_vegetables						Fruit juice explicitly 'not containing Spirit'; belongs with the other fruit-juice headings (htc:0179, htc:0816).
+htc:1346	Cubebs	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1347	Hides not Tanned Tawed Curried or in any way Dressed Dry	grp_raw_hides_skins	raw_unprocessed					Heading reads 'Hides NOT Tanned, Tawed, Curried or in any way Dressed' — i.e. raw hides; classifier ignored the negation.
+htc:1349	Scammony	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1352	Zinc Oxide or White of	grp_natural_dyestuffs	unspecified	mineral				Mineral pigments (iron-oxide ochres; zinc white) belong with Painters' Colours and Pigments, not smelted metals.
+htc:1358	Worsted Stuffs all Wool	grp_woven_fabrics_apparel	manufactured					Worsted stuffs and silk piece goods (taffeties, crape) are woven fabrics, not raw animal fibre.
+htc:1361	Paper Making Materials Esparto and other Vegetable Fibres				esparto	skos:broadMatch		Heading is esparto and other vegetable fibres for paper-making, not paper.
+htc:1363	Chromite (Chromic Iron)	grp_metallic_ores	raw_ore					Ore/concentrate heading (chromite / chromate of iron in tons; metal 'contained in ore, matte, regulus'; pyrites); belongs with Metallic Ores & Concentrates like its sibling headings.
+htc:1366	Jet Rockingham and Glazed Terra Cotta Ware	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:1368	Plaiting of Straw and other Materials	grp_woven_fabrics_apparel	manufactured					Straw plaiting is the hat-making plait, same class as Straw Platting for Hats (htc:0433).
+htc:1372	Joists	grp_sawn_lumber	sawn_hewn		joist	skos:closeMatch		Joists are sawn lumber (cf. htc:0792 Joists and Scantling). Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:1378	Meats viz Tongues	grp_meats_provisions						'Meats viz. Tongues' is explicitly a meat heading (KEW CUST 4, counted by number); classifier matched fish 'tongues'.
+htc:1385	Seeds Carraway	grp_spices_condiments						Caraway seed is a spice, not an oilseed.
+htc:1386	Zinc or Spelter Manufactures of	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:1388	Hides not Tanned Tawed Curried or in any way Dressed Wet	grp_raw_hides_skins	raw_unprocessed					Heading reads 'Hides NOT Tanned, Tawed, Curried or in any way Dressed' — i.e. raw hides; classifier ignored the negation.
+htc:1391	Nuts and Kernels Ground Nuts		raw_unprocessed					Processing state: whole nuts/kernels/seeds/peas are unprocessed; classifier matched 'expressing Oil', 'Ground (nuts)' or 'Split'.
+htc:1398	Ether Acetic	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1402	Felspar	grp_industrial_minerals						Named mineral (slates, felspar, barytes, kieselguhr) left in the residual bin.
+htc:1418	Logs, Cedar, Capable of being made into Shingles Bolts	grp_hewn_round_timber	unspecified					Saw logs / shingle bolts / timber 'not sawn or split' are unsawn round wood; classifier filed them as sawn lumber.
+htc:1420	Copper fine, Contained in ore, matte, regulus; and black or coarse copper, and copper cement	grp_metallic_ores	raw_ore					Ore/concentrate heading (chromite / chromate of iron in tons; metal 'contained in ore, matte, regulus'; pyrites); belongs with Metallic Ores & Concentrates like its sibling headings.
+htc:1424	Antimonium Crudum	grp_metallic_ores	raw_ore					Antimonium crudum is crude antimony, the native sulphuret ore (Ure 1853 s.v. ANTIMONY).
+htc:1426	Capers	grp_spices_condiments						Capers / pickled cucumbers are condiments (cf. Pickles, htc:1062).
+htc:1431	Verdegris	grp_natural_dyestuffs						Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin.
+htc:1441	Platina Metallic	grp_metals_semi_finished						Coin and platina (platinum) belong with precious metals and bullion.
+htc:1442	Trefoil Seeds	grp_fodder_oilcakes						Trefoil and timothy are forage-grass seeds, same class as Clover and Grass Seeds (htc:0316).
+htc:1444	Turtle Shell	grp_fertilizers_animal_materials		marine				Marine animal raw material (mother-of-pearl, tortoise/turtle shell, pearls) left in the residual bin.
+htc:1449	Ethyl Iodide of	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1453	Fowling Pieces	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:1459	Ether Butyric	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1474	Glycerine Crude	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1478	Pianos unenumerated	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:1484	Manuscripts	grp_glass_ceramics_paper_woodware	manufactured		manuscript	skos:closeMatch		Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:1495	Dari Seeds	grp_cereals_grains						Millet and dari (sorghum) are grains, not oilseeds.
+htc:1499	Zinc Crude and Manufactured	grp_metals_semi_finished	smelted_semi					Crude/rolled zinc 'not otherwise manufactured' is semi-finished metal, like htc:0484/htc:1779.
+htc:1500	Fuel Manufactured	grp_fossil_fuels_mineral_oils	manufactured					'Fuel, Manufactured' is patent fuel (coal briquettes).
+htc:1501	Linen and Jute Manufactures Thread for Sewing	grp_woven_fabrics_apparel						Textile manufactures (jute, silk broad stuffs, hair cloth, felt, dry goods, sails) belong with Woven Textiles, not paper/glass/sundries.
+htc:1504	Oil Seed	grp_vegetable_oils	refined_extract		seed oil	skos:broadMatch		'Oil, Seed' (Annual Statement 1896, in tons, flagged 'New Commodity') is seed oil, the inverted customs form of htc:0790 'Seed Oil'; it had been anchored to 'oil seed' (the seeds).
+htc:1506	Cordite and other Smokeless Propellants	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1508	Gooseberries Raw	grp_fruits_nuts_vegetables						Named fruit, nut or vegetable left in the residual bin.
+htc:1511	Chemical Manufactures and Products Borate of Lime	grp_industrial_chemicals_alkalis	manufactured	mineral				Borate/acetate/citrate 'of Lime' are calcium salts (chemical manufactures); classifier matched the citrus fruit 'lime'.
+htc:1513	Hardware Hollow ware Enamelled	grp_metal_machinery_hardware	manufactured					Enamelled/unenamelled hollow-ware is iron hardware; classifier matched 'enamelled' as a leather finish.
+htc:1522	Succus Liquoritiae	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1523	Vermicelli	grp_cereals_grains	manufactured					Farinaceous preparations (macaroni, vermicelli, crackers/biscuit, starch, dextrine) belong with Cereals; other starch headings (htc:1561, htc:1572) are already here.
+htc:1526	Boat hook handles	grp_cooperage_ship_timber						Naval/cooperage woodware (anchor stocks, capstan bars, boat-hook staffs, bowsprits, empty casks).
+htc:1531	Liqueurs Cordials Mixtures and other Not Sweetened Unenumerated Tested	grp_alcoholic_beverages						Liqueurs, cordials, claret and bitters are alcoholic beverages left in the residual bin.
+htc:1541	Vegetable Fibre for Making Paper	grp_bast_plant_fibres						Vegetable fibre for paper-/brush-making (esparto class, piassava).
+htc:1547	Plumbago, crude ore and concentrates	grp_industrial_minerals	unspecified		graphite	skos:broadMatch		Black lead / plumbago is graphite (Simmonds 1892 s.v. BLACK LEAD: 'See GRAPHITE and PLUMBAGO'; McCulloch 1880 s.v. BLACK LEAD); filed with Plumbago (htc:0130), not with lead metal or metallic ores.
+htc:1562	Strawberries Raw	grp_fruits_nuts_vegetables						Named fruit, nut or vegetable left in the residual bin.
+htc:1578	Stone for Manufacture of Grindstones Rough	grp_industrial_minerals		mineral				Sawn/hewn stone and marble are quarry products; classifier matched 'sawn' (lumber) or 'manufactured'.
+htc:1580	Essence of Lemons	grp_waxes_soap_candles		terrestrial_crop				Essential and perfumed oils (incl. essence of lemons) belong with Perfumery (SITC 55), not mineral chemicals or fruit.
+htc:1585	Bark canoe	grp_metal_machinery_hardware	manufactured					Vehicles and craft (wagons, gigs, canoes), cf. Carriages and Carts.
+htc:1588	Moccasins	grp_woven_fabrics_apparel	manufactured		moccasin	skos:closeMatch		Named textile/apparel article (woollens, moccasins, mittens, wrought inkle = linen tape per Simmonds 1892 s.v. INKLE, floorcloth) left in the residual bin. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:1608	Butterine	grp_animal_fats_tallow						Butterine is the trade name for oleomargarine (cf. htc:0976).
+htc:1609	Metal Manufactured	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:1614	Cocoa Cocoa or Chocolate in the manufacture of which Spirit has been used	grp_stimulant_beverages						Cocoa/chocolate preparation; the duty note 'in the manufacture of which Spirit has been used' does not make it a beverage spirit.
+htc:1626	Hardware Hollow ware Not Enamelled	grp_metal_machinery_hardware	manufactured					Enamelled/unenamelled hollow-ware is iron hardware; classifier matched 'enamelled' as a leather finish.
+htc:1634	Woollen Rags Pulled	grp_animal_fibres	unspecified					Woollen rags (shoddy/mungo stock, 'for use as wool') are recovered animal fibre; filed with Wool Waste (htc:1688) rather than as manufactures or manure.
+htc:1641	Tripe	grp_meats_provisions						Tripe / dead rabbits are meat.
+htc:1645	Axes	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:1656	Ink	grp_glass_ceramics_paper_woodware	manufactured		ink	skos:closeMatch		Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:1669	Metals, viz. Platinum, contained in concentrates or other forms	grp_metallic_ores	raw_ore					Ore/concentrate heading (chromite / chromate of iron in tons; metal 'contained in ore, matte, regulus'; pyrites); belongs with Metallic Ores & Concentrates like its sibling headings.
+htc:1684	Petroleum Oil Spirit	grp_fossil_fuels_mineral_oils	refined_extract					Heading names petroleum spirit (a mineral-oil fraction); the classifier matched the word 'Spirit' and filed it under beverages.
+htc:1697	Hornes	grp_fertilizers_animal_materials						'Hornes' is an archaic spelling of horns (cf. htc:0280).
+htc:1698	Annotto	grp_natural_dyestuffs						Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin.
+htc:1701	Lignum Quassia	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1703	Orchelia	grp_natural_dyestuffs						Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin.
+htc:1705	Thread Sisters	grp_yarns_cordage	manufactured					Thread ('sisters' thread', fine linen thread) and fishing nets/twines/lines belong with Yarns & Cordage.
+htc:1706	Wood Red or Guinea	grp_natural_dyestuffs		terrestrial_forest				Heading is explicitly a dyewood (fustic, Brazil wood, sapan, Nicaragua wood, red/Guinea wood, braziletto); filed with Dye Woods Logwood (htc:0096) rather than building timber.
+htc:1708	Bowsprits	grp_cooperage_ship_timber			bowsprit	skos:closeMatch		Naval/cooperage woodware (anchor stocks, capstan bars, boat-hook staffs, bowsprits, empty casks). Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:1709	Canoes	grp_metal_machinery_hardware	manufactured					Vehicles and craft (wagons, gigs, canoes), cf. Carriages and Carts.
+htc:1711	Stones Marble Sawn	grp_industrial_minerals		mineral				Sawn/hewn stone and marble are quarry products; classifier matched 'sawn' (lumber) or 'manufactured'.
+htc:1717	Iron and Steel Wrought or Manufactured Ornamental	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:1727	Pyrites of Iron or Copper or Sulphur Ore	grp_metallic_ores	raw_ore					Ore/concentrate heading (chromite / chromate of iron in tons; metal 'contained in ore, matte, regulus'; pyrites); belongs with Metallic Ores & Concentrates like its sibling headings.
+htc:1738	Confectionery in the Manufacture of which Spirit has been used	grp_sugars_sweeteners	manufactured					Confectionery heading; belongs with Confectionery (htc:0483) regardless of the spirit/chocolate duty qualifier.
+htc:1757	Coculus Indus	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1761	Radix Serpentarioe	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1763	Rock Moss	grp_natural_dyestuffs						Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin.
+htc:1764	Truffles	grp_fruits_nuts_vegetables						Named fruit, nut or vegetable left in the residual bin.
+htc:1765	Vermillion	grp_natural_dyestuffs						Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin.
+htc:1766	Crackers	grp_cereals_grains	manufactured		cracker	skos:closeMatch		Farinaceous preparations (macaroni, vermicelli, crackers/biscuit, starch, dextrine) belong with Cereals; other starch headings (htc:1561, htc:1572) are already here. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:1771	Castorum	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1776	Silk Goods India Crape	grp_woven_fabrics_apparel	manufactured					Worsted stuffs and silk piece goods (taffeties, crape) are woven fabrics, not raw animal fibre.
+htc:1793	Chromate of Iron	grp_metallic_ores	raw_ore					Ore/concentrate heading (chromite / chromate of iron in tons; metal 'contained in ore, matte, regulus'; pyrites); belongs with Metallic Ores & Concentrates like its sibling headings.
+htc:1802	Oil Mineral or Earth Crude	grp_fossil_fuels_mineral_oils						'Mineral or Earth Oil' is petroleum (Canadian exports in gallons, incl. Sarnia ON → United States); same commodity as htc:0840/htc:1056.
+htc:1805	Manures Unrated	grp_fertilizers_animal_materials						Fertilizers / manures left in the residual bin (cf. Manure Unenumerated, htc:0448).
+htc:1806	Barytes Ground and Underground	grp_industrial_minerals						Named mineral (slates, felspar, barytes, kieselguhr) left in the residual bin.
+htc:1807	logs, cedar, capable of being made into shingle bolts (duty $150 per cord)	grp_hewn_round_timber	unspecified					Saw logs / shingle bolts / timber 'not sawn or split' are unsawn round wood; classifier filed them as sawn lumber.
+htc:1811	Floorcloth Linoleum and Kamptulicon	grp_woven_fabrics_apparel	manufactured					Named textile/apparel article (woollens, moccasins, mittens, wrought inkle = linen tape per Simmonds 1892 s.v. INKLE, floorcloth) left in the residual bin.
+htc:1814	Dextrine	grp_cereals_grains	manufactured					Farinaceous preparations (macaroni, vermicelli, crackers/biscuit, starch, dextrine) belong with Cereals; other starch headings (htc:1561, htc:1572) are already here.
+htc:1821	Sanitary Ware	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:1823	Furs and skins of marine animal			marine				Marine origin (whalebone, shells, sea otter, marine-animal and fish skins).
+htc:1826	Assafoetida	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1828	Cantharides	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1830	Hellebore	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1832	Saccharum Saturni	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1833	Wood Brazilletto	grp_natural_dyestuffs		terrestrial_forest				Heading is explicitly a dyewood (fustic, Brazil wood, sapan, Nicaragua wood, red/Guinea wood, braziletto); filed with Dye Woods Logwood (htc:0096) rather than building timber.
+htc:1834	Alewives	grp_fish_seafood						Shellfish / alewives (a herring) belong with Fish & Shellfish.
+htc:1835	Capston Bars	grp_cooperage_ship_timber						Naval/cooperage woodware (anchor stocks, capstan bars, boat-hook staffs, bowsprits, empty casks).
+htc:1838	Pyrola Umbellata	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1842	Chairs	grp_glass_ceramics_paper_woodware	manufactured		chair	skos:closeMatch		Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:1854	Pictures Photographs or Sun pictures not on paper				NONE			Anchor contradicted the heading ('not on paper' / 'Other Paper Making Materials' are not paper).
+htc:1862	Revolvers	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:1865	Naphtha Wood not potable	grp_industrial_chemicals_alkalis	refined_extract					Wood naphtha (crude methyl alcohol, 'not potable') is a wood-distillation chemical, not timber.
+htc:1868	Confectionery containing not more than 50% Chocolate in the manufacture of which Spirit has been use	grp_sugars_sweeteners	manufactured					Confectionery heading; belongs with Confectionery (htc:0483) regardless of the spirit/chocolate duty qualifier.
+htc:1869	Confectionery containing not more than 50% chocolate	grp_sugars_sweeteners	manufactured					Confectionery heading; belongs with Confectionery (htc:0483) regardless of the spirit/chocolate duty qualifier.
+htc:1871	Ethyl Bromide	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1874	Kieselguhr and Infusorial Earth	grp_industrial_minerals						Named mineral (slates, felspar, barytes, kieselguhr) left in the residual bin.
+htc:1879	Chemical Manufactures and Products Acetate of Lime	grp_industrial_chemicals_alkalis	manufactured	mineral				Borate/acetate/citrate 'of Lime' are calcium salts (chemical manufactures); classifier matched the citrus fruit 'lime'.
+htc:1880	Glycerine Distilled	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1884	Saw Logs and Shingle Bolts - Spruce, 50 cts. per M. Feet	grp_hewn_round_timber	unspecified					Saw logs / shingle bolts / timber 'not sawn or split' are unsawn round wood; classifier filed them as sawn lumber.
+htc:1885	Dry Goods manufactured	grp_woven_fabrics_apparel						Textile manufactures (jute, silk broad stuffs, hair cloth, felt, dry goods, sails) belong with Woven Textiles, not paper/glass/sundries.
+htc:1888	Match Blocks	grp_hewn_round_timber						Match blocks, ash bolts and coach spokes are rough-wrought wood.
+htc:1890	Camphire Refined	grp_gums_resins_naval_stores						Named gum-resin under an archaic spelling (olibanum; 'Benjamin' = benzoin, Simmonds 1892 s.v. BENJAMIN; 'camphire' = camphor) left in the residual bin.
+htc:1894	Incle Wrought	grp_woven_fabrics_apparel	manufactured					Named textile/apparel article (woollens, moccasins, mittens, wrought inkle = linen tape per Simmonds 1892 s.v. INKLE, floorcloth) left in the residual bin.
+htc:1899	Weld	grp_natural_dyestuffs						Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin.
+htc:1904	Timothy Seed	grp_fodder_oilcakes						Trefoil and timothy are forage-grass seeds, same class as Clover and Grass Seeds (htc:0316).
+htc:1913	Manufactures of Bronze or of Metal Bronzed or Lacquered	grp_metal_machinery_hardware						Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries.
+htc:1914	Olibanum	grp_gums_resins_naval_stores						Named gum-resin under an archaic spelling (olibanum; 'Benjamin' = benzoin, Simmonds 1892 s.v. BENJAMIN; 'camphire' = camphor) left in the residual bin.
+htc:1928	Torpedoes and Submarine Mine Appliances	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:1934	Benjamin	grp_gums_resins_naval_stores						Named gum-resin under an archaic spelling (olibanum; 'Benjamin' = benzoin, Simmonds 1892 s.v. BENJAMIN; 'camphire' = camphor) left in the residual bin.
+htc:1935	Camphire Unrefined	grp_gums_resins_naval_stores						Named gum-resin under an archaic spelling (olibanum; 'Benjamin' = benzoin, Simmonds 1892 s.v. BENJAMIN; 'camphire' = camphor) left in the residual bin.
+htc:1936	Carpets Turkey	grp_woven_fabrics_apparel	manufactured		carpet	skos:broadMatch		Turkey carpets (KEW CUST 5, 1800, origin 'Turkey and Levant', counted by number) are textiles; classifier matched 'Turkey' as poultry.
+htc:1943	Radix Ipecacoanhoe	grp_drugs_medicinal_botanicals						Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin.
+htc:1948	Ash pans	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:1949	Belts				NONE			Two rows, Quebec → Great Britain 1807–08, counted by number; nothing supports the machine-belt sense of the Wikidata item.
+htc:1954	Lintseed Oil	grp_vegetable_oils						Named vegetable oil left in the residual bin (coconut oil; 'lintseed' = linseed oil).
+htc:1958	Quills Swan	grp_animal_fibres						Quills are feathers (cf. Feathers, htc:0247).
+htc:1959	Quills Unrated	grp_animal_fibres						Quills are feathers (cf. Feathers, htc:0247).
+htc:1963	Coach Spokes	grp_hewn_round_timber						Match blocks, ash bolts and coach spokes are rough-wrought wood.
+htc:1964	Gigs	grp_metal_machinery_hardware	manufactured					Vehicles and craft (wagons, gigs, canoes), cf. Carriages and Carts.
+htc:1967	Olives	grp_fruits_nuts_vegetables						Named fruit, nut or vegetable left in the residual bin.
+htc:1969	Bitters	grp_alcoholic_beverages						Liqueurs, cordials, claret and bitters are alcoholic beverages left in the residual bin.
+htc:1976	Telescopes	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:1982	Turpentine Oil Spirit of and Turpentine Substitute	grp_gums_resins_naval_stores						Oil/spirit of turpentine is a naval store distilled from pine resin, not a potable spirit; classifier matched 'Spirit'.
+htc:1983	Nuts for expressing oil	grp_oilseeds	raw_unprocessed					Nuts for expressing oil, same class as htc:0223.
+htc:1987	Oil Mineral or Earth	grp_fossil_fuels_mineral_oils						'Mineral or Earth Oil' is petroleum (Canadian exports in gallons, incl. Sarnia ON → United States); same commodity as htc:0840/htc:1056.
+htc:1989	pine logs (duty $3 and $2 per M. ft, board measure)	grp_hewn_round_timber	unspecified					Saw logs / shingle bolts / timber 'not sawn or split' are unsawn round wood; classifier filed them as sawn lumber.
+htc:1993	Magnesia	grp_industrial_chemicals_alkalis						Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin.
+htc:1994	Mittens	grp_woven_fabrics_apparel	manufactured					Named textile/apparel article (woollens, moccasins, mittens, wrought inkle = linen tape per Simmonds 1892 s.v. INKLE, floorcloth) left in the residual bin.
+htc:1995	Dutch Ovens	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:1996	Iron Kettles	grp_metal_machinery_hardware	manufactured	industrial_manufactured				Finished iron wares (kettles, shutters, pots), not semi-finished metal.
+htc:1997	Lampblack	grp_natural_dyestuffs						Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin.
+htc:1998	Window stiles	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:1999	Wood Buckets	grp_glass_ceramics_paper_woodware	manufactured					Joinery / finished woodware (house frames and joiners' work; buckets), not unwrought timber.
+htc:2001	Ash bolts	grp_hewn_round_timber						Match blocks, ash bolts and coach spokes are rough-wrought wood.
+htc:2007	Iron Shutters	grp_metal_machinery_hardware	manufactured	industrial_manufactured				Finished iron wares (kettles, shutters, pots), not semi-finished metal.
+htc:2009	Cucumbers Pickled	grp_spices_condiments						Capers / pickled cucumbers are condiments (cf. Pickles, htc:1062).
+htc:2012	Citrate of Lime	grp_industrial_chemicals_alkalis	manufactured	mineral				Borate/acetate/citrate 'of Lime' are calcium salts (chemical manufactures); classifier matched the citrus fruit 'lime'.
+htc:2014	Bass	grp_fish_seafood						One row: Montreal & Quebec → British West Indies, 1837, in barrels — a barrelled fish in the provisions trade.
+htc:2015	Bedsteads	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:2019	Church Ornaments	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:2020	Claret	grp_alcoholic_beverages						Liqueurs, cordials, claret and bitters are alcoholic beverages left in the residual bin.
+htc:2021	Iron Pots	grp_metal_machinery_hardware	manufactured	industrial_manufactured				Finished iron wares (kettles, shutters, pots), not semi-finished metal.
+htc:2022	Ploughshare Moulds	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:2025	Axe Handles	grp_glass_ceramics_paper_woodware	manufactured					Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin.
+htc:2031	Adzes	grp_metal_machinery_hardware	manufactured		adz	skos:closeMatch		Named tool, ironware, arm or instrument left in the residual bin. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:2032	Boathook Staffs	grp_cooperage_ship_timber						Naval/cooperage woodware (anchor stocks, capstan bars, boat-hook staffs, bowsprits, empty casks).
+htc:2033	Corkwood	grp_wood_pulp_fuel						Cork articles / corkwood belong with Cork (htc:0859).
+htc:2034	Corn Brooms	grp_glass_ceramics_paper_woodware	manufactured	industrial_manufactured				Corn brooms (Montreal & Quebec → British North America, 1840, by the dozen) are manufactured brooms, cf. htc:0863 Brooms and Brushes.
+htc:2035	Grates	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:2038	Putty	grp_glass_ceramics_paper_woodware	manufactured		putty	skos:closeMatch		Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article).
+htc:2047	Windlasses	grp_metal_machinery_hardware	manufactured					Named tool, ironware, arm or instrument left in the residual bin.
+htc:2049	Barytes	grp_industrial_minerals						Named mineral (slates, felspar, barytes, kieselguhr) left in the residual bin.
+htc:2052	Fishing Nets Twines and Lines	grp_yarns_cordage	manufactured					Thread ('sisters' thread', fine linen thread) and fishing nets/twines/lines belong with Yarns & Cordage.

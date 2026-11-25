@@ -157,7 +157,7 @@
           "@id": "htc:0573"
         },
         {
-          "@id": "htc:doc_ochre"
+          "@id": "htc:1023"
         },
         {
           "@id": "htc:doc_neem_oil"
@@ -331,7 +331,7 @@
           "@id": "htc:0562"
         },
         {
-          "@id": "htc:doc_albumin"
+          "@id": "htc:doc_albumen"
         },
         {
           "@id": "htc:1758"
@@ -1219,6 +1219,22 @@
       ]
     },
     {
+      "@id": "htc:1023",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Mineral Pigment Iron Oxides Ochres &c",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
       "@id": "htc:1115",
       "@type": [
         "skos:Concept",
@@ -1481,13 +1497,13 @@
       ]
     },
     {
-      "@id": "htc:doc_albumin",
+      "@id": "htc:doc_albumen",
       "@type": [
         "skos:Concept",
         "crm:E55_Type"
       ],
       "rdfs:label": {
-        "@value": "Albumin",
+        "@value": "Albumen",
         "@language": "en"
       },
       "oe:usedInIndustry": [
@@ -1535,7 +1551,7 @@
         "crm:E55_Type"
       ],
       "rdfs:label": {
-        "@value": "Bichromate Of Potash",
+        "@value": "Bichromate of Potash",
         "@language": "en"
       },
       "oe:usedInIndustry": [
@@ -1640,22 +1656,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_calico_printing"
-        }
-      ]
-    },
-    {
-      "@id": "htc:doc_ochre",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Ochre",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_soap_manufacture"
         }
       ]
     },

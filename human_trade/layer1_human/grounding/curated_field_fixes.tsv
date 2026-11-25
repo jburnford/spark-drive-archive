@@ -1,0 +1,187 @@
+# Hand-curated corrections to auto-matched dictionary definitions, source taxa, labels and 1866 bridges, applied by human_trade/scripts/build_skos_v4.py.
+# definition 'use' = verbatim lexicon entry (<source_work>::<start of text>); 'excerpt' = verbatim substring(s) of the matched entry. Nothing is paraphrased.
+concept_id	commodity_as_printed	field	action	value	rationale
+htc:0128	Tobacco	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
+htc:0145	Tobacco Manufactured Other Sorts	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
+htc:0160	Tobacco Manufactured Cigars	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
+htc:0170	Tobacco Unmanufactured	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
+htc:0256	Tobacco Manufactured Snuff	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
+htc:0376	Tobacco Unenumerated	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
+htc:0498	Tobacco Unmanufactured Unstemmed	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
+htc:0627	Tobacco Manufactured Cavendish or Negrohead	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
+htc:0674	Tobacco Unmanufactured Stemmed or Stripped	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
+htc:0989	Tobacco Manufactured Cigars and Snuff	definition	use	simmonds_1892::species of *Nicotiana*	Auto-match had picked Simmonds's sub-entry for 'mountain tobacco' (Arnica montana); replaced by his main TOBACCO entry.
+htc:0128	Tobacco	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
+htc:0145	Tobacco Manufactured Other Sorts	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
+htc:0160	Tobacco Manufactured Cigars	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
+htc:0170	Tobacco Unmanufactured	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
+htc:0256	Tobacco Manufactured Snuff	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
+htc:0376	Tobacco Unenumerated	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
+htc:0498	Tobacco Unmanufactured Unstemmed	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
+htc:0627	Tobacco Manufactured Cavendish or Negrohead	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
+htc:0674	Tobacco Unmanufactured Stemmed or Stripped	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
+htc:0989	Tobacco Manufactured Cigars and Snuff	source_taxon	remove	Arnica montana	Arnica montana is 'mountain tobacco', a different plant, picked up from the wrong dictionary sub-entry.
+htc:0128	Tobacco	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
+htc:0145	Tobacco Manufactured Other Sorts	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
+htc:0160	Tobacco Manufactured Cigars	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
+htc:0170	Tobacco Unmanufactured	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
+htc:0256	Tobacco Manufactured Snuff	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
+htc:0376	Tobacco Unenumerated	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
+htc:0498	Tobacco Unmanufactured Unstemmed	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
+htc:0627	Tobacco Manufactured Cavendish or Negrohead	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
+htc:0674	Tobacco Unmanufactured Stemmed or Stripped	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
+htc:0989	Tobacco Manufactured Cigars and Snuff	source_taxon	add	Nicotiana tabacum	Commercial tobacco (Simmonds 1892 s.v. TOBACCO: 'species of Nicotiana').
+htc:0021	Wool	definition	use	simmonds_1892::the soft curly hair	Auto-match had picked Watt's bibliography list, which defines nothing.
+htc:0583	Wool Other kinds and Flocks	definition	use	simmonds_1892::the soft curly hair	Auto-match had picked Watt's bibliography list, which defines nothing.
+htc:0087	Manufactures Unenumerated	definition	drop		Unrelated Watt sentence about millet attached to a residual manufactures heading.
+htc:0087	Manufactures Unenumerated	source_taxon	remove	Cannabis sativa	Taxon attached to a residual manufactures heading.
+htc:0205	Stone	definition	use	ure_gutenberg::is earthy matter	Auto-match had picked the weight 'stone' (14 lbs); heading is building stone.
+htc:0277	Animals Unenumerated	definition	drop		Definition is ANIMAL CHARCOAL; heading is live animals.
+htc:1248	Charcoal	definition	use	simmonds_1892::charred or burnt wood	Auto-match had picked animal (bone) charcoal; the heading is wood charcoal (Canadian exports 1889–97).
+htc:0415	Logs Unenumerated	definition	drop		Homonym: Scots 'logs' = footless stockings.
+htc:0421	Grains Unenumerated	definition	use	simmonds_1892::small seed of any kind	Auto-match had picked brewers' grains; heading is cereal grains.
+htc:0421	Grains Unenumerated	definition	excerpt	small seed of any kind of grass; chiefly, however, cereals.	Trim the unrelated weight sense of 'grain'.
+htc:0732	Glucose	definition	drop		Entry describes dextrine/British gum, not glucose.
+htc:1426	Capers	definition	use	mortimer_1823::(*Capers*.	Homonym: Scots 'caper' = oat-cake; heading is pickled caper buds.
+htc:1656	Ink	definition	use	ure_gutenberg::(_Encre_	Homonym: Japanese long measure 'ink'.
+htc:1773	Peppermint	definition	drop		Entry is the Tasmanian peppermint gum (Eucalyptus); heading is Canadian peppermint 1837–41.
+htc:1773	Peppermint	source_taxon	remove	Eucalyptus amygdalina	Peppermint gum tree, not peppermint.
+htc:1905	Minerals Unenumerated	definition	drop		Fragment of the MINERAL WATERS entry.
+htc:0377	Currants	definition	use	simmonds_1892::a small seedless variety of the grape	Customs currants are dried Corinth grapes (imported in cwt from Greece, the Ionian Islands, Turkey), not Ribes garden currants.
+htc:0377	Currants	source_taxon	remove	Ribes rubrum	Customs currants are dried grapes, not Ribes.
+htc:0377	Currants	source_taxon	remove	Ribes nigrum	Customs currants are dried grapes, not Ribes.
+htc:0377	Currants	source_taxon	add	Vitis vinifera	Currants = dried Corinth grapes (Simmonds 1892 s.v. CURRANTS).
+htc:2014	Bass	definition	drop		Bast/rush sense of 'bass'; the single row (barrels, Montreal & Quebec → British West Indies, 1837) is a barrelled provision.
+htc:0211	Knees	definition	use	mortimer_1823::in a ship, a crooked piece of timber	Auto-match had picked Mortimer's definition of carlings; replaced by his KNEE entry.
+htc:0940	Beans not fresh Haricot	definition	drop		Broad-bean (Vicia faba) text contradicts a haricot heading.
+htc:0940	Beans not fresh Haricot	source_taxon	remove	Vicia faba	Haricot beans are Phaseolus vulgaris.
+htc:0940	Beans not fresh Haricot	source_taxon	add	Phaseolus vulgaris	Haricot bean.
+htc:0077	Spirits Unenumerated not Sweetened	definition	drop		Customs-duty prose from McCulloch (1870 Act), not a definition.
+htc:0110	Spirits Unenumerated	definition	drop		Customs-duty prose from McCulloch (1870 Act), not a definition.
+htc:0612	Spirits Unenumerated not Sweetened or Mixed	definition	drop		Customs-duty prose from McCulloch (1870 Act), not a definition.
+htc:0697	Spirits	definition	drop		Customs-duty prose from McCulloch (1870 Act), not a definition.
+htc:0767	Spirits Unenumerated including Shrub	definition	drop		Customs-duty prose from McCulloch (1870 Act), not a definition.
+htc:1221	Spirits Unenumerated not tested	definition	drop		Customs-duty prose from McCulloch (1870 Act), not a definition.
+htc:0768	Carts	definition	use	simmonds_1892::a vehicle on two or four wheels	Auto-match had picked statutory prose on cart wheels.
+htc:0068	Whiskey	definition	excerpt	is dilute alcohol, distilled from the fermented worts of malt or grains.	Definition ran on into the next dictionary entry (WHITE LEAD).
+htc:0012	Seeds Unenumerated Other Sorts	definition	excerpt	In Commerce, the grains of several species of *gramina*. Those of most importance are clover seed, flax or linseed, hemp seed, rape seed, tares, mustard seed &c.; for which, see the respective articles.	Definition ran on into the next entries (SEGARS, SENNA).
+htc:0304	Seeds Unenumerated for expressing Oil therefrom	definition	excerpt	In Commerce, the grains of several species of *gramina*. Those of most importance are clover seed, flax or linseed, hemp seed, rape seed, tares, mustard seed &c.; for which, see the respective articles.	Definition ran on into the next entries (SEGARS, SENNA).
+htc:1645	Axes	definition	excerpt	instruments consisting of a metal head, with a sharp edge, fixed in a handle. They are used by carpenters, &c. for cutting wood, &c.	Definition ran on into the next entry (AXUNGIA).
+htc:0025	Lard	definition	drop		Import statistics and a stray French-usage note; no definition of lard.
+htc:0069	Cows	definition	excerpt	the female of the bovine tribe of animals.	Mining and Scots senses of 'cow' removed.
+htc:0114	Biscuits	definition	excerpt	baked flour cakes of different kinds.	Porcelain 'biscuit' sense removed.
+htc:0804	Matches	definition	use	simmonds_1892::splints of wood, dipped	Auto-match had picked 'match' = contest; replaced by LUCIFER-MATCHES.
+htc:1680	Matches Other Sorts	definition	use	simmonds_1892::splints of wood, dipped	Auto-match had picked 'match' = contest; replaced by LUCIFER-MATCHES.
+htc:1060	Piling	definition	drop		'Piling' as stowage of staves; heading is timber piles (Canada 1893–97).
+htc:0337	Castings Unenumerated	definition	excerpt	A foundry operation, the process of running metal into a shape, the taking impressions from medals, figures, &c. The metal so shaped.	Steel-improving process sense removed.
+htc:0143	Balsam	definition	use	mortimer_1823::(GER. DA. SW. RUS. & POL. Balsam.	Auto-match had picked balsam copaiba; heading is generic balsam (largely Canada balsam).
+htc:0143	Balsam	source_taxon	remove	Copaifera officinalis	Copaiba is one specific balsam; heading is generic.
+htc:0174	Skins - Furs - Pelts Bear	definition	drop		Tanners' definition of small-animal skins (sheep, goats, dogs) attached to bear/wolf/otter/mink fur pelts.
+htc:0437	Skins Undressed Wolf	definition	drop		Tanners' definition of small-animal skins (sheep, goats, dogs) attached to bear/wolf/otter/mink fur pelts.
+htc:0519	Skins Undressed Otter	definition	drop		Tanners' definition of small-animal skins (sheep, goats, dogs) attached to bear/wolf/otter/mink fur pelts.
+htc:0660	Skins Undressed Mink	definition	drop		Tanners' definition of small-animal skins (sheep, goats, dogs) attached to bear/wolf/otter/mink fur pelts.
+htc:0060	Hides	definition	use	ure_gutenberg::(_Peau_, Fr.; _Haut_, Germ.) the strong skin	Auto-match had picked import statistics.
+htc:0178	Raisins	definition	use	ure_gutenberg::are grapes allowed to ripen	Auto-match had picked an import-statistics sentence.
+htc:0275	Cutch	definition	use	ure_gutenberg::absurdly called Terra Japonica	Auto-match had picked an export-statistics sentence; Ure's CATECHU entry defines cutch.
+htc:0494	Cotton Yarn	definition	drop		Export statistics only.
+htc:0661	Coals	definition	use	simmonds_1892::fossil fuel	Auto-match had picked a statistics fragment.
+htc:0368	Meats Unenumerated	definition	drop		Statistical table preamble from McCulloch, not a definition.
+htc:0450	Meat Unenumerated Salted or Fresh	definition	drop		Statistical table preamble from McCulloch, not a definition.
+htc:0714	Meat unenumerated Preserved otherwise than by Salting Other Sorts	definition	drop		Statistical table preamble from McCulloch, not a definition.
+htc:0927	Meats	definition	drop		Statistical table preamble from McCulloch, not a definition.
+htc:0995	Meat Unenumerated Preserved otherwise than by Salting	definition	drop		Statistical table preamble from McCulloch, not a definition.
+htc:0408	Spices Unenumerated	definition	use	simmonds_1892::the common name for pleasant or pungent	Auto-match had picked a statistical table preamble.
+htc:0070	Wood Unenumerated	definition	use	simmonds_1892::a general name for timber or fuel	Auto-match had picked a mid-sentence fragment.
+htc:0391	Glass and Glassware	definition	use	ure_gutenberg::(_Verre_	Auto-match had picked Watt's list of Indian vernacular names.
+htc:0280	Horns Unenumerated	definition	use	simmonds_1892::the hard pointed bodies	Auto-match had picked Watt's citation list.
+htc:0742	Petroleum	definition	use	mcculloch_1880::This substance, which has been known	Auto-match had picked Watt's bibliography with OCR debris.
+htc:1020	Aloes	definition	drop		Watt citation debris, no definition.
+htc:1955	Coral	definition	use	simmonds_1892::the natural skeleton	Auto-match had picked Watt on coral reefs as a lime source; heading is ornamental coral.
+htc:1196	Synthetic Indigo	definition	drop		Not a definition ('It would be impossible to deal here with...').
+htc:0001	Wheat	definition	use	simmonds_1892::a name for species of *Triticum*	Previous text was only a cross-reference ('See BREAD, GLUTEN, and STARCH').
+htc:0187	Wheat Other Descriptions including Shredded Wheat and Semolina	definition	use	simmonds_1892::a name for species of *Triticum*	Previous text was only a cross-reference ('See BREAD, GLUTEN, and STARCH').
+htc:0609	Elephants Teeth	definition	use	mcculloch_1880::The name given to the teeth or tusks	Previous text was only a cross-reference ('See IVORY').
+htc:0430	Brimstone	definition	use	simmonds_1892::a simple inflammable body	Previous text was only a cross-reference ('See SULPHUR').
+htc:0239	Malt	definition	excerpt	(Eng. and Fr.; _Malz_, Germ.) is barley-corn, which has been subjected to an artificial process of germination.	Definition ran on into a statistical table.
+htc:0686	Watches	definition	excerpt	are movements or machines for the measuring of time, having their motion regulated by a spiral spring.	Definition ran on into the next sub-entry.
+htc:1708	Bowsprits	definition	excerpt	a kind of mast, resting slopewise on the head of the main stem, and having its lower end fastened to the partners of the foremast, and farther supported by the fore-stay. It carries the sprit-sail, sprit-top-sail, and jack-staff; and its length is usually the same with that of the fore-mast.	Definition ran on into the next entry (BOWYERS).
+htc:0071	Furs Unenumerated Undressed	definition	excerpt	the fine soft short hair on the skin of some animals, which is worn for warmth or ornament	Boiler-scale sense of 'fur' removed.
+htc:0099	Furs	definition	excerpt	the fine soft short hair on the skin of some animals, which is worn for warmth or ornament	Boiler-scale sense of 'fur' removed.
+htc:0144	Furs Unenumerated Dressed	definition	excerpt	the fine soft short hair on the skin of some animals, which is worn for warmth or ornament	Boiler-scale sense of 'fur' removed.
+htc:0472	Furs manufactured	definition	excerpt	the fine soft short hair on the skin of some animals, which is worn for warmth or ornament	Boiler-scale sense of 'fur' removed.
+htc:0488	Furs Unenumerated	definition	excerpt	the fine soft short hair on the skin of some animals, which is worn for warmth or ornament	Boiler-scale sense of 'fur' removed.
+htc:0197	Fish Unenumerated Pickled	definition	excerpt	a general name for marine swimming animals, in the capture and sale of which a large trade is carried on	Nautical and verb senses of 'fish' removed.
+htc:0202	Fish unenumerated dry	definition	excerpt	a general name for marine swimming animals, in the capture and sale of which a large trade is carried on	Nautical and verb senses of 'fish' removed.
+htc:0324	Fish Unenumerated Fresh	definition	excerpt	a general name for marine swimming animals, in the capture and sale of which a large trade is carried on	Nautical and verb senses of 'fish' removed.
+htc:0752	Fish	definition	excerpt	a general name for marine swimming animals, in the capture and sale of which a large trade is carried on	Nautical and verb senses of 'fish' removed.
+htc:1054	Fish Other Sorts not Canned	definition	excerpt	a general name for marine swimming animals, in the capture and sale of which a large trade is carried on	Nautical and verb senses of 'fish' removed.
+htc:1083	Fish Unenumerated	definition	excerpt	a general name for marine swimming animals, in the capture and sale of which a large trade is carried on	Nautical and verb senses of 'fish' removed.
+htc:1920	Fish Unenumerated Preserved	definition	excerpt	a general name for marine swimming animals, in the capture and sale of which a large trade is carried on	Nautical and verb senses of 'fish' removed.
+htc:0049	Maize	definition	excerpt	the general name for the seeds of Indian corn, (*Zea Mays*); the principal grain crop of the United States	Unrelated Scots fish-measure sense removed.
+htc:1373	Maize Other Sorts	definition	excerpt	the general name for the seeds of Indian corn, (*Zea Mays*); the principal grain crop of the United States	Unrelated Scots fish-measure sense removed.
+htc:0057	Spars	definition	excerpt	a general marine term for all masts, yards, booms, &c.	Unrelated homonym senses in the same dictionary entry removed.
+htc:0131	Battens	definition	excerpt	in building, &c., a piece of pine scantling not exceeding seven inches in breadth, about two and a-half inches thick, and six or more feet in length.	Unrelated homonym senses in the same dictionary entry removed.
+htc:0382	Ore Unenumerated	definition	excerpt	a crude mineral or metal as found in the earth	Unrelated homonym senses in the same dictionary entry removed.
+htc:0420	Sponge	definition	excerpt	a marine product, of which there are many varieties. Large quantities of both coarse and fine sponge come into commerce for toilet and surgical use, for common washing purposes, for making into cloth, hats, and for other uses	Unrelated homonym senses in the same dictionary entry removed.
+htc:0543	Pitch	definition	excerpt	the resin of pine extracted by fire and inspissation; or the residuum of boiled tar, made in England, and of which about a thousand tons a year are imported from Russia	Unrelated homonym senses in the same dictionary entry removed.
+htc:0584	Ice	definition	excerpt	congealed water, which enters into commerce for cooling liquids and for confectioners' purposes: large quantities are shipped from America to other countries.	Unrelated homonym senses in the same dictionary entry removed.
+htc:0941	Pickets	definition	excerpt	In America the term is applied to stakes or narrow boards of cypress and other wood	Unrelated homonym senses in the same dictionary entry removed.
+htc:0962	Nuts	definition	excerpt	the fruit or kernel of many trees and shrubs, several of which, being edible, form large articles of commerce	Unrelated homonym senses in the same dictionary entry removed.
+htc:1019	Junk	definition	excerpt	old and condemned pieces of rope and cordage, cut into short lengths, and used for making mats, swabs, and oakum &c.	Unrelated homonym senses in the same dictionary entry removed.
+htc:1549	Rifles	definition	excerpt	a gun with a grooved bore, the cylinder being furrowed with spiral channels to give the ball a rotatory motion about an axis	Unrelated homonym senses in the same dictionary entry removed.
+htc:1642	Down	definition	excerpt	the fine short breast plumage of the elder duck and other birds	Unrelated homonym senses in the same dictionary entry removed.
+htc:1842	Chairs	definition	excerpt	a moveable seat of which there are numberless kinds made to suit special uses	Unrelated homonym senses in the same dictionary entry removed.
+htc:1951	Pig	definition	excerpt	a well-known domestic animal whose valuable commercial products are noticed under Bacon, Pork, Lard, &c.	Unrelated homonym senses in the same dictionary entry removed.
+htc:1964	Gigs	definition	excerpt	a light two-wheeled carriage for general use.	Unrelated homonym senses in the same dictionary entry removed.
+htc:2029	Billets	definition	excerpt	a small clump of fire-wood	Unrelated homonym senses in the same dictionary entry removed.
+htc:0064	Carriages	definition	excerpt	a carrying vehicle of any kind, whether for private use or for the conveyance of goods	Unrelated homonym senses in the same dictionary entry removed.
+htc:0080	Vegetables	source_taxon	remove	Phytelephas macrocarpa	Vegetable-ivory palm picked up from the 'Vegetable Ivory' headword.
+htc:0085	Vegetables Unenumerated	source_taxon	remove	Phytelephas macrocarpa	Vegetable-ivory palm picked up from the 'Vegetable Ivory' headword.
+htc:0224	Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)	source_taxon	remove	Phytelephas macrocarpa	Vegetable-ivory palm attached to animal ivory.
+htc:0247	Feathers	source_taxon	remove	Ficus carica	Fig tree attached to feathers.
+htc:0587	Aniline	source_taxon	remove	Illicium anisatum	Star anise attached to aniline, a coal-tar chemical.
+htc:0149	Pepper (Spice)	source_taxon	remove	Xylopia aromatica	Tangential 'pepper' mentioned in the dictionary entry.
+htc:0149	Pepper (Spice)	source_taxon	remove	Capsicum baccatum	Tangential 'pepper' mentioned in the dictionary entry.
+htc:0081	Tea	source_taxon	remove	Catha edulis	Khat ('Arabian tea'), a tangential mention.
+htc:0015	Caoutchouc	source_taxon	remove	Ficus religiosa	Incidental mention in Ure's list; not a rubber source.
+htc:0436	Castor	source_taxon	remove	Ricinus communis	Contradicts the heading's castoreum sense (lbs, Canada/Hudson's Bay).
+htc:0436	Castor	source_taxon	remove	Castor fiber	Eurasian beaver; the rows are Canadian.
+htc:1377	Turmeric	source_taxon	remove	Anethum sowa	Indian dill, unrelated to turmeric.
+htc:0014	Eggs	source_taxon	remove	Reptilia	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
+htc:0042	Eggs in Shell	source_taxon	remove	Reptilia	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
+htc:0014	Eggs	source_taxon	remove	Pisces	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
+htc:0042	Eggs in Shell	source_taxon	remove	Pisces	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
+htc:0014	Eggs	source_taxon	remove	Monotremata	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
+htc:0042	Eggs in Shell	source_taxon	remove	Monotremata	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
+htc:0014	Eggs	source_taxon	remove	Amphibia	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
+htc:0042	Eggs in Shell	source_taxon	remove	Amphibia	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
+htc:0014	Eggs	source_taxon	remove	Invertebrata	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
+htc:0042	Eggs in Shell	source_taxon	remove	Invertebrata	Generic Wikidata 'egg' taxa; the commodity is poultry eggs.
+htc:0927	Meats	source_taxon	remove	Amphibia	Wikidata noise on a meat heading.
+htc:0927	Meats	source_taxon	remove	Reptilia	Wikidata noise on a meat heading.
+htc:0076	Coffee	source_taxon	remove	Coffea charrieriana	Species described in 2008; not a 19th-century trade coffee.
+htc:0076	Coffee	source_taxon	remove	Coffea stenophylla	Not a 19th-century trade coffee.
+htc:0079	Maple Sugar	source_taxon	remove	Acer saccharinum	Silver maple; maple sugar is from Acer saccharum.
+htc:0312	Venison	source_taxon	remove	Cervus dama	Fallow deer; heading occurs only in Canadian exports.
+htc:2028	Bear	source_taxon	remove	Ursus maritimus	Only the polar bear had been attached; single Canadian row (1839).
+htc:0649	Hemp	source_taxon	remove	Musa textilis	Manila hemp is a different fibre.
+htc:0859	Cork	source_taxon	remove	Phellodendron amurense	Amur cork tree, not commercial cork (Quercus suber).
+htc:0302	Madder	source_taxon	remove	Morinda citrifolia	Indian mulberry (al dye), tangential.
+htc:0986	Madder Munjeet	source_taxon	remove	Rubia tinctorum	Munjeet is Indian madder.
+htc:0986	Madder Munjeet	source_taxon	add	Rubia cordifolia	Munjeet = Indian madder.
+htc:1057	Soda Other Sorts	source_taxon	remove	Salsola soda	Barilla plant attached to industrial soda (1901–11).
+htc:1768	Bark	source_taxon	remove	Cinchona calisaya	Generic bark heading; the 1866 bridge treats it as tanning bark.
+htc:1831	Manna	source_taxon	remove	Alhagi maurorum	'Oriental manna' aside; commercial manna is Fraxinus ornus.
+htc:0027	Horned Cattle	altLabel	remove	beef cattle	Narrower term, not a synonym.
+htc:0436	Castor	bridge_1866	drop		The 1866 'Castor' concept is the castor-oil seed; this heading is castoreum.
+htc:0174	Skins - Furs - Pelts Bear	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
+htc:0437	Skins Undressed Wolf	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
+htc:0519	Skins Undressed Otter	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
+htc:0660	Skins Undressed Mink	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
+htc:0325	Skins Unenumerated Undressed	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
+htc:0583	Wool Other kinds and Flocks	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
+htc:0324	Fish Unenumerated Fresh	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
+htc:1311	Sugar Other Sorts including Sugar Candy	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
+htc:1373	Maize Other Sorts	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
+htc:0372	Cork Unmanufactured	bridge_1866	set_relation	broader_1866_concept	Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings).
+htc:1042	Dates	bridge_1866	set_relation	exact_or_synonym	Same concept ('Dates').

@@ -312,7 +312,7 @@ COMPOUND_HEADINGS = {
     "peas and beans": ([("legume", "pisum sativum"), ("bean", None)], ["Peas", "Beans"]),
     "oranges and lemons": ([("orange", None), ("lemon", None)], ["Oranges", "Lemons"]),
     "lemons and oranges": ([("lemon", None), ("orange", None)], ["Lemons", "Oranges"]),
-    "cutch and gambier": ([("catechu", None), ("catechu", "uncaria gambir")], ["Cutch", "Terra Japonica"]),
+    "cutch and gambier": ([("catechu", None), ("gambier", "uncaria gambir")], ["Cutch", "Terra Japonica"]),
     "masts and spars": ([("mast", None), ("spar", None)], ["Masts", "Spars"]),
     "furs and skins": ([("fur", None), ("hide", None)], ["Furs"]),
     "planks and boards": ([("lumber", None)], ["Planks", "Boards"]),
@@ -389,7 +389,7 @@ CURATED_SCOPE_NOTES = {
     "htc:0627": "Verbatim 19th-century British customs appellation retained strictly for archival fidelity and source provenance; contains an archaic colonial racialized trade term ('Negrohead', denoting dark plug-pressed Cavendish tobacco). Analytically grouped under neutral Tobacco, Cigars & Snuff.",
     "htc:0644": "Verbatim 19th-century Canadian customs appellation ('Indian Bark Work') denoting Indigenous birchbark craft and quillwork exports; retained for archival provenance rather than as a modern ethnonym.",
     "htc:1009": "Verbatim 19th-century customs appellation retained for archival provenance; denotes colonial trade classification of birchbark/barkwood articles.",
-    "htc:0436": "Historical boundary object: in 1800–1852 British/Canadian customs ledgers (measured in lbs from Canada/Hudson's Bay), 'Castor' denotes beaver castoreum (Castor fiber), not castor oil.",
+    "htc:0436": "Historical boundary object: in 1800–1852 British/Canadian customs ledgers (measured in lbs from Canada/Hudson's Bay), 'Castor' denotes beaver castoreum (North American beaver, Castor canadensis), not castor oil.",
     "htc:0127": "Historical North Atlantic fishery heading: pickled cod tongues from Canadian/Newfoundland fisheries, not beef tongue.",
     "htc:0513": "Historical North Atlantic fishery heading: pickled cod tongues and swim bladders ('sounds'), not mammalian meat.",
     "htc:0727": "Historical cooperage heading (Quebec/Maritime timber trade, measured in pieces): wooden barrel hoops, not iron hoops.",
@@ -399,10 +399,9 @@ CURATED_SCOPE_NOTES = {
     "htc:0047": "Historical British/Canadian customs term for maize (Zea mays); in 19th-century British trade statistics, bare 'Corn' denoted cereal grains generally.",
     "htc:0015": "19th-century trade appellation for natural rubber latex (Hevea spp.); historically grouped with allied tropical latexes such as Gutta Percha.",
     "htc:0696": "19th-century Southeast Asian non-elastic latex (Palaquium gutta / Isonandra gutta), critical to submarine telegraph cables and allied in trade classification with Caoutchouc.",
-    "htc:0030": "Merged 1871–1909 HCPP customs heading combining animal tallow (htc:0022) and rendered stearine (htc:0910); linked to its constituents via oe:combinesConcept.",
+    "htc:0030": "Merged 1871–1909 HCPP customs heading combining animal tallow (htc:0022) and pressed stearine (htc:0910); linked to its constituents via oe:combinesConcept.",
     "htc:0275": "Historical South/Southeast Asian vegetable tanning and dyeing extract (Senegalia catechu); 19th-century customs clerks frequently conflated cutch and gambier under 'Terra Japonica'.",
     "htc:0355": "Historical Southeast Asian vegetable tanning extract (Uncaria gambir); closely allied in 19th-century British trade ledgers with Cutch and Terra Japonica.",
-    "htc:0432": "Historical 19th-century trade term ('Terra Japonica') covering catechu/gambier vegetable tanning extracts imported from South and Southeast Asia.",
     "htc:1019": "19th-century maritime trade heading: old tarred hemp rope and cordage cut up for oakum caulking and paper-making, not miscellaneous scrap.",
     "htc:2002": "19th-century chemical and dyeing mordant: ferrous sulfate (green vitriol), not metallic copper.",
     "htc:1760": "Historical textile heading: bobbin lace worked on bone bobbins, not an animal-bone product.",
@@ -668,7 +667,7 @@ CANONICAL_MAP = {
     "valonia": ("tanbark", "quercus ithaburensis", "skos:broadMatch"),
     "cutch": ("catechu", None, "skos:exactMatch"),
     "terra japonica": ("catechu", "uncaria gambir", "skos:closeMatch"),
-    "gambier": ("catechu", "uncaria gambir", "skos:closeMatch"),
+    "gambier": ("gambier", "uncaria gambir", "skos:exactMatch"),
     "sumach": ("tannin", "rhus coriaria", "skos:broadMatch"),
     "shumach": ("tannin", "rhus coriaria", "skos:broadMatch"),
     "sumac": ("tannin", "rhus coriaria", "skos:broadMatch"),
@@ -958,6 +957,161 @@ def load_id_registry():
     return reg
 
 
+CURATED_OVERRIDES_PATH = GROUND / "curated_overrides.tsv"
+VALID_STATES = {"unspecified", "manufactured", "raw_unprocessed", "refined_extract", "smelted_semi", "sawn_hewn",
+                "dressed_tanned", "live", "milled_ground", "raw_ore", "wet_salted", "dried_cured", "byproduct_cake",
+                "dairy_processed", "processed_pulp", "processed_fibre"}
+VALID_LAND = {"terrestrial_crop", "industrial_manufactured", "terrestrial_pasture", "mineral", "terrestrial_forest",
+              "unclassified", "marine"}
+
+
+def load_curated_overrides(reg):
+    """Hand-curated, evidence-backed corrections to the regex classifier / lexical anchoring.
+
+    `curated_overrides.tsv` columns: concept_id, commodity_as_printed (guard: must equal the frozen registry label),
+    group, processing_state, land_basis, wd_term ("NONE" = suppress anchor), wd_relation, scope_note, rationale.
+    Blank cells mean "keep the automatic value". Every row must state its rationale; the builder appends the
+    Layer-1 trade evidence (series, years, units, routes) for the heading automatically.
+    """
+    out = {}
+    if not CURATED_OVERRIDES_PATH.exists():
+        return out
+    by_id = {v: k for k, v in reg.items()}
+    with open(CURATED_OVERRIDES_PATH, encoding="utf-8") as fh:
+        for r in csv.DictReader((l for l in fh if not l.startswith("#")), delimiter="\t"):
+            cid = r["concept_id"].strip()
+            r = {k: (v or "").strip() for k, v in r.items()}
+            if cid in out:
+                raise ValueError(f"curated_overrides.tsv: duplicate row for {cid}")
+            if by_id.get(cid) != r["commodity_as_printed"]:
+                raise ValueError(f"curated_overrides.tsv: {cid} label guard {r['commodity_as_printed']!r} != registry {by_id.get(cid)!r}")
+            if r["group"] and r["group"] not in GROUPS:
+                raise ValueError(f"curated_overrides.tsv: {cid} unknown group {r['group']}")
+            if r["processing_state"] and r["processing_state"] not in VALID_STATES:
+                raise ValueError(f"curated_overrides.tsv: {cid} bad processing_state {r['processing_state']}")
+            if r["land_basis"] and r["land_basis"] not in VALID_LAND:
+                raise ValueError(f"curated_overrides.tsv: {cid} bad land_basis {r['land_basis']}")
+            if r["wd_term"] and r["wd_term"] != "NONE" and r["wd_relation"] not in ("skos:exactMatch", "skos:closeMatch", "skos:broadMatch", "skos:relatedMatch"):
+                raise ValueError(f"curated_overrides.tsv: {cid} wd_term needs a valid wd_relation")
+            if not r["rationale"]:
+                raise ValueError(f"curated_overrides.tsv: {cid} has no rationale")
+            out[cid] = r
+    return out
+
+
+CURATED_FIELD_FIXES_PATH = GROUND / "curated_field_fixes.tsv"
+
+
+def load_curated_field_fixes(reg):
+    """Hand-curated corrections to auto-matched dictionary definitions, taxa, labels, notes and 1866 bridges.
+
+    `curated_field_fixes.tsv` columns: concept_id, commodity_as_printed (guard), field, action, value, rationale.
+      definition : drop | use (value = "<source_work>::<verbatim start of the lexicon definition>") |
+                   excerpt (value = verbatim substring(s) of the current definition to keep, "||"-separated)
+      source_taxon: remove | add (value = Linnaean name, resolved against the Wikidata snapshot as a Q16521 taxon)
+      altLabel   : remove | add
+      scope_note : drop | set
+      bridge_1866: drop | set_relation
+    """
+    out = defaultdict(list)
+    if not CURATED_FIELD_FIXES_PATH.exists():
+        return out
+    by_id = {v: k for k, v in reg.items()}
+    valid = {"definition": {"drop", "use", "excerpt"}, "source_taxon": {"remove", "add"}, "altLabel": {"remove", "add"},
+             "scope_note": {"drop", "set"}, "bridge_1866": {"drop", "set_relation"}}
+    with open(CURATED_FIELD_FIXES_PATH, encoding="utf-8") as fh:
+        for r in csv.DictReader((l for l in fh if not l.startswith("#")), delimiter="\t"):
+            r = {k: (v or "").strip() for k, v in r.items()}
+            cid = r["concept_id"]
+            if by_id.get(cid) != r["commodity_as_printed"]:
+                raise ValueError(f"curated_field_fixes.tsv: {cid} label guard {r['commodity_as_printed']!r} != registry {by_id.get(cid)!r}")
+            if r["action"] not in valid.get(r["field"], ()):
+                raise ValueError(f"curated_field_fixes.tsv: {cid} bad field/action {r['field']}/{r['action']}")
+            if not r["rationale"]:
+                raise ValueError(f"curated_field_fixes.tsv: {cid} has no rationale")
+            out[cid].append(r)
+    return out
+
+
+def apply_curated_field_fixes(concepts, fixes, rejections):
+    """Apply curated_field_fixes.tsv. Fails loudly when a fix no longer matches, so stale rows cannot rot silently."""
+    if not fixes:
+        return
+    lex = defaultdict(list)
+    for line in open(DICT_DIR / "commercial_dictionaries_lexicon.jsonl", encoding="utf-8"):
+        if line.strip():
+            d = json.loads(line)
+            lex[d["source_work"]].append(d)
+    add_names = {r["value"].lower() for rs in fixes.values() for r in rs if r["field"] == "source_taxon" and r["action"] == "add"}
+    wd = query_wikidata(add_names) if add_names else {}
+    for c in concepts:
+        cid = c["concept_id"]
+        notes = []
+        for r in fixes.get(cid, []):
+            f, act, val = r["field"], r["action"], r["value"]
+            if f == "definition":
+                cur = c.get("skos_definition") or ""
+                if act == "drop":
+                    c["skos_definition"] = None
+                elif act == "excerpt":
+                    body, _, cite = cur.rpartition(" [")
+                    parts = [x.strip() for x in val.split("||")]
+                    for x in parts:
+                        if x not in body:
+                            raise ValueError(f"curated_field_fixes.tsv: {cid} excerpt not found in current definition: {x[:50]!r}")
+                    c["skos_definition"] = f"{' … '.join(parts)} [{cite}"
+                elif act == "use":
+                    work, _, start = val.partition("::")
+                    hits = [d for d in lex.get(work, []) if (d.get("definition") or "").startswith(start)]
+                    if len(hits) != 1:
+                        raise ValueError(f"curated_field_fixes.tsv: {cid} 'use' matched {len(hits)} lexicon entries for {val[:60]!r}")
+                    d = hits[0]
+                    c["skos_definition"] = f"{d['definition']} [{d['source_citation']}]"
+                    src = {"work": d["source_work"], "citation": d["source_citation"], "uri": d["source_uri"], "see_also": d.get("see_also", [])[:5]}
+                    c["dictionary_sources"] = [src] + [x for x in c["dictionary_sources"] if x["uri"] != d["source_uri"]]
+            elif f == "source_taxon":
+                if act == "remove":
+                    keep = [t for t in c["source_taxa"] if t["taxon_name"].lower() != val.lower()]
+                    if len(keep) == len(c["source_taxa"]):
+                        raise ValueError(f"curated_field_fixes.tsv: {cid} taxon to remove not present: {val}")
+                    c["source_taxa"] = keep
+                else:
+                    th = pick_taxon(wd.get(val.lower(), []))
+                    if not th:
+                        raise ValueError(f"curated_field_fixes.tsv: {cid} taxon {val!r} not found as a Q16521 taxon in the Wikidata snapshot")
+                    if th["qid"] not in {t["qid"] for t in c["source_taxa"]}:
+                        c["source_taxa"].append({"qid": th["qid"], "taxon_name": th["label"], "col_id": "", "relation": "curated_source_taxon"})
+            elif f == "altLabel":
+                if act == "remove":
+                    if val.lower() not in {x.lower() for x in c["skos_altLabels"]}:
+                        raise ValueError(f"curated_field_fixes.tsv: {cid} altLabel to remove not present: {val}")
+                    c["skos_altLabels"] = [x for x in c["skos_altLabels"] if x.lower() != val.lower()]
+                elif val.lower() not in {x.lower() for x in c["skos_altLabels"]}:
+                    c["skos_altLabels"].append(val)
+            elif f == "scope_note":
+                c["skos_scopeNote"] = None if act == "drop" else val
+            elif f == "bridge_1866":
+                if not c.get("skos_1866_bridge"):
+                    raise ValueError(f"curated_field_fixes.tsv: {cid} has no 1866 bridge")
+                if act == "drop":
+                    c["skos_1866_bridge"] = None
+                else:
+                    c["skos_1866_bridge"]["bridge_relation"] = val
+            notes.append(f"{f} {act}: {r['rationale']}")
+        if notes:
+            c["field_curation"] = notes
+
+
+def trade_evidence_summary(st):
+    """Compact, reproducible Layer-1 evidence trail for a heading (series, years, units, top routes)."""
+    yrs = sorted(st["years"])
+    span = f"{yrs[0]}–{yrs[-1]}" if yrs else "undated"
+    ser = "; ".join(f"{s or 'unnamed series'} ×{n}" for s, n in st["series"].most_common(4))
+    units = "; ".join(f"{u or '(no unit)'} ×{n}" for u, n in st["units"].most_common(4))
+    routes = "; ".join(f"{o or '?'} → {d or '?'} ×{n}" for (o, d), n in st["routes"].most_common(4))
+    return f"Layer-1 observations: {st['rows']} rows, {span}. Series: {ser}. Units: {units}. Top routes: {routes}."
+
+
 def load_1866_skos():
     by_label = {}
     if not SKOS_XLSX.exists():
@@ -1054,7 +1208,7 @@ def extract_substance_head(raw: str) -> str:
     return s or raw.strip()
 
 
-def classify_v4(raw: str, head: str):
+def classify_v4(raw: str, head: str, force_grp=None, force_state=None, force_land=None):
     """Assign (group_id, processing_state, land_basis, sitc_code, theodoridis, is_agg) cleanly."""
     lo = raw.lower().strip()
     is_agg = bool(re.search(r"\btotal\b|\ball kinds\b|\ball sorts\b", lo))
@@ -1190,6 +1344,8 @@ def classify_v4(raw: str, head: str):
     elif re.search(r"\b(salt\b|plumbago|graphite|clay\b|gypsum|plaster|lime\b|limestone|chalk|slate|marble|granite|grindstones?|stone\b|stones\b|sand\b|gravel|mica\b|asbestos|quartz|minerals?|precious\s*stones?|diamonds?)\b", lo):
         grp = "grp_industrial_minerals"
 
+    if force_grp:
+        grp = force_grp
     _, sector, domain = GROUPS[grp]
 
     # --- 2. Processing State (clean, zero iron-pig=live or Butter=non-exact bugs!) ---
@@ -1225,6 +1381,9 @@ def classify_v4(raw: str, head: str):
     elif re.search(r"\b(raw|undressed|unrefined|unmanufactured|crude|unwrought|green|fresh|in\s+shell)\b", lo) or grp in ("grp_cereals_grains", "grp_pulses_legumes", "grp_oilseeds", "grp_raw_hides_skins"):
         state = "raw_unprocessed"
 
+    if force_state:
+        state = force_state
+
     # --- 3. Ecological Land Basis ---
     if grp in ("grp_fish_seafood", "grp_marine_oils") or (grp == "grp_furs_marine_pelts" and "seal" in lo) or (grp == "grp_fertilizers_animal_materials" and re.search(r"\b(whale|isinglass|sponge|coral)\b", lo)):
         land_basis = "marine"
@@ -1240,6 +1399,9 @@ def classify_v4(raw: str, head: str):
         land_basis = "unclassified"
     else:
         land_basis = "terrestrial_crop"
+
+    if force_land:
+        land_basis = force_land
 
     # --- 4. Real SITC Rev. 4 Division Code ---
     SITC_BY_GROUP = {
@@ -1446,12 +1608,13 @@ def compose_lod(wd_rel: str) -> str:
 
 def main():
     reg = load_id_registry()
+    overrides = load_curated_overrides(reg)
     skos_1866 = load_1866_skos()
     dict_by_hw, binom_map = load_dictionaries()
     rejections = load_rejections()
 
     # 1. Read exact archival provenance from Layer-1 observations (drop "NULL and other errors" from prov:hadPrimarySource!)
-    comm_stats = defaultdict(lambda: {"rows": 0, "years": set(), "series": Counter()})
+    comm_stats = defaultdict(lambda: {"rows": 0, "years": set(), "series": Counter(), "units": Counter(), "routes": Counter()})
     total_obs = 0
     excluded = Counter()
     with gzip.open(LAYER1 / "human_trade_observations.tsv.gz", "rt", encoding="utf-8") as fh:
@@ -1466,6 +1629,8 @@ def main():
                 continue
             d = comm_stats[comm]
             d["rows"] += 1
+            d["units"][r["unit_as_printed"].strip()] += 1
+            d["routes"][(r["origin_as_printed"].strip(), r["destination_as_printed"].strip())] += 1
             if r["year_start"].isdigit():
                 d["years"].add(int(r["year_start"]))
             ser = r["series_name"].strip() or "CSP_Canadian_Exports_BlankSeries"
@@ -1481,7 +1646,9 @@ def main():
         cid = reg[comm]
         st = comm_stats[comm]
         head = extract_substance_head(comm)
-        grp, sector, domain, pstate, land_basis, sitc, theodoridis, is_agg = classify_v4(comm, head)
+        ov = overrides.get(cid, {})
+        grp, sector, domain, pstate, land_basis, sitc, theodoridis, is_agg = classify_v4(
+            comm, head, ov.get("group") or None, ov.get("processing_state") or None, ov.get("land_basis") or None)
         k_raw, k_head = norm_key(comm), norm_key(head)
 
         bridge = skos_1866.get(k_raw) or skos_1866.get(k_head)
@@ -1505,7 +1672,12 @@ def main():
             "skos_prefLabel": comm,
             "skos_altLabels": [],
             "skos_definition": None,
-            "skos_scopeNote": CURATED_SCOPE_NOTES.get(cid),
+            "skos_scopeNote": ov.get("scope_note") or CURATED_SCOPE_NOTES.get(cid),
+            "curation": ({
+                "overrides": {k: ov[k] for k in ("group", "processing_state", "land_basis", "wd_term", "wd_relation") if ov.get(k)},
+                "rationale": ov["rationale"],
+                "trade_evidence": trade_evidence_summary(st),
+            } if ov else None),
             "dictionary_sources": [],
             "total_rows": st["rows"],
             "provenance": {
@@ -1611,7 +1783,12 @@ def main():
         # Allow intrinsic processed exactMatch for bare Butter / Cheese / Molasses / Maple Syrup
         is_intrinsic_dairy = k_raw in ("butter", "cheese", "molasses", "maple syrup")
 
-        if RESIDUAL_RE.match(k_raw) or RESIDUAL_RE.match(k_head):
+        if ov.get("wd_term") == "NONE":
+            plans[cid] = ("none", None)
+        elif ov.get("wd_term"):
+            plans[cid] = ("single", (ov["wd_term"], None, ov["wd_relation"], "curated_override"))
+            all_terms.add(ov["wd_term"])
+        elif RESIDUAL_RE.match(k_raw) or RESIDUAL_RE.match(k_head):
             plans[cid] = ("residual", None)
         elif k_raw in COMPOUND_HEADINGS or k_head in COMPOUND_HEADINGS:
             ck = k_raw if k_raw in COMPOUND_HEADINGS else k_head
@@ -1773,7 +1950,8 @@ def main():
         if grp in ("grp_metal_machinery_hardware", "grp_glass_ceramics_paper_woodware", "grp_yarns_cordage", "grp_woven_fabrics_apparel", "grp_metallic_ores") or pstate == "manufactured" or "rag" in k_raw:
             mats, seen_m = [], set()
             for pat, mterm in MATERIAL_DETECT:
-                if re.search(pat, k_raw) and not re.search(r"\b(?:not\s+(?:of|with|being(?:\s+of)?)|other\s+than)\s+(?:[a-z]+\s+){0,4}" + re.escape(mterm), k_raw):
+                mm = re.search(pat, k_raw)
+                if mm and not re.search(r"\b(?:not|other\s+than)(?:\s+[a-z]+){0,4}\s*$", k_raw[:mm.start()]):
                     mh = material_qids.get(mterm)
                     if mh and mh["qid"] not in seen_m:
                         mats.append(mh); seen_m.add(mh["qid"])
@@ -2002,7 +2180,7 @@ def main():
                 and "waste" not in c["skos_prefLabel"].lower()
             ]
             if cands:
-                cands.sort(key=lambda x: (not x["skos_prefLabel"].lower().startswith(mterm), -x["total_rows"]))
+                cands.sort(key=lambda x: (x["skos_prefLabel"].lower() != mterm.split()[-1], not x["skos_prefLabel"].lower().startswith(mterm), -x["total_rows"]))
                 base_by_qid[mq] = cands[0]["concept_id"]
 
     for c in concepts:
@@ -2011,12 +2189,16 @@ def main():
         for m in mats:
             bcid = base_by_qid.get(m["qid"])
             if bcid and bcid != cid:
-                if bcid not in c["material_concepts"]:
+                is_ore = c["ontology"]["group_id"] == "htc:grp_metallic_ores"
+                if bcid not in c["material_concepts"] and not is_ore:
                     c["material_concepts"].append(bcid)
                 # Wire bidirectional skos:related for single-material cross-stage links (e.g. Copper Ore <-> Copper,
                 # Copper Wire <-> Copper, Iron Ore <-> Iron, Cotton Manufactures <-> Cotton), strictly S27-safe!
                 if len(mats) == 1 and c["ontology"]["group_id"] != by_id[bcid]["ontology"]["group_id"]:
                     add_related(cid, bcid)
+
+    # 5f. Curated field-level corrections (wrong-sense definitions, taxa, labels, notes, bridges)
+    apply_curated_field_fixes(concepts, load_curated_field_fixes(reg), rejections)
 
     # Save updated commodities_concepts.jsonl
     with open(GROUND / "commodities_concepts.jsonl", "w", encoding="utf-8") as fh:
@@ -2232,6 +2414,11 @@ def main():
         if c.get("skos_scopeNote"):
             triples.append(f"skos:scopeNote {ttl_str(c['skos_scopeNote'])}@en")
             node["skos:scopeNote"] = {"@value": c["skos_scopeNote"], "@language": "en"}
+
+        if c.get("curation"):
+            enote = f"Curated classification ({'; '.join(f'{k}={v}' for k, v in c['curation']['overrides'].items()) or 'note only'}): {c['curation']['rationale']} {c['curation']['trade_evidence']}"
+            triples.append(f"skos:editorialNote {ttl_str(enote)}@en")
+            node["skos:editorialNote"] = {"@value": enote, "@language": "en"}
 
         if c["dictionary_sources"]:
             drefs = [f"<{d['uri']}>" for d in c["dictionary_sources"]]

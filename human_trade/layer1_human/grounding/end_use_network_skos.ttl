@@ -25,7 +25,7 @@ oe:ind_soap_manufacture a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Soap Manufacture"@en ;
     skos:definition "Hard, soft, yellow, mottled, curd, Castile, and toilet soap manufacture — combining animal tallow and tropical/vegetable oils with caustic alkalis (barilla, kelp, soda ash, potash, lime), rosin, salt for salting out, and essential oils for scenting."@en ;
-    oe:usesCommodityInput htc:0136, htc:0172, htc:0181, htc:0022, htc:0557, htc:1895, htc:0562, htc:0025, htc:0445, htc:0257, htc:0780, htc:2002, htc:0910, htc:0460, htc:doc_bergamot, htc:1504, htc:doc_musk, htc:0573, htc:doc_ochre, htc:doc_neem_oil, htc:0719, htc:0625, htc:0138, htc:0250 .
+    oe:usesCommodityInput htc:0136, htc:0172, htc:0181, htc:0022, htc:0557, htc:1895, htc:0562, htc:0025, htc:0445, htc:0257, htc:0780, htc:2002, htc:0910, htc:0460, htc:doc_bergamot, htc:1504, htc:doc_musk, htc:0573, htc:1023, htc:doc_neem_oil, htc:0719, htc:0625, htc:0250 .
 
 oe:ind_calico_printing a skos:Concept, crm:E55_Type ;
     rdfs:label "Calico Cloth & Calico Printing"@en ;
@@ -33,7 +33,7 @@ oe:ind_calico_printing a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Calico Cloth & Calico Printing"@en ;
     skos:definition "Cotton weaving, bleaching, dyeing, and calico printing — combining raw cotton with bleaching powder and alkalis, botanical/insect/mineral/coal-tar dyestuffs, metallic mordants, and gum/starch thickeners."@en ;
-    oe:usesCommodityInput htc:0302, htc:0136, htc:0141, htc:1932, htc:2002, htc:1322, htc:0267, htc:doc_bichromate_of_potash, htc:0062, htc:doc_citric_acid, htc:0364, htc:1825, htc:0852, htc:0168, htc:0036, htc:doc_prussian_blue, htc:1142, htc:1304, htc:0096, htc:0118, htc:0975, htc:doc_oxalic_acid, htc:doc_nitric_acid, htc:0557, htc:0185, htc:1692, htc:0172, htc:0275, htc:1265, htc:0536, htc:0677, htc:doc_blue_vitriol, htc:0299, htc:0203, htc:0109, htc:0348, htc:0008, htc:doc_muriatic_acid, htc:doc_sal_ammoniac, htc:0257, htc:doc_verdigris, htc:1375, htc:0072, htc:0587, htc:0562, htc:doc_albumin, htc:1758, htc:0524, htc:1492, htc:0339, htc:1115, htc:0986, htc:doc_chlorate_of_potash, htc:1899, htc:doc_orpiment .
+    oe:usesCommodityInput htc:0302, htc:0136, htc:0141, htc:1932, htc:1322, htc:doc_sugar_of_lead, htc:doc_bichromate_of_potash, htc:0062, htc:doc_citric_acid, htc:0364, htc:1825, htc:0852, htc:0168, htc:0036, htc:doc_prussian_blue, htc:0871, htc:1304, htc:0096, htc:0118, htc:0975, htc:doc_oxalic_acid, htc:doc_nitric_acid, htc:0557, htc:0185, htc:1692, htc:0172, htc:0275, htc:1265, htc:0536, htc:0677, htc:doc_blue_vitriol, htc:0299, htc:0203, htc:0109, htc:0348, htc:0008, htc:doc_muriatic_acid, htc:doc_verdigris, htc:1375, htc:0072, htc:0562, htc:0524, htc:1492, htc:0339, htc:1115, htc:0986, htc:doc_chlorate_of_potash, htc:1899 .
 
 oe:ind_woollen_silk_dyeing a skos:Concept, crm:E55_Type ;
     rdfs:label "Woollen, Silk & Worsted Dyeing"@en ;
@@ -41,7 +41,7 @@ oe:ind_woollen_silk_dyeing a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Woollen, Silk & Worsted Dyeing"@en ;
     skos:definition "Woollen, worsted, and silk scouring, fulling, and dyeing — employing raw wool and silk with scarlet/crimson insect dyes (cochineal, lac dye, kermes), lichen dyes (orchal, archil, cudbear), indigo/woad vats, alum/tartar/tin mordants, olive oil, and fuller's earth."@en ;
-    oe:usesCommodityInput htc:0021, htc:0062, htc:1932, htc:0118, htc:0471, htc:0263, htc:0302, htc:0536, htc:2002, htc:1142, htc:doc_woad, htc:0339, htc:0136, htc:doc_prussian_blue, htc:0364, htc:doc_nitric_acid, htc:0109, htc:0096, htc:1377, htc:0072, htc:0975, htc:doc_citric_acid, htc:1899, htc:0677, htc:0172, htc:1304 .
+    oe:usesCommodityInput htc:0021, htc:0062, htc:1932, htc:0118, htc:0471, htc:0263, htc:0302, htc:0536, htc:2002, htc:0871, htc:doc_woad, htc:0339, htc:0136, htc:0364, htc:0109, htc:0096, htc:1377, htc:0072, htc:0975, htc:doc_citric_acid, htc:1899, htc:0677, htc:0172, htc:1304 .
 
 oe:ind_chocolate_confectionery a skos:Concept, crm:E55_Type ;
     rdfs:label "Chocolate & Confectionery"@en ;
@@ -49,7 +49,7 @@ oe:ind_chocolate_confectionery a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Chocolate & Confectionery"@en ;
     skos:definition "Chocolate bars, drinking chocolate, cocoa butter, and sugar confectionery — combining roasted cacao beans with cane sugar, aromatic spices (vanilla, cinnamon, cloves, cassia), gums, almonds, starches, and milk."@en ;
-    oe:usesCommodityInput htc:doc_vanilla, htc:0138, htc:0103, htc:0719, htc:0008, htc:0855, htc:0185, htc:0168, htc:1492, htc:0460, htc:0573, htc:1639, htc:doc_musk, htc:doc_ambergris, htc:0695, htc:0118, htc:0097 .
+    oe:usesCommodityInput htc:doc_vanilla, htc:0138, htc:0360, htc:1937, htc:1400, htc:0168, htc:1492, htc:0460, htc:0573, htc:1639, htc:doc_musk, htc:doc_ambergris, htc:0695, htc:0118, htc:0097 .
 
 oe:ind_leather_tanning a skos:Concept, crm:E55_Type ;
     rdfs:label "Leather Tanning, Tawing & Currying"@en ;
@@ -57,7 +57,7 @@ oe:ind_leather_tanning a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Leather Tanning, Tawing & Currying"@en ;
     skos:definition "Tanning, tawing, and currying raw ox/calf/sheep/goat hides into sole, harness, morocco, Russia, and chamois leather — using oak, hemlock, and mimosa barks, valonia, sumach, cutch, myrabolans, divi-divi, lime, alum, salt, tallow, and fish/train oils."@en ;
-    oe:usesCommodityInput htc:doc_oak_bark, htc:0109, htc:0275, htc:0072, htc:0132, htc:1932, htc:0730, htc:0975, htc:2002, htc:0180, htc:0036, htc:0041, htc:0034, htc:0020, htc:0008, htc:0022, htc:0028, htc:0257, htc:doc_mimosa_bark, htc:0348, htc:0250 .
+    oe:usesCommodityInput htc:0109, htc:0275, htc:0072, htc:0132, htc:1932, htc:0730, htc:0975, htc:2002, htc:0180, htc:0036, htc:0041, htc:0034, htc:0020, htc:0884, htc:0022, htc:0028, htc:0257, htc:doc_mimosa_bark, htc:0250 .
 
 oe:ind_candle_manufacture a skos:Concept, crm:E55_Type ;
     rdfs:label "Candle Manufacture"@en ;
@@ -65,7 +65,7 @@ oe:ind_candle_manufacture a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Candle Manufacture"@en ;
     skos:definition "Dipped, mould, composite, stearine, wax, spermaceti, and paraffin candle manufacture — combining tallow, palm/coconut stearine, beeswax, spermaceti, and paraffin with cotton wicks and sulphuric acid/borax treatments."@en ;
-    oe:usesCommodityInput htc:0022, htc:0910, htc:doc_spermaceti, htc:0025, htc:0835, htc:0129 .
+    oe:usesCommodityInput htc:0022, htc:0910, htc:0386, htc:0835, htc:0129 .
 
 oe:ind_paper_making a skos:Concept, crm:E55_Type ;
     rdfs:label "Paper Making & Cardboard"@en ;
@@ -73,7 +73,7 @@ oe:ind_paper_making a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Paper Making & Cardboard"@en ;
     skos:definition "Paper, pasteboard, and millboard manufacture — pulping linen/cotton rags, esparto grass, wood pulp, straw, hemp, and jute, bleached with chloride of lime, sized with rosin/alum/gelatine/starch, and loaded or tinted with kaolin, smalt, and ultramarine."@en ;
-    oe:usesCommodityInput htc:0822, htc:0168, htc:1015, htc:0557, htc:1322, htc:0226, htc:0289, htc:0136, htc:0562, htc:1932, htc:0066, htc:0529 .
+    oe:usesCommodityInput htc:0822, htc:0168, htc:1015, htc:0557, htc:1322, htc:0226, htc:0562, htc:1932, htc:0066, htc:0529 .
 
 oe:ind_varnish_paint_lacquer a skos:Concept, crm:E55_Type ;
     rdfs:label "Varnish, Paint & Lacquer"@en ;
@@ -81,7 +81,7 @@ oe:ind_varnish_paint_lacquer a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Varnish, Paint & Lacquer"@en ;
     skos:definition "Spirit and oil varnishes, japans, lacquers, French polish, and house/marine paints — dissolving tropical resins (copal, dammar, shellac, mastic, sandarac, amber, elemi, rosin) in linseed oil, turpentine, and spirits, pigmented with white lead, vermilion, ochre, umber, ultramarine, and chrome yellow."@en ;
-    oe:usesCommodityInput htc:0860, htc:0077, htc:0578, htc:0543, htc:0677, htc:1504, htc:1538, htc:doc_umber, htc:1790, htc:doc_sandarac, htc:doc_amber, htc:1216, htc:0015, htc:0062, htc:0207, htc:doc_verdigris, htc:0118, htc:0267, htc:doc_ochre, htc:0562, htc:doc_gamboge, htc:0427, htc:doc_gum_dammar, htc:doc_vermilion, htc:1683, htc:1599, htc:0129, htc:doc_prussian_blue, htc:doc_bichromate_of_potash, htc:1377, htc:doc_elemi .
+    oe:usesCommodityInput htc:0860, htc:0697, htc:0578, htc:0467, htc:0677, htc:1504, htc:1538, htc:doc_umber, htc:1790, htc:doc_sandarac, htc:doc_amber, htc:1216, htc:0015, htc:0207, htc:1683, htc:doc_verdigris, htc:0118, htc:doc_minium, htc:1023, htc:0562, htc:doc_gamboge, htc:doc_dammer, htc:1765, htc:1599, htc:0129, htc:doc_prussian_blue, htc:1377, htc:doc_elemi .
 
 oe:ind_glass_ceramics a skos:Concept, crm:E55_Type ;
     rdfs:label "Glassmaking, Pottery & Porcelain"@en ;
@@ -89,7 +89,7 @@ oe:ind_glass_ceramics a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Glassmaking, Pottery & Porcelain"@en ;
     skos:definition "Crown, plate, bottle, and flint glassmaking plus earthenware and bone-china porcelain — fusing sand/flint and kaolin/china clay with soda ash, barilla, kelp, potash, lime, red lead/litharge, manganese, borax, cobalt/smalt, and calcined bone ash."@en ;
-    oe:usesCommodityInput htc:0702, htc:0136, htc:0267, htc:doc_kaolin, htc:1873, htc:1451, htc:1115, htc:0299, htc:1683, htc:0257, htc:1895, htc:0557, htc:0328, htc:0348, htc:1825, htc:0364, htc:0162, htc:0807 .
+    oe:usesCommodityInput htc:0136, htc:doc_litharge, htc:doc_china_clay, htc:1873, htc:1451, htc:1115, htc:0299, htc:1683, htc:0257, htc:1895, htc:0557, htc:0328, htc:0364, htc:0162, htc:1202 .
 
 oe:ind_rubber_waterproofing a skos:Concept, crm:E55_Type ;
     rdfs:label "India-Rubber, Gutta-Percha & Waterproofing"@en ;
@@ -97,7 +97,7 @@ oe:ind_rubber_waterproofing a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "India-Rubber, Gutta-Percha & Waterproofing"@en ;
     skos:definition "Vulcanized india-rubber goods, mackintosh waterproof fabrics, elastic webbing, and gutta-percha submarine telegraph cable insulation — combining caoutchouc and gutta-percha with sulphur, coal-tar naphtha, turpentine, white lead, zinc, and woven cotton/linen."@en ;
-    oe:usesCommodityInput htc:0015, htc:1216, htc:0696, htc:0207, htc:1504 .
+    oe:usesCommodityInput htc:0015, htc:1216, htc:0696, htc:1504 .
 
 oe:ind_brewing_distilling a skos:Concept, crm:E55_Type ;
     rdfs:label "Brewing, Malting & Distilling"@en ;
@@ -105,7 +105,7 @@ oe:ind_brewing_distilling a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Brewing, Malting & Distilling"@en ;
     skos:definition "Ale, porter, stout, beer brewing, and spirits/gin/whisky/rum distilling — mashing malted barley, grains, sugar, and molasses, bittering with hops (and substitutes like quassia), fining with isinglass, and rectifying gin/cordials with juniper berries, coriander, and spices."@en ;
-    oe:usesCommodityInput htc:0056, htc:0007, htc:0239, htc:0103, htc:0135, htc:1639, htc:1701, htc:1520, htc:0290, htc:doc_coriander, htc:0695, htc:doc_cocculus_indicus .
+    oe:usesCommodityInput htc:0056, htc:0007, htc:0239, htc:0360, htc:0135, htc:1701, htc:1520, htc:0290, htc:doc_coriander, htc:0695, htc:doc_cocculus_indicus .
 
 oe:ind_sugar_refining a skos:Concept, crm:E55_Type ;
     rdfs:label "Sugar Refining"@en ;
@@ -113,7 +113,7 @@ oe:ind_sugar_refining a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Sugar Refining"@en ;
     skos:definition "Refining raw colonial muscovado and beet sugars into loaf and granulated white sugar — clarifying and decolorizing raw cane sugar with lime, bullock's blood/albumen, animal charcoal (bone black), and clay."@en ;
-    oe:usesCommodityInput htc:0103, htc:0162, htc:1248, htc:0135, htc:0348, htc:doc_albumin .
+    oe:usesCommodityInput htc:0103, htc:0162, htc:1248, htc:0348, htc:doc_albumen .
 
 oe:ind_cordage_shipbuilding a skos:Concept, crm:E55_Type ;
     rdfs:label "Shipbuilding, Rope, Cordage & Sailcloth"@en ;
@@ -121,7 +121,7 @@ oe:ind_cordage_shipbuilding a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Shipbuilding, Rope, Cordage & Sailcloth"@en ;
     skos:definition "Wooden ship construction, spars, sails, caulking, and marine cordage — combining oak, teak, greenheart, pine/fir masts, and copper sheathing with hemp, manila/abaca, coir, sisal, flax, oakum, tar, pitch, turpentine, and rosin."@en ;
-    oe:usesCommodityInput htc:0289, htc:0207, htc:0022, htc:0578, htc:0543, htc:0562, htc:0394, htc:0226, htc:doc_manila_hemp, htc:0529, htc:0126, htc:doc_coir, htc:0029 .
+    oe:usesCommodityInput htc:0289, htc:0207, htc:0022, htc:0543, htc:0394, htc:doc_abaca, htc:0126, htc:1443, htc:0029 .
 
 oe:ind_gunpowder_matches a skos:Concept, crm:E55_Type ;
     rdfs:label "Gunpowder, Explosives & Lucifer Matches"@en ;
@@ -129,7 +129,7 @@ oe:ind_gunpowder_matches a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Gunpowder, Explosives & Lucifer Matches"@en ;
     skos:definition "Black gunpowder, blasting powder, guncotton, and lucifer/congreve friction matches — compounding saltpetre (potassium/sodium nitrate), brimstone (sulphur), and willow/alder charcoal, plus phosphorus, chlorate of potash, pine splints, paraffin, and glue for matches."@en ;
-    oe:usesCommodityInput htc:1248, htc:0328, htc:0430, htc:0136, htc:doc_chlorate_of_potash, htc:1015, htc:doc_nitric_acid, htc:doc_glycerine, htc:doc_phosphorus .
+    oe:usesCommodityInput htc:1248, htc:0328, htc:0430, htc:doc_chlorate_of_potash, htc:doc_nitric_acid, htc:1474, htc:doc_phosphorus .
 
 oe:ind_perfumery_cosmetics a skos:Concept, crm:E55_Type ;
     rdfs:label "Perfumery, Pomades & Essential Oils"@en ;
@@ -137,7 +137,7 @@ oe:ind_perfumery_cosmetics a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Perfumery, Pomades & Essential Oils"@en ;
     skos:definition "Eau de Cologne, scented spirits, pomades, incense, and cosmetics — infusing alcohol, lard, and olive/almond oils with essential oils (bergamot, otto of roses, lavender, citronella, sandalwood), animal fixatives (musk, ambergris, castor), and fragrant resins/spices (benzoin, myrrh, olibanum, vanilla, cloves)."@en ;
-    oe:usesCommodityInput htc:0573, htc:0077, htc:1599, htc:0339, htc:0719, htc:doc_vanilla, htc:0025, htc:1914, htc:0445, htc:doc_otto_of_roses, htc:0172, htc:doc_musk, htc:0618, htc:0625, htc:doc_sandal_wood, htc:doc_storax, htc:doc_ambergris, htc:1702, htc:doc_alkanet .
+    oe:usesCommodityInput htc:0573, htc:0697, htc:1599, htc:0025, htc:0339, htc:0445, htc:doc_vanilla, htc:1914, htc:doc_otto_of_roses, htc:doc_musk, htc:0618, htc:doc_sandal_wood, htc:doc_storax, htc:doc_ambergris, htc:1702, htc:doc_alkanet .
 
 oe:ind_pharmaceuticals a skos:Concept, crm:E55_Type ;
     rdfs:label "Pharmaceuticals & Druggists' Preparations"@en ;
@@ -145,7 +145,7 @@ oe:ind_pharmaceuticals a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Pharmaceuticals & Druggists' Preparations"@en ;
     skos:definition "19th-century apothecary, pharmacopoeia, and fine-chemical drug manufacture (e.g., Howard & Sons, Allen & Hanburys) — extracting alkaloids and preparing tinctures, pills, plasters, and ointments from cinchona/quinine, opium/morphia/laudanum, coca/cocaine, nux vomica/strychnine, quicksilver/calomel, ipecacuanha, jalap, senna, rhubarb, aloes, camphor, castor/cod-liver oils, and iodine."@en ;
-    oe:usesCommodityInput htc:0285, htc:0103, htc:0578, htc:doc_morphia, htc:1701, htc:0077, htc:0683, htc:0199, htc:0573, htc:doc_iodine, htc:0327, htc:doc_gamboge, htc:1142, htc:0185, htc:0951, htc:0682, htc:doc_calomel, htc:doc_atropa_belladonna, htc:0399, htc:doc_nux_vomica, htc:1020, htc:0400, htc:0911, htc:1914, htc:doc_cocaine, htc:1201, htc:0097, htc:doc_citric_acid, htc:doc_storax, htc:doc_gentian, htc:1520, htc:0172, htc:doc_cardamom, htc:doc_neem_oil, htc:0930, htc:1599, htc:1375, htc:1943, htc:0025, htc:0591, htc:0695, htc:1790, htc:1579, htc:0460, htc:0562, htc:1538, htc:1702, htc:1349, htc:doc_almond_oil, htc:doc_laudanum, htc:doc_spermaceti, htc:doc_cocculus_indicus .
+    oe:usesCommodityInput htc:0285, htc:0360, htc:0578, htc:doc_morphia, htc:1701, htc:0697, htc:0683, htc:0199, htc:0573, htc:doc_iodine, htc:0327, htc:doc_gamboge, htc:0750, htc:0185, htc:0951, htc:0682, htc:doc_calomel, htc:doc_atropa_belladonna, htc:0399, htc:doc_nux_vomica, htc:1020, htc:0400, htc:0911, htc:1914, htc:doc_cocaine, htc:1201, htc:0097, htc:doc_storax, htc:doc_gentian, htc:1520, htc:0172, htc:doc_cardamom, htc:doc_neem_oil, htc:0930, htc:1599, htc:1943, htc:0025, htc:0695, htc:0460, htc:1702, htc:1349, htc:doc_almond_oil, htc:doc_laudanum, htc:0386 .
 
 oe:ind_metallurgy_tinplate a skos:Concept, crm:E55_Type ;
     rdfs:label "Metallurgy, Smelting, Brass & Tinplate"@en ;
@@ -153,7 +153,7 @@ oe:ind_metallurgy_tinplate a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Metallurgy, Smelting, Brass & Tinplate"@en ;
     skos:definition "Iron, copper, lead, tin, and zinc smelting, brass founding, type-metal, and tinplate manufacture — combining metallic ores and unwrought metals with coal, coke, charcoal, limestone, borax, plumbago crucibles, sulphuric/muriatic pickling acids, sal ammoniac, and palm oil/tallow tinplate baths."@en ;
-    oe:usesCommodityInput htc:1115, htc:0975, htc:1248, htc:0427, htc:doc_bismuth, htc:0065, htc:0348, htc:1111, htc:0107, htc:0328, htc:0022, htc:doc_nitric_acid, htc:0364, htc:0130, htc:doc_sal_ammoniac, htc:0267, htc:0111, htc:1873, htc:0562, htc:1050, htc:1451, htc:doc_muriatic_acid, htc:0911, htc:0399, htc:0299 .
+    oe:usesCommodityInput htc:1115, htc:0975, htc:1248, htc:0196, htc:0484, htc:doc_bismuth, htc:0065, htc:0348, htc:1111, htc:doc_nitric_acid, htc:0364, htc:0130, htc:doc_sal_ammoniac, htc:0267, htc:0111, htc:1873, htc:0562, htc:1050, htc:1451, htc:doc_muriatic_acid, htc:0911, htc:0399, htc:0299 .
 
 oe:ind_hats_brushes_upholstery a skos:Concept, crm:E55_Type ;
     rdfs:label "Hat-Making, Brushes, Upholstery & Turnery"@en ;
@@ -161,7 +161,7 @@ oe:ind_hats_brushes_upholstery a skos:Concept, crm:E55_Type ;
     skos:topConceptOf oe:industry_scheme ;
     skos:prefLabel "Hat-Making, Brushes, Upholstery & Turnery"@en ;
     skos:definition "Felt and silk hat-making, brushmaking, upholstery stuffing, and ornamental turnery — working beaver, rabbit/coney, and nutria pelts with shellac stiffening, nitrate of mercury carroting, and logwood/copperas black dye; hog bristles, horsehair, piassava, coir, and kapok; and ivory, whalebone, tortoise-shell, mother-of-pearl, cork, and rattan."@en ;
-    oe:usesCommodityInput htc:0188, htc:0224, htc:0291, htc:1015, htc:1143, htc:0225, htc:0677, htc:2002, htc:0869, htc:0077, htc:0255, htc:0975, htc:doc_kapok, htc:0021, htc:0502, htc:0096, htc:doc_verdigris, htc:doc_coir, htc:0942 .
+    oe:usesCommodityInput htc:0188, htc:0224, htc:0291, htc:1143, htc:0225, htc:0502, htc:0677, htc:2002, htc:0869, htc:0255, htc:0975, htc:doc_kapok, htc:0096, htc:doc_verdigris, htc:1443, htc:0942 .
 
 htc:0007 a skos:Concept, crm:E55_Type ;
     rdfs:label "Barley"@en ;
@@ -169,7 +169,7 @@ htc:0007 a skos:Concept, crm:E55_Type ;
 
 htc:0008 a skos:Concept, crm:E55_Type ;
     rdfs:label "Wheat Meal and Flour"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_chocolate_confectionery, oe:ind_leather_tanning .
+    oe:usedInIndustry oe:ind_calico_printing .
 
 htc:0015 a skos:Concept, crm:E55_Type ;
     rdfs:label "Caoutchouc"@en ;
@@ -181,15 +181,15 @@ htc:0020 a skos:Concept, crm:E55_Type ;
 
 htc:0021 a skos:Concept, crm:E55_Type ;
     rdfs:label "Wool"@en ;
-    oe:usedInIndustry oe:ind_hats_brushes_upholstery, oe:ind_woollen_silk_dyeing .
+    oe:usedInIndustry oe:ind_woollen_silk_dyeing .
 
 htc:0022 a skos:Concept, crm:E55_Type ;
     rdfs:label "Tallow"@en ;
-    oe:usedInIndustry oe:ind_candle_manufacture, oe:ind_cordage_shipbuilding, oe:ind_leather_tanning, oe:ind_metallurgy_tinplate, oe:ind_soap_manufacture .
+    oe:usedInIndustry oe:ind_candle_manufacture, oe:ind_cordage_shipbuilding, oe:ind_leather_tanning, oe:ind_soap_manufacture .
 
 htc:0025 a skos:Concept, crm:E55_Type ;
     rdfs:label "Lard"@en ;
-    oe:usedInIndustry oe:ind_candle_manufacture, oe:ind_perfumery_cosmetics, oe:ind_pharmaceuticals, oe:ind_soap_manufacture .
+    oe:usedInIndustry oe:ind_perfumery_cosmetics, oe:ind_pharmaceuticals, oe:ind_soap_manufacture .
 
 htc:0028 a skos:Concept, crm:E55_Type ;
     rdfs:label "Skins Furs Pelts Goat undressed"@en ;
@@ -217,7 +217,7 @@ htc:0056 a skos:Concept, crm:E55_Type ;
 
 htc:0062 a skos:Concept, crm:E55_Type ;
     rdfs:label "Indigo"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_varnish_paint_lacquer, oe:ind_woollen_silk_dyeing .
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_woollen_silk_dyeing .
 
 htc:0065 a skos:Concept, crm:E55_Type ;
     rdfs:label "Copper Ore"@en ;
@@ -231,10 +231,6 @@ htc:0072 a skos:Concept, crm:E55_Type ;
     rdfs:label "Galls"@en ;
     oe:usedInIndustry oe:ind_calico_printing, oe:ind_leather_tanning, oe:ind_woollen_silk_dyeing .
 
-htc:0077 a skos:Concept, crm:E55_Type ;
-    rdfs:label "Spirits Unenumerated not Sweetened"@en ;
-    oe:usedInIndustry oe:ind_hats_brushes_upholstery, oe:ind_perfumery_cosmetics, oe:ind_pharmaceuticals, oe:ind_varnish_paint_lacquer .
-
 htc:0096 a skos:Concept, crm:E55_Type ;
     rdfs:label "Dye Woods Logwood"@en ;
     oe:usedInIndustry oe:ind_calico_printing, oe:ind_hats_brushes_upholstery, oe:ind_woollen_silk_dyeing .
@@ -245,11 +241,7 @@ htc:0097 a skos:Concept, crm:E55_Type ;
 
 htc:0103 a skos:Concept, crm:E55_Type ;
     rdfs:label "Sugar Unrefined Total"@en ;
-    oe:usedInIndustry oe:ind_brewing_distilling, oe:ind_chocolate_confectionery, oe:ind_pharmaceuticals, oe:ind_sugar_refining .
-
-htc:0107 a skos:Concept, crm:E55_Type ;
-    rdfs:label "Pig and Scrap Iron"@en ;
-    oe:usedInIndustry oe:ind_metallurgy_tinplate .
+    oe:usedInIndustry oe:ind_sugar_refining .
 
 htc:0109 a skos:Concept, crm:E55_Type ;
     rdfs:label "Shumach"@en ;
@@ -281,15 +273,15 @@ htc:0132 a skos:Concept, crm:E55_Type ;
 
 htc:0135 a skos:Concept, crm:E55_Type ;
     rdfs:label "Molasses"@en ;
-    oe:usedInIndustry oe:ind_brewing_distilling, oe:ind_sugar_refining .
+    oe:usedInIndustry oe:ind_brewing_distilling .
 
 htc:0136 a skos:Concept, crm:E55_Type ;
     rdfs:label "Pearl and Pot Ashes"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_glass_ceramics, oe:ind_gunpowder_matches, oe:ind_paper_making, oe:ind_soap_manufacture, oe:ind_woollen_silk_dyeing .
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_glass_ceramics, oe:ind_soap_manufacture, oe:ind_woollen_silk_dyeing .
 
 htc:0138 a skos:Concept, crm:E55_Type ;
     rdfs:label "Cocoa"@en ;
-    oe:usedInIndustry oe:ind_chocolate_confectionery, oe:ind_soap_manufacture .
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
 
 htc:0141 a skos:Concept, crm:E55_Type ;
     rdfs:label "Cotton Raw"@en ;
@@ -305,7 +297,7 @@ htc:0168 a skos:Concept, crm:E55_Type ;
 
 htc:0172 a skos:Concept, crm:E55_Type ;
     rdfs:label "Olive Oil"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_perfumery_cosmetics, oe:ind_pharmaceuticals, oe:ind_soap_manufacture, oe:ind_woollen_silk_dyeing .
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_pharmaceuticals, oe:ind_soap_manufacture, oe:ind_woollen_silk_dyeing .
 
 htc:0180 a skos:Concept, crm:E55_Type ;
     rdfs:label "Myrabolans"@en ;
@@ -317,11 +309,15 @@ htc:0181 a skos:Concept, crm:E55_Type ;
 
 htc:0185 a skos:Concept, crm:E55_Type ;
     rdfs:label "Gum Arabic"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_chocolate_confectionery, oe:ind_pharmaceuticals .
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_pharmaceuticals .
 
 htc:0188 a skos:Concept, crm:E55_Type ;
     rdfs:label "Skins Furs Pelts Beaver"@en ;
     oe:usedInIndustry oe:ind_hats_brushes_upholstery .
+
+htc:0196 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Iron Ore Including Chrome"@en ;
+    oe:usedInIndustry oe:ind_metallurgy_tinplate .
 
 htc:0199 a skos:Concept, crm:E55_Type ;
     rdfs:label "Bark Peruvian"@en ;
@@ -333,7 +329,7 @@ htc:0203 a skos:Concept, crm:E55_Type ;
 
 htc:0207 a skos:Concept, crm:E55_Type ;
     rdfs:label "Tar"@en ;
-    oe:usedInIndustry oe:ind_cordage_shipbuilding, oe:ind_rubber_waterproofing, oe:ind_varnish_paint_lacquer .
+    oe:usedInIndustry oe:ind_cordage_shipbuilding, oe:ind_varnish_paint_lacquer .
 
 htc:0224 a skos:Concept, crm:E55_Type ;
     rdfs:label "Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)"@en ;
@@ -345,7 +341,7 @@ htc:0225 a skos:Concept, crm:E55_Type ;
 
 htc:0226 a skos:Concept, crm:E55_Type ;
     rdfs:label "Flax"@en ;
-    oe:usedInIndustry oe:ind_cordage_shipbuilding, oe:ind_paper_making .
+    oe:usedInIndustry oe:ind_paper_making .
 
 htc:0239 a skos:Concept, crm:E55_Type ;
     rdfs:label "Malt"@en ;
@@ -361,7 +357,7 @@ htc:0255 a skos:Concept, crm:E55_Type ;
 
 htc:0257 a skos:Concept, crm:E55_Type ;
     rdfs:label "Salt"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_glass_ceramics, oe:ind_leather_tanning, oe:ind_soap_manufacture .
+    oe:usedInIndustry oe:ind_glass_ceramics, oe:ind_leather_tanning, oe:ind_soap_manufacture .
 
 htc:0263 a skos:Concept, crm:E55_Type ;
     rdfs:label "Silk Raw"@en ;
@@ -369,7 +365,7 @@ htc:0263 a skos:Concept, crm:E55_Type ;
 
 htc:0267 a skos:Concept, crm:E55_Type ;
     rdfs:label "Lead Pig and Sheet"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_glass_ceramics, oe:ind_metallurgy_tinplate, oe:ind_varnish_paint_lacquer .
+    oe:usedInIndustry oe:ind_metallurgy_tinplate .
 
 htc:0275 a skos:Concept, crm:E55_Type ;
     rdfs:label "Cutch"@en ;
@@ -381,7 +377,7 @@ htc:0285 a skos:Concept, crm:E55_Type ;
 
 htc:0289 a skos:Concept, crm:E55_Type ;
     rdfs:label "Hemp Rough or Undressed"@en ;
-    oe:usedInIndustry oe:ind_cordage_shipbuilding, oe:ind_paper_making .
+    oe:usedInIndustry oe:ind_cordage_shipbuilding .
 
 htc:0290 a skos:Concept, crm:E55_Type ;
     rdfs:label "Isinglass"@en ;
@@ -405,7 +401,7 @@ htc:0327 a skos:Concept, crm:E55_Type ;
 
 htc:0328 a skos:Concept, crm:E55_Type ;
     rdfs:label "Saltpetre"@en ;
-    oe:usedInIndustry oe:ind_glass_ceramics, oe:ind_gunpowder_matches, oe:ind_metallurgy_tinplate .
+    oe:usedInIndustry oe:ind_glass_ceramics, oe:ind_gunpowder_matches .
 
 htc:0339 a skos:Concept, crm:E55_Type ;
     rdfs:label "Safflower"@en ;
@@ -413,11 +409,19 @@ htc:0339 a skos:Concept, crm:E55_Type ;
 
 htc:0348 a skos:Concept, crm:E55_Type ;
     rdfs:label "Manufactures Lime"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_glass_ceramics, oe:ind_leather_tanning, oe:ind_metallurgy_tinplate, oe:ind_sugar_refining .
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_metallurgy_tinplate, oe:ind_sugar_refining .
+
+htc:0360 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Sugar"@en ;
+    oe:usedInIndustry oe:ind_brewing_distilling, oe:ind_chocolate_confectionery, oe:ind_pharmaceuticals .
 
 htc:0364 a skos:Concept, crm:E55_Type ;
     rdfs:label "Tin in Blocks Ingots Bars or Slabs"@en ;
     oe:usedInIndustry oe:ind_calico_printing, oe:ind_glass_ceramics, oe:ind_metallurgy_tinplate, oe:ind_woollen_silk_dyeing .
+
+htc:0386 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Train Blubber and Spermaceti (Whale Oils)"@en ;
+    oe:usedInIndustry oe:ind_candle_manufacture, oe:ind_pharmaceuticals .
 
 htc:0394 a skos:Concept, crm:E55_Type ;
     rdfs:label "Wood and Timber Hewn Teak"@en ;
@@ -431,10 +435,6 @@ htc:0400 a skos:Concept, crm:E55_Type ;
     rdfs:label "Sarsaparilla"@en ;
     oe:usedInIndustry oe:ind_pharmaceuticals .
 
-htc:0427 a skos:Concept, crm:E55_Type ;
-    rdfs:label "Zinc Ore"@en ;
-    oe:usedInIndustry oe:ind_metallurgy_tinplate, oe:ind_varnish_paint_lacquer .
-
 htc:0430 a skos:Concept, crm:E55_Type ;
     rdfs:label "Brimstone"@en ;
     oe:usedInIndustry oe:ind_gunpowder_matches .
@@ -447,9 +447,17 @@ htc:0460 a skos:Concept, crm:E55_Type ;
     rdfs:label "Spices Cinnamon"@en ;
     oe:usedInIndustry oe:ind_chocolate_confectionery, oe:ind_pharmaceuticals, oe:ind_soap_manufacture .
 
+htc:0467 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Asphalt or Bitumen"@en ;
+    oe:usedInIndustry oe:ind_varnish_paint_lacquer .
+
 htc:0471 a skos:Concept, crm:E55_Type ;
     rdfs:label "Orchal"@en ;
     oe:usedInIndustry oe:ind_woollen_silk_dyeing .
+
+htc:0484 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Zinc Crude in Cakes"@en ;
+    oe:usedInIndustry oe:ind_metallurgy_tinplate .
 
 htc:0502 a skos:Concept, crm:E55_Type ;
     rdfs:label "Whale Fins"@en ;
@@ -461,7 +469,7 @@ htc:0524 a skos:Concept, crm:E55_Type ;
 
 htc:0529 a skos:Concept, crm:E55_Type ;
     rdfs:label "Jute"@en ;
-    oe:usedInIndustry oe:ind_cordage_shipbuilding, oe:ind_paper_making .
+    oe:usedInIndustry oe:ind_paper_making .
 
 htc:0536 a skos:Concept, crm:E55_Type ;
     rdfs:label "Wood and Timber Dye Woods Brazil Wood"@en ;
@@ -469,7 +477,7 @@ htc:0536 a skos:Concept, crm:E55_Type ;
 
 htc:0543 a skos:Concept, crm:E55_Type ;
     rdfs:label "Pitch"@en ;
-    oe:usedInIndustry oe:ind_cordage_shipbuilding, oe:ind_varnish_paint_lacquer .
+    oe:usedInIndustry oe:ind_cordage_shipbuilding .
 
 htc:0557 a skos:Concept, crm:E55_Type ;
     rdfs:label "Alkali"@en ;
@@ -477,7 +485,7 @@ htc:0557 a skos:Concept, crm:E55_Type ;
 
 htc:0562 a skos:Concept, crm:E55_Type ;
     rdfs:label "Rosin"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_cordage_shipbuilding, oe:ind_metallurgy_tinplate, oe:ind_paper_making, oe:ind_pharmaceuticals, oe:ind_soap_manufacture, oe:ind_varnish_paint_lacquer .
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_metallurgy_tinplate, oe:ind_paper_making, oe:ind_soap_manufacture, oe:ind_varnish_paint_lacquer .
 
 htc:0573 a skos:Concept, crm:E55_Type ;
     rdfs:label "Spices Cloves"@en ;
@@ -485,15 +493,7 @@ htc:0573 a skos:Concept, crm:E55_Type ;
 
 htc:0578 a skos:Concept, crm:E55_Type ;
     rdfs:label "Turpentine Oil"@en ;
-    oe:usedInIndustry oe:ind_cordage_shipbuilding, oe:ind_pharmaceuticals, oe:ind_varnish_paint_lacquer .
-
-htc:0587 a skos:Concept, crm:E55_Type ;
-    rdfs:label "Aniline"@en ;
-    oe:usedInIndustry oe:ind_calico_printing .
-
-htc:0591 a skos:Concept, crm:E55_Type ;
-    rdfs:label "Ginger Raw"@en ;
-    oe:usedInIndustry oe:ind_pharmaceuticals .
+    oe:usedInIndustry oe:ind_pharmaceuticals, oe:ind_varnish_paint_lacquer .
 
 htc:0618 a skos:Concept, crm:E55_Type ;
     rdfs:label "Spices Nutmegs"@en ;
@@ -501,7 +501,7 @@ htc:0618 a skos:Concept, crm:E55_Type ;
 
 htc:0625 a skos:Concept, crm:E55_Type ;
     rdfs:label "Cocoa-nut Oil"@en ;
-    oe:usedInIndustry oe:ind_perfumery_cosmetics, oe:ind_soap_manufacture .
+    oe:usedInIndustry oe:ind_soap_manufacture .
 
 htc:0677 a skos:Concept, crm:E55_Type ;
     rdfs:label "Gum Lac, Seed, Shell, Stick, and Dye"@en ;
@@ -523,25 +523,25 @@ htc:0696 a skos:Concept, crm:E55_Type ;
     rdfs:label "Gutta Percha"@en ;
     oe:usedInIndustry oe:ind_rubber_waterproofing .
 
-htc:0702 a skos:Concept, crm:E55_Type ;
-    rdfs:label "Flint Glass"@en ;
-    oe:usedInIndustry oe:ind_glass_ceramics .
+htc:0697 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Spirits"@en ;
+    oe:usedInIndustry oe:ind_perfumery_cosmetics, oe:ind_pharmaceuticals, oe:ind_varnish_paint_lacquer .
 
 htc:0719 a skos:Concept, crm:E55_Type ;
     rdfs:label "Spices Cassia Lignea"@en ;
-    oe:usedInIndustry oe:ind_chocolate_confectionery, oe:ind_perfumery_cosmetics, oe:ind_soap_manufacture .
+    oe:usedInIndustry oe:ind_soap_manufacture .
 
 htc:0730 a skos:Concept, crm:E55_Type ;
     rdfs:label "Divi Divi"@en ;
     oe:usedInIndustry oe:ind_leather_tanning .
 
+htc:0750 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Cream of Tartar"@en ;
+    oe:usedInIndustry oe:ind_pharmaceuticals .
+
 htc:0780 a skos:Concept, crm:E55_Type ;
     rdfs:label "Barilla"@en ;
     oe:usedInIndustry oe:ind_soap_manufacture .
-
-htc:0807 a skos:Concept, crm:E55_Type ;
-    rdfs:label "Smalts"@en ;
-    oe:usedInIndustry oe:ind_glass_ceramics .
 
 htc:0822 a skos:Concept, crm:E55_Type ;
     rdfs:label "Esparto and other Vegetable Fibres for making Paper"@en ;
@@ -555,10 +555,6 @@ htc:0852 a skos:Concept, crm:E55_Type ;
     rdfs:label "Dye Stuffs Alizarine and Alizarine Dyes"@en ;
     oe:usedInIndustry oe:ind_calico_printing .
 
-htc:0855 a skos:Concept, crm:E55_Type ;
-    rdfs:label "Milk Condensed"@en ;
-    oe:usedInIndustry oe:ind_chocolate_confectionery .
-
 htc:0860 a skos:Concept, crm:E55_Type ;
     rdfs:label "Gum Copal"@en ;
     oe:usedInIndustry oe:ind_varnish_paint_lacquer .
@@ -566,6 +562,14 @@ htc:0860 a skos:Concept, crm:E55_Type ;
 htc:0869 a skos:Concept, crm:E55_Type ;
     rdfs:label "Piassava Fibre and other Fibres for Brush Making"@en ;
     oe:usedInIndustry oe:ind_hats_brushes_upholstery .
+
+htc:0871 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Argol"@en ;
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_woollen_silk_dyeing .
+
+htc:0884 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Rye meal"@en ;
+    oe:usedInIndustry oe:ind_leather_tanning .
 
 htc:0910 a skos:Concept, crm:E55_Type ;
     rdfs:label "Stearine"@en ;
@@ -597,11 +601,15 @@ htc:0986 a skos:Concept, crm:E55_Type ;
 
 htc:1015 a skos:Concept, crm:E55_Type ;
     rdfs:label "Glue Size and Gelatine"@en ;
-    oe:usedInIndustry oe:ind_gunpowder_matches, oe:ind_hats_brushes_upholstery, oe:ind_paper_making .
+    oe:usedInIndustry oe:ind_paper_making .
 
 htc:1020 a skos:Concept, crm:E55_Type ;
     rdfs:label "Aloes"@en ;
     oe:usedInIndustry oe:ind_pharmaceuticals .
+
+htc:1023 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Mineral Pigment Iron Oxides Ochres &c"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture, oe:ind_varnish_paint_lacquer .
 
 htc:1050 a skos:Concept, crm:E55_Type ;
     rdfs:label "Coke"@en ;
@@ -615,10 +623,6 @@ htc:1115 a skos:Concept, crm:E55_Type ;
     rdfs:label "Borax"@en ;
     oe:usedInIndustry oe:ind_calico_printing, oe:ind_glass_ceramics, oe:ind_metallurgy_tinplate .
 
-htc:1142 a skos:Concept, crm:E55_Type ;
-    rdfs:label "Tartaric Acid"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_pharmaceuticals, oe:ind_woollen_silk_dyeing .
-
 htc:1143 a skos:Concept, crm:E55_Type ;
     rdfs:label "Canes Rattans not Ground"@en ;
     oe:usedInIndustry oe:ind_hats_brushes_upholstery .
@@ -626,6 +630,10 @@ htc:1143 a skos:Concept, crm:E55_Type ;
 htc:1201 a skos:Concept, crm:E55_Type ;
     rdfs:label "Jalap"@en ;
     oe:usedInIndustry oe:ind_pharmaceuticals .
+
+htc:1202 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Zaffre"@en ;
+    oe:usedInIndustry oe:ind_glass_ceramics .
 
 htc:1216 a skos:Concept, crm:E55_Type ;
     rdfs:label "Naphtha"@en ;
@@ -653,15 +661,27 @@ htc:1349 a skos:Concept, crm:E55_Type ;
 
 htc:1375 a skos:Concept, crm:E55_Type ;
     rdfs:label "Gum Senegal"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_pharmaceuticals .
+    oe:usedInIndustry oe:ind_calico_printing .
 
 htc:1377 a skos:Concept, crm:E55_Type ;
     rdfs:label "Turmeric"@en ;
     oe:usedInIndustry oe:ind_varnish_paint_lacquer, oe:ind_woollen_silk_dyeing .
 
+htc:1400 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Fresh Milk"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:1443 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Cordage and Cables Coir"@en ;
+    oe:usedInIndustry oe:ind_cordage_shipbuilding, oe:ind_hats_brushes_upholstery .
+
 htc:1451 a skos:Concept, crm:E55_Type ;
     rdfs:label "Clay unmanufactured"@en ;
     oe:usedInIndustry oe:ind_glass_ceramics, oe:ind_metallurgy_tinplate .
+
+htc:1474 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Glycerine Crude"@en ;
+    oe:usedInIndustry oe:ind_gunpowder_matches .
 
 htc:1492 a skos:Concept, crm:E55_Type ;
     rdfs:label "Annatto Flag"@en ;
@@ -677,11 +697,7 @@ htc:1520 a skos:Concept, crm:E55_Type ;
 
 htc:1538 a skos:Concept, crm:E55_Type ;
     rdfs:label "Gum Mastic"@en ;
-    oe:usedInIndustry oe:ind_pharmaceuticals, oe:ind_varnish_paint_lacquer .
-
-htc:1579 a skos:Concept, crm:E55_Type ;
-    rdfs:label "Balsam Copaiba"@en ;
-    oe:usedInIndustry oe:ind_pharmaceuticals .
+    oe:usedInIndustry oe:ind_varnish_paint_lacquer .
 
 htc:1599 a skos:Concept, crm:E55_Type ;
     rdfs:label "Gum Benzoin"@en ;
@@ -689,7 +705,7 @@ htc:1599 a skos:Concept, crm:E55_Type ;
 
 htc:1639 a skos:Concept, crm:E55_Type ;
     rdfs:label "Aniseed"@en ;
-    oe:usedInIndustry oe:ind_brewing_distilling, oe:ind_chocolate_confectionery .
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
 
 htc:1683 a skos:Concept, crm:E55_Type ;
     rdfs:label "Painters Colours and Pigments White Lead"@en ;
@@ -707,17 +723,17 @@ htc:1702 a skos:Concept, crm:E55_Type ;
     rdfs:label "Myrrh"@en ;
     oe:usedInIndustry oe:ind_perfumery_cosmetics, oe:ind_pharmaceuticals .
 
-htc:1758 a skos:Concept, crm:E55_Type ;
-    rdfs:label "Gum Tragacanth"@en ;
-    oe:usedInIndustry oe:ind_calico_printing .
+htc:1765 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Vermillion"@en ;
+    oe:usedInIndustry oe:ind_varnish_paint_lacquer .
 
 htc:1790 a skos:Concept, crm:E55_Type ;
     rdfs:label "Camphor Refined"@en ;
-    oe:usedInIndustry oe:ind_pharmaceuticals, oe:ind_varnish_paint_lacquer .
+    oe:usedInIndustry oe:ind_varnish_paint_lacquer .
 
 htc:1825 a skos:Concept, crm:E55_Type ;
     rdfs:label "Arsenic"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_glass_ceramics .
+    oe:usedInIndustry oe:ind_calico_printing .
 
 htc:1873 a skos:Concept, crm:E55_Type ;
     rdfs:label "Cobalt Ore"@en ;
@@ -739,17 +755,25 @@ htc:1932 a skos:Concept, crm:E55_Type ;
     rdfs:label "Alum Roach"@en ;
     oe:usedInIndustry oe:ind_calico_printing, oe:ind_leather_tanning, oe:ind_paper_making, oe:ind_woollen_silk_dyeing .
 
+htc:1937 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Cassia Buds"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
 htc:1943 a skos:Concept, crm:E55_Type ;
     rdfs:label "Radix Ipecacoanhoe"@en ;
     oe:usedInIndustry oe:ind_pharmaceuticals .
 
 htc:2002 a skos:Concept, crm:E55_Type ;
     rdfs:label "Copperas"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_hats_brushes_upholstery, oe:ind_leather_tanning, oe:ind_soap_manufacture, oe:ind_woollen_silk_dyeing .
+    oe:usedInIndustry oe:ind_hats_brushes_upholstery, oe:ind_leather_tanning, oe:ind_soap_manufacture, oe:ind_woollen_silk_dyeing .
 
-htc:doc_albumin a skos:Concept, crm:E55_Type ;
-    rdfs:label "Albumin"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_sugar_refining .
+htc:doc_abaca a skos:Concept, crm:E55_Type ;
+    rdfs:label "Abaca"@en ;
+    oe:usedInIndustry oe:ind_cordage_shipbuilding .
+
+htc:doc_albumen a skos:Concept, crm:E55_Type ;
+    rdfs:label "Albumen"@en ;
+    oe:usedInIndustry oe:ind_sugar_refining .
 
 htc:doc_alkanet a skos:Concept, crm:E55_Type ;
     rdfs:label "Alkanet"@en ;
@@ -776,8 +800,8 @@ htc:doc_bergamot a skos:Concept, crm:E55_Type ;
     oe:usedInIndustry oe:ind_soap_manufacture .
 
 htc:doc_bichromate_of_potash a skos:Concept, crm:E55_Type ;
-    rdfs:label "Bichromate Of Potash"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_varnish_paint_lacquer .
+    rdfs:label "Bichromate of Potash"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
 
 htc:doc_bismuth a skos:Concept, crm:E55_Type ;
     rdfs:label "Bismuth"@en ;
@@ -795,13 +819,17 @@ htc:doc_cardamom a skos:Concept, crm:E55_Type ;
     rdfs:label "Cardamom"@en ;
     oe:usedInIndustry oe:ind_pharmaceuticals .
 
+htc:doc_china_clay a skos:Concept, crm:E55_Type ;
+    rdfs:label "China Clay"@en ;
+    oe:usedInIndustry oe:ind_glass_ceramics .
+
 htc:doc_chlorate_of_potash a skos:Concept, crm:E55_Type ;
-    rdfs:label "Chlorate Of Potash"@en ;
+    rdfs:label "Chlorate of Potash"@en ;
     oe:usedInIndustry oe:ind_calico_printing, oe:ind_gunpowder_matches .
 
 htc:doc_citric_acid a skos:Concept, crm:E55_Type ;
     rdfs:label "Citric Acid"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_pharmaceuticals, oe:ind_woollen_silk_dyeing .
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_woollen_silk_dyeing .
 
 htc:doc_cocaine a skos:Concept, crm:E55_Type ;
     rdfs:label "Cocaine"@en ;
@@ -809,15 +837,15 @@ htc:doc_cocaine a skos:Concept, crm:E55_Type ;
 
 htc:doc_cocculus_indicus a skos:Concept, crm:E55_Type ;
     rdfs:label "Cocculus Indicus"@en ;
-    oe:usedInIndustry oe:ind_brewing_distilling, oe:ind_pharmaceuticals .
-
-htc:doc_coir a skos:Concept, crm:E55_Type ;
-    rdfs:label "Coir"@en ;
-    oe:usedInIndustry oe:ind_cordage_shipbuilding, oe:ind_hats_brushes_upholstery .
+    oe:usedInIndustry oe:ind_brewing_distilling .
 
 htc:doc_coriander a skos:Concept, crm:E55_Type ;
     rdfs:label "Coriander"@en ;
     oe:usedInIndustry oe:ind_brewing_distilling .
+
+htc:doc_dammer a skos:Concept, crm:E55_Type ;
+    rdfs:label "Dammer"@en ;
+    oe:usedInIndustry oe:ind_varnish_paint_lacquer .
 
 htc:doc_elemi a skos:Concept, crm:E55_Type ;
     rdfs:label "Elemi"@en ;
@@ -831,21 +859,9 @@ htc:doc_gentian a skos:Concept, crm:E55_Type ;
     rdfs:label "Gentian"@en ;
     oe:usedInIndustry oe:ind_pharmaceuticals .
 
-htc:doc_glycerine a skos:Concept, crm:E55_Type ;
-    rdfs:label "Glycerine"@en ;
-    oe:usedInIndustry oe:ind_gunpowder_matches .
-
-htc:doc_gum_dammar a skos:Concept, crm:E55_Type ;
-    rdfs:label "Gum Dammar"@en ;
-    oe:usedInIndustry oe:ind_varnish_paint_lacquer .
-
 htc:doc_iodine a skos:Concept, crm:E55_Type ;
     rdfs:label "Iodine"@en ;
     oe:usedInIndustry oe:ind_pharmaceuticals .
-
-htc:doc_kaolin a skos:Concept, crm:E55_Type ;
-    rdfs:label "Kaolin"@en ;
-    oe:usedInIndustry oe:ind_glass_ceramics .
 
 htc:doc_kapok a skos:Concept, crm:E55_Type ;
     rdfs:label "Kapok"@en ;
@@ -855,13 +871,17 @@ htc:doc_laudanum a skos:Concept, crm:E55_Type ;
     rdfs:label "Laudanum"@en ;
     oe:usedInIndustry oe:ind_pharmaceuticals .
 
-htc:doc_manila_hemp a skos:Concept, crm:E55_Type ;
-    rdfs:label "Manila Hemp"@en ;
-    oe:usedInIndustry oe:ind_cordage_shipbuilding .
+htc:doc_litharge a skos:Concept, crm:E55_Type ;
+    rdfs:label "Litharge"@en ;
+    oe:usedInIndustry oe:ind_glass_ceramics .
 
 htc:doc_mimosa_bark a skos:Concept, crm:E55_Type ;
     rdfs:label "Mimosa Bark"@en ;
     oe:usedInIndustry oe:ind_leather_tanning .
+
+htc:doc_minium a skos:Concept, crm:E55_Type ;
+    rdfs:label "Minium"@en ;
+    oe:usedInIndustry oe:ind_varnish_paint_lacquer .
 
 htc:doc_morphia a skos:Concept, crm:E55_Type ;
     rdfs:label "Morphia"@en ;
@@ -881,23 +901,11 @@ htc:doc_neem_oil a skos:Concept, crm:E55_Type ;
 
 htc:doc_nitric_acid a skos:Concept, crm:E55_Type ;
     rdfs:label "Nitric acid"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_gunpowder_matches, oe:ind_metallurgy_tinplate, oe:ind_woollen_silk_dyeing .
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_gunpowder_matches, oe:ind_metallurgy_tinplate .
 
 htc:doc_nux_vomica a skos:Concept, crm:E55_Type ;
     rdfs:label "Nux Vomica"@en ;
     oe:usedInIndustry oe:ind_pharmaceuticals .
-
-htc:doc_oak_bark a skos:Concept, crm:E55_Type ;
-    rdfs:label "Oak Bark"@en ;
-    oe:usedInIndustry oe:ind_leather_tanning .
-
-htc:doc_ochre a skos:Concept, crm:E55_Type ;
-    rdfs:label "Ochre"@en ;
-    oe:usedInIndustry oe:ind_soap_manufacture, oe:ind_varnish_paint_lacquer .
-
-htc:doc_orpiment a skos:Concept, crm:E55_Type ;
-    rdfs:label "Orpiment"@en ;
-    oe:usedInIndustry oe:ind_calico_printing .
 
 htc:doc_otto_of_roses a skos:Concept, crm:E55_Type ;
     rdfs:label "Otto of Roses"@en ;
@@ -913,11 +921,11 @@ htc:doc_phosphorus a skos:Concept, crm:E55_Type ;
 
 htc:doc_prussian_blue a skos:Concept, crm:E55_Type ;
     rdfs:label "Prussian Blue"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_varnish_paint_lacquer, oe:ind_woollen_silk_dyeing .
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_varnish_paint_lacquer .
 
 htc:doc_sal_ammoniac a skos:Concept, crm:E55_Type ;
     rdfs:label "Sal Ammoniac"@en ;
-    oe:usedInIndustry oe:ind_calico_printing, oe:ind_metallurgy_tinplate .
+    oe:usedInIndustry oe:ind_metallurgy_tinplate .
 
 htc:doc_sandal_wood a skos:Concept, crm:E55_Type ;
     rdfs:label "Sandal wood"@en ;
@@ -927,13 +935,13 @@ htc:doc_sandarac a skos:Concept, crm:E55_Type ;
     rdfs:label "Sandarac"@en ;
     oe:usedInIndustry oe:ind_varnish_paint_lacquer .
 
-htc:doc_spermaceti a skos:Concept, crm:E55_Type ;
-    rdfs:label "Spermaceti"@en ;
-    oe:usedInIndustry oe:ind_candle_manufacture, oe:ind_pharmaceuticals .
-
 htc:doc_storax a skos:Concept, crm:E55_Type ;
     rdfs:label "Storax"@en ;
     oe:usedInIndustry oe:ind_perfumery_cosmetics, oe:ind_pharmaceuticals .
+
+htc:doc_sugar_of_lead a skos:Concept, crm:E55_Type ;
+    rdfs:label "Sugar of Lead"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
 
 htc:doc_umber a skos:Concept, crm:E55_Type ;
     rdfs:label "Umber"@en ;
@@ -946,10 +954,6 @@ htc:doc_vanilla a skos:Concept, crm:E55_Type ;
 htc:doc_verdigris a skos:Concept, crm:E55_Type ;
     rdfs:label "Verdigris"@en ;
     oe:usedInIndustry oe:ind_calico_printing, oe:ind_hats_brushes_upholstery, oe:ind_varnish_paint_lacquer .
-
-htc:doc_vermilion a skos:Concept, crm:E55_Type ;
-    rdfs:label "Vermilion"@en ;
-    oe:usedInIndustry oe:ind_varnish_paint_lacquer .
 
 htc:doc_woad a skos:Concept, crm:E55_Type ;
     rdfs:label "Woad"@en ;

@@ -1162,7 +1162,7 @@ def split_sentences(text: str):
 
 def iter_all_corpus_pages():
     """Yield (work_id, citation, uri, text, essay_industry_or_None) across all 6 full-text books."""
-    # 1. Ure (1853) — compute exact character spans for every dedicated industry essay!
+    # 1. Ure (1840) — compute exact character spans for every dedicated industry essay!
     ure_path = GUT_ROOT / "pg44562_ure_dictionary_arts_manufactures.txt"
     if ure_path.exists():
         raw = ure_path.read_text(encoding="utf-8", errors="ignore")
@@ -1185,7 +1185,7 @@ def iter_all_corpus_pages():
                 if s0 <= mid <= e0:
                     essay_ind = ind_id
                     break
-            yield ("ure_gutenberg", "Ure (1853), Dictionary of Arts, Manufactures, and Mines", "https://www.gutenberg.org/ebooks/44562", body[i:i + chunk_sz + 250], essay_ind)
+            yield ("ure_gutenberg", "Ure (1840), Dictionary of Arts, Manufactures, and Mines", "https://www.gutenberg.org/ebooks/44562", body[i:i + chunk_sz + 250], essay_ind)
 
     # 2. Simmonds (1854) Project Gutenberg
     s54_path = GUT_ROOT / "pg15191_simmonds_1854_vegetable_kingdom.txt"
@@ -1212,12 +1212,77 @@ def iter_all_corpus_pages():
             txt = md_path.read_text(encoding="utf-8", errors="ignore")
             parts = PAGE_MARK_RE.split(txt)
             if len(parts) < 3:
-                yield (wid, f"{cit}, p. {base_page}", f"https://archive.org/details/{ia_id}/page/n{base_page}/mode/1up", txt, None)
+                yield (wid, f"{cit}, scan p. {base_page}", f"https://archive.org/details/{ia_id}/page/n{base_page}/mode/1up", txt, None)
             else:
+                if parts[0].strip():
+                    yield (wid, f"{cit}, scan p. {base_page}", f"https://archive.org/details/{ia_id}/page/n{base_page}/mode/1up", parts[0], None)
                 for idx in range(1, len(parts), 2):
                     rel_p = int(parts[idx])
-                    pdf_p = base_page + rel_p - 1 if rel_p <= 30 else rel_p
-                    yield (wid, f"{cit}, p. {pdf_p}", f"https://archive.org/details/{ia_id}/page/n{pdf_p}/mode/1up", parts[idx + 1], None)
+                    pdf_p = base_page + rel_p if rel_p <= 30 else rel_p
+                    yield (wid, f"{cit}, scan p. {pdf_p}", f"https://archive.org/details/{ia_id}/page/n{pdf_p}/mode/1up", parts[idx + 1], None)
+
+
+LINK_DECISIONS_PATH = GROUND / "curated_end_use_link_decisions.tsv"
+
+
+def apply_curated_link_decisions(links):
+    """Apply hand-reviewed decisions to regex-mined links: `drop` (no quote supports the link), `repoint`
+    (quotes are about a different heading -> target concept), plus optional removal of individual quotes
+    (`drop_quotes`: "||"-separated substrings). Keyword co-occurrence is not evidence of use; these rows
+    record where a human-style reading of the verbatim quotes contradicted the mined link."""
+    if not LINK_DECISIONS_PATH.exists():
+        return links
+    concepts = {}
+    for fn in ("commodities_concepts.jsonl", "document_attested_concepts.jsonl"):
+        for line in open(GROUND / fn, encoding="utf-8"):
+            if line.strip():
+                c = json.loads(line)
+                concepts[c["concept_id"]] = c
+    dec = {}
+    with open(LINK_DECISIONS_PATH, encoding="utf-8") as fh:
+        for r in csv.DictReader((l for l in fh if not l.startswith("#")), delimiter="\t"):
+            if r["action"] not in ("drop", "repoint", "prune"):
+                raise ValueError(f"curated_end_use_link_decisions.tsv: bad action {r['action']}")
+            if not r["rationale"].strip():
+                raise ValueError("curated_end_use_link_decisions.tsv: missing rationale")
+            dec[(r["industry_id"], r["commodity_id"])] = r
+    out, index, used = [], {}, set()
+    for l in links:
+        d = dec.get((l["industry_id"], l["commodity_id"]))
+        if d:
+            used.add((l["industry_id"], l["commodity_id"]))
+            if d["action"] == "drop":
+                continue
+            subs = [x.strip() for x in (d.get("drop_quotes") or "").split("||") if x.strip()]
+            if subs:
+                l["evidence_quotes"] = [q for q in l["evidence_quotes"] if not any(x in q["quote"] for x in subs)]
+                if not l["evidence_quotes"]:
+                    continue
+                l["books"] = sorted({q["work"] for q in l["evidence_quotes"]}); l["book_count"] = len(l["books"])
+            if d["action"] == "repoint":
+                c = concepts.get(d["target"])
+                if not c:
+                    raise ValueError(f"curated_end_use_link_decisions.tsv: target {d['target']} not found")
+                a = c.get("wikidata_anchor") or {}
+                l.update({"commodity_id": c["concept_id"], "commodity_label": c["skos_prefLabel"],
+                          "attestation_basis": c.get("attestation_basis", "customs_enumerated"),
+                          "layer1_rows": c.get("total_rows", 0), "commodity_group": c["ontology"]["group_label"],
+                          "wikidata_qid": a.get("qid", "")})
+            l["curation"] = {"action": d["action"], "rationale": d["rationale"]}
+        key = (l["industry_id"], l["commodity_id"])
+        if key in index:  # re-pointed onto an existing link: merge evidence
+            tgt = index[key]
+            seen = {q["quote"] for q in tgt["evidence_quotes"]}
+            tgt["evidence_quotes"] += [q for q in l["evidence_quotes"] if q["quote"] not in seen]
+            tgt["books"] = sorted(set(tgt["books"]) | set(l["books"])); tgt["book_count"] = len(tgt["books"])
+            tgt["mention_count"] += l["mention_count"]
+            continue
+        index[key] = l
+        out.append(l)
+    stale = sorted(set(dec) - used)
+    if stale:
+        print(f"NOTE: {len(stale)} curated link decisions matched no mined link: {stale[:10]}", flush=True)
+    return out
 
 
 def main():
@@ -1361,6 +1426,8 @@ def main():
                 for q in rec["quotes"]
             ],
         })
+
+    links = apply_curated_link_decisions(links)
 
     # 1. Export flat TSV + JSONL
     (GROUND / "end_use_network_links.jsonl").write_text(
@@ -1506,9 +1573,9 @@ def main():
     md = [
         "# 19th-Century Industrial End-Use Network Report (18 Major Manufacturing Industries)",
         "",
-        f"Generated {TODAY} by `scripts/build_end_use_network.py` across **{pages_scanned:,} full-text pages** from 6 19th-century commercial & manufacturing books (Ure 1853, Simmonds 1854 & 1892, McCulloch 1880, Mortimer 1823, Watt 1908). Every link is attested by at least one verbatim primary-source quote.",
+        f"Generated {TODAY} by `scripts/build_end_use_network.py` across **{pages_scanned:,} full-text pages** from 6 19th-century commercial & manufacturing books (Ure 1840, Simmonds 1854 & 1892, McCulloch 1880, Mortimer 1823, Watt 1908). Every quote is verbatim from the cited book; links were mined by keyword co-occurrence and then hand-reviewed (see `curated_end_use_link_decisions.tsv`) — co-occurrence alone is not proof of use.",
         "",
-        f"**Totals:** **{len(INDUSTRIES)}** industries · **{len(links):,}** commodity→industry links · **{len(by_comm):,}** distinct commodities (`{sum(1 for c in by_comm if not c.startswith('htc:doc_'))}` Layer-1 customs + `{sum(1 for c in by_comm if c.startswith('htc:doc_'))}` Document-Attested) · **{sum(r['mention_count'] for r in links):,}** primary-source sentences.",
+        f"**Totals:** **{len(INDUSTRIES)}** industries · **{len(links):,}** commodity→industry links · **{len(by_comm):,}** distinct commodities (`{sum(1 for c in by_comm if not c.startswith('htc:doc_'))}` Layer-1 customs + `{sum(1 for c in by_comm if c.startswith('htc:doc_'))}` Document-Attested) · **{sum(r['mention_count'] for r in links):,}** keyword-matched sentences (mentions; the links file shows up to 3 verbatim quotes per link).",
         "",
         "## Overview Table",
         "| Industry | Sector | Inputs | Layer-1 | Doc-Attested | Sentences | Top Multi-Book Inputs |",

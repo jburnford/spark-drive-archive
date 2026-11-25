@@ -445,7 +445,7 @@ def main():
     md = [
         "# Unpacking the \"Unenumerated\": Minor 19th-Century Commodities Mined from 6 Commercial Books",
         "",
-        "Generated automatically by `scripts/unpack_unenumerated_from_books.py` from our 6 parsed 19th-century commercial dictionaries (**27,325 entries**, **1,190 verified Catalogue of Life / Wikidata taxa** — Simmonds 1892, Simmonds 1854, Mortimer 1823, Ure 1853, McCulloch 1880, Watt 1908), excluding commodities already enumerated in Layer-1 British & Canadian customs ledgers (`htc:0001`–`htc:2066`).",
+        "Generated automatically by `scripts/unpack_unenumerated_from_books.py` from our 6 parsed 19th-century commercial dictionaries (**27,325 entries**, **1,190 verified Catalogue of Life / Wikidata taxa** — Simmonds 1892, Simmonds 1854, Mortimer 1823, Ure 1840, McCulloch 1880, Watt 1908), excluding commodities already enumerated in Layer-1 British & Canadian customs ledgers (`htc:0001`–`htc:2066`).",
         "",
         f"- **Total book-attested non-enumerated commodities surfaced:** **{len(results):,}**",
         f"- **Corroborated by ≥ 2 independent commercial books:** **{sum(1 for r in results if r['book_count'] >= 2):,}**",

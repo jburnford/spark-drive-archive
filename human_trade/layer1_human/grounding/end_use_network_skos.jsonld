@@ -196,7 +196,7 @@
           "@id": "htc:0573"
         },
         {
-          "@id": "htc:doc_ochre"
+          "@id": "htc:1023"
         },
         {
           "@id": "htc:doc_neem_oil"
@@ -206,9 +206,6 @@
         },
         {
           "@id": "htc:0625"
-        },
-        {
-          "@id": "htc:0138"
         },
         {
           "@id": "htc:0250"
@@ -253,13 +250,10 @@
           "@id": "htc:1932"
         },
         {
-          "@id": "htc:2002"
-        },
-        {
           "@id": "htc:1322"
         },
         {
-          "@id": "htc:0267"
+          "@id": "htc:doc_sugar_of_lead"
         },
         {
           "@id": "htc:doc_bichromate_of_potash"
@@ -289,7 +283,7 @@
           "@id": "htc:doc_prussian_blue"
         },
         {
-          "@id": "htc:1142"
+          "@id": "htc:0871"
         },
         {
           "@id": "htc:1304"
@@ -355,12 +349,6 @@
           "@id": "htc:doc_muriatic_acid"
         },
         {
-          "@id": "htc:doc_sal_ammoniac"
-        },
-        {
-          "@id": "htc:0257"
-        },
-        {
           "@id": "htc:doc_verdigris"
         },
         {
@@ -370,16 +358,7 @@
           "@id": "htc:0072"
         },
         {
-          "@id": "htc:0587"
-        },
-        {
           "@id": "htc:0562"
-        },
-        {
-          "@id": "htc:doc_albumin"
-        },
-        {
-          "@id": "htc:1758"
         },
         {
           "@id": "htc:0524"
@@ -401,9 +380,6 @@
         },
         {
           "@id": "htc:1899"
-        },
-        {
-          "@id": "htc:doc_orpiment"
         }
       ]
     },
@@ -460,7 +436,7 @@
           "@id": "htc:2002"
         },
         {
-          "@id": "htc:1142"
+          "@id": "htc:0871"
         },
         {
           "@id": "htc:doc_woad"
@@ -472,13 +448,7 @@
           "@id": "htc:0136"
         },
         {
-          "@id": "htc:doc_prussian_blue"
-        },
-        {
           "@id": "htc:0364"
-        },
-        {
-          "@id": "htc:doc_nitric_acid"
         },
         {
           "@id": "htc:0109"
@@ -544,19 +514,13 @@
           "@id": "htc:0138"
         },
         {
-          "@id": "htc:0103"
+          "@id": "htc:0360"
         },
         {
-          "@id": "htc:0719"
+          "@id": "htc:1937"
         },
         {
-          "@id": "htc:0008"
-        },
-        {
-          "@id": "htc:0855"
-        },
-        {
-          "@id": "htc:0185"
+          "@id": "htc:1400"
         },
         {
           "@id": "htc:0168"
@@ -616,9 +580,6 @@
       },
       "oe:usesCommodityInput": [
         {
-          "@id": "htc:doc_oak_bark"
-        },
-        {
           "@id": "htc:0109"
         },
         {
@@ -658,7 +619,7 @@
           "@id": "htc:0020"
         },
         {
-          "@id": "htc:0008"
+          "@id": "htc:0884"
         },
         {
           "@id": "htc:0022"
@@ -671,9 +632,6 @@
         },
         {
           "@id": "htc:doc_mimosa_bark"
-        },
-        {
-          "@id": "htc:0348"
         },
         {
           "@id": "htc:0250"
@@ -712,10 +670,7 @@
           "@id": "htc:0910"
         },
         {
-          "@id": "htc:doc_spermaceti"
-        },
-        {
-          "@id": "htc:0025"
+          "@id": "htc:0386"
         },
         {
           "@id": "htc:0835"
@@ -769,12 +724,6 @@
           "@id": "htc:0226"
         },
         {
-          "@id": "htc:0289"
-        },
-        {
-          "@id": "htc:0136"
-        },
-        {
           "@id": "htc:0562"
         },
         {
@@ -817,13 +766,13 @@
           "@id": "htc:0860"
         },
         {
-          "@id": "htc:0077"
+          "@id": "htc:0697"
         },
         {
           "@id": "htc:0578"
         },
         {
-          "@id": "htc:0543"
+          "@id": "htc:0467"
         },
         {
           "@id": "htc:0677"
@@ -853,10 +802,10 @@
           "@id": "htc:0015"
         },
         {
-          "@id": "htc:0062"
+          "@id": "htc:0207"
         },
         {
-          "@id": "htc:0207"
+          "@id": "htc:1683"
         },
         {
           "@id": "htc:doc_verdigris"
@@ -865,10 +814,10 @@
           "@id": "htc:0118"
         },
         {
-          "@id": "htc:0267"
+          "@id": "htc:doc_minium"
         },
         {
-          "@id": "htc:doc_ochre"
+          "@id": "htc:1023"
         },
         {
           "@id": "htc:0562"
@@ -877,16 +826,10 @@
           "@id": "htc:doc_gamboge"
         },
         {
-          "@id": "htc:0427"
+          "@id": "htc:doc_dammer"
         },
         {
-          "@id": "htc:doc_gum_dammar"
-        },
-        {
-          "@id": "htc:doc_vermilion"
-        },
-        {
-          "@id": "htc:1683"
+          "@id": "htc:1765"
         },
         {
           "@id": "htc:1599"
@@ -896,9 +839,6 @@
         },
         {
           "@id": "htc:doc_prussian_blue"
-        },
-        {
-          "@id": "htc:doc_bichromate_of_potash"
         },
         {
           "@id": "htc:1377"
@@ -934,16 +874,13 @@
       },
       "oe:usesCommodityInput": [
         {
-          "@id": "htc:0702"
-        },
-        {
           "@id": "htc:0136"
         },
         {
-          "@id": "htc:0267"
+          "@id": "htc:doc_litharge"
         },
         {
-          "@id": "htc:doc_kaolin"
+          "@id": "htc:doc_china_clay"
         },
         {
           "@id": "htc:1873"
@@ -973,19 +910,13 @@
           "@id": "htc:0328"
         },
         {
-          "@id": "htc:0348"
-        },
-        {
-          "@id": "htc:1825"
-        },
-        {
           "@id": "htc:0364"
         },
         {
           "@id": "htc:0162"
         },
         {
-          "@id": "htc:0807"
+          "@id": "htc:1202"
         }
       ]
     },
@@ -1022,9 +953,6 @@
         },
         {
           "@id": "htc:0696"
-        },
-        {
-          "@id": "htc:0207"
         },
         {
           "@id": "htc:1504"
@@ -1066,13 +994,10 @@
           "@id": "htc:0239"
         },
         {
-          "@id": "htc:0103"
+          "@id": "htc:0360"
         },
         {
           "@id": "htc:0135"
-        },
-        {
-          "@id": "htc:1639"
         },
         {
           "@id": "htc:1701"
@@ -1129,13 +1054,10 @@
           "@id": "htc:1248"
         },
         {
-          "@id": "htc:0135"
-        },
-        {
           "@id": "htc:0348"
         },
         {
-          "@id": "htc:doc_albumin"
+          "@id": "htc:doc_albumen"
         }
       ]
     },
@@ -1174,31 +1096,19 @@
           "@id": "htc:0022"
         },
         {
-          "@id": "htc:0578"
-        },
-        {
           "@id": "htc:0543"
-        },
-        {
-          "@id": "htc:0562"
         },
         {
           "@id": "htc:0394"
         },
         {
-          "@id": "htc:0226"
-        },
-        {
-          "@id": "htc:doc_manila_hemp"
-        },
-        {
-          "@id": "htc:0529"
+          "@id": "htc:doc_abaca"
         },
         {
           "@id": "htc:0126"
         },
         {
-          "@id": "htc:doc_coir"
+          "@id": "htc:1443"
         },
         {
           "@id": "htc:0029"
@@ -1240,19 +1150,13 @@
           "@id": "htc:0430"
         },
         {
-          "@id": "htc:0136"
-        },
-        {
           "@id": "htc:doc_chlorate_of_potash"
-        },
-        {
-          "@id": "htc:1015"
         },
         {
           "@id": "htc:doc_nitric_acid"
         },
         {
-          "@id": "htc:doc_glycerine"
+          "@id": "htc:1474"
         },
         {
           "@id": "htc:doc_phosphorus"
@@ -1288,43 +1192,34 @@
           "@id": "htc:0573"
         },
         {
-          "@id": "htc:0077"
+          "@id": "htc:0697"
         },
         {
           "@id": "htc:1599"
         },
         {
-          "@id": "htc:0339"
-        },
-        {
-          "@id": "htc:0719"
-        },
-        {
-          "@id": "htc:doc_vanilla"
-        },
-        {
           "@id": "htc:0025"
         },
         {
-          "@id": "htc:1914"
+          "@id": "htc:0339"
         },
         {
           "@id": "htc:0445"
         },
         {
-          "@id": "htc:doc_otto_of_roses"
+          "@id": "htc:doc_vanilla"
         },
         {
-          "@id": "htc:0172"
+          "@id": "htc:1914"
+        },
+        {
+          "@id": "htc:doc_otto_of_roses"
         },
         {
           "@id": "htc:doc_musk"
         },
         {
           "@id": "htc:0618"
-        },
-        {
-          "@id": "htc:0625"
         },
         {
           "@id": "htc:doc_sandal_wood"
@@ -1372,7 +1267,7 @@
           "@id": "htc:0285"
         },
         {
-          "@id": "htc:0103"
+          "@id": "htc:0360"
         },
         {
           "@id": "htc:0578"
@@ -1384,7 +1279,7 @@
           "@id": "htc:1701"
         },
         {
-          "@id": "htc:0077"
+          "@id": "htc:0697"
         },
         {
           "@id": "htc:0683"
@@ -1405,7 +1300,7 @@
           "@id": "htc:doc_gamboge"
         },
         {
-          "@id": "htc:1142"
+          "@id": "htc:0750"
         },
         {
           "@id": "htc:0185"
@@ -1450,9 +1345,6 @@
           "@id": "htc:0097"
         },
         {
-          "@id": "htc:doc_citric_acid"
-        },
-        {
           "@id": "htc:doc_storax"
         },
         {
@@ -1477,34 +1369,16 @@
           "@id": "htc:1599"
         },
         {
-          "@id": "htc:1375"
-        },
-        {
           "@id": "htc:1943"
         },
         {
           "@id": "htc:0025"
         },
         {
-          "@id": "htc:0591"
-        },
-        {
           "@id": "htc:0695"
         },
         {
-          "@id": "htc:1790"
-        },
-        {
-          "@id": "htc:1579"
-        },
-        {
           "@id": "htc:0460"
-        },
-        {
-          "@id": "htc:0562"
-        },
-        {
-          "@id": "htc:1538"
         },
         {
           "@id": "htc:1702"
@@ -1519,10 +1393,7 @@
           "@id": "htc:doc_laudanum"
         },
         {
-          "@id": "htc:doc_spermaceti"
-        },
-        {
-          "@id": "htc:doc_cocculus_indicus"
+          "@id": "htc:0386"
         }
       ]
     },
@@ -1561,7 +1432,10 @@
           "@id": "htc:1248"
         },
         {
-          "@id": "htc:0427"
+          "@id": "htc:0196"
+        },
+        {
+          "@id": "htc:0484"
         },
         {
           "@id": "htc:doc_bismuth"
@@ -1574,15 +1448,6 @@
         },
         {
           "@id": "htc:1111"
-        },
-        {
-          "@id": "htc:0107"
-        },
-        {
-          "@id": "htc:0328"
-        },
-        {
-          "@id": "htc:0022"
         },
         {
           "@id": "htc:doc_nitric_acid"
@@ -1663,13 +1528,13 @@
           "@id": "htc:0291"
         },
         {
-          "@id": "htc:1015"
-        },
-        {
           "@id": "htc:1143"
         },
         {
           "@id": "htc:0225"
+        },
+        {
+          "@id": "htc:0502"
         },
         {
           "@id": "htc:0677"
@@ -1681,9 +1546,6 @@
           "@id": "htc:0869"
         },
         {
-          "@id": "htc:0077"
-        },
-        {
           "@id": "htc:0255"
         },
         {
@@ -1693,19 +1555,13 @@
           "@id": "htc:doc_kapok"
         },
         {
-          "@id": "htc:0021"
-        },
-        {
-          "@id": "htc:0502"
-        },
-        {
           "@id": "htc:0096"
         },
         {
           "@id": "htc:doc_verdigris"
         },
         {
-          "@id": "htc:doc_coir"
+          "@id": "htc:1443"
         },
         {
           "@id": "htc:0942"
@@ -1741,12 +1597,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_calico_printing"
-        },
-        {
-          "@id": "oe:ind_chocolate_confectionery"
-        },
-        {
-          "@id": "oe:ind_leather_tanning"
         }
       ]
     },
@@ -1797,9 +1647,6 @@
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_hats_brushes_upholstery"
-        },
-        {
           "@id": "oe:ind_woollen_silk_dyeing"
         }
       ]
@@ -1825,9 +1672,6 @@
           "@id": "oe:ind_leather_tanning"
         },
         {
-          "@id": "oe:ind_metallurgy_tinplate"
-        },
-        {
           "@id": "oe:ind_soap_manufacture"
         }
       ]
@@ -1843,9 +1687,6 @@
         "@language": "en"
       },
       "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_candle_manufacture"
-        },
         {
           "@id": "oe:ind_perfumery_cosmetics"
         },
@@ -1971,9 +1812,6 @@
           "@id": "oe:ind_calico_printing"
         },
         {
-          "@id": "oe:ind_varnish_paint_lacquer"
-        },
-        {
           "@id": "oe:ind_woollen_silk_dyeing"
         }
       ]
@@ -2033,31 +1871,6 @@
       ]
     },
     {
-      "@id": "htc:0077",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Spirits Unenumerated not Sweetened",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_hats_brushes_upholstery"
-        },
-        {
-          "@id": "oe:ind_perfumery_cosmetics"
-        },
-        {
-          "@id": "oe:ind_pharmaceuticals"
-        },
-        {
-          "@id": "oe:ind_varnish_paint_lacquer"
-        }
-      ]
-    },
-    {
       "@id": "htc:0096",
       "@type": [
         "skos:Concept",
@@ -2110,32 +1923,7 @@
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_brewing_distilling"
-        },
-        {
-          "@id": "oe:ind_chocolate_confectionery"
-        },
-        {
-          "@id": "oe:ind_pharmaceuticals"
-        },
-        {
           "@id": "oe:ind_sugar_refining"
-        }
-      ]
-    },
-    {
-      "@id": "htc:0107",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Pig and Scrap Iron",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_metallurgy_tinplate"
         }
       ]
     },
@@ -2282,9 +2070,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_brewing_distilling"
-        },
-        {
-          "@id": "oe:ind_sugar_refining"
         }
       ]
     },
@@ -2304,12 +2089,6 @@
         },
         {
           "@id": "oe:ind_glass_ceramics"
-        },
-        {
-          "@id": "oe:ind_gunpowder_matches"
-        },
-        {
-          "@id": "oe:ind_paper_making"
         },
         {
           "@id": "oe:ind_soap_manufacture"
@@ -2332,9 +2111,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_chocolate_confectionery"
-        },
-        {
-          "@id": "oe:ind_soap_manufacture"
         }
       ]
     },
@@ -2410,9 +2186,6 @@
           "@id": "oe:ind_calico_printing"
         },
         {
-          "@id": "oe:ind_perfumery_cosmetics"
-        },
-        {
           "@id": "oe:ind_pharmaceuticals"
         },
         {
@@ -2470,9 +2243,6 @@
           "@id": "oe:ind_calico_printing"
         },
         {
-          "@id": "oe:ind_chocolate_confectionery"
-        },
-        {
           "@id": "oe:ind_pharmaceuticals"
         }
       ]
@@ -2490,6 +2260,22 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_hats_brushes_upholstery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0196",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Iron Ore Including Chrome",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_metallurgy_tinplate"
         }
       ]
     },
@@ -2540,9 +2326,6 @@
           "@id": "oe:ind_cordage_shipbuilding"
         },
         {
-          "@id": "oe:ind_rubber_waterproofing"
-        },
-        {
           "@id": "oe:ind_varnish_paint_lacquer"
         }
       ]
@@ -2590,9 +2373,6 @@
         "@language": "en"
       },
       "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_cordage_shipbuilding"
-        },
         {
           "@id": "oe:ind_paper_making"
         }
@@ -2661,9 +2441,6 @@
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_calico_printing"
-        },
-        {
           "@id": "oe:ind_glass_ceramics"
         },
         {
@@ -2702,16 +2479,7 @@
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_calico_printing"
-        },
-        {
-          "@id": "oe:ind_glass_ceramics"
-        },
-        {
           "@id": "oe:ind_metallurgy_tinplate"
-        },
-        {
-          "@id": "oe:ind_varnish_paint_lacquer"
         }
       ]
     },
@@ -2763,9 +2531,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_cordage_shipbuilding"
-        },
-        {
-          "@id": "oe:ind_paper_making"
         }
       ]
     },
@@ -2874,9 +2639,6 @@
         },
         {
           "@id": "oe:ind_gunpowder_matches"
-        },
-        {
-          "@id": "oe:ind_metallurgy_tinplate"
         }
       ]
     },
@@ -2917,16 +2679,32 @@
           "@id": "oe:ind_calico_printing"
         },
         {
-          "@id": "oe:ind_glass_ceramics"
-        },
-        {
-          "@id": "oe:ind_leather_tanning"
-        },
-        {
           "@id": "oe:ind_metallurgy_tinplate"
         },
         {
           "@id": "oe:ind_sugar_refining"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0360",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Sugar",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_brewing_distilling"
+        },
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        },
+        {
+          "@id": "oe:ind_pharmaceuticals"
         }
       ]
     },
@@ -2952,6 +2730,25 @@
         },
         {
           "@id": "oe:ind_woollen_silk_dyeing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0386",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Train Blubber and Spermaceti (Whale Oils)",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_candle_manufacture"
+        },
+        {
+          "@id": "oe:ind_pharmaceuticals"
         }
       ]
     },
@@ -3003,25 +2800,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_pharmaceuticals"
-        }
-      ]
-    },
-    {
-      "@id": "htc:0427",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Zinc Ore",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_metallurgy_tinplate"
-        },
-        {
-          "@id": "oe:ind_varnish_paint_lacquer"
         }
       ]
     },
@@ -3083,6 +2861,22 @@
       ]
     },
     {
+      "@id": "htc:0467",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Asphalt or Bitumen",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_varnish_paint_lacquer"
+        }
+      ]
+    },
+    {
       "@id": "htc:0471",
       "@type": [
         "skos:Concept",
@@ -3095,6 +2889,22 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_woollen_silk_dyeing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0484",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Zinc Crude in Cakes",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_metallurgy_tinplate"
         }
       ]
     },
@@ -3142,9 +2952,6 @@
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_cordage_shipbuilding"
-        },
-        {
           "@id": "oe:ind_paper_making"
         }
       ]
@@ -3181,9 +2988,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_cordage_shipbuilding"
-        },
-        {
-          "@id": "oe:ind_varnish_paint_lacquer"
         }
       ]
     },
@@ -3227,16 +3031,10 @@
           "@id": "oe:ind_calico_printing"
         },
         {
-          "@id": "oe:ind_cordage_shipbuilding"
-        },
-        {
           "@id": "oe:ind_metallurgy_tinplate"
         },
         {
           "@id": "oe:ind_paper_making"
-        },
-        {
-          "@id": "oe:ind_pharmaceuticals"
         },
         {
           "@id": "oe:ind_soap_manufacture"
@@ -3283,45 +3081,10 @@
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_cordage_shipbuilding"
-        },
-        {
           "@id": "oe:ind_pharmaceuticals"
         },
         {
           "@id": "oe:ind_varnish_paint_lacquer"
-        }
-      ]
-    },
-    {
-      "@id": "htc:0587",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Aniline",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_calico_printing"
-        }
-      ]
-    },
-    {
-      "@id": "htc:0591",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Ginger Raw",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_pharmaceuticals"
         }
       ]
     },
@@ -3352,9 +3115,6 @@
         "@language": "en"
       },
       "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_perfumery_cosmetics"
-        },
         {
           "@id": "oe:ind_soap_manufacture"
         }
@@ -3456,18 +3216,24 @@
       ]
     },
     {
-      "@id": "htc:0702",
+      "@id": "htc:0697",
       "@type": [
         "skos:Concept",
         "crm:E55_Type"
       ],
       "rdfs:label": {
-        "@value": "Flint Glass",
+        "@value": "Spirits",
         "@language": "en"
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_glass_ceramics"
+          "@id": "oe:ind_perfumery_cosmetics"
+        },
+        {
+          "@id": "oe:ind_pharmaceuticals"
+        },
+        {
+          "@id": "oe:ind_varnish_paint_lacquer"
         }
       ]
     },
@@ -3482,12 +3248,6 @@
         "@language": "en"
       },
       "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_chocolate_confectionery"
-        },
-        {
-          "@id": "oe:ind_perfumery_cosmetics"
-        },
         {
           "@id": "oe:ind_soap_manufacture"
         }
@@ -3510,6 +3270,22 @@
       ]
     },
     {
+      "@id": "htc:0750",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Cream of Tartar",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_pharmaceuticals"
+        }
+      ]
+    },
+    {
       "@id": "htc:0780",
       "@type": [
         "skos:Concept",
@@ -3522,22 +3298,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_soap_manufacture"
-        }
-      ]
-    },
-    {
-      "@id": "htc:0807",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Smalts",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_glass_ceramics"
         }
       ]
     },
@@ -3590,22 +3350,6 @@
       ]
     },
     {
-      "@id": "htc:0855",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Milk Condensed",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_chocolate_confectionery"
-        }
-      ]
-    },
-    {
       "@id": "htc:0860",
       "@type": [
         "skos:Concept",
@@ -3634,6 +3378,41 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_hats_brushes_upholstery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0871",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Argol",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_woollen_silk_dyeing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0884",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Rye meal",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_leather_tanning"
         }
       ]
     },
@@ -3779,12 +3558,6 @@
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_gunpowder_matches"
-        },
-        {
-          "@id": "oe:ind_hats_brushes_upholstery"
-        },
-        {
           "@id": "oe:ind_paper_making"
         }
       ]
@@ -3802,6 +3575,25 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_pharmaceuticals"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1023",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Mineral Pigment Iron Oxides Ochres &c",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        },
+        {
+          "@id": "oe:ind_varnish_paint_lacquer"
         }
       ]
     },
@@ -3860,28 +3652,6 @@
       ]
     },
     {
-      "@id": "htc:1142",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Tartaric Acid",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_calico_printing"
-        },
-        {
-          "@id": "oe:ind_pharmaceuticals"
-        },
-        {
-          "@id": "oe:ind_woollen_silk_dyeing"
-        }
-      ]
-    },
-    {
       "@id": "htc:1143",
       "@type": [
         "skos:Concept",
@@ -3910,6 +3680,22 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_pharmaceuticals"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1202",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Zaffre",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_glass_ceramics"
         }
       ]
     },
@@ -4037,9 +3823,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_calico_printing"
-        },
-        {
-          "@id": "oe:ind_pharmaceuticals"
         }
       ]
     },
@@ -4063,6 +3846,41 @@
       ]
     },
     {
+      "@id": "htc:1400",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Fresh Milk",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1443",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Cordage and Cables Coir",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_cordage_shipbuilding"
+        },
+        {
+          "@id": "oe:ind_hats_brushes_upholstery"
+        }
+      ]
+    },
+    {
       "@id": "htc:1451",
       "@type": [
         "skos:Concept",
@@ -4078,6 +3896,22 @@
         },
         {
           "@id": "oe:ind_metallurgy_tinplate"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1474",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Glycerine Crude",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_gunpowder_matches"
         }
       ]
     },
@@ -4153,26 +3987,7 @@
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_pharmaceuticals"
-        },
-        {
           "@id": "oe:ind_varnish_paint_lacquer"
-        }
-      ]
-    },
-    {
-      "@id": "htc:1579",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Balsam Copaiba",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_pharmaceuticals"
         }
       ]
     },
@@ -4209,9 +4024,6 @@
         "@language": "en"
       },
       "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_brewing_distilling"
-        },
         {
           "@id": "oe:ind_chocolate_confectionery"
         }
@@ -4291,18 +4103,18 @@
       ]
     },
     {
-      "@id": "htc:1758",
+      "@id": "htc:1765",
       "@type": [
         "skos:Concept",
         "crm:E55_Type"
       ],
       "rdfs:label": {
-        "@value": "Gum Tragacanth",
+        "@value": "Vermillion",
         "@language": "en"
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_calico_printing"
+          "@id": "oe:ind_varnish_paint_lacquer"
         }
       ]
     },
@@ -4317,9 +4129,6 @@
         "@language": "en"
       },
       "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_pharmaceuticals"
-        },
         {
           "@id": "oe:ind_varnish_paint_lacquer"
         }
@@ -4338,9 +4147,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_calico_printing"
-        },
-        {
-          "@id": "oe:ind_glass_ceramics"
         }
       ]
     },
@@ -4446,6 +4252,22 @@
       ]
     },
     {
+      "@id": "htc:1937",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Cassia Buds",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
       "@id": "htc:1943",
       "@type": [
         "skos:Concept",
@@ -4473,9 +4295,6 @@
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_calico_printing"
-        },
-        {
           "@id": "oe:ind_hats_brushes_upholstery"
         },
         {
@@ -4490,19 +4309,32 @@
       ]
     },
     {
-      "@id": "htc:doc_albumin",
+      "@id": "htc:doc_abaca",
       "@type": [
         "skos:Concept",
         "crm:E55_Type"
       ],
       "rdfs:label": {
-        "@value": "Albumin",
+        "@value": "Abaca",
         "@language": "en"
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_calico_printing"
-        },
+          "@id": "oe:ind_cordage_shipbuilding"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_albumen",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Albumen",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
         {
           "@id": "oe:ind_sugar_refining"
         }
@@ -4614,15 +4446,12 @@
         "crm:E55_Type"
       ],
       "rdfs:label": {
-        "@value": "Bichromate Of Potash",
+        "@value": "Bichromate of Potash",
         "@language": "en"
       },
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_calico_printing"
-        },
-        {
-          "@id": "oe:ind_varnish_paint_lacquer"
         }
       ]
     },
@@ -4691,13 +4520,29 @@
       ]
     },
     {
+      "@id": "htc:doc_china_clay",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "China Clay",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_glass_ceramics"
+        }
+      ]
+    },
+    {
       "@id": "htc:doc_chlorate_of_potash",
       "@type": [
         "skos:Concept",
         "crm:E55_Type"
       ],
       "rdfs:label": {
-        "@value": "Chlorate Of Potash",
+        "@value": "Chlorate of Potash",
         "@language": "en"
       },
       "oe:usedInIndustry": [
@@ -4722,9 +4567,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_calico_printing"
-        },
-        {
-          "@id": "oe:ind_pharmaceuticals"
         },
         {
           "@id": "oe:ind_woollen_silk_dyeing"
@@ -4760,28 +4602,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_brewing_distilling"
-        },
-        {
-          "@id": "oe:ind_pharmaceuticals"
-        }
-      ]
-    },
-    {
-      "@id": "htc:doc_coir",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Coir",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_cordage_shipbuilding"
-        },
-        {
-          "@id": "oe:ind_hats_brushes_upholstery"
         }
       ]
     },
@@ -4798,6 +4618,22 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_brewing_distilling"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_dammer",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Dammer",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_varnish_paint_lacquer"
         }
       ]
     },
@@ -4853,38 +4689,6 @@
       ]
     },
     {
-      "@id": "htc:doc_glycerine",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Glycerine",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_gunpowder_matches"
-        }
-      ]
-    },
-    {
-      "@id": "htc:doc_gum_dammar",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Gum Dammar",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_varnish_paint_lacquer"
-        }
-      ]
-    },
-    {
       "@id": "htc:doc_iodine",
       "@type": [
         "skos:Concept",
@@ -4897,22 +4701,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_pharmaceuticals"
-        }
-      ]
-    },
-    {
-      "@id": "htc:doc_kaolin",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Kaolin",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_glass_ceramics"
         }
       ]
     },
@@ -4949,18 +4737,18 @@
       ]
     },
     {
-      "@id": "htc:doc_manila_hemp",
+      "@id": "htc:doc_litharge",
       "@type": [
         "skos:Concept",
         "crm:E55_Type"
       ],
       "rdfs:label": {
-        "@value": "Manila Hemp",
+        "@value": "Litharge",
         "@language": "en"
       },
       "oe:usedInIndustry": [
         {
-          "@id": "oe:ind_cordage_shipbuilding"
+          "@id": "oe:ind_glass_ceramics"
         }
       ]
     },
@@ -4977,6 +4765,22 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_leather_tanning"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_minium",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Minium",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_varnish_paint_lacquer"
         }
       ]
     },
@@ -5075,9 +4879,6 @@
         },
         {
           "@id": "oe:ind_metallurgy_tinplate"
-        },
-        {
-          "@id": "oe:ind_woollen_silk_dyeing"
         }
       ]
     },
@@ -5094,57 +4895,6 @@
       "oe:usedInIndustry": [
         {
           "@id": "oe:ind_pharmaceuticals"
-        }
-      ]
-    },
-    {
-      "@id": "htc:doc_oak_bark",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Oak Bark",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_leather_tanning"
-        }
-      ]
-    },
-    {
-      "@id": "htc:doc_ochre",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Ochre",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_soap_manufacture"
-        },
-        {
-          "@id": "oe:ind_varnish_paint_lacquer"
-        }
-      ]
-    },
-    {
-      "@id": "htc:doc_orpiment",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Orpiment",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_calico_printing"
         }
       ]
     },
@@ -5212,9 +4962,6 @@
         },
         {
           "@id": "oe:ind_varnish_paint_lacquer"
-        },
-        {
-          "@id": "oe:ind_woollen_silk_dyeing"
         }
       ]
     },
@@ -5229,9 +4976,6 @@
         "@language": "en"
       },
       "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_calico_printing"
-        },
         {
           "@id": "oe:ind_metallurgy_tinplate"
         }
@@ -5270,25 +5014,6 @@
       ]
     },
     {
-      "@id": "htc:doc_spermaceti",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Spermaceti",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
-        {
-          "@id": "oe:ind_candle_manufacture"
-        },
-        {
-          "@id": "oe:ind_pharmaceuticals"
-        }
-      ]
-    },
-    {
       "@id": "htc:doc_storax",
       "@type": [
         "skos:Concept",
@@ -5304,6 +5029,22 @@
         },
         {
           "@id": "oe:ind_pharmaceuticals"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_sugar_of_lead",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Sugar of Lead",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
         }
       ]
     },
@@ -5359,22 +5100,6 @@
         {
           "@id": "oe:ind_hats_brushes_upholstery"
         },
-        {
-          "@id": "oe:ind_varnish_paint_lacquer"
-        }
-      ]
-    },
-    {
-      "@id": "htc:doc_vermilion",
-      "@type": [
-        "skos:Concept",
-        "crm:E55_Type"
-      ],
-      "rdfs:label": {
-        "@value": "Vermilion",
-        "@language": "en"
-      },
-      "oe:usedInIndustry": [
         {
           "@id": "oe:ind_varnish_paint_lacquer"
         }

@@ -579,7 +579,7 @@ details.tree-sub > summary {{ cursor: pointer; font-weight: 600; font-size: 0.83
   <div id="tab-industries" class="panel">
     <div class="card" style="margin-bottom:14px;">
       <strong>18-Industry Primary-Source End-Use Network (<code>oe:usedInIndustry</code> / <code>oe:usesCommodityInput</code>):</strong>
-      Every commodity link below is mined from the <strong>full text of 6 19th-century commercial &amp; manufacturing books</strong> (6,455 pages across Ure 1853, Simmonds 1854 &amp; 1892, McCulloch 1880, Mortimer 1823, and Watt 1908) — uniting <strong>Layer-1 customs-enumerated commodities</strong> with <strong>Document-Attested minor inputs (<code>htc:doc_*</code>)</strong> without altering the 4-tier material taxonomy. Select any industry pill below or search across all 18 industries.
+      Every commodity link below is mined from the <strong>full text of 6 19th-century commercial &amp; manufacturing books</strong> (6,455 pages across Ure 1840, Simmonds 1854 &amp; 1892, McCulloch 1880, Mortimer 1823, and Watt 1908) — uniting <strong>Layer-1 customs-enumerated commodities</strong> with <strong>Document-Attested minor inputs (<code>htc:doc_*</code>)</strong> without altering the 4-tier material taxonomy. Select any industry pill below or search across all 18 industries.
     </div>
     <div class="controls" style="margin-bottom:10px">
       <input type="text" id="ind-q" placeholder="Filter inputs or search across all 18 industries (e.g. 'palm oil', 'cochineal', 'shellac', 'quicksilver')..." oninput="renderIndustries()">
@@ -1549,7 +1549,7 @@ function renderIndustries() {{
             <th style="width:230px">Commodity</th>
             <th style="width:105px">Tier / Rows</th>
             <th style="width:95px">Attestation</th>
-            <th>Primary-Source Evidence Quotes (Ure 1853, Simmonds 1854/1892, McCulloch 1880, Mortimer 1823, Watt 1908)</th>
+            <th>Primary-Source Evidence Quotes (Ure 1840, Simmonds 1854/1892, McCulloch 1880, Mortimer 1823, Watt 1908)</th>
           </tr>
         </thead>
         <tbody>`;
