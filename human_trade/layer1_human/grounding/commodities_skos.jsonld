@@ -1779,6 +1779,27 @@
       }
     },
     {
+      "@id": "htc:sub_alcoholic__wd_q178921",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Mineral Water (substance group)",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "htc:scheme"
+      },
+      "skos:prefLabel": {
+        "@value": "Mineral Water (substance group)",
+        "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "htc:grp_alcoholic_beverages"
+      }
+    },
+    {
       "@id": "htc:sub_alcoholic__wd_q201382",
       "@type": [
         "skos:Concept",
@@ -46907,16 +46928,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_alcoholic_beverages"
+        "@id": "htc:grp_waxes_soap_candles"
       },
       "oe:observationCount": 50,
       "oe:groundingStatus": "local_concept_only",
       "oe:substanceHead": "Perfumed Spirits and Cologne Water",
       "oe:processingState": "refined_extract",
-      "oe:ghostAcresDomain": "food_colonial_grocery",
+      "oe:ghostAcresDomain": "fats_oils_soap",
       "oe:landBasis": "terrestrial_crop",
-      "oe:theodoridisBucket": "other_food_drink_spices",
-      "oe:sitcCode": "SITC4_11_Beverages",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_55_Oils_Perfumes_Cleansing",
       "oe:isAggregate": false,
       "oe:firstAttested": 1827,
       "oe:lastAttested": 1906,
@@ -59090,14 +59111,14 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_alcoholic_beverages"
+        "@id": "htc:sub_alcoholic__wd_q178921"
       },
       "oe:observationCount": 30,
       "oe:groundingStatus": "grounded_wikidata_lexical",
       "oe:substanceHead": "Mineral water",
       "oe:processingState": "unspecified",
       "oe:ghostAcresDomain": "food_colonial_grocery",
-      "oe:landBasis": "terrestrial_crop",
+      "oe:landBasis": "mineral",
       "oe:theodoridisBucket": "other_food_drink_spices",
       "oe:sitcCode": "SITC4_11_Beverages",
       "oe:isAggregate": false,
@@ -59115,6 +59136,11 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1209"
         }
       ],
       "skos:exactMatch": [
@@ -60383,16 +60409,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_customs_residuals"
+        "@id": "htc:grp_waxes_soap_candles"
       },
       "oe:observationCount": 29,
       "oe:groundingStatus": "local_concept_only",
       "oe:substanceHead": "Water Cologne in Flasks",
       "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "other",
-      "oe:landBasis": "unclassified",
-      "oe:theodoridisBucket": "unclassified",
-      "oe:sitcCode": "oe:sitcUnassigned",
+      "oe:ghostAcresDomain": "fats_oils_soap",
+      "oe:landBasis": "terrestrial_crop",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_55_Oils_Perfumes_Cleansing",
       "oe:isAggregate": false,
       "oe:firstAttested": 1831,
       "oe:lastAttested": 1861,
@@ -71657,16 +71683,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_alcoholic__wd_q56139"
+        "@id": "htc:grp_waxes_soap_candles"
       },
       "oe:observationCount": 19,
       "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Spirits Sweetened or Mixed Perfumed Spirits including Water Cologne",
       "oe:processingState": "refined_extract",
-      "oe:ghostAcresDomain": "food_colonial_grocery",
+      "oe:ghostAcresDomain": "fats_oils_soap",
       "oe:landBasis": "terrestrial_crop",
-      "oe:theodoridisBucket": "other_food_drink_spices",
-      "oe:sitcCode": "SITC4_11_Beverages",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_55_Oils_Perfumes_Cleansing",
       "oe:isAggregate": false,
       "oe:firstAttested": 1866,
       "oe:lastAttested": 1876,
@@ -74631,16 +74657,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_industrial_minerals"
+        "@id": "htc:sub_alcoholic__wd_q178921"
       },
       "oe:observationCount": 17,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Water Mineral",
       "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "minerals_metals_energy",
+      "oe:ghostAcresDomain": "food_colonial_grocery",
       "oe:landBasis": "mineral",
-      "oe:theodoridisBucket": "raw_materials",
-      "oe:sitcCode": "SITC4_27_Crude_Fertilizers_and_Minerals",
+      "oe:theodoridisBucket": "other_food_drink_spices",
+      "oe:sitcCode": "SITC4_11_Beverages",
       "oe:isAggregate": false,
       "oe:firstAttested": 1839,
       "oe:lastAttested": 1861,
@@ -74651,7 +74677,21 @@
         {
           "@id": "oe:series_kew_cust_4"
         }
-      ]
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0904"
+        }
+      ],
+      "skos:closeMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q178921"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14984-4"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1210",
@@ -83881,16 +83921,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_customs_residuals"
+        "@id": "htc:grp_waxes_soap_candles"
       },
       "oe:observationCount": 12,
       "oe:groundingStatus": "local_concept_only",
       "oe:substanceHead": "Water Cologne Sweetened of all Kinds",
       "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "other",
-      "oe:landBasis": "unclassified",
-      "oe:theodoridisBucket": "unclassified",
-      "oe:sitcCode": "oe:sitcUnassigned",
+      "oe:ghostAcresDomain": "fats_oils_soap",
+      "oe:landBasis": "terrestrial_crop",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_55_Oils_Perfumes_Cleansing",
       "oe:isAggregate": true,
       "oe:firstAttested": 1861,
       "oe:lastAttested": 1861,
@@ -92638,14 +92678,14 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_alcoholic_beverages"
+        "@id": "htc:sub_alcoholic__wd_q178921"
       },
       "oe:observationCount": 9,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Aerated and Mineral Waters",
       "oe:processingState": "unspecified",
       "oe:ghostAcresDomain": "food_colonial_grocery",
-      "oe:landBasis": "terrestrial_crop",
+      "oe:landBasis": "mineral",
       "oe:theodoridisBucket": "other_food_drink_spices",
       "oe:sitcCode": "SITC4_11_Beverages",
       "oe:isAggregate": false,
@@ -92655,7 +92695,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q178921"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14984-4"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1575",

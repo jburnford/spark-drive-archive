@@ -732,6 +732,10 @@ CANONICAL_MAP = {
     "biscuit and bread": ("bread", None, "skos:broadMatch"),
     "chemical essential or perfumed oils": ("essential oil", None, "skos:broadMatch"),
     "perfumery": ("perfume", None, "skos:broadMatch"),
+    "water mineral": ("mineral water", None, "skos:exactMatch"),
+    "aerated and mineral waters": ("mineral water", None, "skos:broadMatch"),
+    "water cologne in flasks": ("eau de cologne", None, "skos:closeMatch"),
+    "water cologne sweetened of all kinds": ("eau de cologne", None, "skos:closeMatch"),
     "barrels empty": ("barrel", None, "skos:broadMatch"),
     "shells of all kinds": ("seashell", None, "skos:broadMatch"),
     "stationery other than paper": ("stationery", None, "skos:broadMatch"),
@@ -1073,7 +1077,7 @@ def classify_v4(raw: str, head: str):
         grp = "grp_metals_semi_finished"
     elif re.search(r"\b(hats?|bonnets?)\b", lo):
         grp = "grp_woven_fabrics_apparel"
-    elif re.search(r"\b(perfumery|perfumes?|soap|candles?|beeswax|bees\s*wax|wax\b|paraffin)\b", lo):
+    elif re.search(r"\b(perfumery|perfumes?|water\s+cologne|cologne\s+water|soap|candles?|beeswax|bees\s*wax|wax\b|paraffin)\b", lo):
         grp = "grp_waxes_soap_candles"
     elif re.search(r"\bsugar\s+box(?:es)?\b|\bbarrels?\s+empty\b|\btreenails?\b", lo):
         grp = "grp_cooperage_ship_timber"
@@ -1095,7 +1099,7 @@ def classify_v4(raw: str, head: str):
         grp = "grp_fruits_nuts_vegetables"
     elif re.search(r"\bcattle\s+(?:and\s+other\s+)?animal\s+foods?\b", lo):
         grp = "grp_fodder_oilcakes"
-    elif re.search(r"\b(mineral\s*waters?|wine|brandy|rum|whiske?y|spirits?|beer|ale|porter|cider|gin|geneva|spruce\s*beer)\b", lo):
+    elif re.search(r"\b(mineral\s*waters?|waters?\s+mineral|aerated\s+and\s+mineral\s+waters?|soda\s*water|wine|brandy|rum|whiske?y|spirits?|beer|ale|porter|cider|gin|geneva|spruce\s*beer)\b", lo):
         grp = "grp_alcoholic_beverages"
     elif re.search(r"\b(tea\b|coffee\b|cocoa\b|chocolate|chicory)\b", lo) and not re.search(r"\bcocoa[\s-]*nut\b|\bcoco[\s-]*nut\b", lo):
         grp = "grp_stimulant_beverages"
@@ -1226,7 +1230,7 @@ def classify_v4(raw: str, head: str):
         land_basis = "marine"
     elif sector == "sec_forestry_timber" or grp in ("grp_vegetable_tannins", "grp_latexes_elastic_gums", "grp_gums_resins_naval_stores") or re.search(r"\bmaple\s+(sugar|syrup)\b", lo):
         land_basis = "terrestrial_forest"
-    elif grp in ("grp_fossil_fuels_mineral_oils", "grp_metallic_ores", "grp_metals_semi_finished", "grp_industrial_minerals", "grp_industrial_chemicals_alkalis"):
+    elif grp in ("grp_fossil_fuels_mineral_oils", "grp_metallic_ores", "grp_metals_semi_finished", "grp_industrial_minerals", "grp_industrial_chemicals_alkalis") or re.search(r"\b(mineral\s*waters?|waters?\s+mineral|aerated.*waters?|soda\s*water)\b", lo):
         land_basis = "mineral"
     elif grp in ("grp_metal_machinery_hardware", "grp_glass_ceramics_paper_woodware", "grp_yarns_cordage", "grp_woven_fabrics_apparel"):
         land_basis = "industrial_manufactured"

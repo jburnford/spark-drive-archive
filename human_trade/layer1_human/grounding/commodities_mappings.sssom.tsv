@@ -2356,6 +2356,8 @@ htc:1206	Skins Furs Pelts Chinchilla	skos:broadMatch	aat:300011811		semapv:Mappi
 htc:1207	Silk Thrown Dyed Organzine or Crape	skos:broadMatch	wd:Q37681	silk	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=silk
 htc:1207	Silk Thrown Dyed Organzine or Crape	skos:broadMatch	stw:14125-3		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:1207	Silk Thrown Dyed Organzine or Crape	skos:broadMatch	aat:300014072		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
+htc:1209	Water Mineral	skos:closeMatch	wd:Q178921	mineral water	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=mineral water
+htc:1209	Water Mineral	skos:closeMatch	stw:14984-4		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:1210	Skins Furs Pelts Kid Dressed not Dyed or Coloured	skos:broadMatch	wd:Q197204	fur	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=fur
 htc:1210	Skins Furs Pelts Kid Dressed not Dyed or Coloured	skos:broadMatch	stw:14916-0		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:1210	Skins Furs Pelts Kid Dressed not Dyed or Coloured	skos:broadMatch	aat:300011811		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
@@ -2966,6 +2968,8 @@ htc:1573	Steel in Bars Angles and Shapes not Girders Joists etc	skos:broadMatch	
 htc:1573	Steel in Bars Angles and Shapes not Girders Joists etc	skos:broadMatch	agrovoc:c_7384		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
 htc:1573	Steel in Bars Angles and Shapes not Girders Joists etc	skos:broadMatch	stw:14285-2		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:1573	Steel in Bars Angles and Shapes not Girders Joists etc	skos:broadMatch	aat:300133751		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
+htc:1574	Aerated and Mineral Waters	skos:broadMatch	wd:Q178921	mineral water	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=mineral water
+htc:1574	Aerated and Mineral Waters	skos:broadMatch	stw:14984-4		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:1575	Cables Cordage and Rope of not less than 1 inch diameter	skos:broadMatch	wd:Q31029	rope	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=manufactured_product_class; via=rope
 htc:1575	Cables Cordage and Rope of not less than 1 inch diameter	skos:broadMatch	aat:300014248		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:1577	Rice Meal	skos:broadMatch	wd:Q5090	rice	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=rice
