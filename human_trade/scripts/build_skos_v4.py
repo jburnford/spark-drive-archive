@@ -275,7 +275,7 @@ BAD_DESC_RE = re.compile(
 POSITIVE_DESC_RE = re.compile(
     r"\b(material|substance|chemical|element|compound|mixture|liquid|viscous|mineral|metal|alloy|ore|rock|stone|"
     r"fuel|oil|fat|wax|resin|gum|latex|polymers|dye|pigment|colorant|colourant|coloring|colouring|tannin|bark|wood|timber|lumber|plank|shingle|lath|"
-    r"fiber|fibre|tarred fiber|textile|fabric|cloth|yarn|thread|strand|rope|cord|leather|hide|skin|fur|pelt|wool|silk|cotton|"
+    r"fiber|fibre|fibers|fibres|tarred fiber|textile|textiles|fabric|cloth|yarn|thread|strand|rope|cord|hosiery|lace|leather|hide|skin|fur|pelt|wool|silk|cotton|"
     r"flax|hemp|jute|paper|pulp|glass|ceramic|pottery|brick|cement|hydraulic binder|food|crop|grain|cereal|flour|"
     r"meal|powder|grinding|bread|biscuit|baked|meat|beef|pork|ham|bacon|flesh|fish|seafood|marine invertebrate|"
     r"dairy|milk|butter|cheese|egg|fruit|vegetable|legume|pulse|nut|seed|spice|aril|herb|tea|coffee|cocoa|sugar|sweet|carbohydrate|syrup|"
@@ -356,6 +356,10 @@ ALLIED_RELATED_PAIRS = [
     ("Maple Sugar", "Maple Syrup"),
     ("Maple Sugar", "Sugar"),
     ("Sugar", "Confectionery"),
+    ("Cotton", "Cotton Seeds"),
+    ("Cotton Seeds", "Cotton Seed Oil Refined"),
+    ("Cotton Seeds", "Cotton Seed Oil Unrefined"),
+    ("Cotton Seeds", "Oil Seed Cake Cotton Seed"),
 ]
 
 # Curated modern common altLabels for archaic/19th-century customs terms
@@ -643,6 +647,9 @@ CANONICAL_MAP = {
     "wool sheep and lambs": ("wool", None, "skos:broadMatch"),
     "wool cotton": ("cotton", None, "skos:closeMatch"),
     "cotton": ("cotton", None, "skos:exactMatch"),
+    "cotton raw": ("cotton", "gossypium", "skos:broadMatch"),
+    "cotton raw and waste of": ("cotton", "gossypium", "skos:broadMatch"),
+    "cotton waste": ("cotton", "gossypium", "skos:broadMatch"),
     "flax": ("flax", "linum usitatissimum", "skos:exactMatch"),
     "hemp": ("hemp", None, "skos:exactMatch"),
     "jute": ("jute", None, "skos:exactMatch"),
@@ -848,7 +855,7 @@ MATERIAL_DETECT = [
     (r"\btin\b", "tin"),
     (r"\bzinc\b", "zinc"),
     (r"\bsilk\b", "silk"),
-    (r"\bcotton\b", "cotton"),
+    (r"\b(cotton|calico(?:es)?|muslins?|nankeens?)\b", "cotton"),
     (r"\b(wool|woollen|woolen)\b", "wool"),
     (r"\blinen\b", "linen"),
     (r"\bleather\b", "leather"),
@@ -1018,6 +1025,8 @@ def classify_v4(raw: str, head: str):
         grp = "grp_fruits_nuts_vegetables"
     elif re.search(r"\b(cotton\s*seeds?|linseed|flax\s*seeds?|flaxseed|rape\s*seeds?|rapeseed|seeds?\s+rape|oil\s*seeds?|copra|palm\s*kernels?|hemp\s*seed|poppy\s*seed|sesame|ground\s*nuts?|peanuts?|seeds?\b)\b", lo):
         grp = "grp_oilseeds"
+    elif re.search(r"\b(lace|embroidery|needlework|stockings?|socks?|hosiery|stays\s+or\s+corsets?|corsets?)\b", lo):
+        grp = "grp_woven_fabrics_apparel"
     elif re.search(r"\b(bones?|horns?|hoofs?|ivory|elephants?\s*teeth|whalebone|whale\s*fins?|isinglass|guano|manure|phosphate|sponge|sponges|coral)\b", lo):
         grp = "grp_fertilizers_animal_materials"
     elif re.search(r"\b(codfish|cod\b|herrings?|mackerel|salmon|lobsters?|oysters?|halibut|haddock|ling\b|pollock|sardines?|anchovies|pilchards?|sprats?|eels?|trout|shad|fish\b|tongues\s+and\s+sounds|cod\s+sounds|tongues\b|shellfish)\b", lo) and not re.search(r"\bfurs?\s+or\s+skins?\b", lo):
@@ -1521,6 +1530,9 @@ def main():
         elif re.search(r"\b(pulp\s+of\s+wood|wood\s*pulp|pulpwood)\b", k_raw):
             plans[cid] = ("single", ("wood pulp", None, "skos:broadMatch", "wood_pulp_guard"))
             all_terms.add("wood pulp")
+        elif re.search(r"\brags?\b", k_raw):
+            plans[cid] = ("single", ("rag", None, "skos:broadMatch", "rag_guard"))
+            all_terms.add("rag")
         elif grp in ("grp_metal_machinery_hardware", "grp_glass_ceramics_paper_woodware", "grp_yarns_cordage", "grp_woven_fabrics_apparel"):
             matched_prod = None
             for ppat, pterm in [
@@ -1530,6 +1542,12 @@ def main():
                 (r"\bcannon\b", "cannon"),
                 (r"\b(boots?|shoes?|footwear)\b", "footwear"),
                 (r"\bgloves?\b", "glove"),
+                (r"\b(stockings?|socks?)\b", "stocking"),
+                (r"\b(corsets?|stays\s+or\s+corsets?)\b", "corset"),
+                (r"\blace\b", "lace"),
+                (r"\b(embroidery|needlework)\b", "embroidery"),
+                (r"\bcalico(?:es)?\b", "calico"),
+                (r"(?<!other than )\bmuslins?\b", "muslin"),
                 (r"\bstoves?\b", "stove"),
                 (r"\bnails?\b", "nail"),
                 (r"\banchors?\b", "anchor"),
@@ -1643,11 +1661,11 @@ def main():
         grp = c["ontology"]["group_id"].replace("htc:", "")
         mode, payload = plans[cid]
 
-        # Attach oe:madeOfMaterial for manufactures, candles, and ores (guard "not of/with X" and "other than X")
-        if grp in ("grp_metal_machinery_hardware", "grp_glass_ceramics_paper_woodware", "grp_yarns_cordage", "grp_woven_fabrics_apparel", "grp_metallic_ores") or pstate == "manufactured":
+        # Attach oe:madeOfMaterial for manufactures, candles, rags, and ores (guard "not of/with X" and "other than X")
+        if grp in ("grp_metal_machinery_hardware", "grp_glass_ceramics_paper_woodware", "grp_yarns_cordage", "grp_woven_fabrics_apparel", "grp_metallic_ores") or pstate == "manufactured" or "rag" in k_raw:
             mats, seen_m = [], set()
             for pat, mterm in MATERIAL_DETECT:
-                if re.search(pat, k_raw) and not re.search(r"\b(?:not\s+(?:of|with)|other\s+than)\b[^,;]*\b" + re.escape(mterm), k_raw):
+                if re.search(pat, k_raw) and not re.search(r"\b(?:not\s+(?:of|with)|other\s+than)\s+(?:[a-z]+\s+){0,2}" + re.escape(mterm), k_raw):
                     mh = material_qids.get(mterm)
                     if mh and mh["qid"] not in seen_m:
                         mats.append(mh); seen_m.add(mh["qid"])

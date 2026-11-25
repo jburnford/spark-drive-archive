@@ -1448,34 +1448,6 @@
       }
     },
     {
-      "@id": "htc:sub_bast_plant_wd_q11472",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "htc:scheme"
-      },
-      "skos:prefLabel": {
-        "@value": "Paper (substance group)",
-        "@language": "en"
-      },
-      "skos:broader": {
-        "@id": "htc:grp_bast_plant_fibres"
-      }
-    },
-    {
-      "@id": "htc:sub_bast_plant_wd_q1426327",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "htc:scheme"
-      },
-      "skos:prefLabel": {
-        "@value": "Linen (substance group)",
-        "@language": "en"
-      },
-      "skos:broader": {
-        "@id": "htc:grp_bast_plant_fibres"
-      }
-    },
-    {
       "@id": "htc:sub_bast_plant_wd_q1567420",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -2210,7 +2182,7 @@
         "@id": "htc:scheme"
       },
       "skos:prefLabel": {
-        "@value": "Paper — Paper, Books, Glass, Ceramics, Woodwares & Sundries (group)",
+        "@value": "Paper (substance group)",
         "@language": "en"
       },
       "skos:broader": {
@@ -3450,13 +3422,13 @@
       }
     },
     {
-      "@id": "htc:sub_woven_fabr_hd_woollen_yarn",
+      "@id": "htc:sub_woven_fabr_wd_q1567420",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "htc:scheme"
       },
       "skos:prefLabel": {
-        "@value": "Woollen Yarn (substance group)",
+        "@value": "Rag — Woven Textiles, Apparel & Footwear (group)",
         "@language": "en"
       },
       "skos:broader": {
@@ -3478,6 +3450,48 @@
       }
     },
     {
+      "@id": "htc:sub_woven_fabr_wd_q18281",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "htc:scheme"
+      },
+      "skos:prefLabel": {
+        "@value": "Embroidery (substance group)",
+        "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "htc:grp_woven_fabrics_apparel"
+      }
+    },
+    {
+      "@id": "htc:sub_woven_fabr_wd_q193017",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "htc:scheme"
+      },
+      "skos:prefLabel": {
+        "@value": "Stocking (substance group)",
+        "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "htc:grp_woven_fabrics_apparel"
+      }
+    },
+    {
+      "@id": "htc:sub_woven_fabr_wd_q231250",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "htc:scheme"
+      },
+      "skos:prefLabel": {
+        "@value": "Lace (substance group)",
+        "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "htc:grp_woven_fabrics_apparel"
+      }
+    },
+    {
       "@id": "htc:sub_woven_fabr_wd_q28823",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -3492,17 +3506,31 @@
       }
     },
     {
-      "@id": "htc:sub_yarns_cord_hd_linen_yarn",
+      "@id": "htc:sub_woven_fabr_wd_q49007",
       "@type": "skos:Concept",
       "skos:inScheme": {
         "@id": "htc:scheme"
       },
       "skos:prefLabel": {
-        "@value": "Linen Yarn (substance group)",
+        "@value": "Yarn (substance group)",
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:grp_woven_fabrics_apparel"
+      }
+    },
+    {
+      "@id": "htc:sub_woven_fabr_wd_q725457",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "htc:scheme"
+      },
+      "skos:prefLabel": {
+        "@value": "Muslin (substance group)",
+        "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "htc:grp_woven_fabrics_apparel"
       }
     },
     {
@@ -3527,6 +3555,20 @@
       },
       "skos:prefLabel": {
         "@value": "Rope (substance group)",
+        "@language": "en"
+      },
+      "skos:broader": {
+        "@id": "htc:grp_yarns_cordage"
+      }
+    },
+    {
+      "@id": "htc:sub_yarns_cord_wd_q49007",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "htc:scheme"
+      },
+      "skos:prefLabel": {
+        "@value": "Yarn — Yarns, Cordage, Rope & Twine (group)",
         "@language": "en"
       },
       "skos:broader": {
@@ -5550,6 +5592,9 @@
           "@id": "htc:0371"
         },
         {
+          "@id": "htc:0473"
+        },
+        {
           "@id": "htc:0664"
         },
         {
@@ -5632,6 +5677,9 @@
         },
         {
           "@id": "htc:1634"
+        },
+        {
+          "@id": "htc:1653"
         },
         {
           "@id": "htc:1665"
@@ -12641,7 +12689,12 @@
           "@id": "http://vocab.getty.edu/aat/300183670"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:sourceTaxon": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q719312"
+        }
+      ]
     },
     {
       "@id": "htc:0142",
@@ -16497,10 +16550,22 @@
           "@id": "htc:0647"
         },
         {
+          "@id": "htc:0751"
+        },
+        {
           "@id": "htc:0839"
         },
         {
+          "@id": "htc:0851"
+        },
+        {
           "@id": "htc:0937"
+        },
+        {
+          "@id": "htc:1544"
+        },
+        {
+          "@id": "htc:1658"
         }
       ],
       "skos:broadMatch": [
@@ -19167,6 +19232,9 @@
           "@id": "htc:1007"
         },
         {
+          "@id": "htc:1089"
+        },
+        {
           "@id": "htc:1094"
         },
         {
@@ -19206,6 +19274,9 @@
           "@id": "htc:1535"
         },
         {
+          "@id": "htc:1596"
+        },
+        {
           "@id": "htc:1601"
         },
         {
@@ -19225,6 +19296,9 @@
         },
         {
           "@id": "htc:1849"
+        },
+        {
+          "@id": "htc:1856"
         }
       ],
       "skos:broadMatch": [
@@ -19335,12 +19409,12 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:broadMatch": [
@@ -21120,6 +21194,9 @@
       ],
       "skos:related": [
         {
+          "@id": "htc:0367"
+        },
+        {
           "@id": "htc:0308"
         },
         {
@@ -21171,7 +21248,19 @@
           "@id": "htc:1122"
         },
         {
+          "@id": "htc:1144"
+        },
+        {
+          "@id": "htc:1236"
+        },
+        {
           "@id": "htc:1277"
+        },
+        {
+          "@id": "htc:1292"
+        },
+        {
+          "@id": "htc:1489"
         },
         {
           "@id": "htc:1512"
@@ -21195,7 +21284,16 @@
           "@id": "htc:1846"
         },
         {
+          "@id": "htc:1896"
+        },
+        {
+          "@id": "htc:1897"
+        },
+        {
           "@id": "htc:1910"
+        },
+        {
+          "@id": "htc:1941"
         }
       ],
       "skos:exactMatch": [
@@ -21806,7 +21904,12 @@
           "@id": "http://vocab.getty.edu/aat/300183670"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:sourceTaxon": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q719312"
+        }
+      ]
     },
     {
       "@id": "htc:0310",
@@ -24571,6 +24674,20 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        },
+        {
+          "@id": "htc:1743"
+        },
+        {
+          "@id": "htc:1813"
+        },
+        {
+          "@id": "htc:0741"
+        }
+      ],
       "skos:exactMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q17104079"
@@ -24722,10 +24839,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_yarns_cord_hd_linen_yarn"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 102,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Linen Yarn",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -24760,14 +24877,26 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q1426327"
@@ -25322,16 +25451,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_customs_residuals"
+        "@id": "htc:sub_woven_fabr_wd_q18281"
       },
       "oe:observationCount": 98,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Embroidery and Needlework",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "other",
-      "oe:landBasis": "unclassified",
-      "oe:theodoridisBucket": "unclassified",
-      "oe:sitcCode": "oe:sitcUnassigned",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1827,
       "oe:lastAttested": 1906,
@@ -25342,7 +25471,16 @@
         {
           "@id": "oe:series_kew_cust_4"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q18281"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300053653"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:0382",
@@ -29808,12 +29946,27 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q1567420"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q42329"
+        }
+      ]
     },
     {
       "@id": "htc:0474",
@@ -30787,10 +30940,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 72,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Cotton Yarn",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -30827,6 +30980,18 @@
           "@id": "htc:0300"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q11457"
@@ -33323,7 +33488,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_bast_plant_wd_q11472"
+        "@id": "htc:sub_bast_plant_wd_q1567420"
       },
       "oe:observationCount": 65,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -33349,13 +33514,7 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "http://www.wikidata.org/entity/Q11472"
-        },
-        {
-          "@id": "http://zbw.eu/stw/descriptor/14802-1"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300014109"
+          "@id": "http://www.wikidata.org/entity/Q1567420"
         }
       ],
       "oe:mappingAuthority": "wikidata_slim:2026-11-09"
@@ -34680,12 +34839,12 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:broadMatch": [
@@ -38752,10 +38911,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_woven_fabrics_apparel"
+        "@id": "htc:sub_woven_fabr_wd_q1567420"
       },
       "oe:observationCount": 51,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Rags Woollen",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -38780,6 +38939,12 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1567420"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -40712,7 +40877,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_bast_plant_wd_q1426327"
+        "@id": "htc:sub_bast_plant_wd_q1567420"
       },
       "oe:observationCount": 47,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -40730,15 +40895,28 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
-      "skos:broadMatch": [
+      "oe:materialConcept": [
         {
-          "@id": "http://www.wikidata.org/entity/Q1426327"
+          "@id": "htc:0300"
         },
         {
-          "@id": "http://vocab.getty.edu/aat/300014069"
+          "@id": "htc:1979"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1567420"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
+        },
+        {
+          "@id": "http://www.wikidata.org/entity/Q1426327"
+        }
+      ]
     },
     {
       "@id": "htc:0706",
@@ -40973,7 +41151,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_bast_plant_wd_q11472"
+        "@id": "htc:sub_bast_plant_wd_q1567420"
       },
       "oe:observationCount": 46,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -40991,18 +41169,28 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
-      "skos:broadMatch": [
+      "oe:materialConcept": [
         {
-          "@id": "http://www.wikidata.org/entity/Q11472"
+          "@id": "htc:0300"
         },
         {
-          "@id": "http://zbw.eu/stw/descriptor/14802-1"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300014109"
+          "@id": "htc:1979"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1567420"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
+        },
+        {
+          "@id": "http://www.wikidata.org/entity/Q1426327"
+        }
+      ]
     },
     {
       "@id": "htc:0712",
@@ -41620,12 +41808,28 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        },
+        {
+          "@id": "htc:0296"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q1587699"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q677"
+        },
+        {
+          "@id": "http://www.wikidata.org/entity/Q753"
+        }
+      ]
     },
     {
       "@id": "htc:0727",
@@ -42349,6 +42553,11 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "skos:related": [
+        {
+          "@id": "htc:0367"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q513720"
@@ -42811,6 +43020,16 @@
           "@id": "oe:series_kew_cust_5"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q287"
@@ -42825,7 +43044,12 @@
           "@id": "http://vocab.getty.edu/aat/300011914"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q287"
+        }
+      ]
     },
     {
       "@id": "htc:0752",
@@ -43292,12 +43516,12 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:broadMatch": [
@@ -44723,12 +44947,12 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:broadMatch": [
@@ -45831,7 +46055,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_woven_fabr_wd_q28823"
+        "@id": "htc:sub_woven_fabr_wd_q725457"
       },
       "oe:observationCount": 36,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -45861,16 +46085,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "http://www.wikidata.org/entity/Q28823"
+          "@id": "http://www.wikidata.org/entity/Q725457"
         },
         {
-          "@id": "http://zbw.eu/stw/descriptor/14846-2"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300231565"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300014063"
+          "@id": "http://vocab.getty.edu/aat/300014087"
         }
       ],
       "oe:mappingAuthority": "wikidata_slim:2026-11-09",
@@ -47092,10 +47310,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_bast_plant_fibres"
+        "@id": "htc:sub_bast_plant_wd_q1567420"
       },
       "oe:observationCount": 34,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Other Materials and Pulp of Rags and of Wood for Making Paper",
       "oe:processingState": "unspecified",
       "oe:ghostAcresDomain": "fibres_textiles",
@@ -47108,6 +47326,27 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1567420"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q287"
         }
       ]
     },
@@ -48340,10 +48579,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_woven_fabrics_apparel"
+        "@id": "htc:sub_woven_fabr_wd_q49007"
       },
       "oe:observationCount": 32,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Woollen Yarn For Weaving",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -48368,6 +48607,18 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -48386,10 +48637,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_woven_fabrics_apparel"
+        "@id": "htc:sub_woven_fabr_wd_q49007"
       },
       "oe:observationCount": 32,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Woollen Yarn for Weaving Mixed or not with Silk",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -48414,6 +48665,18 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -48432,10 +48695,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 32,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Jute Yarn",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -48449,7 +48712,19 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:0883",
@@ -48868,10 +49143,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 31,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Cotton Twist and Yarn",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -48896,6 +49171,18 @@
           "@id": "htc:0300"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q11457"
@@ -49235,12 +49522,12 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:broadMatch": [
@@ -49592,7 +49879,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_bast_plant_wd_q11457"
+        "@id": "htc:sub_bast_plant_wd_q1567420"
       },
       "oe:observationCount": 30,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -49610,21 +49897,22 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
-      "skos:broadMatch": [
+      "oe:materialConcept": [
         {
-          "@id": "http://www.wikidata.org/entity/Q11457"
-        },
-        {
-          "@id": "http://aims.fao.org/aos/agrovoc/c_1926"
-        },
-        {
-          "@id": "http://zbw.eu/stw/descriptor/14055-5"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300183670"
+          "@id": "htc:0300"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1567420"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
+        }
+      ]
     },
     {
       "@id": "htc:0910",
@@ -49887,10 +50175,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_woven_fabrics_apparel"
+        "@id": "htc:sub_woven_fabr_wd_q49007"
       },
       "oe:observationCount": 30,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Woollen Yarn For Fancy Purposes",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -49915,6 +50203,18 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -51572,10 +51872,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_woven_fabrics_apparel"
+        "@id": "htc:sub_woven_fabr_wd_q1567420"
       },
       "oe:observationCount": 28,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Rags Woollen for use as wool",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -51600,6 +51900,12 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1567420"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -54030,10 +54336,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_woven_fabrics_apparel"
+        "@id": "htc:sub_woven_fabr_wd_q49007"
       },
       "oe:observationCount": 25,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Woollen Yarn For other Purposes including Berlin Wool and Zephyr Yarn",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -54058,6 +54364,18 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -54707,7 +55025,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_bast_plant_wd_q1426327"
+        "@id": "htc:sub_bast_plant_wd_q1567420"
       },
       "oe:observationCount": 24,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -54725,56 +55043,22 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
-      "skos:related": [
+      "oe:materialConcept": [
         {
-          "@id": "htc:0265"
-        },
-        {
-          "@id": "htc:0370"
-        },
-        {
-          "@id": "htc:0579"
-        },
-        {
-          "@id": "htc:0762"
-        },
-        {
-          "@id": "htc:0795"
-        },
-        {
-          "@id": "htc:0901"
-        },
-        {
-          "@id": "htc:1278"
-        },
-        {
-          "@id": "htc:1393"
-        },
-        {
-          "@id": "htc:1501"
-        },
-        {
-          "@id": "htc:1647"
-        },
-        {
-          "@id": "htc:1663"
-        },
-        {
-          "@id": "htc:1911"
-        },
-        {
-          "@id": "htc:2056"
+          "@id": "htc:1979"
         }
       ],
       "skos:broadMatch": [
         {
-          "@id": "http://www.wikidata.org/entity/Q1426327"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300014069"
+          "@id": "http://www.wikidata.org/entity/Q1567420"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1426327"
+        }
+      ]
     },
     {
       "@id": "htc:1026",
@@ -55622,7 +55906,12 @@
           "@id": "http://vocab.getty.edu/aat/300183670"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:sourceTaxon": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q719312"
+        }
+      ]
     },
     {
       "@id": "htc:1046",
@@ -56658,16 +56947,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_customs_residuals"
+        "@id": "htc:sub_woven_fabr_wd_q18281"
       },
       "oe:observationCount": 22,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Embroidery and Needlework Of",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "other",
-      "oe:landBasis": "unclassified",
-      "oe:theodoridisBucket": "unclassified",
-      "oe:sitcCode": "oe:sitcUnassigned",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1856,
       "oe:lastAttested": 1866,
@@ -56675,7 +56964,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q18281"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300053653"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1070",
@@ -56803,10 +57101,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_woven_fabr_hd_woollen_yarn"
+        "@id": "htc:sub_woven_fabr_wd_q49007"
       },
       "oe:observationCount": 22,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Woollen Yarn",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -56831,6 +57129,18 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -57552,22 +57862,46 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_animal_fibres"
+        "@id": "htc:sub_woven_fabr_wd_q231250"
       },
       "oe:observationCount": 21,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Lace and Articles thereof Silk",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "fibres_textiles",
-      "oe:landBasis": "terrestrial_pasture",
-      "oe:theodoridisBucket": "raw_materials",
-      "oe:sitcCode": "SITC4_26_Textile_Fibres",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1856,
       "oe:lastAttested": 1906,
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q231250"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132861"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q37681"
         }
       ]
     },
@@ -58353,16 +58687,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_customs_residuals"
+        "@id": "htc:sub_woven_fabr_wd_q231250"
       },
       "oe:observationCount": 20,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Lace and Articles thereof Other Materials",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "other",
-      "oe:landBasis": "unclassified",
-      "oe:theodoridisBucket": "unclassified",
-      "oe:sitcCode": "oe:sitcUnassigned",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1856,
       "oe:lastAttested": 1906,
@@ -58370,7 +58704,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q231250"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132861"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1111",
@@ -59778,16 +60121,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_bast_plant_wd_q11457"
+        "@id": "htc:sub_woven_fabr_wd_q193017"
       },
       "oe:observationCount": 19,
       "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Cotton Stockings and Socks",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "fibres_textiles",
-      "oe:landBasis": "terrestrial_crop",
-      "oe:theodoridisBucket": "raw_materials",
-      "oe:sitcCode": "SITC4_26_Textile_Fibres",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1856,
       "oe:lastAttested": 1881,
@@ -59796,21 +60139,30 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
-      "skos:broadMatch": [
+      "oe:materialConcept": [
         {
-          "@id": "http://www.wikidata.org/entity/Q11457"
-        },
-        {
-          "@id": "http://aims.fao.org/aos/agrovoc/c_1926"
-        },
-        {
-          "@id": "http://zbw.eu/stw/descriptor/14055-5"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300183670"
+          "@id": "htc:0300"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q193017"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300046088"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
+        }
+      ]
     },
     {
       "@id": "htc:1145",
@@ -60292,7 +60644,7 @@
         "@id": "htc:grp_bast_plant_fibres"
       },
       "oe:observationCount": 19,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_lexical",
       "oe:substanceHead": "Tow",
       "oe:processingState": "unspecified",
       "oe:ghostAcresDomain": "fibres_textiles",
@@ -60318,7 +60670,13 @@
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
         }
-      ]
+      ],
+      "skos:exactMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1143410"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1157",
@@ -60796,10 +61154,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_woven_fabrics_apparel"
+        "@id": "htc:sub_woven_fabr_wd_q1567420"
       },
       "oe:observationCount": 19,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Woollen Rags Not Pulled",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -60824,6 +61182,12 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1567420"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -62767,16 +63131,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_metal_machinery_hardware"
+        "@id": "htc:sub_woven_fabr_wd_q231250"
       },
       "oe:observationCount": 17,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Lace Machine or Imitation Lace",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
       "oe:landBasis": "industrial_manufactured",
       "oe:theodoridisBucket": "manufactured_articles",
-      "oe:sitcCode": "SITC4_69_7_Metalwares_and_Machinery",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1861,
       "oe:lastAttested": 1881,
@@ -62784,7 +63148,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q231250"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132861"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1216",
@@ -62894,10 +63267,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 17,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Jute Yarn and Waste of Jute",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -62911,7 +63284,19 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1219",
@@ -63598,16 +63983,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_bast_plant_fibres"
+        "@id": "htc:sub_woven_fabr_wd_q231250"
       },
       "oe:observationCount": 16,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Pillow Lace of Thread or Cotton",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "fibres_textiles",
-      "oe:landBasis": "terrestrial_crop",
-      "oe:theodoridisBucket": "raw_materials",
-      "oe:sitcCode": "SITC4_26_Textile_Fibres",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1834,
       "oe:lastAttested": 1866,
@@ -63617,6 +64002,30 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q231250"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132861"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
         }
       ]
     },
@@ -65389,12 +65798,12 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:broadMatch": [
@@ -66031,22 +66440,46 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_bast_plant_fibres"
+        "@id": "htc:sub_woven_fabr_wd_q231250"
       },
       "oe:observationCount": 15,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Lace and Articles thereof Cotton",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "fibres_textiles",
-      "oe:landBasis": "terrestrial_crop",
-      "oe:theodoridisBucket": "raw_materials",
-      "oe:sitcCode": "SITC4_26_Textile_Fibres",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1896,
       "oe:lastAttested": 1906,
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q231250"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132861"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
         }
       ]
     },
@@ -68979,7 +69412,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_bast_plant_wd_q11472"
+        "@id": "htc:grp_bast_plant_fibres"
       },
       "oe:observationCount": 13,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -69099,10 +69532,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 13,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Silk Spun Silk Yarn dyed or not dyed",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -69127,6 +69560,18 @@
           "@id": "htc:0263"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q37681"
@@ -70363,10 +70808,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_yarns_cord_hd_linen_yarn"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 12,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Linen Yarn",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -70395,14 +70840,26 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q1426327"
@@ -70421,16 +70878,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_customs_residuals"
+        "@id": "htc:sub_woven_fabr_wd_q231250"
       },
       "oe:observationCount": 12,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Lace Pillow Lace",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "other",
-      "oe:landBasis": "unclassified",
-      "oe:theodoridisBucket": "unclassified",
-      "oe:sitcCode": "oe:sitcUnassigned",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1871,
       "oe:lastAttested": 1881,
@@ -70438,7 +70895,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q231250"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132861"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1395",
@@ -70452,10 +70918,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 12,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Worsted Yarn Combed",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -70469,7 +70935,19 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1396",
@@ -70483,16 +70961,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_customs_residuals"
+        "@id": "htc:sub_woven_fabr_wd_q231250"
       },
       "oe:observationCount": 12,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Lace and Articles thereof",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "other",
-      "oe:landBasis": "unclassified",
-      "oe:theodoridisBucket": "unclassified",
-      "oe:sitcCode": "oe:sitcUnassigned",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1886,
       "oe:lastAttested": 1891,
@@ -70500,7 +70978,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q231250"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132861"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1397",
@@ -74259,22 +74746,46 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_customs_residuals"
+        "@id": "htc:sub_woven_fabr_wd_q18281"
       },
       "oe:observationCount": 10,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Embroidery and Needlework Curtains Embroidered on Muslin or Net",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "other",
-      "oe:landBasis": "unclassified",
-      "oe:theodoridisBucket": "unclassified",
-      "oe:sitcCode": "oe:sitcUnassigned",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1856,
       "oe:lastAttested": 1866,
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q18281"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300053653"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
         }
       ]
     },
@@ -74770,12 +75281,12 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "oe:madeOfMaterial": [
@@ -75253,10 +75764,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 10,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Hemp Yarn",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -75270,7 +75781,19 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1515",
@@ -76150,22 +76673,47 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_bast_plant_fibres"
+        "@id": "htc:grp_woven_fabrics_apparel"
       },
       "oe:observationCount": 9,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Stays or Corsets of Linen or Cotton",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "fibres_textiles",
-      "oe:landBasis": "terrestrial_crop",
-      "oe:theodoridisBucket": "raw_materials",
-      "oe:sitcCode": "SITC4_26_Textile_Fibres",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1856,
       "oe:lastAttested": 1861,
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        },
+        {
+          "@id": "htc:1979"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q180225"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300210582"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
+        },
+        {
+          "@id": "http://www.wikidata.org/entity/Q1426327"
         }
       ]
     },
@@ -76456,10 +77004,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_bast_plant_fibres"
+        "@id": "htc:sub_bast_plant_wd_q1567420"
       },
       "oe:observationCount": 9,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Pulp and Rags and Wood for making Paper",
       "oe:processingState": "unspecified",
       "oe:ghostAcresDomain": "fibres_textiles",
@@ -76472,6 +77020,27 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1567420"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q287"
         }
       ]
     },
@@ -77939,10 +78508,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_woven_fabr_hd_woollen_yarn"
+        "@id": "htc:sub_woven_fabr_wd_q49007"
       },
       "oe:observationCount": 8,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Woollen Yarn",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -77970,6 +78539,18 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -78495,22 +79076,46 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_animal_fibres"
+        "@id": "htc:sub_woven_fabr_wd_q18281"
       },
       "oe:observationCount": 8,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Embroidery and Needlework embroidery on silk not being silk net",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "fibres_textiles",
-      "oe:landBasis": "terrestrial_pasture",
-      "oe:theodoridisBucket": "raw_materials",
-      "oe:sitcCode": "SITC4_26_Textile_Fibres",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1856,
       "oe:lastAttested": 1856,
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q18281"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300053653"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q37681"
         }
       ]
     },
@@ -79598,6 +80203,14 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        },
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -79612,7 +80225,15 @@
           "@id": "http://vocab.getty.edu/aat/300014063"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
+        },
+        {
+          "@id": "http://www.wikidata.org/entity/Q42329"
+        }
+      ]
     },
     {
       "@id": "htc:1625",
@@ -80008,10 +80629,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_woven_fabrics_apparel"
+        "@id": "htc:sub_woven_fabr_wd_q1567420"
       },
       "oe:observationCount": 8,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Woollen Rags Pulled",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -80036,6 +80657,12 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1567420"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -80606,12 +81233,12 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:broadMatch": [
@@ -80874,12 +81501,27 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q1567420"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q42329"
+        }
+      ]
     },
     {
       "@id": "htc:1654",
@@ -81073,10 +81715,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_bast_plant_fibres"
+        "@id": "htc:sub_bast_plant_wd_q1567420"
       },
       "oe:observationCount": 7,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Pulp of Rags and Wood",
       "oe:processingState": "unspecified",
       "oe:ghostAcresDomain": "fibres_textiles",
@@ -81089,6 +81731,27 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1567420"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q287"
         }
       ]
     },
@@ -81302,12 +81965,12 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:broadMatch": [
@@ -81374,10 +82037,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_woven_fabrics_apparel"
+        "@id": "htc:sub_woven_fabr_wd_q49007"
       },
       "oe:observationCount": 7,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Woollen Yarn Carded",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -81402,6 +82065,18 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -83118,10 +83793,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 6,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Yarn Mohair",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -83135,7 +83810,19 @@
         {
           "@id": "oe:series_kew_cust_5"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1708",
@@ -83898,10 +84585,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 6,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Cotton Yarn, and Waste of",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -83926,6 +84613,18 @@
           "@id": "htc:0300"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q11457"
@@ -84628,6 +85327,11 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "skos:related": [
+        {
+          "@id": "htc:0367"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q811663"
@@ -85318,16 +86022,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_fertilizers_animal_materials"
+        "@id": "htc:sub_woven_fabr_wd_q231250"
       },
       "oe:observationCount": 5,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Lace Bone",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "drugs_botanicals_chemicals",
-      "oe:landBasis": "terrestrial_pasture",
-      "oe:theodoridisBucket": "raw_materials",
-      "oe:sitcCode": "SITC4_29_Crude_Animal_Vegetable_Materials",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1800,
       "oe:lastAttested": 1800,
@@ -85335,7 +86039,16 @@
         {
           "@id": "oe:series_kew_cust_5"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q231250"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132861"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1761",
@@ -86353,22 +87066,47 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_animal_fibres"
+        "@id": "htc:sub_woven_fabr_wd_q231250"
       },
       "oe:observationCount": 5,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Embroidery and Needlework Silk and Cotton Net being Imitation Lace",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "fibres_textiles",
-      "oe:landBasis": "terrestrial_pasture",
-      "oe:theodoridisBucket": "raw_materials",
-      "oe:sitcCode": "SITC4_26_Textile_Fibres",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1856,
       "oe:lastAttested": 1856,
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        },
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q231250"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132861"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q37681"
+        },
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
         }
       ]
     },
@@ -86384,16 +87122,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_animal_fibres"
+        "@id": "htc:sub_woven_fabr_wd_q231250"
       },
       "oe:observationCount": 5,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Lace Mohair or Worsted",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "fibres_textiles",
-      "oe:landBasis": "terrestrial_pasture",
-      "oe:theodoridisBucket": "raw_materials",
-      "oe:sitcCode": "SITC4_26_Textile_Fibres",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1856,
       "oe:lastAttested": 1861,
@@ -86401,7 +87139,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q231250"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132861"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1785",
@@ -87570,6 +88317,11 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "skos:related": [
+        {
+          "@id": "htc:0367"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q811663"
@@ -87822,10 +88574,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 5,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Coir Yarn",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -87839,7 +88591,19 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1820",
@@ -89352,22 +90116,46 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_animal_fibres"
+        "@id": "htc:sub_woven_fabr_wd_q231250"
       },
       "oe:observationCount": 4,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Pillow Lace of Silk",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "fibres_textiles",
-      "oe:landBasis": "terrestrial_pasture",
-      "oe:theodoridisBucket": "raw_materials",
-      "oe:sitcCode": "SITC4_26_Textile_Fibres",
+      "oe:processingState": "manufactured",
+      "oe:ghostAcresDomain": "manufactured_goods",
+      "oe:landBasis": "industrial_manufactured",
+      "oe:theodoridisBucket": "manufactured_articles",
+      "oe:sitcCode": "SITC4_65_84_85_Textiles_Apparel_Footwear",
       "oe:isAggregate": false,
       "oe:firstAttested": 1866,
       "oe:lastAttested": 1866,
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q231250"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132861"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q37681"
         }
       ]
     },
@@ -90852,7 +91640,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_woven_fabr_wd_q28823"
+        "@id": "htc:grp_woven_fabrics_apparel"
       },
       "oe:observationCount": 3,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -90870,21 +91658,30 @@
           "@id": "oe:series_kew_cust_5"
         }
       ],
-      "skos:broadMatch": [
+      "oe:materialConcept": [
         {
-          "@id": "http://www.wikidata.org/entity/Q28823"
-        },
-        {
-          "@id": "http://zbw.eu/stw/descriptor/14846-2"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300231565"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300014063"
+          "@id": "htc:0300"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1132695"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300132872"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
+        }
+      ]
     },
     {
       "@id": "htc:1897",
@@ -90898,7 +91695,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_woven_fabr_wd_q28823"
+        "@id": "htc:sub_woven_fabr_wd_q725457"
       },
       "oe:observationCount": 3,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -90916,21 +91713,30 @@
           "@id": "oe:series_kew_cust_5"
         }
       ],
-      "skos:broadMatch": [
+      "oe:materialConcept": [
         {
-          "@id": "http://www.wikidata.org/entity/Q28823"
-        },
-        {
-          "@id": "http://zbw.eu/stw/descriptor/14846-2"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300231565"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300014063"
+          "@id": "htc:0300"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q725457"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014087"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
+        }
+      ]
     },
     {
       "@id": "htc:1898",
@@ -91516,12 +92322,12 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:broadMatch": [
@@ -92740,6 +93546,16 @@
           "@id": "oe:series_kew_cust_5"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -92754,7 +93570,12 @@
           "@id": "http://vocab.getty.edu/aat/300014063"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:madeOfMaterial": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q11457"
+        }
+      ]
     },
     {
       "@id": "htc:1942",
@@ -92971,10 +93792,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_woven_fabrics_apparel"
+        "@id": "htc:sub_woven_fabr_wd_q193017"
       },
       "oe:observationCount": 2,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Stockings Woollen and Worsted",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -92999,6 +93820,15 @@
           "@id": "htc:0021"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q193017"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300046088"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -94225,7 +95055,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_bast_plant_wd_q1426327"
+        "@id": "htc:grp_bast_plant_fibres"
       },
       "oe:observationCount": 2,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -94241,6 +95071,47 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0265"
+        },
+        {
+          "@id": "htc:0370"
+        },
+        {
+          "@id": "htc:0579"
+        },
+        {
+          "@id": "htc:0762"
+        },
+        {
+          "@id": "htc:0795"
+        },
+        {
+          "@id": "htc:0901"
+        },
+        {
+          "@id": "htc:1278"
+        },
+        {
+          "@id": "htc:1393"
+        },
+        {
+          "@id": "htc:1501"
+        },
+        {
+          "@id": "htc:1647"
+        },
+        {
+          "@id": "htc:1663"
+        },
+        {
+          "@id": "htc:1911"
+        },
+        {
+          "@id": "htc:2056"
         }
       ],
       "skos:broadMatch": [
@@ -97202,10 +98073,10 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_yarns_cordage"
+        "@id": "htc:sub_yarns_cord_wd_q49007"
       },
       "oe:observationCount": 1,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Linen Yarn Waste",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "manufactured_goods",
@@ -97222,14 +98093,26 @@
       ],
       "oe:materialConcept": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
       "skos:related": [
         {
-          "@id": "htc:1025"
+          "@id": "htc:1979"
         }
       ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q49007"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14885-6"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300014252"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q1426327"

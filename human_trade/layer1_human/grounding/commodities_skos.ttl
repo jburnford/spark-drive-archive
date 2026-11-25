@@ -399,16 +399,6 @@ htc:sub_bast_plant_wd_q11457 a skos:Concept ;
     skos:prefLabel "Cotton (substance group)"@en ;
     skos:broader htc:grp_bast_plant_fibres .
 
-htc:sub_bast_plant_wd_q11472 a skos:Concept ;
-    skos:inScheme htc:scheme ;
-    skos:prefLabel "Paper (substance group)"@en ;
-    skos:broader htc:grp_bast_plant_fibres .
-
-htc:sub_bast_plant_wd_q1426327 a skos:Concept ;
-    skos:inScheme htc:scheme ;
-    skos:prefLabel "Linen (substance group)"@en ;
-    skos:broader htc:grp_bast_plant_fibres .
-
 htc:sub_bast_plant_wd_q1567420 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:prefLabel "Rag (substance group)"@en ;
@@ -671,7 +661,7 @@ htc:sub_glass_cera_wd_q11469 a skos:Concept ;
 
 htc:sub_glass_cera_wd_q11472 a skos:Concept ;
     skos:inScheme htc:scheme ;
-    skos:prefLabel "Paper — Paper, Books, Glass, Ceramics, Woodwares & Sundries (group)"@en ;
+    skos:prefLabel "Paper (substance group)"@en ;
     skos:broader htc:grp_glass_ceramics_paper_woodware .
 
 htc:sub_glass_cera_wd_q130693 a skos:Concept ;
@@ -1114,9 +1104,9 @@ htc:sub_wood_pulp__wd_q49444 a skos:Concept ;
     skos:prefLabel "Cork (substance group)"@en ;
     skos:broader htc:grp_wood_pulp_fuel .
 
-htc:sub_woven_fabr_hd_woollen_yarn a skos:Concept ;
+htc:sub_woven_fabr_wd_q1567420 a skos:Concept ;
     skos:inScheme htc:scheme ;
-    skos:prefLabel "Woollen Yarn (substance group)"@en ;
+    skos:prefLabel "Rag — Woven Textiles, Apparel & Footwear (group)"@en ;
     skos:broader htc:grp_woven_fabrics_apparel .
 
 htc:sub_woven_fabr_wd_q169031 a skos:Concept ;
@@ -1124,15 +1114,35 @@ htc:sub_woven_fabr_wd_q169031 a skos:Concept ;
     skos:prefLabel "Glove (substance group)"@en ;
     skos:broader htc:grp_woven_fabrics_apparel .
 
+htc:sub_woven_fabr_wd_q18281 a skos:Concept ;
+    skos:inScheme htc:scheme ;
+    skos:prefLabel "Embroidery (substance group)"@en ;
+    skos:broader htc:grp_woven_fabrics_apparel .
+
+htc:sub_woven_fabr_wd_q193017 a skos:Concept ;
+    skos:inScheme htc:scheme ;
+    skos:prefLabel "Stocking (substance group)"@en ;
+    skos:broader htc:grp_woven_fabrics_apparel .
+
+htc:sub_woven_fabr_wd_q231250 a skos:Concept ;
+    skos:inScheme htc:scheme ;
+    skos:prefLabel "Lace (substance group)"@en ;
+    skos:broader htc:grp_woven_fabrics_apparel .
+
 htc:sub_woven_fabr_wd_q28823 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:prefLabel "Textile (substance group)"@en ;
     skos:broader htc:grp_woven_fabrics_apparel .
 
-htc:sub_yarns_cord_hd_linen_yarn a skos:Concept ;
+htc:sub_woven_fabr_wd_q49007 a skos:Concept ;
     skos:inScheme htc:scheme ;
-    skos:prefLabel "Linen Yarn (substance group)"@en ;
-    skos:broader htc:grp_yarns_cordage .
+    skos:prefLabel "Yarn (substance group)"@en ;
+    skos:broader htc:grp_woven_fabrics_apparel .
+
+htc:sub_woven_fabr_wd_q725457 a skos:Concept ;
+    skos:inScheme htc:scheme ;
+    skos:prefLabel "Muslin (substance group)"@en ;
+    skos:broader htc:grp_woven_fabrics_apparel .
 
 htc:sub_yarns_cord_wd_q3071757 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -1142,6 +1152,11 @@ htc:sub_yarns_cord_wd_q3071757 a skos:Concept ;
 htc:sub_yarns_cord_wd_q31029 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:prefLabel "Rope (substance group)"@en ;
+    skos:broader htc:grp_yarns_cordage .
+
+htc:sub_yarns_cord_wd_q49007 a skos:Concept ;
+    skos:inScheme htc:scheme ;
+    skos:prefLabel "Yarn — Yarns, Cordage, Rope & Twine (group)"@en ;
     skos:broader htc:grp_yarns_cordage .
 
 htc1866:animal a skos:Concept ;
@@ -1829,7 +1844,7 @@ htc:0021 a skos:Concept ;
     oe:firstAttested "1839"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
-    skos:related htc:0117, htc:0173, htc:0371, htc:0664, htc:0694, htc:0710, htc:0722, htc:0850, htc:0880, htc:0881, htc:0916, htc:0955, htc:0982, htc:1008, htc:1047, htc:1048, htc:1073, htc:1075, htc:1096, htc:1147, htc:1151, htc:1152, htc:1169, htc:1185, htc:1189, htc:1242, htc:1289, htc:1324, htc:1357, htc:1582, htc:1634, htc:1665, htc:1670, htc:1853, htc:1947, htc:1975 ;
+    skos:related htc:0117, htc:0173, htc:0371, htc:0473, htc:0664, htc:0694, htc:0710, htc:0722, htc:0850, htc:0880, htc:0881, htc:0916, htc:0955, htc:0982, htc:1008, htc:1047, htc:1048, htc:1073, htc:1075, htc:1096, htc:1147, htc:1151, htc:1152, htc:1169, htc:1185, htc:1189, htc:1242, htc:1289, htc:1324, htc:1357, htc:1582, htc:1634, htc:1653, htc:1665, htc:1670, htc:1853, htc:1947, htc:1975 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:closeMatch stw:14130-3, aat:300014074 ;
     skos:exactMatch wd:Q42329 .
@@ -4451,7 +4466,8 @@ htc:0141 a skos:Concept ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11457, agrovoc:c_1926, stw:14055-5, aat:300183670 .
+    skos:broadMatch wd:Q11457, agrovoc:c_1926, stw:14055-5, aat:300183670 ;
+    oe:sourceTaxon wd:Q719312 .
 
 htc:0142 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -5951,7 +5967,7 @@ htc:0211 a skos:Concept ;
     oe:firstAttested "1837"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
-    skos:related htc:0102, htc:0108, htc:0155, htc:0169, htc:0373, htc:0426, htc:0607, htc:0647, htc:0839, htc:0937 ;
+    skos:related htc:0102, htc:0108, htc:0155, htc:0169, htc:0373, htc:0426, htc:0607, htc:0647, htc:0751, htc:0839, htc:0851, htc:0937, htc:1544, htc:1658 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q287, agrovoc:c_8421, stw:14150-4, aat:300011914 .
 
@@ -7026,7 +7042,7 @@ htc:0263 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
-    skos:related htc:0465, htc:0581, htc:0622, htc:0641, htc:0692, htc:0729, htc:0764, htc:0796, htc:0948, htc:0990, htc:0996, htc:1007, htc:1094, htc:1179, htc:1273, htc:1279, htc:1284, htc:1309, htc:1316, htc:1341, htc:1364, htc:1384, htc:1434, htc:1435, htc:1535, htc:1601, htc:1719, htc:1720, htc:1788, htc:1796, htc:1848, htc:1849 ;
+    skos:related htc:0465, htc:0581, htc:0622, htc:0641, htc:0692, htc:0729, htc:0764, htc:0796, htc:0948, htc:0990, htc:0996, htc:1007, htc:1089, htc:1094, htc:1179, htc:1273, htc:1279, htc:1284, htc:1309, htc:1316, htc:1341, htc:1364, htc:1384, htc:1434, htc:1435, htc:1535, htc:1596, htc:1601, htc:1719, htc:1720, htc:1788, htc:1796, htc:1848, htc:1849, htc:1856 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q37681, stw:14125-3, aat:300014072 .
 
@@ -7070,8 +7086,8 @@ htc:0265 a skos:Concept ;
     oe:firstAttested "1821"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_kew_cust_4, oe:series_csp_canadian_trade_and_navigation ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -7793,7 +7809,7 @@ htc:0300 a skos:Concept ;
     oe:firstAttested "1850"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
-    skos:related htc:0308, htc:0159, htc:0480, htc:0494, htc:0505, htc:0628, htc:0654, htc:0740, htc:0810, htc:0820, htc:0862, htc:0893, htc:0918, htc:0992, htc:1003, htc:1041, htc:1122, htc:1277, htc:1512, htc:1671, htc:1715, htc:1716, htc:1725, htc:1782, htc:1846, htc:1910 ;
+    skos:related htc:0367, htc:0308, htc:0159, htc:0480, htc:0494, htc:0505, htc:0628, htc:0654, htc:0740, htc:0810, htc:0820, htc:0862, htc:0893, htc:0918, htc:0992, htc:1003, htc:1041, htc:1122, htc:1144, htc:1236, htc:1277, htc:1292, htc:1489, htc:1512, htc:1671, htc:1715, htc:1716, htc:1725, htc:1782, htc:1846, htc:1896, htc:1897, htc:1910, htc:1941 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:closeMatch agrovoc:c_1926, stw:14055-5, aat:300183670 ;
     skos:exactMatch wd:Q11457 ;
@@ -7987,7 +8003,8 @@ htc:0309 a skos:Concept ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11457, agrovoc:c_1926, stw:14055-5, aat:300183670 .
+    skos:broadMatch wd:Q11457, agrovoc:c_1926, stw:14055-5, aat:300183670 ;
+    oe:sourceTaxon wd:Q719312 .
 
 htc:0310 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -9170,6 +9187,7 @@ htc:0367 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    skos:related htc:0300, htc:1743, htc:1813, htc:0741 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:closeMatch agrovoc:c_25473 ;
     skos:exactMatch wd:Q17104079 ;
@@ -9223,9 +9241,9 @@ htc:0370 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0370" ;
     skos:prefLabel "Linen Yarn"@en ;
-    skos:broader htc:sub_yarns_cord_hd_linen_yarn ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "102"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Linen Yarn" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -9238,8 +9256,10 @@ htc:0370 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_hcpp_other, oe:series_kew_cust_5 ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q1426327 .
 
 htc:0371 a skos:Concept ;
@@ -9458,19 +9478,21 @@ htc:0381 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0381" ;
     skos:prefLabel "Embroidery and Needlework"@en ;
-    skos:broader htc:grp_customs_residuals ;
+    skos:broader htc:sub_woven_fabr_wd_q18281 ;
     oe:observationCount "98"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Embroidery and Needlework" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "other" ;
-    oe:landBasis "unclassified" ;
-    oe:theodoridisBucket "unclassified" ;
-    oe:sitcCode "oe:sitcUnassigned" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1827"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q18281, aat:300053653 .
 
 htc:0382 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -11353,8 +11375,11 @@ htc:0473 a skos:Concept ;
     oe:firstAttested "1866"^^xsd:integer ;
     oe:lastAttested "1896"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q1567420 .
+    skos:broadMatch wd:Q1567420 ;
+    oe:madeOfMaterial wd:Q42329 .
 
 htc:0474 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -11768,9 +11793,9 @@ htc:0494 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0494" ;
     skos:prefLabel "Cotton Yarn"@en ;
-    skos:broader htc:grp_yarns_cordage ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "72"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Cotton Yarn" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -11785,6 +11810,8 @@ htc:0494 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_5 ;
     oe:materialConcept htc:0300 ;
     skos:related htc:0300 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q11457 .
 
 htc:0495 a skos:Concept ;
@@ -12896,7 +12923,7 @@ htc:0550 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0550" ;
     skos:prefLabel "Paper Making Materials Rags and Other Materials"@en ;
-    skos:broader htc:sub_bast_plant_wd_q11472 ;
+    skos:broader htc:sub_bast_plant_wd_q1567420 ;
     oe:observationCount "65"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Paper Making Materials Rags and Other Materials" ;
@@ -12910,7 +12937,7 @@ htc:0550 a skos:Concept ;
     oe:lastAttested "1900"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4, oe:series_kew_cust_5 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11472, stw:14802-1, aat:300014109 .
+    skos:broadMatch wd:Q1567420 .
 
 htc:0551 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -13496,8 +13523,8 @@ htc:0579 a skos:Concept ;
     oe:firstAttested "1821"^^xsd:integer ;
     oe:lastAttested "1891"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_trade_and_navigation, oe:series_kew_cust_4, oe:series_csp_canadian_exports_blankseries ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -15224,9 +15251,9 @@ htc:0664 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0664" ;
     skos:prefLabel "Rags Woollen"@en ;
-    skos:broader htc:grp_woven_fabrics_apparel ;
+    skos:broader htc:sub_woven_fabr_wd_q1567420 ;
     oe:observationCount "51"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Rags Woollen" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -15239,6 +15266,8 @@ htc:0664 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1567420 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0665 a skos:Concept ;
@@ -16066,7 +16095,7 @@ htc:0705 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0705" ;
     skos:prefLabel "Linen and Cotton Rags"@en ;
-    skos:broader htc:sub_bast_plant_wd_q1426327 ;
+    skos:broader htc:sub_bast_plant_wd_q1567420 ;
     oe:observationCount "47"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Linen and Cotton Rags" ;
@@ -16079,8 +16108,10 @@ htc:0705 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300, htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q1426327, aat:300014069 .
+    skos:broadMatch wd:Q1567420 ;
+    oe:madeOfMaterial wd:Q11457, wd:Q1426327 .
 
 htc:0706 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -16187,7 +16218,7 @@ htc:0711 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0711" ;
     skos:prefLabel "Paper Making Materials Linen and Cotton Rags"@en ;
-    skos:broader htc:sub_bast_plant_wd_q11472 ;
+    skos:broader htc:sub_bast_plant_wd_q1567420 ;
     oe:observationCount "46"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Paper Making Materials Linen and Cotton Rags" ;
@@ -16200,8 +16231,10 @@ htc:0711 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300, htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11472, stw:14802-1, aat:300014109 .
+    skos:broadMatch wd:Q1567420 ;
+    oe:madeOfMaterial wd:Q11457, wd:Q1426327 .
 
 htc:0712 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -16498,8 +16531,10 @@ htc:0726 a skos:Concept ;
     oe:firstAttested "1869"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305, htc:0296 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q1587699 .
+    skos:broadMatch wd:Q1587699 ;
+    oe:madeOfMaterial wd:Q677, wd:Q753 .
 
 htc:0727 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -16811,6 +16846,7 @@ htc:0741 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    skos:related htc:0367 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q513720 .
 
@@ -17019,8 +17055,11 @@ htc:0751 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1863"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_5 ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q287, agrovoc:c_8421, stw:14150-4, aat:300011914 .
+    skos:broadMatch wd:Q287, agrovoc:c_8421, stw:14150-4, aat:300011914 ;
+    oe:madeOfMaterial wd:Q287 .
 
 htc:0752 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -17237,8 +17276,8 @@ htc:0762 a skos:Concept ;
     oe:firstAttested "1830"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -17891,8 +17930,8 @@ htc:0795 a skos:Concept ;
     oe:firstAttested "1822"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4, oe:series_csp_canadian_exports_blankseries ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -18390,7 +18429,7 @@ htc:0820 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0820" ;
     skos:prefLabel "Cotton Manufactures Piece Goods of other Countries Muslins"@en ;
-    skos:broader htc:sub_woven_fabr_wd_q28823 ;
+    skos:broader htc:sub_woven_fabr_wd_q725457 ;
     oe:observationCount "36"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Cotton Manufactures Piece Goods of other Countries Muslins" ;
@@ -18406,7 +18445,7 @@ htc:0820 a skos:Concept ;
     oe:materialConcept htc:0300 ;
     skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
+    skos:broadMatch wd:Q725457, aat:300014087 ;
     oe:madeOfMaterial wd:Q11457 .
 
 htc:0821 a skos:Concept ;
@@ -18994,9 +19033,9 @@ htc:0851 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0851" ;
     skos:prefLabel "Other Materials and Pulp of Rags and of Wood for Making Paper"@en ;
-    skos:broader htc:grp_bast_plant_fibres ;
+    skos:broader htc:sub_bast_plant_wd_q1567420 ;
     oe:observationCount "34"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Other Materials and Pulp of Rags and of Wood for Making Paper" ;
     oe:processingState "unspecified" ;
     oe:ghostAcresDomain "fibres_textiles" ;
@@ -19006,7 +19045,12 @@ htc:0851 a skos:Concept ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1891"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1567420 ;
+    oe:madeOfMaterial wd:Q287 .
 
 htc:0852 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -19572,9 +19616,9 @@ htc:0880 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0880" ;
     skos:prefLabel "Woollen Yarn For Weaving"@en ;
-    skos:broader htc:grp_woven_fabrics_apparel ;
+    skos:broader htc:sub_woven_fabr_wd_q49007 ;
     oe:observationCount "32"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Woollen Yarn For Weaving" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -19587,15 +19631,17 @@ htc:0880 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0881 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0881" ;
     skos:prefLabel "Woollen Yarn for Weaving Mixed or not with Silk"@en ;
-    skos:broader htc:grp_woven_fabrics_apparel ;
+    skos:broader htc:sub_woven_fabr_wd_q49007 ;
     oe:observationCount "32"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Woollen Yarn for Weaving Mixed or not with Silk" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -19608,15 +19654,17 @@ htc:0881 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0882 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0882" ;
     skos:prefLabel "Jute Yarn"@en ;
-    skos:broader htc:grp_yarns_cordage ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "32"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Jute Yarn" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -19626,7 +19674,9 @@ htc:0882 a skos:Concept ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1866"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 .
 
 htc:0883 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -19824,9 +19874,9 @@ htc:0893 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0893" ;
     skos:prefLabel "Cotton Twist and Yarn"@en ;
-    skos:broader htc:grp_yarns_cordage ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "31"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Cotton Twist and Yarn" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -19839,6 +19889,8 @@ htc:0893 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0300 ;
     skos:related htc:0300 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q11457 .
 
 htc:0894 a skos:Concept ;
@@ -19994,8 +20046,8 @@ htc:0901 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_other, oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -20145,7 +20197,7 @@ htc:0909 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0909" ;
     skos:prefLabel "Cotton Rags"@en ;
-    skos:broader htc:sub_bast_plant_wd_q11457 ;
+    skos:broader htc:sub_bast_plant_wd_q1567420 ;
     oe:observationCount "30"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Cotton Rags" ;
@@ -20158,8 +20210,10 @@ htc:0909 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11457, agrovoc:c_1926, stw:14055-5, aat:300183670 .
+    skos:broadMatch wd:Q1567420 ;
+    oe:madeOfMaterial wd:Q11457 .
 
 htc:0910 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -20285,9 +20339,9 @@ htc:0916 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0916" ;
     skos:prefLabel "Woollen Yarn For Fancy Purposes"@en ;
-    skos:broader htc:grp_woven_fabrics_apparel ;
+    skos:broader htc:sub_woven_fabr_wd_q49007 ;
     oe:observationCount "30"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Woollen Yarn For Fancy Purposes" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -20300,6 +20354,8 @@ htc:0916 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0917 a skos:Concept ;
@@ -21061,9 +21117,9 @@ htc:0955 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0955" ;
     skos:prefLabel "Rags Woollen for use as wool"@en ;
-    skos:broader htc:grp_woven_fabrics_apparel ;
+    skos:broader htc:sub_woven_fabr_wd_q1567420 ;
     oe:observationCount "28"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Rags Woollen for use as wool" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -21076,6 +21132,8 @@ htc:0955 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1567420 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0956 a skos:Concept ;
@@ -22147,9 +22205,9 @@ htc:1008 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1008" ;
     skos:prefLabel "Woollen Yarn For other Purposes including Berlin Wool and Zephyr Yarn"@en ;
-    skos:broader htc:grp_woven_fabrics_apparel ;
+    skos:broader htc:sub_woven_fabr_wd_q49007 ;
     oe:observationCount "25"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Woollen Yarn For other Purposes including Berlin Wool and Zephyr Yarn" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -22162,6 +22220,8 @@ htc:1008 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1009 a skos:Concept ;
@@ -22477,7 +22537,7 @@ htc:1025 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1025" ;
     skos:prefLabel "Linen Rags"@en ;
-    skos:broader htc:sub_bast_plant_wd_q1426327 ;
+    skos:broader htc:sub_bast_plant_wd_q1567420 ;
     oe:observationCount "24"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Linen Rags" ;
@@ -22490,9 +22550,10 @@ htc:1025 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
-    skos:related htc:0265, htc:0370, htc:0579, htc:0762, htc:0795, htc:0901, htc:1278, htc:1393, htc:1501, htc:1647, htc:1663, htc:1911, htc:2056 ;
+    oe:materialConcept htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q1426327, aat:300014069 .
+    skos:broadMatch wd:Q1567420 ;
+    oe:madeOfMaterial wd:Q1426327 .
 
 htc:1026 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -22891,7 +22952,8 @@ htc:1045 a skos:Concept ;
     oe:lastAttested "1871"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11457, agrovoc:c_1926, stw:14055-5, aat:300183670 .
+    skos:broadMatch wd:Q11457, agrovoc:c_1926, stw:14055-5, aat:300183670 ;
+    oe:sourceTaxon wd:Q719312 .
 
 htc:1046 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -23367,19 +23429,21 @@ htc:1069 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1069" ;
     skos:prefLabel "Embroidery and Needlework Of Other Sorts Unenumerated"@en ;
-    skos:broader htc:grp_customs_residuals ;
+    skos:broader htc:sub_woven_fabr_wd_q18281 ;
     oe:observationCount "22"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Embroidery and Needlework Of" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "other" ;
-    oe:landBasis "unclassified" ;
-    oe:theodoridisBucket "unclassified" ;
-    oe:sitcCode "oe:sitcUnassigned" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q18281, aat:300053653 .
 
 htc:1070 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -23441,9 +23505,9 @@ htc:1073 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1073" ;
     skos:prefLabel "Woollen Yarn Unenumerated"@en ;
-    skos:broader htc:sub_woven_fabr_hd_woollen_yarn ;
+    skos:broader htc:sub_woven_fabr_wd_q49007 ;
     oe:observationCount "22"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Woollen Yarn" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -23456,6 +23520,8 @@ htc:1073 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1074 a skos:Concept ;
@@ -23773,19 +23839,24 @@ htc:1089 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1089" ;
     skos:prefLabel "Lace and Articles thereof Silk"@en ;
-    skos:broader htc:grp_animal_fibres ;
+    skos:broader htc:sub_woven_fabr_wd_q231250 ;
     oe:observationCount "21"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Lace and Articles thereof Silk" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "fibres_textiles" ;
-    oe:landBasis "terrestrial_pasture" ;
-    oe:theodoridisBucket "raw_materials" ;
-    oe:sitcCode "SITC4_26_Textile_Fibres" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q231250, aat:300132861 ;
+    oe:madeOfMaterial wd:Q37681 .
 
 htc:1090 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -24175,19 +24246,21 @@ htc:1110 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1110" ;
     skos:prefLabel "Lace and Articles thereof Other Materials"@en ;
-    skos:broader htc:grp_customs_residuals ;
+    skos:broader htc:sub_woven_fabr_wd_q231250 ;
     oe:observationCount "20"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Lace and Articles thereof Other Materials" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "other" ;
-    oe:landBasis "unclassified" ;
-    oe:theodoridisBucket "unclassified" ;
-    oe:sitcCode "oe:sitcUnassigned" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q231250, aat:300132861 .
 
 htc:1111 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -24848,21 +24921,24 @@ htc:1144 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1144" ;
     skos:prefLabel "Cotton Stockings and Socks"@en ;
-    skos:broader htc:sub_bast_plant_wd_q11457 ;
+    skos:broader htc:sub_woven_fabr_wd_q193017 ;
     oe:observationCount "19"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Cotton Stockings and Socks" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "fibres_textiles" ;
-    oe:landBasis "terrestrial_crop" ;
-    oe:theodoridisBucket "raw_materials" ;
-    oe:sitcCode "SITC4_26_Textile_Fibres" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11457, agrovoc:c_1926, stw:14055-5, aat:300183670 .
+    skos:broadMatch wd:Q193017, aat:300046088 ;
+    oe:madeOfMaterial wd:Q11457 .
 
 htc:1145 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -25092,7 +25168,7 @@ htc:1156 a skos:Concept ;
     skos:prefLabel "Tow"@en ;
     skos:broader htc:grp_bast_plant_fibres ;
     oe:observationCount "19"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_lexical" ;
     oe:substanceHead "Tow" ;
     oe:processingState "unspecified" ;
     oe:ghostAcresDomain "fibres_textiles" ;
@@ -25104,7 +25180,9 @@ htc:1156 a skos:Concept ;
     oe:dictionarySource <https://archive.org/details/b21780535/page/n398> ;
     oe:firstAttested "1891"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation .
+    prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:exactMatch wd:Q1143410 .
 
 htc:1157 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -25341,9 +25419,9 @@ htc:1169 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1169" ;
     skos:prefLabel "Woollen Rags Not Pulled"@en ;
-    skos:broader htc:grp_woven_fabrics_apparel ;
+    skos:broader htc:sub_woven_fabr_wd_q1567420 ;
     oe:observationCount "19"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Woollen Rags Not Pulled" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -25356,6 +25434,8 @@ htc:1169 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1567420 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1170 a skos:Concept ;
@@ -26258,19 +26338,21 @@ htc:1215 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1215" ;
     skos:prefLabel "Lace Machine or Imitation Lace"@en ;
-    skos:broader htc:grp_metal_machinery_hardware ;
+    skos:broader htc:sub_woven_fabr_wd_q231250 ;
     oe:observationCount "17"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Lace Machine or Imitation Lace" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
     oe:landBasis "industrial_manufactured" ;
     oe:theodoridisBucket "manufactured_articles" ;
-    oe:sitcCode "SITC4_69_7_Metalwares_and_Machinery" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q231250, aat:300132861 .
 
 htc:1216 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -26318,9 +26400,9 @@ htc:1218 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1218" ;
     skos:prefLabel "Jute Yarn and Waste of Jute"@en ;
-    skos:broader htc:grp_yarns_cordage ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "17"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Jute Yarn and Waste of Jute" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -26330,7 +26412,9 @@ htc:1218 a skos:Concept ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1891"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 .
 
 htc:1219 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -26666,19 +26750,24 @@ htc:1236 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1236" ;
     skos:prefLabel "Pillow Lace of Thread or Cotton"@en ;
-    skos:broader htc:grp_bast_plant_fibres ;
+    skos:broader htc:sub_woven_fabr_wd_q231250 ;
     oe:observationCount "16"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Pillow Lace of Thread or Cotton" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "fibres_textiles" ;
-    oe:landBasis "terrestrial_crop" ;
-    oe:theodoridisBucket "raw_materials" ;
-    oe:sitcCode "SITC4_26_Textile_Fibres" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1834"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q231250, aat:300132861 ;
+    oe:madeOfMaterial wd:Q11457 .
 
 htc:1237 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -27508,8 +27597,8 @@ htc:1278 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -27784,19 +27873,24 @@ htc:1292 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1292" ;
     skos:prefLabel "Lace and Articles thereof Cotton"@en ;
-    skos:broader htc:grp_bast_plant_fibres ;
+    skos:broader htc:sub_woven_fabr_wd_q231250 ;
     oe:observationCount "15"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Lace and Articles thereof Cotton" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "fibres_textiles" ;
-    oe:landBasis "terrestrial_crop" ;
-    oe:theodoridisBucket "raw_materials" ;
-    oe:sitcCode "SITC4_26_Textile_Fibres" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1896"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q231250, aat:300132861 ;
+    oe:madeOfMaterial wd:Q11457 .
 
 htc:1293 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -29162,7 +29256,7 @@ htc:1361 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1361" ;
     skos:prefLabel "Paper Making Materials Esparto and other Vegetable Fibres"@en ;
-    skos:broader htc:sub_bast_plant_wd_q11472 ;
+    skos:broader htc:grp_bast_plant_fibres ;
     oe:observationCount "13"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Paper Making Materials Esparto and other Vegetable Fibres" ;
@@ -29222,9 +29316,9 @@ htc:1364 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1364" ;
     skos:prefLabel "Silk Spun Silk Yarn dyed or not dyed"@en ;
-    skos:broader htc:grp_yarns_cordage ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "13"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Silk Spun Silk Yarn dyed or not dyed" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -29237,6 +29331,8 @@ htc:1364 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0263 ;
     skos:related htc:0263 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q37681 .
 
 htc:1365 a skos:Concept ;
@@ -29809,9 +29905,9 @@ htc:1393 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1393" ;
     skos:prefLabel "Linen Yarn (including Linen Yarn Waste)"@en ;
-    skos:broader htc:sub_yarns_cord_hd_linen_yarn ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "12"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Linen Yarn" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -29824,35 +29920,39 @@ htc:1393 a skos:Concept ;
     oe:firstAttested "1866"^^xsd:integer ;
     oe:lastAttested "1871"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q1426327 .
 
 htc:1394 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1394" ;
     skos:prefLabel "Lace Pillow Lace"@en ;
-    skos:broader htc:grp_customs_residuals ;
+    skos:broader htc:sub_woven_fabr_wd_q231250 ;
     oe:observationCount "12"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Lace Pillow Lace" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "other" ;
-    oe:landBasis "unclassified" ;
-    oe:theodoridisBucket "unclassified" ;
-    oe:sitcCode "oe:sitcUnassigned" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q231250, aat:300132861 .
 
 htc:1395 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1395" ;
     skos:prefLabel "Worsted Yarn Combed"@en ;
-    skos:broader htc:grp_yarns_cordage ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "12"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Worsted Yarn Combed" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -29862,25 +29962,29 @@ htc:1395 a skos:Concept ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 .
 
 htc:1396 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1396" ;
     skos:prefLabel "Lace and Articles thereof"@en ;
-    skos:broader htc:grp_customs_residuals ;
+    skos:broader htc:sub_woven_fabr_wd_q231250 ;
     oe:observationCount "12"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Lace and Articles thereof" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "other" ;
-    oe:landBasis "unclassified" ;
-    oe:theodoridisBucket "unclassified" ;
-    oe:sitcCode "oe:sitcUnassigned" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1886"^^xsd:integer ;
     oe:lastAttested "1891"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q231250, aat:300132861 .
 
 htc:1397 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -31697,19 +31801,24 @@ htc:1489 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1489" ;
     skos:prefLabel "Embroidery and Needlework Curtains Embroidered on Muslin or Net"@en ;
-    skos:broader htc:grp_customs_residuals ;
+    skos:broader htc:sub_woven_fabr_wd_q18281 ;
     oe:observationCount "10"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Embroidery and Needlework Curtains Embroidered on Muslin or Net" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "other" ;
-    oe:landBasis "unclassified" ;
-    oe:theodoridisBucket "unclassified" ;
-    oe:sitcCode "oe:sitcUnassigned" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q18281, aat:300053653 ;
+    oe:madeOfMaterial wd:Q11457 .
 
 htc:1490 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -31948,8 +32057,8 @@ htc:1501 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
     oe:madeOfMaterial wd:Q1426327 .
 
 htc:1502 a skos:Concept ;
@@ -32189,9 +32298,9 @@ htc:1514 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1514" ;
     skos:prefLabel "Hemp Yarn"@en ;
-    skos:broader htc:grp_yarns_cordage ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "10"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Hemp Yarn" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -32201,7 +32310,9 @@ htc:1514 a skos:Concept ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 .
 
 htc:1515 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -32620,19 +32731,23 @@ htc:1536 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1536" ;
     skos:prefLabel "Stays or Corsets of Linen or Cotton"@en ;
-    skos:broader htc:grp_bast_plant_fibres ;
+    skos:broader htc:grp_woven_fabrics_apparel ;
     oe:observationCount "9"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Stays or Corsets of Linen or Cotton" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "fibres_textiles" ;
-    oe:landBasis "terrestrial_crop" ;
-    oe:theodoridisBucket "raw_materials" ;
-    oe:sitcCode "SITC4_26_Textile_Fibres" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1861"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300, htc:1979 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q180225, aat:300210582 ;
+    oe:madeOfMaterial wd:Q11457, wd:Q1426327 .
 
 htc:1537 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -32776,9 +32891,9 @@ htc:1544 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1544" ;
     skos:prefLabel "Pulp and Rags and Wood for making Paper"@en ;
-    skos:broader htc:grp_bast_plant_fibres ;
+    skos:broader htc:sub_bast_plant_wd_q1567420 ;
     oe:observationCount "9"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Pulp and Rags and Wood for making Paper" ;
     oe:processingState "unspecified" ;
     oe:ghostAcresDomain "fibres_textiles" ;
@@ -32788,7 +32903,12 @@ htc:1544 a skos:Concept ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1871"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1567420 ;
+    oe:madeOfMaterial wd:Q287 .
 
 htc:1545 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -33517,9 +33637,9 @@ htc:1582 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1582" ;
     skos:prefLabel "Woollen Yarn"@en ;
-    skos:broader htc:sub_woven_fabr_hd_woollen_yarn ;
+    skos:broader htc:sub_woven_fabr_wd_q49007 ;
     oe:observationCount "8"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Woollen Yarn" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -33532,6 +33652,8 @@ htc:1582 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_5 ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1583 a skos:Concept ;
@@ -33791,19 +33913,24 @@ htc:1596 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1596" ;
     skos:prefLabel "Embroidery and Needlework embroidery on silk not being silk net"@en ;
-    skos:broader htc:grp_animal_fibres ;
+    skos:broader htc:sub_woven_fabr_wd_q18281 ;
     oe:observationCount "8"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Embroidery and Needlework embroidery on silk not being silk net" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "fibres_textiles" ;
-    oe:landBasis "terrestrial_pasture" ;
-    oe:theodoridisBucket "raw_materials" ;
-    oe:sitcCode "SITC4_26_Textile_Fibres" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q18281, aat:300053653 ;
+    oe:madeOfMaterial wd:Q37681 .
 
 htc:1597 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -34349,8 +34476,10 @@ htc:1624 a skos:Concept ;
     oe:firstAttested "1901"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300, htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 .
+    skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
+    oe:madeOfMaterial wd:Q11457, wd:Q42329 .
 
 htc:1625 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -34539,9 +34668,9 @@ htc:1634 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1634" ;
     skos:prefLabel "Woollen Rags Pulled"@en ;
-    skos:broader htc:grp_woven_fabrics_apparel ;
+    skos:broader htc:sub_woven_fabr_wd_q1567420 ;
     oe:observationCount "8"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Woollen Rags Pulled" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -34554,6 +34683,8 @@ htc:1634 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1567420 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1635 a skos:Concept ;
@@ -34819,8 +34950,8 @@ htc:1647 a skos:Concept ;
     oe:firstAttested "1835"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -34942,8 +35073,11 @@ htc:1653 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q1567420 .
+    skos:broadMatch wd:Q1567420 ;
+    oe:madeOfMaterial wd:Q42329 .
 
 htc:1654 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -35032,9 +35166,9 @@ htc:1658 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1658" ;
     skos:prefLabel "Pulp of Rags and Wood"@en ;
-    skos:broader htc:grp_bast_plant_fibres ;
+    skos:broader htc:sub_bast_plant_wd_q1567420 ;
     oe:observationCount "7"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Pulp of Rags and Wood" ;
     oe:processingState "unspecified" ;
     oe:ghostAcresDomain "fibres_textiles" ;
@@ -35044,7 +35178,12 @@ htc:1658 a skos:Concept ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1876"^^xsd:integer ;
     oe:lastAttested "1876"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1567420 ;
+    oe:madeOfMaterial wd:Q287 .
 
 htc:1659 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -35143,8 +35282,8 @@ htc:1663 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -35171,9 +35310,9 @@ htc:1665 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1665" ;
     skos:prefLabel "Woollen Yarn Carded"@en ;
-    skos:broader htc:grp_woven_fabrics_apparel ;
+    skos:broader htc:sub_woven_fabr_wd_q49007 ;
     oe:observationCount "7"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Woollen Yarn Carded" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -35186,6 +35325,8 @@ htc:1665 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1666 a skos:Concept ;
@@ -36005,9 +36146,9 @@ htc:1707 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1707" ;
     skos:prefLabel "Yarn Mohair"@en ;
-    skos:broader htc:grp_yarns_cordage ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "6"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Yarn Mohair" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -36017,7 +36158,9 @@ htc:1707 a skos:Concept ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1800"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_kew_cust_5 .
+    prov:hadPrimarySource oe:series_kew_cust_5 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 .
 
 htc:1708 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -36366,9 +36509,9 @@ htc:1725 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1725" ;
     skos:prefLabel "Cotton Yarn, and Waste of"@en ;
-    skos:broader htc:grp_yarns_cordage ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "6"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Cotton Yarn, and Waste of" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -36381,6 +36524,8 @@ htc:1725 a skos:Concept ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:materialConcept htc:0300 ;
     skos:related htc:0300 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q11457 .
 
 htc:1726 a skos:Concept ;
@@ -36726,6 +36871,7 @@ htc:1743 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    skos:related htc:0367 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q811663, agrovoc:c_25474, aat:300014312 .
 
@@ -37051,19 +37197,21 @@ htc:1760 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1760" ;
     skos:prefLabel "Lace Bone"@en ;
-    skos:broader htc:grp_fertilizers_animal_materials ;
+    skos:broader htc:sub_woven_fabr_wd_q231250 ;
     oe:observationCount "5"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Lace Bone" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "drugs_botanicals_chemicals" ;
-    oe:landBasis "terrestrial_pasture" ;
-    oe:theodoridisBucket "raw_materials" ;
-    oe:sitcCode "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1800"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_kew_cust_5 .
+    prov:hadPrimarySource oe:series_kew_cust_5 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q231250, aat:300132861 .
 
 htc:1761 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -37520,37 +37668,43 @@ htc:1783 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1783" ;
     skos:prefLabel "Embroidery and Needlework Silk and Cotton Net being Imitation Lace"@en ;
-    skos:broader htc:grp_animal_fibres ;
+    skos:broader htc:sub_woven_fabr_wd_q231250 ;
     oe:observationCount "5"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Embroidery and Needlework Silk and Cotton Net being Imitation Lace" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "fibres_textiles" ;
-    oe:landBasis "terrestrial_pasture" ;
-    oe:theodoridisBucket "raw_materials" ;
-    oe:sitcCode "SITC4_26_Textile_Fibres" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263, htc:0300 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q231250, aat:300132861 ;
+    oe:madeOfMaterial wd:Q37681, wd:Q11457 .
 
 htc:1784 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1784" ;
     skos:prefLabel "Lace Mohair or Worsted"@en ;
-    skos:broader htc:grp_animal_fibres ;
+    skos:broader htc:sub_woven_fabr_wd_q231250 ;
     oe:observationCount "5"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Lace Mohair or Worsted" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "fibres_textiles" ;
-    oe:landBasis "terrestrial_pasture" ;
-    oe:theodoridisBucket "raw_materials" ;
-    oe:sitcCode "SITC4_26_Textile_Fibres" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1861"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q231250, aat:300132861 .
 
 htc:1785 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -38120,6 +38274,7 @@ htc:1813 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    skos:related htc:0367 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q811663, agrovoc:c_25474, aat:300014312 .
 
@@ -38230,9 +38385,9 @@ htc:1819 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1819" ;
     skos:prefLabel "Coir Yarn"@en ;
-    skos:broader htc:grp_yarns_cordage ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "5"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Coir Yarn" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -38242,7 +38397,9 @@ htc:1819 a skos:Concept ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1911"^^xsd:integer ;
     oe:lastAttested "1911"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 .
 
 htc:1820 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -38964,19 +39121,24 @@ htc:1856 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1856" ;
     skos:prefLabel "Pillow Lace of Silk"@en ;
-    skos:broader htc:grp_animal_fibres ;
+    skos:broader htc:sub_woven_fabr_wd_q231250 ;
     oe:observationCount "4"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Pillow Lace of Silk" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "fibres_textiles" ;
-    oe:landBasis "terrestrial_pasture" ;
-    oe:theodoridisBucket "raw_materials" ;
-    oe:sitcCode "SITC4_26_Textile_Fibres" ;
+    oe:processingState "manufactured" ;
+    oe:ghostAcresDomain "manufactured_goods" ;
+    oe:landBasis "industrial_manufactured" ;
+    oe:theodoridisBucket "manufactured_articles" ;
+    oe:sitcCode "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1866"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q231250, aat:300132861 ;
+    oe:madeOfMaterial wd:Q37681 .
 
 htc:1857 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -39732,7 +39894,7 @@ htc:1896 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1896" ;
     skos:prefLabel "Piece Goods of India Calicoes"@en ;
-    skos:broader htc:sub_woven_fabr_wd_q28823 ;
+    skos:broader htc:grp_woven_fabrics_apparel ;
     oe:observationCount "3"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Piece Goods of India Calicoes" ;
@@ -39745,14 +39907,17 @@ htc:1896 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1800"^^xsd:integer ;
     prov:hadPrimarySource oe:series_kew_cust_5 ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 .
+    skos:broadMatch wd:Q1132695, aat:300132872 ;
+    oe:madeOfMaterial wd:Q11457 .
 
 htc:1897 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1897" ;
     skos:prefLabel "Piece Goods of India Muslin"@en ;
-    skos:broader htc:sub_woven_fabr_wd_q28823 ;
+    skos:broader htc:sub_woven_fabr_wd_q725457 ;
     oe:observationCount "3"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Piece Goods of India Muslin" ;
@@ -39765,8 +39930,11 @@ htc:1897 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1800"^^xsd:integer ;
     prov:hadPrimarySource oe:series_kew_cust_5 ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 .
+    skos:broadMatch wd:Q725457, aat:300014087 ;
+    oe:madeOfMaterial wd:Q11457 .
 
 htc:1898 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -40043,8 +40211,8 @@ htc:1911 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -40640,8 +40808,11 @@ htc:1941 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1800"^^xsd:integer ;
     prov:hadPrimarySource oe:series_kew_cust_5 ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 .
+    skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
+    oe:madeOfMaterial wd:Q11457 .
 
 htc:1942 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -40745,9 +40916,9 @@ htc:1947 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1947" ;
     skos:prefLabel "Stockings Woollen and Worsted"@en ;
-    skos:broader htc:grp_woven_fabrics_apparel ;
+    skos:broader htc:sub_woven_fabr_wd_q193017 ;
     oe:observationCount "2"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Stockings Woollen and Worsted" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -40760,6 +40931,8 @@ htc:1947 a skos:Concept ;
     prov:hadPrimarySource oe:series_kew_cust_5 ;
     oe:materialConcept htc:0021 ;
     skos:related htc:0021 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q193017, aat:300046088 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1948 a skos:Concept ;
@@ -41370,7 +41543,7 @@ htc:1979 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1979" ;
     skos:prefLabel "Linen Waste"@en ;
-    skos:broader htc:sub_bast_plant_wd_q1426327 ;
+    skos:broader htc:grp_bast_plant_fibres ;
     oe:observationCount "2"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Linen Waste" ;
@@ -41383,6 +41556,7 @@ htc:1979 a skos:Concept ;
     oe:firstAttested "1876"^^xsd:integer ;
     oe:lastAttested "1876"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    skos:related htc:0265, htc:0370, htc:0579, htc:0762, htc:0795, htc:0901, htc:1278, htc:1393, htc:1501, htc:1647, htc:1663, htc:1911, htc:2056 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q1426327, aat:300014069 .
 
@@ -42874,9 +43048,9 @@ htc:2056 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "2056" ;
     skos:prefLabel "Linen Yarn Waste"@en ;
-    skos:broader htc:grp_yarns_cordage ;
+    skos:broader htc:sub_yarns_cord_wd_q49007 ;
     oe:observationCount "1"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Linen Yarn Waste" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "manufactured_goods" ;
@@ -42887,8 +43061,10 @@ htc:2056 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
-    oe:materialConcept htc:1025 ;
-    skos:related htc:1025 ;
+    oe:materialConcept htc:1979 ;
+    skos:related htc:1979 ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q49007, stw:14885-6, aat:300014252 ;
     oe:madeOfMaterial wd:Q1426327 .
 
 htc:2057 a skos:Concept ;
