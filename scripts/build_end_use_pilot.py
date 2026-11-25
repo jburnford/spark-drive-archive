@@ -65,26 +65,31 @@ INDUSTRIES = {
             re.I,
         ),
         "neg_re": re.compile(r"\b(mordant\w*|madder\s+bath|cleared\s+with\s+a?\s*soap|calico[\s-]*print|oxymuriate\s+of\s+lime)\b", re.I),
-        "essay_heading_re": re.compile(r"(?:^|\n)\s*(?:\*\*)?SOAP(?:\s*,\s*MANUFACTURE\s+OF)?(?:\*\*)?[\.,]", re.M),
+        "essay_heading_re": re.compile(r"(?:^|\n)\s*(?:\*\*)?SOAP(?:\s*,\s*MANUFACTURE\s+OF)?(?:\*\*)?[\.,\s]\s*\(", re.M),
     },
     "oe:ind_calico_printing": {
         "label": "Calico Cloth & Calico Printing",
         "short": "Calico Cloth & Printing",
         "description": (
             "19th-century cotton weaving, bleaching, dyeing, and calico printing — combining raw cotton "
-            "with bleaching powder and alkalis, natural and coal-tar dyestuffs (madder, indigo, logwood, cochineal, "
-            "quercitron, fustic, sumach, alizarine), metallic mordants (alum, copperas, tin/lead/iron salts), "
-            "and thickeners/sizing agents (gum senegal, gum arabic, starch, flour, albumen)."
+            "with bleaching powder and alkalis, natural, insect, mineral, and coal-tar dyestuffs "
+            "(madder, garancine, munjeet, alizarine, indigo, cochineal, lac dye, kermes, logwood, quercitron, "
+            "fustic, brazil wood, safflower, orchal/archil, persian berries, prussian blue, chrome yellow, aniline), "
+            "metallic mordants (alum, copperas, tin/lead/copper salts, sumach, galls, cutch), and thickeners "
+            "(gum senegal, gum arabic, tragacanth, starch, British gum, flour, albumen)."
         ),
         "trigger_re": re.compile(
             r"\b(calico[\s-]*print\w*|printing\s+calico\w*|printed\s+calico\w*|cotton[\s-]*print\w*|"
             r"calico\s+cloth|calicoes|sizing\s+(?:cotton|warps?|cloth|calico)|bleaching\s+(?:cotton|calico)|"
-            r"dyeing\s+(?:cotton|calico)|turkey[\s-]*red|madder[\s-]*style|steam[\s-]*colou?rs?|"
-            r"discharge\s+style|resist\s+paste|cotton\s+manufactur\w*|cotton[\s-]*dyers?)\b",
+            r"dyeing\s+(?:of\s+)?(?:\w+\s+)?(?:cotton|calico|chintz|muslin|fustian)|(?:cotton|calico)[\s-]*dyeing|"
+            r"(?:dyed|steeped)\s+(?:in\s+)?(?:cotton|calico)|cotton\s+steeped\s+in\s+lac\s+dye|"
+            r"dye(?:s|ing)?\s+(?:wool,?\s+silk,?\s+and\s+)?cotton|soiling\s+the\s+white\s+ground|"
+            r"turkey[\s-]*red|madder[\s-]*style|steam[\s-]*colou?rs?|topical\s+(?:dye|colou?r)|"
+            r"discharge\s+style|resist\s+paste|cotton\s+manufactur\w*|cotton[\s-]*dyers?|printed\s+cotton\w*)\b",
             re.I,
         ),
         "neg_re": None,
-        "essay_heading_re": re.compile(r"(?:^|\n)\s*(?:\*\*)?CALICO[\s-]*PRINTING(?:\*\*)?[\.,]", re.M),
+        "essay_heading_re": re.compile(r"(?:^|\n)\s*(?:\*\*)?CALICO[\s-]*PRINTING(?:\*\*)?[\.,\s]\s*\(", re.M),
     },
     "oe:ind_chocolate_confectionery": {
         "label": "Chocolate & Confectionery",
@@ -176,34 +181,49 @@ CANONICAL_PATTERNS = [
     ("Citric Acid", r"\b(?:citric\s+acid|lemon[\s-]*juice|lime[\s-]*juice)\b", None, {"oe:ind_calico_printing": "alkali_or_reagent", "oe:ind_chocolate_confectionery": "flavouring_or_scent"}),
     ("Oxalic Acid", r"\boxalic\s+acid\b", None, {"oe:ind_calico_printing": "alkali_or_reagent"}),
     ("Chemical Manufactures Acetic Acid", r"\b(?:acetic\s+acid|pyroligneous\s+acid|vinegar)\b", None, {"oe:ind_calico_printing": "alkali_or_reagent"}),
-    ("Bichromate", r"\b(?:bichromate\s+of\s+potash|chromate\s+of\s+potash|chrome\s+yellow|chromate\s+of\s+lead)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
-    ("Prussiate of Potash", r"\b(?:prussiate\s+of\s+potash|prussian\s+blue|ferrocyanide)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Bichromate", r"\b(?:bichromate\s+of\s+potash|chromate\s+of\s+potash|chrome\s+yellow|chromate\s+of\s+lead|chrome\s+orange)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Prussian Blue", r"\b(?:prussiate\s+of\s+potash|prussian\s+blue|ferrocyanide|ferroprussiate)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
     ("Manganese Ore", r"\b(?:manganese|oxide\s+of\s+manganese|manganese\s+brown)\b", None, {"oe:ind_calico_printing": "bleaching_agent"}),
-    ("Arsenic", r"\b(?:arsenic|arseniate\s+of\s+soda|orpiment|realgar)\b", None, {"oe:ind_calico_printing": "alkali_or_reagent"}),
+    ("Arsenic", r"\b(?:arsenic|arseniate\s+of\s+soda)\b", None, {"oe:ind_calico_printing": "alkali_or_reagent"}),
+    ("Orpiment", r"\b(?:orpiment|realgar)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
     ("Borax", r"\bborax\b", None, {"oe:ind_soap_manufacture": "alkali_or_reagent", "oe:ind_calico_printing": "alkali_or_reagent"}),
     ("Sal Ammoniac", r"\b(?:sal[\s-]*ammoniac|muriate\s+of\s+ammonia)\b", None, {"oe:ind_calico_printing": "alkali_or_reagent"}),
 
-    # --- Cotton & Calico Dyestuffs, Mordants, Thickeners ---
+    # --- Cotton & Calico Dyestuffs (Botanical, Insect, Lichen, Mineral & Coal-Tar), Mordants, Thickeners ---
     ("Cotton Raw", r"\b(?:raw\s+cotton|cotton\s+wool|cotton\s+cloth|cotton\s+yarn|cotton\s+fabric|calico\s+cloth|cotton\s+piece[\s-]*goods)\b", {"oe:ind_calico_printing"}, {"oe:ind_calico_printing": "primary_feedstock"}),
     ("Madder", r"\b(?:madder|madder[\s-]*root|rubia\s+tinctorum)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
-    ("Garancine", r"\bgarancin[e]?\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
-    ("Alizarine", r"\balizarin[e]?\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Madder Garancine", r"\bgarancin[e]?\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Madder Munjeet", r"\b(?:munjeet|manjit|munjut)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Dye Stuffs Alizarine and Alizarine Dyes", r"\balizarin[e]?\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
     ("Indigo", r"\bindigo\b", None, {"oe:ind_calico_printing": "dye_or_colorant", "oe:ind_soap_manufacture": "dye_or_colorant"}),
+    ("Woad", r"\bwoad\b", {"oe:ind_calico_printing"}, {"oe:ind_calico_printing": "dye_or_colorant"}),
     ("Dye Woods Logwood", r"\blog[\s-]*wood\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    # Insect dyes (Cochineal, Lac Dye, Kermes)
     ("Cochineal", r"\bcochineal\b", None, {"oe:ind_calico_printing": "dye_or_colorant", "oe:ind_chocolate_confectionery": "dye_or_colorant"}),
-    ("Quercitron", r"\bquercitron\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
-    ("Dye Woods Fustic", r"\bfustic\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
-    ("Brazil wood", r"\b(?:brazil[\s-]*wood|peach[\s-]*wood|lima[\s-]*wood|sappan[\s-]*wood|sapan[\s-]*wood)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
-    ("Camwood", r"\b(?:cam[\s-]*wood|bar[\s-]*wood)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Gum Lac, Seed, Shell, Stick, and Dye", r"\b(?:lac[\s-]*dye|lac[\s-]*lake|stick[\s-]*lac\s+dye)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Kermes", r"\bkermes\b", {"oe:ind_calico_printing"}, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    # Bark, Wood, Lichen & Plant dyes
+    ("Bark Quercitron", r"\bquercitron\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Wood and Timber Dye Woods Fustic", r"\bfustic\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Wood and Timber Dye Woods Brazil Wood", r"\b(?:brazil[\s-]*wood|peach[\s-]*wood|lima[\s-]*wood|sappan[\s-]*wood|sapan[\s-]*wood|pernambuco\s+wood)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Wood and Timber Dye Woods Nicaragua Wood", r"\bnicaragua\s+wood\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Camwood", r"\bcam[\s-]*wood\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Barwood", r"\bbar[\s-]*wood\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
     ("Safflower", r"\bsafflower\b", None, {"oe:ind_calico_printing": "dye_or_colorant", "oe:ind_chocolate_confectionery": "dye_or_colorant"}),
+    ("Orchal", r"\b(?:orchal|archil|orchil|orseille|cudbear)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
     ("Annatto Flag", r"\b(?:annatto|anatto|arnatto|arnotto|roucou)\b", None, {"oe:ind_calico_printing": "dye_or_colorant", "oe:ind_soap_manufacture": "dye_or_colorant", "oe:ind_chocolate_confectionery": "dye_or_colorant"}),
     ("Turmeric", r"\bturmeric\b", None, {"oe:ind_calico_printing": "dye_or_colorant", "oe:ind_soap_manufacture": "dye_or_colorant"}),
-    ("Lac Dye", r"\blac[\s-]*dye\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
     ("Weld", r"\bweld\b", {"oe:ind_calico_printing"}, {"oe:ind_calico_printing": "dye_or_colorant"}),
     ("Berries Yellow", r"\b(?:persian\s+berries|avignon\s+berries|yellow\s+berries|french\s+berries)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
-    ("Munjut", r"\b(?:munjeet|manjit|munjut)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Kamala", r"\b(?:kamala|kameela|kapila)\b", {"oe:ind_calico_printing"}, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Chay", r"\b(?:chay[\s-]*root|choya|oldenlandia)\b", {"oe:ind_calico_printing"}, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Alkanet", r"\balkanet\b", {"oe:ind_calico_printing", "oe:ind_soap_manufacture"}, {"oe:ind_calico_printing": "dye_or_colorant", "oe:ind_soap_manufacture": "dye_or_colorant"}),
+    ("Gamboge", r"\bgamboge\b", {"oe:ind_calico_printing"}, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    # Mineral & Coal-Tar dyes
     ("Ultramarine", r"\bultramarine\b", None, {"oe:ind_calico_printing": "dye_or_colorant", "oe:ind_soap_manufacture": "dye_or_colorant"}),
-    ("Coal Tar Dyes", r"\b(?:aniline\s+dye|aniline\s+colou?r|coal[\s-]*tar\s+dye|magenta|mauve|fuchsine)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Smalts", r"\b(?:smalt|smalts|cobalt\s+blue)\b", {"oe:ind_calico_printing"}, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Verdigris", r"\bverdigris\b", {"oe:ind_calico_printing"}, {"oe:ind_calico_printing": "dye_or_colorant"}),
+    ("Aniline", r"\b(?:aniline|coal[\s-]*tar\s+dye|magenta|mauve|fuchsine|rosaniline)\b", None, {"oe:ind_calico_printing": "dye_or_colorant"}),
     ("Alum", r"\b(?:alum|acetate\s+of\s+alumina|red\s+liquor|aluminous\s+mordant)\b", None, {"oe:ind_calico_printing": "mordant_or_fixer"}),
     ("Copperas", r"\b(?:copperas|sulphate\s+of\s+iron|iron\s+liquor|acetate\s+of\s+iron|pyrolignite\s+of\s+iron|nitrate\s+of\s+iron|green\s+vitriol)\b", None, {"oe:ind_calico_printing": "mordant_or_fixer", "oe:ind_soap_manufacture": "dye_or_colorant"}),
     ("Blue Vitriol", r"\b(?:blue\s+vitriol|sulphate\s+of\s+copper|acetate\s+of\s+copper|verdigris|nitrate\s+of\s+copper)\b", None, {"oe:ind_calico_printing": "mordant_or_fixer"}),
@@ -413,12 +433,22 @@ def main():
     for wid, cit, pnum, uri, raw_text in iter_all_corpus_pages():
         pages_scanned += 1
 
-        # Detect start of dedicated industry essays (SOAP / CALICO-PRINTING / CHOCOLATE) in Ure, McCulloch, Mortimer
+        # Detect start/end of dedicated industry essays (SOAP / CALICO-PRINTING / CHOCOLATE) in Ure, McCulloch, Mortimer
         cur_essay_ind = None
         if wid in ("ure_gutenberg", "mcculloch_1880", "mortimer_1823", "simmonds_1854"):
+            # Explicit Ure end-of-essay stop markers so we capture 100% of CALICO-PRINTING (~30 chunks) & SOAP (~14 chunks) without bleeding!
+            if wid == "ure_gutenberg" and wid in active_essay:
+                ind_cur = active_essay[wid][0]
+                if ind_cur == "oe:ind_calico_printing" and re.search(r"\nCALOMEL[\.,\s]", raw_text):
+                    del active_essay[wid]
+                elif ind_cur == "oe:ind_soap_manufacture" and re.search(r"\nSODA[\.,\s]", raw_text):
+                    del active_essay[wid]
+                elif ind_cur == "oe:ind_chocolate_confectionery" and re.search(r"\nCHROMATES[\.,\s]", raw_text):
+                    del active_essay[wid]
             for ind_id, cfg in INDUSTRIES.items():
                 if cfg["essay_heading_re"].search(raw_text):
-                    active_essay[wid] = (ind_id, 4 if wid == "ure_gutenberg" else 2)
+                    max_chunks = 34 if (wid == "ure_gutenberg" and ind_id == "oe:ind_calico_printing") else (16 if (wid == "ure_gutenberg" and ind_id == "oe:ind_soap_manufacture") else 2)
+                    active_essay[wid] = (ind_id, max_chunks)
                     break
             if wid in active_essay:
                 ind_id, rem = active_essay[wid]
@@ -459,7 +489,7 @@ def main():
             if cur_essay_ind and not sent_inds:
                 cfg = INDUSTRIES[cur_essay_ind]
                 # Inside a dedicated SOAP / CALICO-PRINTING / CHOCOLATE essay, require strong ingredient/recipe context
-                if not (cfg["neg_re"] and cfg["neg_re"].search(sent)) and re.search(r"\b(ingredient|added|mixed|boiled|solution|mordant|thickened|dyed|printed|saponif|alkali|oil|fat|tallow|paste|cacao|chocolate|sugar|spice|flavour|scent|bleach|colour|color)\b", sent, re.I):
+                if not (cfg["neg_re"] and cfg["neg_re"].search(sent)) and re.search(r"\b(ingredient|added|mixed|boiled|solution|mordant|thicken\w*|dyed|printed|saponif|alkali|oil|fat|tallow|paste|cacao|chocolate|sugar|spice|flavour|scent|bleach|colour|color|decoction|gallons?|pounds?|ounces?|bath|vat|gum)\b", sent, re.I):
                     sent_inds.add(cur_essay_ind)
             if not sent_inds:
                 continue
@@ -561,7 +591,7 @@ def main():
                             break
                     rec["quotes"] = dedup_q
 
-    # Assemble sorted links list (require >= 1 direct quote OR >= 2 mentions)
+    # Assemble sorted links list (require >= 1 direct quote OR >= 2 mentions inside dedicated industry essay)
     links = []
     for (ind_id, cid), rec in sorted(evidence.items(), key=lambda x: (x[0][0], -len(x[1]["works"]), -x[1]["mentions"])):
         if not rec["quotes"]:
