@@ -1,0 +1,14 @@
+wave	series	num_found	fetched	open_count	restricted_or_err
+wave1	kew_bulletin	842	842	839	3
+wave1	imperial_institute	114	114	114	0
+wave1	straits_ag_bulletin	54	54	52	2
+wave1	watt_dict_india	93	93	93	0
+wave1	agricultural_ledger	94	94	92	2
+wave1	journal_society_of_arts	491	491	491	0
+wave2	colonial_office_gb_collection	1030	1030	1030	0
+wave2	blue_books_british_world	176	176	176	0
+wave3	indian_forester	105	105	104	1
+wave3	burma_rice_forest_trade	53	53	53	0
+wave3	west_africa_commodities	36	36	36	0
+wave3	australasia_pastoral_stats	181	181	181	0
+wave3	saoa_and_bhl_imperial_botany	27	27	27	0

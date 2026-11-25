@@ -1,0 +1,30 @@
+# Python & OS
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.venv/
+venv/
+raw_cache/
+tmp/
+
+# Raw archival / binary scans & PDFs (NEVER commit to GitHub)
+*.pdf
+*.jp2
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+*.zip
+*.tar.gz
+
+# Raw archival spreadsheets & unpermissioned raw archival source dumps
+# (Only extracted structured data, grounding tables, and ontologies are committed)
+human_trade/raw_sources/
+*.xlsx
+*.xls
+
+# Superseded intermediate snapshots
+human_trade/layer1_human/grounding/commodities_concepts_v3.jsonl
+human_trade/layer1_human/grounding/open_empire_layer1_skos_v3.html
