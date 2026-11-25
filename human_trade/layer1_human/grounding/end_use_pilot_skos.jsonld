@@ -1,0 +1,1495 @@
+{
+  "@context": {
+    "htc": "https://openempire.hgis.usask.ca/vocab/commodities/",
+    "oe": "https://openempire.hgis.usask.ca/ontology/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "crm": "http://www.cidoc-crm.org/cidoc-crm/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "oe:industry_scheme",
+      "@type": "skos:ConceptScheme",
+      "rdfs:label": {
+        "@value": "Open Empire 19th-Century Manufacturing End-Use Scheme (Pilot)",
+        "@language": "en"
+      },
+      "dcterms:title": {
+        "@value": "Open Empire 19th-Century Manufacturing End-Use Scheme (Pilot)",
+        "@language": "en"
+      },
+      "dcterms:created": {
+        "@value": "2026-11-25",
+        "@type": "xsd:date"
+      },
+      "skos:hasTopConcept": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        },
+        {
+          "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "oe:usedInIndustry",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@value": "commodity used as input in manufacturing industry",
+        "@language": "en"
+      },
+      "rdfs:domain": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:range": {
+        "@id": "skos:Concept"
+      },
+      "owl:inverseOf": {
+        "@id": "oe:usesCommodityInput"
+      }
+    },
+    {
+      "@id": "oe:usesCommodityInput",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@value": "manufacturing industry employs commodity input",
+        "@language": "en"
+      },
+      "rdfs:domain": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:range": {
+        "@id": "skos:Concept"
+      },
+      "owl:inverseOf": {
+        "@id": "oe:usedInIndustry"
+      }
+    },
+    {
+      "@id": "oe:ind_soap_manufacture",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Soap Manufacture",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "oe:industry_scheme"
+      },
+      "skos:topConceptOf": {
+        "@id": "oe:industry_scheme"
+      },
+      "skos:prefLabel": {
+        "@value": "Soap Manufacture",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "19th-century hard, soft, yellow, mottled, curd, Castile, and toilet soap manufacture — combining animal tallow and tropical/vegetable oils with caustic alkalis (barilla, kelp, soda ash, potash, lime), rosin, common salt for salting out, and essential oils for scenting.",
+        "@language": "en"
+      },
+      "oe:usesCommodityInput": [
+        {
+          "@id": "htc:0136"
+        },
+        {
+          "@id": "htc:0557"
+        },
+        {
+          "@id": "htc:0172"
+        },
+        {
+          "@id": "htc:0181"
+        },
+        {
+          "@id": "htc:0022"
+        },
+        {
+          "@id": "htc:1895"
+        },
+        {
+          "@id": "htc:0257"
+        },
+        {
+          "@id": "htc:0562"
+        },
+        {
+          "@id": "htc:0025"
+        },
+        {
+          "@id": "htc:1504"
+        },
+        {
+          "@id": "htc:0780"
+        },
+        {
+          "@id": "htc:0250"
+        },
+        {
+          "@id": "htc:0910"
+        },
+        {
+          "@id": "htc:doc_neem_oil"
+        },
+        {
+          "@id": "htc:0719"
+        },
+        {
+          "@id": "htc:0625"
+        },
+        {
+          "@id": "htc:0138"
+        },
+        {
+          "@id": "htc:0445"
+        },
+        {
+          "@id": "htc:2002"
+        }
+      ]
+    },
+    {
+      "@id": "oe:ind_calico_printing",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Calico Cloth & Calico Printing",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "oe:industry_scheme"
+      },
+      "skos:topConceptOf": {
+        "@id": "oe:industry_scheme"
+      },
+      "skos:prefLabel": {
+        "@value": "Calico Cloth & Calico Printing",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "19th-century cotton weaving, bleaching, dyeing, and calico printing — combining raw cotton with bleaching powder and alkalis, natural and coal-tar dyestuffs (madder, indigo, logwood, cochineal, quercitron, fustic, sumach, alizarine), metallic mordants (alum, copperas, tin/lead/iron salts), and thickeners/sizing agents (gum senegal, gum arabic, starch, flour, albumen).",
+        "@language": "en"
+      },
+      "oe:usesCommodityInput": [
+        {
+          "@id": "htc:0302"
+        },
+        {
+          "@id": "htc:0136"
+        },
+        {
+          "@id": "htc:0141"
+        },
+        {
+          "@id": "htc:1932"
+        },
+        {
+          "@id": "htc:2002"
+        },
+        {
+          "@id": "htc:1322"
+        },
+        {
+          "@id": "htc:0062"
+        },
+        {
+          "@id": "htc:doc_citric_acid"
+        },
+        {
+          "@id": "htc:0364"
+        },
+        {
+          "@id": "htc:0267"
+        },
+        {
+          "@id": "htc:doc_alizarine"
+        },
+        {
+          "@id": "htc:doc_bichromate_of_potash"
+        },
+        {
+          "@id": "htc:0036"
+        },
+        {
+          "@id": "htc:0168"
+        },
+        {
+          "@id": "htc:1142"
+        },
+        {
+          "@id": "htc:0975"
+        },
+        {
+          "@id": "htc:0096"
+        },
+        {
+          "@id": "htc:doc_oxalic_acid"
+        },
+        {
+          "@id": "htc:doc_nitric_acid"
+        },
+        {
+          "@id": "htc:1825"
+        },
+        {
+          "@id": "htc:0275"
+        },
+        {
+          "@id": "htc:0172"
+        },
+        {
+          "@id": "htc:0557"
+        },
+        {
+          "@id": "htc:0299"
+        },
+        {
+          "@id": "htc:doc_blue_vitriol"
+        },
+        {
+          "@id": "htc:0109"
+        },
+        {
+          "@id": "htc:0257"
+        },
+        {
+          "@id": "htc:0185"
+        },
+        {
+          "@id": "htc:0072"
+        },
+        {
+          "@id": "htc:doc_sal_ammoniac"
+        },
+        {
+          "@id": "htc:0348"
+        },
+        {
+          "@id": "htc:0562"
+        },
+        {
+          "@id": "htc:doc_muriatic_acid"
+        },
+        {
+          "@id": "htc:doc_albumin"
+        },
+        {
+          "@id": "htc:1758"
+        },
+        {
+          "@id": "htc:1265"
+        },
+        {
+          "@id": "htc:1492"
+        },
+        {
+          "@id": "htc:1115"
+        },
+        {
+          "@id": "htc:1692"
+        },
+        {
+          "@id": "htc:doc_quercitron"
+        },
+        {
+          "@id": "htc:1899"
+        },
+        {
+          "@id": "htc:doc_brazil_wood"
+        }
+      ]
+    },
+    {
+      "@id": "oe:ind_chocolate_confectionery",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Chocolate & Confectionery",
+        "@language": "en"
+      },
+      "skos:inScheme": {
+        "@id": "oe:industry_scheme"
+      },
+      "skos:topConceptOf": {
+        "@id": "oe:industry_scheme"
+      },
+      "skos:prefLabel": {
+        "@value": "Chocolate & Confectionery",
+        "@language": "en"
+      },
+      "skos:definition": {
+        "@value": "19th-century chocolate bars, drinking chocolate, cocoa preparations, and sugar confectionery — combining roasted cacao beans and cocoa butter with cane sugar, aromatic spices (vanilla, cinnamon, cassia, cloves, cardamom, nutmeg), farinaceous thickeners/admixtures (arrowroot, sago, starch, flour), gums, almonds, and condensed milk.",
+        "@language": "en"
+      },
+      "oe:usesCommodityInput": [
+        {
+          "@id": "htc:0138"
+        },
+        {
+          "@id": "htc:doc_vanilla"
+        },
+        {
+          "@id": "htc:0103"
+        },
+        {
+          "@id": "htc:0460"
+        },
+        {
+          "@id": "htc:0573"
+        },
+        {
+          "@id": "htc:0008"
+        },
+        {
+          "@id": "htc:doc_musk"
+        },
+        {
+          "@id": "htc:doc_ambergris"
+        },
+        {
+          "@id": "htc:0719"
+        },
+        {
+          "@id": "htc:0168"
+        },
+        {
+          "@id": "htc:0855"
+        },
+        {
+          "@id": "htc:0185"
+        },
+        {
+          "@id": "htc:1492"
+        },
+        {
+          "@id": "htc:1639"
+        },
+        {
+          "@id": "htc:0695"
+        },
+        {
+          "@id": "htc:0118"
+        },
+        {
+          "@id": "htc:0097"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0008",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Wheat Meal and Flour",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0022",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Tallow",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0025",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Lard",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0036",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Bran",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0062",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Indigo",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0072",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Galls",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0096",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Dye Woods Logwood",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0097",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Honey",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0103",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Sugar Unrefined Total",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0109",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Shumach",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0118",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Cochineal",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0136",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Pearl and Pot Ashes",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0138",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Cocoa",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        },
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0141",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Cotton Raw",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0168",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Starch",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0172",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Olive Oil",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0181",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Palm Oil",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0185",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Gum Arabic",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0250",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Train or Blubber (Whale Oils)",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0257",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Salt",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0267",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Lead Pig and Sheet",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0275",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Cutch",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0299",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Manganese Ore",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0302",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Madder",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0348",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Manufactures Lime",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0364",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Tin in Blocks Ingots Bars or Slabs",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0445",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Almonds",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0460",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Spices Cinnamon",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0557",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Alkali",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0562",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Rosin",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0573",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Spices Cloves",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0625",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Cocoa-nut Oil",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0695",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Liquorice",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0719",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Spices Cassia Lignea",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        },
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0780",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Barilla",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0855",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Milk Condensed",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0910",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Stearine",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:0975",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Sulphuric Acid",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1115",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Borax",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1142",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Tartaric Acid",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1265",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Berries Yellow",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1322",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Bleaching Materials",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1492",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Annatto Flag",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1504",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Oil Seed",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1639",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Aniseed",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1692",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Chemical Manufactures Acetic Acid",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1758",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Gum Tragacanth",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1825",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Arsenic",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1895",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Kelp",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1899",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Weld",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:1932",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Alum Roach",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:2002",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Copperas",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        },
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_albumin",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Albumin",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_alizarine",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Alizarine",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_ambergris",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Ambergris",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_bichromate_of_potash",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Bichromate Of Potash",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_blue_vitriol",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Blue Vitriol",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_brazil_wood",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Brazil wood",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_citric_acid",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Citric Acid",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_muriatic_acid",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Muriatic Acid",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_musk",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Musk",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_neem_oil",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Neem Oil",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_soap_manufacture"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_nitric_acid",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Nitric acid",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_oxalic_acid",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Oxalic Acid",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_quercitron",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Quercitron",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_sal_ammoniac",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Sal Ammoniac",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_calico_printing"
+        }
+      ]
+    },
+    {
+      "@id": "htc:doc_vanilla",
+      "@type": [
+        "skos:Concept",
+        "crm:E55_Type"
+      ],
+      "rdfs:label": {
+        "@value": "Vanilla",
+        "@language": "en"
+      },
+      "oe:usedInIndustry": [
+        {
+          "@id": "oe:ind_chocolate_confectionery"
+        }
+      ]
+    }
+  ]
+}

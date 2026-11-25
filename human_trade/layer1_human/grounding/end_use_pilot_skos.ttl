@@ -1,0 +1,312 @@
+@prefix htc: <https://openempire.hgis.usask.ca/vocab/commodities/> .
+@prefix oe: <https://openempire.hgis.usask.ca/ontology/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# ============================================================================
+# OPEN EMPIRE — 3-INDUSTRY END-USE OVERLAY PILOT (LINCS / SKOS / CIDOC-CRM)
+# ============================================================================
+oe:industry_scheme a skos:ConceptScheme ;
+    rdfs:label "Open Empire 19th-Century Manufacturing End-Use Scheme (Pilot)"@en ;
+    dcterms:title "Open Empire 19th-Century Manufacturing End-Use Scheme (Pilot)"@en ;
+    dcterms:created "2026-11-25"^^xsd:date ;
+    skos:hasTopConcept oe:ind_soap_manufacture, oe:ind_calico_printing, oe:ind_chocolate_confectionery .
+
+oe:usedInIndustry a owl:ObjectProperty ; rdfs:label "commodity used as input in manufacturing industry"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept ; owl:inverseOf oe:usesCommodityInput .
+oe:usesCommodityInput a owl:ObjectProperty ; rdfs:label "manufacturing industry employs commodity input"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept ; owl:inverseOf oe:usedInIndustry .
+
+oe:ind_soap_manufacture a skos:Concept, crm:E55_Type ;
+    rdfs:label "Soap Manufacture"@en ;
+    skos:inScheme oe:industry_scheme ;
+    skos:topConceptOf oe:industry_scheme ;
+    skos:prefLabel "Soap Manufacture"@en ;
+    skos:definition "19th-century hard, soft, yellow, mottled, curd, Castile, and toilet soap manufacture — combining animal tallow and tropical/vegetable oils with caustic alkalis (barilla, kelp, soda ash, potash, lime), rosin, common salt for salting out, and essential oils for scenting."@en ;
+    oe:usesCommodityInput htc:0136, htc:0557, htc:0172, htc:0181, htc:0022, htc:1895, htc:0257, htc:0562, htc:0025, htc:1504, htc:0780, htc:0250, htc:0910, htc:doc_neem_oil, htc:0719, htc:0625, htc:0138, htc:0445, htc:2002 .
+
+oe:ind_calico_printing a skos:Concept, crm:E55_Type ;
+    rdfs:label "Calico Cloth & Calico Printing"@en ;
+    skos:inScheme oe:industry_scheme ;
+    skos:topConceptOf oe:industry_scheme ;
+    skos:prefLabel "Calico Cloth & Calico Printing"@en ;
+    skos:definition "19th-century cotton weaving, bleaching, dyeing, and calico printing — combining raw cotton with bleaching powder and alkalis, natural and coal-tar dyestuffs (madder, indigo, logwood, cochineal, quercitron, fustic, sumach, alizarine), metallic mordants (alum, copperas, tin/lead/iron salts), and thickeners/sizing agents (gum senegal, gum arabic, starch, flour, albumen)."@en ;
+    oe:usesCommodityInput htc:0302, htc:0136, htc:0141, htc:1932, htc:2002, htc:1322, htc:0062, htc:doc_citric_acid, htc:0364, htc:0267, htc:doc_alizarine, htc:doc_bichromate_of_potash, htc:0036, htc:0168, htc:1142, htc:0975, htc:0096, htc:doc_oxalic_acid, htc:doc_nitric_acid, htc:1825, htc:0275, htc:0172, htc:0557, htc:0299, htc:doc_blue_vitriol, htc:0109, htc:0257, htc:0185, htc:0072, htc:doc_sal_ammoniac, htc:0348, htc:0562, htc:doc_muriatic_acid, htc:doc_albumin, htc:1758, htc:1265, htc:1492, htc:1115, htc:1692, htc:doc_quercitron, htc:1899, htc:doc_brazil_wood .
+
+oe:ind_chocolate_confectionery a skos:Concept, crm:E55_Type ;
+    rdfs:label "Chocolate & Confectionery"@en ;
+    skos:inScheme oe:industry_scheme ;
+    skos:topConceptOf oe:industry_scheme ;
+    skos:prefLabel "Chocolate & Confectionery"@en ;
+    skos:definition "19th-century chocolate bars, drinking chocolate, cocoa preparations, and sugar confectionery — combining roasted cacao beans and cocoa butter with cane sugar, aromatic spices (vanilla, cinnamon, cassia, cloves, cardamom, nutmeg), farinaceous thickeners/admixtures (arrowroot, sago, starch, flour), gums, almonds, and condensed milk."@en ;
+    oe:usesCommodityInput htc:0138, htc:doc_vanilla, htc:0103, htc:0460, htc:0573, htc:0008, htc:doc_musk, htc:doc_ambergris, htc:0719, htc:0168, htc:0855, htc:0185, htc:1492, htc:1639, htc:0695, htc:0118, htc:0097 .
+
+htc:0008 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Wheat Meal and Flour"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:0022 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Tallow"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
+htc:0025 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Lard"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
+htc:0036 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Bran"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0062 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Indigo"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0072 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Galls"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0096 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Dye Woods Logwood"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0097 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Honey"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:0103 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Sugar Unrefined Total"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:0109 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Shumach"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0118 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Cochineal"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:0136 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Pearl and Pot Ashes"@en ;
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_soap_manufacture .
+
+htc:0138 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Cocoa"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery, oe:ind_soap_manufacture .
+
+htc:0141 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Cotton Raw"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0168 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Starch"@en ;
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_chocolate_confectionery .
+
+htc:0172 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Olive Oil"@en ;
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_soap_manufacture .
+
+htc:0181 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Palm Oil"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
+htc:0185 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Gum Arabic"@en ;
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_chocolate_confectionery .
+
+htc:0250 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Train or Blubber (Whale Oils)"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
+htc:0257 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Salt"@en ;
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_soap_manufacture .
+
+htc:0267 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Lead Pig and Sheet"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0275 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Cutch"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0299 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Manganese Ore"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0302 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Madder"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0348 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Manufactures Lime"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0364 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Tin in Blocks Ingots Bars or Slabs"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:0445 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Almonds"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
+htc:0460 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Spices Cinnamon"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:0557 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Alkali"@en ;
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_soap_manufacture .
+
+htc:0562 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Rosin"@en ;
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_soap_manufacture .
+
+htc:0573 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Spices Cloves"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:0625 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Cocoa-nut Oil"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
+htc:0695 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Liquorice"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:0719 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Spices Cassia Lignea"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery, oe:ind_soap_manufacture .
+
+htc:0780 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Barilla"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
+htc:0855 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Milk Condensed"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:0910 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Stearine"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
+htc:0975 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Sulphuric Acid"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:1115 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Borax"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:1142 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Tartaric Acid"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:1265 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Berries Yellow"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:1322 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Bleaching Materials"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:1492 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Annatto Flag"@en ;
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_chocolate_confectionery .
+
+htc:1504 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Oil Seed"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
+htc:1639 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Aniseed"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:1692 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Chemical Manufactures Acetic Acid"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:1758 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Gum Tragacanth"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:1825 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Arsenic"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:1895 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Kelp"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
+htc:1899 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Weld"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:1932 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Alum Roach"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:2002 a skos:Concept, crm:E55_Type ;
+    rdfs:label "Copperas"@en ;
+    oe:usedInIndustry oe:ind_calico_printing, oe:ind_soap_manufacture .
+
+htc:doc_albumin a skos:Concept, crm:E55_Type ;
+    rdfs:label "Albumin"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:doc_alizarine a skos:Concept, crm:E55_Type ;
+    rdfs:label "Alizarine"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:doc_ambergris a skos:Concept, crm:E55_Type ;
+    rdfs:label "Ambergris"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:doc_bichromate_of_potash a skos:Concept, crm:E55_Type ;
+    rdfs:label "Bichromate Of Potash"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:doc_blue_vitriol a skos:Concept, crm:E55_Type ;
+    rdfs:label "Blue Vitriol"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:doc_brazil_wood a skos:Concept, crm:E55_Type ;
+    rdfs:label "Brazil wood"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:doc_citric_acid a skos:Concept, crm:E55_Type ;
+    rdfs:label "Citric Acid"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:doc_muriatic_acid a skos:Concept, crm:E55_Type ;
+    rdfs:label "Muriatic Acid"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:doc_musk a skos:Concept, crm:E55_Type ;
+    rdfs:label "Musk"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
+
+htc:doc_neem_oil a skos:Concept, crm:E55_Type ;
+    rdfs:label "Neem Oil"@en ;
+    oe:usedInIndustry oe:ind_soap_manufacture .
+
+htc:doc_nitric_acid a skos:Concept, crm:E55_Type ;
+    rdfs:label "Nitric acid"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:doc_oxalic_acid a skos:Concept, crm:E55_Type ;
+    rdfs:label "Oxalic Acid"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:doc_quercitron a skos:Concept, crm:E55_Type ;
+    rdfs:label "Quercitron"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:doc_sal_ammoniac a skos:Concept, crm:E55_Type ;
+    rdfs:label "Sal Ammoniac"@en ;
+    oe:usedInIndustry oe:ind_calico_printing .
+
+htc:doc_vanilla a skos:Concept, crm:E55_Type ;
+    rdfs:label "Vanilla"@en ;
+    oe:usedInIndustry oe:ind_chocolate_confectionery .
