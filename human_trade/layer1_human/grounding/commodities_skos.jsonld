@@ -235,10 +235,24 @@
       "@id": "oe:madeOfMaterial",
       "@type": "owl:ObjectProperty",
       "rdfs:label": {
-        "@value": "base material of manufactured article or ore",
+        "@value": "base material of manufactured article or ore (Wikidata)",
         "@language": "en"
       },
       "rdfs:domain": {
+        "@id": "skos:Concept"
+      }
+    },
+    {
+      "@id": "oe:materialConcept",
+      "@type": "owl:ObjectProperty",
+      "rdfs:label": {
+        "@value": "canonical base-material archival concept in htc:scheme",
+        "@language": "en"
+      },
+      "rdfs:domain": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:range": {
         "@id": "skos:Concept"
       }
     },
@@ -272,7 +286,7 @@
         "@id": "https://creativecommons.org/licenses/by/4.0/"
       },
       "dcterms:created": {
-        "@value": "2026-11-24",
+        "@value": "2026-11-25",
         "@type": "xsd:date"
       },
       "owl:versionInfo": "4.0-layer1-human-dict-enriched",
@@ -5167,6 +5181,18 @@
         },
         {
           "@id": "htc:0192"
+        },
+        {
+          "@id": "htc:0657"
+        },
+        {
+          "@id": "htc:0865"
+        },
+        {
+          "@id": "htc:1672"
+        },
+        {
+          "@id": "htc:1815"
         }
       ],
       "skos:broadMatch": [
@@ -5525,6 +5551,116 @@
         },
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0117"
+        },
+        {
+          "@id": "htc:0173"
+        },
+        {
+          "@id": "htc:0371"
+        },
+        {
+          "@id": "htc:0664"
+        },
+        {
+          "@id": "htc:0694"
+        },
+        {
+          "@id": "htc:0710"
+        },
+        {
+          "@id": "htc:0722"
+        },
+        {
+          "@id": "htc:0850"
+        },
+        {
+          "@id": "htc:0880"
+        },
+        {
+          "@id": "htc:0881"
+        },
+        {
+          "@id": "htc:0916"
+        },
+        {
+          "@id": "htc:0955"
+        },
+        {
+          "@id": "htc:0982"
+        },
+        {
+          "@id": "htc:1008"
+        },
+        {
+          "@id": "htc:1047"
+        },
+        {
+          "@id": "htc:1048"
+        },
+        {
+          "@id": "htc:1073"
+        },
+        {
+          "@id": "htc:1075"
+        },
+        {
+          "@id": "htc:1096"
+        },
+        {
+          "@id": "htc:1147"
+        },
+        {
+          "@id": "htc:1151"
+        },
+        {
+          "@id": "htc:1152"
+        },
+        {
+          "@id": "htc:1169"
+        },
+        {
+          "@id": "htc:1185"
+        },
+        {
+          "@id": "htc:1189"
+        },
+        {
+          "@id": "htc:1242"
+        },
+        {
+          "@id": "htc:1289"
+        },
+        {
+          "@id": "htc:1324"
+        },
+        {
+          "@id": "htc:1357"
+        },
+        {
+          "@id": "htc:1582"
+        },
+        {
+          "@id": "htc:1634"
+        },
+        {
+          "@id": "htc:1665"
+        },
+        {
+          "@id": "htc:1670"
+        },
+        {
+          "@id": "htc:1853"
+        },
+        {
+          "@id": "htc:1947"
+        },
+        {
+          "@id": "htc:1975"
         }
       ],
       "skos:exactMatch": [
@@ -8021,6 +8157,16 @@
           "@id": "oe:series_kew_cust_5"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0296"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0296"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q63219186"
@@ -10241,6 +10387,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q287"
@@ -10382,6 +10538,16 @@
           "@id": "oe:series_csp_canadian_trade_and_navigation"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q286"
@@ -10431,6 +10597,41 @@
         },
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0105"
+        },
+        {
+          "@id": "htc:0115"
+        },
+        {
+          "@id": "htc:0146"
+        },
+        {
+          "@id": "htc:0237"
+        },
+        {
+          "@id": "htc:0274"
+        },
+        {
+          "@id": "htc:0311"
+        },
+        {
+          "@id": "htc:0516"
+        },
+        {
+          "@id": "htc:0672"
+        },
+        {
+          "@id": "htc:0819"
+        },
+        {
+          "@id": "htc:0966"
+        },
+        {
+          "@id": "htc:1043"
         }
       ],
       "skos:broadMatch": [
@@ -10530,6 +10731,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
         }
       ],
       "oe:madeOfMaterial": [
@@ -10908,6 +11119,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q169031"
@@ -11008,6 +11229,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "skos:broadMatch": [
@@ -12717,6 +12948,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q286"
@@ -13182,6 +13423,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q287"
@@ -13381,6 +13632,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
         }
       ],
       "skos:broadMatch": [
@@ -14002,6 +14263,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q287"
@@ -14253,6 +14524,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_csp_canadian_exports_blankseries"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -15226,6 +15507,11 @@
           "@id": "oe:series_csp_canadian_trade_and_navigation"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0015"
+        }
+      ],
       "skos:related": [
         {
           "@id": "htc:0015"
@@ -15400,6 +15686,16 @@
         },
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "skos:broadMatch": [
@@ -16163,6 +16459,38 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_csp_canadian_exports_blankseries"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0102"
+        },
+        {
+          "@id": "htc:0108"
+        },
+        {
+          "@id": "htc:0155"
+        },
+        {
+          "@id": "htc:0169"
+        },
+        {
+          "@id": "htc:0373"
+        },
+        {
+          "@id": "htc:0426"
+        },
+        {
+          "@id": "htc:0607"
+        },
+        {
+          "@id": "htc:0647"
+        },
+        {
+          "@id": "htc:0839"
+        },
+        {
+          "@id": "htc:0937"
         }
       ],
       "skos:broadMatch": [
@@ -17055,16 +17383,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_glass_ceramics_paper_woodware"
+        "@id": "htc:sub_metals_sem_wd_q753"
       },
       "oe:observationCount": 162,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Copper Old",
-      "oe:processingState": "manufactured",
-      "oe:ghostAcresDomain": "manufactured_goods",
-      "oe:landBasis": "industrial_manufactured",
-      "oe:theodoridisBucket": "manufactured_articles",
-      "oe:sitcCode": "SITC4_64_66_89_Paper_Glass_Misc_Manufactures",
+      "oe:processingState": "smelted_semi",
+      "oe:ghostAcresDomain": "minerals_metals_energy",
+      "oe:landBasis": "mineral",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_67_68_Metals",
       "oe:isAggregate": false,
       "oe:firstAttested": 1816,
       "oe:lastAttested": 1906,
@@ -17079,11 +17407,21 @@
           "@id": "oe:series_csp_canadian_exports_blankseries"
         }
       ],
-      "oe:madeOfMaterial": [
+      "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q753"
+        },
+        {
+          "@id": "http://aims.fao.org/aos/agrovoc/c_1868"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14299-5"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300011020"
         }
-      ]
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:0230",
@@ -17422,6 +17760,16 @@
           "@id": "oe:series_csp_canadian_trade_and_navigation"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q286"
@@ -17459,6 +17807,16 @@
         },
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "skos:broadMatch": [
@@ -18511,6 +18869,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0700"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0700"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q4410773"
@@ -18751,6 +19119,104 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "skos:related": [
+        {
+          "@id": "htc:0465"
+        },
+        {
+          "@id": "htc:0581"
+        },
+        {
+          "@id": "htc:0622"
+        },
+        {
+          "@id": "htc:0641"
+        },
+        {
+          "@id": "htc:0692"
+        },
+        {
+          "@id": "htc:0729"
+        },
+        {
+          "@id": "htc:0764"
+        },
+        {
+          "@id": "htc:0796"
+        },
+        {
+          "@id": "htc:0948"
+        },
+        {
+          "@id": "htc:0990"
+        },
+        {
+          "@id": "htc:0996"
+        },
+        {
+          "@id": "htc:1007"
+        },
+        {
+          "@id": "htc:1094"
+        },
+        {
+          "@id": "htc:1179"
+        },
+        {
+          "@id": "htc:1273"
+        },
+        {
+          "@id": "htc:1279"
+        },
+        {
+          "@id": "htc:1284"
+        },
+        {
+          "@id": "htc:1309"
+        },
+        {
+          "@id": "htc:1316"
+        },
+        {
+          "@id": "htc:1341"
+        },
+        {
+          "@id": "htc:1364"
+        },
+        {
+          "@id": "htc:1384"
+        },
+        {
+          "@id": "htc:1434"
+        },
+        {
+          "@id": "htc:1435"
+        },
+        {
+          "@id": "htc:1535"
+        },
+        {
+          "@id": "htc:1601"
+        },
+        {
+          "@id": "htc:1719"
+        },
+        {
+          "@id": "htc:1720"
+        },
+        {
+          "@id": "htc:1788"
+        },
+        {
+          "@id": "htc:1796"
+        },
+        {
+          "@id": "htc:1848"
+        },
+        {
+          "@id": "htc:1849"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q37681"
@@ -18855,6 +19321,16 @@
         },
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
         }
       ],
       "skos:broadMatch": [
@@ -19104,6 +19580,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q677"
@@ -19274,6 +19760,16 @@
         },
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0106"
         }
       ],
       "oe:madeOfMaterial": [
@@ -20397,6 +20893,32 @@
           "@id": "oe:series_csp_canadian_trade_and_navigation"
         }
       ],
+      "skos:related": [
+        {
+          "@id": "htc:0065"
+        },
+        {
+          "@id": "htc:0393"
+        },
+        {
+          "@id": "htc:1214"
+        },
+        {
+          "@id": "htc:1345"
+        },
+        {
+          "@id": "htc:1755"
+        },
+        {
+          "@id": "htc:1921"
+        },
+        {
+          "@id": "htc:1922"
+        },
+        {
+          "@id": "htc:1925"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "htc1866:metal"
@@ -20587,6 +21109,81 @@
       "skos:related": [
         {
           "@id": "htc:0308"
+        },
+        {
+          "@id": "htc:0159"
+        },
+        {
+          "@id": "htc:0480"
+        },
+        {
+          "@id": "htc:0494"
+        },
+        {
+          "@id": "htc:0505"
+        },
+        {
+          "@id": "htc:0628"
+        },
+        {
+          "@id": "htc:0654"
+        },
+        {
+          "@id": "htc:0740"
+        },
+        {
+          "@id": "htc:0810"
+        },
+        {
+          "@id": "htc:0820"
+        },
+        {
+          "@id": "htc:0862"
+        },
+        {
+          "@id": "htc:0893"
+        },
+        {
+          "@id": "htc:0918"
+        },
+        {
+          "@id": "htc:0992"
+        },
+        {
+          "@id": "htc:1003"
+        },
+        {
+          "@id": "htc:1041"
+        },
+        {
+          "@id": "htc:1122"
+        },
+        {
+          "@id": "htc:1277"
+        },
+        {
+          "@id": "htc:1512"
+        },
+        {
+          "@id": "htc:1671"
+        },
+        {
+          "@id": "htc:1715"
+        },
+        {
+          "@id": "htc:1716"
+        },
+        {
+          "@id": "htc:1725"
+        },
+        {
+          "@id": "htc:1782"
+        },
+        {
+          "@id": "htc:1846"
+        },
+        {
+          "@id": "htc:1910"
         }
       ],
       "skos:exactMatch": [
@@ -20856,6 +21453,89 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_csp_canadian_exports_blankseries"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0196"
+        },
+        {
+          "@id": "htc:0238"
+        },
+        {
+          "@id": "htc:0270"
+        },
+        {
+          "@id": "htc:0319"
+        },
+        {
+          "@id": "htc:0353"
+        },
+        {
+          "@id": "htc:0359"
+        },
+        {
+          "@id": "htc:0365"
+        },
+        {
+          "@id": "htc:0390"
+        },
+        {
+          "@id": "htc:0534"
+        },
+        {
+          "@id": "htc:0610"
+        },
+        {
+          "@id": "htc:0824"
+        },
+        {
+          "@id": "htc:0846"
+        },
+        {
+          "@id": "htc:0879"
+        },
+        {
+          "@id": "htc:0977"
+        },
+        {
+          "@id": "htc:1011"
+        },
+        {
+          "@id": "htc:1123"
+        },
+        {
+          "@id": "htc:1174"
+        },
+        {
+          "@id": "htc:1287"
+        },
+        {
+          "@id": "htc:1445"
+        },
+        {
+          "@id": "htc:1515"
+        },
+        {
+          "@id": "htc:1618"
+        },
+        {
+          "@id": "htc:1627"
+        },
+        {
+          "@id": "htc:1675"
+        },
+        {
+          "@id": "htc:1677"
+        },
+        {
+          "@id": "htc:1687"
+        },
+        {
+          "@id": "htc:1717"
+        },
+        {
+          "@id": "htc:1744"
         }
       ],
       "skos:broadMatch": [
@@ -21190,6 +21870,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0106"
         }
       ],
       "oe:madeOfMaterial": [
@@ -21556,6 +22246,16 @@
         },
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "oe:madeOfMaterial": [
@@ -23114,6 +23814,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q677"
@@ -23423,6 +24133,16 @@
           "@id": "oe:series_csp_canadian_exports_blankseries"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q1587699"
@@ -23724,6 +24444,16 @@
           "@id": "oe:series_csp_canadian_trade_and_navigation"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q677"
@@ -24002,6 +24732,16 @@
           "@id": "oe:series_kew_cust_5"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q1426327"
@@ -24039,6 +24779,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "skos:broadMatch": [
@@ -24162,6 +24912,16 @@
         },
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
         }
       ],
       "oe:madeOfMaterial": [
@@ -24971,6 +25731,16 @@
           "@id": "oe:series_csp_canadian_exports_blankseries"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q1587699"
@@ -25120,6 +25890,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0296"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0296"
         }
       ],
       "oe:madeOfMaterial": [
@@ -25303,6 +26083,16 @@
         },
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0932"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0932"
         }
       ],
       "oe:madeOfMaterial": [
@@ -26022,16 +26812,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_glass_ceramics_paper_woodware"
+        "@id": "htc:grp_metals_semi_finished"
       },
       "oe:observationCount": 89,
       "oe:groundingStatus": "local_concept_only",
       "oe:substanceHead": "Metal Old fit only to be re",
-      "oe:processingState": "manufactured",
-      "oe:ghostAcresDomain": "manufactured_goods",
-      "oe:landBasis": "industrial_manufactured",
-      "oe:theodoridisBucket": "manufactured_articles",
-      "oe:sitcCode": "SITC4_64_66_89_Paper_Glass_Misc_Manufactures",
+      "oe:processingState": "smelted_semi",
+      "oe:ghostAcresDomain": "minerals_metals_energy",
+      "oe:landBasis": "mineral",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_67_68_Metals",
       "oe:isAggregate": false,
       "oe:firstAttested": 1866,
       "oe:lastAttested": 1906,
@@ -26642,6 +27432,16 @@
           "@id": "oe:series_csp_canadian_trade_and_navigation"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q287"
@@ -26676,6 +27476,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1180"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1180"
         }
       ],
       "skos:broadMatch": [
@@ -28215,6 +29025,16 @@
           "@id": "oe:series_hcpp_other"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0932"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0932"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q1096"
@@ -28572,6 +29392,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -28706,6 +29536,14 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        },
+        {
+          "@id": "htc:0296"
         }
       ],
       "oe:madeOfMaterial": [
@@ -29235,6 +30073,16 @@
         },
         {
           "@id": "oe:series_hcpp_other"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
         }
       ],
       "skos:broadMatch": [
@@ -29932,6 +30780,16 @@
           "@id": "oe:series_kew_cust_5"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q11457"
@@ -30449,6 +31307,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -30889,6 +31757,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0106"
         }
       ],
       "oe:madeOfMaterial": [
@@ -31700,6 +32578,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "skos:broadMatch": [
@@ -33736,6 +34624,16 @@
           "@id": "oe:series_csp_canadian_exports_blankseries"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -33834,6 +34732,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_other"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -35034,6 +35942,16 @@
           "@id": "oe:series_csp_canadian_trade_and_navigation"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q287"
@@ -35160,6 +36078,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "oe:madeOfMaterial": [
@@ -35736,6 +36664,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -36013,6 +36951,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
         }
       ],
       "skos:broadMatch": [
@@ -36613,6 +37561,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -36898,6 +37856,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
         }
       ],
       "skos:broadMatch": [
@@ -37219,6 +38187,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -37338,6 +38316,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0015"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0015"
         }
       ],
       "oe:madeOfMaterial": [
@@ -37728,6 +38716,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -38047,6 +39045,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0106"
         }
       ],
       "oe:madeOfMaterial": [
@@ -38962,6 +39970,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -39057,6 +40075,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "skos:broadMatch": [
@@ -39391,6 +40419,20 @@
         },
         {
           "@id": "oe:series_csp_canadian_exports_blankseries"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0258"
+        },
+        {
+          "@id": "htc:0934"
+        },
+        {
+          "@id": "htc:1296"
+        },
+        {
+          "@id": "htc:1795"
         }
       ],
       "skos:broadMatch": [
@@ -39832,6 +40874,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "skos:broadMatch": [
@@ -40340,6 +41392,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -40500,15 +41562,7 @@
           "@id": "http://www.wikidata.org/entity/Q1587699"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
-      "oe:madeOfMaterial": [
-        {
-          "@id": "http://www.wikidata.org/entity/Q677"
-        },
-        {
-          "@id": "http://www.wikidata.org/entity/Q753"
-        }
-      ]
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:0727",
@@ -40633,6 +41687,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -41154,6 +42218,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
         }
       ],
       "skos:broadMatch": [
@@ -42148,6 +43222,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -42243,6 +43327,16 @@
         },
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -43554,6 +44648,16 @@
           "@id": "oe:series_csp_canadian_exports_blankseries"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -43606,6 +44710,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -44215,6 +45329,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -44606,6 +45730,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q286"
@@ -44640,6 +45774,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
         }
       ],
       "skos:broadMatch": [
@@ -44793,6 +45937,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "oe:madeOfMaterial": [
@@ -45362,6 +46516,16 @@
           "@id": "oe:series_csp_canadian_trade_and_navigation"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q287"
@@ -45655,6 +46819,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q677"
@@ -45800,6 +46974,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "skos:broadMatch": [
@@ -46318,6 +47502,16 @@
           "@id": "oe:series_hcpp_other"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -46403,6 +47597,11 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0910"
+        }
+      ],
       "skos:related": [
         {
           "@id": "htc:0910"
@@ -46451,6 +47650,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0015"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0015"
         }
       ],
       "oe:madeOfMaterial": [
@@ -47012,6 +48221,16 @@
           "@id": "oe:series_csp_canadian_exports_blankseries"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q37077"
@@ -47057,6 +48276,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -47091,6 +48320,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -47277,6 +48516,16 @@
         },
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1180"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1180"
         }
       ],
       "skos:broadMatch": [
@@ -47506,30 +48755,22 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_glass_ceramics_paper_woodware"
+        "@id": "htc:grp_metals_semi_finished"
       },
       "oe:observationCount": 31,
       "oe:groundingStatus": "local_concept_only",
       "oe:substanceHead": "Metal Old other than Iron or Copper for re-manufacture",
-      "oe:processingState": "manufactured",
-      "oe:ghostAcresDomain": "manufactured_goods",
-      "oe:landBasis": "industrial_manufactured",
-      "oe:theodoridisBucket": "manufactured_articles",
-      "oe:sitcCode": "SITC4_64_66_89_Paper_Glass_Misc_Manufactures",
+      "oe:processingState": "smelted_semi",
+      "oe:ghostAcresDomain": "minerals_metals_energy",
+      "oe:landBasis": "mineral",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_67_68_Metals",
       "oe:isAggregate": false,
       "oe:firstAttested": 1871,
       "oe:lastAttested": 1891,
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
-        }
-      ],
-      "oe:madeOfMaterial": [
-        {
-          "@id": "http://www.wikidata.org/entity/Q677"
-        },
-        {
-          "@id": "http://www.wikidata.org/entity/Q753"
         }
       ]
     },
@@ -47561,6 +48802,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
         }
       ],
       "oe:madeOfMaterial": [
@@ -47898,6 +49149,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
         }
       ],
       "skos:broadMatch": [
@@ -48562,6 +49823,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -48598,6 +49869,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1180"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1180"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q758"
@@ -48632,6 +49913,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
         }
       ],
       "skos:broadMatch": [
@@ -49202,6 +50493,17 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "skos:related": [
+        {
+          "@id": "htc:0397"
+        },
+        {
+          "@id": "htc:0457"
+        },
+        {
+          "@id": "htc:1857"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q1096"
@@ -49283,6 +50585,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0700"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0700"
         }
       ],
       "oe:madeOfMaterial": [
@@ -49408,6 +50720,16 @@
         },
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0211"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0211"
         }
       ],
       "oe:madeOfMaterial": [
@@ -49877,6 +51199,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -50174,6 +51506,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -50663,6 +52005,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q286"
@@ -51102,6 +52454,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q677"
@@ -51301,6 +52663,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -51677,6 +53049,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -51790,6 +53172,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
         }
       ],
       "skos:broadMatch": [
@@ -51982,6 +53374,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -52322,6 +53724,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -52493,6 +53905,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -52542,6 +53964,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -52652,6 +54084,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "oe:madeOfMaterial": [
@@ -53199,6 +54641,47 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0265"
+        },
+        {
+          "@id": "htc:0370"
+        },
+        {
+          "@id": "htc:0579"
+        },
+        {
+          "@id": "htc:0762"
+        },
+        {
+          "@id": "htc:0795"
+        },
+        {
+          "@id": "htc:0901"
+        },
+        {
+          "@id": "htc:1278"
+        },
+        {
+          "@id": "htc:1393"
+        },
+        {
+          "@id": "htc:1501"
+        },
+        {
+          "@id": "htc:1647"
+        },
+        {
+          "@id": "htc:1663"
+        },
+        {
+          "@id": "htc:1911"
+        },
+        {
+          "@id": "htc:2056"
         }
       ],
       "skos:broadMatch": [
@@ -53840,6 +55323,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -53954,6 +55447,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0106"
         }
       ],
       "oe:madeOfMaterial": [
@@ -54112,6 +55615,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -54146,6 +55659,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -54608,6 +56131,11 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0106"
         }
       ],
       "skos:broadMatch": [
@@ -55211,6 +56739,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -55288,6 +56826,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -55382,6 +56930,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1180"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1180"
         }
       ],
       "skos:broadMatch": [
@@ -56118,6 +57676,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q37681"
@@ -56183,6 +57751,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "skos:broadMatch": [
@@ -57194,6 +58772,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -57243,6 +58831,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "oe:madeOfMaterial": [
@@ -58204,6 +59802,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1180"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1180"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q758"
@@ -58238,6 +59846,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "skos:broadMatch": [
@@ -58410,6 +60028,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -58444,6 +60072,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -59094,6 +60732,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -59302,6 +60950,16 @@
           "@id": "oe:series_csp_canadian_exports_blankseries"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q168432"
@@ -59495,6 +61153,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -59544,6 +61212,29 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0427"
+        },
+        {
+          "@id": "htc:0886"
+        },
+        {
+          "@id": "htc:0917"
+        },
+        {
+          "@id": "htc:1077"
+        },
+        {
+          "@id": "htc:1146"
+        },
+        {
+          "@id": "htc:1386"
+        },
+        {
+          "@id": "htc:1499"
         }
       ],
       "skos:broadMatch": [
@@ -59768,6 +61459,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -59937,6 +61638,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -60941,6 +62652,16 @@
         },
         {
           "@id": "oe:series_newfoundland_data"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0296"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0296"
         }
       ],
       "skos:broadMatch": [
@@ -62051,6 +63772,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "skos:broadMatch": [
@@ -63303,6 +65034,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -63497,6 +65238,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -63548,6 +65299,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -63597,6 +65358,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -63816,6 +65587,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -63956,6 +65737,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q677"
@@ -64048,6 +65839,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -64303,6 +66104,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_csp_canadian_exports_blankseries"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0700"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0700"
         }
       ],
       "oe:madeOfMaterial": [
@@ -64845,6 +66656,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -65183,6 +67004,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -65494,6 +67325,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -66205,6 +68046,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -66368,6 +68219,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0296"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0296"
         }
       ],
       "oe:madeOfMaterial": [
@@ -66719,6 +68580,11 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0696"
+        }
+      ],
       "skos:related": [
         {
           "@id": "htc:0696"
@@ -66884,6 +68750,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -67151,6 +69027,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "oe:madeOfMaterial": [
@@ -68015,6 +69901,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -68113,6 +70009,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1180"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1180"
         }
       ],
       "oe:madeOfMaterial": [
@@ -68397,6 +70303,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
         }
       ],
       "oe:madeOfMaterial": [
@@ -70029,6 +71945,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -70081,6 +72007,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -70489,6 +72425,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "oe:madeOfMaterial": [
@@ -72639,6 +74585,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1180"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1180"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q758"
@@ -72716,6 +74672,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
         }
       ],
       "oe:madeOfMaterial": [
@@ -73113,6 +75079,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -73230,6 +75206,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "skos:broadMatch": [
@@ -74025,6 +76011,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -75865,6 +77861,16 @@
           "@id": "oe:series_kew_cust_5"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -76581,6 +78587,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -77244,6 +79260,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q677"
@@ -77487,15 +79513,7 @@
           "@id": "http://vocab.getty.edu/aat/300014063"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
-      "oe:madeOfMaterial": [
-        {
-          "@id": "http://www.wikidata.org/entity/Q11457"
-        },
-        {
-          "@id": "http://www.wikidata.org/entity/Q42329"
-        }
-      ]
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1625",
@@ -77602,6 +79620,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "oe:madeOfMaterial": [
@@ -77897,6 +79925,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -78455,6 +80493,16 @@
         },
         {
           "@id": "oe:series_kew_cust_4"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
         }
       ],
       "skos:broadMatch": [
@@ -79039,16 +81087,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_glass_ceramics_paper_woodware"
+        "@id": "htc:sub_metals_sem_wd_q677"
       },
       "oe:observationCount": 7,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Iron Old for Re-manufacture",
-      "oe:processingState": "manufactured",
-      "oe:ghostAcresDomain": "manufactured_goods",
-      "oe:landBasis": "industrial_manufactured",
-      "oe:theodoridisBucket": "manufactured_articles",
-      "oe:sitcCode": "SITC4_64_66_89_Paper_Glass_Misc_Manufactures",
+      "oe:processingState": "smelted_semi",
+      "oe:ghostAcresDomain": "minerals_metals_energy",
+      "oe:landBasis": "mineral",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_67_68_Metals",
       "oe:isAggregate": false,
       "oe:firstAttested": 1881,
       "oe:lastAttested": 1881,
@@ -79057,11 +81105,18 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
-      "oe:madeOfMaterial": [
+      "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q677"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14281-3"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300011002"
         }
-      ]
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1662",
@@ -79134,6 +81189,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
         }
       ],
       "skos:broadMatch": [
@@ -79216,6 +81281,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -79402,6 +81477,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -79453,6 +81538,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -79502,6 +81597,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0015"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0015"
         }
       ],
       "skos:broadMatch": [
@@ -79620,6 +81725,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q191552"
@@ -79703,6 +81818,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "skos:broadMatch": [
@@ -80116,6 +82241,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "oe:madeOfMaterial": [
@@ -81191,6 +83326,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q169031"
@@ -81234,6 +83379,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
         }
       ],
       "skos:broadMatch": [
@@ -81285,6 +83440,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
         }
       ],
       "oe:madeOfMaterial": [
@@ -81354,6 +83519,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -81403,6 +83578,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -81620,6 +83805,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
         }
       ],
       "oe:madeOfMaterial": [
@@ -82367,6 +84562,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0305"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q677"
@@ -82814,6 +85019,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_csp_canadian_exports_blankseries"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0296"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0296"
         }
       ],
       "skos:broadMatch": [
@@ -83986,6 +86201,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -84142,6 +86367,14 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        },
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -84237,6 +86470,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -84505,6 +86748,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0700"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0700"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q708"
@@ -84539,6 +86792,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -85282,6 +87545,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0015"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0015"
         }
       ],
       "skos:broadMatch": [
@@ -86516,6 +88789,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -86598,6 +88881,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -86647,6 +88940,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0263"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0263"
         }
       ],
       "skos:broadMatch": [
@@ -86829,6 +89132,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q169031"
@@ -86977,6 +89290,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0932"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0932"
         }
       ],
       "oe:madeOfMaterial": [
@@ -89021,6 +91344,16 @@
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0300"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q28823"
@@ -89070,6 +91403,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
         }
       ],
       "skos:broadMatch": [
@@ -89486,6 +91829,16 @@
           "@id": "oe:series_newfoundland_data"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0296"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0296"
+        }
+      ],
       "skos:broadMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q63219186"
@@ -89526,6 +91879,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_newfoundland_data"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0296"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0296"
         }
       ],
       "skos:broadMatch": [
@@ -89657,6 +92020,16 @@
       "oe:isAggregate": false,
       "oe:firstAttested": 1901,
       "oe:lastAttested": 1901,
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0296"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0296"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q753"
@@ -90508,6 +92881,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_kew_cust_5"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
         }
       ],
       "oe:madeOfMaterial": [
@@ -91603,6 +93986,16 @@
           "@id": "oe:series_kew_cust_4"
         }
       ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0021"
+        }
+      ],
       "oe:madeOfMaterial": [
         {
           "@id": "http://www.wikidata.org/entity/Q42329"
@@ -92581,16 +94974,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_customs_residuals"
+        "@id": "htc:grp_industrial_chemicals_alkalis"
       },
       "oe:observationCount": 1,
       "oe:groundingStatus": "local_concept_only",
       "oe:substanceHead": "Copperas",
       "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "other",
-      "oe:landBasis": "unclassified",
-      "oe:theodoridisBucket": "unclassified",
-      "oe:sitcCode": "oe:sitcUnassigned",
+      "oe:ghostAcresDomain": "drugs_botanicals_chemicals",
+      "oe:landBasis": "mineral",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_51_52_Chemicals",
       "oe:isAggregate": false,
       "skos:definition": {
         "@value": "(_Couperose verte_, Fr.; _Eisenvitriol_, Germ.) Sulphate of iron. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]",
@@ -94719,6 +97112,16 @@
       "prov:hadPrimarySource": [
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
+        }
+      ],
+      "oe:materialConcept": [
+        {
+          "@id": "htc:1025"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1025"
         }
       ],
       "oe:madeOfMaterial": [

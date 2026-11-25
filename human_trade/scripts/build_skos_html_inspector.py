@@ -114,6 +114,7 @@ def main():
             "aatrel": ext.get("getty_aat_relation", ""),
             "tx": [[t["qid"], t.get("taxon_name", ""), t.get("col_id", ""), t.get("relation", "")] for t in (c.get("source_taxa") or [])],
             "mat": [[m["qid"], m.get("label", "")] for m in (c.get("made_of_material") or [])],
+            "matc": c.get("material_concepts") or [],
             "relc": c.get("related_concepts") or [],
             "comb": c.get("combines_concepts") or [],
             "y0": prov.get("first_attested"),
@@ -672,6 +673,7 @@ function buildTtlSnippet(c) {{
   lines.push(`    skos:broader ${{c.br}} ;`);
   if (c.relc.length) lines.push(`    skos:related ${{c.relc.join(', ')}} ;`);
   if (c.comb.length) lines.push(`    oe:combinesConcept ${{c.comb.join(', ')}} ;`);
+  if (c.matc.length) lines.push(`    oe:materialConcept ${{c.matc.join(', ')}} ;`);
   if (c.def) lines.push(`    skos:definition "${{c.def.slice(0, 220).replace(/"/g, '\\"')}}${{c.def.length > 220 ? '...' : ''}}"@en ;`);
   if (c.dsrc.length) lines.push(`    oe:dictionarySource ${{c.dsrc.map(x => '<' + x[1] + '>').join(', ')}} ;`);
   lines.push(`    oe:macroSector ${{c.sec}} ;`);
@@ -753,6 +755,9 @@ function renderTable() {{
       const combChips = c.comb.length
         ? c.comb.map(id => `<span class="badge b-comb" onclick="jumpToConcept('${{id}}')">${{id}} ${{esc((BY_ID[id]||{{}}).l || '')}}</span>`).join('')
         : 'none';
+      const matcChips = c.matc.length
+        ? c.matc.map(id => `<span class="badge b-comb" onclick="jumpToConcept('${{id}}')">${{id}} ${{esc((BY_ID[id]||{{}}).l || '')}}</span>`).join('')
+        : 'none';
 
       htmlRows.push(`
         <tr class="detail-row"><td colspan="7">
@@ -763,6 +768,7 @@ function renderTable() {{
               <div><strong>Sector:</strong> ${{esc(c.secl)}} (<code>${{c.sec}}</code>)</div>
               <div><strong>Group:</strong> ${{esc(c.grpl)}} (<code>${{c.grp}}</code>)</div>
               <div><strong>Direct Broader:</strong> <code>${{c.br}}</code></div>
+              <div style="margin-top:4px"><strong>Base Material (<code>oe:materialConcept</code>):</strong> ${{matcChips}}</div>
               <div style="margin-top:4px"><strong>Combines (<code>oe:combinesConcept</code>):</strong> ${{combChips}}</div>
               <div style="margin-top:4px"><strong>Related (<code>skos:related</code>):</strong> ${{relChips}}</div>
             </div>
@@ -1261,6 +1267,7 @@ function renderVTreeInspector(n) {{
   const wd = c.wd.length ? `${{relBadge(c.rel)}} ` + c.wd.map(([q,l]) => `<a class="mono" target="_blank" href="https://www.wikidata.org/wiki/${{q}}">${{q}}</a> ${{esc(l)}}`).join(' + ') : relBadge(c.rel);
   const taxa = c.tx.length ? '<div style="margin:5px 0"><strong>Taxa:</strong> ' + c.tx.map(([q,nm]) => `<a target="_blank" href="https://www.wikidata.org/wiki/${{q}}"><em>${{esc(nm||q)}}</em></a>`).join(', ') + '</div>' : '';
   const comb = c.comb.length ? '<div style="margin:6px 0"><strong>Combines:</strong> ' + c.comb.map(id => `<span class="badge b-comb" onclick="focusVTreeConcept('${{id}}')">${{id}} ${{esc((BY_ID[id]||{{}}).l||'')}}</span>`).join('') + '</div>' : '';
+  const matc = c.matc.length ? '<div style="margin:6px 0"><strong>Base Material:</strong> ' + c.matc.map(id => `<span class="badge b-comb" onclick="focusVTreeConcept('${{id}}')">${{id}} ${{esc((BY_ID[id]||{{}}).l||'')}}</span>`).join('') + '</div>' : '';
   const relc = c.relc.length ? '<div style="margin:6px 0"><strong>Related:</strong> ' + c.relc.map(id => `<span class="badge b-link" onclick="focusVTreeConcept('${{id}}')">${{id}} ${{esc((BY_ID[id]||{{}}).l||'')}}</span>`).join('') + '</div>' : '';
 
   box.innerHTML = `
@@ -1273,6 +1280,7 @@ function renderVTreeInspector(n) {{
     ${{def}}
     ${{dsrc}}
     ${{taxa}}
+    ${{matc}}
     ${{comb}}
     ${{relc}}
     <div style="margin-top:12px">

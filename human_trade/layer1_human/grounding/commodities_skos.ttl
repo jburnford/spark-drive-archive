@@ -28,7 +28,8 @@ oe:mappingAuthority a owl:DatatypeProperty ; rdfs:label "Layer-B mapping authori
 oe:dictionarySource a owl:ObjectProperty ; rdfs:label "19th-century commercial dictionary source page"@en ; rdfs:domain skos:Concept .
 oe:combinesConcept a owl:ObjectProperty ; rdfs:label "merged customs line combining constituent archival concepts"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept .
 oe:sourceTaxon a owl:ObjectProperty ; rdfs:label "biological source taxon (Wikidata/CoL)"@en ; rdfs:domain skos:Concept .
-oe:madeOfMaterial a owl:ObjectProperty ; rdfs:label "base material of manufactured article or ore"@en ; rdfs:domain skos:Concept .
+oe:madeOfMaterial a owl:ObjectProperty ; rdfs:label "base material of manufactured article or ore (Wikidata)"@en ; rdfs:domain skos:Concept .
+oe:materialConcept a owl:ObjectProperty ; rdfs:label "canonical base-material archival concept in htc:scheme"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept .
 oe:colId a owl:DatatypeProperty ; rdfs:label "Catalogue of Life taxon ID"@en ; rdfs:range xsd:string .
 
 htc:scheme a skos:ConceptScheme ;
@@ -36,7 +37,7 @@ htc:scheme a skos:ConceptScheme ;
     dcterms:description "Four-tier historical archival SKOS ontology (9 Macro-Sectors -> 43 Commodity Groups -> Canonical Substance Groups -> 2,066 persistent verbatim British & Canadian customs headings) enriched with definitions, synonyms, cross-references, and verified Linnaean source taxa mined from six 19th-century commercial dictionaries (Simmonds 1892/1854, Mortimer 1823, McCulloch 1880, Watt 1908, Ure) and linked via reversible multi-anchor SKOS mappings to Wikidata (2026-11-09), FAO AGROVOC, ZBW STW Economics, Getty AAT, Catalogue of Life, SITC Rev. 4, and Theodoridis (2018)."@en ;
     dcterms:creator "Dr. Jim Clifford & HGIS Lab, University of Saskatchewan"@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:created "2026-11-24"^^xsd:date ;
+    dcterms:created "2026-11-25"^^xsd:date ;
     owl:versionInfo "4.0-layer1-human-dict-enriched" ;
     skos:hasTopConcept htc:sec_botanicals_dyes_chemicals, htc:sec_fibres_textiles, htc:sec_food_and_drink, htc:sec_forestry_timber, htc:sec_hides_skins_tanning, htc:sec_livestock_fodder, htc:sec_minerals_metals_manufactures, htc:sec_oils_fats_waxes, htc:sec_unclassified_residuals .
 
@@ -1698,7 +1699,7 @@ htc:0015 a skos:Concept ;
     oe:firstAttested "1830"^^xsd:integer ;
     oe:lastAttested "1911"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
-    skos:related htc:0696, htc:0142, htc:0192 ;
+    skos:related htc:0696, htc:0142, htc:0192, htc:0657, htc:0865, htc:1672, htc:1815 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch htc1866:latex ;
     skos:closeMatch agrovoc:c_6678, stw:14151-2, aat:300012941, aat:300263583 ;
@@ -1833,6 +1834,7 @@ htc:0021 a skos:Concept ;
     oe:firstAttested "1839"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    skos:related htc:0117, htc:0173, htc:0371, htc:0664, htc:0694, htc:0710, htc:0722, htc:0850, htc:0880, htc:0881, htc:0916, htc:0955, htc:0982, htc:1008, htc:1047, htc:1048, htc:1073, htc:1075, htc:1096, htc:1147, htc:1151, htc:1152, htc:1169, htc:1185, htc:1189, htc:1242, htc:1289, htc:1324, htc:1357, htc:1582, htc:1634, htc:1665, htc:1670, htc:1853, htc:1947, htc:1975 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:closeMatch stw:14130-3, aat:300014074 ;
     skos:exactMatch wd:Q42329 .
@@ -2788,6 +2790,8 @@ htc:0065 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation, oe:series_newfoundland_data, oe:series_kew_cust_4, oe:series_kew_cust_5 ;
+    oe:materialConcept htc:0296 ;
+    skos:related htc:0296 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q63219186 ;
     oe:madeOfMaterial wd:Q753 .
@@ -3602,6 +3606,8 @@ htc:0102 a skos:Concept ;
     oe:firstAttested "1822"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation, oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
     oe:madeOfMaterial wd:Q287 .
 
 htc:0103 a skos:Concept ;
@@ -3663,6 +3669,8 @@ htc:0105 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1911"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0106 ;
+    skos:related htc:0106 ;
     oe:madeOfMaterial wd:Q286 .
 
 htc:0106 a skos:Concept ;
@@ -3684,6 +3692,7 @@ htc:0106 a skos:Concept ;
     oe:firstAttested "1814"^^xsd:integer ;
     oe:lastAttested "1900"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_hcpp_annual_statement_of_trade ;
+    skos:related htc:0105, htc:0115, htc:0146, htc:0237, htc:0274, htc:0311, htc:0516, htc:0672, htc:0819, htc:0966, htc:1043 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q286, stw:14829-2, aat:300011845 .
 
@@ -3726,6 +3735,8 @@ htc:0108 a skos:Concept ;
     oe:firstAttested "1809"^^xsd:integer ;
     oe:lastAttested "1884"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
     oe:madeOfMaterial wd:Q287 .
 
 htc:0109 a skos:Concept ;
@@ -3875,6 +3886,8 @@ htc:0115 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1909"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_hcpp_other, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0106 ;
+    skos:related htc:0106 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q169031, aat:300148821 ;
     oe:madeOfMaterial wd:Q286 .
@@ -3917,6 +3930,8 @@ htc:0117 a skos:Concept ;
     oe:firstAttested "1827"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q42329 .
@@ -4549,6 +4564,8 @@ htc:0146 a skos:Concept ;
     oe:firstAttested "1812"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0106 ;
+    skos:related htc:0106 ;
     oe:madeOfMaterial wd:Q286 .
 
 htc:0147 a skos:Concept ;
@@ -4739,6 +4756,8 @@ htc:0155 a skos:Concept ;
     oe:firstAttested "1817"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation, oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
     oe:madeOfMaterial wd:Q287 .
 
 htc:0156 a skos:Concept ;
@@ -4822,6 +4841,8 @@ htc:0159 a skos:Concept ;
     oe:firstAttested "1812"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -5046,6 +5067,8 @@ htc:0169 a skos:Concept ;
     oe:firstAttested "1820"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q287, agrovoc:c_8421, stw:14150-4, aat:300011914 ;
     oe:madeOfMaterial wd:Q287 .
@@ -5136,6 +5159,8 @@ htc:0173 a skos:Concept ;
     oe:firstAttested "1850"^^xsd:integer ;
     oe:lastAttested "1865"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0174 a skos:Concept ;
@@ -5530,6 +5555,7 @@ htc:0192 a skos:Concept ;
     oe:firstAttested "1853"^^xsd:integer ;
     oe:lastAttested "1900"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0015 ;
     skos:related htc:0015 ;
     oe:madeOfMaterial wd:Q131877 .
 
@@ -5608,6 +5634,8 @@ htc:0196 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q191552, stw:14195-3, aat:300379991 ;
     oe:madeOfMaterial wd:Q677 .
@@ -5923,6 +5951,7 @@ htc:0211 a skos:Concept ;
     oe:firstAttested "1837"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
+    skos:related htc:0102, htc:0108, htc:0155, htc:0169, htc:0373, htc:0426, htc:0607, htc:0647, htc:0839, htc:0937 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q287, agrovoc:c_8421, stw:14150-4, aat:300011914 .
 
@@ -6284,20 +6313,21 @@ htc:0229 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0229" ;
     skos:prefLabel "Copper Old (fit only to be re-manufactured from 1876 onward)"@en ;
-    skos:broader htc:grp_glass_ceramics_paper_woodware ;
+    skos:broader htc:sub_metals_sem_wd_q753 ;
     oe:observationCount "162"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Copper Old" ;
-    oe:processingState "manufactured" ;
-    oe:ghostAcresDomain "manufactured_goods" ;
-    oe:landBasis "industrial_manufactured" ;
-    oe:theodoridisBucket "manufactured_articles" ;
-    oe:sitcCode "SITC4_64_66_89_Paper_Glass_Misc_Manufactures" ;
+    oe:processingState "smelted_semi" ;
+    oe:ghostAcresDomain "minerals_metals_energy" ;
+    oe:landBasis "mineral" ;
+    oe:theodoridisBucket "raw_materials" ;
+    oe:sitcCode "SITC4_67_68_Metals" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1816"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4, oe:series_csp_canadian_exports_blankseries ;
-    oe:madeOfMaterial wd:Q753 .
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q753, agrovoc:c_1868, stw:14299-5, aat:300011020 .
 
 htc:0230 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -6450,6 +6480,8 @@ htc:0237 a skos:Concept ;
     oe:firstAttested "1875"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0106 ;
+    skos:related htc:0106 ;
     oe:madeOfMaterial wd:Q286 .
 
 htc:0238 a skos:Concept ;
@@ -6469,6 +6501,8 @@ htc:0238 a skos:Concept ;
     oe:firstAttested "1807"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q203789, aat:300052201 ;
     oe:madeOfMaterial wd:Q677 .
@@ -6886,6 +6920,8 @@ htc:0258 a skos:Concept ;
     oe:firstAttested "1828"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0700 ;
+    skos:related htc:0700 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q4410773 ;
     oe:madeOfMaterial wd:Q708 .
@@ -6990,6 +7026,7 @@ htc:0263 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    skos:related htc:0465, htc:0581, htc:0622, htc:0641, htc:0692, htc:0729, htc:0764, htc:0796, htc:0948, htc:0990, htc:0996, htc:1007, htc:1094, htc:1179, htc:1273, htc:1279, htc:1284, htc:1309, htc:1316, htc:1341, htc:1364, htc:1384, htc:1434, htc:1435, htc:1535, htc:1601, htc:1719, htc:1720, htc:1788, htc:1796, htc:1848, htc:1849 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q37681, stw:14125-3, aat:300014072 .
 
@@ -7033,6 +7070,8 @@ htc:0265 a skos:Concept ;
     oe:firstAttested "1821"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_kew_cust_4, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -7134,6 +7173,8 @@ htc:0270 a skos:Concept ;
     oe:firstAttested "1838"^^xsd:integer ;
     oe:lastAttested "1896"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_trade_and_navigation, oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:0271 a skos:Concept ;
@@ -7213,6 +7254,8 @@ htc:0274 a skos:Concept ;
     oe:firstAttested "1840"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0106 ;
+    skos:related htc:0106 ;
     oe:madeOfMaterial wd:Q286 .
 
 htc:0275 a skos:Concept ;
@@ -7668,6 +7711,7 @@ htc:0296 a skos:Concept ;
     oe:firstAttested "1840"^^xsd:integer ;
     oe:lastAttested "1885"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    skos:related htc:0065, htc:0393, htc:1214, htc:1345, htc:1755, htc:1921, htc:1922, htc:1925 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch htc1866:metal, wd:Q753, agrovoc:c_1868, stw:14299-5, aat:300011020 .
 
@@ -7748,7 +7792,7 @@ htc:0300 a skos:Concept ;
     oe:firstAttested "1850"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
-    skos:related htc:0308 ;
+    skos:related htc:0308, htc:0159, htc:0480, htc:0494, htc:0505, htc:0628, htc:0654, htc:0740, htc:0810, htc:0820, htc:0862, htc:0893, htc:0918, htc:0992, htc:1003, htc:1041, htc:1122, htc:1277, htc:1512, htc:1671, htc:1715, htc:1716, htc:1725, htc:1782, htc:1846, htc:1910 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:closeMatch agrovoc:c_1926, stw:14055-5, aat:300183670 ;
     skos:exactMatch wd:Q11457 ;
@@ -7854,6 +7898,7 @@ htc:0305 a skos:Concept ;
     oe:firstAttested "1807"^^xsd:integer ;
     oe:lastAttested "1854"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
+    skos:related htc:0196, htc:0238, htc:0270, htc:0319, htc:0353, htc:0359, htc:0365, htc:0390, htc:0534, htc:0610, htc:0824, htc:0846, htc:0879, htc:0977, htc:1011, htc:1123, htc:1174, htc:1287, htc:1445, htc:1515, htc:1618, htc:1627, htc:1675, htc:1677, htc:1687, htc:1717, htc:1744 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch htc1866:metal, wd:Q677, stw:14281-3, aat:300011002 .
 
@@ -7980,6 +8025,8 @@ htc:0311 a skos:Concept ;
     oe:firstAttested "1811"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0106 ;
+    skos:related htc:0106 ;
     oe:madeOfMaterial wd:Q286 .
 
 htc:0312 a skos:Concept ;
@@ -8142,6 +8189,8 @@ htc:0319 a skos:Concept ;
     oe:firstAttested "1876"^^xsd:integer ;
     oe:lastAttested "1895"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation, oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:0320 a skos:Concept ;
@@ -8821,6 +8870,8 @@ htc:0353 a skos:Concept ;
     oe:firstAttested "1820"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:0354 a skos:Concept ;
@@ -8949,6 +9000,8 @@ htc:0359 a skos:Concept ;
     oe:firstAttested "1868"^^xsd:integer ;
     oe:lastAttested "1889"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q1587699 ;
     oe:madeOfMaterial wd:Q677 .
@@ -9073,6 +9126,8 @@ htc:0365 a skos:Concept ;
     oe:firstAttested "1888"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:0366 a skos:Concept ;
@@ -9181,6 +9236,8 @@ htc:0370 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_hcpp_other, oe:series_kew_cust_5 ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:madeOfMaterial wd:Q1426327 .
 
 htc:0371 a skos:Concept ;
@@ -9200,6 +9257,8 @@ htc:0371 a skos:Concept ;
     oe:firstAttested "1828"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q42329 .
@@ -9244,6 +9303,8 @@ htc:0373 a skos:Concept ;
     oe:firstAttested "1837"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
     oe:madeOfMaterial wd:Q287 .
 
 htc:0374 a skos:Concept ;
@@ -9587,6 +9648,8 @@ htc:0390 a skos:Concept ;
     oe:firstAttested "1884"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q1587699 ;
     oe:madeOfMaterial wd:Q677 .
@@ -9651,6 +9714,8 @@ htc:0393 a skos:Concept ;
     oe:firstAttested "1827"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0296 ;
+    skos:related htc:0296 ;
     oe:madeOfMaterial wd:Q753 .
 
 htc:0394 a skos:Concept ;
@@ -9730,6 +9795,8 @@ htc:0397 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0932 ;
+    skos:related htc:0932 ;
     oe:madeOfMaterial wd:Q1096 .
 
 htc:0398 a skos:Concept ;
@@ -10036,15 +10103,15 @@ htc:0413 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0413" ;
     skos:prefLabel "Metal Old fit only to be re-manufactured"@en ;
-    skos:broader htc:grp_glass_ceramics_paper_woodware ;
+    skos:broader htc:grp_metals_semi_finished ;
     oe:observationCount "89"^^xsd:integer ;
     oe:groundingStatus "local_concept_only" ;
     oe:substanceHead "Metal Old fit only to be re" ;
-    oe:processingState "manufactured" ;
-    oe:ghostAcresDomain "manufactured_goods" ;
-    oe:landBasis "industrial_manufactured" ;
-    oe:theodoridisBucket "manufactured_articles" ;
-    oe:sitcCode "SITC4_64_66_89_Paper_Glass_Misc_Manufactures" ;
+    oe:processingState "smelted_semi" ;
+    oe:ghostAcresDomain "minerals_metals_energy" ;
+    oe:landBasis "mineral" ;
+    oe:theodoridisBucket "raw_materials" ;
+    oe:sitcCode "SITC4_67_68_Metals" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1866"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
@@ -10309,6 +10376,8 @@ htc:0426 a skos:Concept ;
     oe:firstAttested "1841"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
     oe:madeOfMaterial wd:Q287 .
 
 htc:0427 a skos:Concept ;
@@ -10328,6 +10397,8 @@ htc:0427 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1180 ;
+    skos:related htc:1180 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q102798, aat:300152583 ;
     oe:madeOfMaterial wd:Q758 .
@@ -10958,6 +11029,8 @@ htc:0457 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_hcpp_other ;
+    oe:materialConcept htc:0932 ;
+    skos:related htc:0932 ;
     oe:madeOfMaterial wd:Q1096 .
 
 htc:0458 a skos:Concept ;
@@ -11114,6 +11187,8 @@ htc:0465 a skos:Concept ;
     oe:firstAttested "1828"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -11174,6 +11249,7 @@ htc:0468 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305, htc:0296 ;
     oe:madeOfMaterial wd:Q677, wd:Q753 .
 
 htc:0469 a skos:Concept ;
@@ -11414,6 +11490,8 @@ htc:0480 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_hcpp_other ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -11702,6 +11780,8 @@ htc:0494 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_5 ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:madeOfMaterial wd:Q11457 .
 
 htc:0495 a skos:Concept ;
@@ -11928,6 +12008,8 @@ htc:0505 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -12140,6 +12222,8 @@ htc:0516 a skos:Concept ;
     oe:firstAttested "1853"^^xsd:integer ;
     oe:lastAttested "1869"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0106 ;
+    skos:related htc:0106 ;
     oe:madeOfMaterial wd:Q286 .
 
 htc:0517 a skos:Concept ;
@@ -12500,6 +12584,8 @@ htc:0534 a skos:Concept ;
     oe:firstAttested "1763"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q191552, stw:14195-3, aat:300379991 ;
     oe:madeOfMaterial wd:Q677 .
@@ -13404,6 +13490,8 @@ htc:0579 a skos:Concept ;
     oe:firstAttested "1821"^^xsd:integer ;
     oe:lastAttested "1891"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_trade_and_navigation, oe:series_kew_cust_4, oe:series_csp_canadian_exports_blankseries ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -13445,6 +13533,8 @@ htc:0581 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1839"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_other ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -13969,6 +14059,8 @@ htc:0607 a skos:Concept ;
     oe:firstAttested "1888"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
     oe:madeOfMaterial wd:Q287 .
 
 htc:0608 a skos:Concept ;
@@ -14029,6 +14121,8 @@ htc:0610 a skos:Concept ;
     oe:firstAttested "1817"^^xsd:integer ;
     oe:lastAttested "1876"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:0611 a skos:Concept ;
@@ -14273,6 +14367,8 @@ htc:0622 a skos:Concept ;
     oe:firstAttested "1827"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -14395,6 +14491,8 @@ htc:0628 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -14658,6 +14756,8 @@ htc:0641 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_other, oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -14779,6 +14879,8 @@ htc:0647 a skos:Concept ;
     oe:firstAttested "1809"^^xsd:integer ;
     oe:lastAttested "1836"^^xsd:integer ;
     prov:hadPrimarySource oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q287, agrovoc:c_8421, stw:14150-4, aat:300011914 ;
     oe:madeOfMaterial wd:Q287 .
@@ -14916,6 +15018,8 @@ htc:0654 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -14974,6 +15078,8 @@ htc:0657 a skos:Concept ;
     oe:firstAttested "1869"^^xsd:integer ;
     oe:lastAttested "1911"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0015 ;
+    skos:related htc:0015 ;
     oe:madeOfMaterial wd:Q131877 .
 
 htc:0658 a skos:Concept ;
@@ -15125,6 +15231,8 @@ htc:0664 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0665 a skos:Concept ;
@@ -15281,6 +15389,8 @@ htc:0672 a skos:Concept ;
     oe:firstAttested "1853"^^xsd:integer ;
     oe:lastAttested "1869"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0106 ;
+    skos:related htc:0106 ;
     oe:madeOfMaterial wd:Q286 .
 
 htc:0673 a skos:Concept ;
@@ -15684,6 +15794,8 @@ htc:0692 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_other, oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -15725,6 +15837,8 @@ htc:0694 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q42329 .
@@ -15855,6 +15969,7 @@ htc:0700 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_other, oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries ;
+    skos:related htc:0258, htc:0934, htc:1296, htc:1795 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q708, agrovoc:c_4235, stw:14294-1, aat:300011022 .
 
@@ -16056,6 +16171,8 @@ htc:0710 a skos:Concept ;
     oe:firstAttested "1849"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q42329 .
@@ -16293,6 +16410,8 @@ htc:0722 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0723 a skos:Concept ;
@@ -16372,8 +16491,7 @@ htc:0726 a skos:Concept ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_hcpp_annual_statement_of_trade ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q1587699 ;
-    oe:madeOfMaterial wd:Q677, wd:Q753 .
+    skos:broadMatch wd:Q1587699 .
 
 htc:0727 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -16434,6 +16552,8 @@ htc:0729 a skos:Concept ;
     oe:firstAttested "1847"^^xsd:integer ;
     oe:lastAttested "1896"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -16659,6 +16779,8 @@ htc:0740 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1886"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -17106,6 +17228,8 @@ htc:0762 a skos:Concept ;
     oe:firstAttested "1830"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -17147,6 +17271,8 @@ htc:0764 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -17755,6 +17881,8 @@ htc:0795 a skos:Concept ;
     oe:firstAttested "1822"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4, oe:series_csp_canadian_exports_blankseries ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -17776,6 +17904,8 @@ htc:0796 a skos:Concept ;
     oe:firstAttested "1846"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -18061,6 +18191,8 @@ htc:0810 a skos:Concept ;
     oe:firstAttested "1830"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -18240,6 +18372,8 @@ htc:0819 a skos:Concept ;
     oe:firstAttested "1853"^^xsd:integer ;
     oe:lastAttested "1869"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0106 ;
+    skos:related htc:0106 ;
     oe:madeOfMaterial wd:Q286 .
 
 htc:0820 a skos:Concept ;
@@ -18259,6 +18393,8 @@ htc:0820 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -18336,6 +18472,8 @@ htc:0824 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:0825 a skos:Concept ;
@@ -18621,6 +18759,8 @@ htc:0839 a skos:Concept ;
     oe:firstAttested "1889"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
     oe:madeOfMaterial wd:Q287 .
 
 htc:0840 a skos:Concept ;
@@ -18757,6 +18897,8 @@ htc:0846 a skos:Concept ;
     oe:firstAttested "1826"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:0847 a skos:Concept ;
@@ -18832,6 +18974,8 @@ htc:0850 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q42329 .
@@ -19070,6 +19214,8 @@ htc:0862 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1839"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_other ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -19109,6 +19255,7 @@ htc:0864 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0910 ;
     skos:related htc:0910 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q12888135, aat:300037654 ;
@@ -19131,6 +19278,8 @@ htc:0865 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0015 ;
+    skos:related htc:0015 ;
     oe:madeOfMaterial wd:Q131877 .
 
 htc:0866 a skos:Concept ;
@@ -19401,6 +19550,8 @@ htc:0879 a skos:Concept ;
     oe:firstAttested "1837"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q37077, aat:300033565 ;
     oe:madeOfMaterial wd:Q677 .
@@ -19422,6 +19573,8 @@ htc:0880 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1896"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0881 a skos:Concept ;
@@ -19441,6 +19594,8 @@ htc:0881 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0882 a skos:Concept ;
@@ -19535,6 +19690,8 @@ htc:0886 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_other, oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1180 ;
+    skos:related htc:1180 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q102798, aat:300152583 ;
     oe:madeOfMaterial wd:Q758 .
@@ -19637,20 +19794,19 @@ htc:0892 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0892" ;
     skos:prefLabel "Metal Old other than Iron or Copper for re-manufacture"@en ;
-    skos:broader htc:grp_glass_ceramics_paper_woodware ;
+    skos:broader htc:grp_metals_semi_finished ;
     oe:observationCount "31"^^xsd:integer ;
     oe:groundingStatus "local_concept_only" ;
     oe:substanceHead "Metal Old other than Iron or Copper for re-manufacture" ;
-    oe:processingState "manufactured" ;
-    oe:ghostAcresDomain "manufactured_goods" ;
-    oe:landBasis "industrial_manufactured" ;
-    oe:theodoridisBucket "manufactured_articles" ;
-    oe:sitcCode "SITC4_64_66_89_Paper_Glass_Misc_Manufactures" ;
+    oe:processingState "smelted_semi" ;
+    oe:ghostAcresDomain "minerals_metals_energy" ;
+    oe:landBasis "mineral" ;
+    oe:theodoridisBucket "raw_materials" ;
+    oe:sitcCode "SITC4_67_68_Metals" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1891"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
-    oe:madeOfMaterial wd:Q677, wd:Q753 .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
 
 htc:0893 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -19669,6 +19825,8 @@ htc:0893 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:madeOfMaterial wd:Q11457 .
 
 htc:0894 a skos:Concept ;
@@ -19824,6 +19982,8 @@ htc:0901 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_other, oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -20126,6 +20286,8 @@ htc:0916 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1896"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0917 a skos:Concept ;
@@ -20145,6 +20307,8 @@ htc:0917 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1180 ;
+    skos:related htc:1180 ;
     oe:madeOfMaterial wd:Q758 .
 
 htc:0918 a skos:Concept ;
@@ -20164,6 +20328,8 @@ htc:0918 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -20435,6 +20601,7 @@ htc:0932 a skos:Concept ;
     oe:firstAttested "1860"^^xsd:integer ;
     oe:lastAttested "1900"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    skos:related htc:0397, htc:0457, htc:1857 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q1096, agrovoc:c_7782, stw:14310-1, aat:300133748 .
 
@@ -20475,6 +20642,8 @@ htc:0934 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1896"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0700 ;
+    skos:related htc:0700 ;
     oe:madeOfMaterial wd:Q708 .
 
 htc:0935 a skos:Concept ;
@@ -20534,6 +20703,8 @@ htc:0937 a skos:Concept ;
     oe:firstAttested "1889"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    oe:materialConcept htc:0211 ;
+    skos:related htc:0211 ;
     oe:madeOfMaterial wd:Q287 .
 
 htc:0938 a skos:Concept ;
@@ -20751,6 +20922,8 @@ htc:0948 a skos:Concept ;
     oe:firstAttested "1829"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_other, oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -20889,6 +21062,8 @@ htc:0955 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0956 a skos:Concept ;
@@ -21109,6 +21284,8 @@ htc:0966 a skos:Concept ;
     oe:firstAttested "1853"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0106 ;
+    skos:related htc:0106 ;
     oe:madeOfMaterial wd:Q286 .
 
 htc:0967 a skos:Concept ;
@@ -21323,6 +21500,8 @@ htc:0977 a skos:Concept ;
     oe:firstAttested "1876"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:0978 a skos:Concept ;
@@ -21421,6 +21600,8 @@ htc:0982 a skos:Concept ;
     oe:firstAttested "1829"^^xsd:integer ;
     oe:lastAttested "1876"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:0983 a skos:Concept ;
@@ -21587,6 +21768,8 @@ htc:0990 a skos:Concept ;
     oe:firstAttested "1876"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -21630,6 +21813,8 @@ htc:0992 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -21713,6 +21898,8 @@ htc:0996 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -21857,6 +22044,8 @@ htc:1003 a skos:Concept ;
     oe:firstAttested "1830"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_kew_cust_4, oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -21936,6 +22125,8 @@ htc:1007 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -21957,6 +22148,8 @@ htc:1008 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1009 a skos:Concept ;
@@ -22014,6 +22207,8 @@ htc:1011 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:1012 a skos:Concept ;
@@ -22283,6 +22478,7 @@ htc:1025 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    skos:related htc:0265, htc:0370, htc:0579, htc:0762, htc:0795, htc:0901, htc:1278, htc:1393, htc:1501, htc:1647, htc:1663, htc:1911, htc:2056 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q1426327, aat:300014069 .
 
@@ -22596,6 +22792,8 @@ htc:1041 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -22641,6 +22839,8 @@ htc:1043 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1869"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0106 ;
+    skos:related htc:0106 ;
     oe:madeOfMaterial wd:Q286 .
 
 htc:1044 a skos:Concept ;
@@ -22718,6 +22918,8 @@ htc:1047 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1048 a skos:Concept ;
@@ -22737,6 +22939,8 @@ htc:1048 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1049 a skos:Concept ;
@@ -22957,6 +23161,7 @@ htc:1059 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1909"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0106 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q286, stw:14829-2, aat:300011845 ;
     oe:madeOfMaterial wd:Q286 .
@@ -23237,6 +23442,8 @@ htc:1073 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1896"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1074 a skos:Concept ;
@@ -23276,6 +23483,8 @@ htc:1075 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1076 a skos:Concept ;
@@ -23317,6 +23526,8 @@ htc:1077 a skos:Concept ;
     oe:firstAttested "1891"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1180 ;
+    skos:related htc:1180 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q758, agrovoc:c_8517, stw:14309-0, aat:300011037 ;
     oe:madeOfMaterial wd:Q758 .
@@ -23661,6 +23872,8 @@ htc:1094 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:madeOfMaterial wd:Q37681 .
 
 htc:1095 a skos:Concept ;
@@ -23698,6 +23911,8 @@ htc:1096 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q42329 .
@@ -24198,6 +24413,8 @@ htc:1122 a skos:Concept ;
     oe:firstAttested "1891"^^xsd:integer ;
     oe:lastAttested "1896"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -24219,6 +24436,8 @@ htc:1123 a skos:Concept ;
     oe:firstAttested "1891"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:1124 a skos:Concept ;
@@ -24671,6 +24890,8 @@ htc:1146 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1180 ;
+    skos:related htc:1180 ;
     oe:madeOfMaterial wd:Q758 .
 
 htc:1147 a skos:Concept ;
@@ -24690,6 +24911,8 @@ htc:1147 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q42329 .
@@ -24770,6 +24993,8 @@ htc:1151 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1152 a skos:Concept ;
@@ -24789,6 +25014,8 @@ htc:1152 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1153 a skos:Concept ;
@@ -25115,6 +25342,8 @@ htc:1169 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1170 a skos:Concept ;
@@ -25214,6 +25443,8 @@ htc:1174 a skos:Concept ;
     oe:firstAttested "1837"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q168432, aat:300219429 ;
     oe:madeOfMaterial wd:Q677 .
@@ -25311,6 +25542,8 @@ htc:1179 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -25332,6 +25565,7 @@ htc:1180 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1900"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    skos:related htc:0427, htc:0886, htc:0917, htc:1077, htc:1146, htc:1386, htc:1499 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q758, agrovoc:c_8517, stw:14309-0, aat:300011037 .
 
@@ -25432,6 +25666,8 @@ htc:1185 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q42329 .
@@ -25511,6 +25747,8 @@ htc:1189 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1190 a skos:Concept ;
@@ -25998,6 +26236,8 @@ htc:1214 a skos:Concept ;
     oe:firstAttested "1860"^^xsd:integer ;
     oe:lastAttested "1900"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_newfoundland_data ;
+    oe:materialConcept htc:0296 ;
+    skos:related htc:0296 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q63219186 ;
     oe:madeOfMaterial wd:Q753 .
@@ -26541,6 +26781,8 @@ htc:1242 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q42329 .
@@ -27145,6 +27387,8 @@ htc:1273 a skos:Concept ;
     oe:firstAttested "1838"^^xsd:integer ;
     oe:lastAttested "1886"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -27227,6 +27471,8 @@ htc:1277 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -27248,6 +27494,8 @@ htc:1278 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -27269,6 +27517,8 @@ htc:1279 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -27368,6 +27618,8 @@ htc:1284 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -27429,6 +27681,8 @@ htc:1287 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:1288 a skos:Concept ;
@@ -27470,6 +27724,8 @@ htc:1289 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1290 a skos:Concept ;
@@ -27603,6 +27859,8 @@ htc:1296 a skos:Concept ;
     oe:firstAttested "1893"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
+    oe:materialConcept htc:0700 ;
+    skos:related htc:0700 ;
     oe:madeOfMaterial wd:Q708 .
 
 htc:1297 a skos:Concept ;
@@ -27856,6 +28114,8 @@ htc:1309 a skos:Concept ;
     oe:firstAttested "1826"^^xsd:integer ;
     oe:lastAttested "1877"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -28002,6 +28262,8 @@ htc:1316 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -28157,6 +28419,8 @@ htc:1324 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1325 a skos:Concept ;
@@ -28494,6 +28758,8 @@ htc:1341 a skos:Concept ;
     oe:firstAttested "1828"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -28573,6 +28839,8 @@ htc:1345 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0296 ;
+    skos:related htc:0296 ;
     oe:madeOfMaterial wd:Q753 .
 
 htc:1346 a skos:Concept ;
@@ -28735,6 +29003,7 @@ htc:1353 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1896"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0696 ;
     skos:related htc:0696 ;
     oe:madeOfMaterial wd:Q423261 .
 
@@ -28815,6 +29084,8 @@ htc:1357 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1358 a skos:Concept ;
@@ -28950,6 +29221,8 @@ htc:1364 a skos:Concept ;
     oe:firstAttested "1901"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:madeOfMaterial wd:Q37681 .
 
 htc:1365 a skos:Concept ;
@@ -29354,6 +29627,8 @@ htc:1384 a skos:Concept ;
     oe:firstAttested "1843"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -29395,6 +29670,8 @@ htc:1386 a skos:Concept ;
     oe:firstAttested "1852"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:1180 ;
+    skos:related htc:1180 ;
     oe:madeOfMaterial wd:Q758 .
 
 htc:1387 a skos:Concept ;
@@ -29533,6 +29810,8 @@ htc:1393 a skos:Concept ;
     oe:firstAttested "1866"^^xsd:integer ;
     oe:lastAttested "1871"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:madeOfMaterial wd:Q1426327 .
 
 htc:1394 a skos:Concept ;
@@ -30333,6 +30612,8 @@ htc:1434 a skos:Concept ;
     oe:firstAttested "1828"^^xsd:integer ;
     oe:lastAttested "1876"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -30354,6 +30635,8 @@ htc:1435 a skos:Concept ;
     oe:firstAttested "1832"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -30551,6 +30834,8 @@ htc:1445 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:1446 a skos:Concept ;
@@ -31608,6 +31893,8 @@ htc:1499 a skos:Concept ;
     oe:firstAttested "1875"^^xsd:integer ;
     oe:lastAttested "1895"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1180 ;
+    skos:related htc:1180 ;
     oe:madeOfMaterial wd:Q758 .
 
 htc:1500 a skos:Concept ;
@@ -31647,6 +31934,8 @@ htc:1501 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:madeOfMaterial wd:Q1426327 .
 
 htc:1502 a skos:Concept ;
@@ -31856,6 +32145,8 @@ htc:1512 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -31915,6 +32206,8 @@ htc:1515 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q37077, aat:300033565 ;
     oe:madeOfMaterial wd:Q677 .
@@ -32303,6 +32596,8 @@ htc:1535 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -33220,6 +33515,8 @@ htc:1582 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1895"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_5 ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1583 a skos:Concept ;
@@ -33586,6 +33883,8 @@ htc:1601 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -33916,6 +34215,8 @@ htc:1618 a skos:Concept ;
     oe:firstAttested "1901"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:1619 a skos:Concept ;
@@ -34034,8 +34335,7 @@ htc:1624 a skos:Concept ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
-    oe:madeOfMaterial wd:Q11457, wd:Q42329 .
+    skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 .
 
 htc:1625 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -34094,6 +34394,8 @@ htc:1627 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:1628 a skos:Concept ;
@@ -34235,6 +34537,8 @@ htc:1634 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1635 a skos:Concept ;
@@ -34498,6 +34802,8 @@ htc:1647 a skos:Concept ;
     oe:firstAttested "1835"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -34767,20 +35073,21 @@ htc:1661 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1661" ;
     skos:prefLabel "Iron Old for Re-manufacture"@en ;
-    skos:broader htc:grp_glass_ceramics_paper_woodware ;
+    skos:broader htc:sub_metals_sem_wd_q677 ;
     oe:observationCount "7"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Iron Old for Re-manufacture" ;
-    oe:processingState "manufactured" ;
-    oe:ghostAcresDomain "manufactured_goods" ;
-    oe:landBasis "industrial_manufactured" ;
-    oe:theodoridisBucket "manufactured_articles" ;
-    oe:sitcCode "SITC4_64_66_89_Paper_Glass_Misc_Manufactures" ;
+    oe:processingState "smelted_semi" ;
+    oe:ghostAcresDomain "minerals_metals_energy" ;
+    oe:landBasis "mineral" ;
+    oe:theodoridisBucket "raw_materials" ;
+    oe:sitcCode "SITC4_67_68_Metals" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
-    oe:madeOfMaterial wd:Q677 .
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q677, stw:14281-3, aat:300011002 .
 
 htc:1662 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -34819,6 +35126,8 @@ htc:1663 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -34858,6 +35167,8 @@ htc:1665 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1666 a skos:Concept ;
@@ -34953,6 +35264,8 @@ htc:1670 a skos:Concept ;
     oe:firstAttested "1901"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q42329 .
@@ -34974,6 +35287,8 @@ htc:1671 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -34995,6 +35310,8 @@ htc:1672 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0015 ;
+    skos:related htc:0015 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q188447, aat:300050615 ;
     oe:madeOfMaterial wd:Q131877 .
@@ -35054,6 +35371,8 @@ htc:1675 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q191552, stw:14195-3, aat:300379991 ;
     oe:madeOfMaterial wd:Q677 .
@@ -35095,6 +35414,8 @@ htc:1677 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q2002016, aat:300036363 ;
     oe:madeOfMaterial wd:Q677 .
@@ -35293,6 +35614,8 @@ htc:1687 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:1688 a skos:Concept ;
@@ -35830,6 +36153,8 @@ htc:1715 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q169031, aat:300148821 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -35851,6 +36176,8 @@ htc:1716 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -35872,6 +36199,8 @@ htc:1717 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1861"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:1718 a skos:Concept ;
@@ -35909,6 +36238,8 @@ htc:1719 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1861"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -35930,6 +36261,8 @@ htc:1720 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -36029,6 +36362,8 @@ htc:1725 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1871"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:madeOfMaterial wd:Q11457 .
 
 htc:1726 a skos:Concept ;
@@ -36394,6 +36729,8 @@ htc:1744 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0305 ;
+    skos:related htc:0305 ;
     oe:madeOfMaterial wd:Q677 .
 
 htc:1745 a skos:Concept ;
@@ -36609,6 +36946,8 @@ htc:1755 a skos:Concept ;
     oe:firstAttested "1897"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
+    oe:materialConcept htc:0296 ;
+    skos:related htc:0296 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q63219186 ;
     oe:madeOfMaterial wd:Q753 .
@@ -37154,6 +37493,8 @@ htc:1782 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -37231,6 +37572,7 @@ htc:1786 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263, htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681, wd:Q42329 .
@@ -37272,6 +37614,8 @@ htc:1788 a skos:Concept ;
     oe:firstAttested "1861"^^xsd:integer ;
     oe:lastAttested "1861"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -37408,6 +37752,8 @@ htc:1795 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0700 ;
+    skos:related htc:0700 ;
     oe:madeOfMaterial wd:Q708 .
 
 htc:1796 a skos:Concept ;
@@ -37427,6 +37773,8 @@ htc:1796 a skos:Concept ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1871"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -37795,6 +38143,8 @@ htc:1815 a skos:Concept ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0015 ;
+    skos:related htc:0015 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q188447, aat:300050615 ;
     oe:madeOfMaterial wd:Q131877 .
@@ -38402,6 +38752,8 @@ htc:1846 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -38441,6 +38793,8 @@ htc:1848 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -38462,6 +38816,8 @@ htc:1849 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0263 ;
+    skos:related htc:0263 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q37681 .
@@ -38543,6 +38899,8 @@ htc:1853 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q169031, aat:300148821 ;
     oe:madeOfMaterial wd:Q42329 .
@@ -38620,6 +38978,8 @@ htc:1857 a skos:Concept ;
     oe:firstAttested "1866"^^xsd:integer ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0932 ;
+    skos:related htc:0932 ;
     oe:madeOfMaterial wd:Q1096 .
 
 htc:1858 a skos:Concept ;
@@ -39643,6 +40003,8 @@ htc:1910 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:0300 ;
+    skos:related htc:0300 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q11457 .
@@ -39664,6 +40026,8 @@ htc:1911 a skos:Concept ;
     oe:firstAttested "1856"^^xsd:integer ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q28823, stw:14846-2, aat:300231565, aat:300014063 ;
     oe:madeOfMaterial wd:Q1426327 .
@@ -39863,6 +40227,8 @@ htc:1921 a skos:Concept ;
     oe:firstAttested "1891"^^xsd:integer ;
     oe:lastAttested "1891"^^xsd:integer ;
     prov:hadPrimarySource oe:series_newfoundland_data ;
+    oe:materialConcept htc:0296 ;
+    skos:related htc:0296 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q63219186 ;
     oe:madeOfMaterial wd:Q753 .
@@ -39884,6 +40250,8 @@ htc:1922 a skos:Concept ;
     oe:firstAttested "1891"^^xsd:integer ;
     oe:lastAttested "1891"^^xsd:integer ;
     prov:hadPrimarySource oe:series_newfoundland_data ;
+    oe:materialConcept htc:0296 ;
+    skos:related htc:0296 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:broadMatch wd:Q63219186 ;
     oe:madeOfMaterial wd:Q753 .
@@ -39944,6 +40312,8 @@ htc:1925 a skos:Concept ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1901"^^xsd:integer ;
     oe:lastAttested "1901"^^xsd:integer ;
+    oe:materialConcept htc:0296 ;
+    skos:related htc:0296 ;
     oe:madeOfMaterial wd:Q753 .
 
 htc:1926 a skos:Concept ;
@@ -40371,6 +40741,8 @@ htc:1947 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1800"^^xsd:integer ;
     prov:hadPrimarySource oe:series_kew_cust_5 ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1948 a skos:Concept ;
@@ -40917,6 +41289,8 @@ htc:1975 a skos:Concept ;
     oe:firstAttested "1842"^^xsd:integer ;
     oe:lastAttested "1843"^^xsd:integer ;
     prov:hadPrimarySource oe:series_kew_cust_4 ;
+    oe:materialConcept htc:0021 ;
+    skos:related htc:0021 ;
     oe:madeOfMaterial wd:Q42329 .
 
 htc:1976 a skos:Concept ;
@@ -41419,15 +41793,15 @@ htc:2002 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "2002" ;
     skos:prefLabel "Copperas"@en ;
-    skos:broader htc:grp_customs_residuals ;
+    skos:broader htc:grp_industrial_chemicals_alkalis ;
     oe:observationCount "1"^^xsd:integer ;
     oe:groundingStatus "local_concept_only" ;
     oe:substanceHead "Copperas" ;
     oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "other" ;
-    oe:landBasis "unclassified" ;
-    oe:theodoridisBucket "unclassified" ;
-    oe:sitcCode "oe:sitcUnassigned" ;
+    oe:ghostAcresDomain "drugs_botanicals_chemicals" ;
+    oe:landBasis "mineral" ;
+    oe:theodoridisBucket "raw_materials" ;
+    oe:sitcCode "SITC4_51_52_Chemicals" ;
     oe:isAggregate "false"^^xsd:boolean ;
     skos:definition "(_Couperose verte_, Fr.; _Eisenvitriol_, Germ.) Sulphate of iron. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
     oe:dictionarySource <https://www.gutenberg.org/ebooks/44562>, <https://archive.org/details/generalcommercia00mort/page/n250> ;
@@ -42496,6 +42870,8 @@ htc:2056 a skos:Concept ;
     oe:firstAttested "1881"^^xsd:integer ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:materialConcept htc:1025 ;
+    skos:related htc:1025 ;
     oe:madeOfMaterial wd:Q1426327 .
 
 htc:2057 a skos:Concept ;

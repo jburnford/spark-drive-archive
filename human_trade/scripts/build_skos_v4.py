@@ -1038,7 +1038,7 @@ def classify_v4(raw: str, head: str):
         grp = "grp_drugs_medicinal_botanicals"
     elif re.search(r"\b(gum\b|gums\b|resin|rosin|turpentine|tar\b|pitch\b|balsam|camphor|shellac|lac\b|myrrh|frankincense)\b", lo):
         grp = "grp_gums_resins_naval_stores"
-    elif re.search(r"\b(potash|pot\s*ash|pearl\s*ash|ashes?\b|soda\b|barilla|kelp|alkali|saltpetre|nitre|nitrate|brimstone|sulphur|sulfur|alum\b|borax|arsenic|vitriol|acid\b|ammonia|bleaching|chloride|carbonate|sulphate|sulfate|bicarbonate|caustic|chemical|gunpowder)\b", lo):
+    elif re.search(r"\b(potash|pot\s*ash|pearl\s*ash|ashes?\b|soda\b|barilla|kelp|alkali|saltpetre|nitre|nitrate|brimstone|sulphur|sulfur|alum\b|borax|arsenic|vitriol|copperas|acid\b|ammonia|bleaching|chloride|carbonate|sulphate|sulfate|bicarbonate|caustic|chemical|gunpowder)\b", lo):
         grp = "grp_industrial_chemicals_alkalis"
     elif re.search(r"\b(horses?|mares?|geldings?|stallions?|colts?|mules?|asses?)\b", lo):
         grp = "grp_draft_animals"
@@ -1050,7 +1050,7 @@ def classify_v4(raw: str, head: str):
         grp = "grp_metallic_ores"
     elif re.search(r"\b(machinery|machine|hardware|bolts?\s+and\s+nuts?|nails?|stoves?|anchors?|wire|cutlery|tools?|sewing\s*machines?|carriages?|vehicles?|cycles?|bicycles?|steam\s*engines?|agricultural\s*implements?|clocks?|watches?|castings?|firearms?|arms\b|ammunition|shot\b|ships?\b|boats?|iron\s+manufactures|steel\s+manufactures|copper\s+manufactures|metal\s+manufactures)\b", lo):
         grp = "grp_metal_machinery_hardware"
-    elif re.search(r"\b(paper\b|books?|stationery|prints?|pictures?|glass|glassware|earthenware|chinaware|porcelain|pottery|bricks?|tiles?|cement|furniture|wood\s+manufactures|toys?|matches?|beads?|bugles?|musical\s*instruments?|type\b|curios?|buttons?|umbrellas?|brooms?|brushes?|baskets?|trunks?|starch|glue|varnish|leather\s+manufactures|caoutchouc\s+manufactures|gutta[\s-]*percha\s+manufactures|manufactures?\b|manufactured)\b", lo) and not re.search(r"\bunmanufactured\b", lo):
+    elif re.search(r"\b(paper\b|books?|stationery|prints?|pictures?|glass|glassware|earthenware|chinaware|porcelain|pottery|bricks?|tiles?|cement|furniture|wood\s+manufactures|toys?|matches?|beads?|bugles?|musical\s*instruments?|type\b|curios?|buttons?|umbrellas?|brooms?|brushes?|baskets?|trunks?|starch|glue|varnish|leather\s+manufactures|caoutchouc\s+manufactures|gutta[\s-]*percha\s+manufactures|manufactures?\b|manufactured)\b", lo) and not re.search(r"\b(unmanufactured|re-?manufactur)", lo):
         grp = "grp_glass_ceramics_paper_woodware"
     elif re.search(r"\b(iron\b|steel\b|copper\b|tin\b|lead\b|zinc\b|spelter|quicksilver|mercury|silver\b|gold\b|platinum|antimony|manganese|cobalt|nickel|brass|bronze|pewter|bullion|specie|metals?)\b", lo):
         grp = "grp_metals_semi_finished"
@@ -1061,7 +1061,7 @@ def classify_v4(raw: str, head: str):
 
     # --- 2. Processing State (clean, zero iron-pig=live or Butter=non-exact bugs!) ---
     state = "unspecified"
-    if grp in ("grp_metal_machinery_hardware", "grp_glass_ceramics_paper_woodware", "grp_yarns_cordage", "grp_woven_fabrics_apparel") or (re.search(r"\b(manufactures?|manufactured|boots?|shoes?|gloves?|stoves?|nails?|anchors?|furniture|carriages?|machinery|hardware|books?|clocks?|watches?|toys?|biscuits?|canned|bottled|preserved|castings?|soap|candles?)\b", lo) and not re.search(r"\bunmanufactured\b", lo)):
+    if grp in ("grp_metal_machinery_hardware", "grp_glass_ceramics_paper_woodware", "grp_yarns_cordage", "grp_woven_fabrics_apparel") or (re.search(r"\b(manufactures?|manufactured|boots?|shoes?|gloves?|stoves?|nails?|anchors?|furniture|carriages?|machinery|hardware|books?|clocks?|watches?|toys?|biscuits?|canned|bottled|preserved|castings?|soap|candles?)\b", lo) and not re.search(r"\b(unmanufactured|re-?manufactur)", lo)):
         state = "manufactured"
     elif grp == "grp_wood_pulp_fuel" and "pulp" in lo:
         state = "processed_pulp"
@@ -1400,6 +1400,7 @@ def main():
             "external_lod_anchors": {},
             "source_taxa": [],
             "made_of_material": [],
+            "material_concepts": [],
             "combines_concepts": [],
             "related_concepts": [],
             "status": "local_concept_only",
@@ -1618,11 +1619,11 @@ def main():
         grp = c["ontology"]["group_id"].replace("htc:", "")
         mode, payload = plans[cid]
 
-        # Attach oe:madeOfMaterial for manufactures, candles, and ores
+        # Attach oe:madeOfMaterial for manufactures, candles, and ores (guard "not of/with X" and "other than X")
         if grp in ("grp_metal_machinery_hardware", "grp_glass_ceramics_paper_woodware", "grp_yarns_cordage", "grp_woven_fabrics_apparel", "grp_metallic_ores") or pstate == "manufactured":
             mats, seen_m = [], set()
             for pat, mterm in MATERIAL_DETECT:
-                if re.search(pat, k_raw) and not re.search(r"\bnot\s+(?:of|with)\s+" + mterm, k_raw):
+                if re.search(pat, k_raw) and not re.search(r"\b(?:not\s+(?:of|with)|other\s+than)\b[^,;]*\b" + re.escape(mterm), k_raw):
                     mh = material_qids.get(mterm)
                     if mh and mh["qid"] not in seen_m:
                         mats.append(mh); seen_m.add(mh["qid"])
@@ -1833,6 +1834,39 @@ def main():
             for j in range(i + 1, len(syn_mems)):
                 add_related(syn_mems[i]["concept_id"], syn_mems[j]["concept_id"])
 
+    # 5e. Cross-stage material chains (`oe:materialConcept` + S27-safe `skos:related` linking ores,
+    #     semi-finished metals/fibres, and manufactures back to their canonical base-material htc: hub!)
+    base_by_qid = {}
+    for c in concepts:
+        a = c.get("wikidata_anchor") or {}
+        if a.get("qid") and a.get("mapping_relation") == "skos:exactMatch" and not a.get("component_substances"):
+            base_by_qid[a["qid"]] = c["concept_id"]
+    # Fallback for base materials whose exactMatch label has a variant (e.g., Iron, Wood, Lead)
+    for mterm, mobj in material_qids.items():
+        mq = mobj["qid"]
+        if mq not in base_by_qid:
+            cands = [
+                c for c in concepts
+                if (c.get("wikidata_anchor") or {}).get("qid") == mq
+                and c["ontology"]["group_id"] not in ("htc:grp_metal_machinery_hardware", "htc:grp_glass_ceramics_paper_woodware", "htc:grp_metallic_ores")
+            ]
+            if cands:
+                cands.sort(key=lambda x: (len(x["skos_prefLabel"]), -x["total_rows"]))
+                base_by_qid[mq] = cands[0]["concept_id"]
+
+    for c in concepts:
+        cid = c["concept_id"]
+        mats = c.get("made_of_material") or []
+        for m in mats:
+            bcid = base_by_qid.get(m["qid"])
+            if bcid and bcid != cid:
+                if bcid not in c["material_concepts"]:
+                    c["material_concepts"].append(bcid)
+                # Wire bidirectional skos:related for single-material cross-stage links (e.g. Copper Ore <-> Copper,
+                # Copper Wire <-> Copper, Iron Ore <-> Iron, Cotton Manufactures <-> Cotton), strictly S27-safe!
+                if len(mats) == 1 and c["ontology"]["group_id"] != by_id[bcid]["ontology"]["group_id"]:
+                    add_related(cid, bcid)
+
     # Save updated commodities_concepts.jsonl
     with open(GROUND / "commodities_concepts.jsonl", "w", encoding="utf-8") as fh:
         for c in concepts:
@@ -1876,7 +1910,8 @@ def main():
         ("oe:dictionarySource", "owl:ObjectProperty", "19th-century commercial dictionary source page", "skos:Concept", None),
         ("oe:combinesConcept", "owl:ObjectProperty", "merged customs line combining constituent archival concepts", "skos:Concept", "skos:Concept"),
         ("oe:sourceTaxon", "owl:ObjectProperty", "biological source taxon (Wikidata/CoL)", "skos:Concept", None),
-        ("oe:madeOfMaterial", "owl:ObjectProperty", "base material of manufactured article or ore", "skos:Concept", None),
+        ("oe:madeOfMaterial", "owl:ObjectProperty", "base material of manufactured article or ore (Wikidata)", "skos:Concept", None),
+        ("oe:materialConcept", "owl:ObjectProperty", "canonical base-material archival concept in htc:scheme", "skos:Concept", "skos:Concept"),
         ("oe:colId", "owl:DatatypeProperty", "Catalogue of Life taxon ID", None, "xsd:string"),
     ]
 
@@ -2046,6 +2081,9 @@ def main():
         if c["combines_concepts"]:
             triples.append(f"oe:combinesConcept {', '.join(c['combines_concepts'])}")
             node["oe:combinesConcept"] = [{"@id": x} for x in c["combines_concepts"]]
+        if c["material_concepts"]:
+            triples.append(f"oe:materialConcept {', '.join(c['material_concepts'])}")
+            node["oe:materialConcept"] = [{"@id": x} for x in c["material_concepts"]]
         if c["related_concepts"]:
             triples.append(f"skos:related {', '.join(c['related_concepts'])}")
             node["skos:related"] = [{"@id": x} for x in c["related_concepts"]]

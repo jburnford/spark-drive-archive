@@ -5,7 +5,7 @@
 #  stw: http://zbw.eu/stw/descriptor/
 #  aat: http://vocab.getty.edu/aat/
 #mapping_set_id: https://open-empire.hgislab.usask.ca/vocab/human-trade-commodities/mappings/v4
-#mapping_date: 2026-11-24
+#mapping_date: 2026-11-25
 #license: https://creativecommons.org/licenses/by/4.0/
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	author_label	confidence	comment
 htc:0001	Wheat	skos:exactMatch	wd:Q15645384	wheat	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.95	rule=canonical_exact; via=wheat
@@ -474,6 +474,10 @@ htc:0226	Flax	skos:closeMatch	aat:300014041		semapv:MappingChaining	build_skos_v
 htc:0228	Wine Other Sorts	skos:broadMatch	wd:Q282	wine	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_exact; via=wine
 htc:0228	Wine Other Sorts	skos:broadMatch	stw:14985-2		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0228	Wine Other Sorts	skos:broadMatch	aat:300379442		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
+htc:0229	Copper Old (fit only to be re-manufactured from 1876 onward)	skos:broadMatch	wd:Q753	copper	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=copper
+htc:0229	Copper Old (fit only to be re-manufactured from 1876 onward)	skos:broadMatch	agrovoc:c_1868		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
+htc:0229	Copper Old (fit only to be re-manufactured from 1876 onward)	skos:broadMatch	stw:14299-5		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
+htc:0229	Copper Old (fit only to be re-manufactured from 1876 onward)	skos:broadMatch	aat:300011020		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:0232	Leather Varnished	skos:broadMatch	wd:Q286	leather	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=leather
 htc:0232	Leather Varnished	skos:broadMatch	stw:14829-2		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:0232	Leather Varnished	skos:broadMatch	aat:300011845		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
@@ -2775,6 +2779,9 @@ htc:1660	Skins Furs and Pelts Sheep and Lamb Tanned Tawed or Dressed	skos:broadM
 htc:1660	Skins Furs and Pelts Sheep and Lamb Tanned Tawed or Dressed	skos:broadMatch	agrovoc:c_3609		semapv:MappingChaining	build_skos_v4.py	wikidata_P8061	0.85	composed
 htc:1660	Skins Furs and Pelts Sheep and Lamb Tanned Tawed or Dressed	skos:broadMatch	stw:14127-6		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:1660	Skins Furs and Pelts Sheep and Lamb Tanned Tawed or Dressed	skos:broadMatch	aat:300011844		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
+htc:1661	Iron Old for Re-manufacture	skos:broadMatch	wd:Q677	iron	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=iron
+htc:1661	Iron Old for Re-manufacture	skos:broadMatch	stw:14281-3		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
+htc:1661	Iron Old for Re-manufacture	skos:broadMatch	aat:300011002		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
 htc:1662	Iron Steel Cast in Ingots	skos:broadMatch	wd:Q677	iron	semapv:LexicalMatching	build_skos_v4.py	wikidata_slim:2026-11-09	0.85	rule=canonical_prefix_broad; via=iron
 htc:1662	Iron Steel Cast in Ingots	skos:broadMatch	stw:14281-3		semapv:MappingChaining	build_skos_v4.py	wikidata_P3911	0.85	composed
 htc:1662	Iron Steel Cast in Ingots	skos:broadMatch	aat:300011002		semapv:MappingChaining	build_skos_v4.py	wikidata_P1014	0.85	composed
