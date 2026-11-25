@@ -21,7 +21,7 @@ import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
 from pathlib import Path
 
-BASE = Path("/home/jic823/Documents/open_empire/human_trade")
+BASE = Path(__file__).resolve().parents[2] / "human_trade"
 RAW = BASE / "raw_sources"
 OUT = BASE / "layer1_human"
 NAMES = OUT / "names"
@@ -47,6 +47,8 @@ CANON_FIELDS = [
     "source_row",
     "orig_row_id",
     "series_name",
+    "series_inferred",
+    "series_basis",
     "year_as_printed",
     "year_start",
     "year_end",
@@ -72,6 +74,7 @@ CANON_FIELDS = [
 
 
 PLAUSIBLE_YEARS = (1600, 1950)
+INFERRED_BLANK_SERIES = "CSP_Canadian_Exports_BlankSeries"
 
 
 def parse_year_field(raw: str):
@@ -315,6 +318,15 @@ def main():
 
     # Write canonical Layer-1 TSV.GZ
     canon_path = OUT / "human_trade_observations.tsv.gz"
+    for rec in records:
+        # The series cell is blank for ~64k rows of the 2021 Canadian database. Never write a name into the
+        # transcribed column: record the attribution separately, marked as an inference with its basis.
+        rec["series_inferred"], rec["series_basis"] = "", ""
+        if not rec["series_name"] and rec["commodity_as_printed"] and rec["source_file"] == "tc_2021_full_database.csv":
+            rec["series_inferred"] = INFERRED_BLANK_SERIES
+            rec["series_basis"] = (f"inferred: series cell blank in {rec['source_file']}; row is an export return from a British North American port or province "
+                                   f"valued in {rec['currency_as_printed'] or 'unstated currency'}")
+
     with gzip.open(canon_path, "wt", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=CANON_FIELDS, delimiter="\t")
         w.writeheader()

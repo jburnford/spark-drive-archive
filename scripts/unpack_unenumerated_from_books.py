@@ -16,7 +16,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-ROOT = Path("/home/jic823/Documents/open_empire")
+ROOT = Path(__file__).resolve().parents[1]
 DICT_DIR = ROOT / "dictionaries"
 GROUND = ROOT / "human_trade" / "layer1_human" / "grounding"
 

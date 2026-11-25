@@ -6,7 +6,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-BASE_DIR = Path("/home/jic823/Documents/open_empire")
+BASE_DIR = Path(__file__).resolve().parents[1]
 DISC_DIR = BASE_DIR / "manifests" / "discovery"
 CEYLON_BB = Path("/home/jic823/Documents/ceylon/spine/bluebook/volumes.tsv")
 

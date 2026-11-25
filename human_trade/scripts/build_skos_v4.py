@@ -42,13 +42,15 @@ from pathlib import Path
 
 import duckdb
 
-BASE = Path("/home/jic823/Documents/open_empire/human_trade")
+BASE = Path(__file__).resolve().parents[2] / "human_trade"
 LAYER1 = BASE / "layer1_human"
 GROUND = LAYER1 / "grounding"
-DICT_DIR = Path("/home/jic823/Documents/open_empire/dictionaries")
+DICT_DIR = Path(__file__).resolve().parents[2] / "dictionaries"
 CEYLON_SPINE = Path("/home/jic823/Documents/ceylon/spine")
 SKOS_XLSX = BASE / "raw_sources" / "SKOS_from_Custom_Records.xlsx"
-WD_SLIM_GLOB = "/mnt/data/jic823/wikidata/20261109/slim/*.parquet"
+WD_SLIM_GLOB = os.environ.get("OE_WD_SLIM_GLOB", "/mnt/data/jic823/wikidata/20261109/slim/*.parquet")
+# One place for the published version of the vocabulary (scheme owl:versionInfo, SSSOM mapping-set version, manifest).
+VOCAB_VERSION = "6.2"
 WD_SNAPSHOT = "2026-11-09"
 WD_API = "https://www.wikidata.org/w/api.php"
 UA = "OpenEmpireSKOSv4/0.4 (University of Saskatchewan HGIS Lab; jim.clifford@usask.ca)"
@@ -1144,11 +1146,41 @@ def apply_curated_field_fixes(concepts, fixes, rejections):
         print("STALE " + m, flush=True)
 
 
+SCOPED_READINGS_PATH = GROUND / "curated_scoped_readings.tsv"
+
+
+def load_scoped_readings(reg):
+    """Readings of a heading that hold only for part of its rows (a series, a period, a unit).
+
+    `curated_scoped_readings.tsv`: concept_id, commodity_as_printed (guard), series_regex, year_from, year_to,
+    unit_regex, reading, wd_term, wd_relation, status (supported | probable | unresolved), evidence.
+    The heading keeps its id and its general anchor; each reading becomes its own node, so a search for
+    'coconut' can separate the rows that support it from the rows still unresolved."""
+    out = defaultdict(list)
+    if not SCOPED_READINGS_PATH.exists():
+        return out
+    by_id = {v: k for k, v in reg.items()}
+    with open(SCOPED_READINGS_PATH, encoding="utf-8") as fh:
+        for r in csv.DictReader((l for l in fh if not l.startswith("#")), delimiter="\t"):
+            r = {k: (v or "").strip() for k, v in r.items()}
+            cid = r["concept_id"]
+            if by_id.get(cid) != r["commodity_as_printed"]:
+                raise ValueError(f"curated_scoped_readings.tsv: {cid} label guard failed")
+            if r["status"] not in ("supported", "probable", "unresolved"):
+                raise ValueError(f"curated_scoped_readings.tsv: {cid} bad status {r['status']}")
+            if not r["evidence"]:
+                raise ValueError(f"curated_scoped_readings.tsv: {cid} reading has no evidence")
+            for k in ("series_regex", "unit_regex"):
+                re.compile(r[k] or ".*")
+            out[cid].append(r)
+    return out
+
+
 def trade_evidence_summary(st):
     """Compact, reproducible Layer-1 evidence trail for a heading (series, years, units, top routes)."""
     yrs = sorted(st["years"])
     span = f"{yrs[0]}–{yrs[-1]}" if yrs else "undated"
-    ser = "; ".join(f"{s or 'unnamed series'} ×{n}" for s, n in st["series"].most_common(4))
+    ser = "; ".join([f"{s} ×{n}" for s, n in st["series"].most_common(4)] + [f"{s} (inferred, series not printed) ×{n}" for s, n in st["inferred_series"].most_common(2)])
     units = "; ".join(f"{u or '(no unit)'} ×{n}" for u, n in st["units"].most_common(4))
     routes = "; ".join(f"{o or '?'} → {d or '?'} ×{n}" for (o, d), n in st["routes"].most_common(4))
     return f"Layer-1 observations: {st['rows']} rows, {span}. Series: {ser}. Units: {units}. Top routes: {routes}."
@@ -1684,12 +1716,13 @@ def compose_lod(wd_rel: str) -> str:
 def main():
     reg = load_id_registry()
     overrides = load_curated_overrides(reg)
+    scoped = load_scoped_readings(reg)
     skos_1866 = load_1866_skos()
     dict_by_hw, binom_map = load_dictionaries()
     rejections = load_rejections()
 
     # 1. Read exact archival provenance from Layer-1 observations (drop "NULL and other errors" from prov:hadPrimarySource!)
-    comm_stats = defaultdict(lambda: {"rows": 0, "years": set(), "end_years": set(), "series": Counter(), "units": Counter(), "routes": Counter()})
+    comm_stats = defaultdict(lambda: {"rows": 0, "years": set(), "end_years": set(), "series": Counter(), "inferred_series": Counter(), "units": Counter(), "routes": Counter(), "cells": Counter()})
     total_obs = 0
     excluded = Counter()
     with gzip.open(LAYER1 / "human_trade_observations.tsv.gz", "rt", encoding="utf-8") as fh:
@@ -1709,9 +1742,13 @@ def main():
             if r["year_start"].isdigit():
                 d["years"].add(int(r["year_start"]))
                 d["end_years"].add(int(r["year_end"]) if r["year_end"].isdigit() else int(r["year_start"]))
-            ser = r["series_name"].strip() or "CSP_Canadian_Exports_BlankSeries"
-            if "null and other errors" not in ser.lower():
+            ser = r["series_name"].strip()
+            inferred = (r.get("series_inferred") or "").strip()
+            if ser and "null and other errors" not in ser.lower():
                 d["series"][ser] += 1
+            elif not ser and inferred:
+                d["inferred_series"][inferred] += 1  # attribution reconstructed, NOT transcribed
+            d["cells"][(ser or inferred, r["year_start"], r["unit_as_printed"].strip())] += 1
 
     # 2. Build Layer-A concepts + plan lookups
     concepts = []
@@ -1760,6 +1797,7 @@ def main():
                 "first_attested": yrs[0] if yrs else None,
                 "last_attested": max(st["end_years"]) if st["end_years"] else None,
                 "series": [s for s, _ in st["series"].most_common()],
+                "inferred_series": [s for s, _ in st["inferred_series"].most_common()],
             },
             "ontology": {
                 "sector_id": f"htc:{sector}",
@@ -1779,6 +1817,14 @@ def main():
                 "is_aggregate": is_agg,
             },
             "skos_1866_bridge": ({**bridge, "bridge_relation": bridge_rel} if bridge else None),
+            "scoped_readings": [{
+                **{k: rd[k] for k in ("series_regex", "year_from", "year_to", "unit_regex", "reading", "wd_term", "wd_relation", "status", "evidence")},
+                "reading_id": f"{cid}_r{i}",
+                "matched_rows": sum(n for (ser_, yr_, unit_), n in st["cells"].items()
+                                    if re.search(rd["series_regex"] or ".*", ser_, re.I)
+                                    and re.search(rd["unit_regex"] or ".*", unit_, re.I)
+                                    and (not rd["year_from"] or (yr_.isdigit() and int(rd["year_from"]) <= int(yr_) <= int(rd["year_to"] or rd["year_from"])))),
+            } for i, rd in enumerate(scoped.get(cid, []), 1)],
             "wikidata_anchor": None,
             "external_lod_anchors": {},
             "source_taxa": [],
@@ -1996,8 +2042,17 @@ def main():
 
         concepts.append(c)
 
+    for rds in scoped.values():
+        all_terms.update(rd["wd_term"] for rd in rds if rd["wd_term"])
+
     # 3. Single fast DuckDB scan over Wikidata 2026-11-09 slim Parquet
     wd_by_term = query_wikidata(all_terms)
+    for c in concepts:
+        for rd in c["scoped_readings"]:
+            if rd["matched_rows"] == 0:
+                raise ValueError(f"curated_scoped_readings.tsv: {rd['reading_id']} matches no Layer-1 row")
+            hit = pick_commodity(rd["wd_term"], wd_by_term.get(rd["wd_term"].lower(), []), rejections) if rd["wd_term"] else None
+            rd["wd_qid"], rd["wd_label"] = (hit["qid"], hit["label"]) if hit else ("", "")
 
     material_qids = {}
     for _, mterm in MATERIAL_DETECT:
@@ -2290,7 +2345,7 @@ def main():
     for c in concepts:
         bc = ((c.get("skos_1866_bridge") or {}).get("broaderConcept") or "").strip()
         if bc: broader_1866[slugify(bc)] = bc
-        for s in c["provenance"]["series"]:
+        for s in c["provenance"]["series"] + c["provenance"]["inferred_series"]:
             series_nodes[slugify(s)] = s
 
     scheme_title = "Open Empire Layer-1 Human-Transcribed Trade Commodities SKOS Vocabulary (LINCS / CIDOC CRM E55_Type Compatible)"
@@ -2310,6 +2365,14 @@ def main():
         ("oe:processingState", "owl:DatatypeProperty", "processing state facet", "skos:Concept", "xsd:string", None),
         ("oe:ghostAcresDomain", "owl:DatatypeProperty", "Ghost Acres analytical domain", "skos:Concept", "xsd:string", None),
         ("oe:landBasis", "owl:DatatypeProperty", "ecological land/marine/mineral basis", "skos:Concept", "xsd:string", None),
+        ("oe:inferredPrimarySource", "owl:ObjectProperty", "series attributed by inference: the series cell is blank in the transcription", "skos:Concept", "prov:Entity", None),
+        ("oe:readingOf", "owl:ObjectProperty", "customs heading that a scoped reading interprets", "oe:ScopedReading", "skos:Concept", None),
+        ("oe:scopeSeries", "owl:DatatypeProperty", "series (regular expression) to which a scoped reading applies", "oe:ScopedReading", "xsd:string", None),
+        ("oe:scopeYearFrom", "owl:DatatypeProperty", "first year of a scoped reading", "oe:ScopedReading", "xsd:integer", None),
+        ("oe:scopeYearTo", "owl:DatatypeProperty", "last year of a scoped reading", "oe:ScopedReading", "xsd:integer", None),
+        ("oe:scopeUnit", "owl:DatatypeProperty", "printed unit (regular expression) to which a scoped reading applies", "oe:ScopedReading", "xsd:string", None),
+        ("oe:readingStatus", "owl:DatatypeProperty", "supported | probable | unresolved", "oe:ScopedReading", "xsd:string", None),
+        ("oe:matchedObservationCount", "owl:DatatypeProperty", "Layer-1 rows falling inside the scope of a reading", "oe:ScopedReading", "xsd:integer", None),
         ("oe:attestationBasis", "owl:DatatypeProperty", "attestation basis (customs_enumerated vs document_attested)", "skos:Concept", "xsd:string", None),
         ("oe:harvestMode", "owl:DatatypeProperty", "harvest mode (wild_hunted_fished joins wild land animals to fisheries and whaling)", "skos:Concept", "xsd:string", None),
         ("oe:theodoridisBucket", "owl:DatatypeProperty", "Theodoridis (2018) 5-bucket rollup", "skos:Concept", "xsd:string", None),
@@ -2378,7 +2441,7 @@ def main():
         '    dcterms:creator "Dr. Jim Clifford & HGIS Lab, University of Saskatchewan"@en ;\n'
         "    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;\n"
         f'    dcterms:created "{TODAY}"^^xsd:date ;\n'
-        '    owl:versionInfo "4.1-lincs-compatible" ;\n'
+        f'    owl:versionInfo "{VOCAB_VERSION}" ;\n'
         f"    skos:hasTopConcept {', '.join(top_sec_ids)} .\n"
     )
     jsonld_graph.append({
@@ -2389,7 +2452,7 @@ def main():
         "dcterms:creator": {"@value": "Dr. Jim Clifford & HGIS Lab, University of Saskatchewan", "@language": "en"},
         "dcterms:license": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
         "dcterms:created": {"@value": TODAY, "@type": "xsd:date"},
-        "owl:versionInfo": "4.1-lincs-compatible",
+        "owl:versionInfo": VOCAB_VERSION,
         "skos:hasTopConcept": [{"@id": tid} for tid in top_sec_ids],
     })
 
@@ -2406,6 +2469,8 @@ def main():
         "skos:hasTopConcept": [{"@id": f"htc1866:{s}"} for s in sorted(broader_1866)],
     })
 
+    ttl_lines.append('oe:ScopedReading a owl:Class ;\n    rdfs:label "reading of a customs heading that holds only for a stated series, period or unit"@en .\n')
+    jsonld_graph.append({"@id": "oe:ScopedReading", "@type": "owl:Class", "rdfs:label": {"@value": "reading of a customs heading that holds only for a stated series, period or unit", "@language": "en"}})
     for sslug, slbl in sorted(series_nodes.items()):
         sid = f"oe:series_{sslug}"
         ttl_lines.append(f"{sid} a prov:Entity ;\n    rdfs:label {ttl_str(slbl)}@en .\n")
@@ -2522,6 +2587,10 @@ def main():
             srefs = [f"oe:series_{slugify(s)}" for s in prov["series"]]
             triples.append(f"prov:hadPrimarySource {', '.join(srefs)}")
             node["prov:hadPrimarySource"] = [{"@id": sr} for sr in srefs]
+        if prov.get("inferred_series"):
+            irefs = [f"oe:series_{slugify(s)}" for s in prov["inferred_series"]]
+            triples.append(f"oe:inferredPrimarySource {', '.join(irefs)}")
+            node["oe:inferredPrimarySource"] = [{"@id": sr} for sr in irefs]
 
         if c["combines_concepts"]:
             triples.append(f"oe:combinesConcept {', '.join(c['combines_concepts'])}")
@@ -2591,6 +2660,30 @@ def main():
             node["oe:madeOfMaterial"] = [{"@id": f"http://www.wikidata.org/entity/{m['qid']}"} for m in c["made_of_material"]]
 
         ttl_lines.append(f"{cid} " + " ;\n    ".join(triples) + " .\n")
+        for rd in c.get("scoped_readings") or []:
+            rid = rd["reading_id"]
+            scope_txt = ", ".join(x for x in [rd["series_regex"] and f"series {rd['series_regex']}",
+                                               rd["year_from"] and f"{rd['year_from']}–{rd['year_to'] or rd['year_from']}",
+                                               rd["unit_regex"] and f"unit {rd['unit_regex']}"] if x)
+            rlbl = f"{pref} read as {rd['reading']} ({scope_txt})"
+            rt = ["a oe:ScopedReading", f"rdfs:label {ttl_str(rlbl)}@en", f"oe:readingOf {cid}",
+                  f"oe:readingStatus {ttl_str(rd['status'])}",
+                  f'oe:matchedObservationCount "{rd["matched_rows"]}"^^xsd:integer',
+                  f"skos:note {ttl_str(rd['evidence'])}@en"]
+            rn = {"@id": rid, "@type": "oe:ScopedReading", "rdfs:label": {"@value": rlbl, "@language": "en"},
+                  "oe:readingOf": {"@id": cid}, "oe:readingStatus": rd["status"],
+                  "oe:matchedObservationCount": rd["matched_rows"],
+                  "skos:note": {"@value": rd["evidence"], "@language": "en"}}
+            for key, prop, typed in (("series_regex", "oe:scopeSeries", False), ("unit_regex", "oe:scopeUnit", False),
+                                     ("year_from", "oe:scopeYearFrom", True), ("year_to", "oe:scopeYearTo", True)):
+                if rd[key]:
+                    rt.append(f'{prop} "{rd[key]}"^^xsd:integer' if typed else f"{prop} {ttl_str(rd[key])}")
+                    rn[prop] = int(rd[key]) if typed else rd[key]
+            if rd.get("wd_qid") and rd["status"] != "unresolved":
+                rt.append(f"{rd['wd_relation']} wd:{rd['wd_qid']}")
+                rn[rd["wd_relation"]] = {"@id": f"wd:{rd['wd_qid']}"}
+            ttl_lines.append(f"{rid} " + " ;\n    ".join(rt) + " .\n")
+            jsonld_graph.append(rn)
         jsonld_graph.append(node)
 
     for tq, (tname, col_id) in sorted(taxon_nodes.items()):
@@ -2645,7 +2738,7 @@ def main():
                 w.writerow([c["total_rows"], c["status"], c["concept_id"], c["skos_prefLabel"], c["facets"]["substance_head"], c["facets"]["ghost_acres_domain"], c["facets"]["sitc_code"]])
     sssom_path = GROUND / "commodities_mappings.sssom.tsv"
     with open(sssom_path, "w", encoding="utf-8", newline="") as fh:
-        fh.write(f"#curie_map:\n#  htc: {BASE_URI}\n#  wd: http://www.wikidata.org/entity/\n#  agrovoc: http://aims.fao.org/aos/agrovoc/\n#  stw: http://zbw.eu/stw/descriptor/\n#  aat: http://vocab.getty.edu/aat/\n#mapping_set_id: {BASE_URI}mappings/v4\n#mapping_date: {TODAY}\n#license: https://creativecommons.org/licenses/by/4.0/\n")
+        fh.write(f"#curie_map:\n#  htc: {BASE_URI}\n#  wd: http://www.wikidata.org/entity/\n#  agrovoc: http://aims.fao.org/aos/agrovoc/\n#  stw: http://zbw.eu/stw/descriptor/\n#  aat: http://vocab.getty.edu/aat/\n#mapping_set_id: {BASE_URI}mappings\n#mapping_set_version: {VOCAB_VERSION}\n#mapping_date: {TODAY}\n#license: https://creativecommons.org/licenses/by/4.0/\n")
         w = csv.writer(fh, delimiter="\t")
         w.writerow(["subject_id", "subject_label", "predicate_id", "object_id", "object_label", "mapping_justification", "mapping_tool", "author_label", "confidence", "comment"])
         w.writerows(sssom_rows)

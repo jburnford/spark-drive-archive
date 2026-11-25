@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
 
-RAW = Path("/home/jic823/Documents/open_empire/human_trade/raw_sources")
+RAW = Path(__file__).resolve().parents[2] / "human_trade" / "raw_sources"
 NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
 
 

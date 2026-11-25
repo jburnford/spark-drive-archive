@@ -23,6 +23,7 @@ Outputs:
   - dictionaries/END_USE_NETWORK_REPORT.md
 """
 
+import os
 import csv
 import json
 import re
@@ -30,11 +31,11 @@ from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
 
-ROOT = Path("/home/jic823/Documents/open_empire")
+ROOT = Path(__file__).resolve().parents[1]
 GROUND = ROOT / "human_trade" / "layer1_human" / "grounding"
 DICT_DIR = ROOT / "dictionaries"
-OCR_ROOT = Path("/mnt/data/jic823/open_empire_corpus/ocr_chandra/dictionaries_all")
-GUT_ROOT = Path("/mnt/data/jic823/open_empire_corpus/raw/gutenberg")
+OCR_ROOT = Path(os.environ.get("OE_OCR_ROOT", "/mnt/data/jic823/open_empire_corpus/ocr_chandra/dictionaries_all"))
+GUT_ROOT = Path(os.environ.get("OE_GUTENBERG_ROOT", "/mnt/data/jic823/open_empire_corpus/raw/gutenberg"))
 
 TODAY = date.today().isoformat()
 # MUST be the namespaces of the commodity vocabulary (build_skos_v4.BASE_URI / OE_NS): with any other value
@@ -1229,6 +1230,83 @@ def iter_all_corpus_pages():
 LINK_DECISIONS_PATH = GROUND / "curated_end_use_link_decisions.tsv"
 
 
+def _alnum(t: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", t.lower())
+
+
+def build_entry_index(path, heading_res, skip_before=None):
+    """Index a Project Gutenberg text by the dictionary entry / section each passage falls in.
+    The ebooks carry no page numbers, so a quote is cited by its entry (s.v. HEADWORD), the usual way to cite
+    a dictionary. Returns (alnum-only lowercase text, sorted offsets, headings)."""
+    if not path.exists():
+        return "", [], []
+    raw = path.read_text(encoding="utf-8", errors="ignore")
+    m_s = re.search(r"\*\*\*\s*START OF (?:THIS|THE) PROJECT GUTENBERG", raw)
+    m_e = re.search(r"\*\*\*\s*END OF (?:THIS|THE) PROJECT GUTENBERG", raw)
+    body = raw[m_s.end():m_e.start()] if (m_s and m_e) else raw
+    if skip_before:
+        starts = [m.start() for m in re.finditer(skip_before, body, re.M)]
+        if len(starts) >= 2:
+            body = body[starts[1]:]
+    flat, offs, heads = [], [], []
+    pos = 0
+    for para in re.split(r"\n\s*\n", body):
+        one = re.sub(r"\s+", " ", para).strip()
+        if not one:
+            continue
+        for hre in heading_res:
+            m = hre.match(one)
+            if m and 1 <= len(m.group(1).split()) <= 7:
+                offs.append(pos)
+                heads.append(re.sub(r"\s+", " ", m.group(1)).strip(" .,;:-"))
+                break
+        a = _alnum(one)
+        flat.append(a)
+        pos += len(a)
+    return "".join(flat), offs, heads
+
+
+def cite_gutenberg_quotes_by_entry(links):
+    """Replace page-less ebook citations with the entry the quote stands in."""
+    import bisect
+    specs = {
+        "ure_gutenberg": (GUT_ROOT / "pg44562_ure_dictionary_arts_manufactures.txt",
+                          [re.compile(r"^([A-Z][A-Z0-9\s,'&-]{2,95}?)(?:,\s*\([^)]+\)\s*|\s*)[.,;]?\s+[a-z(]")], None,
+                          "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562)", "s.v."),
+        "simmonds_1854": (GUT_ROOT / "pg15191_simmonds_1854_vegetable_kingdom.txt",
+                          [re.compile(r"^([A-Z][A-Z\s,'&-]{2,60}?)\.--[A-Z]"), re.compile(r"^([A-Z][A-Z\s,'&-]{2,64}[A-Z])\.?$")], r"^SECTION I\.",
+                          "P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191)", "section"),
+    }
+    idx = {w: build_entry_index(sp[0], sp[1], sp[2]) for w, sp in specs.items()}
+    n_ok = n_all = 0
+    for l in links:
+        for q in l["evidence_quotes"]:
+            w = q["work"]
+            if w not in specs:
+                continue
+            n_all += 1
+            flat, offs, heads = idx[w]
+            base, how = specs[w][3], specs[w][4]
+            head = None
+            m = re.match(r"^([A-Z][A-Z0-9 ,'&-]{2,95}?): ", q["quote"]) if q.get("mode") == "direct_sentence" and "scan p." not in q["citation"] else None
+            key = _alnum(re.sub(r"\.\.\.$", "", q["quote"]))
+            at = flat.find(key[:60]) if len(key) >= 25 else -1
+            if at < 0 and len(key) >= 60:
+                at = flat.find(key[20:70])
+            if at >= 0 and offs:
+                i = bisect.bisect_right(offs, at) - 1
+                if i >= 0:
+                    head = heads[i]
+            if head:
+                n_ok += 1
+                q["citation"] = f"{base}, {how} {head}"
+                q["entry"] = head
+            else:
+                q["citation"] = f"{base}, entry not located"
+    print(f"Entry citations: {n_ok:,} of {n_all:,} Gutenberg quotes located in their dictionary entry / section.", flush=True)
+    return links
+
+
 def apply_curated_link_decisions(links):
     """Apply hand-reviewed decisions to regex-mined links: `drop` (no quote supports the link), `repoint`
     (quotes are about a different heading -> target concept), plus optional removal of individual quotes
@@ -1291,6 +1369,19 @@ def apply_curated_link_decisions(links):
     if stale:
         print(f"NOTE: {len(stale)} curated link decisions matched no mined link: {stale[:10]}", flush=True)
     return out
+
+
+EVIDENCE_TERMS = [
+    ("oe:EndUseAssertion", "owl:Class", "evidence record for one commodity-to-industry end-use assertion"),
+    ("oe:EvidenceQuote", "owl:Class", "verbatim primary-source passage offered as evidence"),
+    ("oe:assertsCommodity", "owl:ObjectProperty", "commodity of the end-use assertion"),
+    ("oe:assertsIndustry", "owl:ObjectProperty", "industry of the end-use assertion"),
+    ("oe:hasEvidence", "owl:ObjectProperty", "passage offered as evidence for the assertion"),
+    ("oe:productionRole", "owl:DatatypeProperty", "role of the commodity in the industry"),
+    ("oe:reviewStatus", "owl:DatatypeProperty", "reviewed | mined_multiple_quotes | mined_single_quote (keyword-mined, not yet read by a reviewer)"),
+    ("oe:quoteText", "owl:DatatypeProperty", "verbatim text of the passage"),
+    ("oe:retrievalMode", "owl:DatatypeProperty", "how the passage was retrieved (direct sentence or essay context)"),
+]
 
 
 def main():
@@ -1436,6 +1527,10 @@ def main():
         })
 
     links = apply_curated_link_decisions(links)
+    links = cite_gutenberg_quotes_by_entry(links)
+    for l in links:
+        d = (l.get("curation") or {}).get("action")
+        l["review_status"] = "reviewed" if d else ("mined_multiple_quotes" if len(l["evidence_quotes"]) > 1 else "mined_single_quote")
 
     # 1. Export flat TSV + JSONL
     (GROUND / "end_use_network_links.jsonl").write_text(
@@ -1483,7 +1578,7 @@ def main():
         'oe:usedInIndustry a owl:ObjectProperty ; rdfs:label "commodity used as input in manufacturing industry"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept ; owl:inverseOf oe:usesCommodityInput .',
         'oe:usesCommodityInput a owl:ObjectProperty ; rdfs:label "manufacturing industry employs commodity input"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept ; owl:inverseOf oe:usedInIndustry .',
         "",
-    ]
+    ] + [f'{pid} a {ptype} ; rdfs:label {ttl_str(plabel)}@en .' for pid, ptype, plabel in EVIDENCE_TERMS] + [""]
 
     jld_graph = [
         {
@@ -1507,11 +1602,49 @@ def main():
         },
     ]
 
+    jld_graph += [{"@id": pid, "@type": ptype, "rdfs:label": {"@value": plabel, "@language": "en"}} for pid, ptype, plabel in EVIDENCE_TERMS]
+
     by_ind = defaultdict(list)
     by_comm = defaultdict(list)
     for r in links:
         by_ind[r["industry_id"]].append(r)
         by_comm[r["commodity_id"]].append(r)
+
+    # One evidence record per commodity->industry assertion: role, review status and the verbatim passages.
+    # IRIs are stable (industry + commodity notation); no blank nodes.
+    for r in links:
+        aid = f"oe:use_{r['industry_id'].split('ind_')[-1]}__{r['commodity_id'].split(':')[1]}"
+        lbl = f"{r['commodity_label']} used in {r['industry_label']}"
+        qids = [f"{aid}__q{i}" for i in range(1, len(r["evidence_quotes"]) + 1)]
+        triples = [
+            "a oe:EndUseAssertion", f"rdfs:label {ttl_str(lbl)}@en",
+            f"oe:assertsCommodity {r['commodity_id']}", f"oe:assertsIndustry {r['industry_id']}",
+            f"oe:productionRole {ttl_str(r['production_role'])}",
+            f"oe:reviewStatus {ttl_str(r['review_status'])}",
+        ]
+        node = {"@id": aid, "@type": "oe:EndUseAssertion", "rdfs:label": {"@value": lbl, "@language": "en"},
+                "oe:assertsCommodity": {"@id": r["commodity_id"]}, "oe:assertsIndustry": {"@id": r["industry_id"]},
+                "oe:productionRole": r["production_role"], "oe:reviewStatus": r["review_status"]}
+        if qids:
+            triples.append("oe:hasEvidence " + ", ".join(qids))
+            node["oe:hasEvidence"] = [{"@id": x} for x in qids]
+        if r.get("curation"):
+            note = f"Review decision ({r['curation']['action']}): {r['curation']['rationale']}"
+            triples.append(f"skos:editorialNote {ttl_str(note)}@en")
+            node["skos:editorialNote"] = {"@value": note, "@language": "en"}
+        ttl_lines.append(f"{aid} " + " ;\n    ".join(triples) + " .\n")
+        jld_graph.append(node)
+        for qid, q in zip(qids, r["evidence_quotes"]):
+            qlbl = f"Evidence for {lbl}: {q['citation']}"
+            ttl_lines.append(
+                f"{qid} a oe:EvidenceQuote ;\n    rdfs:label {ttl_str(qlbl)}@en ;\n"
+                f"    oe:quoteText {ttl_str(q['quote'])}@en ;\n"
+                f"    dcterms:bibliographicCitation {ttl_str(q['citation'])} ;\n"
+                f"    dcterms:source <{q['uri']}> ;\n    oe:retrievalMode {ttl_str(q['mode'])} .\n")
+            jld_graph.append({"@id": qid, "@type": "oe:EvidenceQuote", "rdfs:label": {"@value": qlbl, "@language": "en"},
+                              "oe:quoteText": {"@value": q["quote"], "@language": "en"},
+                              "dcterms:bibliographicCitation": q["citation"], "dcterms:source": {"@id": q["uri"]},
+                              "oe:retrievalMode": q["mode"]})
 
     for ind_id, cfg in INDUSTRIES.items():
         inputs = [r["commodity_id"] for r in by_ind[ind_id]]

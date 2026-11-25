@@ -36,7 +36,7 @@ from pathlib import Path
 
 import duckdb
 
-BASE = Path("/home/jic823/Documents/open_empire/human_trade")
+BASE = Path(__file__).resolve().parents[2] / "human_trade"
 LAYER1 = BASE / "layer1_human"
 GROUND = LAYER1 / "grounding"
 CEYLON_SPINE = Path("/home/jic823/Documents/ceylon/spine")

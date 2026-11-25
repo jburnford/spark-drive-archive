@@ -12,12 +12,11 @@ from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
 
-BASE = Path("/home/jic823/Documents/open_empire/human_trade")
-REPO_ROOT = Path("/home/jic823/Documents/open_empire")
+BASE = Path(__file__).resolve().parents[2] / "human_trade"
+REPO_ROOT = Path(__file__).resolve().parents[2]
 GROUND = BASE / "layer1_human" / "grounding"
 OUT_HTML = GROUND / "open_empire_layer1_skos_v4.html"
 DOCS_HTML = REPO_ROOT / "docs" / "index.html"
-SCRATCH_HTML = Path("/home/jic823/.gemini/antigravity/brain/b9b2ef77-061c-49c1-9d1d-c6f007567183/scratch/open_empire_layer1_skos_v4.html")
 
 
 def main():
@@ -134,7 +133,7 @@ def main():
             "comb": c.get("combines_concepts") or [],
             "y0": prov.get("first_attested"),
             "y1": prov.get("last_attested"),
-            "ser": prov.get("series", []),
+            "ser": prov.get("series", []) + [f"{x} (inferred: series not printed)" for x in prov.get("inferred_series", [])],
             "b1866": br.get("broaderConcept", ""),
         })
 
@@ -193,7 +192,7 @@ def main():
             "tx": [[t["qid"], t.get("taxon_name", ""), t.get("col_id", ""), t.get("relation", "")] for t in (c.get("source_taxa") or [])],
             "mat": [], "matc": [], "relc": [], "comb": [],
             "y0": None, "y1": None,
-            "ser": prov.get("series", []),
+            "ser": prov.get("series", []) + [f"{x} (inferred: series not printed)" for x in prov.get("inferred_series", [])],
             "b1866": "",
         })
 
@@ -1606,9 +1605,7 @@ renderTable();
     DOCS_HTML.parent.mkdir(parents=True, exist_ok=True)
     DOCS_HTML.write_text(html_doc, encoding="utf-8")
     (DOCS_HTML.parent / ".nojekyll").write_text("", encoding="utf-8")
-    SCRATCH_HTML.parent.mkdir(parents=True, exist_ok=True)
-    SCRATCH_HTML.write_text(html_doc, encoding="utf-8")
-    print(f"Wrote {OUT_HTML} ({OUT_HTML.stat().st_size/1024:.1f} KB), {DOCS_HTML}, and staged copy at {SCRATCH_HTML}")
+    print(f"Wrote {OUT_HTML} ({OUT_HTML.stat().st_size/1024:.1f} KB) and {DOCS_HTML}")
 
 
 if __name__ == "__main__":

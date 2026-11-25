@@ -17,14 +17,15 @@ Each extracted record includes:
   pdf_page, definition, latin_binomials, see_also
 """
 
+import os
 import json
 import re
 from collections import Counter
 from pathlib import Path
 
-OCR_ROOT = Path("/mnt/data/jic823/open_empire_corpus/ocr_chandra/dictionaries_all")
-GUT_ROOT = Path("/mnt/data/jic823/open_empire_corpus/raw/gutenberg")
-OUT_DIR = Path("/home/jic823/Documents/open_empire/dictionaries")
+OCR_ROOT = Path(os.environ.get("OE_OCR_ROOT", "/mnt/data/jic823/open_empire_corpus/ocr_chandra/dictionaries_all"))
+GUT_ROOT = Path(os.environ.get("OE_GUTENBERG_ROOT", "/mnt/data/jic823/open_empire_corpus/raw/gutenberg"))
+OUT_DIR = Path(__file__).resolve().parents[1] / "dictionaries"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 OUT_JSONL = OUT_DIR / "commercial_dictionaries_lexicon.jsonl"
 

@@ -217,3 +217,44 @@ describe that commit; current counts are in the README.
 - **Release hygiene.** No manifest ties data release, schema version and curation revision; builders use
   fixed local paths; the superseded pilot is still shipped; `lincs-validate` was not re-run.
 - Places and polities coverage beyond the year fix was not reviewed.
+
+---
+
+# v6.2 (2026-11-25): evidence in the graph, scoped readings, release tooling
+
+Five of the proposals for the remaining open items, implemented. Three others wait on a decision
+(basis of the wild-fur assumption; taxon anchors for live animals; renaming the document-tier placement
+property).
+
+- **End-use evidence is in the RDF.** Every link has an `oe:EndUseAssertion` record with a stable IRI
+  (`oe:use_<industry>__<commodity>`) carrying its role, a review status and its passages as
+  `oe:EvidenceQuote` nodes (text, citation, source, retrieval mode). No blank nodes. Review status:
+  68 `reviewed`, 142 `mined_multiple_quotes`, 110 `mined_single_quote`. The last group is keyword-mined
+  and unread: treat it as candidates. The plain `oe:usedInIndustry` triples remain for navigation.
+- **Entry-level citations.** The two Project Gutenberg texts have no page markers, so their 240 quotes are
+  now cited by the dictionary entry or section they stand in (*Ure 1840, s.v. SOAP*). All 240 were located.
+- **Scoped readings.** `curated_scoped_readings.tsv` attaches a reading to a series, period and unit. The
+  builder counts the Layer-1 rows inside each scope and publishes each reading as its own
+  `oe:ScopedReading` node. Pilot on *Cocoa nuts*: 25 rows coconuts (supported), 8 rows cacao-or-coconuts
+  (unresolved, no external match asserted), 1 row coconuts (probable). A reading that matches no row
+  fails the build.
+- **Blank series are marked as inferred.** The observations gain `series_inferred` and `series_basis`;
+  the printed `series_name` stays blank. 63,981 rows (766 headings) are published as
+  `oe:inferredPrimarySource`, not `prov:hadPrimarySource`. The basis records the currency of each row
+  (45,828 Canadian dollar; 18,018 sterling), which is the handle for splitting the block into its real
+  source publications later.
+- **Release tooling.** One version string (6.2) for the scheme and the mapping set; `MANIFEST.json` with
+  a hash per published file; `scripts/verify.py` runs on the published files alone; `scripts/build_all.sh`
+  documents the build order; repository paths are relative to the scripts and external data roots can be
+  overridden by environment variables; the superseded pilot moved to `archive/end_use_pilot/`.
+
+Schema note for consumers: the observations file has two new columns after `series_name`.
+
+## Still open after v6.2
+
+- Decisions pending: wild-by-inference vs mixed for generic furs; taxon items as close matches for live
+  animals; a breaking rename of `oe:subsumedInCustomsHeading`.
+- 110 single-quote end-use links are unreviewed; anchor strength is unchanged (25.3% of rows exact or close).
+- The inferred Canadian block is still one label; it is several source publications.
+- Scoped readings exist for one heading; Wheat's 1866 entry, generic furs and Abaca are the next cases.
+- `lincs-validate` not re-run; places and polities and SITC precision not reviewed.

@@ -10,6 +10,7 @@ ZERO QIDs from memory: every QID comes strictly from verified local files or Duc
 against the 2026-11-09 Wikidata snapshot.
 """
 
+import os
 import csv
 import gzip
 import json
@@ -21,7 +22,7 @@ from pathlib import Path
 
 import duckdb
 
-BASE = Path("/home/jic823/Documents/open_empire/human_trade")
+BASE = Path(__file__).resolve().parents[2] / "human_trade"
 LAYER1 = BASE / "layer1_human"
 NAMES = LAYER1 / "names"
 GROUND = LAYER1 / "grounding"
@@ -30,7 +31,7 @@ GROUND.mkdir(parents=True, exist_ok=True)
 CEYLON_SPINE = Path("/home/jic823/Documents/ceylon/spine")
 EMPIRE_DATA = Path("/home/jic823/Documents/ceylon/empire-evolution/data")
 CANADA_WD = Path("/home/jic823/Documents/Canada-History-Knowledge-Graph/wikidata_grounding")
-WD_SLIM_GLOB = "/mnt/data/jic823/wikidata/20261109/slim/*.parquet"
+WD_SLIM_GLOB = os.environ.get("OE_WD_SLIM_GLOB", "/mnt/data/jic823/wikidata/20261109/slim/*.parquet")
 WD_SNAPSHOT = "2026-11-09"
 
 sys.path.insert(0, str(CEYLON_SPINE))

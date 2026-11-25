@@ -120,3 +120,4 @@ oe:ind_woollen_silk_dyeing	htc:0339	Safflower	drop				One quote is cotton dyeing
 oe:ind_metallurgy_tinplate	htc:0267	Lead Pig and Sheet	drop				Lead is the product in both quotes, not an input.
 oe:ind_sugar_refining	htc:0103	Sugar Unrefined Total	drop				Quotes are barley sugar, powder sugar and cane juice on a plantation; none shows raw sugar entering a refinery. Re-admit when a supporting quote is found.
 oe:ind_chocolate_confectionery	htc:0168	Starch	drop				The only quote describes confectioners using dextrine, a starch derivative; it does not show starch itself as an input.
+oe:ind_brewing_distilling	htc:0056	Hops	prune		substitute for hops		Quote removed: it describes an unnamed adulterant used as a substitute for hops, not hops as an input.

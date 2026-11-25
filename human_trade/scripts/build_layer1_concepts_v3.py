@@ -30,7 +30,7 @@ import xml.etree.ElementTree as ET
 from collections import Counter, defaultdict
 from pathlib import Path
 
-BASE = Path("/home/jic823/Documents/open_empire/human_trade")
+BASE = Path(__file__).resolve().parents[2] / "human_trade"
 LAYER1 = BASE / "layer1_human"
 GROUND = LAYER1 / "grounding"
 GROUND.mkdir(parents=True, exist_ok=True)

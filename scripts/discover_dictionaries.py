@@ -9,7 +9,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-OUT_DIR = Path("/home/jic823/Documents/open_empire/manifests")
+OUT_DIR = Path(__file__).resolve().parents[1] / "manifests"
 USER_AGENT = "OpenEmpireResearchBot/0.2 (University of Saskatchewan HGIS Lab; jim.clifford@usask.ca)"
 
 FIELDS = ["identifier", "title", "date", "year", "creator", "collection", "imagecount", "item_size", "volume", "access-restricted-item"]

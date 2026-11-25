@@ -36,7 +36,7 @@ from pathlib import Path
 
 import duckdb
 
-ROOT = Path("/home/jic823/Documents/open_empire")
+ROOT = Path(__file__).resolve().parents[1]
 DICT_DIR = ROOT / "dictionaries"
 GROUND = ROOT / "human_trade" / "layer1_human" / "grounding"
 DANIKA_DIR = Path("/datastore/HGISLab/HGIS LAB/Clifford/Danika_Leather_Work/Drugs Project")
@@ -975,7 +975,7 @@ def main():
         wd_q = (c.get("wikidata_anchor") or {}).get("qid", "")
         taxa = [t["taxon_name"] for t in (c.get("source_taxa") or [])]
         roles = l1_extra_roles.get(cid, [])
-        srcs = c["provenance"].get("series", [])[:2]
+        srcs = (c["provenance"].get("series", []) + [f"{x} (inferred)" for x in c["provenance"].get("inferred_series", [])])[:2]
         emit_gaz(cid, pref, pref, "prefLabel", "customs_enumerated", grp_id, sec_id, "", roles, wd_q, taxa, srcs)
         for al in (c.get("skos_altLabels") or []) + l1_extra_alts.get(cid, []):
             emit_gaz(cid, pref, al, "altLabel", "customs_enumerated", grp_id, sec_id, "", roles, wd_q, taxa, srcs)
@@ -990,7 +990,7 @@ def main():
         wd_q = (c.get("wikidata_anchor") or {}).get("qid", "")
         taxa = [t["taxon_name"] for t in (c.get("source_taxa") or [])]
         roles = c.get("multi_use_roles", [])
-        srcs = c["provenance"].get("series", [])[:2]
+        srcs = (c["provenance"].get("series", []) + [f"{x} (inferred)" for x in c["provenance"].get("inferred_series", [])])[:2]
         sub_id = c.get("subsumed_in_customs_id", "")
         emit_gaz(cid, pref, pref, "prefLabel", "document_attested", grp_id, sec_id, sub_id, roles, wd_q, taxa, srcs)
         for al in (c.get("skos_altLabels") or []):

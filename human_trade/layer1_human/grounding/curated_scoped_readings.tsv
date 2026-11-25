@@ -1,0 +1,7 @@
+# Readings of a customs heading that hold only for part of its rows (series, period, unit), applied by human_trade/scripts/build_skos_v4.py.
+# The heading keeps its id and general anchor; each row here becomes its own oe:ScopedReading node with the count of Layer-1 rows inside its scope.
+# series_regex / unit_regex are case-insensitive regular expressions on the printed (or inferred) series and the printed unit; blank = any. status: supported | probable | unresolved.
+concept_id	commodity_as_printed	series_regex	year_from	year_to	unit_regex	reading	wd_term	wd_relation	status	evidence
+htc:0843	Cocoa nuts	^HCPP_Annual Statement of Trade	1856	1866	^Number$	coconuts	coconut	skos:closeMatch	supported	Annual Statements 1856–66 enter the article by number, from the British West India Islands and British Guiana; cacao was entered by weight under 'Cocoa'.
+htc:0843	Cocoa nuts	^KEW_CUST	1800	1840	pound|hundredweight|cwt|lbs	cacao (cocoa beans) or coconuts	cocoa bean	skos:relatedMatch	unresolved	CUST 4 and CUST 5 ledgers 1800–1840 enter these rows by weight; early ledgers used 'cocoa nuts' for cacao as well as for coconuts, and nothing in the rows settles which.
+htc:0843	Cocoa nuts	^KEW_CUST 4	1840	1840	^Number$	coconuts	coconut	skos:closeMatch	probable	The single 1840 CUST 4 row is entered by number, the form later used for coconuts; one row is thin evidence.

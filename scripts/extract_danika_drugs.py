@@ -12,7 +12,7 @@ import zipfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-ROOT = Path("/home/jic823/Documents/open_empire")
+ROOT = Path(__file__).resolve().parents[1]
 DANIKA_DIR = Path("/datastore/HGISLab/HGIS LAB/Clifford/Danika_Leather_Work/Drugs Project")
 OUT_PATH = ROOT / "dictionaries" / "danika_and_1866_extracted.json"
 

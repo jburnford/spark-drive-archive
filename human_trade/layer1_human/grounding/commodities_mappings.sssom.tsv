@@ -4,7 +4,8 @@
 #  agrovoc: http://aims.fao.org/aos/agrovoc/
 #  stw: http://zbw.eu/stw/descriptor/
 #  aat: http://vocab.getty.edu/aat/
-#mapping_set_id: https://open-empire.hgislab.usask.ca/vocab/human-trade-commodities/mappings/v4
+#mapping_set_id: https://open-empire.hgislab.usask.ca/vocab/human-trade-commodities/mappings
+#mapping_set_version: 6.2
 #mapping_date: 2026-11-25
 #license: https://creativecommons.org/licenses/by/4.0/
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_tool	author_label	confidence	comment

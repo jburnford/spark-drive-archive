@@ -5,7 +5,7 @@ import re
 from collections import Counter
 from pathlib import Path
 
-G = Path("/home/jic823/Documents/open_empire/human_trade/layer1_human/grounding")
+G = Path(__file__).resolve().parents[1] / "human_trade" / "layer1_human" / "grounding"
 docs = [json.loads(l) for l in open(G / "document_attested_concepts.jsonl", encoding="utf-8") if l.strip()]
 print(f"Total doc_concepts: {len(docs)}")
 print("By subsumed_in_customs_id:")

@@ -32,7 +32,7 @@ from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
 
-ROOT = Path("/home/jic823/Documents/open_empire")
+ROOT = Path(__file__).resolve().parents[1]
 GROUND = ROOT / "human_trade" / "layer1_human" / "grounding"
 DICT_DIR = ROOT / "dictionaries"
 OCR_ROOT = Path("/mnt/data/jic823/open_empire_corpus/ocr_chandra/dictionaries_all")

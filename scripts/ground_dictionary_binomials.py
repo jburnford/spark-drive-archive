@@ -9,17 +9,18 @@ Outputs `/home/jic823/Documents/open_empire/dictionaries/dictionary_binomials_gr
 ZERO QIDs from memory.
 """
 
+import os
 import json
 from collections import Counter
 from pathlib import Path
 
 import duckdb
 
-DICT_DIR = Path("/home/jic823/Documents/open_empire/dictionaries")
+DICT_DIR = Path(__file__).resolve().parents[1] / "dictionaries"
 LEX_PATH = DICT_DIR / "commercial_dictionaries_lexicon.jsonl"
 OUT_PATH = DICT_DIR / "dictionary_binomials_grounded.jsonl"
 CEYLON_COL = Path("/home/jic823/Documents/ceylon/spine/grounding/taxa_col.jsonl")
-WD_SLIM_GLOB = "/mnt/data/jic823/wikidata/20261109/slim/*.parquet"
+WD_SLIM_GLOB = os.environ.get("OE_WD_SLIM_GLOB", "/mnt/data/jic823/wikidata/20261109/slim/*.parquet")
 
 
 def main():
