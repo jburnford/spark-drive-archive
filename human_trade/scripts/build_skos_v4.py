@@ -2107,32 +2107,36 @@ def main():
     top_sec_ids = [f"htc:{s}" for s in sorted(SECTORS)]
     ttl_lines.append(
         "htc:scheme a skos:ConceptScheme ;\n"
+        f"    rdfs:label {ttl_str(scheme_title)}@en ;\n"
         f"    dcterms:title {ttl_str(scheme_title)}@en ;\n"
         f"    dcterms:description {ttl_str(scheme_desc)}@en ;\n"
         '    dcterms:creator "Dr. Jim Clifford & HGIS Lab, University of Saskatchewan"@en ;\n'
         "    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;\n"
         f'    dcterms:created "{TODAY}"^^xsd:date ;\n'
-        '    owl:versionInfo "4.0-layer1-human-dict-enriched" ;\n'
+        '    owl:versionInfo "4.1-lincs-compatible" ;\n'
         f"    skos:hasTopConcept {', '.join(top_sec_ids)} .\n"
     )
     jsonld_graph.append({
         "@id": "htc:scheme", "@type": "skos:ConceptScheme",
+        "rdfs:label": {"@value": scheme_title, "@language": "en"},
         "dcterms:title": {"@value": scheme_title, "@language": "en"},
         "dcterms:description": {"@value": scheme_desc, "@language": "en"},
         "dcterms:creator": {"@value": "Dr. Jim Clifford & HGIS Lab, University of Saskatchewan", "@language": "en"},
         "dcterms:license": {"@id": "https://creativecommons.org/licenses/by/4.0/"},
         "dcterms:created": {"@value": TODAY, "@type": "xsd:date"},
-        "owl:versionInfo": "4.0-layer1-human-dict-enriched",
+        "owl:versionInfo": "4.1-lincs-compatible",
         "skos:hasTopConcept": [{"@id": tid} for tid in top_sec_ids],
     })
 
     ttl_lines.append(
         "htc1866:scheme a skos:ConceptScheme ;\n"
+        '    rdfs:label "1866 British Customs Curated Broader Concepts (SKOS_from_Custom_Records.xlsx)"@en ;\n'
         '    dcterms:title "1866 British Customs Curated Broader Concepts (SKOS_from_Custom_Records.xlsx)"@en ;\n'
         f"    skos:hasTopConcept {', '.join(f'htc1866:{s}' for s in sorted(broader_1866))} .\n"
     )
     jsonld_graph.append({
         "@id": "htc1866:scheme", "@type": "skos:ConceptScheme",
+        "rdfs:label": {"@value": "1866 British Customs Curated Broader Concepts (SKOS_from_Custom_Records.xlsx)", "@language": "en"},
         "dcterms:title": {"@value": "1866 British Customs Curated Broader Concepts (SKOS_from_Custom_Records.xlsx)", "@language": "en"},
         "skos:hasTopConcept": [{"@id": f"htc1866:{s}"} for s in sorted(broader_1866)],
     })
@@ -2142,28 +2146,28 @@ def main():
         ttl_lines.append(f"{sid} a prov:Entity ;\n    rdfs:label {ttl_str(slbl)}@en .\n")
         jsonld_graph.append({"@id": sid, "@type": "prov:Entity", "rdfs:label": {"@value": slbl, "@language": "en"}})
 
-    # Tier 1: Macro-Sectors (dual-typed skos:Concept + crm:E55_Type for LINCS compatibility)
+    # Tier 1: Macro-Sectors (dual-typed skos:Concept + crm:E55_Type with rdfs:label for LINCS compatibility)
     for sec, slbl in sorted(SECTORS.items()):
         sid = f"htc:{sec}"
-        ttl_lines.append(f"{sid} a skos:Concept, crm:E55_Type ;\n    skos:inScheme htc:scheme ;\n    skos:topConceptOf htc:scheme ;\n    skos:prefLabel {ttl_str(slbl)}@en .\n")
-        jsonld_graph.append({"@id": sid, "@type": ["skos:Concept", "crm:E55_Type"], "skos:inScheme": {"@id": "htc:scheme"}, "skos:topConceptOf": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": slbl, "@language": "en"}})
+        ttl_lines.append(f"{sid} a skos:Concept, crm:E55_Type ;\n    rdfs:label {ttl_str(slbl)}@en ;\n    skos:inScheme htc:scheme ;\n    skos:topConceptOf htc:scheme ;\n    skos:prefLabel {ttl_str(slbl)}@en .\n")
+        jsonld_graph.append({"@id": sid, "@type": ["skos:Concept", "crm:E55_Type"], "rdfs:label": {"@value": slbl, "@language": "en"}, "skos:inScheme": {"@id": "htc:scheme"}, "skos:topConceptOf": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": slbl, "@language": "en"}})
 
     # Tier 2: Mid-Level Commodity Groups
     for grp, (glbl, psec, _) in sorted(GROUPS.items()):
         gid = f"htc:{grp}"
-        ttl_lines.append(f"{gid} a skos:Concept, crm:E55_Type ;\n    skos:inScheme htc:scheme ;\n    skos:prefLabel {ttl_str(glbl)}@en ;\n    skos:broader htc:{psec} .\n")
-        jsonld_graph.append({"@id": gid, "@type": ["skos:Concept", "crm:E55_Type"], "skos:inScheme": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": glbl, "@language": "en"}, "skos:broader": {"@id": f"htc:{psec}"}})
+        ttl_lines.append(f"{gid} a skos:Concept, crm:E55_Type ;\n    rdfs:label {ttl_str(glbl)}@en ;\n    skos:inScheme htc:scheme ;\n    skos:prefLabel {ttl_str(glbl)}@en ;\n    skos:broader htc:{psec} .\n")
+        jsonld_graph.append({"@id": gid, "@type": ["skos:Concept", "crm:E55_Type"], "rdfs:label": {"@value": glbl, "@language": "en"}, "skos:inScheme": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": glbl, "@language": "en"}, "skos:broader": {"@id": f"htc:{psec}"}})
 
     # Tier 3: Layer-A' Substance Groups
     for sid, sc in sorted(sub_concepts.items()):
-        ttl_lines.append(f"{sid} a skos:Concept, crm:E55_Type ;\n    skos:inScheme htc:scheme ;\n    skos:prefLabel {ttl_str(sc['label'])}@en ;\n    skos:broader {sc['parent']} .\n")
-        jsonld_graph.append({"@id": sid, "@type": ["skos:Concept", "crm:E55_Type"], "skos:inScheme": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": sc["label"], "@language": "en"}, "skos:broader": {"@id": sc["parent"]}})
+        ttl_lines.append(f"{sid} a skos:Concept, crm:E55_Type ;\n    rdfs:label {ttl_str(sc['label'])}@en ;\n    skos:inScheme htc:scheme ;\n    skos:prefLabel {ttl_str(sc['label'])}@en ;\n    skos:broader {sc['parent']} .\n")
+        jsonld_graph.append({"@id": sid, "@type": ["skos:Concept", "crm:E55_Type"], "rdfs:label": {"@value": sc["label"], "@language": "en"}, "skos:inScheme": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": sc["label"], "@language": "en"}, "skos:broader": {"@id": sc["parent"]}})
 
     # 1866 broader concepts
     for bslug, blbl in sorted(broader_1866.items()):
         bid = f"htc1866:{bslug}"
-        ttl_lines.append(f"{bid} a skos:Concept, crm:E55_Type ;\n    skos:inScheme htc1866:scheme ;\n    skos:topConceptOf htc1866:scheme ;\n    skos:prefLabel {ttl_str(blbl)}@en .\n")
-        jsonld_graph.append({"@id": bid, "@type": ["skos:Concept", "crm:E55_Type"], "skos:inScheme": {"@id": "htc1866:scheme"}, "skos:topConceptOf": {"@id": "htc1866:scheme"}, "skos:prefLabel": {"@value": blbl, "@language": "en"}})
+        ttl_lines.append(f"{bid} a skos:Concept, crm:E55_Type ;\n    rdfs:label {ttl_str(blbl)}@en ;\n    skos:inScheme htc1866:scheme ;\n    skos:topConceptOf htc1866:scheme ;\n    skos:prefLabel {ttl_str(blbl)}@en .\n")
+        jsonld_graph.append({"@id": bid, "@type": ["skos:Concept", "crm:E55_Type"], "rdfs:label": {"@value": blbl, "@language": "en"}, "skos:inScheme": {"@id": "htc1866:scheme"}, "skos:topConceptOf": {"@id": "htc1866:scheme"}, "skos:prefLabel": {"@value": blbl, "@language": "en"}})
 
     taxon_nodes = {}
     sssom_rows = []
@@ -2180,6 +2184,7 @@ def main():
 
         triples = [
             "a skos:Concept, crm:E55_Type",
+            f"rdfs:label {ttl_str(pref)}@en",
             "skos:inScheme htc:scheme",
             f"skos:notation {ttl_str(c['notation'])}",
             f"skos:prefLabel {ttl_str(pref)}@en",
@@ -2196,6 +2201,7 @@ def main():
         ]
         node = {
             "@id": cid, "@type": ["skos:Concept", "crm:E55_Type"],
+            "rdfs:label": {"@value": pref, "@language": "en"},
             "skos:inScheme": {"@id": "htc:scheme"},
             "skos:notation": c["notation"],
             "skos:prefLabel": {"@value": pref, "@language": "en"},
@@ -2310,11 +2316,15 @@ def main():
         jsonld_graph.append(node)
 
     for tq, (tname, col_id) in sorted(taxon_nodes.items()):
-        tt = []
-        tn = {"@id": f"http://www.wikidata.org/entity/{tq}"}
-        if tname: tt.append(f"rdfs:label {ttl_str(tname)}"); tn["rdfs:label"] = tname
-        if col_id: tt.append(f"oe:colId {ttl_str(col_id)}"); tn["oe:colId"] = col_id
-        if tt:
+        tt = ["a crm:E55_Type"]
+        tn = {"@id": f"http://www.wikidata.org/entity/{tq}", "@type": "crm:E55_Type"}
+        if tname:
+            tt.append(f"rdfs:label {ttl_str(tname)}@la")
+            tn["rdfs:label"] = {"@value": tname, "@language": "la"}
+        if col_id:
+            tt.append(f"oe:colId {ttl_str(col_id)}")
+            tn["oe:colId"] = col_id
+        if tname or col_id:
             ttl_lines.append(f"wd:{tq} " + " ;\n    ".join(tt) + " .\n")
             jsonld_graph.append(tn)
 
