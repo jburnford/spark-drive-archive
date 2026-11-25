@@ -1,0 +1,110 @@
+{
+  "oe:ind_soap_manufacture": {
+    "id": "oe:ind_soap_manufacture",
+    "label": "Soap Manufacture",
+    "sector": "Oils, Soap & Lighting",
+    "desc": "Hard, soft, yellow, mottled, curd, Castile, and toilet soap manufacture — combining animal tallow and tropical/vegetable oils with caustic alkalis (barilla, kelp, soda ash, potash, lime), rosin, salt for salting out, and essential oils for scenting."
+  },
+  "oe:ind_calico_printing": {
+    "id": "oe:ind_calico_printing",
+    "label": "Calico Cloth & Calico Printing",
+    "sector": "Textiles & Dyeing",
+    "desc": "Cotton weaving, bleaching, dyeing, and calico printing — combining raw cotton with bleaching powder and alkalis, botanical/insect/mineral/coal-tar dyestuffs, metallic mordants, and gum/starch thickeners."
+  },
+  "oe:ind_woollen_silk_dyeing": {
+    "id": "oe:ind_woollen_silk_dyeing",
+    "label": "Woollen, Silk & Worsted Dyeing",
+    "sector": "Textiles & Dyeing",
+    "desc": "Woollen, worsted, and silk scouring, fulling, and dyeing — employing raw wool and silk with scarlet/crimson insect dyes (cochineal, lac dye, kermes), lichen dyes (orchal, archil, cudbear), indigo/woad vats, alum/tartar/tin mordants, olive oil, and fuller's earth."
+  },
+  "oe:ind_chocolate_confectionery": {
+    "id": "oe:ind_chocolate_confectionery",
+    "label": "Chocolate & Confectionery",
+    "sector": "Food, Drink & Groceries",
+    "desc": "Chocolate bars, drinking chocolate, cocoa butter, and sugar confectionery — combining roasted cacao beans with cane sugar, aromatic spices (vanilla, cinnamon, cloves, cassia), gums, almonds, starches, and milk."
+  },
+  "oe:ind_leather_tanning": {
+    "id": "oe:ind_leather_tanning",
+    "label": "Leather Tanning, Tawing & Currying",
+    "sector": "Hides, Leather & Animal Trades",
+    "desc": "Tanning, tawing, and currying raw ox/calf/sheep/goat hides into sole, harness, morocco, Russia, and chamois leather — using oak, hemlock, and mimosa barks, valonia, sumach, cutch, myrabolans, divi-divi, lime, alum, salt, tallow, and fish/train oils."
+  },
+  "oe:ind_candle_manufacture": {
+    "id": "oe:ind_candle_manufacture",
+    "label": "Candle Manufacture",
+    "sector": "Oils, Soap & Lighting",
+    "desc": "Dipped, mould, composite, stearine, wax, spermaceti, and paraffin candle manufacture — combining tallow, palm/coconut stearine, beeswax, spermaceti, and paraffin with cotton wicks and sulphuric acid/borax treatments."
+  },
+  "oe:ind_paper_making": {
+    "id": "oe:ind_paper_making",
+    "label": "Paper Making & Cardboard",
+    "sector": "Forestry, Paper & Print",
+    "desc": "Paper, pasteboard, and millboard manufacture — pulping linen/cotton rags, esparto grass, wood pulp, straw, hemp, and jute, bleached with chloride of lime, sized with rosin/alum/gelatine/starch, and loaded or tinted with kaolin, smalt, and ultramarine."
+  },
+  "oe:ind_varnish_paint_lacquer": {
+    "id": "oe:ind_varnish_paint_lacquer",
+    "label": "Varnish, Paint & Lacquer",
+    "sector": "Chemicals, Resins & Coatings",
+    "desc": "Spirit and oil varnishes, japans, lacquers, French polish, and house/marine paints — dissolving tropical resins (copal, dammar, shellac, mastic, sandarac, amber, elemi, rosin) in linseed oil, turpentine, and spirits, pigmented with white lead, vermilion, ochre, umber, ultramarine, and chrome yellow."
+  },
+  "oe:ind_glass_ceramics": {
+    "id": "oe:ind_glass_ceramics",
+    "label": "Glassmaking, Pottery & Porcelain",
+    "sector": "Minerals, Metals & Heavy Industry",
+    "desc": "Crown, plate, bottle, and flint glassmaking plus earthenware and bone-china porcelain — fusing sand/flint and kaolin/china clay with soda ash, barilla, kelp, potash, lime, red lead/litharge, manganese, borax, cobalt/smalt, and calcined bone ash."
+  },
+  "oe:ind_rubber_waterproofing": {
+    "id": "oe:ind_rubber_waterproofing",
+    "label": "India-Rubber, Gutta-Percha & Waterproofing",
+    "sector": "Chemicals, Resins & Coatings",
+    "desc": "Vulcanized india-rubber goods, mackintosh waterproof fabrics, elastic webbing, and gutta-percha submarine telegraph cable insulation — combining caoutchouc and gutta-percha with sulphur, coal-tar naphtha, turpentine, white lead, zinc, and woven cotton/linen."
+  },
+  "oe:ind_brewing_distilling": {
+    "id": "oe:ind_brewing_distilling",
+    "label": "Brewing, Malting & Distilling",
+    "sector": "Food, Drink & Groceries",
+    "desc": "Ale, porter, stout, beer brewing, and spirits/gin/whisky/rum distilling — mashing malted barley, grains, sugar, and molasses, bittering with hops (and substitutes like quassia), fining with isinglass, and rectifying gin/cordials with juniper berries, coriander, and spices."
+  },
+  "oe:ind_sugar_refining": {
+    "id": "oe:ind_sugar_refining",
+    "label": "Sugar Refining",
+    "sector": "Food, Drink & Groceries",
+    "desc": "Refining raw colonial muscovado and beet sugars into loaf and granulated white sugar — clarifying and decolorizing raw cane sugar with lime, bullock's blood/albumen, animal charcoal (bone black), and clay."
+  },
+  "oe:ind_cordage_shipbuilding": {
+    "id": "oe:ind_cordage_shipbuilding",
+    "label": "Shipbuilding, Rope, Cordage & Sailcloth",
+    "sector": "Forestry, Paper & Print",
+    "desc": "Wooden ship construction, spars, sails, caulking, and marine cordage — combining oak, teak, greenheart, pine/fir masts, and copper sheathing with hemp, manila/abaca, coir, sisal, flax, oakum, tar, pitch, turpentine, and rosin."
+  },
+  "oe:ind_gunpowder_matches": {
+    "id": "oe:ind_gunpowder_matches",
+    "label": "Gunpowder, Explosives & Lucifer Matches",
+    "sector": "Chemicals, Resins & Coatings",
+    "desc": "Black gunpowder, blasting powder, guncotton, and lucifer/congreve friction matches — compounding saltpetre (potassium/sodium nitrate), brimstone (sulphur), and willow/alder charcoal, plus phosphorus, chlorate of potash, pine splints, paraffin, and glue for matches."
+  },
+  "oe:ind_perfumery_cosmetics": {
+    "id": "oe:ind_perfumery_cosmetics",
+    "label": "Perfumery, Pomades & Essential Oils",
+    "sector": "Oils, Soap & Lighting",
+    "desc": "Eau de Cologne, scented spirits, pomades, incense, and cosmetics — infusing alcohol, lard, and olive/almond oils with essential oils (bergamot, otto of roses, lavender, citronella, sandalwood), animal fixatives (musk, ambergris, castor), and fragrant resins/spices (benzoin, myrrh, olibanum, vanilla, cloves)."
+  },
+  "oe:ind_pharmaceuticals": {
+    "id": "oe:ind_pharmaceuticals",
+    "label": "Pharmaceuticals & Druggists' Preparations",
+    "sector": "Chemicals, Resins & Coatings",
+    "desc": "19th-century apothecary, pharmacopoeia, and fine-chemical drug manufacture (e.g., Howard & Sons, Allen & Hanburys) — extracting alkaloids and preparing tinctures, pills, plasters, and ointments from cinchona/quinine, opium/morphia/laudanum, coca/cocaine, nux vomica/strychnine, quicksilver/calomel, ipecacuanha, jalap, senna, rhubarb, aloes, camphor, castor/cod-liver oils, and iodine."
+  },
+  "oe:ind_metallurgy_tinplate": {
+    "id": "oe:ind_metallurgy_tinplate",
+    "label": "Metallurgy, Smelting, Brass & Tinplate",
+    "sector": "Minerals, Metals & Heavy Industry",
+    "desc": "Iron, copper, lead, tin, and zinc smelting, brass founding, type-metal, and tinplate manufacture — combining metallic ores and unwrought metals with coal, coke, charcoal, limestone, borax, plumbago crucibles, sulphuric/muriatic pickling acids, sal ammoniac, and palm oil/tallow tinplate baths."
+  },
+  "oe:ind_hats_brushes_upholstery": {
+    "id": "oe:ind_hats_brushes_upholstery",
+    "label": "Hat-Making, Brushes, Upholstery & Turnery",
+    "sector": "Hides, Leather & Animal Trades",
+    "desc": "Felt and silk hat-making, brushmaking, upholstery stuffing, and ornamental turnery — working beaver, rabbit/coney, and nutria pelts with shellac stiffening, nitrate of mercury carroting, and logwood/copperas black dye; hog bristles, horsehair, piassava, coir, and kapok; and ivory, whalebone, tortoise-shell, mother-of-pearl, cork, and rattan."
+  }
+}

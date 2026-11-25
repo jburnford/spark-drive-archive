@@ -26,8 +26,12 @@ def main():
     doc_concepts = [json.loads(l) for l in open(doc_path, encoding="utf-8") if l.strip()] if doc_path.exists() else []
     gaz_path = GROUND / "commodity_gazetteer.tsv"
     gaz_cnt = (sum(1 for _ in open(gaz_path, encoding="utf-8")) - 1) if gaz_path.exists() else 0
-    end_use_path = GROUND / "end_use_pilot_links.jsonl"
+    end_use_path = GROUND / "end_use_network_links.jsonl"
+    if not end_use_path.exists():
+        end_use_path = GROUND / "end_use_pilot_links.jsonl"
     end_use_links = [json.loads(l) for l in open(end_use_path, encoding="utf-8") if l.strip()] if end_use_path.exists() else []
+    ind_meta_path = GROUND / "end_use_industries.json"
+    ind_meta = json.loads(ind_meta_path.read_text(encoding="utf-8")) if ind_meta_path.exists() else {}
     places = [json.loads(l) for l in open(GROUND / "places_grounding.jsonl", encoding="utf-8") if l.strip()]
     polity_cnt = sum(1 for _ in open(GROUND / "place_year_polities.tsv", encoding="utf-8")) - 1
 
@@ -452,7 +456,7 @@ details.tree-sub > summary {{ cursor: pointer; font-weight: 600; font-size: 0.83
     <button class="tab active" id="btn-concepts" onclick="switchTab('concepts', this)">Commodities Browser ({len(concepts) + len(doc_concepts):,})</button>
     <button class="tab" id="btn-vtree" onclick="switchTab('vtree', this)">Visual Tree (Interactive SVG)</button>
     <button class="tab" id="btn-hierarchy" onclick="switchTab('hierarchy', this)">Outline Hierarchy Tree</button>
-    <button class="tab" id="btn-industries" onclick="switchTab('industries', this)">Industries / End-Use Pilot (3)</button>
+    <button class="tab" id="btn-industries" onclick="switchTab('industries', this)">Industries / End-Use Network ({len(ind_meta)})</button>
     <button class="tab" id="btn-places" onclick="switchTab('places', this)">Places &amp; Polities (499)</button>
   </div>
 
@@ -571,17 +575,17 @@ details.tree-sub > summary {{ cursor: pointer; font-weight: 600; font-size: 0.83
     <div id="tree-root"></div>
   </div>
 
-  <!-- TAB 2B: INDUSTRIES / END-USE PILOT -->
+  <!-- TAB 2B: INDUSTRIES / END-USE NETWORK -->
   <div id="tab-industries" class="panel">
     <div class="card" style="margin-bottom:14px;">
-      <strong>3-Industry Primary-Source End-Use Overlay Pilot (<code>oe:usedInIndustry</code> / <code>oe:usesCommodityInput</code>):</strong>
-      Every commodity link below is mined from the <strong>full text of 6 19th-century commercial &amp; manufacturing books</strong> (6,455 pages across Ure 1853, Simmonds 1854 &amp; 1892, McCulloch 1880, Mortimer 1823, and Watt 1908) — uniting <strong>Layer-1 customs-enumerated commodities</strong> with <strong>Document-Attested minor inputs (<code>htc:doc_*</code>)</strong> without altering the 4-tier material taxonomy. Click any commodity to jump to its SKOS record, or expand quotes to read the verbatim primary-source attestations.
+      <strong>18-Industry Primary-Source End-Use Network (<code>oe:usedInIndustry</code> / <code>oe:usesCommodityInput</code>):</strong>
+      Every commodity link below is mined from the <strong>full text of 6 19th-century commercial &amp; manufacturing books</strong> (6,455 pages across Ure 1853, Simmonds 1854 &amp; 1892, McCulloch 1880, Mortimer 1823, and Watt 1908) — uniting <strong>Layer-1 customs-enumerated commodities</strong> with <strong>Document-Attested minor inputs (<code>htc:doc_*</code>)</strong> without altering the 4-tier material taxonomy. Select any industry pill below or search across all 18 industries.
     </div>
-    <div class="controls" id="ind-buttons">
-      <button onclick="selectIndustry('oe:ind_soap_manufacture')" id="indbtn-oe:ind_soap_manufacture" style="background:#1d4e6b;color:#fff">Soap Manufacture</button>
-      <button onclick="selectIndustry('oe:ind_calico_printing')" id="indbtn-oe:ind_calico_printing">Calico Cloth &amp; Calico Printing</button>
-      <button onclick="selectIndustry('oe:ind_chocolate_confectionery')" id="indbtn-oe:ind_chocolate_confectionery">Chocolate &amp; Confectionery</button>
+    <div class="controls" style="margin-bottom:10px">
+      <input type="text" id="ind-q" placeholder="Filter inputs or search across all 18 industries (e.g. 'palm oil', 'cochineal', 'shellac', 'quicksilver')..." oninput="renderIndustries()">
+      <button onclick="document.getElementById('ind-q').value='';renderIndustries()">Clear Search</button>
     </div>
+    <div class="controls" id="ind-buttons" style="gap:6px"></div>
     <div id="ind-content"></div>
   </div>
 
@@ -621,6 +625,7 @@ const META = {json.dumps(meta_payload, ensure_ascii=False)};
 const CONCEPTS = {json.dumps(compact, ensure_ascii=False)};
 const PLACES = {json.dumps(compact_places, ensure_ascii=False)};
 const END_USES = {json.dumps(end_use_links, ensure_ascii=False)};
+const IND_META = {json.dumps(ind_meta, ensure_ascii=False)};
 const END_USES_BY_CID = {{}};
 for (const eu of END_USES) {{ (END_USES_BY_CID[eu.commodity_id] = END_USES_BY_CID[eu.commodity_id] || []).push(eu); }}
 const BY_ID = Object.fromEntries(CONCEPTS.map(c => [c.id, c]));
@@ -1431,46 +1436,87 @@ function renderVTreeInspector(n) {{
   `;
 }}
 
-let activeIndId = 'oe:ind_soap_manufacture';
+let activeIndId = 'oe:ind_calico_printing';
 let indBuilt = false;
-const IND_META = {{
-  'oe:ind_soap_manufacture': {{
-    label: 'Soap Manufacture',
-    desc: 'Hard, soft, yellow, mottled, curd, Castile, and toilet soap manufacture — combining animal tallow and tropical/vegetable oils with caustic alkalis (barilla, kelp, soda ash, potash, lime), rosin, salt for salting out, and essential oils for scenting.'
-  }},
-  'oe:ind_calico_printing': {{
-    label: 'Calico Cloth & Calico Printing',
-    desc: 'Cotton weaving, bleaching, dyeing, and calico printing — combining raw cotton with bleaching powder and alkalis, natural and coal-tar dyestuffs (madder, indigo, logwood, alizarine, quercitron), metallic mordants (alum, copperas, tin/lead/copper salts), and thickeners (gum arabic, starch, albumen, tragacanth).'
-  }},
-  'oe:ind_chocolate_confectionery': {{
-    label: 'Chocolate & Confectionery',
-    desc: 'Chocolate bars, drinking chocolate, cocoa preparations, and sugar confectionery — combining roasted cacao beans and cocoa butter with cane sugar, aromatic spices (vanilla, cinnamon, cloves, cassia, musk, ambergris), farinaceous thickeners (flour, starch), gums, and milk.'
-  }},
-}};
 const ROLE_ORDER = [
   ['primary_feedstock', 'Primary Feedstock / Base Material', '#146c43'],
   ['alkali_or_reagent', 'Alkali, Acid & Chemical Reagent', '#1d4e6b'],
   ['dye_or_colorant', 'Dyestuff, Dyewood & Pigment', '#8c2d19'],
-  ['mordant_or_fixer', 'Mordant, Tannin & Colour Fixer', '#6f42c1'],
-  ['thickener_or_sizing', 'Thickener, Gum & Warp Sizing', '#7a4f01'],
-  ['bleaching_agent', 'Bleaching Agent', '#0d5c75'],
+  ['mordant_or_fixer', 'Mordant & Colour Fixer', '#6f42c1'],
+  ['tanning_or_curing', 'Tanning, Tawing & Currying Agent', '#8c4a27'],
+  ['thickener_or_sizing', 'Thickener, Gum, Resin & Sizing', '#7a4f01'],
+  ['bleaching_agent', 'Bleaching & Clarifying Agent', '#0d5c75'],
   ['flavouring_or_scent', 'Flavouring, Spice & Perfume', '#9c4221'],
-  ['filler_or_admixture', 'Binder, Dairy & Farinaceous Admixture', '#4a5568'],
+  ['solvent_or_fuel', 'Solvent, Flux, Fuel & Lubricant', '#495057'],
+  ['filler_or_admixture', 'Binder, Dairy, Fibre & Admixture', '#4a5568'],
 ];
+
+function buildIndustryButtons() {{
+  const box = document.getElementById('ind-buttons');
+  if (!box) return;
+  const counts = {{}};
+  for (const r of END_USES) counts[r.industry_id] = (counts[r.industry_id] || 0) + 1;
+  box.innerHTML = Object.entries(IND_META).map(([id, m]) => {{
+    const active = (id === activeIndId);
+    const st = active ? 'background:#1d4e6b;color:#fff;border-color:#1d4e6b' : '';
+    return `<button onclick="selectIndustry('${{id}}')" id="indbtn-${{id}}" style="${{st}}">${{esc(m.label)}} <span style="opacity:0.75">(${{counts[id]||0}})</span></button>`;
+  }}).join('');
+}}
 
 function selectIndustry(indId) {{
   activeIndId = indId;
-  Object.keys(IND_META).forEach(k => {{
-    const btn = document.getElementById('indbtn-' + k);
-    if (!btn) return;
-    if (k === indId) {{ btn.style.background = '#1d4e6b'; btn.style.color = '#fff'; }}
-    else {{ btn.style.background = '#f2efe7'; btn.style.color = '#1e242b'; }}
-  }});
+  const qEl = document.getElementById('ind-q');
+  if (qEl) qEl.value = '';
+  buildIndustryButtons();
   renderIndustries();
 }}
 
 function renderIndustries() {{
-  indBuilt = true;
+  if (!indBuilt) {{
+    indBuilt = true;
+    buildIndustryButtons();
+  }}
+  const q = ((document.getElementById('ind-q') || {{}}).value || '').trim().toLowerCase();
+
+  // If user typed a search query, search across ALL 18 industries!
+  if (q) {{
+    const hits = END_USES.filter(r =>
+      (r.commodity_label + ' ' + r.commodity_id + ' ' + r.industry_label + ' ' + r.production_role_label + ' ' +
+       (r.evidence_quotes || []).map(x => x.quote).join(' ')).toLowerCase().includes(q)
+    );
+    let html = `<div class="card" style="margin-bottom:14px;border-left:4px solid #b58d3d">
+      <h3 style="margin:0">Cross-Industry Search: “${{esc(q)}}” — ${{hits.length}} attested links across ${{new Set(hits.map(x=>x.industry_id)).size}} industries</h3>
+    </div>`;
+    if (!hits.length) {{
+      document.getElementById('ind-content').innerHTML = html + '<div class="card">No matching commodity-industry links found.</div>';
+      return;
+    }}
+    html += `<div class="card"><table><thead><tr>
+      <th style="width:210px">Industry</th>
+      <th style="width:210px">Commodity &amp; Role</th>
+      <th style="width:95px">Attestation</th>
+      <th>Primary-Source Quotes</th>
+    </tr></thead><tbody>`;
+    for (const r of hits) {{
+      const quotesHtml = (r.evidence_quotes || []).slice(0, 2).map(qt => `
+        <div class="def-quote" style="margin:0 0 5px 0;padding:5px 9px;font-size:0.8rem">
+          “${{esc(qt.quote)}}” <a target="_blank" href="${{esc(qt.uri)}}">[${{esc(qt.citation)}} ↗]</a>
+        </div>`).join('');
+      html += `<tr>
+        <td><a href="#" onclick="selectIndustry('${{r.industry_id}}');return false;" style="font-weight:700">${{esc(r.industry_label)}}</a></td>
+        <td>
+          <a href="#" onclick="jumpToConcept('${{r.commodity_id}}');return false;" style="font-weight:700">${{esc(r.commodity_label)}}</a>
+          <div style="margin-top:2px"><span class="badge b-tag">${{esc(r.production_role_label)}}</span></div>
+        </td>
+        <td><span class="badge b-exact">${{r.book_count}}b / ${{r.mention_count}}m</span></td>
+        <td>${{quotesHtml}}</td>
+      </tr>`;
+    }}
+    html += '</tbody></table></div>';
+    document.getElementById('ind-content').innerHTML = html;
+    return;
+  }}
+
   const rows = END_USES.filter(x => x.industry_id === activeIndId);
   const meta = IND_META[activeIndId] || {{ label: activeIndId, desc: '' }};
   const l1n = rows.filter(x => x.attestation_basis === 'customs_enumerated').length;
