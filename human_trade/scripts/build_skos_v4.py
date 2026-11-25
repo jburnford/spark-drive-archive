@@ -384,6 +384,32 @@ ALLIED_RELATED_PAIRS = [
     ("Bark For Tanners and Dyers Use", "Bark Extract of Hemlock"),
 ]
 
+# LINCS-aligned skos:scopeNote annotations: archival/colonial terminology context + historical boundary objects
+CURATED_SCOPE_NOTES = {
+    "htc:0627": "Verbatim 19th-century British customs appellation retained strictly for archival fidelity and source provenance; contains an archaic colonial racialized trade term ('Negrohead', denoting dark plug-pressed Cavendish tobacco). Analytically grouped under neutral Tobacco, Cigars & Snuff.",
+    "htc:0644": "Verbatim 19th-century Canadian customs appellation ('Indian Bark Work') denoting Indigenous birchbark craft and quillwork exports; retained for archival provenance rather than as a modern ethnonym.",
+    "htc:1009": "Verbatim 19th-century customs appellation retained for archival provenance; denotes colonial trade classification of birchbark/barkwood articles.",
+    "htc:0436": "Historical boundary object: in 1800–1852 British/Canadian customs ledgers (measured in lbs from Canada/Hudson's Bay), 'Castor' denotes beaver castoreum (Castor fiber), not castor oil.",
+    "htc:0127": "Historical North Atlantic fishery heading: pickled cod tongues from Canadian/Newfoundland fisheries, not beef tongue.",
+    "htc:0513": "Historical North Atlantic fishery heading: pickled cod tongues and swim bladders ('sounds'), not mammalian meat.",
+    "htc:0727": "Historical cooperage heading (Quebec/Maritime timber trade, measured in pieces): wooden barrel hoops, not iron hoops.",
+    "htc:1831": "Historical materia medica heading: sweet medicinal exudate from manna ash (Fraxinus ornus) imported from Italy and Spain.",
+    "htc:0395": "Historical Maritime/New England cooperage export: wooden box shooks shipped to Cuba and the West Indies for packing muscovado sugar, not sugar itself.",
+    "htc:1417": "Historical Maritime/New England cooperage export: knocked-down wooden shooks for West Indies sugar boxes, classified under Cooperage & Naval Timber.",
+    "htc:0047": "Historical British/Canadian customs term for maize (Zea mays); in 19th-century British trade statistics, bare 'Corn' denoted cereal grains generally.",
+    "htc:0015": "19th-century trade appellation for natural rubber latex (Hevea spp.); historically grouped with allied tropical latexes such as Gutta Percha.",
+    "htc:0696": "19th-century Southeast Asian non-elastic latex (Palaquium gutta / Isonandra gutta), critical to submarine telegraph cables and allied in trade classification with Caoutchouc.",
+    "htc:0030": "Merged 1871–1909 HCPP customs heading combining animal tallow (htc:0022) and rendered stearine (htc:0910); linked to its constituents via oe:combinesConcept.",
+    "htc:0275": "Historical South/Southeast Asian vegetable tanning and dyeing extract (Senegalia catechu); 19th-century customs clerks frequently conflated cutch and gambier under 'Terra Japonica'.",
+    "htc:0355": "Historical Southeast Asian vegetable tanning extract (Uncaria gambir); closely allied in 19th-century British trade ledgers with Cutch and Terra Japonica.",
+    "htc:0432": "Historical 19th-century trade term ('Terra Japonica') covering catechu/gambier vegetable tanning extracts imported from South and Southeast Asia.",
+    "htc:1019": "19th-century maritime trade heading: old tarred hemp rope and cordage cut up for oakum caulking and paper-making, not miscellaneous scrap.",
+    "htc:2002": "19th-century chemical and dyeing mordant: ferrous sulfate (green vitriol), not metallic copper.",
+    "htc:1760": "Historical textile heading: bobbin lace worked on bone bobbins, not an animal-bone product.",
+    "htc:0079": "North American forest-derived sweetener (Acer saccharum); assigned oe:landBasis 'terrestrial_forest' to distinguish sugarbush forest harvest from arable cane/beet cropland.",
+    "htc:1644": "North American forest-derived sweetener (Acer saccharum); assigned oe:landBasis 'terrestrial_forest' to distinguish sugarbush forest harvest from arable cane/beet cropland.",
+}
+
 # Curated modern common altLabels for archaic/19th-century customs terms
 ARCHAIC_ALT_LABELS = {
     "caoutchouc": ["rubber", "natural rubber", "gum-elastic"],
@@ -1471,10 +1497,11 @@ def main():
         c = {
             "concept_id": cid,
             "notation": cid.split(":")[1],
-            "rdf_type": "skos:Concept",
+            "rdf_type": ["skos:Concept", "crm:E55_Type"],
             "skos_prefLabel": comm,
             "skos_altLabels": [],
             "skos_definition": None,
+            "skos_scopeNote": CURATED_SCOPE_NOTES.get(cid),
             "dictionary_sources": [],
             "total_rows": st["rows"],
             "provenance": {
@@ -2003,36 +2030,42 @@ def main():
         for s in c["provenance"]["series"]:
             series_nodes[slugify(s)] = s
 
-    scheme_title = "Open Empire Layer-1 Human-Transcribed Trade Commodities Ontology (v4)"
+    scheme_title = "Open Empire Layer-1 Human-Transcribed Trade Commodities SKOS Vocabulary (LINCS / CIDOC CRM E55_Type Compatible)"
     scheme_desc = (
-        "Four-tier historical archival SKOS ontology (9 Macro-Sectors -> 43 Commodity Groups -> "
-        "Canonical Substance Groups -> 2,066 persistent verbatim British & Canadian customs headings) "
-        "enriched with definitions, synonyms, cross-references, and verified Linnaean source taxa mined "
-        "from six 19th-century commercial dictionaries (Simmonds 1892/1854, Mortimer 1823, McCulloch 1880, "
-        "Watt 1908, Ure) and linked via reversible multi-anchor SKOS mappings to Wikidata (2026-11-09), "
-        "FAO AGROVOC, ZBW STW Economics, Getty AAT, Catalogue of Life, SITC Rev. 4, and Theodoridis (2018)."
+        "Four-tier historical archival SKOS vocabulary and thesaurus (9 Macro-Sectors -> 44 Commodity Groups -> "
+        "Canonical Substance Groups -> 2,066 persistent verbatim British & Canadian customs headings, dual-typed as "
+        "skos:Concept and crm:E55_Type for LINCS/CIDOC CRM interoperability) enriched with definitions, scopeNotes, "
+        "synonyms, cross-stage material chains, and verified Linnaean source taxa mined from six 19th-century "
+        "commercial dictionaries (Simmonds 1892/1854, Mortimer 1823, McCulloch 1880, Watt 1908, Ure) and linked via "
+        "reversible multi-anchor SKOS mappings to Wikidata (2026-11-09), FAO AGROVOC, ZBW STW Economics, Getty AAT, "
+        "Catalogue of Life, SITC Rev. 4, and Theodoridis (2018)."
     )
 
-    # Ontology property definitions (emitted in BOTH TTL and JSON-LD — fixes Opus v3 P2!)
+    # OWL property definitions with domains, ranges, and owl:inverseOf pairs (emitted in BOTH TTL and JSON-LD!)
     OE_PROPS = [
-        ("oe:substanceHead", "owl:DatatypeProperty", "substance head", "skos:Concept", "xsd:string"),
-        ("oe:processingState", "owl:DatatypeProperty", "processing state facet", "skos:Concept", "xsd:string"),
-        ("oe:ghostAcresDomain", "owl:DatatypeProperty", "Ghost Acres analytical domain", "skos:Concept", "xsd:string"),
-        ("oe:landBasis", "owl:DatatypeProperty", "ecological land/marine/mineral basis", "skos:Concept", "xsd:string"),
-        ("oe:theodoridisBucket", "owl:DatatypeProperty", "Theodoridis (2018) 5-bucket rollup", "skos:Concept", "xsd:string"),
-        ("oe:sitcCode", "owl:DatatypeProperty", "SITC Rev. 4 division code", "skos:Concept", "xsd:string"),
-        ("oe:isAggregate", "owl:DatatypeProperty", "is printed total/aggregate heading", "skos:Concept", "xsd:boolean"),
-        ("oe:observationCount", "owl:DatatypeProperty", "Layer-1 human observation count", "skos:Concept", "xsd:integer"),
-        ("oe:firstAttested", "owl:DatatypeProperty", "first attested ledger year", "skos:Concept", "xsd:integer"),
-        ("oe:lastAttested", "owl:DatatypeProperty", "last attested ledger year", "skos:Concept", "xsd:integer"),
-        ("oe:groundingStatus", "owl:DatatypeProperty", "Layer-B grounding status", "skos:Concept", "xsd:string"),
-        ("oe:mappingAuthority", "owl:DatatypeProperty", "Layer-B mapping authority snapshot", "skos:Concept", "xsd:string"),
-        ("oe:dictionarySource", "owl:ObjectProperty", "19th-century commercial dictionary source page", "skos:Concept", None),
-        ("oe:combinesConcept", "owl:ObjectProperty", "merged customs line combining constituent archival concepts", "skos:Concept", "skos:Concept"),
-        ("oe:sourceTaxon", "owl:ObjectProperty", "biological source taxon (Wikidata/CoL)", "skos:Concept", None),
-        ("oe:madeOfMaterial", "owl:ObjectProperty", "base material of manufactured article or ore (Wikidata)", "skos:Concept", None),
-        ("oe:materialConcept", "owl:ObjectProperty", "canonical base-material archival concept in htc:scheme", "skos:Concept", "skos:Concept"),
-        ("oe:colId", "owl:DatatypeProperty", "Catalogue of Life taxon ID", None, "xsd:string"),
+        ("oe:substanceHead", "owl:DatatypeProperty", "substance head", "skos:Concept", "xsd:string", None),
+        ("oe:processingState", "owl:DatatypeProperty", "processing state facet", "skos:Concept", "xsd:string", None),
+        ("oe:ghostAcresDomain", "owl:DatatypeProperty", "Ghost Acres analytical domain", "skos:Concept", "xsd:string", None),
+        ("oe:landBasis", "owl:DatatypeProperty", "ecological land/marine/mineral basis", "skos:Concept", "xsd:string", None),
+        ("oe:theodoridisBucket", "owl:DatatypeProperty", "Theodoridis (2018) 5-bucket rollup", "skos:Concept", "xsd:string", None),
+        ("oe:sitcCode", "owl:DatatypeProperty", "SITC Rev. 4 division code", "skos:Concept", "xsd:string", None),
+        ("oe:isAggregate", "owl:DatatypeProperty", "is printed total/aggregate heading", "skos:Concept", "xsd:boolean", None),
+        ("oe:observationCount", "owl:DatatypeProperty", "Layer-1 human observation count", "skos:Concept", "xsd:integer", None),
+        ("oe:firstAttested", "owl:DatatypeProperty", "first attested ledger year", "skos:Concept", "xsd:integer", None),
+        ("oe:lastAttested", "owl:DatatypeProperty", "last attested ledger year", "skos:Concept", "xsd:integer", None),
+        ("oe:groundingStatus", "owl:DatatypeProperty", "Layer-B grounding status", "skos:Concept", "xsd:string", None),
+        ("oe:mappingAuthority", "owl:DatatypeProperty", "Layer-B mapping authority snapshot", "skos:Concept", "xsd:string", None),
+        ("oe:dictionarySource", "owl:ObjectProperty", "19th-century commercial dictionary source page", "skos:Concept", None, "oe:definesConcept"),
+        ("oe:definesConcept", "owl:ObjectProperty", "archival concept defined by this dictionary source page", None, "skos:Concept", "oe:dictionarySource"),
+        ("oe:combinesConcept", "owl:ObjectProperty", "merged customs line combining constituent archival concepts", "skos:Concept", "skos:Concept", "oe:isCombinedInConcept"),
+        ("oe:isCombinedInConcept", "owl:ObjectProperty", "merged customs heading combining this archival concept", "skos:Concept", "skos:Concept", "oe:combinesConcept"),
+        ("oe:sourceTaxon", "owl:ObjectProperty", "biological source taxon (Wikidata/CoL)", "skos:Concept", None, "oe:isSourceTaxonOf"),
+        ("oe:isSourceTaxonOf", "owl:ObjectProperty", "archival commodity concept derived from this biological taxon", None, "skos:Concept", "oe:sourceTaxon"),
+        ("oe:madeOfMaterial", "owl:ObjectProperty", "base material of manufactured article or ore (Wikidata)", "skos:Concept", None, "oe:isMaterialOf"),
+        ("oe:isMaterialOf", "owl:ObjectProperty", "archival commodity concept made from this base material", None, "skos:Concept", "oe:madeOfMaterial"),
+        ("oe:materialConcept", "owl:ObjectProperty", "canonical base-material archival concept in htc:scheme", "skos:Concept", "skos:Concept", "oe:isMaterialConceptOf"),
+        ("oe:isMaterialConceptOf", "owl:ObjectProperty", "derived ore/semi-finished/manufactured concept using this base material", "skos:Concept", "skos:Concept", "oe:materialConcept"),
+        ("oe:colId", "owl:DatatypeProperty", "Catalogue of Life taxon ID", None, "xsd:string", None),
     ]
 
     ttl_lines = [
@@ -2040,6 +2073,7 @@ def main():
         f"@prefix htc1866: <{HTC1866_URI}> .",
         f"@prefix oe: <{OE_NS}> .",
         "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
+        "@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .",
         "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .",
         "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .",
         "@prefix owl: <http://www.w3.org/2002/07/owl#> .",
@@ -2054,7 +2088,7 @@ def main():
     ]
     jsonld_graph = []
 
-    for pid, ptype, plbl, pdom, prng in OE_PROPS:
+    for pid, ptype, plbl, pdom, prng, pinv in OE_PROPS:
         parts = [f"a {ptype}", f"rdfs:label {ttl_str(plbl)}@en"]
         jnode = {"@id": pid, "@type": ptype, "rdfs:label": {"@value": plbl, "@language": "en"}}
         if pdom:
@@ -2063,6 +2097,9 @@ def main():
         if prng:
             parts.append(f"rdfs:range {prng}")
             jnode["rdfs:range"] = {"@id": prng}
+        if pinv:
+            parts.append(f"owl:inverseOf {pinv}")
+            jnode["owl:inverseOf"] = {"@id": pinv}
         ttl_lines.append(f"{pid} " + " ; ".join(parts) + " .")
         jsonld_graph.append(jnode)
     ttl_lines.append("")
@@ -2105,28 +2142,28 @@ def main():
         ttl_lines.append(f"{sid} a prov:Entity ;\n    rdfs:label {ttl_str(slbl)}@en .\n")
         jsonld_graph.append({"@id": sid, "@type": "prov:Entity", "rdfs:label": {"@value": slbl, "@language": "en"}})
 
-    # Tier 1: Macro-Sectors
+    # Tier 1: Macro-Sectors (dual-typed skos:Concept + crm:E55_Type for LINCS compatibility)
     for sec, slbl in sorted(SECTORS.items()):
         sid = f"htc:{sec}"
-        ttl_lines.append(f"{sid} a skos:Concept ;\n    skos:inScheme htc:scheme ;\n    skos:topConceptOf htc:scheme ;\n    skos:prefLabel {ttl_str(slbl)}@en .\n")
-        jsonld_graph.append({"@id": sid, "@type": "skos:Concept", "skos:inScheme": {"@id": "htc:scheme"}, "skos:topConceptOf": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": slbl, "@language": "en"}})
+        ttl_lines.append(f"{sid} a skos:Concept, crm:E55_Type ;\n    skos:inScheme htc:scheme ;\n    skos:topConceptOf htc:scheme ;\n    skos:prefLabel {ttl_str(slbl)}@en .\n")
+        jsonld_graph.append({"@id": sid, "@type": ["skos:Concept", "crm:E55_Type"], "skos:inScheme": {"@id": "htc:scheme"}, "skos:topConceptOf": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": slbl, "@language": "en"}})
 
     # Tier 2: Mid-Level Commodity Groups
     for grp, (glbl, psec, _) in sorted(GROUPS.items()):
         gid = f"htc:{grp}"
-        ttl_lines.append(f"{gid} a skos:Concept ;\n    skos:inScheme htc:scheme ;\n    skos:prefLabel {ttl_str(glbl)}@en ;\n    skos:broader htc:{psec} .\n")
-        jsonld_graph.append({"@id": gid, "@type": "skos:Concept", "skos:inScheme": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": glbl, "@language": "en"}, "skos:broader": {"@id": f"htc:{psec}"}})
+        ttl_lines.append(f"{gid} a skos:Concept, crm:E55_Type ;\n    skos:inScheme htc:scheme ;\n    skos:prefLabel {ttl_str(glbl)}@en ;\n    skos:broader htc:{psec} .\n")
+        jsonld_graph.append({"@id": gid, "@type": ["skos:Concept", "crm:E55_Type"], "skos:inScheme": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": glbl, "@language": "en"}, "skos:broader": {"@id": f"htc:{psec}"}})
 
     # Tier 3: Layer-A' Substance Groups
     for sid, sc in sorted(sub_concepts.items()):
-        ttl_lines.append(f"{sid} a skos:Concept ;\n    skos:inScheme htc:scheme ;\n    skos:prefLabel {ttl_str(sc['label'])}@en ;\n    skos:broader {sc['parent']} .\n")
-        jsonld_graph.append({"@id": sid, "@type": "skos:Concept", "skos:inScheme": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": sc["label"], "@language": "en"}, "skos:broader": {"@id": sc["parent"]}})
+        ttl_lines.append(f"{sid} a skos:Concept, crm:E55_Type ;\n    skos:inScheme htc:scheme ;\n    skos:prefLabel {ttl_str(sc['label'])}@en ;\n    skos:broader {sc['parent']} .\n")
+        jsonld_graph.append({"@id": sid, "@type": ["skos:Concept", "crm:E55_Type"], "skos:inScheme": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": sc["label"], "@language": "en"}, "skos:broader": {"@id": sc["parent"]}})
 
     # 1866 broader concepts
     for bslug, blbl in sorted(broader_1866.items()):
         bid = f"htc1866:{bslug}"
-        ttl_lines.append(f"{bid} a skos:Concept ;\n    skos:inScheme htc1866:scheme ;\n    skos:topConceptOf htc1866:scheme ;\n    skos:prefLabel {ttl_str(blbl)}@en .\n")
-        jsonld_graph.append({"@id": bid, "@type": "skos:Concept", "skos:inScheme": {"@id": "htc1866:scheme"}, "skos:topConceptOf": {"@id": "htc1866:scheme"}, "skos:prefLabel": {"@value": blbl, "@language": "en"}})
+        ttl_lines.append(f"{bid} a skos:Concept, crm:E55_Type ;\n    skos:inScheme htc1866:scheme ;\n    skos:topConceptOf htc1866:scheme ;\n    skos:prefLabel {ttl_str(blbl)}@en .\n")
+        jsonld_graph.append({"@id": bid, "@type": ["skos:Concept", "crm:E55_Type"], "skos:inScheme": {"@id": "htc1866:scheme"}, "skos:topConceptOf": {"@id": "htc1866:scheme"}, "skos:prefLabel": {"@value": blbl, "@language": "en"}})
 
     taxon_nodes = {}
     sssom_rows = []
@@ -2142,7 +2179,7 @@ def main():
         br = c.get("skos_1866_bridge") or {}
 
         triples = [
-            "a skos:Concept",
+            "a skos:Concept, crm:E55_Type",
             "skos:inScheme htc:scheme",
             f"skos:notation {ttl_str(c['notation'])}",
             f"skos:prefLabel {ttl_str(pref)}@en",
@@ -2158,7 +2195,7 @@ def main():
             f'oe:isAggregate "{"true" if f["is_aggregate"] else "false"}"^^xsd:boolean',
         ]
         node = {
-            "@id": cid, "@type": "skos:Concept",
+            "@id": cid, "@type": ["skos:Concept", "crm:E55_Type"],
             "skos:inScheme": {"@id": "htc:scheme"},
             "skos:notation": c["notation"],
             "skos:prefLabel": {"@value": pref, "@language": "en"},
@@ -2181,6 +2218,10 @@ def main():
         if c["skos_definition"]:
             triples.append(f"skos:definition {ttl_str(c['skos_definition'])}@en")
             node["skos:definition"] = {"@value": c["skos_definition"], "@language": "en"}
+
+        if c.get("skos_scopeNote"):
+            triples.append(f"skos:scopeNote {ttl_str(c['skos_scopeNote'])}@en")
+            node["skos:scopeNote"] = {"@value": c["skos_scopeNote"], "@language": "en"}
 
         if c["dictionary_sources"]:
             drefs = [f"<{d['uri']}>" for d in c["dictionary_sources"]]
@@ -2285,6 +2326,7 @@ def main():
         "@context": {
             "htc": BASE_URI, "htc1866": HTC1866_URI, "oe": OE_NS,
             "skos": "http://www.w3.org/2004/02/skos/core#",
+            "crm": "http://www.cidoc-crm.org/cidoc-crm/",
             "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
             "owl": "http://www.w3.org/2002/07/owl#",
             "dcterms": "http://purl.org/dc/terms/",

@@ -87,6 +87,7 @@ def main():
             "l": c["skos_prefLabel"],
             "alts": c.get("skos_altLabels") or [],
             "def": c.get("skos_definition") or "",
+            "sn": c.get("skos_scopeNote") or "",
             "dsrc": [[d["citation"], d["uri"]] for d in (c.get("dictionary_sources") or [])],
             "r": rows,
             "sec": sec_id,
@@ -195,7 +196,7 @@ def main():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Open Empire — Layer-1 Archival Commodity SKOS Inspector (v4)</title>
+<title>Open Empire — Layer-1 Archival Commodity SKOS Vocabulary Inspector</title>
 <style>
 :root {{
   --bg: #f8f6f1;
@@ -364,8 +365,8 @@ details.tree-sub > summary {{ cursor: pointer; font-weight: 600; font-size: 0.83
 </head>
 <body>
 <header>
-  <h1>Open Empire — Layer-1 Archival Trade SKOS Inspector (v4)</h1>
-  <p>4-tier historical commodity ontology (9 Macro-Sectors → 44 Commodity Groups → {len(sub_ids)} S14-safe Substance Groups → 2,066 persistent <code>htc:</code> concepts across 152,625 human-transcribed customs rows), enriched from 6 19th-century commercial dictionaries (Simmonds 1892 &amp; 1854, Mortimer 1823, Ure 1853, McCulloch 1880, Watt 1908) + Wikidata/AGROVOC/STW/Getty AAT/Catalogue of Life. Generated {date.today().isoformat()}.</p>
+  <h1>Open Empire — Layer-1 Archival Trade SKOS Vocabulary &amp; Thesaurus</h1>
+  <p>4-tier historical commodity SKOS vocabulary (9 Macro-Sectors → 44 Commodity Groups → {len(sub_ids)} S14-safe Substance Groups → 2,066 persistent <code>htc:</code> concepts across 152,625 human-transcribed customs rows; dual-typed as <code>skos:Concept</code> &amp; <code>crm:E55_Type</code> for LINCS / CIDOC CRM compatibility), enriched from 6 19th-century commercial dictionaries + Wikidata/AGROVOC/STW/Getty AAT/Catalogue of Life. Generated {date.today().isoformat()}.</p>
 </header>
 
 <div class="container">
@@ -665,7 +666,7 @@ function resetAndRender() {{
 
 function buildTtlSnippet(c) {{
   let lines = [
-    `${{c.id}} a skos:Concept ;`,
+    `${{c.id}} a skos:Concept, crm:E55_Type ;`,
     `    skos:inScheme htc:scheme ;`,
     `    skos:prefLabel "${{c.l.replace(/"/g, '\\"')}}"@en ;`,
   ];
@@ -675,6 +676,7 @@ function buildTtlSnippet(c) {{
   if (c.comb.length) lines.push(`    oe:combinesConcept ${{c.comb.join(', ')}} ;`);
   if (c.matc.length) lines.push(`    oe:materialConcept ${{c.matc.join(', ')}} ;`);
   if (c.def) lines.push(`    skos:definition "${{c.def.slice(0, 220).replace(/"/g, '\\"')}}${{c.def.length > 220 ? '...' : ''}}"@en ;`);
+  if (c.sn) lines.push(`    skos:scopeNote "${{c.sn.replace(/"/g, '\\"')}}"@en ;`);
   if (c.dsrc.length) lines.push(`    oe:dictionarySource ${{c.dsrc.map(x => '<' + x[1] + '>').join(', ')}} ;`);
   lines.push(`    oe:macroSector ${{c.sec}} ;`);
   lines.push(`    oe:commodityGroup ${{c.grp}} ;`);
@@ -746,6 +748,9 @@ function renderTable() {{
       const defBlock = c.def
         ? `<div class="def-quote"><strong>19th-Century Commercial Definition:</strong> ${{esc(c.def)}}</div>`
         : '';
+      const snBlock = c.sn
+        ? `<div class="def-quote" style="border-left-color:#1d4e6b;background:#eef5f9"><strong>Historical Scope Note (<code>skos:scopeNote</code>):</strong> ${{esc(c.sn)}}</div>`
+        : '';
       const dsrcHtml = c.dsrc.length
         ? c.dsrc.map(([cit, uri]) => `<div><a target="_blank" href="${{esc(uri)}}">${{esc(cit)}} ↗</a></div>`).join('')
         : 'none matched';
@@ -761,6 +766,7 @@ function renderTable() {{
 
       htmlRows.push(`
         <tr class="detail-row"><td colspan="7">
+          ${{snBlock}}
           ${{defBlock}}
           <div class="detail-grid">
             <div class="detail-box">
@@ -1263,6 +1269,7 @@ function renderVTreeInspector(n) {{
   const c = n.concept;
   const alts = c.alts.length ? '<div style="margin:6px 0">' + c.alts.map(a => `<span class="badge b-alt">${{esc(a)}}</span>`).join('') + '</div>' : '';
   const def = c.def ? `<div class="def-quote" style="margin:8px 0">${{esc(c.def)}}</div>` : '';
+  const sn = c.sn ? `<div class="def-quote" style="margin:8px 0;border-left-color:#1d4e6b;background:#eef5f9"><strong>Scope Note:</strong> ${{esc(c.sn)}}</div>` : '';
   const dsrc = c.dsrc.length ? '<div style="margin:4px 0"><strong>Sources:</strong> ' + c.dsrc.map(([cit,u]) => `<a target="_blank" href="${{esc(u)}}">${{esc(cit)}} ↗</a>`).join(' · ') + '</div>' : '';
   const wd = c.wd.length ? `${{relBadge(c.rel)}} ` + c.wd.map(([q,l]) => `<a class="mono" target="_blank" href="https://www.wikidata.org/wiki/${{q}}">${{q}}</a> ${{esc(l)}}`).join(' + ') : relBadge(c.rel);
   const taxa = c.tx.length ? '<div style="margin:5px 0"><strong>Taxa:</strong> ' + c.tx.map(([q,nm]) => `<a target="_blank" href="https://www.wikidata.org/wiki/${{q}}"><em>${{esc(nm||q)}}</em></a>`).join(', ') + '</div>' : '';
@@ -1277,6 +1284,7 @@ function renderVTreeInspector(n) {{
     <div style="margin:5px 0;font-size:0.79rem;color:var(--muted)">${{esc(c.secl)}} → <strong>${{esc(c.grpl)}}</strong></div>
     <div style="margin:6px 0">${{wd}}</div>
     <div style="margin:5px 0"><span class="badge b-tag">${{c.s}}</span> <span class="badge b-tag">${{c.lb}}</span> <span class="badge b-tag">${{c.si.replace('SITC4_','SITC ')}}</span></div>
+    ${{sn}}
     ${{def}}
     ${{dsrc}}
     ${{taxa}}

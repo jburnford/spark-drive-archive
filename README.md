@@ -1,8 +1,8 @@
-# Open Empire (`spark-drive-archive`): Historical Trade Ontology, Open Corpora & Entity Spine
+# Open Empire (`spark-drive-archive`): Historical Trade SKOS Vocabulary, Open Corpora & Entity Spine
 
-**Live Interactive Ontology & Visual Tree:** https://jimclifford.ca/spark-drive-archive/
+**Live Interactive SKOS Vocabulary & Visual Tree:** https://jimclifford.ca/spark-drive-archive/
 
-Reproducible code, open public-domain commercial dictionary lexicons, and extracted Layer-1 historical trade data & ontologies for *London's Ghost Acres* and comparative British World environmental history (University of Saskatchewan HGIS Lab).
+Reproducible code, open public-domain commercial dictionary lexicons, and extracted Layer-1 historical trade data & LINCS-compatible SKOS vocabularies (`skos:Concept` + `crm:E55_Type`) for *London's Ghost Acres* and comparative British World environmental history (University of Saskatchewan HGIS Lab).
 
 ## Rights & Sharing Policy (Strict 3-Tier Boundary)
 1. **Included in this repository (Open Code, Open Documents, & Extracted Data):**
