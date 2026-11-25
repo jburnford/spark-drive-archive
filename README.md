@@ -1,5 +1,7 @@
 # Open Empire (`spark-drive-archive`): Historical Trade Ontology, Open Corpora & Entity Spine
 
+**Live Interactive Ontology & Visual Tree:** https://jimclifford.ca/spark-drive-archive/
+
 Reproducible code, open public-domain commercial dictionary lexicons, and extracted Layer-1 historical trade data & ontologies for *London's Ghost Acres* and comparative British World environmental history (University of Saskatchewan HGIS Lab).
 
 ## Rights & Sharing Policy (Strict 3-Tier Boundary)
