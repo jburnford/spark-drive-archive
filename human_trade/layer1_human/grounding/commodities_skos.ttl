@@ -1014,11 +1014,6 @@ htc:sub_stimulant__wd_q8486 a skos:Concept ;
     skos:prefLabel "Coffee (substance group)"@en ;
     skos:broader htc:grp_stimulant_beverages .
 
-htc:sub_sugars_swe_hd_fruit_preserved_without_sugar_canned_or_bottled a skos:Concept ;
-    skos:inScheme htc:scheme ;
-    skos:prefLabel "Fruit Preserved Without Sugar Canned Or Bottled (substance group)"@en ;
-    skos:broader htc:grp_sugars_sweeteners .
-
 htc:sub_sugars_swe_wd_q11002 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:prefLabel "Sugar (substance group)"@en ;
@@ -3093,7 +3088,7 @@ htc:0079 a skos:Concept ;
     oe:substanceHead "Maple Sugar" ;
     oe:processingState "unspecified" ;
     oe:ghostAcresDomain "food_colonial_grocery" ;
-    oe:landBasis "terrestrial_crop" ;
+    oe:landBasis "terrestrial_forest" ;
     oe:theodoridisBucket "other_food_drink_spices" ;
     oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
     oe:isAggregate "false"^^xsd:boolean ;
@@ -3102,6 +3097,7 @@ htc:0079 a skos:Concept ;
     oe:firstAttested "1821"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
+    skos:related htc:1644, htc:0360 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:exactMatch wd:Q402587 ;
     oe:sourceTaxon wd:Q158301, wd:Q214733 .
@@ -4323,8 +4319,10 @@ htc:0135 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_hcpp_annual_statement_of_trade, oe:series_hcpp_other, oe:series_csp_canadian_trade_and_navigation, oe:series_kew_cust_4, oe:series_kew_cust_5 ;
+    skos:related htc:0360 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q154389, aat:300266452 .
+    skos:closeMatch aat:300266452 ;
+    skos:exactMatch wd:Q154389 .
 
 htc:0136 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -4661,19 +4659,21 @@ htc:0151 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0151" ;
     skos:prefLabel "Fruit Preserved without Sugar Canned or Bottled"@en ;
-    skos:broader htc:sub_sugars_swe_hd_fruit_preserved_without_sugar_canned_or_bottled ;
+    skos:broader htc:sub_fruits_nut_wd_q1364 ;
     oe:observationCount "225"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Fruit Preserved without Sugar Canned or Bottled" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "food_colonial_grocery" ;
     oe:landBasis "terrestrial_crop" ;
     oe:theodoridisBucket "manufactured_articles" ;
-    oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
+    oe:sitcCode "SITC4_05_Vegetables_and_Fruit" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1910"^^xsd:integer ;
     oe:lastAttested "1929"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade_1910_1940_ext .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade_1910_1940_ext ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1364, aat:300011868 .
 
 htc:0152 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -7464,7 +7464,8 @@ htc:0284 a skos:Concept ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11002, aat:300183931 .
+    skos:broadMatch wd:Q11002, aat:300183931 ;
+    oe:sourceTaxon wd:Q3391243 .
 
 htc:0285 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -7514,7 +7515,7 @@ htc:0287 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0287" ;
     skos:prefLabel "Skins Furs Pelts Sheep Tanned Tawed or Dressed"@en ;
-    skos:broader htc:sub_tanned_lea_wd_q197204 ;
+    skos:broader htc:grp_tanned_leather ;
     oe:observationCount "131"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Skins Furs Pelts Sheep Tanned Tawed or Dressed" ;
@@ -7528,7 +7529,7 @@ htc:0287 a skos:Concept ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_kew_cust_4 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q197204, stw:14916-0, aat:300011811 .
+    skos:broadMatch wd:Q1083901, aat:300193374 .
 
 htc:0288 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -8727,7 +8728,7 @@ htc:0346 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0346" ;
     skos:prefLabel "Skins Furs Pelts Goat Tanned Tawed or Dressed"@en ;
-    skos:broader htc:sub_tanned_lea_wd_q197204 ;
+    skos:broader htc:grp_tanned_leather ;
     oe:observationCount "111"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Skins Furs Pelts Goat Tanned Tawed or Dressed" ;
@@ -8741,7 +8742,7 @@ htc:0346 a skos:Concept ;
     oe:lastAttested "1881"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q197204, stw:14916-0, aat:300011811 .
+    skos:broadMatch wd:Q198779, aat:300255984 .
 
 htc:0347 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -9025,6 +9026,7 @@ htc:0360 a skos:Concept ;
     oe:firstAttested "1800"^^xsd:integer ;
     oe:lastAttested "1895"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_kew_cust_4, oe:series_csp_canadian_trade_and_navigation, oe:series_kew_cust_5 ;
+    skos:related htc:0496, htc:0135, htc:0732, htc:0079, htc:0483 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:closeMatch aat:300183931 ;
     skos:exactMatch wd:Q11002 .
@@ -9742,21 +9744,21 @@ htc:0395 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0395" ;
     skos:prefLabel "Sugar Boxes"@en ;
-    skos:broader htc:sub_sugars_swe_wd_q11002 ;
+    skos:broader htc:grp_cooperage_ship_timber ;
     oe:observationCount "93"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Sugar Boxes" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "food_colonial_grocery" ;
-    oe:landBasis "terrestrial_crop" ;
-    oe:theodoridisBucket "other_food_drink_spices" ;
-    oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
+    oe:processingState "sawn_hewn" ;
+    oe:ghostAcresDomain "timber_forestry" ;
+    oe:landBasis "terrestrial_forest" ;
+    oe:theodoridisBucket "raw_materials" ;
+    oe:sitcCode "SITC4_63_Cork_and_Wood_Manufactures" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1855"^^xsd:integer ;
     oe:lastAttested "1875"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries, oe:series_csp_canadian_trade_and_navigation ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11002, aat:300183931 .
+    skos:relatedMatch wd:Q287, agrovoc:c_8421, stw:14150-4, aat:300011914 .
 
 htc:0396 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -11154,15 +11156,15 @@ htc:0464 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0464" ;
     skos:prefLabel "Succades"@en ;
-    skos:broader htc:grp_customs_residuals ;
+    skos:broader htc:grp_sugars_sweeteners ;
     oe:observationCount "79"^^xsd:integer ;
     oe:groundingStatus "local_concept_only" ;
     oe:substanceHead "Succades" ;
     oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "other" ;
-    oe:landBasis "unclassified" ;
-    oe:theodoridisBucket "unclassified" ;
-    oe:sitcCode "oe:sitcUnassigned" ;
+    oe:ghostAcresDomain "food_colonial_grocery" ;
+    oe:landBasis "terrestrial_crop" ;
+    oe:theodoridisBucket "other_food_drink_spices" ;
+    oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
     oe:isAggregate "false"^^xsd:boolean ;
     skos:definition "the sweet constituent of certain vegetable products, imported, preserved with sugar, from the East and West Indies, and the Levant, for confectionery. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 377]"@en ;
     oe:dictionarySource <https://archive.org/details/b21780535/page/n377>, <https://archive.org/details/dictionaryprac00mccu/page/n1766> ;
@@ -11555,6 +11557,7 @@ htc:0483 a skos:Concept ;
     oe:firstAttested "1833"^^xsd:integer ;
     oe:lastAttested "1896"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_exports_blankseries, oe:series_kew_cust_4, oe:series_csp_canadian_trade_and_navigation ;
+    skos:related htc:0360 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:closeMatch aat:300389830 ;
     skos:exactMatch wd:Q5159627 .
@@ -11808,7 +11811,7 @@ htc:0496 a skos:Concept ;
     skos:prefLabel "Raw Sugar"@en ;
     skos:broader htc:grp_sugars_sweeteners ;
     oe:observationCount "72"^^xsd:integer ;
-    oe:groundingStatus "grounded_wikidata_lexical" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Raw Sugar" ;
     oe:processingState "raw_unprocessed" ;
     oe:ghostAcresDomain "food_colonial_grocery" ;
@@ -11819,10 +11822,11 @@ htc:0496 a skos:Concept ;
     oe:firstAttested "1831"^^xsd:integer ;
     oe:lastAttested "1842"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_other, oe:series_csp_canadian_exports_blankseries ;
+    skos:related htc:0360 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:closeMatch agrovoc:c_36409 ;
     skos:exactMatch wd:Q104822314 ;
-    oe:sourceTaxon wd:Q151964 .
+    oe:sourceTaxon wd:Q3391243, wd:Q151964 .
 
 htc:0497 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -12652,19 +12656,21 @@ htc:0538 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0538" ;
     skos:prefLabel "Fruit Preserved without Sugar Unenumerated"@en ;
-    skos:broader htc:grp_sugars_sweeteners ;
+    skos:broader htc:sub_fruits_nut_wd_q1364 ;
     oe:observationCount "67"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Fruit Preserved without Sugar" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "food_colonial_grocery" ;
     oe:landBasis "terrestrial_crop" ;
     oe:theodoridisBucket "manufactured_articles" ;
-    oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
+    oe:sitcCode "SITC4_05_Vegetables_and_Fruit" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1871"^^xsd:integer ;
     oe:lastAttested "1891"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1364, aat:300011868 .
 
 htc:0539 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -16323,19 +16329,21 @@ htc:0718 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0718" ;
     skos:prefLabel "Fruit Preserved without Sugar Canned or Bottled Other Sorts"@en ;
-    skos:broader htc:sub_sugars_swe_hd_fruit_preserved_without_sugar_canned_or_bottled ;
+    skos:broader htc:sub_fruits_nut_wd_q1364 ;
     oe:observationCount "46"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Fruit Preserved without Sugar Canned or Bottled" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "food_colonial_grocery" ;
     oe:landBasis "terrestrial_crop" ;
     oe:theodoridisBucket "manufactured_articles" ;
-    oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
+    oe:sitcCode "SITC4_05_Vegetables_and_Fruit" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1930"^^xsd:integer ;
     oe:lastAttested "1933"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade_1910_1940_ext .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade_1910_1940_ext ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1364, aat:300011868 .
 
 htc:0719 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -16604,21 +16612,22 @@ htc:0732 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0732" ;
     skos:prefLabel "Glucose"@en ;
-    skos:broader htc:grp_customs_residuals ;
+    skos:broader htc:grp_sugars_sweeteners ;
     oe:observationCount "44"^^xsd:integer ;
-    oe:groundingStatus "grounded_wikidata_lexical" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Glucose" ;
     oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "other" ;
-    oe:landBasis "unclassified" ;
-    oe:theodoridisBucket "unclassified" ;
-    oe:sitcCode "oe:sitcUnassigned" ;
+    oe:ghostAcresDomain "food_colonial_grocery" ;
+    oe:landBasis "terrestrial_crop" ;
+    oe:theodoridisBucket "other_food_drink_spices" ;
+    oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
     oe:isAggregate "false"^^xsd:boolean ;
     skos:definition "a potato starch used instead of gum arabic for dressing, in weaving and printing woollens, cottons, or silks. It is also advantageously employed by paper-stainers, and for stiffening gauzes, glazing of paper, &c. *See DEXTRINE.* \\* [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 186]"@en ;
     oe:dictionarySource <https://archive.org/details/b21780535/page/n186> ;
     oe:firstAttested "1876"^^xsd:integer ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade, oe:series_csp_canadian_trade_and_navigation ;
+    skos:related htc:0360 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
     skos:exactMatch wd:Q37525 .
 
@@ -17507,7 +17516,8 @@ htc:0776 a skos:Concept ;
     oe:lastAttested "1906"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11002, aat:300183931 .
+    skos:broadMatch wd:Q11002, aat:300183931 ;
+    oe:sourceTaxon wd:Q165191 .
 
 htc:0777 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -19363,19 +19373,21 @@ htc:0870 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "0870" ;
     skos:prefLabel "Fruit Preserved without sugar by Chemicals or Artificial Heat or Artificial Cold Other Sorts"@en ;
-    skos:broader htc:grp_sugars_sweeteners ;
+    skos:broader htc:sub_fruits_nut_wd_q1364 ;
     oe:observationCount "33"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Fruit Preserved without sugar by Chemicals or Artificial Heat or Artificial Cold" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "food_colonial_grocery" ;
     oe:landBasis "terrestrial_crop" ;
     oe:theodoridisBucket "manufactured_articles" ;
-    oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
+    oe:sitcCode "SITC4_05_Vegetables_and_Fruit" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1934"^^xsd:integer ;
     oe:lastAttested "1936"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade_1910_1940_ext .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade_1910_1940_ext ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1364, aat:300011868 .
 
 htc:0871 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -25910,21 +25922,19 @@ htc:1198 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1198" ;
     skos:prefLabel "Cattle and other Animal Foods Containing Molasses"@en ;
-    skos:broader htc:grp_sugars_sweeteners ;
+    skos:broader htc:grp_fodder_oilcakes ;
     oe:observationCount "18"^^xsd:integer ;
-    oe:groundingStatus "grounded_wikidata_v4" ;
+    oe:groundingStatus "local_concept_only" ;
     oe:substanceHead "Cattle and other Animal Foods Containing Molasses" ;
     oe:processingState "refined_extract" ;
-    oe:ghostAcresDomain "food_colonial_grocery" ;
+    oe:ghostAcresDomain "fodder_feed" ;
     oe:landBasis "terrestrial_crop" ;
-    oe:theodoridisBucket "other_food_drink_spices" ;
-    oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
+    oe:theodoridisBucket "raw_materials" ;
+    oe:sitcCode "SITC4_08_Animal_Feeding_Stuff" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1906"^^xsd:integer ;
     oe:lastAttested "1911"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
-    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q830, agrovoc:c_1391, stw:14142-3 .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
 
 htc:1199 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -25948,19 +25958,21 @@ htc:1200 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1200" ;
     skos:prefLabel "Fruit Preserved without sugar by chemicals or artificial heat or artificial cold Tinned or bottled Apples including gallon apples"@en ;
-    skos:broader htc:grp_sugars_sweeteners ;
+    skos:broader htc:sub_fruits_nut_wd_q1364 ;
     oe:observationCount "18"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Fruit Preserved without sugar by chemicals or artificial heat or artificial cold Tinned or bottled Apples including gallon apples" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "food_colonial_grocery" ;
     oe:landBasis "terrestrial_crop" ;
     oe:theodoridisBucket "manufactured_articles" ;
-    oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
+    oe:sitcCode "SITC4_05_Vegetables_and_Fruit" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1937"^^xsd:integer ;
     oe:lastAttested "1940"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade_1910_1940_ext .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade_1910_1940_ext ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1364, aat:300011868 .
 
 htc:1201 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -26947,19 +26959,21 @@ htc:1251 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1251" ;
     skos:prefLabel "Fruit Preserved without sugar not dried"@en ;
-    skos:broader htc:grp_sugars_sweeteners ;
+    skos:broader htc:sub_fruits_nut_wd_q1364 ;
     oe:observationCount "16"^^xsd:integer ;
-    oe:groundingStatus "local_concept_only" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Fruit Preserved without sugar not dried" ;
     oe:processingState "manufactured" ;
     oe:ghostAcresDomain "food_colonial_grocery" ;
     oe:landBasis "terrestrial_crop" ;
     oe:theodoridisBucket "manufactured_articles" ;
-    oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
+    oe:sitcCode "SITC4_05_Vegetables_and_Fruit" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1896"^^xsd:integer ;
     oe:lastAttested "1900"^^xsd:integer ;
-    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade .
+    prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
+    oe:mappingAuthority "wikidata_slim:2026-11-09" ;
+    skos:broadMatch wd:Q1364, aat:300011868 .
 
 htc:1252 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -30258,21 +30272,21 @@ htc:1417 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1417" ;
     skos:prefLabel "Sugar Box Shooks"@en ;
-    skos:broader htc:sub_sugars_swe_wd_q11002 ;
+    skos:broader htc:grp_cooperage_ship_timber ;
     oe:observationCount "12"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Sugar Box Shooks" ;
-    oe:processingState "unspecified" ;
-    oe:ghostAcresDomain "food_colonial_grocery" ;
-    oe:landBasis "terrestrial_crop" ;
-    oe:theodoridisBucket "other_food_drink_spices" ;
-    oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
+    oe:processingState "sawn_hewn" ;
+    oe:ghostAcresDomain "timber_forestry" ;
+    oe:landBasis "terrestrial_forest" ;
+    oe:theodoridisBucket "raw_materials" ;
+    oe:sitcCode "SITC4_63_Cork_and_Wood_Manufactures" ;
     oe:isAggregate "false"^^xsd:boolean ;
     oe:firstAttested "1876"^^xsd:integer ;
     oe:lastAttested "1883"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11002, aat:300183931 .
+    skos:relatedMatch wd:Q287, agrovoc:c_8421, stw:14150-4, aat:300011914 .
 
 htc:1418 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -32699,7 +32713,8 @@ htc:1540 a skos:Concept ;
     oe:lastAttested "1866"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q11002, aat:300183931 .
+    skos:broadMatch wd:Q11002, aat:300183931 ;
+    oe:sourceTaxon wd:Q3391243 .
 
 htc:1541 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -34732,11 +34747,11 @@ htc:1644 a skos:Concept ;
     skos:prefLabel "Maple Syrup"@en ;
     skos:broader htc:grp_sugars_sweeteners ;
     oe:observationCount "7"^^xsd:integer ;
-    oe:groundingStatus "grounded_wikidata_lexical" ;
+    oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Maple Syrup" ;
     oe:processingState "refined_extract" ;
     oe:ghostAcresDomain "food_colonial_grocery" ;
-    oe:landBasis "terrestrial_crop" ;
+    oe:landBasis "terrestrial_forest" ;
     oe:theodoridisBucket "other_food_drink_spices" ;
     oe:sitcCode "SITC4_06_Sugars_and_Honey" ;
     oe:isAggregate "false"^^xsd:boolean ;
@@ -34744,8 +34759,10 @@ htc:1644 a skos:Concept ;
     oe:firstAttested "1821"^^xsd:integer ;
     oe:lastAttested "1897"^^xsd:integer ;
     prov:hadPrimarySource oe:series_csp_canadian_exports_blankseries ;
+    skos:related htc:0079 ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q402563 .
+    skos:exactMatch wd:Q402563 ;
+    oe:sourceTaxon wd:Q214733 .
 
 htc:1645 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -40036,7 +40053,7 @@ htc:1912 a skos:Concept ;
     skos:inScheme htc:scheme ;
     skos:notation "1912" ;
     skos:prefLabel "Skins Furs Pelts Sheep Dressed in Oil"@en ;
-    skos:broader htc:sub_furs_marin_wd_q197204 ;
+    skos:broader htc:sub_furs_marin_wd_q1083901 ;
     oe:observationCount "3"^^xsd:integer ;
     oe:groundingStatus "grounded_wikidata_v4" ;
     oe:substanceHead "Skins Furs Pelts Sheep Dressed in Oil" ;
@@ -40050,7 +40067,7 @@ htc:1912 a skos:Concept ;
     oe:lastAttested "1856"^^xsd:integer ;
     prov:hadPrimarySource oe:series_hcpp_annual_statement_of_trade ;
     oe:mappingAuthority "wikidata_slim:2026-11-09" ;
-    skos:broadMatch wd:Q197204, stw:14916-0, aat:300011811 .
+    skos:broadMatch wd:Q1083901, aat:300193374 .
 
 htc:1913 a skos:Concept ;
     skos:inScheme htc:scheme ;
@@ -43248,6 +43265,9 @@ wd:Q163641 rdfs:label "Rubia tinctorum" ;
 wd:Q164609 rdfs:label "Commiphora myrrha" ;
     oe:colId "XG88" .
 
+wd:Q165191 rdfs:label "Beta vulgaris" ;
+    oe:colId "LNNK" .
+
 wd:Q165315 rdfs:label "Smilax" ;
     oe:colId "8W3MJ" .
 
@@ -43404,6 +43424,9 @@ wd:Q33609 rdfs:label "Ursus maritimus" ;
     oe:colId "7F2J9" .
 
 wd:Q33690609 rdfs:label "Brassica rapa subsp. rapa" .
+
+wd:Q3391243 rdfs:label "Saccharum officinarum" ;
+    oe:colId "4TWQL" .
 
 wd:Q3595915 rdfs:label "Terminalia chebula" ;
     oe:colId "55G44" .

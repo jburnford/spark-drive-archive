@@ -3170,20 +3170,6 @@
       }
     },
     {
-      "@id": "htc:sub_sugars_swe_hd_fruit_preserved_without_sugar_canned_or_bottled",
-      "@type": "skos:Concept",
-      "skos:inScheme": {
-        "@id": "htc:scheme"
-      },
-      "skos:prefLabel": {
-        "@value": "Fruit Preserved Without Sugar Canned Or Bottled (substance group)",
-        "@language": "en"
-      },
-      "skos:broader": {
-        "@id": "htc:grp_sugars_sweeteners"
-      }
-    },
-    {
       "@id": "htc:sub_sugars_swe_wd_q11002",
       "@type": "skos:Concept",
       "skos:inScheme": {
@@ -8983,7 +8969,7 @@
       "oe:substanceHead": "Maple Sugar",
       "oe:processingState": "unspecified",
       "oe:ghostAcresDomain": "food_colonial_grocery",
-      "oe:landBasis": "terrestrial_crop",
+      "oe:landBasis": "terrestrial_forest",
       "oe:theodoridisBucket": "other_food_drink_spices",
       "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
       "oe:isAggregate": false,
@@ -9010,6 +8996,14 @@
         },
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:1644"
+        },
+        {
+          "@id": "htc:0360"
         }
       ],
       "skos:exactMatch": [
@@ -12266,15 +12260,22 @@
           "@id": "oe:series_kew_cust_5"
         }
       ],
-      "skos:broadMatch": [
+      "skos:related": [
+        {
+          "@id": "htc:0360"
+        }
+      ],
+      "skos:exactMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q154389"
-        },
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "skos:closeMatch": [
         {
           "@id": "http://vocab.getty.edu/aat/300266452"
         }
-      ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      ]
     },
     {
       "@id": "htc:0136",
@@ -13207,16 +13208,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_sugars_swe_hd_fruit_preserved_without_sugar_canned_or_bottled"
+        "@id": "htc:sub_fruits_nut_wd_q1364"
       },
       "oe:observationCount": 225,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Fruit Preserved without Sugar Canned or Bottled",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "food_colonial_grocery",
       "oe:landBasis": "terrestrial_crop",
       "oe:theodoridisBucket": "manufactured_articles",
-      "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
+      "oe:sitcCode": "SITC4_05_Vegetables_and_Fruit",
       "oe:isAggregate": false,
       "oe:firstAttested": 1910,
       "oe:lastAttested": 1929,
@@ -13224,7 +13225,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade_1910_1940_ext"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1364"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300011868"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:0152",
@@ -20293,7 +20303,12 @@
           "@id": "http://vocab.getty.edu/aat/300183931"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:sourceTaxon": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q3391243"
+        }
+      ]
     },
     {
       "@id": "htc:0285",
@@ -20424,7 +20439,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_tanned_lea_wd_q197204"
+        "@id": "htc:grp_tanned_leather"
       },
       "oe:observationCount": 131,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -20447,13 +20462,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "http://www.wikidata.org/entity/Q197204"
+          "@id": "http://www.wikidata.org/entity/Q1083901"
         },
         {
-          "@id": "http://zbw.eu/stw/descriptor/14916-0"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300011811"
+          "@id": "http://vocab.getty.edu/aat/300193374"
         }
       ],
       "oe:mappingAuthority": "wikidata_slim:2026-11-09"
@@ -23531,7 +23543,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_tanned_lea_wd_q197204"
+        "@id": "htc:grp_tanned_leather"
       },
       "oe:observationCount": 111,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -23551,13 +23563,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "http://www.wikidata.org/entity/Q197204"
+          "@id": "http://www.wikidata.org/entity/Q198779"
         },
         {
-          "@id": "http://zbw.eu/stw/descriptor/14916-0"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300011811"
+          "@id": "http://vocab.getty.edu/aat/300255984"
         }
       ],
       "oe:mappingAuthority": "wikidata_slim:2026-11-09"
@@ -24207,6 +24216,23 @@
         },
         {
           "@id": "oe:series_kew_cust_5"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0496"
+        },
+        {
+          "@id": "htc:0135"
+        },
+        {
+          "@id": "htc:0732"
+        },
+        {
+          "@id": "htc:0079"
+        },
+        {
+          "@id": "htc:0483"
         }
       ],
       "skos:exactMatch": [
@@ -25972,16 +25998,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_sugars_swe_wd_q11002"
+        "@id": "htc:grp_cooperage_ship_timber"
       },
       "oe:observationCount": 93,
       "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Sugar Boxes",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "food_colonial_grocery",
-      "oe:landBasis": "terrestrial_crop",
-      "oe:theodoridisBucket": "other_food_drink_spices",
-      "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
+      "oe:processingState": "sawn_hewn",
+      "oe:ghostAcresDomain": "timber_forestry",
+      "oe:landBasis": "terrestrial_forest",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_63_Cork_and_Wood_Manufactures",
       "oe:isAggregate": false,
       "oe:firstAttested": 1855,
       "oe:lastAttested": 1875,
@@ -25993,12 +26019,18 @@
           "@id": "oe:series_csp_canadian_trade_and_navigation"
         }
       ],
-      "skos:broadMatch": [
+      "skos:relatedMatch": [
         {
-          "@id": "http://www.wikidata.org/entity/Q11002"
+          "@id": "http://www.wikidata.org/entity/Q287"
         },
         {
-          "@id": "http://vocab.getty.edu/aat/300183931"
+          "@id": "http://aims.fao.org/aos/agrovoc/c_8421"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14150-4"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300011914"
         }
       ],
       "oe:mappingAuthority": "wikidata_slim:2026-11-09"
@@ -29325,16 +29357,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_customs_residuals"
+        "@id": "htc:grp_sugars_sweeteners"
       },
       "oe:observationCount": 79,
       "oe:groundingStatus": "local_concept_only",
       "oe:substanceHead": "Succades",
       "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "other",
-      "oe:landBasis": "unclassified",
-      "oe:theodoridisBucket": "unclassified",
-      "oe:sitcCode": "oe:sitcUnassigned",
+      "oe:ghostAcresDomain": "food_colonial_grocery",
+      "oe:landBasis": "terrestrial_crop",
+      "oe:theodoridisBucket": "other_food_drink_spices",
+      "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
       "oe:isAggregate": false,
       "skos:definition": {
         "@value": "the sweet constituent of certain vegetable products, imported, preserved with sugar, from the East and West Indies, and the Levant, for confectionery. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 377]",
@@ -30247,6 +30279,11 @@
           "@id": "oe:series_csp_canadian_trade_and_navigation"
         }
       ],
+      "skos:related": [
+        {
+          "@id": "htc:0360"
+        }
+      ],
       "skos:exactMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q5159627"
@@ -30845,7 +30882,7 @@
         "@id": "htc:grp_sugars_sweeteners"
       },
       "oe:observationCount": 72,
-      "oe:groundingStatus": "grounded_wikidata_lexical",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Raw Sugar",
       "oe:processingState": "raw_unprocessed",
       "oe:ghostAcresDomain": "food_colonial_grocery",
@@ -30863,6 +30900,11 @@
           "@id": "oe:series_csp_canadian_exports_blankseries"
         }
       ],
+      "skos:related": [
+        {
+          "@id": "htc:0360"
+        }
+      ],
       "skos:exactMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q104822314"
@@ -30875,6 +30917,9 @@
         }
       ],
       "oe:sourceTaxon": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q3391243"
+        },
         {
           "@id": "http://www.wikidata.org/entity/Q151964"
         }
@@ -32752,16 +32797,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_sugars_sweeteners"
+        "@id": "htc:sub_fruits_nut_wd_q1364"
       },
       "oe:observationCount": 67,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Fruit Preserved without Sugar",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "food_colonial_grocery",
       "oe:landBasis": "terrestrial_crop",
       "oe:theodoridisBucket": "manufactured_articles",
-      "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
+      "oe:sitcCode": "SITC4_05_Vegetables_and_Fruit",
       "oe:isAggregate": false,
       "oe:firstAttested": 1871,
       "oe:lastAttested": 1891,
@@ -32769,7 +32814,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1364"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300011868"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:0539",
@@ -41232,16 +41286,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_sugars_swe_hd_fruit_preserved_without_sugar_canned_or_bottled"
+        "@id": "htc:sub_fruits_nut_wd_q1364"
       },
       "oe:observationCount": 46,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Fruit Preserved without Sugar Canned or Bottled",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "food_colonial_grocery",
       "oe:landBasis": "terrestrial_crop",
       "oe:theodoridisBucket": "manufactured_articles",
-      "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
+      "oe:sitcCode": "SITC4_05_Vegetables_and_Fruit",
       "oe:isAggregate": false,
       "oe:firstAttested": 1930,
       "oe:lastAttested": 1933,
@@ -41249,7 +41303,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade_1910_1940_ext"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1364"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300011868"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:0719",
@@ -41833,16 +41896,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_customs_residuals"
+        "@id": "htc:grp_sugars_sweeteners"
       },
       "oe:observationCount": 44,
-      "oe:groundingStatus": "grounded_wikidata_lexical",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Glucose",
       "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "other",
-      "oe:landBasis": "unclassified",
-      "oe:theodoridisBucket": "unclassified",
-      "oe:sitcCode": "oe:sitcUnassigned",
+      "oe:ghostAcresDomain": "food_colonial_grocery",
+      "oe:landBasis": "terrestrial_crop",
+      "oe:theodoridisBucket": "other_food_drink_spices",
+      "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
       "oe:isAggregate": false,
       "skos:definition": {
         "@value": "a potato starch used instead of gum arabic for dressing, in weaving and printing woollens, cottons, or silks. It is also advantageously employed by paper-stainers, and for stiffening gauzes, glazing of paper, &c. *See DEXTRINE.* \\* [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 186]",
@@ -41861,6 +41924,11 @@
         },
         {
           "@id": "oe:series_csp_canadian_trade_and_navigation"
+        }
+      ],
+      "skos:related": [
+        {
+          "@id": "htc:0360"
         }
       ],
       "skos:exactMatch": [
@@ -43845,7 +43913,12 @@
           "@id": "http://vocab.getty.edu/aat/300183931"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:sourceTaxon": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q165191"
+        }
+      ]
     },
     {
       "@id": "htc:0777",
@@ -47833,16 +47906,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_sugars_sweeteners"
+        "@id": "htc:sub_fruits_nut_wd_q1364"
       },
       "oe:observationCount": 33,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Fruit Preserved without sugar by Chemicals or Artificial Heat or Artificial Cold",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "food_colonial_grocery",
       "oe:landBasis": "terrestrial_crop",
       "oe:theodoridisBucket": "manufactured_articles",
-      "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
+      "oe:sitcCode": "SITC4_05_Vegetables_and_Fruit",
       "oe:isAggregate": false,
       "oe:firstAttested": 1934,
       "oe:lastAttested": 1936,
@@ -47850,7 +47923,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade_1910_1940_ext"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1364"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300011868"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:0871",
@@ -61966,16 +62048,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_sugars_sweeteners"
+        "@id": "htc:grp_fodder_oilcakes"
       },
       "oe:observationCount": 18,
-      "oe:groundingStatus": "grounded_wikidata_v4",
+      "oe:groundingStatus": "local_concept_only",
       "oe:substanceHead": "Cattle and other Animal Foods Containing Molasses",
       "oe:processingState": "refined_extract",
-      "oe:ghostAcresDomain": "food_colonial_grocery",
+      "oe:ghostAcresDomain": "fodder_feed",
       "oe:landBasis": "terrestrial_crop",
-      "oe:theodoridisBucket": "other_food_drink_spices",
-      "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_08_Animal_Feeding_Stuff",
       "oe:isAggregate": false,
       "oe:firstAttested": 1906,
       "oe:lastAttested": 1911,
@@ -61983,19 +62065,7 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ],
-      "skos:broadMatch": [
-        {
-          "@id": "http://www.wikidata.org/entity/Q830"
-        },
-        {
-          "@id": "http://aims.fao.org/aos/agrovoc/c_1391"
-        },
-        {
-          "@id": "http://zbw.eu/stw/descriptor/14142-3"
-        }
-      ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      ]
     },
     {
       "@id": "htc:1199",
@@ -62040,16 +62110,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_sugars_sweeteners"
+        "@id": "htc:sub_fruits_nut_wd_q1364"
       },
       "oe:observationCount": 18,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Fruit Preserved without sugar by chemicals or artificial heat or artificial cold Tinned or bottled Apples including gallon apples",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "food_colonial_grocery",
       "oe:landBasis": "terrestrial_crop",
       "oe:theodoridisBucket": "manufactured_articles",
-      "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
+      "oe:sitcCode": "SITC4_05_Vegetables_and_Fruit",
       "oe:isAggregate": false,
       "oe:firstAttested": 1937,
       "oe:lastAttested": 1940,
@@ -62057,7 +62127,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade_1910_1940_ext"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1364"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300011868"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1201",
@@ -64131,16 +64210,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:grp_sugars_sweeteners"
+        "@id": "htc:sub_fruits_nut_wd_q1364"
       },
       "oe:observationCount": 16,
-      "oe:groundingStatus": "local_concept_only",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Fruit Preserved without sugar not dried",
       "oe:processingState": "manufactured",
       "oe:ghostAcresDomain": "food_colonial_grocery",
       "oe:landBasis": "terrestrial_crop",
       "oe:theodoridisBucket": "manufactured_articles",
-      "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
+      "oe:sitcCode": "SITC4_05_Vegetables_and_Fruit",
       "oe:isAggregate": false,
       "oe:firstAttested": 1896,
       "oe:lastAttested": 1900,
@@ -64148,7 +64227,16 @@
         {
           "@id": "oe:series_hcpp_annual_statement_of_trade"
         }
-      ]
+      ],
+      "skos:broadMatch": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q1364"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300011868"
+        }
+      ],
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
     },
     {
       "@id": "htc:1252",
@@ -71199,16 +71287,16 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_sugars_swe_wd_q11002"
+        "@id": "htc:grp_cooperage_ship_timber"
       },
       "oe:observationCount": 12,
       "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Sugar Box Shooks",
-      "oe:processingState": "unspecified",
-      "oe:ghostAcresDomain": "food_colonial_grocery",
-      "oe:landBasis": "terrestrial_crop",
-      "oe:theodoridisBucket": "other_food_drink_spices",
-      "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
+      "oe:processingState": "sawn_hewn",
+      "oe:ghostAcresDomain": "timber_forestry",
+      "oe:landBasis": "terrestrial_forest",
+      "oe:theodoridisBucket": "raw_materials",
+      "oe:sitcCode": "SITC4_63_Cork_and_Wood_Manufactures",
       "oe:isAggregate": false,
       "oe:firstAttested": 1876,
       "oe:lastAttested": 1883,
@@ -71217,12 +71305,18 @@
           "@id": "oe:series_csp_canadian_exports_blankseries"
         }
       ],
-      "skos:broadMatch": [
+      "skos:relatedMatch": [
         {
-          "@id": "http://www.wikidata.org/entity/Q11002"
+          "@id": "http://www.wikidata.org/entity/Q287"
         },
         {
-          "@id": "http://vocab.getty.edu/aat/300183931"
+          "@id": "http://aims.fao.org/aos/agrovoc/c_8421"
+        },
+        {
+          "@id": "http://zbw.eu/stw/descriptor/14150-4"
+        },
+        {
+          "@id": "http://vocab.getty.edu/aat/300011914"
         }
       ],
       "oe:mappingAuthority": "wikidata_slim:2026-11-09"
@@ -76241,7 +76335,12 @@
           "@id": "http://vocab.getty.edu/aat/300183931"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:sourceTaxon": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q3391243"
+        }
+      ]
     },
     {
       "@id": "htc:1541",
@@ -80361,11 +80460,11 @@
         "@id": "htc:grp_sugars_sweeteners"
       },
       "oe:observationCount": 7,
-      "oe:groundingStatus": "grounded_wikidata_lexical",
+      "oe:groundingStatus": "grounded_wikidata_v4",
       "oe:substanceHead": "Maple Syrup",
       "oe:processingState": "refined_extract",
       "oe:ghostAcresDomain": "food_colonial_grocery",
-      "oe:landBasis": "terrestrial_crop",
+      "oe:landBasis": "terrestrial_forest",
       "oe:theodoridisBucket": "other_food_drink_spices",
       "oe:sitcCode": "SITC4_06_Sugars_and_Honey",
       "oe:isAggregate": false,
@@ -80381,12 +80480,22 @@
           "@id": "oe:series_csp_canadian_exports_blankseries"
         }
       ],
-      "skos:broadMatch": [
+      "skos:related": [
+        {
+          "@id": "htc:0079"
+        }
+      ],
+      "skos:exactMatch": [
         {
           "@id": "http://www.wikidata.org/entity/Q402563"
         }
       ],
-      "oe:mappingAuthority": "wikidata_slim:2026-11-09"
+      "oe:mappingAuthority": "wikidata_slim:2026-11-09",
+      "oe:sourceTaxon": [
+        {
+          "@id": "http://www.wikidata.org/entity/Q214733"
+        }
+      ]
     },
     {
       "@id": "htc:1645",
@@ -91448,7 +91557,7 @@
         "@language": "en"
       },
       "skos:broader": {
-        "@id": "htc:sub_furs_marin_wd_q197204"
+        "@id": "htc:sub_furs_marin_wd_q1083901"
       },
       "oe:observationCount": 3,
       "oe:groundingStatus": "grounded_wikidata_v4",
@@ -91468,13 +91577,10 @@
       ],
       "skos:broadMatch": [
         {
-          "@id": "http://www.wikidata.org/entity/Q197204"
+          "@id": "http://www.wikidata.org/entity/Q1083901"
         },
         {
-          "@id": "http://zbw.eu/stw/descriptor/14916-0"
-        },
-        {
-          "@id": "http://vocab.getty.edu/aat/300011811"
+          "@id": "http://vocab.getty.edu/aat/300193374"
         }
       ],
       "oe:mappingAuthority": "wikidata_slim:2026-11-09"
@@ -97784,6 +97890,11 @@
       "oe:colId": "XG88"
     },
     {
+      "@id": "http://www.wikidata.org/entity/Q165191",
+      "rdfs:label": "Beta vulgaris",
+      "oe:colId": "LNNK"
+    },
+    {
       "@id": "http://www.wikidata.org/entity/Q165315",
       "rdfs:label": "Smilax",
       "oe:colId": "8W3MJ"
@@ -98049,6 +98160,11 @@
     {
       "@id": "http://www.wikidata.org/entity/Q33690609",
       "rdfs:label": "Brassica rapa subsp. rapa"
+    },
+    {
+      "@id": "http://www.wikidata.org/entity/Q3391243",
+      "rdfs:label": "Saccharum officinarum",
+      "oe:colId": "4TWQL"
     },
     {
       "@id": "http://www.wikidata.org/entity/Q3595915",

@@ -348,6 +348,14 @@ ALLIED_RELATED_PAIRS = [
     ("Potash", "Pearl Ashes"),
     ("Plumbago", "Lead Black"),
     ("Train or Blubber (Whale Oils)", "Whalebone"),
+    ("Sugar", "Raw Sugar"),
+    ("Sugar", "Molasses"),
+    ("Sugar", "Glucose"),
+    ("Sugar", "Rum"),
+    ("Molasses", "Rum"),
+    ("Maple Sugar", "Maple Syrup"),
+    ("Maple Sugar", "Sugar"),
+    ("Sugar", "Confectionery"),
 ]
 
 # Curated modern common altLabels for archaic/19th-century customs terms
@@ -411,8 +419,18 @@ CANONICAL_MAP = {
     # Sugars, alcohol, tobacco, spices
     "sugar": ("sugar", None, "skos:exactMatch"),
     "sugar total": ("sugar", None, "skos:broadMatch"),
-    "maple sugar": ("maple sugar", None, "skos:exactMatch"),
+    "raw sugar": ("raw sugar", "saccharum officinarum", "skos:exactMatch"),
+    "sugar unrefined cane and other sorts": ("sugar", "saccharum officinarum", "skos:broadMatch"),
+    "sugar cane juice": ("sugar", "saccharum officinarum", "skos:broadMatch"),
+    "sugar unrefined beetroot": ("sugar", "beta vulgaris", "skos:broadMatch"),
+    "sugar boxes": ("wood", None, "skos:relatedMatch"),
+    "sugar box shooks": ("wood", None, "skos:relatedMatch"),
+    "cattle and other animal foods containing molasses": ("fodder", None, "skos:broadMatch"),
+    "fruit preserved without sugar": ("fruit", None, "skos:broadMatch"),
+    "maple sugar": ("maple sugar", "acer saccharum", "skos:exactMatch"),
+    "maple syrup": ("maple syrup", "acer saccharum", "skos:exactMatch"),
     "molasses": ("molasses", None, "skos:exactMatch"),
+    "glucose": ("glucose", None, "skos:exactMatch"),
     "honey": ("honey", None, "skos:exactMatch"),
     "tobacco": ("tobacco", None, "skos:exactMatch"),
     "rum": ("rum", None, "skos:exactMatch"),
@@ -968,11 +986,17 @@ def classify_v4(raw: str, head: str):
         grp = "grp_metals_semi_finished"
     elif re.search(r"\b(soap|candles?|beeswax|wax\b|paraffin)\b", lo):
         grp = "grp_waxes_soap_candles"
+    elif re.search(r"\bsugar\s+box(?:es)?\b", lo):
+        grp = "grp_cooperage_ship_timber"
+    elif re.search(r"\bfruit.*preserved\s+without\s+sugar\b", lo):
+        grp = "grp_fruits_nuts_vegetables"
+    elif re.search(r"\bcattle\s+(?:and\s+other\s+)?animal\s+foods?\b", lo):
+        grp = "grp_fodder_oilcakes"
     elif re.search(r"\b(mineral\s*waters?|wine|brandy|rum|whiske?y|spirits?|beer|ale|porter|cider|gin|geneva|spruce\s*beer)\b", lo):
         grp = "grp_alcoholic_beverages"
     elif re.search(r"\b(tea\b|coffee\b|cocoa\b|chocolate|chicory)\b", lo) and not re.search(r"\bcocoa[\s-]*nut\b|\bcoco[\s-]*nut\b", lo):
         grp = "grp_stimulant_beverages"
-    elif re.search(r"\b(sugar|molasses|treacle|syrup|honey|confectionery)\b", lo):
+    elif re.search(r"\b(sugar|molasses|treacle|syrup|glucose|saccharin|honey|confection[ea]ry|succades)\b", lo):
         grp = "grp_sugars_sweeteners"
     elif re.search(r"\b(tobacco|cigars?|snuff)\b", lo):
         grp = "grp_tobacco"
@@ -1095,7 +1119,7 @@ def classify_v4(raw: str, head: str):
     # --- 3. Ecological Land Basis ---
     if grp in ("grp_fish_seafood", "grp_marine_oils") or (grp == "grp_furs_marine_pelts" and "seal" in lo) or (grp == "grp_fertilizers_animal_materials" and re.search(r"\b(whale|isinglass|sponge|coral)\b", lo)):
         land_basis = "marine"
-    elif sector == "sec_forestry_timber" or grp in ("grp_vegetable_tannins", "grp_latexes_elastic_gums", "grp_gums_resins_naval_stores"):
+    elif sector == "sec_forestry_timber" or grp in ("grp_vegetable_tannins", "grp_latexes_elastic_gums", "grp_gums_resins_naval_stores") or re.search(r"\bmaple\s+(sugar|syrup)\b", lo):
         land_basis = "terrestrial_forest"
     elif grp in ("grp_fossil_fuels_mineral_oils", "grp_metallic_ores", "grp_metals_semi_finished", "grp_industrial_minerals", "grp_industrial_chemicals_alkalis"):
         land_basis = "mineral"
@@ -1474,8 +1498,8 @@ def main():
 
         # Plan Wikidata lookup
         has_state = pstate not in ("unspecified", "raw_unprocessed", "live")
-        # Allow dairy_processed exactMatch for bare Butter / Cheese
-        is_intrinsic_dairy = k_raw in ("butter", "cheese")
+        # Allow intrinsic processed exactMatch for bare Butter / Cheese / Molasses / Maple Syrup
+        is_intrinsic_dairy = k_raw in ("butter", "cheese", "molasses", "maple syrup")
 
         if RESIDUAL_RE.match(k_raw) or RESIDUAL_RE.match(k_head):
             plans[cid] = ("residual", None)
@@ -1558,7 +1582,7 @@ def main():
                 # Prefix match on CANONICAL_MAP (strictly broadMatch when extra tokens exist!)
                 toks = k_head.split()
                 found_pref = None
-                for plen in (3, 2, 1):
+                for plen in (4, 3, 2, 1):
                     if len(toks) >= plen:
                         pref = " ".join(toks[:plen])
                         if pref in CANONICAL_MAP:
@@ -1605,7 +1629,7 @@ def main():
     def guard_exact(rel, qid, pstate, cid, k_raw):
         if rel != "skos:exactMatch":
             return rel
-        if pstate not in ("unspecified", "raw_unprocessed", "live") and k_raw not in ("butter", "cheese"):
+        if pstate not in ("unspecified", "raw_unprocessed", "live") and k_raw not in ("butter", "cheese", "molasses", "maple syrup"):
             return "skos:broadMatch"
         if qid in exact_used:
             return "skos:closeMatch"
