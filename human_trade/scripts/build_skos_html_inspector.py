@@ -22,12 +22,16 @@ SCRATCH_HTML = Path("/home/jic823/.gemini/antigravity/brain/b9b2ef77-061c-49c1-9
 
 def main():
     concepts = [json.loads(l) for l in open(GROUND / "commodities_concepts.jsonl", encoding="utf-8") if l.strip()]
+    doc_path = GROUND / "document_attested_concepts.jsonl"
+    doc_concepts = [json.loads(l) for l in open(doc_path, encoding="utf-8") if l.strip()] if doc_path.exists() else []
+    gaz_path = GROUND / "commodity_gazetteer.tsv"
+    gaz_cnt = (sum(1 for _ in open(gaz_path, encoding="utf-8")) - 1) if gaz_path.exists() else 0
     places = [json.loads(l) for l in open(GROUND / "places_grounding.jsonl", encoding="utf-8") if l.strip()]
     polity_cnt = sum(1 for _ in open(GROUND / "place_year_polities.tsv", encoding="utf-8")) - 1
 
     compact = []
-    sec_stats = defaultdict(lambda: {"rows": 0, "cnt": 0, "label": ""})
-    grp_stats = defaultdict(lambda: {"rows": 0, "cnt": 0, "label": "", "sector": ""})
+    sec_stats = defaultdict(lambda: {"rows": 0, "cnt": 0, "doc_cnt": 0, "label": ""})
+    grp_stats = defaultdict(lambda: {"rows": 0, "cnt": 0, "doc_cnt": 0, "label": "", "sector": ""})
     land_stats = Counter()
     rel_stats = Counter()
     rel_rows = Counter()
@@ -84,6 +88,10 @@ def main():
 
         compact.append({
             "id": c["concept_id"],
+            "basis": "customs",
+            "sub": "",
+            "subl": "",
+            "roles": [],
             "l": c["skos_prefLabel"],
             "alts": c.get("skos_altLabels") or [],
             "def": c.get("skos_definition") or "",
@@ -124,6 +132,65 @@ def main():
             "b1866": br.get("broaderConcept", ""),
         })
 
+    # Append Document-Attested Text-Mining Tier (`htc:doc_*`) — zero quantity rows, linked via oe:subsumedInCustomsHeading
+    doc_wd_cnt = doc_tx_cnt = 0
+    for c in doc_concepts:
+        f = c["facets"]
+        ont = c["ontology"]
+        a = c.get("wikidata_anchor") or {}
+        prov = c.get("provenance") or {}
+        sec_id, sec_lbl = ont["sector_id"], ont["sector_label"]
+        grp_id, grp_lbl = ont["group_id"], ont["group_label"]
+        sec_stats[sec_id]["doc_cnt"] += 1
+        if not sec_stats[sec_id]["label"]:
+            sec_stats[sec_id]["label"] = sec_lbl
+        grp_stats[grp_id]["doc_cnt"] += 1
+        if not grp_stats[grp_id]["label"]:
+            grp_stats[grp_id]["label"] = grp_lbl
+            grp_stats[grp_id]["sector"] = sec_id
+        rel = a.get("mapping_relation") or "doc_local"
+        if a.get("qid"):
+            doc_wd_cnt += 1
+        if c.get("source_taxa"):
+            doc_tx_cnt += 1
+        comps = [[a["qid"], a.get("wd_label", "")]] if a.get("qid") else []
+        compact.append({
+            "id": c["concept_id"],
+            "basis": "doc",
+            "sub": c.get("subsumed_in_customs_id", ""),
+            "subl": c.get("subsumed_in_customs_label", ""),
+            "roles": c.get("multi_use_roles") or [],
+            "l": c["skos_prefLabel"],
+            "alts": c.get("skos_altLabels") or [],
+            "def": c.get("skos_definition") or "",
+            "sn": c.get("skos_scopeNote") or "",
+            "dsrc": [[d["citation"], d["uri"]] for d in (c.get("dictionary_sources") or [])],
+            "r": 0,
+            "sec": sec_id,
+            "secl": sec_lbl,
+            "grp": grp_id,
+            "grpl": grp_lbl,
+            "br": ont.get("broader_id", grp_id),
+            "h": f["substance_head"],
+            "s": f["processing_state"],
+            "d": f["ghost_acres_domain"],
+            "lb": f["land_basis"],
+            "th": f["theodoridis_category"],
+            "si": f["sitc_code"],
+            "agg": False,
+            "rel": rel,
+            "wd": comps,
+            "wdesc": a.get("wd_description", ""),
+            "rule": a.get("match_rule", ""),
+            "via": a.get("matched_via_term", ""),
+            "ag": [], "agrel": "", "stw": [], "stwrel": "", "aat": [], "aatrel": "",
+            "tx": [[t["qid"], t.get("taxon_name", ""), t.get("col_id", ""), t.get("relation", "")] for t in (c.get("source_taxa") or [])],
+            "mat": [], "matc": [], "relc": [], "comb": [],
+            "y0": None, "y1": None,
+            "ser": prov.get("series", []),
+            "b1866": "",
+        })
+
     # Compact places summary
     p_stats = Counter()
     p_men = Counter()
@@ -162,6 +229,10 @@ def main():
     meta_payload = {
         "generated": date.today().isoformat(),
         "total_concepts": len(concepts),
+        "doc_concepts": len(doc_concepts),
+        "doc_wd_cnt": doc_wd_cnt,
+        "doc_tx_cnt": doc_tx_cnt,
+        "gazetteer_forms": gaz_cnt,
         "total_subgroups": len(sub_ids),
         "total_comm_rows": tot_rows,
         "total_obs": 153579,
@@ -302,6 +373,9 @@ tr.data-row:hover {{ background: #faf8f3; cursor: pointer; }}
 .b-comb {{ background: #fff0db; color: #874700; cursor: pointer; border: 1px solid #f0cfa0; margin: 2px 4px 2px 0; }}
 .b-comb:hover {{ background: #fce2be; }}
 .b-agg {{ background: #fff3cd; color: #856404; }}
+.b-doc {{ background: #e0f5f1; color: #0c6356; border: 1px solid #a8dfd4; font-weight: 600; }}
+.b-sub {{ background: #e9f2fa; color: #194d75; border: 1px solid #bdd7ee; cursor: pointer; margin: 2px 3px 2px 0; }}
+.b-sub:hover {{ background: #d6e7f7; }}
 a {{ color: var(--accent); text-decoration: none; }}
 a:hover {{ text-decoration: underline; }}
 .detail-row td {{ background: #fcfbf7; padding: 14px 18px; border-bottom: 2px solid var(--border); }}
@@ -365,15 +439,15 @@ details.tree-sub > summary {{ cursor: pointer; font-weight: 600; font-size: 0.83
 </head>
 <body>
 <header>
-  <h1>Open Empire — Layer-1 Archival Trade SKOS Vocabulary &amp; Thesaurus</h1>
-  <p>4-tier historical commodity SKOS vocabulary (9 Macro-Sectors → 44 Commodity Groups → {len(sub_ids)} S14-safe Substance Groups → 2,066 persistent <code>htc:</code> concepts across 152,625 human-transcribed customs rows; dual-typed as <code>skos:Concept</code> &amp; <code>crm:E55_Type</code> for LINCS / CIDOC CRM compatibility), enriched from 6 19th-century commercial dictionaries + Wikidata/AGROVOC/STW/Getty AAT/Catalogue of Life. Generated {date.today().isoformat()}.</p>
+  <h1>Open Empire — 19th-Century Archival Trade SKOS Vocabulary &amp; Text-Mining Gazetteer</h1>
+  <p>4-tier historical commodity SKOS vocabulary (9 Macro-Sectors → 44 Commodity Groups → {len(sub_ids)} S14-safe Substance Groups → <strong>2,066 Layer-1 customs-enumerated</strong> + <strong>{len(doc_concepts):,} document-attested text-mining</strong> <code>htc:</code> concepts, <strong>{gaz_cnt:,}</strong> gazetteer surface forms; dual-typed as <code>skos:Concept</code> &amp; <code>crm:E55_Type</code> for LINCS / CIDOC CRM compatibility), enriched from 6 19th-century commercial dictionaries, Danika's Drugs Project (<em>British Pharmacopoeia</em> 1867 / Savory 1865 / 1866 Customs List), Wikidata, AGROVOC, STW, Getty AAT, and Catalogue of Life. Generated {date.today().isoformat()}.</p>
 </header>
 
 <div class="container">
   <div class="kpis" id="kpis"></div>
 
   <div class="tabs">
-    <button class="tab active" id="btn-concepts" onclick="switchTab('concepts', this)">Commodities Browser (2,066)</button>
+    <button class="tab active" id="btn-concepts" onclick="switchTab('concepts', this)">Commodities Browser ({len(concepts) + len(doc_concepts):,})</button>
     <button class="tab" id="btn-vtree" onclick="switchTab('vtree', this)">Visual Tree (Interactive SVG)</button>
     <button class="tab" id="btn-hierarchy" onclick="switchTab('hierarchy', this)">Outline Hierarchy Tree</button>
     <button class="tab" id="btn-places" onclick="switchTab('places', this)">Places &amp; Polities (499)</button>
@@ -388,7 +462,12 @@ details.tree-sub > summary {{ cursor: pointer; font-weight: 600; font-size: 0.83
     </div>
 
     <div class="controls">
-      <input type="text" id="q" placeholder="Search htc ID, heading, altLabel (e.g. 'rubber', 'maize'), definition, taxon, QID..." oninput="resetAndRender()">
+      <input type="text" id="q" placeholder="Search htc ID, heading, altLabel (e.g. 'cocaine', 'copal', 'rubber', 'nux vomica'), definition, taxon, QID..." oninput="resetAndRender()">
+      <select id="f-basis" onchange="resetAndRender()">
+        <option value="">All Tiers ({len(concepts) + len(doc_concepts):,})</option>
+        <option value="customs">Customs-Enumerated Core ({len(concepts):,})</option>
+        <option value="doc">Document-Attested Text-Mining ({len(doc_concepts):,})</option>
+      </select>
       <select id="f-sec" onchange="resetAndRender()"><option value="">All 9 Macro-Sectors</option></select>
       <select id="f-grp" onchange="resetAndRender()"><option value="">All 44 Commodity Groups</option></select>
       <select id="f-land" onchange="resetAndRender()"><option value="">All Land Bases</option></select>
@@ -443,10 +522,13 @@ details.tree-sub > summary {{ cursor: pointer; font-weight: 600; font-size: 0.83
   <!-- TAB 1B: VISUAL TREE (INTERACTIVE SVG) -->
   <div id="tab-vtree" class="panel">
     <div class="controls">
-      <input type="text" id="vt-q" placeholder="Find &amp; highlight in tree (e.g. 'rubber', 'tea', 'tallow', 'staves')..." oninput="vtreeSearch(this.value)">
+      <input type="text" id="vt-q" placeholder="Find &amp; highlight in tree (e.g. 'cocaine', 'copal', 'rubber', 'tea', 'tallow')..." oninput="vtreeSearch(this.value)">
       <button onclick="vtreeSetDepth(1)">Sectors (9)</button>
       <button onclick="vtreeSetDepth(2)">Groups (44)</button>
       <button onclick="vtreeSetDepth(3)">+ Sub-groups</button>
+      <label style="font-size:0.83rem;display:flex;align-items:center;gap:4px;cursor:pointer">
+        <input type="checkbox" id="vt-doc" checked onchange="rebuildVTree()"> Include Document-Attested ({len(doc_concepts):,})
+      </label>
       <select id="vt-color" onchange="renderVTree()">
         <option value="sector">Color by Macro-Sector</option>
         <option value="mapping">Color by Mapping Tier</option>
@@ -542,6 +624,7 @@ function relBadge(rel) {{
     'skos:relatedMatch': ['relatedMatch', 'b-rel'],
     'residual': ['residual', 'b-res'],
     'ungrounded': ['ungrounded', 'b-un'],
+    'doc_local': ['doc-attested', 'b-doc'],
   }};
   const [lbl, cls] = map[rel] || [rel, 'b-tag'];
   return `<span class="badge ${{cls}}">${{lbl}}</span>`;
@@ -559,11 +642,11 @@ function jumpToConcept(id) {{
 
 function initDashboard() {{
   const kpis = [
-    [fmt(META.total_concepts), 'Persistent htc: Concepts', '9 Sectors → 44 Groups → ' + fmt(META.total_subgroups) + ' Sub-groups'],
-    [pct(META.grounded_rows, META.total_comm_rows), 'Wikidata Grounded', fmt(META.grounded_concepts) + ' concepts (' + pct(META.grounded_rows + META.residual_rows, META.total_comm_rows) + ' w/ residuals)'],
-    [fmt(META.def_cnt) + ' / ' + fmt(META.alt_cnt), '19th-c. Defs / altLabels', 'Mined from 6 commercial dictionaries'],
-    [fmt(META.relc_cnt) + ' / ' + fmt(META.comb_cnt), 'Related / Merged Links', 'skos:related & oe:combinesConcept'],
-    [fmt(META.tax_cnt) + ' / ' + fmt(META.mat_cnt), 'Taxa / Material Links', 'Verified Linnaean oe:sourceTaxon'],
+    [fmt(META.total_concepts) + ' + ' + fmt(META.doc_concepts), 'Customs + Text-Mining Tier', fmt(META.gazetteer_forms) + ' normalized gazetteer forms'],
+    [pct(META.grounded_rows, META.total_comm_rows), 'Layer-1 Wikidata Grounded', fmt(META.grounded_concepts) + ' customs (' + pct(META.grounded_rows + META.residual_rows, META.total_comm_rows) + ' w/ residuals)'],
+    [fmt(META.doc_concepts), 'Document-Attested (htc:doc_*)', fmt(META.doc_wd_cnt) + ' WD-grounded · ' + fmt(META.doc_tx_cnt) + ' w/ Linnaean taxa'],
+    [fmt(META.def_cnt) + ' / ' + fmt(META.alt_cnt), '19th-c. Defs / altLabels', '6 commercial books + Danika Drugs / 1866'],
+    [fmt(META.tax_cnt + META.doc_tx_cnt) + ' / ' + fmt(META.mat_cnt), 'Taxa / Material Links', 'Verified Linnaean oe:sourceTaxon'],
     [pct(META.place_qid_mentions, META.place_total_mentions), 'Places Grounded', pct(META.place_qid_mentions + (META.place_mentions.aggregate||0), META.place_total_mentions) + ' resolved w/ aggregates'],
   ];
   document.getElementById('kpis').innerHTML = kpis.map(([v,l,s]) =>
@@ -622,7 +705,7 @@ function quickFilter(elId, val) {{
 }}
 
 function clearFilters() {{
-  ['q','f-sec','f-grp','f-land','f-rel','f-state','f-extra'].forEach(id => document.getElementById(id).value = '');
+  ['q','f-basis','f-sec','f-grp','f-land','f-rel','f-state','f-extra'].forEach(id => document.getElementById(id).value = '');
   resetAndRender();
 }}
 
@@ -630,6 +713,7 @@ function resetAndRender() {{
   curPage = 1;
   expandedId = null;
   const q = document.getElementById('q').value.trim().toLowerCase();
+  const basis = document.getElementById('f-basis').value;
   const sec = document.getElementById('f-sec').value;
   const grp = document.getElementById('f-grp').value;
   const land = document.getElementById('f-land').value;
@@ -638,6 +722,7 @@ function resetAndRender() {{
   const ex = document.getElementById('f-extra').value;
 
   filtered = CONCEPTS.filter(c => {{
+    if (basis && c.basis !== basis) return false;
     if (sec && c.sec !== sec) return false;
     if (grp && c.grp !== grp) return false;
     if (land && c.lb !== land) return false;
@@ -655,6 +740,7 @@ function resetAndRender() {{
     if (ex === 'agg' && !c.agg) return false;
     if (q) {{
       const hay = (c.id + ' ' + c.l + ' ' + c.alts.join(' ') + ' ' + c.h + ' ' + c.grpl + ' ' + c.secl + ' ' + c.si + ' ' +
+        c.sub + ' ' + c.subl + ' ' + (c.roles||[]).join(' ') + ' ' +
         c.def + ' ' + c.wd.map(x => x.join(' ')).join(' ') + ' ' +
         c.tx.map(x => x.join(' ')).join(' ')).toLowerCase();
       if (!hay.includes(q)) return false;
@@ -667,11 +753,16 @@ function resetAndRender() {{
 function buildTtlSnippet(c) {{
   let lines = [
     `${{c.id}} a skos:Concept, crm:E55_Type ;`,
+    `    rdfs:label "${{c.l.replace(/"/g, '\\"')}}"@en ;`,
     `    skos:inScheme htc:scheme ;`,
     `    skos:prefLabel "${{c.l.replace(/"/g, '\\"')}}"@en ;`,
   ];
   if (c.alts.length) lines.push(`    skos:altLabel ${{c.alts.map(a => '"' + a.replace(/"/g, '\\"') + '"@en').join(', ')}} ;`);
   lines.push(`    skos:broader ${{c.br}} ;`);
+  if (c.basis === 'doc') {{
+    lines.push(`    oe:attestationBasis "document_attested" ;`);
+    if (c.sub) lines.push(`    oe:subsumedInCustomsHeading ${{c.sub}} ;`);
+  }}
   if (c.relc.length) lines.push(`    skos:related ${{c.relc.join(', ')}} ;`);
   if (c.comb.length) lines.push(`    oe:combinesConcept ${{c.comb.join(', ')}} ;`);
   if (c.matc.length) lines.push(`    oe:materialConcept ${{c.matc.join(', ')}} ;`);
@@ -716,6 +807,7 @@ function renderTable() {{
     if (c.aat.length) lodParts.push(c.aat.map(x => `<a class="badge b-tag" target="_blank" href="http://vocab.getty.edu/aat/${{x}}">AAT:${{x}}</a>`).join(''));
     if (c.tx.length) lodParts.push('<div style="margin-top:3px">' + c.tx.slice(0,3).map(([q, n]) => `<a target="_blank" href="https://www.wikidata.org/wiki/${{q}}"><em>${{esc(n || q)}}</em></a>`).join(', ') + '</div>');
     if (c.comb.length) lodParts.push('<div style="margin-top:2px">' + c.comb.map(id => `<span class="badge b-comb" onclick="event.stopPropagation();jumpToConcept('${{id}}')">combines ${{id}}</span>`).join('') + '</div>');
+    if (c.sub) lodParts.push(`<div style="margin-top:2px"><span class="badge b-sub" onclick="event.stopPropagation();jumpToConcept('${{c.sub}}')">subsumed in ${{c.sub}}</span></div>`);
     if (c.relc.length) lodParts.push('<div style="margin-top:2px;font-size:0.74rem;color:#4c267a">related: ' + c.relc.slice(0,3).map(id => `<a href="#" onclick="event.stopPropagation();jumpToConcept('${{id}}');return false;">${{esc((BY_ID[id]||{{}}).l || id)}}</a>`).join(', ') + (c.relc.length > 3 ? ` +${{c.relc.length - 3}}` : '') + '</div>');
 
     const altHtml = c.alts.length
@@ -727,12 +819,13 @@ function renderTable() {{
         <td class="mono">${{c.id}}</td>
         <td>
           <strong>${{esc(c.l)}}</strong>
+          ${{c.basis === 'doc' ? ' <span class="badge b-doc" title="Document-attested minor 19th-c. commodity for text mining">Doc-Attested</span>' : ''}}
           ${{c.agg ? ' <span class="badge b-agg">Aggregate</span>' : ''}}
           ${{c.def ? ' <span class="badge b-tag" title="Has 19th-century dictionary definition">19c def</span>' : ''}}
           ${{altHtml}}
-          <div style="font-size:0.75rem;color:#5c6672">head: ${{esc(c.h)}}</div>
+          <div style="font-size:0.75rem;color:#5c6672">${{c.basis === 'doc' ? ('roles: ' + esc((c.roles||[]).join(', ') || 'minor commodity')) : ('head: ' + esc(c.h))}}</div>
         </td>
-        <td style="text-align:right;font-variant-numeric:tabular-nums">${{fmt(c.r)}}</td>
+        <td style="text-align:right;font-variant-numeric:tabular-nums">${{c.basis === 'doc' ? '<span style="color:#0c6356;font-size:0.74rem">doc</span>' : fmt(c.r)}}</td>
         <td>
           <div style="font-weight:600;font-size:0.8rem">${{esc(c.grpl)}}</div>
           <div style="font-size:0.74rem;color:#5c6672">${{esc(c.secl)}}</div>
@@ -774,6 +867,7 @@ function renderTable() {{
               <div><strong>Sector:</strong> ${{esc(c.secl)}} (<code>${{c.sec}}</code>)</div>
               <div><strong>Group:</strong> ${{esc(c.grpl)}} (<code>${{c.grp}}</code>)</div>
               <div><strong>Direct Broader:</strong> <code>${{c.br}}</code></div>
+              ${{c.sub ? `<div style="margin-top:4px"><strong>Subsumed in Customs Catch-All:</strong> <span class="badge b-sub" onclick="jumpToConcept('${{c.sub}}')">${{c.sub}} ${{esc(c.subl)}}</span></div>` : ''}}
               <div style="margin-top:4px"><strong>Base Material (<code>oe:materialConcept</code>):</strong> ${{matcChips}}</div>
               <div style="margin-top:4px"><strong>Combines (<code>oe:combinesConcept</code>):</strong> ${{combChips}}</div>
               <div style="margin-top:4px"><strong>Related (<code>skos:related</code>):</strong> ${{relChips}}</div>
@@ -914,30 +1008,44 @@ const REL_COLORS = {{
   'skos:relatedMatch': '#6f42c1',
   'residual': '#7a828a',
   'ungrounded': '#b02a37',
+  'doc_local': '#0c6356',
 }};
 
 let vtRoot = null;
 let vtNodeMap = {{}};
 let vtBuilt = false;
+let vtPanZoomInit = false;
 let vtSelectedId = null;
 let vtMatchIds = new Set();
 let vtPathIds = new Set();
 let vtTx = 28, vtTy = 24, vtScale = 0.85;
 let vtBounds = {{ w: 1000, h: 700 }};
 
+function rebuildVTree() {{
+  vtBuilt = false;
+  vtNodeMap = {{}};
+  vtMatchIds.clear();
+  vtPathIds.clear();
+  buildVTreeData();
+  const q = document.getElementById('vt-q').value;
+  if (q && q.trim()) vtreeSearch(q);
+}}
+
 function buildVTreeData() {{
   if (vtBuilt) return;
   vtBuilt = true;
+  const incDoc = document.getElementById('vt-doc') ? document.getElementById('vt-doc').checked : true;
 
   const bySecGrp = {{}};
   for (const c of CONCEPTS) {{
+    if (!incDoc && c.basis === 'doc') continue;
     bySecGrp[c.sec] = bySecGrp[c.sec] || {{}};
     (bySecGrp[c.sec][c.grp] = bySecGrp[c.sec][c.grp] || []).push(c);
   }}
 
   const root = {{
-    id: 'htc:scheme', label: 'htc:scheme (Layer-1 Trade SKOS)', kind: 'root',
-    rows: META.total_comm_rows, count: META.total_concepts, sector: '',
+    id: 'htc:scheme', label: 'htc:scheme (Archival Trade SKOS)', kind: 'root',
+    rows: META.total_comm_rows, count: META.total_concepts + (incDoc ? META.doc_concepts : 0), sector: '',
     expanded: true, children: [], parent: null
   }};
   vtNodeMap[root.id] = root;
@@ -945,7 +1053,7 @@ function buildVTreeData() {{
   for (const [secId, sstat] of Object.entries(META.sec_stats)) {{
     const secNode = {{
       id: secId, label: sstat.label, kind: 'sector',
-      rows: sstat.rows, count: sstat.cnt, sector: secId,
+      rows: sstat.rows, count: sstat.cnt + (incDoc ? (sstat.doc_cnt || 0) : 0), sector: secId,
       expanded: true, children: [], parent: root
     }};
     vtNodeMap[secId] = secNode;
@@ -1004,7 +1112,7 @@ function buildVTreeData() {{
     }}
   }}
   vtRoot = root;
-  initVTreePanZoom();
+  if (!vtPanZoomInit) {{ initVTreePanZoom(); vtPanZoomInit = true; }}
   renderVTree();
   vtreeFit();
 }}
@@ -1219,13 +1327,14 @@ function renderVTree() {{
     const fill = (hasKids && !n.expanded) ? col : '#ffffff';
     const strokeW = (n.id === vtSelectedId || vtMatchIds.has(n.id)) ? 3 : 2;
     const lblText = n.label.length > 44 ? n.label.slice(0, 42) + '…' : n.label;
-    const countTag = hasKids ? ` (${{n.count}})` : ` · ${{fmt(n.rows)}}`;
+    const countTag = hasKids ? ` (${{n.count}})` : (n.concept && n.concept.basis === 'doc' ? ' · [doc]' : ` · ${{fmt(n.rows)}}`);
     const fontW = (n.kind === 'root' || n.kind === 'sector' || vtMatchIds.has(n.id) || n.id === vtSelectedId) ? '700' : (n.kind === 'group' ? '600' : '400');
     const fontS = n.kind === 'root' ? '12.5' : (n.kind === 'sector' ? '12' : (n.kind === 'group' ? '11.2' : '10.6'));
+    const dashAttr = (n.concept && n.concept.basis === 'doc') ? ' stroke-dasharray="2.5 1.5"' : '';
 
     svgParts.push(`
       <g class="vtree-node" transform="translate(${{n._x}},${{n._y}})" onclick="onVTreeClick('${{esc(n.id)}}')">
-        <circle r="${{r.toFixed(1)}}" fill="${{fill}}" stroke="${{col}}" stroke-width="${{strokeW}}" />
+        <circle r="${{r.toFixed(1)}}" fill="${{fill}}" stroke="${{col}}" stroke-width="${{strokeW}}"${{dashAttr}} />
         ${{hasKids ? `<text x="0" y="3" text-anchor="middle" font-size="8.5" font-weight="700" fill="${{n.expanded ? col : '#fff'}}">${{n.expanded ? '−' : '+'}}</text>` : ''}}
         <text x="${{(r + 6).toFixed(1)}}" y="3.8" font-size="${{fontS}}" font-weight="${{fontW}}">${{esc(lblText)}}<tspan fill="#6c757d" font-weight="400" font-size="9.8">${{esc(countTag)}}</tspan></text>
       </g>
@@ -1278,8 +1387,9 @@ function renderVTreeInspector(n) {{
   const relc = c.relc.length ? '<div style="margin:6px 0"><strong>Related:</strong> ' + c.relc.map(id => `<span class="badge b-link" onclick="focusVTreeConcept('${{id}}')">${{id}} ${{esc((BY_ID[id]||{{}}).l||'')}}</span>`).join('') + '</div>' : '';
 
   box.innerHTML = `
-    <span class="mono" style="color:var(--muted)">${{c.id}}</span> · ${{fmt(c.r)}} rows (${{c.y0||'?'}}–${{c.y1||'?'}})
+    <span class="mono" style="color:var(--muted)">${{c.id}}</span> · ${{c.basis === 'doc' ? '<span class="badge b-doc">Document-Attested</span>' : (fmt(c.r) + ' rows (' + (c.y0||'?') + '–' + (c.y1||'?') + ')')}}
     <h3 style="margin-top:4px">${{esc(c.l)}}</h3>
+    ${{c.sub ? `<div style="margin:4px 0"><span class="badge b-sub" onclick="focusVTreeConcept('${{c.sub}}')">subsumed in ${{c.sub}} (${{esc(c.subl)}})</span></div>` : ''}}
     ${{alts}}
     <div style="margin:5px 0;font-size:0.79rem;color:var(--muted)">${{esc(c.secl)}} → <strong>${{esc(c.grpl)}}</strong></div>
     <div style="margin:6px 0">${{wd}}</div>

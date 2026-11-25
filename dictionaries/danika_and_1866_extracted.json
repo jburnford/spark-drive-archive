@@ -1,0 +1,5574 @@
+{
+  "descriptions_count": 73,
+  "items": {
+    "aloes": {
+      "label": "Aloes",
+      "alts": [
+        "aloe vera"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Aloes consist of the congealed juices of aloe plants. The British Pharmacopeia (1867) makes the distinction of two different types of aloes: Barbadoes Aloes and Socotrine Aloes, whereas the Compendium of Domestic Medicine (1865) focuses solely on Socotrine Aloes. Barbadoes Aloes are made from the congealed juices of Aloe vulgaris (more commonly known as Aloe vera) and are imported from Barbados. Socotine Aloes are th [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "alum": {
+      "label": "Alum",
+      "alts": [
+        "potassium alum",
+        "alunite"
+      ],
+      "roles": [
+        "Drug",
+        "Chemical"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Alum is the common name for the chemical compound of Potassium alum, the potassium double sulphate of aluminium. It has a wide range of uses, including water purification, leather tanning, dyeing, fireproofing textiles, baking powders, deodorants, and aftershave treatments. (https://en.wikipedia.org/wiki/Potassium_alum) Alum is reference little in the Pharmacopeia, with only one preparation being mentioned. Its uses  [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "aniseed": {
+      "label": "Aniseed",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Seed"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Aniseed, or Anise, is a flowering plant found mainly in the Eastern Mediterranean and Southwest Asia. Anise oil is obtained from the fruits by means of either steam distillation, or extracted by using supercritical carbon dioxide. (https://en.wikipedia.org/wiki/Anise) Anissed oil (also referred to as Anise) is primarily used in horse medication to treat any griping effects caused by purgative medications. However, it [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "antimony": {
+      "label": "Antimony",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Chemical, Metal"
+      ],
+      "notes": [
+        "Alloys, Cosmetics"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "The chemical element of Antimony has the symbol Sb, and is a metalloid with grey lustrous colouring. Its uses date back to ancient Egypt, where it was used the treat eye ailments, and as a cosmetic eye shadow (the Arabic name for Antimony is kohl).  (https://en.wikipedia.org/wiki/Antimony) Antimony is included is treatments for aliments causing coughs to encourage expectoration (spitting, or clearing of the throat),  [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "arsenic": {
+      "label": "Arsenic",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Chemical"
+      ],
+      "notes": [
+        "Alloys, Pesticides"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Arsenic is a metalloid with the chemical symbol of As. The symptoms of arsenic poisoning can be difficult to discern from other illnesses. During the Bradford sweet poisoning of 1858, the first deaths of two children were originally attributed to cholera. (https://en.wikipedia.org/wiki/Arsenic) Remedies containing Arsenic are included in the Pharmacopeia, including a recipe for Fowler’s Solution of Arsenic. In the Co [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "bark": {
+      "label": "Bark",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Tanning"
+      ],
+      "notes": [
+        "Needs to be entered. Nothing deadly, but how to figure out what was used for tanning vs not"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "balsams": {
+      "label": "Balsams",
+      "alts": [
+        "capivi",
+        "capaiba",
+        "peru"
+      ],
+      "roles": [
+        "Drug",
+        "Paint",
+        "Varnish"
+      ],
+      "notes": [
+        "like bark, theres a bunch of them. Figure out how to organise"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "boracic acid": {
+      "label": "Boracic acid",
+      "alts": [
+        "hydrogen borate",
+        "boric acid",
+        "orthoboric acid",
+        "acidum boricum"
+      ],
+      "roles": [
+        "Drug",
+        "Chemical"
+      ],
+      "notes": [
+        "used in other things, no direct entry in Pharm"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Boracic acid, is a weak acid, and when diluted, it can be used as an antiseptic when treating minor burns and cuts. It can be used as an eye wash when it is highly diluted, but this use causes a greater risk of toxicity. (https://en.wikipedia.org/wiki/Boric_acid#Medical) An artificial version of Borax is listed in the Pharmacopeia. Boracic acid is not addressed in the Compendium. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "borax": {
+      "label": "Borax",
+      "alts": [
+        "sodium borate",
+        "sodium tetraborate",
+        "disodium tetraborate"
+      ],
+      "roles": [
+        "Drug",
+        "Chemical"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Borax is a salt of Boric acid (Boracic acid), a boron compound, and a mineral. It is used in a wide range of products, including detergents, cosmetics, insecticides, an anti-fungal, fire retardant, and a texturing agent in cooking. Borax has a low toxicity, and a large dose (2.66g/kg) is required before any sever symptoms occur. (https://en.wikipedia.org/wiki/Borax) Borax is included in remedies listed in the Compend [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "camphor": {
+      "label": "Camphor",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "chemical"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Camphor is a waxy solid, extracted from the wood of Camphora officinarum, but it can also be obtained from the leaves of rosemary, trees in the laurel family, and can be produced synthetically from oil of turpentine. Camphor is absorbed through the skin, producing a warming or cooling sensation, and can be taken orally in small doses. (https://en.wikipedia.org/wiki/Camphor) It is included in a wide range of remedies  [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "caraway": {
+      "label": "Caraway",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [
+        "used as a fruit, the seed is imported (?), but cultivated in England and Germany"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": "The caraway plant is native to western Asia, Europe, and North Africa. The dried caraway fruit (sometimes called caraway seeds) are referred to in the Pharmacopeia. Caraway has carminative properties (flatulence relief), and are often incorporated into stomachic pills and other treatments that address any gastrointestinal issues. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "cardamom": {
+      "label": "Cardamom",
+      "alts": [
+        "elettaria",
+        "amomum"
+      ],
+      "roles": [
+        "Drug",
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Cardamom is a spice made from the dried seed capsules of cardamom plants. It is used in an assortment of remedies, and is listed in the Compendium as a Stomachic and Cordial. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "cascarilla": {
+      "label": "Cascarilla",
+      "alts": [
+        "croton eluteria"
+      ],
+      "roles": [
+        "Drug",
+        "Flavouring"
+      ],
+      "notes": [
+        "Stomachic"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Cascarilla bark comes from plants of the Croton species, which are cultivated in Caribbean and shipped from the Bahamas. (https://en.wikipedia.org/wiki/Croton_eluteria) Cascarilla is used as a Tonic and as a Carminative. It can also be combined with cinchona to make the mixture more agreeable to the stomach. It is used in the treatment of dyspepsia, flatulent colic, dysentery, and gangrenous thrush in children. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "cassia": {
+      "label": "Cassia",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": "Cassia is often confused in cinnamon, and can be referred to as Chinese cinnamon. It is often combined with Senna when medicinally administered. The only treatment that includes Cassia in the Compendium is a confection of Cassia used to treat piles. https://en.wikipedia.org/wiki/Cinnamomum_cassia [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "castor": {
+      "label": "Castor",
+      "alts": [
+        "Oil",
+        "ricinus communis"
+      ],
+      "roles": [
+        "Drug",
+        "Oil"
+      ],
+      "notes": [
+        "this is also the french name for a beaver, which might cause some confusion when mining Canadian sources"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cinchona": {
+      "label": "Cinchona",
+      "alts": [
+        "peruvian bark",
+        "chinchona"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cinnamon": {
+      "label": "Cinnamon",
+      "alts": [
+        "cassia vera"
+      ],
+      "roles": [
+        "Drug",
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Cinnamon is a spice that was generally used in combination with other medications that required their bitter or nauseous flavours to be masked or to diminish any flatulency caused by a particular treatment. It would sometimes be used on its own to treat gastrointestinal complaints, but this was rare. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "clove": {
+      "label": "Clove",
+      "alts": [
+        "myrtaceae"
+      ],
+      "roles": [
+        "Drug",
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "coculus indicus": {
+      "label": "Coculus Indicus",
+      "alts": [
+        "anamirta cocculus"
+      ],
+      "roles": [
+        "Drug",
+        "Beer"
+      ],
+      "notes": [
+        "CDM1865 indicates that this is used as a subsitute for malt in East Indies (102)"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cod liver oil": {
+      "label": "Cod Liver Oil",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Cod-liver oil is extracted in laboratories in London, the North of England, and in Scotland, from cod caught in Newfoundland and the Northern Seas. The oil is used by some for the treatment of scrofula and pulmonary consumption (tuberculosis), and was also used to treat rheumatism, gout, and rickets. It is included in the Compendium as an Alternative and a Tonic, and is also included in an appendix that goes into gre [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "copper": {
+      "label": "Copper",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Metal"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "While a few different mixtures of copper were included in the Pharmacopeia, the Compendium focused on the application of Sulphate of Copper (a blue crystalline salt). The Compendium lists Sulphate of Copper as a Caustic/Counter-Irritant, and as an Emetic, and recommended a preparation of Sulphate of Copper to treat epilepsy. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "cream of tartar": {
+      "label": "Cream of Tartar",
+      "alts": [
+        "potassium hydrogen tartrate"
+      ],
+      "roles": [
+        "Drug",
+        "Chemical"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Cream of tartar is the potassium acid salt of tartaric acid, and is also known as potassium bitartrate. It can be used as a cleaning agent for metals, dyeing, and to slow the drying time of plaster of Paris. Its medical use as a purgative can be dangerous due to the exposure of high levels of potassium. (https://en.wikipedia.org/wiki/Potassium_bitartrate) Cream of Tartar is classified by the Compendium as an Aperient [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "croton": {
+      "label": "Croton",
+      "alts": [
+        "Oil (not seed)"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": ""
+    },
+    "cubibs": {
+      "label": "Cubibs",
+      "alts": [
+        "cubebs",
+        "Java pepper"
+      ],
+      "roles": [
+        "Drug",
+        "Spice"
+      ],
+      "notes": [
+        "Find under Cubebs",
+        "not much on Google, but it does come up in a sentence with other spies (ginger, mace, nutmeg); likely another spelling for Cubeb, or Java peper."
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Recorded in the Pharmacopeia and the Compendium as Cubebs, it consists of the dried unripe fruit of the plant Cubeba officinalis, which is cultivated in Java. (https://en.wikipedia.org/wiki/Cubeb) Cubeb is listed in the Compendium as a Diuretic that is also slightly purgative. It can be used in the treatment of gonorrhoea, gleets, fluor albus, urinary irritations, and gravel. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "cutch": {
+      "label": "Cutch",
+      "alts": [
+        "cachou",
+        "cashoo",
+        "Terra Japonica",
+        "khoyer",
+        "Japan earth",
+        "acacia"
+      ],
+      "roles": [
+        "Drug",
+        "Dye",
+        "Astringent",
+        "Dye Stuff"
+      ],
+      "notes": [
+        "Is it the same as Gum Acacia, since it goes by acacia sometimes?"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "frankincense": {
+      "label": "Frankincense",
+      "alts": [
+        "olibanum"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Frankincense is an aromatic resin obtained from trees in the Burseracae family. (https://en.wikipedia.org/wiki/Frankincense) The only entry for frankincense comes from the Pharmacopeia, which includes frankincense in the mixture for a Pitch Plaster. This frankincense is taken from resin cultivated in North America, produced from turpentine of Pinus Taeda. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "galls": {
+      "label": "Galls",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": "Galls are growths that develop in the extremal tissues of plants and animals caused by parasites, fungi, bacteria, insects, or mites. (https://en.wikipedia.org/wiki/Gall) The Pharmacopeia includes on mention of animal galls with the instructions of producing Purified Ox Bile from the gall of an ox. The Compendium notes that treatments that include Galls are predominately used for external uses, although there are som [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "gentian": {
+      "label": "Gentian",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Bitters"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Gentian root comes from the genus of flowering plants, Gentiana. (https://en.wikipedia.org/wiki/Gentiana) Gentian is used to treat a wide range of ailments in the Compendium, including gout, scrofula, worms, dyspepsia, epilepsy, and jaundice. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "ginger": {
+      "label": "Ginger",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Ginger root is cultivated in the West Indies, India, “and other countries.” It is classified in the Compendium as a Stimulant, and is often used to treat gastrointestinal ailments. It is included in a wide range of mixtures in both the Pharmacopeia and Compendium. https://en.wikipedia.org/wiki/Ginger [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "gum arabic": {
+      "label": "Gum Arabic",
+      "alts": [
+        "acacia gum",
+        "chaar gund",
+        "char goond",
+        "meska"
+      ],
+      "roles": [
+        "Drug",
+        "Food"
+      ],
+      "notes": [
+        "Gum Acacia… so not cutch?"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Gum Arabic (also known as acacia gum) is a gum made from the sap of members of the acacia tree family. It is used in food production, printing (particularly in lithography), paint, glue, and cosmetics. (https://en.wikipedia.org/wiki/Gum_arabic) All lozenges listed in the Pharmacopeia include gum Arabic in their recipes. It is listed as a demulcent in the Compendium, and is considered one of the best demulcents for tr [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "gum benzoin": {
+      "label": "Gum Benzoin",
+      "alts": [
+        "gum benjamin",
+        "benzoin resin",
+        "styrax resin"
+      ],
+      "roles": [
+        "Drug",
+        "perfumes",
+        "incense",
+        "flavoring"
+      ],
+      "notes": [
+        "flowers of benzoin used in cough pills, no other mention (CDM 186/239, 345)",
+        "flowers o fbenzoin used in cough pills, no other mention (239, 345)"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "The only medical entry for Benzoin in either the Pharmacopeia or the Compendium is in the Compendium, and is used in the treatment of cough. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "gum gedda": {
+      "label": "Gum Gedda",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "likely a minor drug"
+      ],
+      "notes": [
+        "not in either",
+        "limited search results in Google, likely a minor drug"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gum mastic": {
+      "label": "Gum Mastic",
+      "alts": [
+        "Mastich",
+        "pistacia lentiscus"
+      ],
+      "roles": [
+        "Drug",
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Gum mastic is a resin that comes from the mastic tree. (https://en.wikipedia.org/wiki/Mastic_(plant_resin)) The main uses for gum mastic, as listed in the Compendium, is for making varnishes, but it can also be used to treat decaying teeth by filling in the infected parts of the tooth. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "gum tragacanth": {
+      "label": "Gum Tragacanth",
+      "alts": [
+        "locoweed, goat's thorn",
+        "locoweed",
+        "goat's thorn"
+      ],
+      "roles": [
+        "Drug",
+        "Tanning"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Tragacanth is obtained from the dried sap of various members of the genus Astragalus. Iran in the major producer of this gum. It can be used in the leatherworking of vegetable-tanned leathers, and is sometimes used as a stiffener in textiles. It is used in medicine, food stuffs, the making of artists pastels, and adhesive in cigar rolling. (https://en.wikipedia.org/wiki/Tragacanth) The Compendium describes its uses a [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "hemp": {
+      "label": "Hemp",
+      "alts": [
+        "Indian Hemp",
+        "china grass"
+      ],
+      "roles": [
+        "Drug",
+        "Fiber"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "The only entry for Hemp in both the Pharmacopeia and Compendium comes from the Pharamcopeia, with an entry for India Hemp (Cannabis indica). The extract and tincture are both manufactured from the female flowering tops of the plant (which is called Cannabis sativa in the description of Cannabis indica). https://en.wikipedia.org/wiki/Cannabis_indica https://en.wikipedia.org/wiki/Cannabis_sativa [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "honey": {
+      "label": "Honey",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Food"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Honey is used to sweeten and act as a binding agent for different medications in the Pharmacopeia and Compendium. While it does have a laxative effect, its side effects of griping and flatulence discourage its regular usage. Instead, it is more commonly used to form oxymel (honey and vinegar) and used treat asthmatics suffering from gravel. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "indigo": {
+      "label": "Indigo",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Indigo is predominately used as a colouring agent (https://en.wikipedia.org/wiki/Indigo), and in the Pharmacopeia it is used to produce a test solution, and is not used directly in any medicines. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "ipecacuanha": {
+      "label": "Ipecacuanha",
+      "alts": [
+        "arapichea ipecacuanha"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [
+        "So much entries :S"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Ipecacuanha is a member of the flowering plant of the Rubiaceae family, with its root being used for medicinal purposes. (https://en.wikipedia.org/wiki/Carapichea_ipecacuanha) Ipecacuanha is a power full emetic (enduces vomiting) and was commonly used to treat cases of poisoning. It is also an expectorant (removes secretions from the lungs) and was also used in the treatment of those suffering from colds, coughs, ast [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "iron": {
+      "label": "Iron",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Metal"
+      ],
+      "notes": [
+        "Where should we put steel? I think it should be its own entry."
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Iron is included in a variety of different forms and uses in the Compendium and Pharmacopeia. It can be administered as an astringent, emmenagouge, and tonic, to treat a variety of ailments. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "isinglass": {
+      "label": "Isinglass",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "clarifing beer and wine"
+      ],
+      "notes": [
+        "dried swim bladders of fish."
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Isinglass is included in the Compendium under the “Cookery for the Sick” section, and is included in a recipe for Coffee Milk (isinglass is used to clarify the mixture), and in the recipe for An Excellent Jelly. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "jalap": {
+      "label": "Jalap",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [
+        "From Mexico, grown in India"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Jalap is the dried root of Exogonium Purga, which was imported from Mexico. Jalap was employed as an Anthelmintic (expelled intestinal worms), and also as an aperient and purgative. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "juniper": {
+      "label": "Juniper",
+      "alts": [
+        "juniper berry"
+      ],
+      "roles": [
+        "Drug",
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "This entry deals with the Juniper berries, and how they were used in medicine. Although the Pharmacopeia includes an entry for Savin Tops (the fresh and dried tops of Juniperus Sabina, they have not been included). Juniper berries were used as a diuretic (increasing the secretion of urine), but could also be used as a stomachic, carminative, and diaphoretic. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "lead": {
+      "label": "Lead",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Metal"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Despite the warning in the Compendium of the poisonous qualities of lead, lead is included in a large number of remedies in the Pharmacopeia, notably appearing in many recipes for Plasters and Ointments. Internal medicine that include lead are also listed, including Goulard’s Extract, and Sugar of Lead (listed in the Compendium alongside a strong warning). [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "leech": {
+      "label": "Leech",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Worm"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Different leech species were used by the medical community for the removal of blood. The Compendium includes the use of leeches to treat inflammation of the eye (by placing leeches around the orbit), and to place leeches on the temples to remove a headache. Other treatments also include ague or intermittent fever, gum boils, bruises or sprains, bronchitis, dysentery, epilepsy, piles, toothaches, croup, hooping-cough, [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "lemon": {
+      "label": "Lemon",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Fruit"
+      ],
+      "notes": [
+        "Used to make citric acid. Peel is used in some things. Juice too."
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Lemons were a major source of citric acid during this period. Lemon juice was used to treat scurvy, and as such is listed in the Compendium as an Antiscorbutic. All parts of the lemon were incorporated into medical uses, providing a range of remedies including lemon oil, syrup, tincture, and infusions. Lemons were also widely used in cookery for the sick, and were a popular feature in drinks given to those suffering  [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "linseed": {
+      "label": "Linseed",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Seed"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Linseed oil is obtained by pressing the seeds of the flax plant (it is also sometimes called flaxseed oil). Its uses include acting as a pigment binder, plasticiser or hardener in putty, wood finisher, along with a nutrition supplement in food. Because linseed oil quickly oxidises, it can spontaneously combust when left unattended and soaked into rags. (https://en.wikipedia.org/wiki/Linseed_oil) Because of its heatin [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "liquorice": {
+      "label": "Liquorice",
+      "alts": [
+        "Glycyrrhiza glabra"
+      ],
+      "roles": [
+        "Drug",
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Liquorice root is commonly used in food stuffs as a flavouring agent. While it does include medicinal properties (antiviral, antimicrobial, anti-inflammatory, hepatoprotective, and blood pressure-increasing), it was primarily used to mask the flavour of bitter medicines, especially when treating children. (https://en.wikipedia.org/wiki/Liquorice) [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "logwood": {
+      "label": "Logwood",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Dye Wood"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Logwood comes from a flowering tree native to Mexico and Central America. It was primarily used for dyeing textiles, but its bark and leaves were also used in medical practises. (https://en.wikipedia.org/wiki/Haematoxylum_campechianum) Its primary medicinal uses in the Compendium were listed as an astringent and a corroborant, being used to treat diarrhoea, the later stages of dysentery, and infants suffering from ch [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "manna": {
+      "label": "Manna",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Sap"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Manna is the sugary extract taken from the sap of Fraxinus ornus, and during medieval times this extract was compared to the biblical manna, resulting in the English name of the plant: manna ash. (https://en.wikipedia.org/wiki/Fraxinus_ornus) Manna was listed in the Compendium as an aperient and a purgative, and was often prescribed as a safe and effective purgative to infants, children, and “delicate females.” It wa [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "mustard": {
+      "label": "Mustard",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": "Mustard was commonly used in poultices in both the Compendium and in the Pharmacopeia. Poultices were applied to feet and the pit of the stomach to help treat those suffering from fever, cholera morbus, and cramps and spasms. https://en.wikipedia.org/wiki/Mustard_plaster Fun fact: Eye of newt is an archaic name for mustard seed. When the witches of MacBeth called for the use of eye of newt, they were referring to mus [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "myrrh": {
+      "label": "Myrrh",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "oleoresin"
+      ],
+      "notes": [
+        "oleoresin is a natural blend of essential oil and resin"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Myrrh is a natural resin that dries in a gum used in the production of perfume, incense, and medicine. (https://en.wikipedia.org/wiki/Myrrh) Myrrh is included in many remedies that are used to aid digestion, due its ability to stimulate the stomach, increase appetite, and encourage digestions. It also has tonic, expectorant, astringent, and emmenagogue properties. A mixture of myrrh can be used as a mouthwash. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "musk": {
+      "label": "Musk",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Perfume"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Musk is used to denote a class of substances that emit a strong scent that is commonly used as a base note in perfumes. The name was originally derived from the gland secretions from the mush deer, but can now also be used to refer to scents obtained from other animals and plants. (https://en.wikipedia.org/wiki/Musk) Musk is used as an antispasmodic and stimulant in the Compendium, being noted as “one of the stronges [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "nitre cubic": {
+      "label": "Nitre cubic",
+      "alts": [
+        "Nitrate of soda",
+        "Chile saltpeter",
+        "Peru saltpeter"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [
+        "used to make sodae arsenias, included in database under Nitratine"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "nitric acid": {
+      "label": "Nitric acid",
+      "alts": [
+        "aqua fortis",
+        "spirit of niter",
+        "spirit of nitre"
+      ],
+      "roles": [
+        "Drug",
+        "Chemical"
+      ],
+      "notes": [
+        "lots entries"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Nitric acid is also know as the spirit of nitre (as such some treatments may have been included in Nitratine). It is a strong mineral acid that is highly corrosive. (https://en.wikipedia.org/wiki/Nitric_acid) Nitric acid was included in many solution in the Pharmacopeia, and is also included in test solutions that were used to verify the purity or inclusion of other materials. It was used in the Compendium as an astr [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "nutmeg": {
+      "label": "Nutmeg",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Nutmeg is a seed derived from the same species as mace (Myristica). (https://en.wikipedia.org/wiki/Nutmeg) Nutmeg is included in an assortment of remedies listed in the Pharamcoepia, ranging from a plaster, to a compound tincture. In the Compendium, the majority of entries that included nutmeg were cookery items for the sick. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "nux vomica": {
+      "label": "Nux Vomica",
+      "alts": [
+        "poison nut",
+        "semen strychnos",
+        "quaker buttons"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [
+        "CDM1865: another form for Strychnine? (167)"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Nux vomica is better known as the strychnine tree. The seeds contain roughly 1.5% strychnine. The dried blossoms of nux vomica contain 1%, and while the bark contains no strychnine, other poisonous compounds such as brucine are present.( https://en.wikipedia.org/wiki/Strychnos_nux-vomica) Three preparations are listed in the Pharmacopeia (extract, strychnia, and tincture), and the only mention in the Compendium comes [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "strychnine": {
+      "label": "Strychnine",
+      "alts": [
+        "nux vomica alkaloid"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": ""
+    },
+    "olive oil": {
+      "label": "Olive Oil",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Olive oil is the pressed oil obtained from olives. It is used in cooking, cosmetics, soaps, lamp fuel, and pharmaceuticals. (https://en.wikipedia.org/wiki/Olive_oil) It was used in the Pharmacoepia to form plasters, ointments, liniments, and soaps. In the Compendium, olive oil was said to render vegetables in salads more digestible while also reducing flatulence. However, taken in larger doses could result in dyspept [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "opium": {
+      "label": "Opium",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Opium is the dried latex from the opium poppy, and contains approximately 12% alkaloid morphine. It is used to produce heroin and other opiates.  https://en.wikipedia.org/wiki/Opium Opium was used in many remedies listed in the Pharmacopeia, and is the main component of laudanum. It was a major narcotic given to treat pain, but also had the ability to successfully treat diarrhoea. The Compendium does caution against  [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "laudanum": {
+      "label": "Laudanum",
+      "alts": [
+        "tincture of opium",
+        "Dover's powder"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": ""
+    },
+    "orange": {
+      "label": "Orange",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Oranges are citrus fruit grown in tropical and subtropical locations. https://en.wikipedia.org/wiki/Orange_(fruit) Oranges (including the juice, pulp, rind, and oils) were used primarily as flavourers in the Pharmacopeia and Compendium. It was also included in drinks given to the sick. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "peppermint oil": {
+      "label": "Peppermint oil",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [
+        "Oil of Peppermint"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": ""
+    },
+    "pimento": {
+      "label": "Pimento",
+      "alts": [
+        "cherry peper"
+      ],
+      "roles": [
+        "Drug",
+        "Vegetable"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Pimentos are types of cherry peppers, that range in sweetness and spiciness depending on the type. They are used in the stuffing of Spanish olives, and also used in other food items like pimento cheese. https://en.wikipedia.org/wiki/Pimiento Pimentos were included in a few remedies and treatments provided by the Pharmacopeia and Compendium. Pimentos were listed as carminatives in the Compendium. Pimento water was use [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "pink root": {
+      "label": "Pink Root",
+      "alts": [
+        "Indian Pink",
+        "pinkroot"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [
+        "Is this Indian Pink? (CDM1865 104), if so it does anti-parasitic things so that’s cool; botanical.com says it is",
+        "vermifuge"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Pink root, or Indian Pink can be used to refer to a number of flowering plants in North America, and it is not clear which variety is being listed in the import data. One type of Pink root was used in North America to expel worms from the system, but has to be followed by a saline aperient, or else symptoms such as dizziness, muscular spasms, and increased heart rate could occur. Pink root is only mentioned shortly i [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "quassia": {
+      "label": "Quassia",
+      "alts": [
+        "bitter tree",
+        "bitter wood"
+      ],
+      "roles": [
+        "Drug",
+        "Flavour"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Quassia wood is used to form extracts, infusions, and tinctures. It was classified as a tonic in the Compendium, and was often given to treat green sickness or other uterine ailments. Other uses included treating those suffering from gout, and aiding the digestion of sedentary people. Combining quassia and sugar created a poison for flies. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "quicksilver": {
+      "label": "Quicksilver",
+      "alts": [
+        "mercury"
+      ],
+      "roles": [
+        "Drug",
+        "Metal"
+      ],
+      "notes": [
+        "Mercury"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "calomel": {
+      "label": "Calomel",
+      "alts": [
+        "mercurous chloride",
+        "blue pill"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": ""
+    },
+    "quinine": {
+      "label": "Quinine",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [
+        "Quinia has entries too"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "rhubarb": {
+      "label": "Rhubarb",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Vegetable"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "The rhubarb plant produces poisonous leaves that are not used in the medicines mentioned. Its roots and stalks are prepared, and are known to contain rhein, and emodin, which contain cathartic and laxative properties. https://en.wikipedia.org/wiki/Rhubarb Rhubarb root was used in the Pharmacopeia to create a large assortment of treatments. In the Compendium, various forms of rhubarb are combined. Rhubarb is listed as [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "saffron": {
+      "label": "Saffron",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Saffron is a spice that is derive from the stigma of the flower Crocus sativus. It is mainly used as a colouring agent and as seasoning in food. https://en.wikipedia.org/wiki/Saffron Saffron was used in the Compendium as an emmenagouge, and could also be used in combination with other treatments to assist those suffering from ague or intermittent fever. Syrup of saffron was used in a variety of prescriptions recorded [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "sago": {
+      "label": "Sago",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Sago is a starch extracted from various palms in the area of New Guinea and the Moluccas. One palm can provide approximately 800 lbs of starch, and takes 15 years to mature to the point of harvest. https://en.wikipedia.org/wiki/Sago Sago is primarily used in the Compendium as an ingredient in food for the sick. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "sasparilla": {
+      "label": "Sasparilla",
+      "alts": [
+        "Jamacian Sasparilla",
+        "smilax regelii"
+      ],
+      "roles": [
+        "Drug",
+        "Flavouring"
+      ],
+      "notes": [
+        "Root beer"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sapan wood": {
+      "label": "Sapan Wood",
+      "alts": [
+        "Caesalpinia sappan",
+        "Sappanwood",
+        "Sapanwood",
+        "Patanga Chekke Sappanga",
+        "Suou"
+      ],
+      "roles": [
+        "Drug",
+        "Dye stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sassafras": {
+      "label": "Sassafras",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Flavouring",
+        "Essential Oil"
+      ],
+      "notes": [
+        "smilax?"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Sassafras is a tree native to eastern North America and eastern Asia.  Oil can be produced from the dried bark, and it leaves were rubbed into wounds by Native American tribespeople. https://en.wikipedia.org/wiki/Sassafras Sassafras is not mentioned in great length in the Pharmacopeia or the Compendium, with no description of the plant or any of its medical uses being provided. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "scammony": {
+      "label": "Scammony",
+      "alts": [
+        "scammonium"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Is a plant that grows in the eastern part of the Mediterranean. Its roots and the resin extracted from it can all be used in medicine. https://en.wikipedia.org/wiki/Convolvulus_scammonia It is included in various preparations in the Pharmacopeia and used in the Compendium to treat digestive complaints, along with gout, retention of the menses, and water in the head. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "senika": {
+      "label": "Senika",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": ""
+    },
+    "senna": {
+      "label": "Senna",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Senna is a flowering plant native throughout the tropics. Cassia gum can be extracted from the seeds of senna, and its leaves are used in Southeast Asia as flavourers for foods. https://en.wikipedia.org/wiki/Senna_(plant) Senna is used in different remedies in the Pharmacopeia, and the Compendium lists it as an aperient and a purgative. The Black Draught (an effective purgative) is made by combining senna and Epsom s [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "sulphate of sodium": {
+      "label": "Sulphate of Sodium",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": ""
+    },
+    "sulphuric acid": {
+      "label": "Sulphuric Acid",
+      "alts": [
+        "oil of vitroil"
+      ],
+      "roles": [
+        "Drug",
+        "Chemical"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Sulphuric Acid is a highly corrosive mineral acid, with a wide range of industrial and domestic uses. https://en.wikipedia.org/wiki/Sulfuric_acid It was used in the creation of other acids (as listed in the Pharmacopeia), along with other remedies. It is considered a caustic and counter-irritant in the Compendium, and is used primarily to forma fumigant when combined with nitre. It is also used in the treatments of e [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "tar": {
+      "label": "Tar",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [
+        "Coal tar used in Benzol"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Carbolic acid was first extracted from coal tar. https://en.wikipedia.org/wiki/Phenol Along with carbolic acid, other medical items are extracted from different types of tar, and listed in the Pharmacopeia, including creasote (https://en.wikipedia.org/wiki/Creosote), and benzol (https://en.wikipedia.org/wiki/Benzole) [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "tartaric acid": {
+      "label": "Tartaric Acid",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Chemical"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Tartaric acid is a naturally occurring acid, often found in grapes. Its salt is cream of tartar. https://en.wikipedia.org/wiki/Tartaric_acid It is mainly used in the Pharmacopeia and Compendium to produce drinks that can be used as refrigerants, antiseptics, diuretics, or aperients, depending on their administration. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "tin": {
+      "label": "Tin",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Metal"
+      ],
+      "notes": [
+        "Only shows up once, under Subacetate of Copper of Commerce"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Tin in the chemical element with the symbol Sn. It is used in various industries and is not primarily used in medicine. https://en.wikipedia.org/wiki/Tin Its medical uses as recorded in the Compendium and Pharmacopeia was for the expulsion of worms. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "turpentine": {
+      "label": "Turpentine",
+      "alts": [],
+      "roles": [
+        "Drug",
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Turpentine is the distilled form of resin, often taken from pine trees. It is primarily used as a solvent, and has other uses, although they are primarily industrial uses. It is used in the Pharmacopeia to form liniments, ointments, and enemas. In the Compendium, it is also used in liniments and plasters. It is also used in the treatment of fevers, bruises and sprains, epilepsy, rheumatism, croup, and infantile worms [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "verdigris": {
+      "label": "Verdigris",
+      "alts": [
+        "verdigres"
+      ],
+      "roles": [
+        "Drug",
+        "Pigment"
+      ],
+      "notes": [
+        "Subacetate of copper of commerce, used in pigment, and chemical testing. Not much else for drugs."
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "volatile": {
+      "label": "Volatile",
+      "alts": [
+        "liquid ammonia"
+      ],
+      "roles": [
+        "Drug",
+        "Alkali"
+      ],
+      "notes": [
+        "Liquid ammonia. Has entried in CDM under volatile. Pharm: have to look for it directly, ammonia has a lot of entries but nothing under volatile. Sal volatile."
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "There are numerous entries under volatile in the Pharmacopeia and Compendium, and while the volatile listed in the import/export data is liquid ammonia, the distinction is not made clear in the medical texts. This entry contains information on item listed under volatile, sal volatile, or any liquid form of ammonia. Ammonia was included in a large assortment of remedies in the Pharmacopeia, and in the Compendium it wa [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "sal volatile": {
+      "label": "Sal Volatile",
+      "alts": [
+        "liquid ammonia",
+        "volatile alkali"
+      ],
+      "roles": [
+        "Drug",
+        "Chemical"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)"
+      ],
+      "definition": ""
+    },
+    "wax": {
+      "label": "Wax",
+      "alts": [
+        "bee wax",
+        "vegetable wax"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [
+        "Different enteries for different waxes"
+      ],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "White and yellow waxes were included in the Pharmacopeia, with the only difference between the two being that white wax was the bleached version of yellow wax (beeswax) Waxes were used in the formations of plasters, suppositories, and ointments. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "zinc": {
+      "label": "Zinc",
+      "alts": [],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": "Zinc is the chemical element with the symbol Zn, and is used in both industrial and medicinal arenas. Different forms of zinc were listed in the Pharmacopeia (Zinc of commerce, zinc sulphate, zinc acetate, and zinc oxide). Zinc sulphate was used as an astringent, emetic, and tonic, and was the favoured emetic of use when treating opium poisoning. Zinc acetate was also an emetic, but could also be used to form lozenge [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"
+    },
+    "senika root": {
+      "label": "Senika Root",
+      "alts": [
+        "seneca root"
+      ],
+      "roles": [
+        "Drug"
+      ],
+      "notes": [],
+      "sources": [
+        "Danika Drugs.xlsx (SKOS Sheet)",
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "albumin": {
+      "label": "Albumin",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "alizarine": {
+      "label": "Alizarine",
+      "alts": [],
+      "roles": [
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "alkali": {
+      "label": "Alkali",
+      "alts": [],
+      "roles": [
+        "Chemical"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "almond": {
+      "label": "Almond",
+      "alts": [
+        "jordan almond",
+        "sweet almond",
+        "bitter almond"
+      ],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "alpaca": {
+      "label": "Alpaca",
+      "alts": [],
+      "roles": [
+        "Wool"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "aluminium": {
+      "label": "Aluminium",
+      "alts": [
+        "aluminum",
+        "bauxite"
+      ],
+      "roles": [
+        "Metal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "amber": {
+      "label": "Amber",
+      "alts": [
+        "resinite"
+      ],
+      "roles": [
+        "Jewel"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "aniline": {
+      "label": "Aniline",
+      "alts": [],
+      "roles": [
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "annatto": {
+      "label": "Annatto",
+      "alts": [
+        "roucou",
+        "achiote",
+        "urucum",
+        "annatto roll",
+        "annatto flag"
+      ],
+      "roles": [
+        "Food Colouring",
+        "dye"
+      ],
+      "notes": [
+        "There seemed to be two kinds/sources of annatto, roll from Brazil and Flag from Cayenne, which had different uses."
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "apple": {
+      "label": "Apple",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "argol": {
+      "label": "Argol",
+      "alts": [
+        "potassium tartrate"
+      ],
+      "roles": [
+        "Chemical"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "asphalt": {
+      "label": "Asphalt",
+      "alts": [
+        "bitumen judaicum",
+        "asphaltum"
+      ],
+      "roles": [
+        "Pitch"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "ass": {
+      "label": "Ass",
+      "alts": [
+        "asses"
+      ],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bacon": {
+      "label": "Bacon",
+      "alts": [],
+      "roles": [
+        "Food"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "barilla": {
+      "label": "Barilla",
+      "alts": [],
+      "roles": [
+        "Alkali"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "barley": {
+      "label": "Barley",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bars": {
+      "label": "Bars",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "barwood": {
+      "label": "Barwood",
+      "alts": [
+        "pterocarpus erinaceus"
+      ],
+      "roles": [
+        "Wood, Forest Product"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "barytes": {
+      "label": "Barytes",
+      "alts": [
+        "sulphate of barytes",
+        "barium sulfate",
+        "baryte",
+        "celestine",
+        "anglesite",
+        "anhydrite",
+        "Bologna Stone"
+      ],
+      "roles": [
+        "Paint",
+        "Sugar Refining",
+        "Paper"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "basket rod": {
+      "label": "Basket rod",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bean": {
+      "label": "Bean",
+      "alts": [
+        "kidney bean",
+        "french bean"
+      ],
+      "roles": [
+        "Vegetable"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bear": {
+      "label": "Bear",
+      "alts": [],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "beaver": {
+      "label": "Beaver",
+      "alts": [],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "beef": {
+      "label": "Beef",
+      "alts": [
+        "beef fresh",
+        "beef salted"
+      ],
+      "roles": [
+        "Meat, Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bergamot": {
+      "label": "Bergamot",
+      "alts": [
+        "mentha citrata"
+      ],
+      "roles": [
+        "Essential Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "berry": {
+      "label": "Berry",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bigg": {
+      "label": "Bigg",
+      "alts": [
+        "byg",
+        "barley big"
+      ],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "birch": {
+      "label": "Birch",
+      "alts": [],
+      "roles": [
+        "Timber"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bitumen": {
+      "label": "Bitumen",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bitumen judaicum": {
+      "label": "Bitumen judaicum",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bladder": {
+      "label": "Bladder",
+      "alts": [],
+      "roles": [
+        "Animal part"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "blubber": {
+      "label": "Blubber",
+      "alts": [
+        "train"
+      ],
+      "roles": [
+        "Oil"
+      ],
+      "notes": [
+        "NOTE: train will lead to false possitives."
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bones": {
+      "label": "Bones",
+      "alts": [],
+      "roles": [
+        "Animal part"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bran": {
+      "label": "Bran",
+      "alts": [
+        "pollard"
+      ],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "brass": {
+      "label": "Brass",
+      "alts": [],
+      "roles": [
+        "Metal, Metal Alloy"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "buckwheat": {
+      "label": "Buckwheat",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "brazil wood": {
+      "label": "Brazil wood",
+      "alts": [
+        "caesalpinia echinata",
+        "brazilwood",
+        "pau-brasil",
+        "pau de pernambuco",
+        "nicaragua wood",
+        "ibirapitanga",
+        "braziletto wood"
+      ],
+      "roles": [
+        "Wood"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "brimstone": {
+      "label": "Brimstone",
+      "alts": [
+        "sulphur",
+        "sulfur"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bristle": {
+      "label": "Bristle",
+      "alts": [],
+      "roles": [
+        "Brush"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bronze": {
+      "label": "Bronze",
+      "alts": [],
+      "roles": [
+        "Metal, Metal Alloy"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bronze powder": {
+      "label": "Bronze powder",
+      "alts": [
+        "mosaic gold",
+        "stannic sulfide"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bulrushes": {
+      "label": "Bulrushes",
+      "alts": [],
+      "roles": [
+        "Wetland plant"
+      ],
+      "notes": [
+        "its long flat leaves are used for making mats and chair seats"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "butter": {
+      "label": "Butter",
+      "alts": [
+        "ghee"
+      ],
+      "roles": [
+        "dairy"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "bull": {
+      "label": "Bull",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "calf": {
+      "label": "Calf",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "camwood": {
+      "label": "Camwood",
+      "alts": [
+        "african sandalwood"
+      ],
+      "roles": [
+        "Dye"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "canary seed": {
+      "label": "Canary Seed",
+      "alts": [],
+      "roles": [
+        "Seed"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cane": {
+      "label": "Cane",
+      "alts": [
+        "stick"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cantharidin": {
+      "label": "Cantharidin",
+      "alts": [
+        "spanish fly"
+      ],
+      "roles": [
+        "Poison",
+        "Aphrodisiac"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "caoutchouc": {
+      "label": "Caoutchouc",
+      "alts": [
+        "rubber",
+        "indian rubber",
+        "hevea brasiliensis"
+      ],
+      "roles": [
+        "Latex"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "caraway seed": {
+      "label": "Caraway Seed",
+      "alts": [
+        "meridian fennel",
+        "persian cumin"
+      ],
+      "roles": [
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "carmine": {
+      "label": "Carmine",
+      "alts": [
+        "crimson lake",
+        "cochineal",
+        "natural red 4",
+        "Polish cochineal"
+      ],
+      "roles": [
+        "Dye"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "carrot seed": {
+      "label": "Carrot Seed",
+      "alts": [],
+      "roles": [
+        "Seed"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "capers": {
+      "label": "Capers",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cassia oil": {
+      "label": "Cassia oil",
+      "alts": [],
+      "roles": [
+        "Essential Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cassia buds": {
+      "label": "Cassia Buds",
+      "alts": [],
+      "roles": [
+        "Spice"
+      ],
+      "notes": [
+        "buds from cinnamomum aromaticum (Chinese cinnamon)"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cassia fistula": {
+      "label": "Cassia Fistula",
+      "alts": [
+        "canafistula",
+        "golden shower tree"
+      ],
+      "roles": [
+        "Drug (?)"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cassia lignia": {
+      "label": "Cassia Lignia",
+      "alts": [],
+      "roles": [
+        "Spice"
+      ],
+      "notes": [
+        "lower grade cinnamon used to adulterate the real thing"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "caviar": {
+      "label": "Caviar",
+      "alts": [],
+      "roles": [
+        "Fish"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cheese": {
+      "label": "Cheese",
+      "alts": [
+        "cheddar"
+      ],
+      "roles": [
+        "Dairy Product"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cheese imitation": {
+      "label": "Cheese imitation",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "chemical": {
+      "label": "Chemical",
+      "alts": [],
+      "roles": [
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cherry": {
+      "label": "Cherry",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "chesnut": {
+      "label": "Chesnut",
+      "alts": [],
+      "roles": [
+        "Nut"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "china": {
+      "label": "China",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "chinchilla": {
+      "label": "Chinchilla",
+      "alts": [],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cider": {
+      "label": "Cider",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cinders": {
+      "label": "Cinders",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cinnabar": {
+      "label": "Cinnabar",
+      "alts": [
+        "red mercury",
+        "native vermilion"
+      ],
+      "roles": [
+        "Mercury",
+        "Metal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "citron": {
+      "label": "Citron",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "clover seed": {
+      "label": "Clover Seed",
+      "alts": [],
+      "roles": [
+        "Seed"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "coal": {
+      "label": "Coal",
+      "alts": [],
+      "roles": [
+        "fuel"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "coconut": {
+      "label": "Coconut",
+      "alts": [
+        "coco nut"
+      ],
+      "roles": [
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cod": {
+      "label": "Cod",
+      "alts": [
+        "cod liver oil"
+      ],
+      "roles": [
+        "Fish"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "coel": {
+      "label": "Coel",
+      "alts": [],
+      "roles": [
+        "nut"
+      ],
+      "notes": [
+        "?"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "colt": {
+      "label": "Colt",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cobalt": {
+      "label": "Cobalt",
+      "alts": [
+        "colbalt"
+      ],
+      "roles": [
+        "Alloys"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "coir": {
+      "label": "Coir",
+      "alts": [
+        "coconut husk"
+      ],
+      "roles": [
+        "Fibre"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "coney": {
+      "label": "Coney",
+      "alts": [],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "copperas blue": {
+      "label": "Copperas Blue",
+      "alts": [
+        "copper sulfate"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "copperas green": {
+      "label": "Copperas Green",
+      "alts": [
+        "Iron(ll) sulfate",
+        "ferrous sulfate",
+        "green vitriol"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "copperas white": {
+      "label": "Copperas White",
+      "alts": [
+        "copperas while",
+        "zink sulfate",
+        "coquimbite",
+        "goslarite"
+      ],
+      "roles": [],
+      "notes": [
+        "goslarite and coquimbite are not the same thing, but a dictionary pointed to both for copperas white"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "coral": {
+      "label": "Coral",
+      "alts": [
+        "bead of coral"
+      ],
+      "roles": [
+        "Sea life"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cork": {
+      "label": "Cork",
+      "alts": [],
+      "roles": [
+        "Bark"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "corosso": {
+      "label": "Corosso",
+      "alts": [
+        "ivory nut",
+        "true palm seed",
+        "vegetable ivory"
+      ],
+      "roles": [
+        "Seed, Nut"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cotton": {
+      "label": "Cotton",
+      "alts": [],
+      "roles": [
+        "Fabric"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cotton seed": {
+      "label": "Cotton seed",
+      "alts": [],
+      "roles": [
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cow": {
+      "label": "Cow",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cowy": {
+      "label": "Cowy",
+      "alts": [
+        "cowry"
+      ],
+      "roles": [
+        "Currency",
+        "Jewellery"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cranberry": {
+      "label": "Cranberry",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "croton seed": {
+      "label": "Croton Seed",
+      "alts": [],
+      "roles": [
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "crude": {
+      "label": "Crude",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "culm": {
+      "label": "Culm",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cummin seed": {
+      "label": "Cummin Seed",
+      "alts": [],
+      "roles": [
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "cylinders": {
+      "label": "Cylinders",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "dam seed": {
+      "label": "Dam seed",
+      "alts": [],
+      "roles": [],
+      "notes": [
+        "?"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "dates": {
+      "label": "Dates",
+      "alts": [
+        "date"
+      ],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "deer": {
+      "label": "Deer",
+      "alts": [],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "divi divi": {
+      "label": "Divi divi",
+      "alts": [
+        "divi-divi",
+        "cascalote",
+        "guaracabuya",
+        "guatapana",
+        "nacascol",
+        "watapana"
+      ],
+      "roles": [
+        "Leather Tanning"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "down": {
+      "label": "Down",
+      "alts": [],
+      "roles": [
+        "Bedding",
+        "Insolation"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "drug": {
+      "label": "Drug",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "dye": {
+      "label": "Dye",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "ebony": {
+      "label": "Ebony",
+      "alts": [],
+      "roles": [
+        "Wood"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "egg": {
+      "label": "Egg",
+      "alts": [],
+      "roles": [],
+      "notes": [
+        "we might want to look at examples of egg to see if there was a term used to denote 'wild' eggs. I believe there was a sizeble industry harvesting seabird eggs during the nineteenth century and this would be more interesting for enviornmental history than trading domestic eggs around Europe."
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "emery stone": {
+      "label": "Emery Stone",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "ermine": {
+      "label": "Ermine",
+      "alts": [],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "farinaceous": {
+      "label": "Farinaceous",
+      "alts": [],
+      "roles": [],
+      "notes": [
+        "flour or meal made of cereal grains, nuts, or starchy roots."
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "feather": {
+      "label": "Feather",
+      "alts": [
+        "ostrich black",
+        "ostrich which"
+      ],
+      "roles": [
+        "Bedding",
+        "Ornanmental"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "fish": {
+      "label": "Fish",
+      "alts": [
+        "cod",
+        "herring",
+        "halibit",
+        "eels",
+        "samon",
+        "turtle",
+        "anchovies"
+      ],
+      "roles": [
+        "Seafood"
+      ],
+      "notes": [
+        "Will the Umble provide a full list of fish?"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "fisher": {
+      "label": "Fisher",
+      "alts": [],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "fir": {
+      "label": "Fir",
+      "alts": [],
+      "roles": [
+        "Timber"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "fitch": {
+      "label": "Fitch",
+      "alts": [],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "fittings": {
+      "label": "Fittings",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "flax": {
+      "label": "Flax",
+      "alts": [],
+      "roles": [
+        "Fiber"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "flax seed": {
+      "label": "Flax Seed",
+      "alts": [],
+      "roles": [
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "flock": {
+      "label": "Flock",
+      "alts": [],
+      "roles": [],
+      "notes": [
+        "waste wool or cotton"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "flour": {
+      "label": "Flour",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "flower roots": {
+      "label": "Flower roots",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "foal": {
+      "label": "Foal",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "fox": {
+      "label": "Fox",
+      "alts": [],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "fruit": {
+      "label": "Fruit",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gall": {
+      "label": "Gall",
+      "alts": [],
+      "roles": [
+        "Plant Growth"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gambier": {
+      "label": "Gambier",
+      "alts": [
+        "Uncaria gambier"
+      ],
+      "roles": [
+        "Tanning",
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gamboge": {
+      "label": "Gamboge",
+      "alts": [],
+      "roles": [
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "garancine": {
+      "label": "Garancine",
+      "alts": [
+        "garanceux"
+      ],
+      "roles": [
+        "Dye Stuff"
+      ],
+      "notes": [
+        "processed madder-root, perhaps should be included as an altLabel. garanceux is a lower grade version created from spent madder"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gelatine": {
+      "label": "Gelatine",
+      "alts": [
+        "gelatin"
+      ],
+      "roles": [
+        "Animal Byproduct"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gelding": {
+      "label": "Gelding",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gold": {
+      "label": "Gold",
+      "alts": [],
+      "roles": [
+        "Metal"
+      ],
+      "notes": [
+        "This could be a complicated commodity, because would have been traded over and over again as currency. That said, mining gold had significant environmental consiquences. Would it be possible to focus on mining and filter out other results?"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "goat": {
+      "label": "Goat",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "goat skin": {
+      "label": "Goat Skin",
+      "alts": [],
+      "roles": [
+        "Skin"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "grains of paradise": {
+      "label": "Grains of paradise",
+      "alts": [
+        "grans of paradise",
+        "Aframomum melegueta",
+        "melegueta pepper",
+        "alligator pepper",
+        "guinea grains",
+        "guinea peper"
+      ],
+      "roles": [
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "grape": {
+      "label": "Grape",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "grease": {
+      "label": "Grease",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "grass seed": {
+      "label": "Grass Seed",
+      "alts": [],
+      "roles": [
+        "Seed"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "groat": {
+      "label": "Groat",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "ground nut": {
+      "label": "Ground nut",
+      "alts": [
+        "peanut"
+      ],
+      "roles": [
+        "Nut, Seed"
+      ],
+      "notes": [
+        "I know they are not really nuts, but I think they are still catagorized as nuts much of the time."
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "guano": {
+      "label": "Guano",
+      "alts": [],
+      "roles": [
+        "Fertiliser"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gum animi": {
+      "label": "Gum Animi",
+      "alts": [],
+      "roles": [],
+      "notes": [
+        "might be a general term for all gums? But this does not seem correct, as it is listed in the 1866 ledger."
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gum copal": {
+      "label": "Gum Copal",
+      "alts": [],
+      "roles": [],
+      "notes": [
+        "from Daniellia trees"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gum dammar": {
+      "label": "Gum Dammar",
+      "alts": [],
+      "roles": [
+        "Varnish",
+        "Food",
+        "Incense"
+      ],
+      "notes": [
+        "Dipterocarpaceae family of trees"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gum dragons blood": {
+      "label": "Gum Dragon's Blood",
+      "alts": [
+        "sanguis draconis"
+      ],
+      "roles": [
+        "varnish",
+        "medicine",
+        "incense",
+        "and dye"
+      ],
+      "notes": [
+        "named for the red colour"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gum euphorbium": {
+      "label": "Gum Euphorbium",
+      "alts": [
+        "euphorbia candelabrum"
+      ],
+      "roles": [],
+      "notes": [
+        "An inodorous exudation, usually in the form of yellow tears, produced chiefly by the African Euphorbia resinifera. It was formerly employed medicinally, but was found so violent in its effects that its use is nearly abandoned. (Webster's, 1913)"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gum kowrie": {
+      "label": "Gum Kowrie",
+      "alts": [
+        "Kauri gum"
+      ],
+      "roles": [],
+      "notes": [
+        "why is this queried?"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gum lac": {
+      "label": "Gum lac",
+      "alts": [
+        "seedlac",
+        "shellac"
+      ],
+      "roles": [
+        "Varnish"
+      ],
+      "notes": [
+        "seedlac and shellac are two different grades of the product"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gum sandarac k": {
+      "label": "Gum Sandarac(k)",
+      "alts": [
+        "gum sandarac",
+        "gum sandarach",
+        "tetraclinis articulata"
+      ],
+      "roles": [
+        "Varnish"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gum senegal": {
+      "label": "Gum Senegal",
+      "alts": [
+        "acacia senegal",
+        "gum acacia",
+        "hashab gum"
+      ],
+      "roles": [
+        "Food"
+      ],
+      "notes": [
+        "higher quality gum arabic (from a different tree)"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gunpowder": {
+      "label": "Gunpowder",
+      "alts": [],
+      "roles": [],
+      "notes": [
+        "Too processed?"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gutta percha": {
+      "label": "Gutta Percha",
+      "alts": [
+        "gutta-percha"
+      ],
+      "roles": [
+        "Latex"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "gypsum": {
+      "label": "Gypsum",
+      "alts": [
+        "calcium sulfate dihydrate"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "hair": {
+      "label": "Hair",
+      "alts": [
+        "camel hair",
+        "cow hair",
+        "ox hair",
+        "bull hair",
+        "elk hair",
+        "horse hair",
+        "human hair"
+      ],
+      "roles": [
+        "animal hair",
+        "human hair"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "ham": {
+      "label": "Ham",
+      "alts": [],
+      "roles": [
+        "Food"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "hay": {
+      "label": "Hay",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "head matter": {
+      "label": "Head matter",
+      "alts": [
+        "whale sperm",
+        "spermaciti"
+      ],
+      "roles": [
+        "Oil",
+        "Spermaceti"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "hemp seed": {
+      "label": "Hemp Seed",
+      "alts": [],
+      "roles": [
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "hide": {
+      "label": "Hide",
+      "alts": [
+        "muscovy hides",
+        "russia hides"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "hog": {
+      "label": "Hog",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "hoof": {
+      "label": "Hoof",
+      "alts": [
+        "hoofs of cattle"
+      ],
+      "roles": [
+        "Animal part"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "hop": {
+      "label": "Hop",
+      "alts": [],
+      "roles": [
+        "Beer"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "horn": {
+      "label": "Horn",
+      "alts": [
+        "buffalo horn",
+        "deer horn"
+      ],
+      "roles": [
+        "Animal part"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "horse": {
+      "label": "Horse",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "ice": {
+      "label": "Ice",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "indian corn": {
+      "label": "Indian corn",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "indian corn meal": {
+      "label": "Indian corn meal",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "jute": {
+      "label": "Jute",
+      "alts": [],
+      "roles": [
+        "Fiber"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "kid skin": {
+      "label": "Kid Skin",
+      "alts": [],
+      "roles": [
+        "Skin"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "knubs": {
+      "label": "Knubs",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "kolinski": {
+      "label": "Kolinski",
+      "alts": [],
+      "roles": [
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "lamb skin": {
+      "label": "Lamb Skin",
+      "alts": [],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "lard": {
+      "label": "Lard",
+      "alts": [],
+      "roles": [
+        "Fat"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "lemon oil": {
+      "label": "Lemon Oil",
+      "alts": [],
+      "roles": [
+        "Essential Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "lentil": {
+      "label": "Lentil",
+      "alts": [],
+      "roles": [
+        "Seed"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "lhama": {
+      "label": "Lhama",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "linen yarn": {
+      "label": "Linen yarn",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "lucerne seed": {
+      "label": "Lucerne Seed",
+      "alts": [
+        "alfalfa seed"
+      ],
+      "roles": [
+        "Seed"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "lynx": {
+      "label": "Lynx",
+      "alts": [],
+      "roles": [
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "madder": {
+      "label": "Madder",
+      "alts": [
+        "munjeet"
+      ],
+      "roles": [
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "madder root": {
+      "label": "Madder root",
+      "alts": [],
+      "roles": [
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "mahogany": {
+      "label": "Mahogany",
+      "alts": [],
+      "roles": [
+        "Timber"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "maize": {
+      "label": "Maize",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "manure": {
+      "label": "Manure",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "marble": {
+      "label": "Marble",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "mare": {
+      "label": "Mare",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "martin": {
+      "label": "Martin",
+      "alts": [],
+      "roles": [
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "meat": {
+      "label": "Meat",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "metal": {
+      "label": "Metal",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "mica": {
+      "label": "Mica",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "mineral water": {
+      "label": "Mineral Water",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "mohair": {
+      "label": "Mohair",
+      "alts": [],
+      "roles": [
+        "Wool"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "molasses": {
+      "label": "Molasses",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "moss rock": {
+      "label": "Moss rock",
+      "alts": [],
+      "roles": [
+        "Dye stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "mother of pearl shell": {
+      "label": "Mother of Pearl Shell",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "mule": {
+      "label": "Mule",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "munjut": {
+      "label": "Munjut",
+      "alts": [],
+      "roles": [
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "musquash": {
+      "label": "Musquash",
+      "alts": [
+        "muskrat"
+      ],
+      "roles": [
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "mustard seed": {
+      "label": "Mustard Seed",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "mutton": {
+      "label": "Mutton",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "myrobalan": {
+      "label": "Myrobalan",
+      "alts": [
+        "myrobalan berry"
+      ],
+      "roles": [
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "naphtha": {
+      "label": "Naphtha",
+      "alts": [],
+      "roles": [
+        "Hydrocarbon"
+      ],
+      "notes": [
+        "distillation product from petroleum, coal tar or peat"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "nicaragua wood": {
+      "label": "Nicaragua Wood",
+      "alts": [],
+      "roles": [
+        "timber"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "nickel": {
+      "label": "Nickel",
+      "alts": [],
+      "roles": [
+        "metal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "nut": {
+      "label": "Nut",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "nutmeg wild": {
+      "label": "Nutmeg wild",
+      "alts": [
+        "wild nutmeg"
+      ],
+      "roles": [
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "nutria": {
+      "label": "Nutria",
+      "alts": [
+        "coypu",
+        "river rat"
+      ],
+      "roles": [
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "oak": {
+      "label": "Oak",
+      "alts": [],
+      "roles": [
+        "Timber"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "oakum": {
+      "label": "Oakum",
+      "alts": [],
+      "roles": [
+        "Tarred Fiber"
+      ],
+      "notes": [
+        "hemp or jute plus tine tar or tar"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "oat": {
+      "label": "Oat",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "oatmeal": {
+      "label": "Oatmeal",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "ochre": {
+      "label": "Ochre",
+      "alts": [
+        "iron (III) oxide",
+        "limonite"
+      ],
+      "roles": [
+        "Dye stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "olive": {
+      "label": "Olive",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [
+        "How do we deal with olives? Should there be olive and olive oil? the same question might apply to coconut or ground nuts"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "oil seed cake": {
+      "label": "Oil Seed Cake",
+      "alts": [
+        "cotton oil seed",
+        "linseed oil seed",
+        "rape oilseed"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "onion": {
+      "label": "Onion",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "onion seed": {
+      "label": "Onion Seed",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "orange peel": {
+      "label": "Orange peel",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "otter": {
+      "label": "Otter",
+      "alts": [],
+      "roles": [
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "otto of roses": {
+      "label": "Otto of Roses",
+      "alts": [],
+      "roles": [
+        "Essential Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "orchal": {
+      "label": "Orchal",
+      "alts": [],
+      "roles": [
+        "Dye stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "orpiment": {
+      "label": "Orpiment",
+      "alts": [],
+      "roles": [
+        "Pigment",
+        "Poison"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "oyster": {
+      "label": "Oyster",
+      "alts": [],
+      "roles": [
+        "Fish"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "paper": {
+      "label": "Paper",
+      "alts": [],
+      "roles": [],
+      "notes": [
+        "Too processed?"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "palm": {
+      "label": "Palm",
+      "alts": [],
+      "roles": [
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "paraffine": {
+      "label": "Paraffine",
+      "alts": [
+        "alkane"
+      ],
+      "roles": [
+        "Hydrocarbon"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pea": {
+      "label": "Pea",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pear": {
+      "label": "Pear",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pearl": {
+      "label": "Pearl",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pearl ash": {
+      "label": "Pearl ash",
+      "alts": [],
+      "roles": [
+        "Alkali"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pepper": {
+      "label": "Pepper",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pepermint oil": {
+      "label": "Pepermint oil",
+      "alts": [],
+      "roles": [
+        "Essential Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "perry": {
+      "label": "Perry",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "petroleum": {
+      "label": "Petroleum",
+      "alts": [],
+      "roles": [
+        "Hydrocarbon"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pickles": {
+      "label": "Pickles",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pig": {
+      "label": "Pig",
+      "alts": [
+        "suckling"
+      ],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pine": {
+      "label": "Pine",
+      "alts": [],
+      "roles": [
+        "Timber"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pine tar": {
+      "label": "Pine tar",
+      "alts": [],
+      "roles": [
+        "Pitch"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pitch": {
+      "label": "Pitch",
+      "alts": [],
+      "roles": [
+        "Sap"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "platina": {
+      "label": "Platina",
+      "alts": [],
+      "roles": [
+        "Platinum"
+      ],
+      "notes": [
+        "Platina is the impure alloy where platinum is naturally found."
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "plum": {
+      "label": "Plum",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "plumbago": {
+      "label": "Plumbago",
+      "alts": [
+        "graphite"
+      ],
+      "roles": [
+        "Mineral"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "poppy seed": {
+      "label": "Poppy Seed",
+      "alts": [],
+      "roles": [
+        "Food"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "porcelain": {
+      "label": "Porcelain",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pork": {
+      "label": "Pork",
+      "alts": [],
+      "roles": [
+        "Meat"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pot ash": {
+      "label": "Pot Ash",
+      "alts": [
+        "potash"
+      ],
+      "roles": [
+        "Alkali"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "potato": {
+      "label": "Potato",
+      "alts": [],
+      "roles": [
+        "Vegetable"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "poultry": {
+      "label": "Poultry",
+      "alts": [],
+      "roles": [
+        "Birds"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "pyriate": {
+      "label": "Pyriate",
+      "alts": [
+        "pyrite",
+        "iron pyrite",
+        "copper pyrite",
+        "sulphur pyrite"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "quercitron": {
+      "label": "Quercitron",
+      "alts": [
+        "quercus velutina bark",
+        "eastern black oak bark"
+      ],
+      "roles": [
+        "Dye"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "quill": {
+      "label": "Quill",
+      "alts": [
+        "goose quill",
+        "swan quill"
+      ],
+      "roles": [
+        "Feather"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "raccoon": {
+      "label": "Raccoon",
+      "alts": [],
+      "roles": [
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "rape seed": {
+      "label": "Rape seed",
+      "alts": [],
+      "roles": [
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "rattan": {
+      "label": "Rattan",
+      "alts": [
+        "rattan canes"
+      ],
+      "roles": [
+        "Forest Product"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "redwood": {
+      "label": "Redwood",
+      "alts": [
+        "guinea wood"
+      ],
+      "roles": [
+        "timber"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "rice": {
+      "label": "Rice",
+      "alts": [],
+      "roles": [
+        "Grain, Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "rye": {
+      "label": "Rye",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "rosin": {
+      "label": "Rosin",
+      "alts": [
+        "colophony",
+        "Greek pitch"
+      ],
+      "roles": [
+        "Resin"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sable": {
+      "label": "Sable",
+      "alts": [],
+      "roles": [
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "safflower": {
+      "label": "Safflower",
+      "alts": [],
+      "roles": [
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "salicine": {
+      "label": "Salicine",
+      "alts": [],
+      "roles": [
+        "Extract from poplar bark"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "salt": {
+      "label": "Salt",
+      "alts": [],
+      "roles": [
+        "Mineral"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "saltpeter": {
+      "label": "Saltpeter",
+      "alts": [
+        "nitrate of potash",
+        "potassium nitrate",
+        "niter",
+        "saltpetre"
+      ],
+      "roles": [
+        "Mineral"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sandal wood": {
+      "label": "Sandal wood",
+      "alts": [],
+      "roles": [
+        "overharvested today"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sardine": {
+      "label": "Sardine",
+      "alts": [],
+      "roles": [
+        "Fish"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sea otter": {
+      "label": "Sea Otter",
+      "alts": [],
+      "roles": [
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "seal": {
+      "label": "Seal",
+      "alts": [],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "seed": {
+      "label": "Seed",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sesamum seed": {
+      "label": "Sesamum Seed",
+      "alts": [],
+      "roles": [
+        "Food"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sheep": {
+      "label": "Sheep",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sheep skin": {
+      "label": "Sheep Skin",
+      "alts": [],
+      "roles": [
+        "Skin"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "shell": {
+      "label": "Shell",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "shrubs": {
+      "label": "Shrubs",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "shumach": {
+      "label": "Shumach",
+      "alts": [
+        "sumac"
+      ],
+      "roles": [
+        "Tanning",
+        "Wax",
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "silk": {
+      "label": "Silk",
+      "alts": [],
+      "roles": [],
+      "notes": [
+        "Silk will be complicated, as there seemed to a large trade in manufactured silk products, along with raw silk and semi-processed silk."
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "silkworm gut": {
+      "label": "Silkworm Gut",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "silver": {
+      "label": "Silver",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "silver fox": {
+      "label": "Silver Fox",
+      "alts": [
+        "sliver fox"
+      ],
+      "roles": [
+        "Skin",
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "skins": {
+      "label": "Skins",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "slate": {
+      "label": "Slate",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "soy": {
+      "label": "Soy",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "specimen": {
+      "label": "Specimen",
+      "alts": [],
+      "roles": [],
+      "notes": [
+        "the ledgers mention specimens for natural science. There would be intereting if we could find them, but I doubt they are commonly labelled \"specimens\""
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sperm": {
+      "label": "Sperm",
+      "alts": [],
+      "roles": [
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "spices": {
+      "label": "Spices",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sponge": {
+      "label": "Sponge",
+      "alts": [],
+      "roles": [
+        "Sea life"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "squirrel": {
+      "label": "Squirrel",
+      "alts": [
+        "calaban"
+      ],
+      "roles": [
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "stallion": {
+      "label": "Stallion",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "stearine": {
+      "label": "Stearine",
+      "alts": [],
+      "roles": [
+        "Fat"
+      ],
+      "notes": [
+        "semi-processed fat"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "stick": {
+      "label": "Stick",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "stone": {
+      "label": "Stone",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "straw": {
+      "label": "Straw",
+      "alts": [],
+      "roles": [
+        "Plant"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sugar": {
+      "label": "Sugar",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sulphate of soda": {
+      "label": "Sulphate of Soda",
+      "alts": [
+        "sodium sulfate"
+      ],
+      "roles": [
+        "Chemical"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "sumach": {
+      "label": "Sumach",
+      "alts": [],
+      "roles": [
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "swine": {
+      "label": "Swine",
+      "alts": [],
+      "roles": [
+        "Animal"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "talc": {
+      "label": "Talc",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "tallow": {
+      "label": "Tallow",
+      "alts": [],
+      "roles": [
+        "Animal part,"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "tamarinds": {
+      "label": "Tamarinds",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "tane": {
+      "label": "Tane",
+      "alts": [],
+      "roles": [
+        "Seed"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "tares": {
+      "label": "Tares",
+      "alts": [],
+      "roles": [
+        "Seed"
+      ],
+      "notes": [
+        "grass seed?"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "teak": {
+      "label": "Teak",
+      "alts": [],
+      "roles": [
+        "Timber"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "teasles": {
+      "label": "Teasles",
+      "alts": [
+        "dipsacus"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "teeth": {
+      "label": "Teeth",
+      "alts": [
+        "elephant teeth",
+        "sea-cow teeth",
+        "sea-horse teeth",
+        "sea-mouse teeth",
+        "ivory"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "terra sienna": {
+      "label": "Terra Sienna",
+      "alts": [
+        "sienna"
+      ],
+      "roles": [
+        "Pigment"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "terra umbra": {
+      "label": "Terra Umbra",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "timber": {
+      "label": "Timber",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "tongue": {
+      "label": "Tongue",
+      "alts": [],
+      "roles": [
+        "Animal Part"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "tortoise shell": {
+      "label": "Tortoise Shell",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "train": {
+      "label": "Train",
+      "alts": [],
+      "roles": [
+        "Oil"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "trees": {
+      "label": "Trees",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "trefoil seed": {
+      "label": "Trefoil Seed",
+      "alts": [],
+      "roles": [
+        "Seed"
+      ],
+      "notes": [
+        "Related to Clover"
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "truffles": {
+      "label": "Truffles",
+      "alts": [],
+      "roles": [
+        "Fungus"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "turmeric": {
+      "label": "Turmeric",
+      "alts": [],
+      "roles": [
+        "Spice"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "turtle shell": {
+      "label": "Turtle Shell",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "ultramarine": {
+      "label": "Ultramarine",
+      "alts": [],
+      "roles": [
+        "Pigment",
+        "Dye"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "valonia": {
+      "label": "Valonia",
+      "alts": [
+        "valonia oak"
+      ],
+      "roles": [
+        "Dye Stuff"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "vanilla": {
+      "label": "Vanilla",
+      "alts": [],
+      "roles": [
+        "Flavour"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "vegetable": {
+      "label": "Vegetable",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "vegetable tallow": {
+      "label": "Vegetable Tallow",
+      "alts": [
+        "bayberry",
+        "chinese tallow tree"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "vermillion": {
+      "label": "Vermillion",
+      "alts": [
+        "vermilion",
+        "cinnabar",
+        "China red",
+        "mercuric sulfide",
+        "mercuric sulphide"
+      ],
+      "roles": [
+        "Pigment"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "walnut": {
+      "label": "Walnut",
+      "alts": [],
+      "roles": [
+        "Nut"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "waste": {
+      "label": "Waste",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "whale fin": {
+      "label": "Whale fin",
+      "alts": [],
+      "roles": [
+        "Whale Part"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "wheat": {
+      "label": "Wheat",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "wheatmeal": {
+      "label": "Wheatmeal",
+      "alts": [],
+      "roles": [
+        "Corn"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "wolf": {
+      "label": "Wolf",
+      "alts": [],
+      "roles": [
+        "Fur"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "wood": {
+      "label": "Wood",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "wool": {
+      "label": "Wool",
+      "alts": [
+        "alpaca",
+        "vicuna",
+        "vicuña",
+        "llama",
+        "beaver",
+        "coney",
+        "goat",
+        "hare",
+        "sheep",
+        "lamb"
+      ],
+      "roles": [],
+      "notes": [
+        "I'm still a little confused about the best way to deal with a commodity like wool. Should I create an individual entry for each type, i.e. lamb wool, alpaca wool, or should I just stick with Wool and add the different types as alternates? With furs and skins I created individual entries for each one, but this would create a situation where we have Lamb, Lamb Skin, Lamb Wool. What is the best way to set it up so the computer program can distinguish between them."
+      ],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "yarn": {
+      "label": "Yarn",
+      "alts": [
+        "cable",
+        "camel",
+        "mohair"
+      ],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "yeast": {
+      "label": "Yeast",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "yellow berry": {
+      "label": "Yellow berry",
+      "alts": [],
+      "roles": [
+        "Fruit"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "zaffre": {
+      "label": "Zaffre",
+      "alts": [],
+      "roles": [
+        "Pigment"
+      ],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    },
+    "zephyr yarn": {
+      "label": "Zephyr yarn",
+      "alts": [],
+      "roles": [],
+      "notes": [],
+      "sources": [
+        "1866 British Customs Commodities List (Danika / HGIS Lab)"
+      ],
+      "definition": ""
+    }
+  }
+}
