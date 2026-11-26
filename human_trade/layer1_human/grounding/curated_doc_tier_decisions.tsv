@@ -299,3 +299,4 @@ htc:doc_ochro	Ochro	refile	htc:0085	Vegetables Unenumerated	Okra is a vegetable,
 htc:doc_vulture_feathers	Vulture Feathers	refile	htc:1590	Feathers of other sorts Unenumerated	Feathers; subsumed under Feathers of other sorts Unenumerated.
 htc:doc_mate	Mate	drop			Cited entry is the ship's officer; Paraguay tea is htc:doc_yerba_mate.
 htc:doc_raccoon	Raccoon	same_as_layer1	htc:0249	Skins Furs Pelts Racoon	Already a Layer-1 customs heading under the spelling 'Racoon' (150 rows).
+htc:doc_calisaya_bark	Calisaya Bark	refile	htc:0199	Bark Peruvian	A named commercial sort of Peruvian bark (Simmonds 1892, Cinchona calisaya), not an unenumerated drug; filed under the bark's own customs heading. The headword was OCR-misread as 'Calisata-Bank' (see dictionaries/curated_headword_corrections.tsv).

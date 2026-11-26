@@ -5,9 +5,10 @@
   "ontology_namespace": "https://open-empire.hgislab.usask.ca/ns#",
   "wikidata_snapshot": "2026-11-09",
   "curated_tables": {
-    "curated_doc_tier_decisions.tsv": 298,
+    "curated_doc_tier_decisions.tsv": 299,
     "curated_end_use_link_decisions.tsv": 120,
     "curated_field_fixes.tsv": 172,
+    "curated_gazetteer_forms.tsv": 36,
     "curated_overrides.tsv": 285,
     "curated_scoped_readings.tsv": 3
   },
@@ -40,28 +41,28 @@
       "bytes": 2578880
     },
     "human_trade/layer1_human/grounding/commodities_skos_extended.jsonld": {
-      "sha256": "73c5b25f7e927f7c20b22b018cb1bd7f4738ef490b3ebcaa594d33de836471ba",
-      "bytes": 4560540
+      "sha256": "2a1d1108344c8020baf7f7db34f2e2010d361fa5dfa24db417aa42788b42170c",
+      "bytes": 4560553
     },
     "human_trade/layer1_human/grounding/commodities_skos_extended.ttl": {
-      "sha256": "6a1169ca08bacce814f661e41559c654b8cd0aeedb59637776890831a7b2bfa7",
-      "bytes": 3105281
+      "sha256": "16c19bb72a2466b0de916a3f125b668cc97710d3db6c78518248bb369798f6d1",
+      "bytes": 3105294
     },
     "human_trade/layer1_human/grounding/commodity_gazetteer.jsonl": {
-      "sha256": "c7e6e90b9e7400e70ef16ac535a8c0650a45f98e139147e1e5c60ba7369d87b0",
-      "bytes": 1613119
+      "sha256": "00c001a6f3f209a745c10f4de31283ee5283f42b2be9b4bdefb96aeb0fe84657",
+      "bytes": 1701778
     },
     "human_trade/layer1_human/grounding/commodity_gazetteer.tsv": {
-      "sha256": "85fdc5f79866762e15d21d05c558ef967087db6c121db87c22b654e0845f94ab",
-      "bytes": 730398
+      "sha256": "777acff5b95c628bd389f276f76d86d06e7271230ad87fc2e1cc73ffc4f8c76b",
+      "bytes": 738230
     },
     "human_trade/layer1_human/grounding/commodity_rejections.tsv": {
       "sha256": "d2bf1ead2cdd76a6dc720fd891ba0c54c2c0d589fb6f6846a678d650d810faf6",
       "bytes": 2010
     },
     "human_trade/layer1_human/grounding/curated_doc_tier_decisions.tsv": {
-      "sha256": "7753dd2e7be6e652764cccea52d440e21ac075d3c5a2c1a3d023fe67d0a70b58",
-      "bytes": 56187
+      "sha256": "44f1a0efbc591a64d8ddd0e908cce08e4b631542db1c4757ea0ef53759088c00",
+      "bytes": 56501
     },
     "human_trade/layer1_human/grounding/curated_end_use_link_decisions.tsv": {
       "sha256": "98fd416d490ec8e464b6c098baf8fe384cd3719376882e5e4f08d61ceb7843ad",
@@ -70,6 +71,10 @@
     "human_trade/layer1_human/grounding/curated_field_fixes.tsv": {
       "sha256": "730ec8e06439807cf51b85c33dbec2fd485916cb7076faa2a6e0d788a26caeab",
       "bytes": 26601
+    },
+    "human_trade/layer1_human/grounding/curated_gazetteer_forms.tsv": {
+      "sha256": "644d05589d6c3e40699087435b23ca5a3d386383859537b1ae6adfa11d402528",
+      "bytes": 6948
     },
     "human_trade/layer1_human/grounding/curated_overrides.tsv": {
       "sha256": "57a294369f58ab55b606409e5b7b62026e5490dd2da6c5d564055486a3f7ec04",
@@ -80,8 +85,8 @@
       "bytes": 1374
     },
     "human_trade/layer1_human/grounding/document_attested_concepts.jsonl": {
-      "sha256": "edd7c221d419e7206d6f59a37d222ec8d10a5e0cd92d12cc37b8187336ce54ff",
-      "bytes": 914842
+      "sha256": "15c8a8ef6ded8d5ff2f7ab999a932a9fca6ca5ce7809f68fbe65850f24c175f3",
+      "bytes": 915146
     },
     "human_trade/layer1_human/grounding/end_use_industries.json": {
       "sha256": "c0dd9b6aac591c26807106fe8f63180d75f130bd697480de33aa7c04eb68a391",
@@ -112,8 +117,8 @@
       "bytes": 1294343
     },
     "human_trade/layer1_human/grounding/open_empire_layer1_skos_v4.html": {
-      "sha256": "925d5802d8e638ea990cdf90bae4beafb48a9e5f8363cfca407ae21132ad9a4c",
-      "bytes": 3613189
+      "sha256": "098f1d2f6e75a2a77d9e05375689dab97db844757c370bc07cf8f692e50b6c08",
+      "bytes": 3613193
     },
     "human_trade/layer1_human/grounding/place_year_polities.tsv": {
       "sha256": "fcd44f4380759e99eb26db45594e111e7efafe0d0b61f081db8f7c40a54111b7",
@@ -140,11 +145,15 @@
       "bytes": 212790
     },
     "dictionaries/unenumerated_commodities_from_books.jsonl": {
-      "sha256": "d824a2e287b80bf3b9d4562d5f6146501f783804f64ebdfdd59c545c9dae1dea",
+      "sha256": "1411210f58c69de4c4ab6118795e7217e6a40663cb64d594c7c700106a38bea6",
       "bytes": 511259
     },
+    "dictionaries/curated_headword_corrections.tsv": {
+      "sha256": "903fa59bbea90061ff6ec275d00a3718c64174d41eed2eb4f929e5288e61cc23",
+      "bytes": 542
+    },
     "dictionaries/unenumerated_commodities_from_books.tsv": {
-      "sha256": "3870e5521908f626d6f6da06a4b44992df8ed333b75a651af8cc55e73a518b98",
+      "sha256": "fd27ba9253aafae463e0a3d3d67782bdb9ac32a408c5063aa2b5d1722557b8f8",
       "bytes": 199840
     },
     "human_trade/layer1_human/human_trade_observations.tsv.gz": {
@@ -152,8 +161,8 @@
       "bytes": 4348312
     },
     "docs/index.html": {
-      "sha256": "925d5802d8e638ea990cdf90bae4beafb48a9e5f8363cfca407ae21132ad9a4c",
-      "bytes": 3613189
+      "sha256": "098f1d2f6e75a2a77d9e05375689dab97db844757c370bc07cf8f692e50b6c08",
+      "bytes": 3613193
     },
     "human_trade/layer1_human/names/commodities.tsv": {
       "sha256": "a210a544064a5a9e5b2d15f2964362947908779ea74604c4279252dcca148824",

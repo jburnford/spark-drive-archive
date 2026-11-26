@@ -36,6 +36,8 @@ from pathlib import Path
 
 import duckdb
 
+import headword_corrections as hw_corrections
+
 ROOT = Path(__file__).resolve().parents[1]
 DICT_DIR = ROOT / "dictionaries"
 GROUND = ROOT / "human_trade" / "layer1_human" / "grounding"
@@ -453,6 +455,48 @@ def load_danika_and_1866():
 
 
 DOC_DECISIONS_PATH = GROUND / "curated_doc_tier_decisions.tsv"
+GAZ_FORMS_PATH = GROUND / "curated_gazetteer_forms.tsv"
+
+
+def load_gazetteer_forms():
+    """Curated add / remove / ambiguous surface forms for the gazetteer (see the header of the file).
+
+    Checked here, before anything is written: valid actions and form types, a rationale on every row, a form that
+    survives normalisation, no duplicate row, and no form both added and removed on one concept.
+    """
+    rows, seen = [], {}
+    if not GAZ_FORMS_PATH.exists():
+        return rows
+    with open(GAZ_FORMS_PATH, encoding="utf-8") as fh:
+        for r in csv.DictReader((l for l in fh if not l.startswith("#")), delimiter="\t"):
+            where = f"curated_gazetteer_forms.tsv: {r['concept_id']} {r['action']} {r['surface_form']!r}"
+            if r["action"] not in ("add", "remove", "ambiguous"):
+                raise ValueError(f"{where}: bad action")
+            if not (r["rationale"] or "").strip():
+                raise ValueError(f"{where}: no rationale")
+            sk = v4.norm_key((r["surface_form"] or "").strip())
+            if not sk or len(sk) < 3:
+                raise ValueError(f"{where}: the form does not survive normalisation (needs three characters)")
+            if r["action"] == "add" and r["form_type"] not in ("text_form", "source_plant"):
+                raise ValueError(f"{where}: an add needs form_type text_form or source_plant")
+            if r["action"] != "add" and (r["form_type"] or "").strip():
+                raise ValueError(f"{where}: form_type is only for add rows")
+            key = (r["concept_id"], sk)
+            if r["action"] in seen.get(key, ()):
+                raise ValueError(f"{where}: duplicate row")
+            if {r["action"]} | set(seen.get(key, ())) >= {"add", "remove"}:
+                raise ValueError(f"{where}: the same form is both added and removed")
+            seen.setdefault(key, []).append(r["action"])
+            rows.append(r)
+    return rows
+    with open(GAZ_FORMS_PATH, encoding="utf-8") as fh:
+        for r in csv.DictReader((l for l in fh if not l.startswith("#")), delimiter="\t"):
+            if r["action"] not in ("add", "remove", "ambiguous"):
+                raise ValueError(f"curated_gazetteer_forms.tsv: bad action {r['action']} for {r['concept_id']}")
+            if not (r["surface_form"] or "").strip() or not (r["rationale"] or "").strip():
+                raise ValueError(f"curated_gazetteer_forms.tsv: {r['concept_id']} needs a surface form and a rationale")
+            rows.append(r)
+    return rows
 SMALL_WORDS = {"of", "and", "or", "the", "de", "in", "for"}
 
 
@@ -548,10 +592,11 @@ def main():
                 binom_map[d["binomial"].lower()] = d
 
     by_hw = defaultdict(list)
+    hw_fixes, hw_used = hw_corrections.load(), set()
     for line in open(DICT_DIR / "commercial_dictionaries_lexicon.jsonl", encoding="utf-8"):
         if not line.strip():
             continue
-        d = json.loads(line)
+        d = hw_corrections.apply(json.loads(line), hw_fixes, hw_used)
         defn = (d.get("definition") or "").strip()
         k = d.get("norm_headword") or v4.norm_key(d.get("headword") or "")
         if not k or len(k) < 3 or len(k) > 42 or len(defn) < 35:
@@ -562,8 +607,20 @@ def main():
             continue
         by_hw[k].append(d)
 
+    hw_corrections.check_all_used(hw_fixes, hw_used)
+
+    # Curated gazetteer forms are read and checked now, before any output is written.
+    gaz_forms = load_gazetteer_forms()
+
     # 3. Load Danika Drugs + 1866 Customs List
     danika_items = load_danika_and_1866()
+    # Headings whose 1866 / drugs-project namesake is a different substance (curated_field_fixes.tsv: bridge_1866 drop),
+    # e.g. customs 'Castor' = beaver castoreum, drugs-project 'Castor' = castor oil. Nothing is carried across for these.
+    not_same_substance = set()
+    with open(GROUND / "curated_field_fixes.tsv", encoding="utf-8") as fh:
+        for r in csv.DictReader((l for l in fh if not l.startswith("#")), delimiter="\t"):
+            if r["field"] == "bridge_1866" and r["action"] == "drop":
+                not_same_substance.add(r["concept_id"])
     print(f"Loaded {len(l1_concepts):,} Layer-1 concepts, {len(danika_items):,} Danika/1866 entries, {len(by_hw):,} dictionary headwords.", flush=True)
 
     # Enrich Layer-1 existing concepts' altLabels / multi-use roles in memory for the text-mining gazetteer!
@@ -571,7 +628,7 @@ def main():
     l1_extra_roles = defaultdict(list)
     for dk, di in danika_items.items():
         target = l1_by_key.get(dk) or (l1_by_key.get(v4.singularize(dk)) if " " not in dk else None)
-        if target:
+        if target and target["concept_id"] not in not_same_substance:
             cid = target["concept_id"]
             existing = {target["skos_prefLabel"].lower()} | {x.lower() for x in (target.get("skos_altLabels") or [])}
             for a in di["alts"]:
@@ -944,11 +1001,18 @@ def main():
     # 6. Export Flat Text-Mining Gazetteer (Layer-1 Customs Core + Document-Attested Tier)
     gaz_rows = []
     seen_surface = set()
+    gaz_remove = {(r["concept_id"], v4.norm_key(r["surface_form"])): r for r in gaz_forms if r["action"] == "remove"}
+    gaz_remove_used = set()
+    gaz_meta = {}
 
     def emit_gaz(cid, pref, surface, form_type, basis, grp_id, sec_id, sub_id, roles, wd_qid, taxa, sources):
         s_clean = (surface or "").strip()
         sk = v4.norm_key(s_clean)
         if not sk or len(sk) < 3 or (sk, cid) in seen_surface:
+            return
+        gaz_meta.setdefault(cid, (pref, basis, grp_id, sec_id, sub_id, roles, wd_qid, taxa, sources))
+        if (cid, sk) in gaz_remove:
+            gaz_remove_used.add((cid, sk))
             return
         seen_surface.add((sk, cid))
         gaz_rows.append({
@@ -965,6 +1029,7 @@ def main():
             "wikidata_qid": wd_qid or "",
             "source_taxa": taxa,
             "sources": sources[:3],
+            "ambiguous_alone": "",
         })
 
     for c in l1_concepts:
@@ -998,6 +1063,32 @@ def main():
         for t in taxa:
             emit_gaz(cid, pref, t, "latin_binomial", "document_attested", grp_id, sec_id, sub_id, roles, wd_q, taxa, srcs)
 
+    # Curated forms: every row must still apply, so a stale row stops the build instead of passing silently.
+    built_surface = set(seen_surface)   # forms that came from the vocabulary itself, before any curated add
+    for r in gaz_forms:
+        cid, sk = r["concept_id"], v4.norm_key(r["surface_form"])
+        if cid not in gaz_meta:
+            raise ValueError(f"curated_gazetteer_forms.tsv: {cid} is not in the gazetteer")
+        if gaz_meta[cid][0] != r["pref_label"]:
+            raise ValueError(f"curated_gazetteer_forms.tsv: {cid} label guard {r['pref_label']!r} != {gaz_meta[cid][0]!r}")
+        if r["action"] == "remove" and (cid, sk) not in gaz_remove_used:
+            raise ValueError(f"curated_gazetteer_forms.tsv: remove {r['surface_form']!r} matched nothing on {cid}")
+        if r["action"] == "add":
+            if (sk, cid) in seen_surface:
+                raise ValueError(f"curated_gazetteer_forms.tsv: add {r['surface_form']!r} is already a form of {cid}")
+            others = sorted(c for (s, c) in built_surface if s == sk and c != cid)
+            if others:
+                raise ValueError(f"curated_gazetteer_forms.tsv: add {r['surface_form']!r} on {cid} is already a form of {others}; add an 'ambiguous' decision there or choose another form")
+            pref, basis, grp_id, sec_id, sub_id, roles, wd_qid, taxa, sources = gaz_meta[cid]
+            emit_gaz(cid, pref, r["surface_form"], r["form_type"], basis, grp_id, sec_id, sub_id, roles, wd_qid, taxa, sources)
+    for r in gaz_forms:
+        if r["action"] == "ambiguous":
+            hit = [g for g in gaz_rows if g["concept_id"] == r["concept_id"] and g["surface_norm"] == v4.norm_key(r["surface_form"])]
+            if not hit:
+                raise ValueError(f"curated_gazetteer_forms.tsv: ambiguous {r['surface_form']!r} is not a form of {r['concept_id']}")
+            for g in hit:
+                g["ambiguous_alone"] = "1"
+
     gaz_jsonl = GROUND / "commodity_gazetteer.jsonl"
     with open(gaz_jsonl, "w", encoding="utf-8") as fh:
         for r in gaz_rows:
@@ -1009,13 +1100,13 @@ def main():
         w.writerow([
             "surface_form", "surface_norm", "form_type", "concept_id", "pref_label",
             "attestation_basis", "commodity_group", "macro_sector", "subsumed_in_customs_id",
-            "multi_use_roles", "wikidata_qid", "source_taxa", "sources",
+            "multi_use_roles", "wikidata_qid", "source_taxa", "sources", "ambiguous_alone",
         ])
         for r in gaz_rows:
             w.writerow([
                 r["surface_form"], r["surface_norm"], r["form_type"], r["concept_id"], r["pref_label"],
                 r["attestation_basis"], r["commodity_group"], r["macro_sector"], r["subsumed_in_customs_id"],
-                "; ".join(r["multi_use_roles"]), r["wikidata_qid"], "; ".join(r["source_taxa"]), "; ".join(r["sources"]),
+                "; ".join(r["multi_use_roles"]), r["wikidata_qid"], "; ".join(r["source_taxa"]), "; ".join(r["sources"]), r["ambiguous_alone"],
             ])
 
     # 7. Export Extended LINCS-Compliant SKOS TTL + JSON-LD (`commodities_skos_extended.{ttl,jsonld}`)
@@ -1141,7 +1232,7 @@ def main():
         f"- **Layer-1 Customs-Enumerated Core (`htc:0001`–`htc:2066`):** **{len(l1_concepts):,}** concepts (enriched with {sum(len(v) for v in l1_extra_alts.values()):,} additional vernacular `altLabel`s from Danika's Drugs Project & 1866 Customs List)",
         f"- **Document-Attested Non-Enumerated Tier (`htc:doc_*`):** **{len(doc_concepts):,}** concepts ({dan_doc:,} from Danika's Drugs / 1866 Customs List + {len(doc_concepts) - dan_doc:,} from the 6 commercial dictionaries; **{wd_doc:,}** grounded to verified Wikidata QIDs; **{tx_doc:,}** with verified CoL/Wikidata Linnaean taxa)",
         f"- **Total Combined SKOS Concepts (`commodities_skos_extended.ttl`):** **{len(l1_concepts) + len(doc_concepts):,}** verbatim + document-attested concepts",
-        f"- **Total Text-Mining Surface Forms (`commodity_gazetteer.tsv`):** **{len(gaz_rows):,}** normalized strings (`prefLabel` + `altLabel` + Latin binomials)",
+        f"- **Total Text-Mining Surface Forms (`commodity_gazetteer.tsv`):** **{len(gaz_rows):,}** form-concept pairs over **{len({g['surface_norm'] for g in gaz_rows}):,}** distinct normalised strings (`prefLabel` + `altLabel` + Latin binomials + curated `text_form` and `source_plant` forms; **{sum(1 for g in gaz_rows if g['ambiguous_alone']):,}** flagged `ambiguous_alone`). A hit is a retrieval candidate, not a classified shipment.",
         "",
         "## Document-Attested Concepts by Subsumed Customs Catch-All",
         "| Catch-All Customs Heading | Document-Attested Concepts |",

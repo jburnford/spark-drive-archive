@@ -16,6 +16,8 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
+import headword_corrections as hw_corrections
+
 ROOT = Path(__file__).resolve().parents[1]
 DICT_DIR = ROOT / "dictionaries"
 GROUND = ROOT / "human_trade" / "layer1_human" / "grounding"
@@ -293,10 +295,11 @@ def main():
 
     # 3. Group all 27,325 dictionary entries by normalized headword
     by_hw = defaultdict(list)
+    hw_fixes = hw_corrections.load()
     for line in open(LEXICON_PATH, encoding="utf-8"):
         if not line.strip():
             continue
-        d = json.loads(line)
+        d = hw_corrections.apply(json.loads(line), hw_fixes)
         defn = (d.get("definition") or "").strip()
         hw = (d.get("headword") or "").strip()
         k = d.get("norm_headword") or norm_key(hw)

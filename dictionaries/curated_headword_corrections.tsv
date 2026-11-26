@@ -1,0 +1,3 @@
+# Dictionary headwords misread by the OCR, corrected where the lexicon is read (scripts/headword_corrections.py). The lexicon file keeps the parser's output.
+source_work	headword_as_extracted	corrected_headword	evidence
+simmonds_1892	CALISATA-BANK	CALISAYA-BARK	The entry defines 'a valuable cinchona bark obtained from Cinchona Calisaya, a Bolivian tree' (scan p. 74, https://archive.org/details/b21780535/page/n74); two independent reviews of 25 Nov 2026 read the printed headword as CALISAYA-BARK. Found by tagging the Kew Ceylon volumes.

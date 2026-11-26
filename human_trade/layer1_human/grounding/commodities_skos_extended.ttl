@@ -52960,21 +52960,21 @@ htc:doc_calamander_wood a skos:Concept, crm:E55_Type ;
     skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0070 (Wood Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 73."@en ;
     oe:dictionarySource <https://archive.org/details/b21780535/page/n73> .
 
-htc:doc_calisata_bank a skos:Concept, crm:E55_Type ;
-    rdfs:label "Calisata Bank"@en ;
+htc:doc_calisaya_bark a skos:Concept, crm:E55_Type ;
+    rdfs:label "Calisaya Bark"@en ;
     skos:inScheme htc:scheme ;
-    skos:notation "doc_calisata_bank" ;
-    skos:prefLabel "Calisata Bank"@en ;
+    skos:notation "doc_calisaya_bark" ;
+    skos:prefLabel "Calisaya Bark"@en ;
     skos:broader htc:grp_drugs_medicinal_botanicals ;
     oe:attestationBasis "document_attested" ;
-    oe:subsumedInCustomsHeading htc:0122 ;
+    oe:subsumedInCustomsHeading htc:0199 ;
     oe:groundingStatus "document_attested_local" ;
     oe:ghostAcresDomain "drugs_botanicals_chemicals" ;
-    oe:landBasis "unclassified" ;
-    oe:harvestMode "unclassified" ;
-    oe:sitcCode "oe:sitcUnassigned" ;
+    oe:landBasis "terrestrial_crop" ;
+    oe:harvestMode "cultivated" ;
+    oe:sitcCode "SITC4_54_Medicinal_Pharmaceutical" ;
     skos:definition "a valuable cinchona bark obtained from *Cinchona Calisaya*, a Bolivian tree, which is rich in the alkaloid. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 74]"@en ;
-    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 74."@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0199 (Bark Peruvian). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 74."@en ;
     oe:dictionarySource <https://archive.org/details/b21780535/page/n74> ;
     oe:sourceTaxon wd:Q15399753 .
 

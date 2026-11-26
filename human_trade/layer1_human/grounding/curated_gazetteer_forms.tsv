@@ -1,0 +1,40 @@
+# Curated surface forms for the text-mining gazetteer, applied by scripts/build_commodity_gazetteer.py. They change the gazetteer only, never the SKOS vocabulary.
+# add = a word used in running text for this heading (form_type text_form), or a plant that yields it (form_type source_plant: evidence of the commodity only in context); remove = a form wrongly attached; ambiguous = a form that is also an ordinary word or has two senses (flagged in 'ambiguous_alone', not removed).
+# evidence_pages = page mentions in the first stress test: Kew Miscellaneous Reports, Ceylon volumes (MR 284-296), 2,009 transcribed pages, tagged 25 Nov 2026. Blank = added by reasoning, not counted there. A hit is a retrieval candidate, not a classified shipment.
+concept_id	pref_label	action	surface_form	form_type	evidence_pages	rationale
+htc:0138	Cocoa	add	cacao	text_form	175	The usual word in botanical and planting correspondence. It can also mean the tree or the crop, not a consignment of beans.
+htc:0460	Spices Cinnamon	add	cinnamon	text_form	26	Plain word for an inverted customs heading. The tree and cinnamon oil (htc:doc_cinnamon_oil) need context.
+htc:0394	Wood and Timber Hewn Teak	add	teak	text_form	28	Plain word for the timber. The word alone does not show the timber was hewn, the only teak heading in the register.
+htc:1134	Wood and Timber Hardwoods Ebony	add	ebony	text_form	29	Plain word for an inverted customs heading; green ebony is a separate dyewood concept.
+htc:0182	Mahogany - Furniture, Hardwoods or Veneers	add	mahogany	text_form	19	Plain word for a qualified customs heading; does not fix species or form.
+htc:0843	Cocoa nuts	add	coconut	text_form	36	The coconut reading of this heading. The register supports that reading for the rows entered by number (1840, 1856-66) and leaves eight earlier rows entered by weight unresolved between coconut and cacao; a tag points to the reading, not to every row.
+htc:0843	Cocoa nuts	add	cocoa-nut	text_form		Period spelling of coconut; also used loosely of cacao, so flagged below.
+htc:0843	Cocoa nuts	add	coco-nut	text_form		Period spelling of coconut used by Simmonds; flagged below for the same reason.
+htc:0701	Rice Rough and in the Husk	add	paddy	text_form	37	Paddy is unhusked rice (Tennent, Ceylon, 1859). Paddy land and the standing crop are not consignments.
+htc:1906	Rice in the Husk	add	paddy	text_form	37	The second customs heading for the same state; both are returned, as for 'rubber'.
+htc:0199	Bark Peruvian	add	peruvian bark	text_form		Natural word order of the inverted heading.
+htc:0199	Bark Peruvian	add	chinchona	source_plant	15	Period spelling of Cinchona (Markham 1862 uses it for plants and seeds); evidence of the bark trade only in context.
+htc:0015	Caoutchouc	add	hevea	source_plant	35	Genus of the Para rubber tree. A source plant of rubber: plants, seeds and cultivation are not shipments of rubber. Given under both general rubber headings, as 'rubber' is.
+htc:0142	India Rubber	add	hevea	source_plant	35	Genus of the Para rubber tree. A source plant of rubber: plants, seeds and cultivation are not shipments of rubber. Given under both general rubber headings, as 'rubber' is.
+htc:0015	Caoutchouc	add	castilloa	source_plant	59	Period name of the Central American rubber trees (Castilla elastica). A source plant of rubber: plants, seeds and cultivation are not shipments of rubber. Given under both general rubber headings, as 'rubber' is.
+htc:0142	India Rubber	add	castilloa	source_plant	59	Period name of the Central American rubber trees (Castilla elastica). A source plant of rubber: plants, seeds and cultivation are not shipments of rubber. Given under both general rubber headings, as 'rubber' is.
+htc:0015	Caoutchouc	add	manihot glaziovii	source_plant	22	The Ceara rubber tree. A source plant of rubber: plants, seeds and cultivation are not shipments of rubber. Given under both general rubber headings, as 'rubber' is.
+htc:0142	India Rubber	add	manihot glaziovii	source_plant	22	The Ceara rubber tree. A source plant of rubber: plants, seeds and cultivation are not shipments of rubber. Given under both general rubber headings, as 'rubber' is.
+htc:0015	Caoutchouc	add	landolphia	source_plant	15	Genus of the African rubber vines. A source plant of rubber: plants, seeds and cultivation are not shipments of rubber. Given under both general rubber headings, as 'rubber' is.
+htc:0142	India Rubber	add	landolphia	source_plant	15	Genus of the African rubber vines. A source plant of rubber: plants, seeds and cultivation are not shipments of rubber. Given under both general rubber headings, as 'rubber' is.
+htc:0015	Caoutchouc	add	ceara rubber	text_form		Trade name of the rubber from Manihot glaziovii; given under both general rubber headings.
+htc:0142	India Rubber	add	ceara rubber	text_form		Trade name of the rubber from Manihot glaziovii; given under both general rubber headings.
+htc:0327	Oil Castor	add	castor oil	text_form		Natural word order of the inverted heading, so the phrase is not caught by the shorter 'Castor' (beaver castoreum).
+htc:0436	Castor	ambiguous	castor			In botanical and agricultural text 'castor' is the castor-oil plant; this heading is beaver castoreum.
+htc:0843	Cocoa nuts	ambiguous	cocoa-nut			Used of both the coconut and, loosely, cacao.
+htc:0843	Cocoa nuts	ambiguous	coco-nut			Used of both the coconut and, loosely, cacao.
+htc:1642	Down	ambiguous	down			Ordinary word in running text (208 pages in the Kew test); match only with other evidence of the commodity sense.
+htc:1042	Dates	ambiguous	dates			Ordinary word in running text (148 pages, nearly all calendar dates in the Kew test); match only with other evidence of the commodity sense.
+htc:1042	Dates	ambiguous	date			Ordinary word in running text (as above in the Kew test); match only with other evidence of the commodity sense.
+htc:1908	Blue	ambiguous	blue			Ordinary word in running text (137 pages in the Kew test); match only with other evidence of the commodity sense.
+htc:1656	Ink	ambiguous	ink			Ordinary word in running text (113 pages, mostly notes on the manuscript in the Kew test); match only with other evidence of the commodity sense.
+htc:2028	Bear	ambiguous	bear			Ordinary word in running text (86 pages, the verb in the Kew test); match only with other evidence of the commodity sense.
+htc:2024	Type	ambiguous	type			Ordinary word in running text (41 pages in the Kew test); match only with other evidence of the commodity sense.
+htc:2041	Specimens	ambiguous	specimens			Ordinary word in running text (95 pages, botanical specimens in the Kew test); match only with other evidence of the commodity sense.
+htc:1170	Telegraph	ambiguous	telegraph			Ordinary word in running text (35 pages in the Kew test); match only with other evidence of the commodity sense.
+htc:2046	Specie	ambiguous	specie			Metallic money. A matcher that folds plurals reads 'species' as this form (it did in the Kew test); the builder's own normaliser keeps them apart.
