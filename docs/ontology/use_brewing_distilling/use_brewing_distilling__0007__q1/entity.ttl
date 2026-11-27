@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_brewing_distilling/use_brewing_distilling__0007__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 38" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n38> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Barley used in Brewing, Malting & Distilling: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 38"@en ;
+    <ontology/quoteText/#resource> "BARLEY: a common grain, the genus Hordeum, of which there are many cultivated varieties used for human food, for cattle-feeding, and especially for malting. Barley is valuable for culinary purposes, especially for thickening broths, soups, and"@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

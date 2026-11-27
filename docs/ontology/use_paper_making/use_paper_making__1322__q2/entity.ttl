@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_paper_making/use_paper_making__1322__q2/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 74" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n74/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bleaching Materials used in Paper Making & Cardboard: Watt (1908), Commercial Products of India, scan p. 74"@en ;
+    <ontology/quoteText/#resource> "But one of the latest successful processes for the manufacture of caustic soda involves the separation of chlorine (from which bleaching powder is prepared) by the electrolytic decomposition of dilute brine, and as both caustic soda and bleaching powder are now largely imported for use in paper-making, there would be a market for both, apart from the require..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_chamois_leather/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Chamois Leather"@en ;
+    skos:broader <id/grp/grp_tanned_leather/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q1450533> ;
+    skos:definition "leather made from various kinds of skins, dressed with fish-oil. The oil is hammered or beaten by a mill into the pores of the skin, which is afterwards partially dried, and washed in strong alkali, when it becomes very soft and pliable. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 94]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_chamois_leather" ;
+    skos:prefLabel "Chamois Leather"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0106 (Leather). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 94."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n94> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/sitcCode/#resource> "SITC4_61_Leather_and_Dressed_Furskins" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0106/#concept> .

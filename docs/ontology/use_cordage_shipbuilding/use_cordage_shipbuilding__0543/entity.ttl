@@ -1,0 +1,14 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0543/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Pitch used in Shipbuilding, Rope, Cordage & Sailcloth"@en ;
+    skos:editorialNote "Review decision (prune): Role corrected from the quote itself: pitch is used for covering ships' bottoms."@en ;
+    <ontology/assertsCommodity/#resource> <id/05/0543/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_cordage_shipbuilding/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0543__q1/#resource>, <ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0543__q2/#resource>, <ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0543__q3/#resource> ;
+    <ontology/productionRole/#resource> "preservative_or_coating" ;
+    <ontology/reviewStatus/#resource> "reviewed" .

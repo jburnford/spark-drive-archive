@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/17/1717/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Iron and Steel Wrought or Manufactured Ornamental"@en ;
+    skos:broader <id/sub/sub_metal_mach_hd_iron_and_steel_wrought_or/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_metal_machinery_hardware): Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries. Layer-1 observations: 6 rows, 1856–1861. Series: HCPP_Annual Statement of Trade ×6. Units: CWTS (Hundredweights) ×6. Top routes: France → United Kingdom ×2; World → United Kingdom ×2; Other Parts → United Kingdom ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1717" ;
+    skos:prefLabel "Iron and Steel Wrought or Manufactured Ornamental"@en ;
+    skos:related <id/03/0305/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1861"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q677> ;
+    <ontology/materialConcept/#resource> <id/03/0305/#concept> ;
+    <ontology/observationCount/#resource> "6"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_69_7_Metalwares_and_Machinery" ;
+    <ontology/substanceHead/#resource> "Iron and Steel Wrought or" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

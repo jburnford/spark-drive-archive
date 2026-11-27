@@ -1,0 +1,24 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_cardamom/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cardamom"@en ;
+    skos:altLabel "amomum"@en, "elettaria"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q14625808> ;
+    skos:definition "Cardamom is a spice made from the dried seed capsules of cardamom plants. It is used in an assortment of remedies, and is listed in the Compendium as a Stomachic and Cordial. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_cardamom" ;
+    skos:prefLabel "Cardamom"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865), 1866 British Customs Commodities List (Danika / HGIS Lab)."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_07_Coffee_Tea_Cocoa_Spices" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_pharmaceuticals/#concept> .

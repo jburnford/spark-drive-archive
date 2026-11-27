@@ -1,0 +1,22 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_court_plaster/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Court Plaster"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:definition "(GER. *Englisches pflaster*. DU. *Engelsch pleister*. DA. *Engelskt plaster*. SW. *Engelskt pläster*. FR. *Taffetas d'Angleterre*. IT. *Taffeta d'Inghilterra*. SR. *Tafetan embalsamado de Inglaterra*. PORT. *Tafeta de Inglaterra*. LAT. *Emplastrum Anglicanum glutinans*,) a glutinous salve laid on fine black silk, and used as a healing plaster for slight sores. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 255]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_court_plaster" ;
+    skos:prefLabel "Court Plaster"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 255, P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 123."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n123>, <https://archive.org/details/generalcommercia00mort/page/n255>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/sitcCode/#resource> "SITC4_27_Crude_Fertilizers_and_Minerals" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> .

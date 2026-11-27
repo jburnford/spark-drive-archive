@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_sugar_refining/use_sugar_refining__doc_albumen__q2/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 950" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n950/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Albumen used in Sugar Refining: Mortimer (1823), General Commercial Dictionary, scan p. 950"@en ;
+    <ontology/quoteText/#resource> "To produce this article the following is the process: Raw or muscovado sugar is dissolved in water, mixed with lime, clarified by means of bullock's blood, boiled down to a 958"@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0730__q2/#resource> dcterms:bibliographicCitation "J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 574" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n574> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Divi Divi used in Leather Tanning, Tawing & Currying: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 574"@en ;
+    <ontology/quoteText/#resource> "DIVI DIVI: The commercial name of the pod of the Cesalpinia coriaria, a leguminous plant, found in low, marshy situations in the north parts of South America, principally in New Granada and Venezuela, and in some parts of the West Indies. It is used both for dyeing and tanning, but chiefly for the latter purpose. The pod is from 2 to 3 inches in length by $\\..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

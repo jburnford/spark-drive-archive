@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/18/1884/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Saw Logs and Shingle Bolts - Spruce, 50 cts. per M. Feet"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_8421>, <http://vocab.getty.edu/aat/300011914>, <http://www.wikidata.org/entity/Q287>, <http://zbw.eu/stw/descriptor/14150-4> ;
+    skos:broader <id/sub/sub_hewn_round_wd_q287/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_hewn_round_timber; processing_state=unspecified): Saw logs / shingle bolts / timber 'not sawn or split' are unsawn round wood; classifier filed them as sawn lumber. Layer-1 observations: 4 rows, 1866–1866. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×4. Units: M. Feet ×4. Top routes: Hemmingford QC → United States ×1; Stanstead QC → United States ×1; Hemmingford QC → All Countries ×1; Stanstead QC → All Countries ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1884" ;
+    skos:prefLabel "Saw Logs and Shingle Bolts - Spruce, 50 cts. per M. Feet"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1867"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/substanceHead/#resource> "Saw Logs and Shingle Bolts" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

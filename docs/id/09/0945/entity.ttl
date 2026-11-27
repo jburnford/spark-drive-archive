@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/09/0945/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Quills Goose"@en ;
+    skos:broader <id/grp/grp_animal_fibres/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_animal_fibres): Quills are feathers (cf. Feathers, htc:0247). Layer-1 observations: 28 rows, 1820–1852. Series: KEW_CUST 4 ×28. Units: Number ×28. Top routes: Canada → England ×24; Hudsons Bay → England ×2; Canada → Great Britain ×1; Canada → Other English Ports ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0945" ;
+    skos:prefLabel "Quills Goose"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1820"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1852"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "28"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_26_Textile_Fibres" ;
+    <ontology/substanceHead/#resource> "Quills Goose" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

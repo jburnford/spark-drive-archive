@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__doc_sandarac__q1/#resource> dcterms:bibliographicCitation "J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1322" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1322> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Sandarac used in Varnish, Paint & Lacquer: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1322"@en ;
+    <ontology/quoteText/#resource> "SANDARACH: A resinous substance, commonly met with in loose granules a little larger than a pea, of a whitish yellow colour, brittle, inflammable, of a resinous smell, and acrid aromatic taste. It exudes, it is said, in warm climates, from cracks and incisions in the common juniper bush. It is used as a varnish, dissolved in spirits of wine, and the powder i..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

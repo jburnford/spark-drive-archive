@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0072__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. LEATHER" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Galls used in Leather Tanning, Tawing & Currying: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. LEATHER"@en ;
+    <ontology/quoteText/#resource> "For the common purposes of the tanner, 1 pound of it would be equivalent also to 2-1/4 pounds of galls, to 7-1/2 of the Leicester willow, to 11 of the bark of the Spanish chesnut, to 18 of the bark of the common elm, to 21 of the bark of the common willow, and to 3 pounds of sumach."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

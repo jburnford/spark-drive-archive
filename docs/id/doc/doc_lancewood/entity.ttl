@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_lancewood/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Lancewood"@en ;
+    skos:broader <id/grp/grp_hewn_round_timber/#concept> ;
+    skos:definition "a slender tree, the *Duquetia quitarensis*, of Lindley, the *Guatteria virgata* of others; found in tolerable abundance in the interior of Guiana, and also imported from Cuba and Jamaica. The wood possesses much toughness and elasticity, and is used for gig shafts, archery bows, billiard cues, and other purposes. Its native name is yarri-yarri. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 233]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_lancewood" ;
+    skos:prefLabel "Lancewood"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0070 (Wood Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 233."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n233> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q110883808> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0070/#concept> .

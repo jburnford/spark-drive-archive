@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1949/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Belts"@en ;
+    skos:broader <id/grp/grp_customs_residuals/#concept> ;
+    skos:definition "a leather strap or sling; an article of dress of various materials; thus there are sword-belts, shoulder-belts, waist-belts, cross-belts, ladies' belts, and children's belts, &c.; a border of trees in park lands. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 46]"@en ;
+    skos:editorialNote "Curated classification (wd_term=NONE): Two rows, Quebec → Great Britain 1807–08, counted by number; nothing supports the machine-belt sense of the Wikidata item. Layer-1 observations: 2 rows, 1807–1808. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×2. Units: Number ×2. Top routes: Quebec QC → Great Britain ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1949" ;
+    skos:prefLabel "Belts"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n46> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "other" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/lastAttested/#resource> "1808"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/substanceHead/#resource> "Belts" ;
+    <ontology/theodoridisBucket/#resource> "unclassified" .

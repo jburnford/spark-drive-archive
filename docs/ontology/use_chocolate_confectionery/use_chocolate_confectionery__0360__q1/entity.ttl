@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_chocolate_confectionery/use_chocolate_confectionery__0360__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 39" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n39> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Sugar used in Chocolate & Confectionery: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 39"@en ;
+    <ontology/quoteText/#resource> "BARLEY SUGAR: a sweetmeat consisting of sugar boiled until it becomes brittle, and run into lumps or sticks. It was at one time boiled with a decoction of barley, whence the name. See SUGAR CANDY."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

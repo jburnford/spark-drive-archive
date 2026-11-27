@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/07/0761/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Teeth Elephants Sea Cow and Sea Horses"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300011857>, <http://www.wikidata.org/entity/Q82001> ;
+    skos:broader <id/sub/sub_fertilizer_wd_q82001/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_fertilizers_animal_materials; processing_state=unspecified; wd_term=ivory; wd_relation=skos:broadMatch): 'Teeth: Elephants, Sea Cow and Sea Horses' is ivory by weight (cwt; origins Egypt, South Africa, Malta), the same commodity as htc:0224/htc:0609; classifier matched 'horses' and filed it as live draft animals. Layer-1 observations: 41 rows, 1822–1876. Series: HCPP_Annual Statement of Trade ×38; KEW_CUST 4 ×3. Units: CWTS (Hundredweights) ×38; Hundredweights.Quarters.Pounds ×2; (no unit) ×1. Top routes: World → United Kingdom ×3; British Possessions in South Africa → United Kingdom ×3; Egypt → United Kingdom ×3; Malta → United Kingdom ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0761" ;
+    skos:prefLabel "Teeth Elephants Sea Cow and Sea Horses"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1822"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1876"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "41"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Teeth Elephants Sea Cow and Sea Horses" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

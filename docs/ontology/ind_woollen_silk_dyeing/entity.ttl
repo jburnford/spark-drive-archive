@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_woollen_silk_dyeing/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Woollen, Silk & Worsted Dyeing"@en ;
+    skos:definition "Woollen, worsted, and silk scouring, fulling, and dyeing — employing raw wool and silk with scarlet/crimson insect dyes (cochineal, lac dye, kermes), lichen dyes (orchal, archil, cudbear), indigo/woad vats, alum/tartar/tin mordants, olive oil, and fuller's earth."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Woollen, Silk & Worsted Dyeing"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0021/#concept>, <id/00/0062/#concept>, <id/00/0072/#concept>, <id/00/0096/#concept>, <id/01/0109/#concept>, <id/01/0118/#concept>, <id/01/0136/#concept>, <id/01/0172/#concept>, <id/02/0203/#concept>, <id/02/0263/#concept>, <id/03/0302/#concept>, <id/03/0364/#concept>, <id/04/0471/#concept>, <id/05/0536/#concept>, <id/06/0677/#concept>, <id/08/0871/#concept>, <id/09/0975/#concept>, <id/13/1304/#concept>, <id/13/1377/#concept>, <id/18/1899/#concept>, <id/19/1932/#concept>, <id/20/2002/#concept>, <id/doc/doc_woad/#concept> .

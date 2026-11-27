@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/09/0919/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Yeast"@en ;
+    skos:broader <id/grp/grp_customs_residuals/#concept> ;
+    skos:definition "the froth of fermenting wort, a substance used for leavening bread. The aggregate quantity produced at the various breweries in the United Kingdom, at 11 lbs. per barrel, is estimated at 75,000 tons in weight, worth £360,000 in value. German yeast is now imported to a considerable extent in a dried form from the Continent; the quantity imported in 1856, was 3,610 tons. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 431]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0919" ;
+    skos:prefLabel "Yeast"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n431>, <https://archive.org/details/generalcommercia00mort/page/n1022>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1891"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "other" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "30"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/substanceHead/#resource> "Yeast" ;
+    <ontology/theodoridisBucket/#resource> "unclassified" .

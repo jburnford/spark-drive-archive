@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_cedar/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cedar"@en ;
+    skos:broader <id/grp/grp_hewn_round_timber/#concept> ;
+    skos:definition "(Ger. zeder; Dutch, ceder; Fr. cèdre; Ital. and Span. cedro; Russ. kedr; Lat. cedrus). The cedar of Lebanon, or great cedar (*Pinus cedrus*) of the Old Testament. It grows to a very great size. The timber is resinous, has a peculiar and powerful odour, a slightly bitter taste, a rich yellowish brown colour, and is not subject to the worm. Its durability is very great; and it was on this account (*propter eternitatem*, Vitruvius, lib. ii. sec. [J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 347]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_cedar" ;
+    skos:prefLabel "Cedar"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0070 (Wood Unenumerated). Attested in: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 347, P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 89."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n89>, <https://archive.org/details/dictionaryprac00mccu/page/n347>, <https://archive.org/details/generalcommercia00mort/page/n210> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q21876253> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0070/#concept> .

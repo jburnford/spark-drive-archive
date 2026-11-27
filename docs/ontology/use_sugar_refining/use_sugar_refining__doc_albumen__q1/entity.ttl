@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_sugar_refining/use_sugar_refining__doc_albumen__q1/#resource> dcterms:bibliographicCitation "Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 53" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n53/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Albumen used in Sugar Refining: Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 53"@en ;
+    <ontology/quoteText/#resource> "Albumen is made from blood. See ALBUMEN and BLACK PUDNING. BLOOD-BRIER, a preparer of blood for the use of sugar refiners and other manufacturers."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

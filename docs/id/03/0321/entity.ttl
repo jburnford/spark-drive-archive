@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0321/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Essence of Spruce"@en ;
+    skos:broader <id/grp/grp_alcoholic_beverages/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_alcoholic_beverages; processing_state=refined_extract; land_basis=terrestrial_forest): Essence of spruce is the concentrated decoction used to make spruce beer (Simmonds 1892 s.v. SPRUCE: foliage 'used ... to give flavour to beer, either in the form of decoction or extract'); exported from Quebec in boxes/kegs/gallons. Not timber. Layer-1 observations: 121 rows, 1807–1871. Series: KEW_CUST 4 ×96; HCPP_Annual Statement of Trade ×2; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×23. Units: (no unit) ×82; Gallons ×18; Boxes ×9; Kegs ×4. Top routes: Canada → England ×35; Canada → Scotland ×19; Canada → Great Britain ×19; Quebec QC → Great Britain ×18."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0321" ;
+    skos:prefLabel "Essence of Spruce"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1871"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "121"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "refined_extract" ;
+    <ontology/sitcCode/#resource> "SITC4_11_Beverages" ;
+    <ontology/substanceHead/#resource> "Essence of Spruce" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

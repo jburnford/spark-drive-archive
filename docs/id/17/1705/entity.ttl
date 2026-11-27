@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/17/1705/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Thread Sisters"@en ;
+    skos:broader <id/grp/grp_yarns_cordage/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_yarns_cordage; processing_state=manufactured): Thread ('sisters' thread', fine linen thread) and fishing nets/twines/lines belong with Yarns & Cordage. Layer-1 observations: 6 rows, 1800–1800. Series: KEW_CUST 5 ×6. Units: Lbs. (Pounds) ×6. Top routes: France → United Kingdom ×1; Holland → United Kingdom ×1; World → United Kingdom ×1; Germany → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1705" ;
+    skos:prefLabel "Thread Sisters"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "6"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_65_Textile_Yarn_and_Fabrics" ;
+    <ontology/substanceHead/#resource> "Thread Sisters" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

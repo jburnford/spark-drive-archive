@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0360__q2/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 985" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n985/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Sugar used in Pharmaceuticals & Druggists' Preparations: Mortimer (1823), General Commercial Dictionary, scan p. 985"@en ;
+    <ontology/quoteText/#resource> "Boiled in sugar, at the same period, it is a mild cathartic of certain operation, and well adapted to children."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

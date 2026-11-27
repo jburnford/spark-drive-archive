@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/12/1267/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Lead Black"@en ;
+    skos:altLabel "black lead"@en, "graphite"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300011098>, <http://www.wikidata.org/entity/Q5309>, <http://zbw.eu/stw/descriptor/30374-4> ;
+    skos:broader <id/sub/sub_industrial_wd_q5309/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_industrial_minerals; processing_state=unspecified; wd_term=graphite; wd_relation=skos:broadMatch): Black lead / plumbago is graphite (Simmonds 1892 s.v. BLACK LEAD: 'See GRAPHITE and PLUMBAGO'; McCulloch 1880 s.v. BLACK LEAD); filed with Plumbago (htc:0130), not with lead metal or metallic ores. Layer-1 observations: 15 rows, 1800–1856. Series: HCPP_Annual Statement of Trade ×6; KEW_CUST 5 ×5; KEW_CUST 4 ×2; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×2. Units: Tons ×6; CWTS (Hundredweights) ×5; Hundredweights.Quarters.Pounds ×2; Lbs. (Pounds) ×1. Top routes: Holland → United Kingdom ×2; World → United Kingdom ×2; Canada → England ×2; Italy → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1267" ;
+    skos:prefLabel "Lead Black"@en ;
+    skos:related <id/01/0130/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "15"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_27_Crude_Fertilizers_and_Minerals" ;
+    <ontology/substanceHead/#resource> "Lead Black" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

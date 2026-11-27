@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/11/1146/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Zinc Rolled but not otherwise manufactured"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_8517>, <http://vocab.getty.edu/aat/300011037>, <http://www.wikidata.org/entity/Q758>, <http://zbw.eu/stw/descriptor/14309-0> ;
+    skos:broader <id/sub/sub_metals_sem_wd_q758/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_metals_semi_finished; processing_state=smelted_semi): Crude/rolled zinc 'not otherwise manufactured' is semi-finished metal, like htc:0484/htc:1779. Layer-1 observations: 19 rows, 1856–1866. Series: HCPP_Annual Statement of Trade ×19. Units: Tons ×19. Top routes: World → United Kingdom ×3; Belgium → United Kingdom ×3; Other Parts → United Kingdom ×3; Prussia → United Kingdom ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1146" ;
+    skos:prefLabel "Zinc Rolled but not otherwise manufactured"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "19"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "smelted_semi" ;
+    <ontology/sitcCode/#resource> "SITC4_67_68_Metals" ;
+    <ontology/substanceHead/#resource> "Zinc Rolled but not otherwise" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

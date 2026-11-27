@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0289__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 204" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n204> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Hemp Rough or Undressed used in Shipbuilding, Rope, Cordage & Sailcloth: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 204"@en ;
+    <ontology/quoteText/#resource> "HEMP: a fibre obtained from the Cannabis sativa, which is stronger and coarser than flax. It is used for making cordage, canvas for sail-cloth, towelling, &c. The foreign imports are very large. In 1856, we received, chiefly from Russia, 777,998 cwts. of dressed and undressed hemp, besides 15,233 cwts. of tow or codilla. In previous years we had received muc..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

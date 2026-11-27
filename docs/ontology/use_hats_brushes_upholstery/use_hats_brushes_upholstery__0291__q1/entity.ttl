@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__0291__q1/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 715" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n715/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Skins Furs Pelts Rabbit used in Hat-Making, Brushes, Upholstery & Turnery: McCulloch (1880), Dictionary of Commerce, scan p. 715"@en ;
+    <ontology/quoteText/#resource> "The furs used for hat making were beaver, musquash, otter, nutria, hare, and rabbit; but each of these may be subdivided into 20 different sorts or classes. ‘Neutria, or nutria, is comparatively a new article."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

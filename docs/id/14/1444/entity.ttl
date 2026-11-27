@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/14/1444/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Turtle Shell"@en ;
+    skos:broader <id/grp/grp_fertilizers_animal_materials/#concept> ;
+    skos:definition "a common name for the shield plate or armour of all tortoises. See **TORTOISE-SHELL**. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 405]"@en ;
+    skos:editorialNote "Curated classification (group=grp_fertilizers_animal_materials; land_basis=marine): Marine animal raw material (mother-of-pearl, tortoise/turtle shell, pearls) left in the residual bin. Layer-1 observations: 11 rows, 1861–1866. Series: HCPP_Annual Statement of Trade ×11. Units: Lbs. (Pounds) ×11. Top routes: World → United Kingdom ×2; Other Parts → United Kingdom ×2; British West India Islands → United Kingdom ×2; Philippine Islands → United Kingdom ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1444" ;
+    skos:prefLabel "Turtle Shell"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n405> ;
+    <ontology/firstAttested/#resource> "1861"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "marine" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "11"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Turtle Shell" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__1143__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 326" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n326> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Canes Rattans not Ground used in Hat-Making, Brushes, Upholstery & Turnery: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 326"@en ;
+    <ontology/quoteText/#resource> "RATTANS: a commercial name for the long trailing stems of the Calamus Royleanus and Roxburghii, and various other species of palms, which form a considerable article of import from India and the Eastern archipelago. They are extensively used, when split, for caulking chairs, and for making rough brooms, and, when dyed black as a substitute for whalebone for ..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

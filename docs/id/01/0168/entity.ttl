@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0168/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Starch"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300012959>, <http://www.wikidata.org/entity/Q41534> ;
+    skos:broader <id/sub/sub_cereals_gr_wd_q41534/#concept> ;
+    skos:definition "(_Amidon_, _Fecule_, Fr.; _Stärke_, Germ.); is a white pulverulent substance, composed of microscopic spheroids, which are bags containing the amylaceous matter. It exists in a great many different plants, and varies merely in the form and size of its microscopic particles; as found in some plants, it consists of spherical particles 1/1000 of an inch in diameter; and in others, of ovoid particles, of 1/300 or 1/400 of an inch. It occurs, 1. in the seeds of all the acotyledinous plants, among which are the several species of corns, and those of other _gramineæ_; 2. in the round perennial tap roots, which shoot up an annual stem; [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:editorialNote "Curated classification (group=grp_cereals_grains; processing_state=manufactured): Farinaceous preparations (macaroni, vermicelli, crackers/biscuit, starch, dextrine) belong with Cereals; other starch headings (htc:1561, htc:1572) are already here. Layer-1 observations: 202 rows, 1800–1897. Series: CSP_Canadian Trade and Navigation ×19; KEW_CUST 5 ×12; KEW_CUST 4 ×9; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×162. Units: Lbs. (Pounds) ×165; CWTS (Hundredweights) ×12; (no unit) ×12; Hundredweights.Quarters.Pounds ×9. Top routes: Quebec → All Countries ×25; Quebec → Great Britain ×15; Quebec → Newfoundland ×13; Quebec QC → All Countries ×11."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0168" ;
+    skos:prefLabel "Starch"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n371>, <https://archive.org/details/dictionaryprac00mccu/page/n1437>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_grain" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "202"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_04_Cereals_and_Preparations" ;
+    <ontology/substanceHead/#resource> "Starch" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_calico_printing/#concept>, <ontology/ind_paper_making/#concept> .

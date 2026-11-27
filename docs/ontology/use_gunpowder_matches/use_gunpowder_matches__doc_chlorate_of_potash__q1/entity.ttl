@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_gunpowder_matches/use_gunpowder_matches__doc_chlorate_of_potash__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 100" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n100> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Chlorate of Potash used in Gunpowder, Explosives & Lucifer Matches: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 100"@en ;
+    <ontology/quoteText/#resource> "CHLORATE OF POTASH: a combination of chloric acid with potash. It forms an ingredient of the composition for tipping lucifer matches, is used for bleaching fats and oils, and has lately been introduced into medicine as a tonic and valuable remedy for nervous complaints."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

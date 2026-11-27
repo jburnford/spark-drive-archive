@@ -1,0 +1,15 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/scheme/#resource> dcterms:created "2026-11-25"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:creator "Dr. Jim Clifford & HGIS Lab, University of Saskatchewan"@en ;
+    dcterms:description "Four-tier historical archival SKOS vocabulary and thesaurus (9 Macro-Sectors -> 44 Commodity Groups -> Canonical Substance Groups -> 2,066 persistent verbatim British & Canadian customs headings, dual-typed as skos:Concept and crm:E55_Type for LINCS/CIDOC CRM interoperability) enriched with definitions, scopeNotes, synonyms, cross-stage material chains, and verified Linnaean source taxa mined from six 19th-century commercial dictionaries (Simmonds 1892/1854, Mortimer 1823, McCulloch 1880, Watt 1908, Ure) and linked via reversible multi-anchor SKOS mappings to Wikidata (2026-11-09), FAO AGROVOC, ZBW STW Economics, Getty AAT, Catalogue of Life, SITC Rev. 4, and Theodoridis (2018)."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:title "Open Empire Layer-1 Human-Transcribed Trade Commodities SKOS Vocabulary (LINCS / CIDOC CRM E55_Type Compatible)"@en ;
+    a skos:ConceptScheme ;
+    rdfs:label "Open Empire Layer-1 Human-Transcribed Trade Commodities SKOS Vocabulary (LINCS / CIDOC CRM E55_Type Compatible)"@en ;
+    owl:versionInfo "7.0" ;
+    skos:hasTopConcept <id/sec/sec_botanicals_dyes_chemicals/#concept>, <id/sec/sec_fibres_textiles/#concept>, <id/sec/sec_food_and_drink/#concept>, <id/sec/sec_forestry_timber/#concept>, <id/sec/sec_hides_skins_tanning/#concept>, <id/sec/sec_livestock_fodder/#concept>, <id/sec/sec_minerals_metals_manufactures/#concept>, <id/sec/sec_oils_fats_waxes/#concept>, <id/sec/sec_unclassified_residuals/#concept> .

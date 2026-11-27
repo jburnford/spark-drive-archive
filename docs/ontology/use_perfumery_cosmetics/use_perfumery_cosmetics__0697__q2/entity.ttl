@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_perfumery_cosmetics/use_perfumery_cosmetics__0697__q2/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 1769" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1769/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Spirits used in Perfumery, Pomades & Essential Oils: McCulloch (1880), Dictionary of Commerce, scan p. 1769"@en ;
+    <ontology/quoteText/#resource> "Perfumery, not including soaps, 20f. per 100 kilograms, in addition to the proportionate duty on alcohol; scented waters, without alcohol, 40f.; pomades, 120f.; other kinds, 60f."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

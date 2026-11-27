@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_gunpowder_matches/use_gunpowder_matches__0328__q3/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 891" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n891/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Saltpetre used in Gunpowder, Explosives & Lucifer Matches: Mortimer (1823), General Commercial Dictionary, scan p. 891"@en ;
+    <ontology/quoteText/#resource> "Saltpetre is of very extensive use in different arts, being the principal ingredient in gunpowder, and serving as an excellent flux to other matters; whence its use in glass-making."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

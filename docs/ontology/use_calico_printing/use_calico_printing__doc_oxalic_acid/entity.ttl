@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__doc_oxalic_acid/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Oxalic Acid used in Calico Cloth & Calico Printing"@en ;
+    <ontology/assertsCommodity/#resource> <id/doc/doc_oxalic_acid/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_calico_printing/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_calico_printing/use_calico_printing__doc_oxalic_acid__q1/#resource>, <ontology/use_calico_printing/use_calico_printing__doc_oxalic_acid__q2/#resource> ;
+    <ontology/productionRole/#resource> "alkali_or_reagent" ;
+    <ontology/reviewStatus/#resource> "mined_multiple_quotes" .

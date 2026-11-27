@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__1143__q3/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 765" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n765/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Canes Rattans not Ground used in Hat-Making, Brushes, Upholstery & Turnery: Mortimer (1823), General Commercial Dictionary, scan p. 765"@en ;
+    <ontology/quoteText/#resource> "PLATING is likewise applied to the mode of covering felt hats with a coat or surface of beaver, which gives the article nearly the appearance of a fine castor hat, but not its durability. See HATS. PLATTING, the slips of cane, straw, or chip for making hats, woven, or platted into pieces."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

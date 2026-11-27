@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_cudbear/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cudbear"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:definition "A purple or violet coloured powder used in dyeing violet, purple, and crimson, prepared from a species of lichen (*Lecanora tartarea*), or crustaceous moss, growing commonly on limestone rocks in Sweden, Scotland, the north of England &c. About 130 tons of this lichen are annually exported from Sweden. It commonly sells in the port of London for about 20*l.* per ton; [J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 555]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_cudbear" ;
+    skos:prefLabel "Cudbear"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0054 (Dye Stuffs Unenumerated). Attested in: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 555, P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 127."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n127>, <https://archive.org/details/dictionaryprac00mccu/page/n555>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q20875215> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0054/#concept> .

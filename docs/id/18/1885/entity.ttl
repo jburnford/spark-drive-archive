@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/18/1885/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Dry Goods manufactured"@en ;
+    skos:broader <id/grp/grp_woven_fabrics_apparel/#concept> ;
+    skos:definition "a commercial name for textile fabrics, cottons, woollens, laces, hard-wares, and some few other articles; in contradistinction to groceries. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 146]"@en ;
+    skos:editorialNote "Curated classification (group=grp_woven_fabrics_apparel): Textile manufactures (jute, silk broad stuffs, hair cloth, felt, dry goods, sails) belong with Woven Textiles, not paper/glass/sundries. Layer-1 observations: 4 rows, 1875–1875. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×4. Units: (no unit) ×4. Top routes: Quebec → United States ×1; Quebec → Newfoundland ×1; Quebec → All Countries ×1; Quebec → Great Britain ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1885" ;
+    skos:prefLabel "Dry Goods manufactured"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n146> ;
+    <ontology/firstAttested/#resource> "1875"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1876"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
+    <ontology/substanceHead/#resource> "Dry Goods" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

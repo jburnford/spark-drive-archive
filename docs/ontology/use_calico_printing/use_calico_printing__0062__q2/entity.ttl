@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__0062__q2/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 160" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n160/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Indigo used in Calico Cloth & Calico Printing: Mortimer (1823), General Commercial Dictionary, scan p. 160"@en ;
+    <ontology/quoteText/#resource> "BLUE-MAKERS, make blue of indigo mixed with cheap materials, for the use of calico-printers, dyers, &c.; but have nothing to do with the fine colours used in painting."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

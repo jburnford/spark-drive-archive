@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/18/1807/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "logs, cedar, capable of being made into shingle bolts (duty $150 per cord)"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_8421>, <http://vocab.getty.edu/aat/300011914>, <http://www.wikidata.org/entity/Q287>, <http://zbw.eu/stw/descriptor/14150-4> ;
+    skos:broader <id/sub/sub_hewn_round_wd_q287/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_hewn_round_timber; processing_state=unspecified): Saw logs / shingle bolts / timber 'not sawn or split' are unsawn round wood; classifier filed them as sawn lumber. Layer-1 observations: 5 rows, 1888–1891. Series: CSP_Canadian Trade and Navigation ×1; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×4. Units: Cords ×5. Top routes: Quebec → United States ×3; Quebec → All Countries ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1807" ;
+    skos:prefLabel "logs, cedar, capable of being made into shingle bolts (duty $150 per cord)"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1888"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1891"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/substanceHead/#resource> "logs, cedar, capable of being made into shingle bolts" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

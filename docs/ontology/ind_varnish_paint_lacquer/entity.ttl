@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_varnish_paint_lacquer/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Varnish, Paint & Lacquer"@en ;
+    skos:definition "Spirit and oil varnishes, japans, lacquers, French polish, and house/marine paints — dissolving tropical resins (copal, dammar, shellac, mastic, sandarac, amber, elemi, rosin) in linseed oil, turpentine, and spirits, pigmented with white lead, vermilion, ochre, umber, ultramarine, and chrome yellow."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Varnish, Paint & Lacquer"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0015/#concept>, <id/01/0118/#concept>, <id/01/0129/#concept>, <id/02/0207/#concept>, <id/04/0467/#concept>, <id/05/0562/#concept>, <id/05/0578/#concept>, <id/06/0677/#concept>, <id/06/0697/#concept>, <id/08/0860/#concept>, <id/10/1023/#concept>, <id/12/1216/#concept>, <id/13/1377/#concept>, <id/15/1504/#concept>, <id/15/1538/#concept>, <id/15/1599/#concept>, <id/16/1683/#concept>, <id/17/1765/#concept>, <id/17/1790/#concept>, <id/doc/doc_amber/#concept>, <id/doc/doc_dammer/#concept>, <id/doc/doc_elemi/#concept>, <id/doc/doc_gamboge/#concept>, <id/doc/doc_minium/#concept>, <id/doc/doc_prussian_blue/#concept>, <id/doc/doc_sandarac/#concept>, <id/doc/doc_umber/#concept>, <id/doc/doc_verdigris/#concept> .

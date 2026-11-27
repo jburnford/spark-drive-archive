@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1338/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Skins Tanned Calf"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_3609>, <http://vocab.getty.edu/aat/300011844>, <http://www.wikidata.org/entity/Q3291230>, <http://zbw.eu/stw/descriptor/14127-6> ;
+    skos:broader <id/sub/sub_tanned_lea_wd_q3291230/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1338" ;
+    skos:prefLabel "Skins Tanned Calf"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1829"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "13"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "dressed_tanned" ;
+    <ontology/sitcCode/#resource> "SITC4_61_Leather_and_Dressed_Furskins" ;
+    <ontology/substanceHead/#resource> "Skins Tanned Calf" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

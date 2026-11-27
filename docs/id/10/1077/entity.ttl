@@ -1,0 +1,34 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/10/1077/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Zinc Manufactured"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_8517>, <http://vocab.getty.edu/aat/300011037>, <http://www.wikidata.org/entity/Q758>, <http://zbw.eu/stw/descriptor/14309-0> ;
+    skos:broader <id/grp/grp_metal_machinery_hardware/#concept> ;
+    skos:definition "a bluish-white metal, which may be rolled or hammered out to a certain extent. The ores yielding it are various, and brought from different localities. It comes in chiefly from Germany under the name of spelter, the imports being 18,000 or 19,000 tons annually; in 1856 they were 18,213 tons. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 433]"@en ;
+    skos:editorialNote "Curated classification (group=grp_metal_machinery_hardware): Unenumerated metal manufactures belong with Metalwares (as htc:0270 Iron Manufactures Unenumerated already does), not with paper/glass/sundries. Layer-1 observations: 22 rows, 1891–1906. Series: HCPP_Annual Statement of Trade ×22. Units: CWTS (Hundredweights) ×15; Tons ×7. Top routes: France → United Kingdom ×3; World → United Kingdom ×3; Belgium → United Kingdom ×3; Germany → United Kingdom ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1077" ;
+    skos:prefLabel "Zinc Manufactured"@en ;
+    skos:related <id/04/0484/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n433>, <https://archive.org/details/dictionaryprac00mccu/page/n1867>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1891"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q758> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/materialConcept/#resource> <id/04/0484/#concept> ;
+    <ontology/observationCount/#resource> "22"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_69_7_Metalwares_and_Machinery" ;
+    <ontology/substanceHead/#resource> "Zinc" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

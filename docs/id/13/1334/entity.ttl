@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1334/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Coin"@en ;
+    skos:broader <id/grp/grp_metals_semi_finished/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300037222>, <http://www.wikidata.org/entity/Q41207>, <http://zbw.eu/stw/descriptor/11434-5> ;
+    skos:definition "pieces of metal, most commonly gold, silver, or copper, stamped by authority, and in many countries made a legal tender for their respective values, when not exceeding certain specified amounts. *See LEGAL TENDER. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 110]"@en ;
+    skos:editorialNote "Curated classification (group=grp_metals_semi_finished; wd_term=coin; wd_relation=skos:closeMatch): Coin and platina (platinum) belong with precious metals and bullion. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article). Layer-1 observations: 14 rows, 1893–1897. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×14. Units: (no unit) ×14. Top routes: Canada → United States ×2; Canada → All Countries ×2; Quebec → All Countries ×2; Nova Scotia → All Countries ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1334" ;
+    skos:prefLabel "Coin"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n110> ;
+    <ontology/firstAttested/#resource> "1893"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "14"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "smelted_semi" ;
+    <ontology/sitcCode/#resource> "SITC4_67_68_Metals" ;
+    <ontology/substanceHead/#resource> "Coin" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

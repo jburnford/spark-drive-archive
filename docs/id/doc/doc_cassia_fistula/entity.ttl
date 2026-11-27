@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_cassia_fistula/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cassia Fistula"@en ;
+    skos:altLabel "canafistula"@en, "golden shower tree"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:definition "the commercial and botanical name for the legumes or cylindrical pods of the pudding pipe tree; the cells are filled with a sweetish pulp which is an agreeable laxative and the base for purgative electuaries. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 86]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_cassia_fistula" ;
+    skos:prefLabel "Cassia Fistula"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: 1866 British Customs Commodities List (Danika / HGIS Lab), P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 86."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n86> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_07_Coffee_Tea_Cocoa_Spices" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> .

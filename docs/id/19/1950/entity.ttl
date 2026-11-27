@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1950/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Mustard"@en ;
+    skos:broader <id/grp/grp_spices_condiments/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300311365> ;
+    skos:definition "(Ger. mustert, senf; Fr. moutarde; Ital. mostarda; Span. mostaza; Russ. gortschiza; Lat. sinapis; Arab. khirdal; Hin. rai). A plant (*Sinapis*) of which there are several species, some of them indigenous to Great Britain. It was formerly extensively cultivated in Durham, but it is now seldom seen in that county. It is, however, raised in the neighbourhood of York, and throughout other parts of the North Riding; and being manufactured in the city of York, is afterwards sold under the name of Durham mustard. Mustard is of considerable importance in the materia medica, and is extensively used as a condiment. Its greenish-yellow hue, acrid taste, and pungent irritating odour when mixed, are familiar to all. It was not, however, known in its present form, at our tables, till 1720. [J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 999]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q131748> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1950" ;
+    skos:prefLabel "Mustard"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/dictionaryprac00mccu/page/n999>, <https://archive.org/details/generalcommercia00mort/page/n652>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1809"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1811"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_07_Coffee_Tea_Cocoa_Spices" ;
+    <ontology/substanceHead/#resource> "Mustard" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

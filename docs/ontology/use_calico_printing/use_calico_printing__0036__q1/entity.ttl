@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__0036__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 61" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n61> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bran used in Calico Cloth & Calico Printing: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 61"@en ;
+    <ontology/quoteText/#resource> "BRAN: the refuse of the exterior husk of wheat in grinding, which, besides its nutritious properties, has some commercial value in tanning, in calico-printing, for filling dolls, ensheaths, &c."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

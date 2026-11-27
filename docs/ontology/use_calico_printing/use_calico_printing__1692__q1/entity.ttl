@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__1692__q1/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 45" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n45/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Chemical Manufactures Acetic Acid used in Calico Cloth & Calico Printing: McCulloch (1880), Dictionary of Commerce, scan p. 45"@en ;
+    <ontology/quoteText/#resource> "The greater portion of the pyroligneous acid prepared in this country is employed in the manufacture of the acetates, particularly acetate of lead for the use of dyers and calico printers, and only a small portion is purified for household and other purposes."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

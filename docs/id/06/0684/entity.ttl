@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0684/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Turpentine"@en ;
+    skos:broader <id/sub/sub_gums_resin_wd_q201382/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300015288>, <http://vocab.getty.edu/aat/300375603> ;
+    skos:definition "(_Térébinthine_, Fr.; _Terpenthin_, Germ.); is a substance which flows out of incisions made in the stems of several species of pines. It has the consistence and gray-yellow colour of honey. It has a smell which is not disagreeable to many persons, a warm, sharp, bitterish taste; dries into a solid in the air, with the evaporation of its volatile oil. It becomes quite fluid at a moderate elevation of temperature, and burns at a higher heat, with a bright but very fuliginous flame. There are several varieties of turpentine. 1. _Common turpentine_, is extracted from incisions in the _Pinus abies_ and _Pinus silvestris_. It has little smell; but a bitter burning taste. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q201382> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0684" ;
+    skos:prefLabel "Turpentine"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n405>, <https://archive.org/details/b21780535/page/n515>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1900"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "49"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Turpentine" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

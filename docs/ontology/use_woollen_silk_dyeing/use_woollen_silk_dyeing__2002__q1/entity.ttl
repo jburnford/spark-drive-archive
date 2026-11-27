@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_woollen_silk_dyeing/use_woollen_silk_dyeing__2002__q1/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 250" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n250> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Copperas used in Woollen, Silk & Worsted Dyeing: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 250"@en ;
+    <ontology/quoteText/#resource> "COPPERAS: (GER. Grüner Vitriol, Elsenvitriol, Kupferwasser. DU. Groene vitriool, Yservitriool, Koperrood, Koperwater. DA. Grøn vitriol, Jernvitriol, Engelskt vitriol, Grønt Kobber. SW. Grön vitriol, Jernvitriol. FR. Vitriol verd, martial ou cuperose. Vitriol de fer, couperose verte. IT. Vitriuolo di marte. SR. Vitriolo de marte. PORT. Vitriolo de marte. RUS...."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

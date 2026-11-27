@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/07/0707/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Extracts Unenumerated"@en ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q1259977> ;
+    skos:broader <id/grp/grp_customs_residuals/#concept> ;
+    skos:definition "(_Extraits_, Fr.; _Extracten_, Germ.) The older apothecaries used this term to designate the product of the evaporation of any vegetable juice, infusion, or decoction; whether the latter two were made with water, alcohol, or ether; whence arose the distinction of aqueous, alcoholic, and ethereous extracts. Fourcroy made many researches upon these preparations, and supposed that they had all a common basis, which he called the _extractive_ principle. But Chevreul and other chemists have since proved that this pretended principle is a heterogeneous and very variable compound. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0707" ;
+    skos:prefLabel "Extracts Unenumerated"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1821"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "other" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/lastAttested/#resource> "1896"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "46"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/substanceHead/#resource> "Extracts" ;
+    <ontology/theodoridisBucket/#resource> "unclassified" .

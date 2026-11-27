@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0622/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Silk Manufactures Unenumerated"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300014063>, <http://vocab.getty.edu/aat/300231565>, <http://www.wikidata.org/entity/Q28823>, <http://zbw.eu/stw/descriptor/14846-2> ;
+    skos:broader <id/sub/sub_woven_fabr_wd_q28823/#concept> ;
+    skos:definition "The value of our silk manufactures exported has increased half-a-million every ten years since 1870. In 1889 it exceeded £2,780,000, including twist and yarn. In 1885 there were 691 silk factories in the United Kingdom, having 12,000 power-looms, 888,104 spinning spindles, and 174,644 doubling spindles. There were 42,990 persons employed in the silk factories. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 506]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0622" ;
+    skos:prefLabel "Silk Manufactures Unenumerated"@en ;
+    skos:related <id/02/0263/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n506> ;
+    <ontology/firstAttested/#resource> "1827"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q37681> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/materialConcept/#resource> <id/02/0263/#concept> ;
+    <ontology/observationCount/#resource> "57"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
+    <ontology/substanceHead/#resource> "Silk Manufactures" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

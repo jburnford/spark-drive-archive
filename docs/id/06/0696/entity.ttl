@@ -1,0 +1,37 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0696/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Gutta Percha"@en ;
+    skos:altLabel "gutta-percha"@en ;
+    skos:broadMatch <customs-1866/resin/#concept> ;
+    skos:broader <id/sub/sub_latexes_el_wd_q423261/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300211567> ;
+    skos:definition "a concrete milky juice, forming a gum-resin, obtained in the Eastern archipelago from *Isonandra Gutta*; of extensive use in the arts, and for various economical purposes, being easily shaped, and retaining the form given to it. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 196]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q423261> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0696" ;
+    skos:prefLabel "Gutta Percha"@en ;
+    skos:related <id/00/0015/#concept>, <id/01/0142/#concept>, <id/09/0967/#concept>, <id/13/1353/#concept> ;
+    skos:scopeNote "19th-century Southeast Asian non-elastic latex (Palaquium gutta / Isonandra gutta), critical to submarine telegraph cables and allied in trade classification with Caoutchouc."@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n196>, <https://archive.org/details/b31361584/page/n637> ;
+    <ontology/firstAttested/#resource> "1886"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "48"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_23_Crude_Rubber" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q160029>, <http://www.wikidata.org/entity/Q39917571> ;
+    <ontology/substanceHead/#resource> "Gutta Percha" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_rubber_waterproofing/#concept> .

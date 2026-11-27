@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0093/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Oars"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300213077>, <http://www.wikidata.org/entity/Q2003749> ;
+    skos:broader <id/grp/grp_cooperage_ship_timber/#concept> ;
+    skos:definition "(GER. *Riemen* (zu *fahreugen*). DU. *Riemen*. DA. *Aarer*. SW. *Avor*. FR. *Avirons*, *Rames*. IT. *Remi*. SP. and PORT. *Remos*.) Oar, in navigation, a long piece of wood, for moving a vessel by rowing. Oars for ships are generally cut out of fir-timber, those for barges are made out of New England or Dantzic rafters, and those for boats out of English ash, or Norway fir-rafters. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 678]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0093" ;
+    skos:prefLabel "Oars"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n678> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1883"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "337"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "sawn_hewn" ;
+    <ontology/sitcCode/#resource> "SITC4_63_Cork_and_Wood_Manufactures" ;
+    <ontology/substanceHead/#resource> "Oars" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__0860__q2/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 249" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n249> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Gum Copal used in Varnish, Paint & Lacquer: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 249"@en ;
+    <ontology/quoteText/#resource> "COPAL: a substance of great importance as a varnish, obtained from the rhus copalinum, a tree in North America. It is a beautiful transparent resinous-like substance. When heated it melts like other resins; but it differs from them in not being soluble in alcohol, or in oil of turpentine, without peculiar management. Neither does it dissolve in the fixed oil..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

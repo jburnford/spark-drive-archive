@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/17/1776/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Silk Goods India Crape"@en ;
+    skos:broader <id/grp/grp_woven_fabrics_apparel/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_woven_fabrics_apparel; processing_state=manufactured): Worsted stuffs and silk piece goods (taffeties, crape) are woven fabrics, not raw animal fibre. Layer-1 observations: 5 rows, 1839–1839. Series: HCPP_Other ×5. Units: Pieces ×5. Top routes: France → United Kingdom ×1; World → United Kingdom ×1; China → United Kingdom ×1; Channel Islands → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1776" ;
+    skos:prefLabel "Silk Goods India Crape"@en ;
+    skos:related <id/02/0263/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_other/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1839"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1839"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q37681> ;
+    <ontology/materialConcept/#resource> <id/02/0263/#concept> ;
+    <ontology/observationCount/#resource> "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
+    <ontology/substanceHead/#resource> "Silk Goods India Crape" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

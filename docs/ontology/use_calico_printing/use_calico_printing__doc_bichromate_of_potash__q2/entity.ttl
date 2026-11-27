@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__doc_bichromate_of_potash__q2/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 84" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n84/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bichromate of Potash used in Calico Cloth & Calico Printing: McCulloch (1880), Dictionary of Commerce, scan p. 84"@en ;
+    <ontology/quoteText/#resource> "Bichromate of potash is extensively used in dyeing and calico-printing, in preparing pigments, and in bleaching tallow, palm oil, &c."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

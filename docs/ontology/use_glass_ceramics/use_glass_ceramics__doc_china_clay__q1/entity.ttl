@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__doc_china_clay__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 224" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n224> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for China Clay used in Glassmaking, Pottery & Porcelain: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 224"@en ;
+    <ontology/quoteText/#resource> "KAOLIN: a porcelain earth derived from the decomposition of the feldspathic granites, and much used for fine pottery. This earth is met with in Assam, Bangalore, Madras, China, and other parts of Asia, whence the name is derived."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

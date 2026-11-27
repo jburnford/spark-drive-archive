@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_perfumery_cosmetics/use_perfumery_cosmetics__doc_ambergris__q1/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 42" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n42/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Ambergris used in Perfumery, Pomades & Essential Oils: Mortimer (1823), General Commercial Dictionary, scan p. 42"@en ;
+    <ontology/quoteText/#resource> "The use of ambergris is now nearly confined to perfumery; it was formerly recommended in medicine by eminent physicians."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

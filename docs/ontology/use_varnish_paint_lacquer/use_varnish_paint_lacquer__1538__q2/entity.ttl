@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__1538__q2/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 627" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n627> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Gum Mastic used in Varnish, Paint & Lacquer: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 627"@en ;
+    <ontology/quoteText/#resource> "MASTICH: (GER. DA. and Sw. Mastix. DU. Mastik. FR. Mastic. IT. Mastice. SP. Almastica, Almacega. PORT. Almacega. RUS. Mastika. POL. Mastyks. LAT. Resina lentisina.) The lesser turpentine-tree, and the lentsicus, afford the mastic of commerce. See LENTISCK and GUM. It is used in fumigations, in the composition of varnishes, and is supposed to strengthen the g..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

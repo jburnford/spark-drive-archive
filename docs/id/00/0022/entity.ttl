@@ -1,0 +1,35 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0022/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Tallow"@en ;
+    skos:broadMatch <customs-1866/animal_part/#concept> ;
+    skos:broader <id/grp/grp_animal_fats_tallow/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300182830> ;
+    skos:definition "the most important animal fat or commerce, obtained chiefly from oxen and sheep. Our home production is estimated at 120,000 tons a-year, besides which, we import large quantities from abroad. Our foreign imports, in 1856, exceeded 60,000 tons. In former years it was larger. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 383]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q863266> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0022" ;
+    skos:prefLabel "Tallow"@en ;
+    skos:related <id/00/0030/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n383>, <https://archive.org/details/b21780535/page/n511>, <https://archive.org/details/generalcommercia00mort/page/n955> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "745"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_41_Animal_Oils_and_Fats" ;
+    <ontology/substanceHead/#resource> "Tallow" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_candle_manufacture/#concept>, <ontology/ind_cordage_shipbuilding/#concept>, <ontology/ind_leather_tanning/#concept>, <ontology/ind_soap_manufacture/#concept> .

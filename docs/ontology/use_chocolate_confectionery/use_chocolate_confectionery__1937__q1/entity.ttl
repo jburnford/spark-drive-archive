@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_chocolate_confectionery/use_chocolate_confectionery__1937__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 86" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n86> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Cassia Buds used in Chocolate & Confectionery: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 86"@en ;
+    <ontology/quoteText/#resource> "CASSIA-BUDS: the immature flowers (perianth and ovary), gathered and dried, of several species of cinnamon, chiefly used in confectionery, having the flavour and pungency of cassia."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

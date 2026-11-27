@@ -1,0 +1,20 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_gum_gedda/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Gum Gedda"@en ;
+    skos:broader <id/grp/grp_gums_resins_naval_stores/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_gum_gedda" ;
+    skos:prefLabel "Gum Gedda"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0220 (Gum Unenumerated). Attested in: Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865), Danika Drugs.xlsx (SKOS Sheet), 1866 British Customs Commodities List (Danika / HGIS Lab). Research note: not in either; limited search results in Google, likely a minor drug."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/02/0220/#concept> .

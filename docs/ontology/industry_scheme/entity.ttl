@@ -1,0 +1,11 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/industry_scheme/#resource> dcterms:created "2026-11-25"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:title "Open Empire 19th-Century Manufacturing End-Use Scheme"@en ;
+    a skos:ConceptScheme ;
+    rdfs:label "Open Empire 19th-Century Manufacturing End-Use Scheme"@en ;
+    skos:hasTopConcept <ontology/ind_brewing_distilling/#concept>, <ontology/ind_calico_printing/#concept>, <ontology/ind_candle_manufacture/#concept>, <ontology/ind_chocolate_confectionery/#concept>, <ontology/ind_cordage_shipbuilding/#concept>, <ontology/ind_glass_ceramics/#concept>, <ontology/ind_gunpowder_matches/#concept>, <ontology/ind_hats_brushes_upholstery/#concept>, <ontology/ind_leather_tanning/#concept>, <ontology/ind_metallurgy_tinplate/#concept>, <ontology/ind_paper_making/#concept>, <ontology/ind_perfumery_cosmetics/#concept>, <ontology/ind_pharmaceuticals/#concept>, <ontology/ind_rubber_waterproofing/#concept>, <ontology/ind_soap_manufacture/#concept>, <ontology/ind_sugar_refining/#concept>, <ontology/ind_varnish_paint_lacquer/#concept>, <ontology/ind_woollen_silk_dyeing/#concept> .

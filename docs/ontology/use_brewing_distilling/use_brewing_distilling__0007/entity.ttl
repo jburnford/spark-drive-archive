@@ -1,0 +1,14 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_brewing_distilling/use_brewing_distilling__0007/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Barley used in Brewing, Malting & Distilling"@en ;
+    skos:editorialNote "Review decision (prune): Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison)."@en ;
+    <ontology/assertsCommodity/#resource> <id/00/0007/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_brewing_distilling/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_brewing_distilling/use_brewing_distilling__0007__q1/#resource>, <ontology/use_brewing_distilling/use_brewing_distilling__0007__q2/#resource> ;
+    <ontology/productionRole/#resource> "primary_feedstock" ;
+    <ontology/reviewStatus/#resource> "reviewed" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__0207__q2/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 212" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n212/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Tar used in Varnish, Paint & Lacquer: McCulloch (1880), Dictionary of Commerce, scan p. 212"@en ;
+    <ontology/quoteText/#resource> "With certain vegetable oils, naphtha is said to form a good varnish.—2. Petroleum is much thicker than naphtha, resembling in consistence common tar."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

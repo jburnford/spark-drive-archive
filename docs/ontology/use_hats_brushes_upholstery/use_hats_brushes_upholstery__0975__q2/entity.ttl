@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__0975__q2/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 490" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n490/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Sulphuric Acid used in Hat-Making, Brushes, Upholstery & Turnery: Mortimer (1823), General Commercial Dictionary, scan p. 490"@en ;
+    <ontology/quoteText/#resource> "This is done at an apparatus called a battery, consisting of a kettle (containing water slightly acidulated with sulphuric acid, to which, for beaver hats, a quantity of wine-lees or the grounds of beer is added, or else plain water for rinsing out), and eight planks of wood joined together in the form of a frustum of a cone, and meeting in the kettle at the..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

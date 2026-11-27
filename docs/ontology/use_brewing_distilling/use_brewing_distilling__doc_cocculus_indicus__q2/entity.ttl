@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_brewing_distilling/use_brewing_distilling__doc_cocculus_indicus__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. COCCULUS INDICUS" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Cocculus Indicus used in Brewing, Malting & Distilling: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. COCCULUS INDICUS"@en ;
+    <ontology/quoteText/#resource> "COCCULUS INDICUS: or Indian berry, is the fruit of the Menispermum Cocculus, a large tree, which grows upon the coasts of Malabar, Ceylon, &c. The fruit is blackish, and of the size of a large pea. It owes its narcotic and poisonous qualities to the vegeto-alkaline chemical principle called picrotoxia, of which it contains about one-fiftieth part of its weig..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_perfumery_cosmetics/use_perfumery_cosmetics__1702__q1/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 482" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n482/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Myrrh used in Perfumery, Pomades & Essential Oils: Mortimer (1823), General Commercial Dictionary, scan p. 482"@en ;
+    <ontology/quoteText/#resource> "This oil of myrrh has been highly praised as a cosmetic. New-Holland. A red, and a yellowish-coloured, concrete gum-resin, have been brought from New-Holland; the first is powerfully astringent, and not unlike kino; the yellow is not very dissimilar in its general properties; but the plant from which the red is procured is the eucalyptus resinifera of Willde..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

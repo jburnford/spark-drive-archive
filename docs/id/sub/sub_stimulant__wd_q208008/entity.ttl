@@ -1,0 +1,11 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/sub/sub_stimulant__wd_q208008/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cocoa Bean (substance group)"@en ;
+    skos:broader <id/grp/grp_stimulant_beverages/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:prefLabel "Cocoa Bean (substance group)"@en .

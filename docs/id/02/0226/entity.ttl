@@ -1,0 +1,35 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0226/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Flax"@en ;
+    skos:broadMatch <customs-1866/fiber/#concept> ;
+    skos:broader <id/sub/sub_bast_plant_wd_q47089651/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_2970>, <http://vocab.getty.edu/aat/300014041> ;
+    skos:definition "a plant; the *Linum usitatissimum*, and the textile fibre obtained from it. From the seed an oil, known as linseed oil, is expressed, which is largely used in the arts. Our foreign supplies of flax come chiefly from Russia; we imported in 1856, 84,552 tons of dressed and undressed flax and tons of tow. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 168]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q47089651> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0226" ;
+    skos:prefLabel "Flax"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n168>, <https://archive.org/details/dictionaryprac00mccu/page/n700> ;
+    <ontology/firstAttested/#resource> "1858"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "163"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_26_Textile_Fibres" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q45108> ;
+    <ontology/substanceHead/#resource> "Flax" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_paper_making/#concept> .

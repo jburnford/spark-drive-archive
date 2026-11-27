@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_olive_wood/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Olive Wood"@en ;
+    skos:broader <id/grp/grp_hewn_round_timber/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q35101402> ;
+    skos:definition "the yellowish wood of tho olive-tree which takes a good polish and, being beautifully feathered, is worked up into small ornamental fancy articles: in France and other parts of the Continent, it is used as a building wood. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 277]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_olive_wood" ;
+    skos:prefLabel "Olive Wood"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0070 (Wood Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 277."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n277> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0070/#concept> .

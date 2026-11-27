@@ -1,0 +1,26 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_storax/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Storax"@en ;
+    skos:altLabel "Altingia Excelsa"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q907000> ;
+    skos:definition "flows from the twigs and the trunk of the _Liquidambar styraciflua_, a tree which grows in Louisiana, Virginia, and Mexico. Liquidamber, as this resin is also called, is a brown or ash-gray substance, of the consistence of turpentine, which dries up rapidly, has an agreeable smell, like benzoin, and a bitterish, sharp, burning taste. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_storax" ;
+    skos:prefLabel "Storax"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562), Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 945."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n945>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q469652> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_perfumery_cosmetics/#concept>, <ontology/ind_pharmaceuticals/#concept> .

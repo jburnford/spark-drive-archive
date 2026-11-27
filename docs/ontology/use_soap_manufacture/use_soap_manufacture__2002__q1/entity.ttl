@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_soap_manufacture/use_soap_manufacture__2002__q1/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 936" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n936/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Copperas used in Soap Manufacture: Mortimer (1823), General Commercial Dictionary, scan p. 936"@en ;
+    <ontology/quoteText/#resource> "The process above described is that followed in the manufacture of hard soap; in making soft soap, potash is substituted for the soda; the rest of the process is precisely the same as that of which we have been treating. Mottled soap obtains its speckled appearance by dispersing the ley, towards the end of the operation, through the soap, or by adding to it ..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

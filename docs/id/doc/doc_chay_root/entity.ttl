@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_chay_root/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Chay Root"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:definition "There is a plant called chay, the _Oldenlandia umbellata_, which is extensively cultivated as a dye plant in the East, especially on the coasts of Coromandel, Nellore, Masulipatam, Malabar, and other parts of India. The outer bark of the roots furnishes the coloring matter for the durable red for which the chintzes of India are famous. [P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854, Project Gutenberg #15191)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_chay_root" ;
+    skos:prefLabel "Chay Root"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0054 (Dye Stuffs Unenumerated). Attested in: P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854, Project Gutenberg #15191)."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://www.gutenberg.org/ebooks/15191> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q7085552> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0054/#concept> .

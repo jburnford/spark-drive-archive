@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/09/0913/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Percussion Caps"@en ;
+    skos:broader <id/grp/grp_metal_machinery_hardware/#concept> ;
+    skos:definition "small detonating copper caps for exploding the charge of a gun or pistol. Besides those made at home, large quantities are imported from the Continent. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 294]"@en ;
+    skos:editorialNote "Curated classification (group=grp_metal_machinery_hardware; processing_state=manufactured): Named tool, ironware, arm or instrument left in the residual bin. Layer-1 observations: 30 rows, 1871–1911. Series: HCPP_Annual Statement of Trade ×30. Units: Number ×19; Thousands ×11. Top routes: World → United Kingdom ×5; All Countries → United Kingdom ×3; Belgium → United Kingdom ×3; Other Foreign Countries → United Kingdom ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0913" ;
+    skos:prefLabel "Percussion Caps"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n294> ;
+    <ontology/firstAttested/#resource> "1871"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "30"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_69_7_Metalwares_and_Machinery" ;
+    <ontology/substanceHead/#resource> "Percussion Caps" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

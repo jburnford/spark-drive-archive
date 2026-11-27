@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_byssus/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Byssus"@en ;
+    skos:broader <id/grp/grp_bast_plant_fibres/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q780486> ;
+    skos:definition "a viscid silky fibre produced by the wing-shell mollusc (*Pinna angusta*) in the Mediterranean and West Indies, &c. The filaments are extremely fine and strong, and often reach 3 feet in length. The colour, which is a reddish brown, never fades. Stockings, gloves, and other articles have been woven of it, but more as a curiosity than for use. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 70]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_byssus" ;
+    skos:prefLabel "Byssus"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0822 (Esparto and other Vegetable Fibres for making Paper). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 70, Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 190."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n70>, <https://archive.org/details/generalcommercia00mort/page/n190> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/08/0822/#concept> .

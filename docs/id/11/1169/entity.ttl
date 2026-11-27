@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/11/1169/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Woollen Rags Not Pulled"@en ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q1567420> ;
+    skos:broader <id/sub/sub_animal_fib_wd_q1567420/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_animal_fibres; processing_state=unspecified): Woollen rags (shoddy/mungo stock, 'for use as wool') are recovered animal fibre; filed with Wool Waste (htc:1688) rather than as manufactures or manure. Layer-1 observations: 19 rows, 1906–1906. Series: HCPP_Annual Statement of Trade ×19. Units: Lbs. (Pounds) ×19. Top routes: Canada → United Kingdom ×1; Denmark → United Kingdom ×1; France → United Kingdom ×1; Italy → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1169" ;
+    skos:prefLabel "Woollen Rags Not Pulled"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q42329> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/materialConcept/#resource> <id/00/0021/#concept> ;
+    <ontology/observationCount/#resource> "19"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_26_Textile_Fibres" ;
+    <ontology/substanceHead/#resource> "Woollen Rags Not Pulled" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

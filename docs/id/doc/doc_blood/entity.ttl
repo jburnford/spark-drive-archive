@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_blood/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Blood"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q7873> ;
+    skos:definition "the fluid which circulates in the heart and blood-vessels of animals, which is used for many commercial purposes: it is stirred and run into casks for the use of sugar refiners; it is made into animal charcoal; congealed, it is sold to calico-printers for dyeing Turkey red, and is chemically prepared for printers' use. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 53]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_blood" ;
+    skos:prefLabel "Blood"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0054 (Dye Stuffs Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 53, Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n53>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0054/#concept> .

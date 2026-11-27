@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0357/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Bones"@en ;
+    skos:altLabel "bone"@en ;
+    skos:broadMatch <customs-1866/animal_part/#concept> ;
+    skos:broader <id/sub/sub_fertilizer_wd_q265868/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_1001> ;
+    skos:definition "the solid supports forming the skeleton or framework of the bodies of animals, which enter largely into commerce for manufacturing purposes, being employed by cutlers, turners, &c.; for manure and for making animal charcoal, also for gelatine, for the size used by dyers and finishers of fustians, velveteens, &c. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 57]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q265868> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0357" ;
+    skos:prefLabel "Bones"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n57>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1821"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1867"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "107"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Bones" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

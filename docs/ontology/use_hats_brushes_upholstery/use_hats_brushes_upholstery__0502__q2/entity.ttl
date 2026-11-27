@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__0502__q2/#resource> dcterms:bibliographicCitation "Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 326" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n326/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Whale Fins used in Hat-Making, Brushes, Upholstery & Turnery: Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 326"@en ;
+    <ontology/quoteText/#resource> "They are extensively used, when split, for caulking chairs, and for making rough brooms, and, when dyed black as a substitute for whalebone for umbrella ribs, and for stiffening bonnets."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

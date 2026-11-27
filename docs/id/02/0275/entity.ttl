@@ -1,0 +1,37 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0275/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cutch"@en ;
+    skos:altLabel "catechu"@en ;
+    skos:broader <id/grp/grp_vegetable_tannins/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300013357> ;
+    skos:definition "absurdly called Terra Japonica, is an extract made from the wood of the tree _mimosa catechu_, which grows in Bombay, Bengal, and other parts of India. It is prepared by boiling the chips of the interior of the trunk in water, evaporating the solution to the consistence of syrup over the fire, and then exposing it in the sun to harden. It occurs in flat rough cakes, and under two forms. The first, or the Bombay, is of uniform texture, of a dark red colour, and of specific gravity 1·39. The second is more friable and less solid. It has a chocolate colour, and is marked inside with red streaks. Its specific gravity is 1·28. According to Sir H. Davy, these two species are composed as follows:-- [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:editorialNote "Curated fields — definition use: Auto-match had picked an export-statistics sentence; Ure's CATECHU entry defines cutch."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q2046743> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0275" ;
+    skos:prefLabel "Cutch"@en ;
+    skos:related <id/02/0206/#concept> ;
+    skos:scopeNote "Historical South/Southeast Asian vegetable tanning and dyeing extract (Senegalia catechu); 19th-century customs clerks frequently conflated cutch and gambier under 'Terra Japonica'."@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n128>, <https://archive.org/details/b21780535/page/n460>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1855"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1918"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "140"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q935632> ;
+    <ontology/substanceHead/#resource> "Cutch" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_calico_printing/#concept>, <ontology/ind_leather_tanning/#concept> .

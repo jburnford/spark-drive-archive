@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__0677__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. HAT MANUFACTURE" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Gum Lac, Seed, Shell, Stick, and Dye used in Hat-Making, Brushes, Upholstery & Turnery: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. HAT MANUFACTURE"@en ;
+    <ontology/quoteText/#resource> "He prepares his water-proof stiffening by mixing 18 pounds of shellac with 1-1/2 pounds of salt of tartar (carbonate of potash), and 5-1/2 gallons of water."@en ;
+    <ontology/retrievalMode/#resource> "essay_context" .

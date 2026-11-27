@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0073/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Oatmeal"@en ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q2089240>, <customs-1866/corn/#concept> ;
+    skos:broader <id/sub/sub_cereals_gr_wd_q2089240/#concept> ;
+    skos:definition "flour made by grinding oats, used for making porridge, bread, and poultices. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 274]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0073" ;
+    skos:prefLabel "Oatmeal"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_annual_statement_of_trade_1910_1940_ext/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n274> ;
+    <ontology/firstAttested/#resource> "1830"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_grain" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1940"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "395"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "milled_ground" ;
+    <ontology/sitcCode/#resource> "SITC4_04_Cereals_and_Preparations" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q12104> ;
+    <ontology/substanceHead/#resource> "Oatmeal" ;
+    <ontology/theodoridisBucket/#resource> "grain_and_flour" .

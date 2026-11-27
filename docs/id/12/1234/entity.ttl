@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/12/1234/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Chesnuts"@en ;
+    skos:broader <id/grp/grp_fruits_nuts_vegetables/#concept> ;
+    skos:definition "(GER. *Kastanien*. DU. *Kastanien*, *Karstengen*. DA. and Sw. *Kastanier*. FR. *Chataignes*. IT. *Castagne*. SP. *Castanas*. PORT. *Castanhas*. RUS. *Kaschtanü*. POL. *Kasztany*. LAT. *Castanæ*,) the fruit of the chesnut-tree, which in France is used as a substitute for potatoes, and oftentimes for bread. Horse-chesnuts are the fruit of the wild chesnut-tree. Starch of very excellent quality has been lately made from horse-chesnuts by a very simple process, similar to that used in transmuting potatoes into starch. See STARCH. The wood of the chesnut-tree is the most durable of any that is grown here, next to oak, for buildings. Many of our old churches and colleges are roofed with it. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 217]"@en ;
+    skos:editorialNote "Curated classification (group=grp_fruits_nuts_vegetables): Named fruit, nut or vegetable left in the residual bin. Layer-1 observations: 16 rows, 1827–1866. Series: HCPP_Annual Statement of Trade ×14; KEW_CUST 4 ×2. Units: Bushels ×16. Top routes: World → United Kingdom ×3; Other Parts → United Kingdom ×3; Canada → England ×2; Spain → United Kingdom ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1234" ;
+    skos:prefLabel "Chesnuts"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n217> ;
+    <ontology/firstAttested/#resource> "1827"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "16"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_05_Vegetables_and_Fruit" ;
+    <ontology/substanceHead/#resource> "Chesnuts" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

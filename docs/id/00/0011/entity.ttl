@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0011/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cheese"@en ;
+    skos:broadMatch <customs-1866/dairy_product/#concept> ;
+    skos:broader <id/sub/sub_dairy_eggs_wd_q10943/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_1507>, <http://vocab.getty.edu/aat/300390514>, <http://zbw.eu/stw/descriptor/14954-6> ;
+    skos:definition "a commercial product from milk, of which there are many kinds made for home use and export; we also receive large quantities from America and the Continent: those made in England taking their name from counties, &c., are Cheshire, a large rich solid cheese; Derbyshire, a small, rich, white variety; Gloucester, rich and mild, of two kinds, single and double; Lincolnshire, a small and soft cheese made of new milk and cream; Norfolk, a dark yellow coloured; Suffolk, a skim-milk cheese; and Cottenham, a broad shaped and superior flavoured Stilton. Other prime home-made cheeses, are Cheddar, Wensleydale, cream pine, and loaf cheese. The esteemed foreign cheeses are Parmesan, Gruyere, &c. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 96]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q10943> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0011" ;
+    skos:prefLabel "Cheese"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_annual_statement_of_trade_1910_1940_ext/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n454>, <https://archive.org/details/b21780535/page/n96>, <https://archive.org/details/generalcommercia00mort/page/n216> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1940"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "dairy_processed" ;
+    <ontology/sitcCode/#resource> "SITC4_02_Dairy_and_Eggs" ;
+    <ontology/substanceHead/#resource> "Cheese" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

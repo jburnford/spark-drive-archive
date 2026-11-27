@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_metallurgy_tinplate/use_metallurgy_tinplate__0975__q1/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 85" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n85/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Sulphuric Acid used in Metallurgy, Smelting, Brass & Tinplate: McCulloch (1880), Dictionary of Commerce, scan p. 85"@en ;
+    <ontology/quoteText/#resource> "Used in soldering and galvanising iron, with iron filings as cement for iron, &c. Sulphate of Ammonia.—It is procured from gas liquor in same manner as the chloride, by substituting sulphuric acid for muriatic."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

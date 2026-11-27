@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0207__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. F, F" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Tar used in Shipbuilding, Rope, Cordage & Sailcloth: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. F, F"@en ;
+    <ontology/quoteText/#resource> "Chapman of Newcastle, to whom the art of rope-making is deeply indebted, having observed that rope yarn is considerably weakened by passing through the tar-kettle, that tarred cordage loses its strength progressively in cold climates, and so rapidly in hot climates as to be scarcely fit for use in three years, discovered that the deterioration was due to the..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

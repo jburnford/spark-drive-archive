@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_perfumery_cosmetics/use_perfumery_cosmetics__doc_vanilla__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. PERFUMERY, ART OF" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Vanilla used in Perfumery, Pomades & Essential Oils: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. PERFUMERY, ART OF"@en ;
+    <ontology/quoteText/#resource> "The following may serve as an example:-Pommade à la vanille, commonly called Roman. 12 pounds of pommade à la rose. 3 -- oil à la rose. 1 -- vanilla, first quality, pulverized. 6 ounces bergamote."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

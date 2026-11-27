@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_chocolate_confectionery/use_chocolate_confectionery__doc_vanilla__q2/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 976" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n976> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Vanilla used in Chocolate & Confectionery: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 976"@en ;
+    <ontology/quoteText/#resource> "VANILLA: (GER. Vanilje. DU. Ba- nille. DA. Vaniller. SW. Baniller. FR. Vanille. IR. Vainiglia. SP. Vainilla, Vainica. PORT. Vainilha, Baonelha. LAT. Vanilla.) There are 124 species of the vanilla plant, one of which produces this fruit, which is used in making chocolate. It is a native of Mexico, and also of some parts of the East Indies. It is a parasitic p..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

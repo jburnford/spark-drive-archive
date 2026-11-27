@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/05/0558/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cork Manufactured"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300011862>, <http://www.wikidata.org/entity/Q49444>, <http://zbw.eu/stw/descriptor/14793-4>, <customs-1866/bark/#concept> ;
+    skos:broader <id/sub/sub_wood_pulp__wd_q49444/#concept> ;
+    skos:definition "the modified liber of the *Quercus suber*, largely used for stoppers of bottles and casks, and many other purposes. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 119]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0558" ;
+    skos:prefLabel "Cork Manufactured"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n119>, <https://archive.org/details/generalcommercia00mort/page/n251>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1871"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "65"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_25_Pulp_and_Waste_Paper" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q156137> ;
+    <ontology/substanceHead/#resource> "Cork" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

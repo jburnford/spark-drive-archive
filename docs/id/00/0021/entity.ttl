@@ -1,0 +1,35 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0021/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Wool"@en ;
+    skos:broader <id/sub/sub_animal_fib_wd_q42329/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300014074>, <http://zbw.eu/stw/descriptor/14130-3> ;
+    skos:definition "the soft curly hair or fleece covering of sheep—one of the most important of animal fibres, in which the trade, home and foreign, reaches nearly 100,000 tons a year. The kinds of wool raised at home, and received from abroad, are very numerous. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 427]"@en ;
+    skos:editorialNote "Curated fields — definition use: Auto-match had picked Watt's bibliography list, which defines nothing."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q42329> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0021" ;
+    skos:prefLabel "Wool"@en ;
+    skos:related <id/00/0017/#concept>, <id/01/0117/#concept>, <id/01/0173/#concept>, <id/03/0371/#concept>, <id/06/0694/#concept>, <id/07/0710/#concept>, <id/07/0722/#concept>, <id/08/0837/#concept>, <id/08/0850/#concept>, <id/08/0880/#concept>, <id/08/0881/#concept>, <id/09/0916/#concept>, <id/09/0982/#concept>, <id/10/1008/#concept>, <id/10/1047/#concept>, <id/10/1048/#concept>, <id/10/1073/#concept>, <id/10/1075/#concept>, <id/10/1096/#concept>, <id/11/1147/#concept>, <id/11/1151/#concept>, <id/11/1152/#concept>, <id/11/1185/#concept>, <id/11/1189/#concept>, <id/12/1242/#concept>, <id/12/1289/#concept>, <id/13/1324/#concept>, <id/13/1357/#concept>, <id/13/1358/#concept>, <id/15/1582/#concept>, <id/16/1653/#concept>, <id/16/1665/#concept>, <id/16/1670/#concept>, <id/18/1853/#concept>, <id/19/1947/#concept>, <id/19/1975/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n427>, <https://archive.org/details/b31361584/page/n1133>, <https://archive.org/details/dictionaryprac00mccu/page/n1867> ;
+    <ontology/firstAttested/#resource> "1839"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "815"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_26_Textile_Fibres" ;
+    <ontology/substanceHead/#resource> "Wool" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_woollen_silk_dyeing/#concept> .

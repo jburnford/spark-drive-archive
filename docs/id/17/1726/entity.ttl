@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/17/1726/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Manganese"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300011025>, <http://www.wikidata.org/entity/Q731>, <http://zbw.eu/stw/descriptor/14301-2> ;
+    skos:broader <id/grp/grp_metals_semi_finished/#concept> ;
+    skos:definition "is a grayish-white metal, of a fine-grained fracture, very hard, very brittle, with considerable lustre, of spec. grav. 8·013, and requiring for fusion the extreme heat of 160° Wedgewood. It should be kept in closely stoppered bottles, under naphtha, like potassium, because with contact of air it speedily gets oxidized, and falls into powder. It decomposes water slowly at common temperatures, and rapidly at a red heat. Pure oxide of manganese can be reduced to the metallic state only in small quantities, by mixing it with lamp black and oil into a dough, and exposing the mixture to the intense heat of a smith’s forge, in a luted crucible; [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1726" ;
+    skos:prefLabel "Manganese"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b31361584/page/n774>, <https://archive.org/details/generalcommercia00mort/page/n612>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1871"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1888"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "6"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "smelted_semi" ;
+    <ontology/sitcCode/#resource> "SITC4_67_68_Metals" ;
+    <ontology/substanceHead/#resource> "Manganese" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__0008__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. C D E F" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Wheat Meal and Flour used in Calico Cloth & Calico Printing: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. C D E F"@en ;
+    <ontology/quoteText/#resource> "Take 1 gallon decoction of galls of spec. grav. 1·056. 18 ounces of flour, mix, boil into a paste, to which, when cool, add 8 ounces of the aceto-nitrate of iron of the preceding formula, and 1 quart of iron liquor of spec. grav. 1·110."@en ;
+    <ontology/retrievalMode/#resource> "essay_context" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__0557__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 363" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n363> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Alkali used in Glassmaking, Pottery & Porcelain: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 363"@en ;
+    <ontology/quoteText/#resource> "SODA-ASH: the alkali obtained from common salt, manufactured to the extent of from 100,000 to 120,000 tons a year. It is used instead of barilla for soap-making, as a substitute for pot and pearl ashes in glass-making, and for bleaching and cleansing cotton."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

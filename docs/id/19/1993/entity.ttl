@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1993/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Magnesia"@en ;
+    skos:broader <id/grp/grp_industrial_chemicals_alkalis/#concept> ;
+    skos:definition "(Eng. and Fr.; _Bittererde_, _Talkerde_, Germ.), is one of the primitive earths, first proved by Sir H. Davy to be the oxide of a metal, which he called _magnesium_. It is a fine, light, white powder, without taste or smell, which requires 5150 parts of cold water, and no less than 36,000 parts of boiling water, for its solution. Its specific gravity is 2·3. It is fusible only by the heat of the hydroxygen blowpipe. A natural hydrate is said to exist which contains 30 per cent. of water. Magnesia changes the purple infusion of red cabbage to a bright green. It attracts carbonic acid from the air, but much more slowly than quicklime. It consists of 61·21 parts of metallic basis, and 38·79 of oxygen; [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:editorialNote "Curated classification (group=grp_industrial_chemicals_alkalis): Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin. Layer-1 observations: 1 rows, 1807–1807. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×1. Units: Lbs. (Pounds) ×1. Top routes: Quebec QC → Great Britain ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1993" ;
+    skos:prefLabel "Magnesia"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n248>, <https://archive.org/details/generalcommercia00mort/page/n608>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_51_52_Chemicals" ;
+    <ontology/substanceHead/#resource> "Magnesia" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

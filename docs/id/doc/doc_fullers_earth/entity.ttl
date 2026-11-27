@@ -1,0 +1,22 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_fullers_earth/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Fullers' Earth"@en ;
+    skos:broader <id/grp/grp_industrial_minerals/#concept> ;
+    skos:definition "(GER. *Walkererde*. DU. *Volluarde*. DA. *Walkejorde*. SW. *Valklera*, *Valkjord*. FR. *Terre à foulon*. IT. *Terra da purgatori*. SP. *Tierra de batan*. PORT. *Greda de pizoeiro*. RUS. *Schiffernaia glina*. LAT. *Terra fullonum*,) a species of clay, of a greyish ash-coloured brown, in all degrees from very pale to almost black, and it has generally something of a greenish cast. It is very hard and firm, of a compact texture, of a rough and somewhat dusty surface that adheres slightly to the tongue. It is very soft to the touch, not staining the hands, nor breaking easily between the fingers. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 441]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_fullers_earth" ;
+    skos:prefLabel "Fullers' Earth"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:1905 (Minerals Unenumerated). Attested in: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 441, P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 176."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n176>, <https://archive.org/details/generalcommercia00mort/page/n441> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/sitcCode/#resource> "SITC4_27_Crude_Fertilizers_and_Minerals" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/19/1905/#concept> .

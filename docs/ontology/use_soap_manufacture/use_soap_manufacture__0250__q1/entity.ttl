@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_soap_manufacture/use_soap_manufacture__0250__q1/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 1430" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1430/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Train or Blubber (Whale Oils) used in Soap Manufacture: McCulloch (1880), Dictionary of Commerce, scan p. 1430"@en ;
+    <ontology/quoteText/#resource> "The oil employed for making soft soap in this country is whale oil."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

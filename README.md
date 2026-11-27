@@ -4,6 +4,14 @@
 
 Reproducible code, open public-domain commercial dictionary lexicons, and extracted Layer-1 historical trade data & LINCS-compatible SKOS vocabularies (`skos:Concept` + `crm:E55_Type`) for *London's Ghost Acres* and comparative British World environmental history (University of Saskatchewan HGIS Lab).
 
+## Published identifiers
+
+Each project entity has a citable page on GitHub Pages with embedded JSON-LD and a linked Turtle representation (`entity.ttl`). The [compressed full graph](docs/data/open-empire.ttl.gz) and [VoID dataset description](docs/void.ttl) support bulk reuse. Open a commodity ID in the inspector to visit its record. For example, the permanent identifier for Hops is [Hops (htc:0056)](https://jimclifford.ca/spark-drive-archive/id/00/0056/#concept).
+
+The project tables retain short keys such as `htc:0056`. Use the [identifier crosswalk](docs/identifier-crosswalk.tsv) to translate the previous USask IRIs to the canonical public IRIs. In the RDF and SSSOM exports, the corresponding compact IRI includes its fragment, for example `htc:00/0056/#concept`. The crosswalk records the migration at version 7.0 and should be retained with future releases.
+
+Run `python scripts/build_entity_pages.py` to generate the static pages from the published vocabulary, end-use network, and SSSOM mapping set. This step requires RDFLib and can run offline. GitHub Pages serves the committed `docs/` tree after changes reach the publishing branch.
+
 ## Rights & Sharing Policy (Strict 3-Tier Boundary)
 1. **Included in this repository (Open Code, Open Documents, & Extracted Data):**
    - **All pipeline code:** Internet Archive / BHL discovery, download, Narval Chandra-2 OCR batching, dictionary parsing, Layer-1 trade consolidation, place/polity grounding, and SKOS v4 ontology generation (`scripts/`, `human_trade/scripts/`).
@@ -17,7 +25,7 @@ Reproducible code, open public-domain commercial dictionary lexicons, and extrac
 3. **Layer Separation:** Layer-1 (`human_transcribed`) extracted trade records are kept strictly distinct from future Layer-2 (`llm_extracted`) archival OCR extractions.
 
 ## Build, Version and Verification
-- **Version 6.2** (`MANIFEST.json`): one record of the vocabulary version, namespaces, Wikidata snapshot, curated-table sizes and a SHA-256 for every published file.
+- **Version 7.0** (`MANIFEST.json`): one record of the vocabulary version, namespaces, Wikidata snapshot, curated-table sizes and a SHA-256 for every published file.
 - **Verify the published files** without any restricted source: `pip install rdflib && python scripts/verify.py` (file hashes, Turtle = JSON-LD, core ⊂ extended, the end-use graph joins to the vocabulary by IRI, tier filters, clean hierarchy, plausible dates).
 - **Rebuild everything** in dependency order: `scripts/build_all.sh` (needs the raw sources and external data roots; override with `OE_WD_SLIM_GLOB`, `OE_OCR_ROOT`, `OE_GUTENBERG_ROOT`). Outputs are deterministic.
 - `archive/end_use_pilot/` holds the superseded 3-industry pilot. Do not load it alongside the end-use network.

@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/17/1765/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Vermillion"@en ;
+    skos:broadMatch <customs-1866/pigment/#concept> ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:definition "or _Cinnabar_, is a compound of mercury and sulphur in the proportion of 100 parts of the former to 16 of the latter, which occurs in nature as a common ore of quicksilver, and is prepared by the chemist as a pigment, under the name of Vermillion. It is, properly speaking, a bisulphuret of mercury. This artificial compound being extensively employed, on account of the beauty of its colour, in painting, for making red sealing-wax, and other purposes, is the object of an important manufacture. When vermillion is prepared by means of sublimation, it concretes in masses of considerable thickness, concave on one side, convex on the other, of a needle-form texture; [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:editorialNote "Curated classification (group=grp_natural_dyestuffs): Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin. Layer-1 observations: 5 rows, 1800–1800. Series: KEW_CUST 5 ×5. Units: Lbs. (Pounds) ×5. Top routes: Holland → United Kingdom ×1; World → United Kingdom ×1; Germany → United Kingdom ×1; Ireland → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1765" ;
+    skos:prefLabel "Vermillion"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n981>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/substanceHead/#resource> "Vermillion" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_varnish_paint_lacquer/#concept> .

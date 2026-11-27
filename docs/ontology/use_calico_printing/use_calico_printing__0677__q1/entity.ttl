@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__0677__q1/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 893" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n893/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Gum Lac, Seed, Shell, Stick, and Dye used in Calico Cloth & Calico Printing: McCulloch (1880), Dictionary of Commerce, scan p. 893"@en ;
+    <ontology/quoteText/#resource> "When stick lac has been separated from the twigs to which it naturally adheres, and coarsely pounded, the native silk and cotton dyers extract the colour as far as it conveniently can be done by water."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

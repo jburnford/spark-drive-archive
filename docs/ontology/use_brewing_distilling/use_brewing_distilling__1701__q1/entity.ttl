@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_brewing_distilling/use_brewing_distilling__1701__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 321" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n321> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Lignum Quassia used in Brewing, Malting & Distilling: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 321"@en ;
+    <ontology/quoteText/#resource> "QUASSIA: a name for some bitter woods—the Surinam quassia is the produce of Quassia amara, and the Jamaican quassia of Picranea excelsa. They furnish a piro and simple bitter, and brewers are said to use the chips freely as a substitute for hops, although they have narcotic properties."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,17 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/08/0843_r3/#resource> a <ontology/ScopedReading/#resource> ;
+    rdfs:label "Cocoa nuts read as coconuts (series ^KEW_CUST 4, 1840–1840, unit ^Number$)"@en ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q3342808> ;
+    skos:note "The single 1840 CUST 4 row is entered by number, the form later used for coconuts; one row is thin evidence."@en ;
+    <ontology/matchedObservationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/readingOf/#resource> <id/08/0843/#concept> ;
+    <ontology/readingStatus/#resource> "probable" ;
+    <ontology/scopeSeries/#resource> "^KEW_CUST 4" ;
+    <ontology/scopeUnit/#resource> "^Number$" ;
+    <ontology/scopeYearFrom/#resource> "1840"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/scopeYearTo/#resource> "1840"^^<http://www.w3.org/2001/XMLSchema#integer> .

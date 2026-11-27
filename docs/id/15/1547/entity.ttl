@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/15/1547/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Plumbago, crude ore and concentrates"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300011098>, <http://www.wikidata.org/entity/Q5309>, <http://zbw.eu/stw/descriptor/30374-4> ;
+    skos:broader <id/sub/sub_industrial_wd_q5309/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_industrial_minerals; processing_state=unspecified; wd_term=graphite; wd_relation=skos:broadMatch): Black lead / plumbago is graphite (Simmonds 1892 s.v. BLACK LEAD: 'See GRAPHITE and PLUMBAGO'; McCulloch 1880 s.v. BLACK LEAD); filed with Plumbago (htc:0130), not with lead metal or metallic ores. Layer-1 observations: 9 rows, 1881–1901. Series: CSP_Canadian Trade and Navigation ×3; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×5. Units: CWTS (Hundredweights) ×8; (no unit) ×1. Top routes: Canada → United States ×2; Ontario → United States ×1; Canada → United Kingdom ×1; Canada → World ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1547" ;
+    skos:prefLabel "Plumbago, crude ore and concentrates"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1881"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1901"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "9"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_27_Crude_Fertilizers_and_Minerals" ;
+    <ontology/substanceHead/#resource> "Plumbago, crude ore and concentrates" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

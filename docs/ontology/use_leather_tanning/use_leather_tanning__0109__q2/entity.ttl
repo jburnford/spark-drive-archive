@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0109__q2/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 952" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n952> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Shumach used in Leather Tanning, Tawing & Currying: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 952"@en ;
+    <ontology/quoteText/#resource> "SUMACH: (GER. Schmack, Sumach. DU. Sumak, Smak. DA. Smak, Sumak. Sw. Sumack, Smack. FR. Sumac, Roure, Roux. IT. Sommaço. SP. Zumaque. PORT. Sumagre, Cumagre. RUS. Sumak. POL. Garbarskie drzewko, Maźnika. LAT. Rhus.) Common sumach (Rhus coriaria) is a shrub that grows naturally in Syria, Palestine, Spain, and Portugal; in the two last it is cultivated with gr..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

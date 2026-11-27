@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0224/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300011857>, <http://www.wikidata.org/entity/Q82001> ;
+    skos:broader <id/sub/sub_fertilizer_wd_q82001/#concept> ;
+    skos:definition "the commercial name for the bony matter of the tusks of the elephant, the teeth of the hippopotamus and walrus, the horn of the narwhal, &c. Elephant Ivory is the most esteemed, and that obtained in the largest quantity; our imports are nearly 500 tons a-year. Ivory is largely [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 218]"@en ;
+    skos:editorialNote "Curated fields — source_taxon add: Heading enumerates elephant, sea-cow (hippopotamus) and sea-horse (walrus) teeth; cf. Simmonds 1892 s.v. IVORY. | source_taxon add: Heading enumerates elephant, sea-cow (hippopotamus) and sea-horse (walrus) teeth; cf. Simmonds 1892 s.v. IVORY. | source_taxon add: Heading enumerates elephant, sea-cow (hippopotamus) and sea-horse (walrus) teeth; cf. Simmonds 1892 s.v. IVORY."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0224" ;
+    skos:prefLabel "Ivory (Elephant Sea Cow Sea Horse or Sea Moose Teeth)"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n218>, <https://archive.org/details/dictionaryprac00mccu/page/n883>, <https://archive.org/details/generalcommercia00mort/page/n545> ;
+    <ontology/firstAttested/#resource> "1822"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "163"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q133006>, <http://www.wikidata.org/entity/Q36557>, <http://www.wikidata.org/entity/Q40994> ;
+    <ontology/substanceHead/#resource> "Ivory" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_hats_brushes_upholstery/#concept> .

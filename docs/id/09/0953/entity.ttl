@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/09/0953/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Jewellery Unenumerated"@en ;
+    skos:broader <id/grp/grp_glass_ceramics_paper_woodware/#concept> ;
+    skos:definition "a general name for ornaments for the person, of silver, gold, enamels, precious stones, &c. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 221]"@en ;
+    skos:editorialNote "Curated classification (group=grp_glass_ceramics_paper_woodware; processing_state=manufactured): Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin. Layer-1 observations: 28 rows, 1861–1906. Series: HCPP_Annual Statement of Trade ×26; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×2. Units: (no unit) ×28. Top routes: France → United Kingdom ×4; World → United Kingdom ×4; Belgium → United Kingdom ×4; Hamburg → United Kingdom ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0953" ;
+    skos:prefLabel "Jewellery Unenumerated"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n221> ;
+    <ontology/firstAttested/#resource> "1861"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "28"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_64_66_89_Paper_Glass_Misc_Manufactures" ;
+    <ontology/substanceHead/#resource> "Jewellery" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

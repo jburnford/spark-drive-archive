@@ -1,0 +1,14 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0884/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Rye meal used in Leather Tanning, Tawing & Currying"@en ;
+    skos:editorialNote "Review decision (repoint): Quote is about unbolted rye flour."@en ;
+    <ontology/assertsCommodity/#resource> <id/08/0884/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_leather_tanning/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_leather_tanning/use_leather_tanning__0884__q1/#resource> ;
+    <ontology/productionRole/#resource> "tanning_or_curing" ;
+    <ontology/reviewStatus/#resource> "reviewed" .

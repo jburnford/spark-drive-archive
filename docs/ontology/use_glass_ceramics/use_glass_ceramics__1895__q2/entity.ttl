@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__1895__q2/#resource> dcterms:bibliographicCitation "J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 886" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n886> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Kelp used in Glassmaking, Pottery & Porcelain: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 886"@en ;
+    <ontology/quoteText/#resource> "KELP: A substance composed of different materials, of which the fossil or mineral alkali or, as it is commonly termed, soda, is the chief. This ingredient renders it useful in the composition of soap, in the manufacture of alum, and in the formation of crown and bottle glass. It is formed of marine plants, which, being cut from the rocks with a hook, are col..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

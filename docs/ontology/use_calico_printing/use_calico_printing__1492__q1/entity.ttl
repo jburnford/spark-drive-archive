@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__1492__q1/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 61" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n61/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Annatto Flag used in Calico Cloth & Calico Printing: Watt (1908), Commercial Products of India, scan p. 61"@en ;
+    <ontology/quoteText/#resource> "It is also essential in the formation of potash-glass and enters into many tinctorial and textile processes, such as the dyeing of Turkey red and of Arnotto (Bixa Orellana)."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

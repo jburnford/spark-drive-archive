@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__0860__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 117" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n117> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Gum Copal used in Varnish, Paint & Lacquer: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 117"@en ;
+    <ontology/quoteText/#resource> "COPAL: an important pure resin of commerce, forming the basis of most varnishes; a general name for most clear resins."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

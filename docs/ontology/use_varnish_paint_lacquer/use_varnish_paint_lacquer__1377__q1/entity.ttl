@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__1377__q1/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 460" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n460/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Turmeric used in Varnish, Paint & Lacquer: Watt (1908), Commercial Products of India, scan p. 460"@en ;
+    <ontology/quoteText/#resource> "Lastly, turmeric is said to be employed in the adulteration of mustard and to colour varnishes."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

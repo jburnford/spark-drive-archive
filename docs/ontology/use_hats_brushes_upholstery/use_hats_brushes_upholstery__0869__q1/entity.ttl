@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__0869__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 297" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n297> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Piassava Fibre and other Fibres for Brush Making used in Hat-Making, Brushes, Upholstery & Turnery: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 297"@en ;
+    <ontology/quoteText/#resource> "PIASSAVA: the footstalks of a species of South-American palm, the Attalea funifera, an important article of commerce in Brazil, and shipped to this country in bundles of 16 lbs., for making brushes and street-sweeping machines."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

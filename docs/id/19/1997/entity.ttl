@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1997/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Lampblack"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_natural_dyestuffs): Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin. Layer-1 observations: 1 rows, 1809–1809. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×1. Units: Boxes ×1. Top routes: Quebec QC → Great Britain ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1997" ;
+    skos:prefLabel "Lampblack"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1809"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1809"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/substanceHead/#resource> "Lampblack" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

@@ -1,0 +1,34 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1377/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Turmeric"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_15048> ;
+    skos:definition "a name for the tubers of the *Curcuma longa*, which are bitter and aromatic, and largely used in the East as an ingredient in curries. Turmeric is imported into this country as a dye-stuff, and used to colour butter. The colouring matter of the dried root is bright yellow. White paper, dyed by an alcoholic turmeric, is a very sensitive test for alkalies. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 404]"@en ;
+    skos:editorialNote "Curated fields — source_taxon remove: Indian dill, unrelated to turmeric."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q20730193> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1377" ;
+    skos:prefLabel "Turmeric"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n404>, <https://www.gutenberg.org/ebooks/15191> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "12"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q42562> ;
+    <ontology/substanceHead/#resource> "Turmeric" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_varnish_paint_lacquer/#concept>, <ontology/ind_woollen_silk_dyeing/#concept> .

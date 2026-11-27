@@ -1,0 +1,11 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<customs-1866/plant/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Plant"@en ;
+    skos:inScheme <customs-1866/scheme/#resource> ;
+    skos:prefLabel "Plant"@en ;
+    skos:topConceptOf <customs-1866/scheme/#resource> .

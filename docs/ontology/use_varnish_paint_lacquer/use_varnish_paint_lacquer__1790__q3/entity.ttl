@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__1790__q3/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 978" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n978/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Camphor Refined used in Varnish, Paint & Lacquer: Mortimer (1823), General Commercial Dictionary, scan p. 978"@en ;
+    <ontology/quoteText/#resource> "This is a very bright solution of copal; it is an excellent varnish for pictures, and may perhaps be found to be an improvement in fine japan works; as the stoves used in drying those articles may drive off the camphor entirely, and leave the gum copal pure, and colourless, upon the work. VARNISH, among medalists, signifies the colours antique medals have ac..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

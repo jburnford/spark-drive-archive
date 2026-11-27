@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/04/0488/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Furs Unenumerated"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300011811>, <http://www.wikidata.org/entity/Q197204>, <http://zbw.eu/stw/descriptor/14916-0> ;
+    skos:broader <id/sub/sub_furs_marin_wd_q197204/#concept> ;
+    skos:definition "the fine soft short hair on the skin of some animals, which is worn for warmth or ornament [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 177]"@en ;
+    skos:editorialNote "Curated fields — definition excerpt: Boiler-scale sense of 'fur' removed."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0488" ;
+    skos:prefLabel "Furs Unenumerated"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n177>, <https://archive.org/details/generalcommercia00mort/page/n446> ;
+    <ontology/firstAttested/#resource> "1822"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_wild_hunted" ;
+    <ontology/lastAttested/#resource> "1883"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "73"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_21_Hides_Skins_Furskins_Raw" ;
+    <ontology/substanceHead/#resource> "Furs" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

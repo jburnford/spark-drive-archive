@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_hemlock_spruce/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Hemlock Spruce"@en ;
+    skos:broader <id/grp/grp_vegetable_tannins/#concept> ;
+    skos:definition "the *Abies Canadensis*, the wood of which is not held in much estimation. It has, however, been used for railway sleepers in England, and is much used for laths. The bark is largely used for tanning in the United States, although inferior to oak bark. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 204]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_hemlock_spruce" ;
+    skos:prefLabel "Hemlock Spruce"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0041 (Bark For Tanners and Dyers Use). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 204."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n204> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q87638643> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0041/#concept> .

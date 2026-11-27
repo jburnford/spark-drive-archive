@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0377/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Currants"@en ;
+    skos:altLabel "Corinthian raisins"@en, "Zante currants"@en ;
+    skos:broader <id/grp/grp_fruits_nuts_vegetables/#concept> ;
+    skos:definition "a small seedless variety of the grape, largely consumed for confectionery and culinary purposes. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 129]"@en ;
+    skos:editorialNote "Curated fields — definition use: Customs currants are dried Corinth grapes (imported in cwt from Greece, the Ionian Islands, Turkey), not Ribes garden currants. | source_taxon remove: Customs currants are dried grapes, not Ribes. | source_taxon remove: Customs currants are dried grapes, not Ribes. | source_taxon add: Currants = dried Corinth grapes (Simmonds 1892 s.v. CURRANTS)."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0377" ;
+    skos:prefLabel "Currants"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n129>, <https://archive.org/details/b21780535/page/n459>, <https://archive.org/details/generalcommercia00mort/page/n257> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "100"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_05_Vegetables_and_Fruit" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q30046> ;
+    <ontology/substanceHead/#resource> "Currants" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

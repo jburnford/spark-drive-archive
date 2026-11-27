@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/07/0742/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Petroleum"@en ;
+    skos:broadMatch <customs-1866/hydrocarbon/#concept> ;
+    skos:broader <id/sub/sub_fossil_fue_wd_q22656/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300013001>, <http://zbw.eu/stw/descriptor/14197-6> ;
+    skos:definition "This substance, which has been known for a long period as rock oil or naphtha, is found in various parts of the world. It was known to Herodotus as existing in Zante, and formed the source of the fire which the ancient Persians worshipped. Till lately, the best-known sources were the borders of the Caspian Sea, Amiano in Italy, Trinidad in the West Indies, and Rangoon in the East Indies, where vast quantities have been raised for many centuries, without apparent exhaustion. It is only lately, however, that petroleum has been an object of great commercial importance, owing to the extraordinary abundance (about 14,000 barrels a-day) in which it has been found in the United States. [J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1173]"@en ;
+    skos:editorialNote "Curated fields — definition use: Auto-match had picked Watt's bibliography with OCR debris."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q22656> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0742" ;
+    skos:prefLabel "Petroleum"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b31361584/page/n884>, <https://archive.org/details/dictionaryprac00mccu/page/n1173>, <https://archive.org/details/dictionaryprac00mccu/page/n1747> ;
+    <ontology/firstAttested/#resource> "1861"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1896"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "43"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_32_33_Mineral_Fuels" ;
+    <ontology/substanceHead/#resource> "Petroleum" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

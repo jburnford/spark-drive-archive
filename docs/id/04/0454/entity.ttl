@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/04/0454/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Prunes"@en ;
+    skos:broader <id/grp/grp_fruits_nuts_vegetables/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300417335> ;
+    skos:definition "dried plums, which are imported, to the extent of about 1000 tons a-year, from France, as a table fruit, for pies and puddings; also for medicinal uses, their properties being laxative when stewed. The largest and finest kind, the French plum or table prune, is the Catharine variety of the *Prunus domestica*, and is usually packed in cartoons; the common kind, the Julian variety, being packed in barrels. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 316]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q6766526> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0454" ;
+    skos:prefLabel "Prunes"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n316>, <https://archive.org/details/b21780535/page/n496> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "81"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_05_Vegetables_and_Fruit" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q44120> ;
+    <ontology/substanceHead/#resource> "Prunes" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

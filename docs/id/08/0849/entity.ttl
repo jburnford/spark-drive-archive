@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/08/0849/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Spermaceiti or Head Matter (Whale Oils)"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300014597>, <http://www.wikidata.org/entity/Q369682> ;
+    skos:broader <id/grp/grp_marine_oils/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_marine_oils; wd_term=spermaceti; wd_relation=skos:broadMatch): Spermaceti / head matter is a sperm-whale product explicitly headed '(Whale Oils)'. Layer-1 observations: 34 rows, 1856–1896. Series: HCPP_Annual Statement of Trade ×34. Units: Tuns (whale oil) ×34. Top routes: World → United Kingdom ×6; United States of America → United Kingdom ×4; Australia → United Kingdom ×3; Portugal → United Kingdom ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0849" ;
+    skos:prefLabel "Spermaceiti or Head Matter (Whale Oils)"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fisheries_marine" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "marine" ;
+    <ontology/lastAttested/#resource> "1896"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "34"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "refined_extract" ;
+    <ontology/sitcCode/#resource> "SITC4_41_Animal_Oils_and_Fats" ;
+    <ontology/substanceHead/#resource> "Spermaceiti or Head Matter" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

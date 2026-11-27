@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_brewing_distilling/use_brewing_distilling__0007__q2/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section BARLEY" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/15191> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Barley used in Brewing, Malting & Distilling: P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section BARLEY"@en ;
+    <ontology/quoteText/#resource> "BARLEY: Oats, rye and barley, are the staple crops of northern and mountainous Europe and Asia. In England barley is grown principally in the eastern and some of the midland counties, and chiefly for malting. It is most extensively cultivated in the Himalaya and Thibet, replacing in many districts the wheat, and producing an admirable flour. Since the establ..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

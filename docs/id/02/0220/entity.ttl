@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0220/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Gum Unenumerated"@en ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q903081> ;
+    skos:broader <id/sub/sub_gums_resin_wd_q903081/#concept> ;
+    skos:definition "(_Gomme_, Fr.; _Gummi_, _Pflanzenschleim_, Germ.) is the name of a proximate vegetable product, which forms with water a slimy solution, but is insoluble in alcohol, ether, and oils; it is converted by strong sulphuric acid into oxalic and mucic acids. There are six varieties of gum: 1. gum arabic; 2. gum senegal; 3. gum of the cherry and other stone fruit trees; 4. gum tragacanth; 5. gum of Bassora; 6. the gum of seeds and roots. The first five spontaneously flow from the branches and trunks of their trees, and sometimes from the fruits, in the form of a mucilage which dries and hardens in the air. The sixth kind is extracted by boiling water. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0220" ;
+    skos:prefLabel "Gum Unenumerated"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n478>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1827"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "165"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Gum" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

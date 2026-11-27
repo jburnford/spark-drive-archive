@@ -1,0 +1,34 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0659/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Oranges"@en ;
+    skos:altLabel "orange"@en ;
+    skos:broader <id/grp/grp_fruits_nuts_vegetables/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_1641>, <http://aims.fao.org/aos/agrovoc/c_7550>, <http://vocab.getty.edu/aat/300266271>, <http://zbw.eu/stw/descriptor/14119-5> ;
+    skos:definition "(GER. *Pomeranzen*. DU. *Oranjen*. DA. *Pomeranster*. SW. *Pomeranser*. FR. *Oranges*. IT. *Melarance*. SP. *Naranjas*. PORT. *Laranjas*. RUS. *Pomeranetzii*. POL. *Pomeranecz*. LAT. *Aurantia mala*.) This fruit is the produce of the *Citrus aurantium*, of which the varieties are, 1. Seville orange: this is a very handsome tree, and the hardiest of any; as in this country it shoots freely, produces large and beautiful leaves, flowers, &c. The fruit of this variety is large, rough-rinded, and sour, of excellent quality for economical uses. 2. The China orange: this tree has moderately sized leaves, and a smooth, thin rind, sweet fruit; of this there are several varieties in warm countries, where they grow in the open ground. The orange-tree in general has an upright smooth trunk, divided upwards into a branchy regular head, from five to ten and twelve feet high; [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 689]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q13191> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0659" ;
+    skos:prefLabel "Oranges"@en ;
+    skos:related <id/03/0385/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n689>, <https://archive.org/details/generalcommercia00mort/page/n690> ;
+    <ontology/firstAttested/#resource> "1895"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "52"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_05_Vegetables_and_Fruit" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q3355098> ;
+    <ontology/substanceHead/#resource> "Oranges" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

@@ -1,0 +1,10 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<customs-1866/scheme/#resource> dcterms:title "1866 British Customs Curated Broader Concepts (SKOS_from_Custom_Records.xlsx)"@en ;
+    a skos:ConceptScheme ;
+    rdfs:label "1866 British Customs Curated Broader Concepts (SKOS_from_Custom_Records.xlsx)"@en ;
+    skos:hasTopConcept <customs-1866/animal/#concept>, <customs-1866/animal_byproduct/#concept>, <customs-1866/animal_part/#concept>, <customs-1866/bark/#concept>, <customs-1866/birds/#concept>, <customs-1866/chemical/#concept>, <customs-1866/corn/#concept>, <customs-1866/dairy/#concept>, <customs-1866/dairy_product/#concept>, <customs-1866/drug/#concept>, <customs-1866/extract_from_lichens/#concept>, <customs-1866/fat/#concept>, <customs-1866/fiber/#concept>, <customs-1866/fish/#concept>, <customs-1866/fish_part_collagen/#concept>, <customs-1866/flower/#concept>, <customs-1866/forest_product/#concept>, <customs-1866/fruit/#concept>, <customs-1866/fungus/#concept>, <customs-1866/grain_corn/#concept>, <customs-1866/human_hair/#concept>, <customs-1866/hydrocarbon/#concept>, <customs-1866/latex/#concept>, <customs-1866/meat/#concept>, <customs-1866/meat_animal/#concept>, <customs-1866/metal/#concept>, <customs-1866/mineral/#concept>, <customs-1866/oleoresin/#concept>, <customs-1866/pigment/#concept>, <customs-1866/plant/#concept>, <customs-1866/plant_root/#concept>, <customs-1866/resin/#concept>, <customs-1866/resin_from_insects/#concept>, <customs-1866/sap/#concept>, <customs-1866/sea_life/#concept>, <customs-1866/seafood/#concept>, <customs-1866/tannins/#concept>, <customs-1866/tarred_fiber/#concept>, <customs-1866/timber/#concept>, <customs-1866/tree_sap/#concept>, <customs-1866/tuber/#concept>, <customs-1866/vegetable/#concept> .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_brewing_distilling/use_brewing_distilling__doc_cocculus_indicus__q1/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 227" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n227> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Cocculus Indicus used in Brewing, Malting & Distilling: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 227"@en ;
+    <ontology/quoteText/#resource> "COCCULUS INDICUS: a poisonous berry, too frequently mixed with malt liquors, in order to make them intoxicating; but this practice is expressly forbidden by act of parliament, 12 Ann. c. 2. and 56 G. 3. c. 58, which latter statute prohibits druggists from even selling to brewers this and other noxious drugs, under very severe penalties. Fishermen have a mode..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

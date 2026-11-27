@@ -1,0 +1,24 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_pink_root/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Pink Root"@en ;
+    skos:altLabel "Indian Pink"@en, "pinkroot"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:definition "Pink root, or Indian Pink can be used to refer to a number of flowering plants in North America, and it is not clear which variety is being listed in the import data. One type of Pink root was used in North America to expel worms from the system, but has to be followed by a saline aperient, or else symptoms such as dizziness, muscular spasms, and increased heart rate could occur. Pink root is only mentioned shortly i [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_pink_root" ;
+    skos:prefLabel "Pink Root"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865), Danika Drugs.xlsx (SKOS Sheet), 1866 British Customs Commodities List (Danika / HGIS Lab), P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 301, Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 758. Research note: Is this Indian Pink? (CDM1865 104), if so it does anti-parasitic things so that’s cool; botanical.com says it is; vermifuge."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n301>, <https://archive.org/details/generalcommercia00mort/page/n758> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q10373743>, <http://www.wikidata.org/entity/Q7577149> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> .

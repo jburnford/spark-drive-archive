@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0730__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 140" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n140> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Divi Divi used in Leather Tanning, Tawing & Currying: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 140"@en ;
+    <ontology/quoteText/#resource> "DIVI-DIVI: a commercial name for the wrinkled pods of the Casalpina coriaria, used in tanning."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

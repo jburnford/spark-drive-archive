@@ -42,6 +42,8 @@ from pathlib import Path
 
 import duckdb
 
+from public_rdf import MAPPING_SET, NAMESPACES, VOCAB_VERSION, WD_SNAPSHOT, public_id, write_graph
+
 BASE = Path(__file__).resolve().parents[2] / "human_trade"
 LAYER1 = BASE / "layer1_human"
 GROUND = LAYER1 / "grounding"
@@ -49,16 +51,13 @@ DICT_DIR = Path(__file__).resolve().parents[2] / "dictionaries"
 CEYLON_SPINE = Path("/home/jic823/Documents/ceylon/spine")
 SKOS_XLSX = BASE / "raw_sources" / "SKOS_from_Custom_Records.xlsx"
 WD_SLIM_GLOB = os.environ.get("OE_WD_SLIM_GLOB", "/mnt/data/jic823/wikidata/20261109/slim/*.parquet")
-# One place for the published version of the vocabulary (scheme owl:versionInfo, SSSOM mapping-set version, manifest).
-VOCAB_VERSION = "6.2"
-WD_SNAPSHOT = "2026-11-09"
 WD_API = "https://www.wikidata.org/w/api.php"
 UA = "OpenEmpireSKOSv4/0.4 (University of Saskatchewan HGIS Lab; jim.clifford@usask.ca)"
 NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
 
-BASE_URI = "https://open-empire.hgislab.usask.ca/vocab/human-trade-commodities/"
-HTC1866_URI = "https://open-empire.hgislab.usask.ca/vocab/customs-1866/"
-OE_NS = "https://open-empire.hgislab.usask.ca/ns#"
+BASE_URI = NAMESPACES["htc"]
+HTC1866_URI = NAMESPACES["htc1866"]
+OE_NS = NAMESPACES["oe"]
 TODAY = date.today().isoformat()
 
 
@@ -72,9 +71,6 @@ def slugify(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", (s or "").strip().lower()).strip("_") or "unnamed"
 
 
-def ttl_str(s: str) -> str:
-    s = (s or "").replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ").replace("\r", " ")
-    return f'"{s}"'
 
 
 def singularize(w: str) -> str:
@@ -2396,54 +2392,19 @@ def main():
         ("oe:colId", "owl:DatatypeProperty", "Catalogue of Life taxon ID", None, "xsd:string", None),
     ]
 
-    ttl_lines = [
-        f"@prefix htc: <{BASE_URI}> .",
-        f"@prefix htc1866: <{HTC1866_URI}> .",
-        f"@prefix oe: <{OE_NS}> .",
-        "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
-        "@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .",
-        "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .",
-        "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .",
-        "@prefix owl: <http://www.w3.org/2002/07/owl#> .",
-        "@prefix dcterms: <http://purl.org/dc/terms/> .",
-        "@prefix prov: <http://www.w3.org/ns/prov#> .",
-        "@prefix wd: <http://www.wikidata.org/entity/> .",
-        "@prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .",
-        "@prefix stw: <http://zbw.eu/stw/descriptor/> .",
-        "@prefix aat: <http://vocab.getty.edu/aat/> .",
-        "@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .",
-        "",
-    ]
     jsonld_graph = []
 
     for pid, ptype, plbl, pdom, prng, pinv in OE_PROPS:
-        parts = [f"a {ptype}", f"rdfs:label {ttl_str(plbl)}@en"]
         jnode = {"@id": pid, "@type": ptype, "rdfs:label": {"@value": plbl, "@language": "en"}}
         if pdom:
-            parts.append(f"rdfs:domain {pdom}")
             jnode["rdfs:domain"] = {"@id": pdom}
         if prng:
-            parts.append(f"rdfs:range {prng}")
             jnode["rdfs:range"] = {"@id": prng}
         if pinv:
-            parts.append(f"owl:inverseOf {pinv}")
             jnode["owl:inverseOf"] = {"@id": pinv}
-        ttl_lines.append(f"{pid} " + " ; ".join(parts) + " .")
         jsonld_graph.append(jnode)
-    ttl_lines.append("")
 
     top_sec_ids = [f"htc:{s}" for s in sorted(SECTORS)]
-    ttl_lines.append(
-        "htc:scheme a skos:ConceptScheme ;\n"
-        f"    rdfs:label {ttl_str(scheme_title)}@en ;\n"
-        f"    dcterms:title {ttl_str(scheme_title)}@en ;\n"
-        f"    dcterms:description {ttl_str(scheme_desc)}@en ;\n"
-        '    dcterms:creator "Dr. Jim Clifford & HGIS Lab, University of Saskatchewan"@en ;\n'
-        "    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;\n"
-        f'    dcterms:created "{TODAY}"^^xsd:date ;\n'
-        f'    owl:versionInfo "{VOCAB_VERSION}" ;\n'
-        f"    skos:hasTopConcept {', '.join(top_sec_ids)} .\n"
-    )
     jsonld_graph.append({
         "@id": "htc:scheme", "@type": "skos:ConceptScheme",
         "rdfs:label": {"@value": scheme_title, "@language": "en"},
@@ -2456,12 +2417,6 @@ def main():
         "skos:hasTopConcept": [{"@id": tid} for tid in top_sec_ids],
     })
 
-    ttl_lines.append(
-        "htc1866:scheme a skos:ConceptScheme ;\n"
-        '    rdfs:label "1866 British Customs Curated Broader Concepts (SKOS_from_Custom_Records.xlsx)"@en ;\n'
-        '    dcterms:title "1866 British Customs Curated Broader Concepts (SKOS_from_Custom_Records.xlsx)"@en ;\n'
-        f"    skos:hasTopConcept {', '.join(f'htc1866:{s}' for s in sorted(broader_1866))} .\n"
-    )
     jsonld_graph.append({
         "@id": "htc1866:scheme", "@type": "skos:ConceptScheme",
         "rdfs:label": {"@value": "1866 British Customs Curated Broader Concepts (SKOS_from_Custom_Records.xlsx)", "@language": "en"},
@@ -2469,34 +2424,28 @@ def main():
         "skos:hasTopConcept": [{"@id": f"htc1866:{s}"} for s in sorted(broader_1866)],
     })
 
-    ttl_lines.append('oe:ScopedReading a owl:Class ;\n    rdfs:label "reading of a customs heading that holds only for a stated series, period or unit"@en .\n')
     jsonld_graph.append({"@id": "oe:ScopedReading", "@type": "owl:Class", "rdfs:label": {"@value": "reading of a customs heading that holds only for a stated series, period or unit", "@language": "en"}})
     for sslug, slbl in sorted(series_nodes.items()):
         sid = f"oe:series_{sslug}"
-        ttl_lines.append(f"{sid} a prov:Entity ;\n    rdfs:label {ttl_str(slbl)}@en .\n")
         jsonld_graph.append({"@id": sid, "@type": "prov:Entity", "rdfs:label": {"@value": slbl, "@language": "en"}})
 
     # Tier 1: Macro-Sectors (dual-typed skos:Concept + crm:E55_Type with rdfs:label for LINCS compatibility)
     for sec, slbl in sorted(SECTORS.items()):
         sid = f"htc:{sec}"
-        ttl_lines.append(f"{sid} a skos:Concept, crm:E55_Type ;\n    rdfs:label {ttl_str(slbl)}@en ;\n    skos:inScheme htc:scheme ;\n    skos:topConceptOf htc:scheme ;\n    skos:prefLabel {ttl_str(slbl)}@en .\n")
         jsonld_graph.append({"@id": sid, "@type": ["skos:Concept", "crm:E55_Type"], "rdfs:label": {"@value": slbl, "@language": "en"}, "skos:inScheme": {"@id": "htc:scheme"}, "skos:topConceptOf": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": slbl, "@language": "en"}})
 
     # Tier 2: Mid-Level Commodity Groups
     for grp, (glbl, psec, _) in sorted(GROUPS.items()):
         gid = f"htc:{grp}"
-        ttl_lines.append(f"{gid} a skos:Concept, crm:E55_Type ;\n    rdfs:label {ttl_str(glbl)}@en ;\n    skos:inScheme htc:scheme ;\n    skos:prefLabel {ttl_str(glbl)}@en ;\n    skos:broader htc:{psec} .\n")
         jsonld_graph.append({"@id": gid, "@type": ["skos:Concept", "crm:E55_Type"], "rdfs:label": {"@value": glbl, "@language": "en"}, "skos:inScheme": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": glbl, "@language": "en"}, "skos:broader": {"@id": f"htc:{psec}"}})
 
     # Tier 3: Layer-A' Substance Groups
     for sid, sc in sorted(sub_concepts.items()):
-        ttl_lines.append(f"{sid} a skos:Concept, crm:E55_Type ;\n    rdfs:label {ttl_str(sc['label'])}@en ;\n    skos:inScheme htc:scheme ;\n    skos:prefLabel {ttl_str(sc['label'])}@en ;\n    skos:broader {sc['parent']} .\n")
         jsonld_graph.append({"@id": sid, "@type": ["skos:Concept", "crm:E55_Type"], "rdfs:label": {"@value": sc["label"], "@language": "en"}, "skos:inScheme": {"@id": "htc:scheme"}, "skos:prefLabel": {"@value": sc["label"], "@language": "en"}, "skos:broader": {"@id": sc["parent"]}})
 
     # 1866 broader concepts
     for bslug, blbl in sorted(broader_1866.items()):
         bid = f"htc1866:{bslug}"
-        ttl_lines.append(f"{bid} a skos:Concept, crm:E55_Type ;\n    rdfs:label {ttl_str(blbl)}@en ;\n    skos:inScheme htc1866:scheme ;\n    skos:topConceptOf htc1866:scheme ;\n    skos:prefLabel {ttl_str(blbl)}@en .\n")
         jsonld_graph.append({"@id": bid, "@type": ["skos:Concept", "crm:E55_Type"], "rdfs:label": {"@value": blbl, "@language": "en"}, "skos:inScheme": {"@id": "htc1866:scheme"}, "skos:topConceptOf": {"@id": "htc1866:scheme"}, "skos:prefLabel": {"@value": blbl, "@language": "en"}})
 
     taxon_nodes = {}
@@ -2512,25 +2461,6 @@ def main():
         ext = c.get("external_lod_anchors") or {}
         br = c.get("skos_1866_bridge") or {}
 
-        triples = [
-            "a skos:Concept, crm:E55_Type",
-            f"rdfs:label {ttl_str(pref)}@en",
-            "skos:inScheme htc:scheme",
-            f"skos:notation {ttl_str(c['notation'])}",
-            f"skos:prefLabel {ttl_str(pref)}@en",
-            f"skos:broader {ont['broader_id']}",
-            f'oe:observationCount "{c["total_rows"]}"^^xsd:integer',
-            f"oe:groundingStatus {ttl_str(c['status'])}",
-            f"oe:substanceHead {ttl_str(f['substance_head'])}",
-            f"oe:processingState {ttl_str(f['processing_state'])}",
-            f"oe:ghostAcresDomain {ttl_str(f['ghost_acres_domain'])}",
-            'oe:attestationBasis "customs_enumerated"',
-            f"oe:landBasis {ttl_str(f['land_basis'])}",
-            f"oe:harvestMode {ttl_str(f['harvest_mode'])}",
-            f"oe:theodoridisBucket {ttl_str(f['theodoridis_category'])}",
-            f"oe:sitcCode {ttl_str(f['sitc_code'])}",
-            f'oe:isAggregate "{"true" if f["is_aggregate"] else "false"}"^^xsd:boolean',
-        ]
         node = {
             "@id": cid, "@type": ["skos:Concept", "crm:E55_Type"],
             "rdfs:label": {"@value": pref, "@language": "en"},
@@ -2552,15 +2482,12 @@ def main():
         }
 
         if c["skos_altLabels"]:
-            triples.append("skos:altLabel " + ", ".join(f"{ttl_str(x)}@en" for x in c["skos_altLabels"]))
             node["skos:altLabel"] = [{"@value": x, "@language": "en"} for x in c["skos_altLabels"]]
 
         if c["skos_definition"]:
-            triples.append(f"skos:definition {ttl_str(c['skos_definition'])}@en")
             node["skos:definition"] = {"@value": c["skos_definition"], "@language": "en"}
 
         if c.get("skos_scopeNote"):
-            triples.append(f"skos:scopeNote {ttl_str(c['skos_scopeNote'])}@en")
             node["skos:scopeNote"] = {"@value": c["skos_scopeNote"], "@language": "en"}
 
         enotes = []
@@ -2569,81 +2496,61 @@ def main():
         if c.get("field_curation"):
             enotes.append("Curated fields — " + " | ".join(c["field_curation"]))
         if enotes:
-            triples.append("skos:editorialNote " + ", ".join(f"{ttl_str(x)}@en" for x in enotes))
             node["skos:editorialNote"] = [{"@value": x, "@language": "en"} for x in enotes]
 
         if c["dictionary_sources"]:
-            drefs = [f"<{d['uri']}>" for d in c["dictionary_sources"]]
-            triples.append(f"oe:dictionarySource {', '.join(drefs)}")
             node["oe:dictionarySource"] = [{"@id": d["uri"]} for d in c["dictionary_sources"]]
 
         if prov.get("first_attested"):
-            triples.append(f'oe:firstAttested "{prov["first_attested"]}"^^xsd:integer')
             node["oe:firstAttested"] = prov["first_attested"]
         if prov.get("last_attested"):
-            triples.append(f'oe:lastAttested "{prov["last_attested"]}"^^xsd:integer')
             node["oe:lastAttested"] = prov["last_attested"]
         if prov.get("series"):
             srefs = [f"oe:series_{slugify(s)}" for s in prov["series"]]
-            triples.append(f"prov:hadPrimarySource {', '.join(srefs)}")
             node["prov:hadPrimarySource"] = [{"@id": sr} for sr in srefs]
         if prov.get("inferred_series"):
             irefs = [f"oe:series_{slugify(s)}" for s in prov["inferred_series"]]
-            triples.append(f"oe:inferredPrimarySource {', '.join(irefs)}")
             node["oe:inferredPrimarySource"] = [{"@id": sr} for sr in irefs]
 
         if c["combines_concepts"]:
-            triples.append(f"oe:combinesConcept {', '.join(c['combines_concepts'])}")
             node["oe:combinesConcept"] = [{"@id": x} for x in c["combines_concepts"]]
         if c["material_concepts"]:
-            triples.append(f"oe:materialConcept {', '.join(c['material_concepts'])}")
             node["oe:materialConcept"] = [{"@id": x} for x in c["material_concepts"]]
         if c["related_concepts"]:
-            triples.append(f"skos:related {', '.join(c['related_concepts'])}")
             node["skos:related"] = [{"@id": x} for x in c["related_concepts"]]
 
-        rel_targets = defaultdict(list)
         if br.get("broaderConcept"):
             b1866 = f"htc1866:{slugify(br['broaderConcept'])}"
-            rel_targets["skos:broadMatch"].append(b1866)
             node.setdefault("skos:broadMatch", []).append({"@id": b1866})
 
         if a.get("qid"):
             rel = a["mapping_relation"]
             if a.get("component_substances"):
                 for comp in a["component_substances"]:
-                    rel_targets[rel].append(f"wd:{comp['qid']}")
                     node.setdefault(rel, []).append({"@id": f"http://www.wikidata.org/entity/{comp['qid']}"})
                     sssom_rows.append([cid, pref, rel, f"wd:{comp['qid']}", comp["wd_label"], "semapv:LexicalMatching", "build_skos_v4.py", a.get("source_authority",""), "0.85", f"compound; via={comp.get('matched_via_term','')}"])
             else:
-                rel_targets[rel].append(f"wd:{a['qid']}")
                 node.setdefault(rel, []).append({"@id": f"http://www.wikidata.org/entity/{a['qid']}"})
                 sssom_rows.append([cid, pref, rel, f"wd:{a['qid']}", a.get("wd_label",""), "semapv:LexicalMatching", "build_skos_v4.py", a.get("source_authority",""), "0.95" if rel=="skos:exactMatch" else "0.85", f"rule={a.get('match_rule','')}; via={a.get('matched_via_term','')}"])
-            triples.append(f"oe:mappingAuthority {ttl_str(a['source_authority'])}")
             node["oe:mappingAuthority"] = a["source_authority"]
 
         if ext.get("agrovoc_ids"):
             ar = ext["agrovoc_relation"]
             for aid in ext["agrovoc_ids"]:
                 cag = aid if aid.startswith("c_") else f"c_{aid}"
-                rel_targets[ar].append(f"agrovoc:{cag}")
                 node.setdefault(ar, []).append({"@id": f"http://aims.fao.org/aos/agrovoc/{cag}"})
                 sssom_rows.append([cid, pref, ar, f"agrovoc:{cag}", "", "semapv:MappingChaining", "build_skos_v4.py", "wikidata_P8061", "0.85", "composed"])
         if ext.get("stw_ids"):
             sr = ext["stw_relation"]
             for sid in ext["stw_ids"]:
-                rel_targets[sr].append(f"stw:{sid}")
                 node.setdefault(sr, []).append({"@id": f"http://zbw.eu/stw/descriptor/{sid}"})
                 sssom_rows.append([cid, pref, sr, f"stw:{sid}", "", "semapv:MappingChaining", "build_skos_v4.py", "wikidata_P3911", "0.85", "composed"])
         if ext.get("getty_aat_ids"):
             gr = ext["getty_aat_relation"]
             for gid in ext["getty_aat_ids"]:
-                rel_targets[gr].append(f"aat:{gid}")
                 node.setdefault(gr, []).append({"@id": f"http://vocab.getty.edu/aat/{gid}"})
                 sssom_rows.append([cid, pref, gr, f"aat:{gid}", "", "semapv:MappingChaining", "build_skos_v4.py", "wikidata_P1014", "0.85", "composed"])
 
-        for rel, objs in sorted(rel_targets.items()):
-            triples.append(f"{rel} {', '.join(list(dict.fromkeys(objs)))}")
 
         if c["source_taxa"]:
             trefs = []
@@ -2651,25 +2558,17 @@ def main():
                 tq = tax["qid"]
                 if f"wd:{tq}" not in trefs: trefs.append(f"wd:{tq}")
                 if tq not in taxon_nodes: taxon_nodes[tq] = (tax.get("taxon_name",""), tax.get("col_id",""))
-            triples.append(f"oe:sourceTaxon {', '.join(trefs)}")
             node["oe:sourceTaxon"] = [{"@id": f"http://www.wikidata.org/entity/{tq.replace('wd:','')}"} for tq in trefs]
 
         if c["made_of_material"]:
-            mrefs = [f"wd:{m['qid']}" for m in c["made_of_material"]]
-            triples.append(f"oe:madeOfMaterial {', '.join(mrefs)}")
             node["oe:madeOfMaterial"] = [{"@id": f"http://www.wikidata.org/entity/{m['qid']}"} for m in c["made_of_material"]]
 
-        ttl_lines.append(f"{cid} " + " ;\n    ".join(triples) + " .\n")
         for rd in c.get("scoped_readings") or []:
             rid = rd["reading_id"]
             scope_txt = ", ".join(x for x in [rd["series_regex"] and f"series {rd['series_regex']}",
                                                rd["year_from"] and f"{rd['year_from']}–{rd['year_to'] or rd['year_from']}",
                                                rd["unit_regex"] and f"unit {rd['unit_regex']}"] if x)
             rlbl = f"{pref} read as {rd['reading']} ({scope_txt})"
-            rt = ["a oe:ScopedReading", f"rdfs:label {ttl_str(rlbl)}@en", f"oe:readingOf {cid}",
-                  f"oe:readingStatus {ttl_str(rd['status'])}",
-                  f'oe:matchedObservationCount "{rd["matched_rows"]}"^^xsd:integer',
-                  f"skos:note {ttl_str(rd['evidence'])}@en"]
             rn = {"@id": rid, "@type": "oe:ScopedReading", "rdfs:label": {"@value": rlbl, "@language": "en"},
                   "oe:readingOf": {"@id": cid}, "oe:readingStatus": rd["status"],
                   "oe:matchedObservationCount": rd["matched_rows"],
@@ -2677,31 +2576,22 @@ def main():
             for key, prop, typed in (("series_regex", "oe:scopeSeries", False), ("unit_regex", "oe:scopeUnit", False),
                                      ("year_from", "oe:scopeYearFrom", True), ("year_to", "oe:scopeYearTo", True)):
                 if rd[key]:
-                    rt.append(f'{prop} "{rd[key]}"^^xsd:integer' if typed else f"{prop} {ttl_str(rd[key])}")
                     rn[prop] = int(rd[key]) if typed else rd[key]
             if rd.get("wd_qid") and rd["status"] != "unresolved":
-                rt.append(f"{rd['wd_relation']} wd:{rd['wd_qid']}")
                 rn[rd["wd_relation"]] = {"@id": f"wd:{rd['wd_qid']}"}
-            ttl_lines.append(f"{rid} " + " ;\n    ".join(rt) + " .\n")
             jsonld_graph.append(rn)
         jsonld_graph.append(node)
 
     for tq, (tname, col_id) in sorted(taxon_nodes.items()):
-        tt = ["a crm:E55_Type"]
         tn = {"@id": f"http://www.wikidata.org/entity/{tq}", "@type": "crm:E55_Type"}
         if tname:
-            tt.append(f"rdfs:label {ttl_str(tname)}@la")
             tn["rdfs:label"] = {"@value": tname, "@language": "la"}
         if col_id:
-            tt.append(f"oe:colId {ttl_str(col_id)}")
             tn["oe:colId"] = col_id
         if tname or col_id:
-            ttl_lines.append(f"wd:{tq} " + " ;\n    ".join(tt) + " .\n")
             jsonld_graph.append(tn)
 
     ttl_path = GROUND / "commodities_skos.ttl"
-    ttl_text = "\n".join(ttl_lines)
-    ttl_path.write_text(ttl_text, encoding="utf-8")
 
     jsonld_obj = {
         "@context": {
@@ -2725,7 +2615,7 @@ def main():
         "@graph": jsonld_graph,
     }
     jsonld_path = GROUND / "commodities_skos.jsonld"
-    jsonld_path.write_text(json.dumps(jsonld_obj, indent=2, ensure_ascii=False), encoding="utf-8")
+    write_graph(jsonld_path, jsonld_obj)
 
     _seen = set()
     sssom_rows = [r for r in sssom_rows if not (tuple(r[:4]) in _seen or _seen.add(tuple(r[:4])))]
@@ -2738,14 +2628,14 @@ def main():
                 w.writerow([c["total_rows"], c["status"], c["concept_id"], c["skos_prefLabel"], c["facets"]["substance_head"], c["facets"]["ghost_acres_domain"], c["facets"]["sitc_code"]])
     sssom_path = GROUND / "commodities_mappings.sssom.tsv"
     with open(sssom_path, "w", encoding="utf-8", newline="") as fh:
-        fh.write(f"#curie_map:\n#  htc: {BASE_URI}\n#  wd: http://www.wikidata.org/entity/\n#  agrovoc: http://aims.fao.org/aos/agrovoc/\n#  stw: http://zbw.eu/stw/descriptor/\n#  aat: http://vocab.getty.edu/aat/\n#mapping_set_id: {BASE_URI}mappings\n#mapping_set_version: {VOCAB_VERSION}\n#mapping_date: {TODAY}\n#license: https://creativecommons.org/licenses/by/4.0/\n")
-        w = csv.writer(fh, delimiter="\t")
+        fh.write(f"#curie_map:\n#  htc: {BASE_URI}\n#  wd: http://www.wikidata.org/entity/\n#  agrovoc: http://aims.fao.org/aos/agrovoc/\n#  stw: http://zbw.eu/stw/descriptor/\n#  aat: http://vocab.getty.edu/aat/\n#mapping_set_id: {MAPPING_SET}\n#mapping_set_version: {VOCAB_VERSION}\n#mapping_date: {TODAY}\n#license: https://creativecommons.org/licenses/by/4.0/\n")
+        w = csv.writer(fh, delimiter="\t", lineterminator="\n")
         w.writerow(["subject_id", "subject_label", "predicate_id", "object_id", "object_label", "mapping_justification", "mapping_tool", "author_label", "confidence", "comment"])
-        w.writerows(sssom_rows)
+        w.writerows([[public_id(subject, "concept"), *fields] for subject, *fields in sssom_rows])
 
     # --- Built-in CI Verification Suite ---
     ci_errors = []
-    if "c_c_" in ttl_text: ci_errors.append("FAIL: c_c_ in TTL")
+    if "c_c_" in ttl_path.read_text(encoding="utf-8"): ci_errors.append("FAIL: c_c_ in TTL")
     all_scheme_prefs = Counter()
     for n in jsonld_graph:
         if n.get("@type") == "skos:Concept" and (n.get("skos:inScheme") or {}).get("@id") == "htc:scheme":

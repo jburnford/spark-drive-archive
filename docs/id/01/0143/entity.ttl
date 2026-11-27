@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0143/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Balsam"@en ;
+    skos:broader <id/sub/sub_gums_resin_wd_q1776037/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300012891> ;
+    skos:definition "(GER. DA. SW. RUS. & POL. Balsam. DU. Balsem. FR. Baume. IT. SR. & PORT. Balsamo. LAT. Balsamum,) or native balsam, an oily, resinous, liquid substance, flowing either spontaneously, or by means of incision, from certain plants. There are many kinds of balsam, but the most remarkable are Benzoin, Storax, Peru, Tolu, Capaiba, Gilead, and Rakasira. They owe their most important properties to the resinous ingredient and benzoic acid. 1. *Benzoin*, commonly called *gum benzoin*, will be found at large under the head GUM. 2. *Storax*. This substance is obtained by incision from the *styrax officinalis*, a tree which grows abundantly in the islands of the Levant, and in Italy and France. The storax is sometimes in large masses, sometimes in small tears; it is brittle, and has a brown colour. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 94]"@en ;
+    skos:editorialNote "Curated fields — definition use: Auto-match had picked balsam copaiba; heading is generic balsam (largely Canada balsam). | source_taxon remove: Copaiba is one specific balsam; heading is generic."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1776037> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0143" ;
+    skos:prefLabel "Balsam"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n117>, <https://archive.org/details/dictionaryprac00mccu/page/n131>, <https://archive.org/details/generalcommercia00mort/page/n94> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "238"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Balsam" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

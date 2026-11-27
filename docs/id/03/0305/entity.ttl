@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0305/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Iron"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300011002>, <http://www.wikidata.org/entity/Q677>, <http://zbw.eu/stw/descriptor/14281-3>, <customs-1866/metal/#concept> ;
+    skos:broader <id/sub/sub_metals_sem_wd_q677/#concept> ;
+    skos:definition "(_Fer_, Fr.; _Eisen_, Germ.) is a metal of a bluish-gray colour, and a dull fibrous fracture, but it is capable of acquiring a brilliant surface by polishing. Its specific gravity is 7·78. It is the most tenacious of metals, and the hardest of all those which are malleable and ductile. It is singularly susceptible of the magnetic virtue, but in its pure state soon loses it. When rubbed it has a slight smell, and it imparts to the tongue a peculiar astringent taste, called chalybeate. In a moist atmosphere, iron speedily oxidizes, and becomes covered with a brown coating, called rust. Every person knows the manifold uses of this truly precious metal; it is capable of being cast in moulds of any form; [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0305" ;
+    skos:prefLabel "Iron"@en ;
+    skos:related <id/01/0196/#concept>, <id/02/0238/#concept>, <id/02/0270/#concept>, <id/03/0319/#concept>, <id/03/0353/#concept>, <id/03/0359/#concept>, <id/03/0390/#concept>, <id/05/0534/#concept>, <id/06/0610/#concept>, <id/08/0824/#concept>, <id/08/0846/#concept>, <id/08/0879/#concept>, <id/09/0977/#concept>, <id/10/1011/#concept>, <id/11/1123/#concept>, <id/11/1174/#concept>, <id/12/1287/#concept>, <id/13/1363/#concept>, <id/14/1445/#concept>, <id/15/1515/#concept>, <id/16/1618/#concept>, <id/16/1627/#concept>, <id/16/1675/#concept>, <id/16/1677/#concept>, <id/16/1687/#concept>, <id/17/1717/#concept>, <id/17/1744/#concept>, <id/17/1793/#concept>, <id/19/1996/#concept>, <id/20/2007/#concept>, <id/20/2021/#concept> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/dictionaryprac00mccu/page/n1716>, <https://archive.org/details/generalcommercia00mort/page/n542>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1855"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "125"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "smelted_semi" ;
+    <ontology/sitcCode/#resource> "SITC4_67_68_Metals" ;
+    <ontology/substanceHead/#resource> "Iron" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

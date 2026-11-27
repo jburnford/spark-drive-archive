@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0029/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Timber Oak used in Shipbuilding, Rope, Cordage & Sailcloth"@en ;
+    <ontology/assertsCommodity/#resource> <id/00/0029/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_cordage_shipbuilding/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0029__q1/#resource> ;
+    <ontology/productionRole/#resource> "primary_feedstock" ;
+    <ontology/reviewStatus/#resource> "mined_single_quote" .

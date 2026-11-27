@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_wallaba/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Wallaba"@en ;
+    skos:broader <id/grp/grp_hewn_round_timber/#concept> ;
+    skos:definition "the *Eperua falcata* of Aublet, a tree abundant in British Guiana, the wood of which is of a deep red colour; it is hard and heavy, but splits freely and smoothly, and is much used for shingles, staves, pallings, posts, house-frances, &c. The wood may be cut 30 or 40 feet long, and 15 to 20 inches square. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 416]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_wallaba" ;
+    skos:prefLabel "Wallaba"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0070 (Wood Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 416."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n416> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q3055689> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0070/#concept> .

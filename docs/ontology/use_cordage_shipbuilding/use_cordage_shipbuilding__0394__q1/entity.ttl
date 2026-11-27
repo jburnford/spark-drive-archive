@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0394__q1/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 1504" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1504/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Wood and Timber Hewn Teak used in Shipbuilding, Rope, Cordage & Sailcloth: McCulloch (1880), Dictionary of Commerce, scan p. 1504"@en ;
+    <ontology/quoteText/#resource> "The teak of Burma, being conveyed with comparatively little difficulty to the ports of Rangoon and Maulmain, is the cheapest and most abundant of any, and it is mainly owing to the facility with which supplies of it are obtained that ship-building is now carried on so very extensively at Maulmain."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1374/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Anchovies"@en ;
+    skos:broader <id/grp/grp_fish_seafood/#concept> ;
+    skos:definition "(GER. *Anschovis*. DU. and Sw. *Ansjovis*. DA. *Ansios*. FR. *Anchois*. IT. *Acciughe*. SR. and PORT. *Anchovas*. RUS. *Antshofischi*. LAT. *Encrasicoli*,) the name of a small sea-fish common in the Mediterranean. The fishing for anchovies is carried on chiefly in the night-time; when a light being put on the stern of the vessels, the fish flock round, and are caught in the nets. The anchovy is much used in sauces from the excellency of its taste. The importation of anchovies is especially provided for by sect. 14. of 10 & 11 W. 5. c. 24., by an exception to the prohibitions contained in the navigation act of Car. 2. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 55]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q4589261> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1374" ;
+    skos:prefLabel "Anchovies"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n55> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fisheries_marine" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "marine" ;
+    <ontology/lastAttested/#resource> "1838"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "12"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_03_Fish_and_Seafood" ;
+    <ontology/substanceHead/#resource> "Anchovies" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

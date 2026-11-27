@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0187/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Wheat Other Descriptions including Shredded Wheat and Semolina"@en ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q15645384>, <http://zbw.eu/stw/descriptor/14098-1>, <customs-1866/corn/#concept> ;
+    skos:broader <id/sub/sub_cereals_gr_wd_q15645384/#concept> ;
+    skos:definition "a name for species of *Triticum*, one of the most important of the food grains, and that most generally cultivated in Europe; the flour being the most nutritious and platable of all the cereal grasses. The quantity raised in this country is very large, amounting to about 19,000,000 quarters, and we also import 7,000,000 or 8,000,000 quarters a year. See **FLOUR**. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 422]"@en ;
+    skos:editorialNote "Curated fields — definition use: Previous text was only a cross-reference ('See BREAD, GLUTEN, and STARCH')."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0187" ;
+    skos:prefLabel "Wheat Other Descriptions including Shredded Wheat and Semolina"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade_1910_1940_ext/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n422>, <https://archive.org/details/dictionaryprac00mccu/page/n1643>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1920"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_grain" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1940"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "186"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "milled_ground" ;
+    <ontology/sitcCode/#resource> "SITC4_04_Cereals_and_Preparations" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q161098>, <http://www.wikidata.org/entity/Q40120622> ;
+    <ontology/substanceHead/#resource> "Wheat" ;
+    <ontology/theodoridisBucket/#resource> "grain_and_flour" .

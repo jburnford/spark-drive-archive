@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/17/1793/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Chromate of Iron"@en ;
+    skos:broader <id/grp/grp_metallic_ores/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_metallic_ores; processing_state=raw_ore): Ore/concentrate heading (chromite / chromate of iron in tons; metal 'contained in ore, matte, regulus'; pyrites); belongs with Metallic Ores & Concentrates like its sibling headings. Layer-1 observations: 5 rows, 1866–1866. Series: HCPP_Annual Statement of Trade ×5. Units: Tons ×5. Top routes: World → United Kingdom ×1; Australia → United Kingdom ×1; Russia → United Kingdom ×1; Other Parts → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1793" ;
+    skos:prefLabel "Chromate of Iron"@en ;
+    skos:related <id/03/0305/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q677> ;
+    <ontology/observationCount/#resource> "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_ore" ;
+    <ontology/sitcCode/#resource> "SITC4_28_Metalliferous_Ores" ;
+    <ontology/substanceHead/#resource> "Chromate of Iron" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

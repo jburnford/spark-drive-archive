@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_metallurgy_tinplate/use_metallurgy_tinplate__doc_sal_ammoniac__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. TIN MORDANTS" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Sal Ammoniac used in Metallurgy, Smelting, Brass & Tinplate: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. TIN MORDANTS"@en ;
+    <ontology/quoteText/#resource> "Place the tin-plate, slightly heated, over a tub of water, and rub its surface with a sponge dipped in a liquor composed of four parts of aquafortis, and two of distilled water, holding one part of common salt or sal ammoniac in solution."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

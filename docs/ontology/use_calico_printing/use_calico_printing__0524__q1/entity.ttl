@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__0524__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section MADDER" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/15191> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Madder Garancine used in Calico Cloth & Calico Printing: P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section MADDER"@en ;
+    <ontology/quoteText/#resource> "Both varieties of garancine give a more scarlety red than the unprepared madder, and also good chocolate and black, without soiling the white ground, but are not so well fitted, particularly the garancine of spent madder, for dyeing purples, lilacs, and pinks."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0280/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Horns Unenumerated"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300400473>, <http://www.wikidata.org/entity/Q82025> ;
+    skos:broader <id/sub/sub_fertilizer_wd_q82025/#concept> ;
+    skos:definition "the hard pointed bodies growing on the heads of some animals. The horns of the ox, buffalo, &c. are hollow, and never shed. They are deposited in layers or bony cores, their constituents being albumen with a little gelatin, and a small proportion of lime. They are not brittle like bone, and may be moulded when softened by heat. The antlers of the deer are solid processes from the frontal bone, and possess the chemical and physical properties of true bone, they grow rapidly and are periodically shed. Also a wind-instrument originally made of horn, but now for the most part of brass. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 208]"@en ;
+    skos:editorialNote "Curated fields — definition use: Auto-match had picked Watt's citation list."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0280" ;
+    skos:prefLabel "Horns Unenumerated"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n208>, <https://archive.org/details/b31361584/page/n656> ;
+    <ontology/firstAttested/#resource> "1811"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1871"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "134"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Horns" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

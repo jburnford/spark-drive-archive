@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__1538/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Gum Mastic used in Varnish, Paint & Lacquer"@en ;
+    <ontology/assertsCommodity/#resource> <id/15/1538/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_varnish_paint_lacquer/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__1538__q1/#resource>, <ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__1538__q2/#resource>, <ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__1538__q3/#resource> ;
+    <ontology/productionRole/#resource> "primary_feedstock" ;
+    <ontology/reviewStatus/#resource> "mined_multiple_quotes" .

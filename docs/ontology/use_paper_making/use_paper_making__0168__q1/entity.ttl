@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_paper_making/use_paper_making__0168__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. F, F, F, F" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Starch used in Paper Making & Cardboard: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. F, F, F, F"@en ;
+    <ontology/quoteText/#resource> "A committee of the Société d’Encouragement, of Paris, made researches upon the best composition for sizing paper in the vat, and gave the following recipe:-100 kilogrammes of dry paper stuff. 12 -- starch. 1 -- rosin, previously dissolved in 500 grammes of carbonate of soda. 18 pails of water."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

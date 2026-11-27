@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__0942__q1/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 968" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n968> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Tortoise or Turtle Shell Unmanufactured used in Hat-Making, Brushes, Upholstery & Turnery: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 968"@en ;
+    <ontology/quoteText/#resource> "TORTOISE-SHELL: (GER. and DU. Schildpad. DA. Skildpaddeskal. SW. Sköldpadda. FR. Ecaille de tortue. CRET. IT. Tartaruga. SP. Carey, Coucha. PORT. Fartaruga, Coucha. RUS. Kost tscherepachowaja. POL. Skorupa zolwia. LAT. Testudinis testa,) the shell of the testaceous animal called a tortoise; used in inlaying, and in various other works, as for snuff-boxes, co..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

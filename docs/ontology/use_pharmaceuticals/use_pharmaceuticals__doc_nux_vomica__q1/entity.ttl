@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__doc_nux_vomica__q1/#resource> dcterms:bibliographicCitation "Sir George Watt, The Commercial Products of India (1908), scan p. 1063" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n1063> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Nux Vomica used in Pharmaceuticals & Druggists' Preparations: Sir George Watt, The Commercial Products of India (1908), scan p. 1063"@en ;
+    <ontology/quoteText/#resource> "STRYCHNOS NUX-VOMICA: The Snake-wood, Nux-vomica or Strychnine Tree, kuchlá, kajra, nirmal, kerra, mushti, yetti, kanchwrai, kasaraka, kanjiram, kabaung, etc. A moderate-sized deciduous tree of the \"Gorakhpur forests in Northern India; Bengal, Orissa, the Circars; the Deccan and Karnatak; moist forests in the Bombay Presidency ; deciduous forests all over Bu..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

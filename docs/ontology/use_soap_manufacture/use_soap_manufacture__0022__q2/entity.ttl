@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_soap_manufacture/use_soap_manufacture__0022__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. PINEY TALLOW" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Tallow used in Soap Manufacture: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. PINEY TALLOW"@en ;
+    <ontology/quoteText/#resource> "PINEY TALLOW: is a concrete fat obtained by boiling with water the fruit of the Vateria indica, a tree common upon the Malabar coast. It seems to be a substance intermediate between tallow and wax; partaking of the nature of stearine. It melts at 97-1/2° F., is white or yellowish, has a spec. grav. of 0·926; is saponified by alkalies, and forms excellent can..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

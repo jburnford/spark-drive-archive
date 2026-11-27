@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_cade_oil/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cade Oil"@en ;
+    skos:broader <id/grp/grp_vegetable_oils/#concept> ;
+    skos:definition "an empyreumatic oil obtained by distillation in a retort, from the wood of *Juniperus Oxycedrus*. It is much used in France in veterinary medicine. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 72]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_cade_oil" ;
+    skos:prefLabel "Cade Oil"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0124 (Oil Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 72."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n72> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_42_Fixed_Vegetable_Fats_and_Oils" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q184300> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0124/#concept> .

@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0296/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Copper"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_1868>, <http://vocab.getty.edu/aat/300011020>, <http://www.wikidata.org/entity/Q753>, <http://zbw.eu/stw/descriptor/14299-5>, <customs-1866/metal/#concept> ;
+    skos:broader <id/sub/sub_metals_sem_wd_q753/#concept> ;
+    skos:definition "is one of the metals most anciently known. It was named from the island of Cyprus, where it was extensively mined and smelted by the Greeks. It has a reddish brown colour inclining to yellow; a faint but nauseous and rather disagreeable taste; and when rubbed between the fingers it imparts a smell somewhat analogous to its taste. Its specific gravity is from 8·8 to 8·9. It is much more malleable than it is ductile; so that far finer leaves may be obtained from it than wire. It melts at the 27th degree of Wedgewood’s pyrometer, and at a higher temperature it evaporates in fumes which tinge the fire of a bluish green. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0296" ;
+    skos:prefLabel "Copper"@en ;
+    skos:related <id/00/0065/#concept>, <id/03/0393/#concept>, <id/12/1214/#concept>, <id/13/1345/#concept>, <id/14/1420/#concept>, <id/17/1755/#concept>, <id/19/1921/#concept>, <id/19/1922/#concept>, <id/19/1925/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n117>, <https://archive.org/details/b21780535/page/n457>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1840"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1886"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "128"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "smelted_semi" ;
+    <ontology/sitcCode/#resource> "SITC4_67_68_Metals" ;
+    <ontology/substanceHead/#resource> "Copper" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

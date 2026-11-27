@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__0188__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. HAT MANUFACTURE" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Skins Furs Pelts Beaver used in Hat-Making, Brushes, Upholstery & Turnery: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. HAT MANUFACTURE"@en ;
+    <ontology/quoteText/#resource> "In the manufacture of beaver hats, the grounds of beer are added to the liquor in the kettle. Stopping, or thickening the thin spots, seen by looking through the body, is performed by daubing on additional stuff with successive applications of the hot acidulous liquor from a brush dipped into the kettle, until the body be sufficiently shrunk and made uniform..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

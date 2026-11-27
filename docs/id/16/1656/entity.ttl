@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/16/1656/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Ink"@en ;
+    skos:broader <id/grp/grp_glass_ceramics_paper_woodware/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300015012>, <http://www.wikidata.org/entity/Q127418> ;
+    skos:definition "(_Encre_, Fr.; _Tinte_, Germ.) is a coloured liquid for writing on paper, parchment, linen, &c. with a pen. _Black ink._--Nut-galls, sulphate of iron, and gum, are the only substances truly useful in the preparation of ordinary ink; the other things often added merely modify the shade, and considerably diminish the cost to the manufacturer upon the great scale. Many of these inks contain little gallic acid, or tannin, and are therefore of inferior quality. To make 12 gallons of ink we may take,-- 12 pounds of nutgalls, 5 pounds of green sulphate of iron, 5 pounds of gum senegal, 12 gallons of water. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:editorialNote "Curated classification (group=grp_glass_ceramics_paper_woodware; processing_state=manufactured; wd_term=ink; wd_relation=skos:closeMatch): Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article). Layer-1 observations: 7 rows, 1871–1881. Series: HCPP_Annual Statement of Trade ×7. Units: (no unit) ×7. Top routes: World → United Kingdom ×3; All Countries → United Kingdom ×2; France → United Kingdom ×1; Other Countries → United Kingdom ×1."@en, "Curated fields — definition use: Homonym: Japanese long measure 'ink'."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1656" ;
+    skos:prefLabel "Ink"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n213>, <https://archive.org/details/b21780535/page/n215>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1871"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1881"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "7"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_64_66_89_Paper_Glass_Misc_Manufactures" ;
+    <ontology/substanceHead/#resource> "Ink" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

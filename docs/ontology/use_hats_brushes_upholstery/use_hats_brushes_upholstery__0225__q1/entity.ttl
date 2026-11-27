@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__0225__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 63" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n63> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bristles used in Hat-Making, Brushes, Upholstery & Turnery: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 63"@en ;
+    <ontology/quoteText/#resource> "BRISTLES: the strong glossy hairs on the back of the hog, used by brushmakers, saddlers, shoemakers, and others. Those from the wild boars of Russia are most esteemed."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

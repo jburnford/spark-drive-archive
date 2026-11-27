@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_rubber_waterproofing/use_rubber_waterproofing__0015__q3/#resource> dcterms:bibliographicCitation "Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 46" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n46/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Caoutchouc used in India-Rubber, Gutta-Percha & Waterproofing: Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 46"@en ;
+    <ontology/quoteText/#resource> "It is of a yellowish gold colour with occasionally white almond-like masses in it; there are, however, two or three varieties which enter into commerce. BENZOLE, an oil obtained from coal-naphtha, of great solvent powers, which is used by manufacturers of India-rubber and gutta-percha, by chemists for making oil of bitter almonds."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

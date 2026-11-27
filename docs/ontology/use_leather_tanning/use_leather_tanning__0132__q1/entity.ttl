@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0132__q1/#resource> dcterms:bibliographicCitation "J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1612" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1612> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Valonia used in Leather Tanning, Tawing & Currying: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1612"@en ;
+    <ontology/quoteText/#resource> "VALONIA: A species of acorn, forming a very considerable article of export from the Morea and the Levant. The more substance there is in the husk, or cup of the acorn, the better. It is of a bright drab colour, which it preserves so long as it is kept dry; any dampness injures it; as it then turns black, and loses both its strength and value. It is principal..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

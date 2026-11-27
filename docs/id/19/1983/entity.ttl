@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1983/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Nuts for expressing oil"@en ;
+    skos:broader <id/grp/grp_oilseeds/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_oilseeds; processing_state=raw_unprocessed): Nuts for expressing oil, same class as htc:0223. Layer-1 observations: 2 rows, 1900–1900. Series: HCPP_Annual Statement of Trade ×2. Units: Tons ×2. Top routes: World → London ×1; World → Liverpool ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1983" ;
+    skos:prefLabel "Nuts for expressing oil"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1900"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1900"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_unprocessed" ;
+    <ontology/sitcCode/#resource> "SITC4_22_Oil_Seeds_and_Oleaginous_Fruits" ;
+    <ontology/substanceHead/#resource> "Nuts for expressing oil" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

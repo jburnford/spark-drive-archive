@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/04/0492/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Birch"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_8421>, <http://vocab.getty.edu/aat/300011914>, <http://www.wikidata.org/entity/Q287>, <http://zbw.eu/stw/descriptor/14150-4>, <customs-1866/timber/#concept> ;
+    skos:broader <id/sub/sub_hewn_round_wd_q287/#concept> ;
+    skos:definition "a well-known tree, of which there are many species. The *Betula alba*, or Norway birch, furnishes an inferior timber used for common articles of furniture and in ship-building. Black birch is valuable for floorings and keelsons, and parts of ships which are constantly under water. Birch wood is used for many economical purposes, as for herring barrels and butter-tubs, cattle-yokes, turnery-ware, &c. The bark is made into canoes in North America, and the leaves are used for tea in Finland. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 49]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0492" ;
+    skos:prefLabel "Birch"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n49>, <https://archive.org/details/generalcommercia00mort/page/n146> ;
+    <ontology/firstAttested/#resource> "1850"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1872"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "73"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q25243> ;
+    <ontology/substanceHead/#resource> "Birch" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

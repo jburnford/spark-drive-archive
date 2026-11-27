@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__1143__q2/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 215" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n215/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Canes Rattans not Ground used in Hat-Making, Brushes, Upholstery & Turnery: Watt (1908), Commercial Products of India, scan p. 215"@en ;
+    <ontology/quoteText/#resource> "The waste fibre obtained during stripping and trimming the ribbons and cane-rods is used in upholstery along with, or as a substitute for coir."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

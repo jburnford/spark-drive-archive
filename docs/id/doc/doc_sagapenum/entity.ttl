@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_sagapenum/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Sagapenum"@en ;
+    skos:broader <id/grp/grp_gums_resins_naval_stores/#concept> ;
+    skos:definition "a fetid gum-resin obtained from the *Ferula Persica*, which has a hot, nauseous, and rather bitter taste, and an odour resembling that of garlic and asafoetida. Its medical uses are the same as those of asafoetida, but it is considered less energetic, and is but little employed. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 337]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_sagapenum" ;
+    skos:prefLabel "Sagapenum"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0220 (Gum Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 337."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n337> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q15580892> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/02/0220/#concept> .

@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1346/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cubebs"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:definition "(Ger. kubeben; Fr. cubèbes; Ital. cubebi; Span. cubebas; Russ. kubebû; Arab. kebabeh; Javan. kumunkus; Hin. cubab-chinie). The produce of a plant, the *Piper cubeba* of Linnæus, and, under the Natural System, a species of *Piperaceæ*. It is cultivated in Java, and grows also in Penang and other parts of the East Indies. Specimens of cubebs from Ceylon were shown in the Exhibition of 1862. It is a small unripe fruit, dried like a pepper-corn, but somewhat longer. Cubebs have a hot, pungent, aromatic, slightly bitter taste, and a characteristic odour. They should be chosen large, fresh, sound, and the heaviest that can be procured. When cubebs have been kept long, especially in powder, they lose a portion of their volatile oil, on which, it appears, their medicinal properties depend. [J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 555]"@en ;
+    skos:editorialNote "Curated classification (group=grp_drugs_medicinal_botanicals): Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin. Layer-1 observations: 13 rows, 1856–1866. Series: HCPP_Annual Statement of Trade ×13. Units: Lbs. (Pounds) ×13. Top routes: World → United Kingdom ×3; Other Parts → United Kingdom ×3; Holland → United Kingdom ×2; France → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1346" ;
+    skos:prefLabel "Cubebs"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/dictionaryprac00mccu/page/n555>, <https://archive.org/details/generalcommercia00mort/page/n257>, <https://www.gutenberg.org/ebooks/15191> ;
+    <ontology/firstAttested/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "13"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_54_Medicinal_Pharmaceutical" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q161927> ;
+    <ontology/substanceHead/#resource> "Cubebs" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

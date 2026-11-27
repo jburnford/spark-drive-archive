@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_glass_ceramics/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Glassmaking, Pottery & Porcelain"@en ;
+    skos:definition "Crown, plate, bottle, and flint glassmaking plus earthenware and bone-china porcelain — fusing sand/flint and kaolin/china clay with soda ash, barilla, kelp, potash, lime, red lead/litharge, manganese, borax, cobalt/smalt, and calcined bone ash."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Glassmaking, Pottery & Porcelain"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/01/0136/#concept>, <id/01/0162/#concept>, <id/02/0257/#concept>, <id/02/0299/#concept>, <id/03/0328/#concept>, <id/03/0364/#concept>, <id/05/0557/#concept>, <id/11/1115/#concept>, <id/12/1202/#concept>, <id/14/1451/#concept>, <id/16/1683/#concept>, <id/18/1873/#concept>, <id/18/1895/#concept>, <id/doc/doc_china_clay/#concept>, <id/doc/doc_litharge/#concept> .

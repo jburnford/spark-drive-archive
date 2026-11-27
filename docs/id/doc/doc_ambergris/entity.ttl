@@ -1,0 +1,24 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_ambergris/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Ambergris"@en ;
+    skos:broader <id/grp/grp_furs_marine_pelts/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q188774> ;
+    skos:definition "(_Ambregric_, Fr.; _Ambra_, Germ.).--A morbid secretion of the liver of the spermaceti whale (physeter macrocephalus), found usually swimming upon the sea. It occurs upon the coasts of Coromandel, Japan, the Moluccas, and Madagascar, and has sometimes been extracted from the rectum of whales in the South Sea fishery. It has a gray-white colour, often with a black streak, or is marbled, yellow and black; [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_ambergris" ;
+    skos:prefLabel "Ambergris"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0071 (Furs Unenumerated Undressed). Attested in: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0071/#concept> ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_chocolate_confectionery/#concept>, <ontology/ind_perfumery_cosmetics/#concept> .

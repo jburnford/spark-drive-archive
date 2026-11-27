@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/08/0871/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Argol"@en ;
+    skos:broadMatch <customs-1866/chemical/#concept> ;
+    skos:broader <id/grp/grp_industrial_chemicals_alkalis/#concept> ;
+    skos:definition "an acidulous concreto salt, the crust or sediment of wine vats and casks, which when purified is denominated cream of tartar; it is white or red, according to the wine of which it is the deposit, and largely used in medicine and the arts; also a Tartar name for the dried excrements of animals moulded into cakes and sold as fuel. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 27]"@en ;
+    skos:editorialNote "Curated classification (group=grp_industrial_chemicals_alkalis): Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin. Layer-1 observations: 32 rows, 1800–1866. Series: HCPP_Annual Statement of Trade ×25; KEW_CUST 5 ×7. Units: CWTS (Hundredweights) ×32. Top routes: World → United Kingdom ×4; France → United Kingdom ×3; British Possessions in South Africa → United Kingdom ×3; Other Parts → United Kingdom ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0871" ;
+    skos:prefLabel "Argol"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n27>, <https://archive.org/details/dictionaryprac00mccu/page/n116>, <https://archive.org/details/generalcommercia00mort/page/n67> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "32"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_51_52_Chemicals" ;
+    <ontology/substanceHead/#resource> "Argol" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_calico_printing/#concept>, <ontology/ind_woollen_silk_dyeing/#concept> .

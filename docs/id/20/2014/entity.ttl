@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/20/2014/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Bass"@en ;
+    skos:broader <id/grp/grp_fish_seafood/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_fish_seafood): One row: Montreal & Quebec → British West Indies, 1837, in barrels — a barrelled fish in the provisions trade. Layer-1 observations: 1 rows, 1837–1837. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×1. Units: Barrels ×1. Top routes: Montreal and Quebec → British West Indies ×1."@en, "Curated fields — definition drop: Bast/rush sense of 'bass'; the single row (barrels, Montreal & Quebec → British West Indies, 1837) is a barrelled provision."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1224135> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "2014" ;
+    skos:prefLabel "Bass"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n41> ;
+    <ontology/firstAttested/#resource> "1837"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fisheries_marine" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "marine" ;
+    <ontology/lastAttested/#resource> "1837"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_03_Fish_and_Seafood" ;
+    <ontology/substanceHead/#resource> "Bass" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

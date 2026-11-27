@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_chocolate_confectionery/use_chocolate_confectionery__0360__q3/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 17" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n17/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Sugar used in Chocolate & Confectionery: Watt (1908), Commercial Products of India, scan p. 17"@en ;
+    <ontology/quoteText/#resource> "It is, however, unquestionably edible, and fried with ghi, sugar and spices, is employed in the preparation of certain Native sweetmeats which are very generally eaten after child-birth."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

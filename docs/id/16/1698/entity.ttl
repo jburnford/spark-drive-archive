@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/16/1698/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Annotto"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:definition "a dye-stuff prepared from the red pulp of the seeds of the *Bixa orellana*, which enters into commerce under two forms, flag and roll. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 24]"@en ;
+    skos:editorialNote "Curated classification (group=grp_natural_dyestuffs): Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin. Layer-1 observations: 6 rows, 1800–1834. Series: KEW_CUST 5 ×4; KEW_CUST 4 ×2. Units: CWTS (Hundredweights) ×4; Hundredweights.Quarters.Pounds ×2. Top routes: Canada → England ×2; World → United Kingdom ×1; Portugal and Madeira → United Kingdom ×1; Ireland → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1698" ;
+    skos:prefLabel "Annotto"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n24>, <https://archive.org/details/generalcommercia00mort/page/n56>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1834"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "6"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q147701> ;
+    <ontology/substanceHead/#resource> "Annotto" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

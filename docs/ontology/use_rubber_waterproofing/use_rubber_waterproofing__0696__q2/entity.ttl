@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_rubber_waterproofing/use_rubber_waterproofing__0696__q2/#resource> dcterms:bibliographicCitation "Sir George Watt, The Commercial Products of India (1908), scan p. 637" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n637> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Gutta Percha used in India-Rubber, Gutta-Percha & Waterproofing: Sir George Watt, The Commercial Products of India (1908), scan p. 637"@en ;
+    <ontology/quoteText/#resource> "GUTTA-PERCHA: The word \"gutta-percha\" is of Malayan origin : it signifies the gum or gutta or getah of the tree known as percha : according to some writers percha is also the ancient name of Sumatra, so that getah-percha would denote the gutta of Sumatra. And the true gum is to-day almost exclusively a Malayan product. As it reaches the market gutta-percha i..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

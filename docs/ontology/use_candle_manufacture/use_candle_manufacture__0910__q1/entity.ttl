@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_candle_manufacture/use_candle_manufacture__0910__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. CANDLE" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Stearine used in Candle Manufacture: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. CANDLE"@en ;
+    <ontology/quoteText/#resource> "Gay Lussac obtained a patent in England for making candles from margaric and stearic acids, improperly called stearine, by converting tallow into the above fat acids by the following process:--Tallow consists, by Chevreul’s researches, of stearine, a solid fat, and elaine, a liquid fat; the former being in much the larger proportion."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

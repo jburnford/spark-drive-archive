@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/11/1133/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Rape and Linseed Cakes"@en ;
+    skos:broader <id/grp/grp_fodder_oilcakes/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_fodder_oilcakes; processing_state=byproduct_cake): Rape and linseed cakes are oil-press residues fed to cattle, same class as Oil Seed Cake (htc:0323). Layer-1 observations: 19 rows, 1800–1825. Series: KEW_CUST 4 ×13; KEW_CUST 5 ×6. Units: Hundredweights.Quarters.Pounds ×13; Tons ×6. Top routes: Canada → England ×8; Canada → Other English Ports ×3; Canada → Great Britain ×2; France → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1133" ;
+    skos:prefLabel "Rape and Linseed Cakes"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fodder_feed" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1825"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "19"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "byproduct_cake" ;
+    <ontology/sitcCode/#resource> "SITC4_08_Animal_Feeding_Stuff" ;
+    <ontology/substanceHead/#resource> "Rape and Linseed Cakes" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

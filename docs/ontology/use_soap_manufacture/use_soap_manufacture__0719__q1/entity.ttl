@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_soap_manufacture/use_soap_manufacture__0719__q1/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 325" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n325/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Spices Cassia Lignea used in Soap Manufacture: Watt (1908), Commercial Products of India, scan p. 325"@en ;
+    <ontology/quoteText/#resource> "The outer layer of Cassia bark yields an OIL which is utilised in the manufacture of soap."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/20/2038/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Putty"@en ;
+    skos:broader <id/grp/grp_glass_ceramics_paper_woodware/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300015207>, <http://www.wikidata.org/entity/Q1337073> ;
+    skos:definition "a cement composed of fresh powdered chalk, or whiting, and raw linseed-oil, kneaded to the consistency of dough, which is largely used by glaziers to fix panes of glass in sashes, and by painters to stop crevices in wood, &c. About 16,000 tons are annually made in the United Kingdom. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 320]"@en ;
+    skos:editorialNote "Curated classification (group=grp_glass_ceramics_paper_woodware; processing_state=manufactured; wd_term=putty; wd_relation=skos:closeMatch): Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article). Layer-1 observations: 1 rows, 1840–1840. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×1. Units: Casks ×1. Top routes: Montreal and Quebec → British North America ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "2038" ;
+    skos:prefLabel "Putty"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n320>, <https://archive.org/details/generalcommercia00mort/page/n821> ;
+    <ontology/firstAttested/#resource> "1840"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1840"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_64_66_89_Paper_Glass_Misc_Manufactures" ;
+    <ontology/substanceHead/#resource> "Putty" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

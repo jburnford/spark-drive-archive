@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/12/1248/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Charcoal"@en ;
+    skos:broader <id/grp/grp_wood_pulp_fuel/#concept> ;
+    skos:definition "charred or burnt wood, which is largely used for fuel on the Continent, and is also valued for making glass, steel, and as a deodorizer when powdered; cylinder charcoal obtained by distilling non-resinous woods is used in the manufacture of gunpowder. *See CARBON. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 95]"@en ;
+    skos:editorialNote "Curated fields — definition use: Auto-match had picked animal (bone) charcoal; the heading is wood charcoal (Canadian exports 1889–97)."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q177463> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1248" ;
+    skos:prefLabel "Charcoal"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n95> ;
+    <ontology/firstAttested/#resource> "1889"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "16"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_25_Pulp_and_Waste_Paper" ;
+    <ontology/substanceHead/#resource> "Charcoal" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_gunpowder_matches/#concept>, <ontology/ind_metallurgy_tinplate/#concept>, <ontology/ind_sugar_refining/#concept> .

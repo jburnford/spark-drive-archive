@@ -1,0 +1,34 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/10/1001/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Pimento"@en ;
+    skos:altLabel "allspice"@en ;
+    skos:broadMatch <customs-1866/vegetable/#concept> ;
+    skos:broader <id/grp/grp_spices_condiments/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_19193> ;
+    skos:definition "the dried berries of a West Indian tree, the *Eugenia Pimenta*, used as a spice in cookery, which have a flavour intermediate between pepper and cloves. The tree is exclusively cultivated in Jamaica, but of 36,061 cwts. imported thence in 1855, only 3,535 cwts. were entered for home consumption. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 300]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1963621> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1001" ;
+    skos:prefLabel "Pimento"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n300>, <https://archive.org/details/b21780535/page/n494>, <https://www.gutenberg.org/ebooks/15191> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1870"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "25"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_07_Coffee_Tea_Cocoa_Spices" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q110515420>, <http://www.wikidata.org/entity/Q158468>, <http://www.wikidata.org/entity/Q21977564> ;
+    <ontology/substanceHead/#resource> "Pimento" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_leather_tanning/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Leather Tanning, Tawing & Currying"@en ;
+    skos:definition "Tanning, tawing, and currying raw ox/calf/sheep/goat hides into sole, harness, morocco, Russia, and chamois leather — using oak, hemlock, and mimosa barks, valonia, sumach, cutch, myrabolans, divi-divi, lime, alum, salt, tallow, and fish/train oils."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Leather Tanning, Tawing & Currying"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0020/#concept>, <id/00/0022/#concept>, <id/00/0028/#concept>, <id/00/0034/#concept>, <id/00/0036/#concept>, <id/00/0041/#concept>, <id/00/0072/#concept>, <id/01/0109/#concept>, <id/01/0132/#concept>, <id/01/0180/#concept>, <id/02/0250/#concept>, <id/02/0257/#concept>, <id/02/0275/#concept>, <id/07/0730/#concept>, <id/08/0884/#concept>, <id/09/0975/#concept>, <id/19/1932/#concept>, <id/20/2002/#concept>, <id/doc/doc_mimosa_bark/#concept> .

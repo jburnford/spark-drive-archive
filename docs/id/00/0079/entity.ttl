@@ -1,0 +1,35 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0079/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Maple Sugar"@en ;
+    skos:broader <id/grp/grp_sugars_sweeteners/#concept> ;
+    skos:definition "sugar prepared from the sap of the *Acer saccharinum*, which is largely made for home consumption by the settlers in parts of the United States and British North American Provinces: usually it is of a dark treacle colour, as it does not granulate readily; but it is occasionally refined and bleached. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 252]"@en ;
+    skos:editorialNote "Curated fields — source_taxon remove: Silver maple; maple sugar is from Acer saccharum."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q402587> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0079" ;
+    skos:prefLabel "Maple Sugar"@en ;
+    skos:related <id/03/0360/#concept>, <id/16/1644/#concept> ;
+    skos:scopeNote "North American forest-derived sweetener (Acer saccharum); assigned oe:landBasis 'terrestrial_forest' to distinguish sugarbush forest harvest from arable cane/beet cropland."@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n252>, <https://archive.org/details/dictionaryprac00mccu/page/n1466>, <https://www.gutenberg.org/ebooks/15191> ;
+    <ontology/firstAttested/#resource> "1821"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "378"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_06_Sugars_and_Honey" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q214733> ;
+    <ontology/substanceHead/#resource> "Maple Sugar" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

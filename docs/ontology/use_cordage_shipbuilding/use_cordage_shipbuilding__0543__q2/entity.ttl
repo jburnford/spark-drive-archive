@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0543__q2/#resource> dcterms:bibliographicCitation "J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1208" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1208> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Pitch used in Shipbuilding, Rope, Cordage & Sailcloth: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1208"@en ;
+    <ontology/quoteText/#resource> "PITCH: (Ger. pech; Fr. poix, brai; Ital. pece; Span. pez; Russ. smola gustaja). The residuum which remains on inspissating tar, or boiling it down to dryness. It is extensively used in ship-building, and for other purposes. Large quantities are manufactured in Great Britain; but exclusive of these, 13,284 cwt. imported from foreign countries were entered for..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

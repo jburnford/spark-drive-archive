@@ -1,0 +1,14 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__doc_litharge/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Litharge used in Glassmaking, Pottery & Porcelain"@en ;
+    skos:editorialNote "Review decision (repoint): Quotes are about litharge and minium (lead oxides), not pig and sheet lead."@en ;
+    <ontology/assertsCommodity/#resource> <id/doc/doc_litharge/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_glass_ceramics/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_glass_ceramics/use_glass_ceramics__doc_litharge__q1/#resource>, <ontology/use_glass_ceramics/use_glass_ceramics__doc_litharge__q2/#resource>, <ontology/use_glass_ceramics/use_glass_ceramics__doc_litharge__q3/#resource> ;
+    <ontology/productionRole/#resource> "alkali_or_reagent" ;
+    <ontology/reviewStatus/#resource> "reviewed" .

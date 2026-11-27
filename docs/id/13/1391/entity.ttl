@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1391/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Nuts and Kernels Ground Nuts"@en ;
+    skos:broader <id/grp/grp_oilseeds/#concept> ;
+    skos:editorialNote "Curated classification (processing_state=raw_unprocessed): Processing state: whole nuts/kernels/seeds/peas are unprocessed; classifier matched 'expressing Oil', 'Ground (nuts)' or 'Split'. Layer-1 observations: 12 rows, 1861–1866. Series: HCPP_Annual Statement of Trade ×12. Units: Tons ×12. Top routes: World → United Kingdom ×2; Other Parts → United Kingdom ×2; British Possessions on the River Gambia → United Kingdom ×2; India Singapore and Ceylon → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1391" ;
+    skos:prefLabel "Nuts and Kernels Ground Nuts"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1861"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "12"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_unprocessed" ;
+    <ontology/sitcCode/#resource> "SITC4_22_Oil_Seeds_and_Oleaginous_Fruits" ;
+    <ontology/substanceHead/#resource> "Nuts and Kernels Ground Nuts" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

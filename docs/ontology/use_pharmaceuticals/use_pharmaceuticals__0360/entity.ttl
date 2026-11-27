@@ -1,0 +1,14 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0360/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Sugar used in Pharmaceuticals & Druggists' Preparations"@en ;
+    skos:editorialNote "Review decision (repoint): Quotes speak of sugar generally; the aggregate statistical line 'Sugar Unrefined Total' was the wrong target."@en ;
+    <ontology/assertsCommodity/#resource> <id/03/0360/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_pharmaceuticals/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_pharmaceuticals/use_pharmaceuticals__0360__q1/#resource>, <ontology/use_pharmaceuticals/use_pharmaceuticals__0360__q2/#resource> ;
+    <ontology/productionRole/#resource> "filler_or_admixture" ;
+    <ontology/reviewStatus/#resource> "reviewed" .

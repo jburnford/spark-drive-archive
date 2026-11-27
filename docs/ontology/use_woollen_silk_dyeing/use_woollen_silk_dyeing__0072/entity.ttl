@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_woollen_silk_dyeing/use_woollen_silk_dyeing__0072/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Galls used in Woollen, Silk & Worsted Dyeing"@en ;
+    <ontology/assertsCommodity/#resource> <id/00/0072/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_woollen_silk_dyeing/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_woollen_silk_dyeing/use_woollen_silk_dyeing__0072__q1/#resource> ;
+    <ontology/productionRole/#resource> "mordant_or_fixer" ;
+    <ontology/reviewStatus/#resource> "mined_single_quote" .

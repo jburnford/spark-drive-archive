@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__0328__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. T, T" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Saltpetre used in Glassmaking, Pottery & Porcelain: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. T, T"@en ;
+    <ontology/quoteText/#resource> "Frit together 20 parts of flint glass, 6 of flints, 2 of nitre, and 1 of borax; add to 12 parts of that frit, 40 parts of white lead, 36 of felspar, 8 of flints, and 6 of flint glass; then grind the whole together into an uniform cream-consistenced paste."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

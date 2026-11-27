@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0300/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cotton"@en ;
+    skos:broader <id/sub/sub_bast_plant_wd_q11457/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_1926>, <http://vocab.getty.edu/aat/300183670>, <http://zbw.eu/stw/descriptor/14055-5> ;
+    skos:definition "the wool or down surrounding the seeds of various species of *Gossypium*, of which the commerce is enormous. The quantities of raw cotton consumed in the chief manufacturing countries in 1856 were as follows, in millions of pounds:—Great Britain, 920; Russia, Germany, Holland, and Belgium, 256; France, 211; Spain, 48; countries bordering on the Adriatic, 39; United States of North America, 265; Mediterranean and other countries, 56. Total 1795 million pounds. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 121]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q11457> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0300" ;
+    skos:prefLabel "Cotton"@en ;
+    skos:related <id/01/0159/#concept>, <id/03/0308/#concept>, <id/03/0367/#concept>, <id/04/0480/#concept>, <id/04/0494/#concept>, <id/05/0505/#concept>, <id/06/0628/#concept>, <id/06/0654/#concept>, <id/07/0740/#concept>, <id/08/0810/#concept>, <id/08/0820/#concept>, <id/08/0862/#concept>, <id/08/0893/#concept>, <id/09/0918/#concept>, <id/09/0992/#concept>, <id/10/1003/#concept>, <id/10/1041/#concept>, <id/11/1122/#concept>, <id/11/1144/#concept>, <id/12/1236/#concept>, <id/12/1277/#concept>, <id/12/1292/#concept>, <id/14/1489/#concept>, <id/15/1512/#concept>, <id/16/1671/#concept>, <id/17/1715/#concept>, <id/17/1716/#concept>, <id/17/1725/#concept>, <id/17/1782/#concept>, <id/18/1846/#concept>, <id/18/1896/#concept>, <id/18/1897/#concept>, <id/19/1910/#concept>, <id/19/1941/#concept> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n121>, <https://archive.org/details/b21780535/page/n458>, <https://archive.org/details/dictionaryprac00mccu/page/n536> ;
+    <ontology/firstAttested/#resource> "1850"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1867"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "127"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_26_Textile_Fibres" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q133481>, <http://www.wikidata.org/entity/Q177615>, <http://www.wikidata.org/entity/Q311515> ;
+    <ontology/substanceHead/#resource> "Cotton" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

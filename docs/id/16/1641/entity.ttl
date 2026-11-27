@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/16/1641/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Tripe"@en ;
+    skos:broader <id/grp/grp_meats_provisions/#concept> ;
+    skos:definition "the stomach of a cow, &c. cleaned and cooked for food. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 402]"@en ;
+    skos:editorialNote "Curated classification (group=grp_meats_provisions): Tripe / dead rabbits are meat. Layer-1 observations: 7 rows, 1809–1822. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×7. Units: Kegs ×7. Top routes: Quebec QC → Great Britain ×7."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q470873> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1641" ;
+    skos:prefLabel "Tripe"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n402> ;
+    <ontology/firstAttested/#resource> "1809"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1822"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "7"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_01_Meat_and_Preparations" ;
+    <ontology/substanceHead/#resource> "Tripe" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

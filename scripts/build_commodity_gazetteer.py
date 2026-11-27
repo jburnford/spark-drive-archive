@@ -48,8 +48,6 @@ sys.path.insert(0, str(ROOT / "human_trade" / "scripts"))
 import build_skos_v4 as v4  # noqa: E402
 
 TODAY = date.today().isoformat()
-BASE_URI = v4.BASE_URI
-OE_NS = v4.OE_NS
 
 # Expanded category rules across ALL major unenumerated / minor commodity groups
 EXT_BUCKETS = {
@@ -1112,18 +1110,8 @@ def main():
     # 7. Export Extended LINCS-Compliant SKOS TTL + JSON-LD (`commodities_skos_extended.{ttl,jsonld}`)
     #    Starts from pure Layer-1 SKOS and appends the `oe:attestationBasis` / `oe:subsumedInCustomsHeading`
     #    property declarations + all `htc:doc_*` concepts (0 blank nodes, 0 dangling URIs, all rdfs:label + crm:E55_Type!).
-    base_ttl = (GROUND / "commodities_skos.ttl").read_text(encoding="utf-8")
     base_jld = json.loads((GROUND / "commodities_skos.jsonld").read_text(encoding="utf-8"))
 
-    ext_ttl_add = [
-        "",
-        "# ============================================================================",
-        "# EXTENDED DOCUMENT-ATTESTED TIER (TEXT-MINING VOCABULARY — htc:doc_*)",
-        "# ============================================================================",
-        'oe:subsumedInCustomsHeading a owl:ObjectProperty ; rdfs:label "customs catch-all heading under which this minor commodity was typically subsumed"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept ; owl:inverseOf oe:subsumesDocumentConcept .',
-        'oe:subsumesDocumentConcept a owl:ObjectProperty ; rdfs:label "document-attested minor commodity subsumed inside this unenumerated customs heading"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept ; owl:inverseOf oe:subsumedInCustomsHeading .',
-        "",
-    ]
     base_jld["@graph"].extend([
         {"@id": "oe:subsumedInCustomsHeading", "@type": "owl:ObjectProperty", "rdfs:label": {"@value": "customs catch-all heading under which this minor commodity was typically subsumed", "@language": "en"}, "rdfs:domain": {"@id": "skos:Concept"}, "rdfs:range": {"@id": "skos:Concept"}, "owl:inverseOf": {"@id": "oe:subsumesDocumentConcept"}},
         {"@id": "oe:subsumesDocumentConcept", "@type": "owl:ObjectProperty", "rdfs:label": {"@value": "document-attested minor commodity subsumed inside this unenumerated customs heading", "@language": "en"}, "rdfs:domain": {"@id": "skos:Concept"}, "rdfs:range": {"@id": "skos:Concept"}, "owl:inverseOf": {"@id": "oe:subsumedInCustomsHeading"}},
@@ -1138,21 +1126,6 @@ def main():
         f = c["facets"]
         a = c.get("wikidata_anchor") or {}
         sub_id = c["subsumed_in_customs_id"]
-        triples = [
-            "a skos:Concept, crm:E55_Type",
-            f"rdfs:label {v4.ttl_str(pref)}@en",
-            "skos:inScheme htc:scheme",
-            f"skos:notation {v4.ttl_str(c['notation'])}",
-            f"skos:prefLabel {v4.ttl_str(pref)}@en",
-            f"skos:broader {ont['broader_id']}",
-            'oe:attestationBasis "document_attested"',
-            f"oe:subsumedInCustomsHeading {sub_id}",
-            f"oe:groundingStatus {v4.ttl_str(c['status'])}",
-            f"oe:ghostAcresDomain {v4.ttl_str(f['ghost_acres_domain'])}",
-            f"oe:landBasis {v4.ttl_str(f['land_basis'])}",
-            f"oe:harvestMode {v4.ttl_str(f['harvest_mode'])}",
-            f"oe:sitcCode {v4.ttl_str(f['sitc_code'])}",
-        ]
         node = {
             "@id": cid, "@type": ["skos:Concept", "crm:E55_Type"],
             "rdfs:label": {"@value": pref, "@language": "en"},
@@ -1169,20 +1142,14 @@ def main():
             "oe:sitcCode": f["sitc_code"],
         }
         if c["skos_altLabels"]:
-            triples.append("skos:altLabel " + ", ".join(f"{v4.ttl_str(x)}@en" for x in c["skos_altLabels"]))
             node["skos:altLabel"] = [{"@value": x, "@language": "en"} for x in c["skos_altLabels"]]
         if c["skos_definition"]:
-            triples.append(f"skos:definition {v4.ttl_str(c['skos_definition'])}@en")
             node["skos:definition"] = {"@value": c["skos_definition"], "@language": "en"}
         if c["skos_scopeNote"]:
-            triples.append(f"skos:scopeNote {v4.ttl_str(c['skos_scopeNote'])}@en")
             node["skos:scopeNote"] = {"@value": c["skos_scopeNote"], "@language": "en"}
         if c["dictionary_sources"]:
-            drefs = [f"<{d['uri']}>" for d in c["dictionary_sources"]]
-            triples.append(f"oe:dictionarySource {', '.join(drefs)}")
             node["oe:dictionarySource"] = [{"@id": d["uri"]} for d in c["dictionary_sources"]]
         if a.get("qid"):
-            triples.append(f"skos:closeMatch wd:{a['qid']}")
             node["skos:closeMatch"] = [{"@id": f"http://www.wikidata.org/entity/{a['qid']}"}]
         if c["source_taxa"]:
             trefs = []
@@ -1193,28 +1160,21 @@ def main():
                 wuri = f"http://www.wikidata.org/entity/{tq}"
                 if wuri not in existing_jld_ids and tq not in extra_taxa:
                     extra_taxa[tq] = (tx.get("taxon_name", ""), tx.get("col_id", ""))
-            triples.append(f"oe:sourceTaxon {', '.join(trefs)}")
             node["oe:sourceTaxon"] = [{"@id": f"http://www.wikidata.org/entity/{tq.replace('wd:', '')}"} for tq in trefs]
 
-        ext_ttl_add.append(f"{cid} " + " ;\n    ".join(triples) + " .\n")
         base_jld["@graph"].append(node)
 
     for tq, (tname, col_id) in sorted(extra_taxa.items()):
-        tt = ["a crm:E55_Type"]
         tn = {"@id": f"http://www.wikidata.org/entity/{tq}", "@type": "crm:E55_Type"}
         if tname:
-            tt.append(f"rdfs:label {v4.ttl_str(tname)}@la")
             tn["rdfs:label"] = {"@value": tname, "@language": "la"}
         if col_id:
-            tt.append(f"oe:colId {v4.ttl_str(col_id)}")
             tn["oe:colId"] = col_id
-        ext_ttl_add.append(f"wd:{tq} " + " ;\n    ".join(tt) + " .\n")
         base_jld["@graph"].append(tn)
 
     ext_ttl_path = GROUND / "commodities_skos_extended.ttl"
-    ext_ttl_path.write_text(base_ttl + "\n".join(ext_ttl_add), encoding="utf-8")
     ext_jld_path = GROUND / "commodities_skos_extended.jsonld"
-    ext_jld_path.write_text(json.dumps(base_jld, indent=2, ensure_ascii=False), encoding="utf-8")
+    v4.write_graph(ext_jld_path, base_jld)
 
     # 8. Write crisp Markdown summary
     grp_cnt = Counter(c["ontology"]["group_label"] for c in doc_concepts)

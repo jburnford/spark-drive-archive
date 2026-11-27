@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_metallurgy_tinplate/use_metallurgy_tinplate__0484__q2/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 753" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n753/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Zinc Crude in Cakes used in Metallurgy, Smelting, Brass & Tinplate: McCulloch (1880), Dictionary of Commerce, scan p. 753"@en ;
+    <ontology/quoteText/#resource> "Unmanufactured copper and brass, copper ore, rough spelter and old zinc, nickel and nickel ore, cobalt and cobalt ore, bell metal, and old metal vessels &c. for smelting. 4. 4."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

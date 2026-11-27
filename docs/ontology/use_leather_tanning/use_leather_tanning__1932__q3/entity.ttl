@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__1932__q3/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 39" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n39/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Alum Roach used in Leather Tanning, Tawing & Currying: Mortimer (1823), General Commercial Dictionary, scan p. 39"@en ;
+    <ontology/quoteText/#resource> "Alum is also of use in tanning, where it assists in restoring the cohesion of the skins almost entirely destroyed by the lime."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,14 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__1683/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Painters Colours and Pigments White Lead used in Glassmaking, Pottery & Porcelain"@en ;
+    skos:editorialNote "Review decision (prune): Role corrected from the quote itself: white lead is a glaze flux in the quoted recipes."@en ;
+    <ontology/assertsCommodity/#resource> <id/16/1683/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_glass_ceramics/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_glass_ceramics/use_glass_ceramics__1683__q1/#resource>, <ontology/use_glass_ceramics/use_glass_ceramics__1683__q2/#resource> ;
+    <ontology/productionRole/#resource> "solvent_or_fuel" ;
+    <ontology/reviewStatus/#resource> "reviewed" .

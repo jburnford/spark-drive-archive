@@ -1,0 +1,24 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_sassafras/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Sassafras"@en ;
+    skos:altLabel "Sassafras Wood"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:definition "Sassafras is a tree native to eastern North America and eastern Asia.  Oil can be produced from the dried bark, and it leaves were rubbed into wounds by Native American tribespeople. https://en.wikipedia.org/wiki/Sassafras Sassafras is not mentioned in great length in the Pharmacopeia or the Compendium, with no description of the plant or any of its medical uses being provided. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_sassafras" ;
+    skos:prefLabel "Sassafras"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865), 1866 British Customs Commodities List (Danika / HGIS Lab), P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 502. Research note: smilax?."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n502> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q15612792> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> .

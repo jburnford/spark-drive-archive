@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0033/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Deals"@en ;
+    skos:altLabel "sawn softwood lumber"@en, "timber deals"@en ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q354757>, <http://zbw.eu/stw/descriptor/14794-2> ;
+    skos:broader <id/sub/sub_sawn_lumbe_wd_q354757/#concept> ;
+    skos:definition "(GER. *Dislen*. DU. *Deelen*. DA. *Dæler*. SW. *Tiljor*. FR. *Planches minces*. IT. *Tavole*, *Piane*. SR. *Tablas poco gruesas*. PORT. *Taboinhas*. RUS. *Dogki*. POL. *Taroice*,) a thin kind of fir-planks, of great use in carpentry: they are formed by sawing the trunk of a tree into a great many longitudinal divisions, of more or less thickness, according to the purposes they are intended to serve. Deals are rendered much harder, by throwing them into salt water as soon as they are sawed, keeping them there three or four days, and afterwards drying them in the air or sun; but neither this, nor any other, method yet known will preserve them from shrinking. Deals are imported by us from Dantzic, Petersburg, Narva, and many other ports in the Baltic, and from North America; [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 263]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0033" ;
+    skos:prefLabel "Deals"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n263> ;
+    <ontology/firstAttested/#resource> "1819"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1891"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "604"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "sawn_hewn" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/substanceHead/#resource> "Deals" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

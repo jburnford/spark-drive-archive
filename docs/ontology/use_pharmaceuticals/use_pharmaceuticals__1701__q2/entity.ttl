@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__1701__q2/#resource> dcterms:bibliographicCitation "J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1266" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1266> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Lignum Quassia used in Pharmaceuticals & Druggists' Preparations: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1266"@en ;
+    <ontology/quoteText/#resource> "QUASSIA: (Ger. quassienholz; Fr. bois de quassie; Span. leño de casia). A beautiful tall tree (Quassia amara), growing in North and South America, and the West Indies. The wood is dense, tough, of a pale yellow colour, and odoriferous. Taste intensely and purely bitter. (British Pharmacopœia, 1867.) It is pretty extensively employed in the materia medica; an..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

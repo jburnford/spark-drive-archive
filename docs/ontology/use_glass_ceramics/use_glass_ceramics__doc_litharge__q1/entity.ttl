@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__doc_litharge__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 242" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n242> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Litharge used in Glassmaking, Pottery & Porcelain: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 242"@en ;
+    <ontology/quoteText/#resource> "LITHARGE: semi-crystalline or fused protoxide of lead, obtained in separating silver from lead ore, which enters largely into the composition of flint glass."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

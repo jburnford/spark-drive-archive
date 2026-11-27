@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/04/0451/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Arrowroot"@en ;
+    skos:broader <id/grp/grp_cereals_grains/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300130948> ;
+    skos:definition "The genuine arrowroot of commerce is the produce of the tuberous rhizomata of _Maranta arundinacea_, a native of South America, and _M. indica_, indigenous to the West Indies, but also cultivated in the East. The best West Indian arrowroot comes from Bermuda. Its globules are much smaller and less glistening than those of _Tous-les-mois_, or potato starch. The peculiar characteristics of the starch obtained from various plants has been particularised and described already in the elaborate investigation of the commercial yield and value of the starch-producing plants. [P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854, Project Gutenberg #15191)]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q4069888> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0451" ;
+    skos:prefLabel "Arrowroot"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://www.gutenberg.org/ebooks/15191> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_grain" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "82"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_unprocessed" ;
+    <ontology/sitcCode/#resource> "SITC4_04_Cereals_and_Preparations" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q767103> ;
+    <ontology/substanceHead/#resource> "Arrowroot" ;
+    <ontology/theodoridisBucket/#resource> "grain_and_flour" .

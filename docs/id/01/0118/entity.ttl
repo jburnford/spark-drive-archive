@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0118/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cochineal"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300013029>, <http://www.wikidata.org/entity/Q189720> ;
+    skos:broader <id/sub/sub_natural_dy_wd_q189720/#concept> ;
+    skos:definition "was taken in Europe at first for a seed, but was proved by the observations of Lewenhoeck to be an insect, being the female of that species of shield-louse, or _coccus_, discovered in Mexico, so long ago as 1518. It is brought to us from Mexico, where the animal lives upon the _cactus opuntia_ or _nopal_. Two sorts of cochineal are gathered--the wild, from the woods, called by the Spanish name _grana silvestra_; and the cultivated, or the _grana fina_, termed also _mesteque_, from the name of a Mexican province. The first is smaller, and covered with a cottony down, which increases its bulk with a matter useless in dyeing; [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0118" ;
+    skos:prefLabel "Cochineal"@en ;
+    skos:related <id/00/0062/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n108>, <https://archive.org/details/generalcommercia00mort/page/n227>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1909"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "269"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q244274> ;
+    <ontology/substanceHead/#resource> "Cochineal" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_calico_printing/#concept>, <ontology/ind_chocolate_confectionery/#concept>, <ontology/ind_varnish_paint_lacquer/#concept>, <ontology/ind_woollen_silk_dyeing/#concept> .

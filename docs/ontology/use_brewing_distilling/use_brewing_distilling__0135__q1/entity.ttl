@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_brewing_distilling/use_brewing_distilling__0135__q1/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 417" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n417/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Molasses used in Brewing, Malting & Distilling: McCulloch (1880), Dictionary of Commerce, scan p. 417"@en ;
+    <ontology/quoteText/#resource> "The duties having been adjusted so as to give no advantage to the planters over the growers of barley, or to the latter over the former, the distillers have been permitted to distil indiscriminately from sugar, molasses, or grain."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .
