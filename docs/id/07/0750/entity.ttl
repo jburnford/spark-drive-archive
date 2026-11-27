@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/07/0750/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cream of Tartar"@en ;
+    skos:broadMatch <customs-1866/chemical/#concept> ;
+    skos:broader <id/grp/grp_industrial_chemicals_alkalis/#concept> ;
+    skos:definition "crystallized super-tartrate of potash. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 125]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q56314905> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0750" ;
+    skos:prefLabel "Cream of Tartar"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n125>, <https://archive.org/details/generalcommercia00mort/page/n256> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "42"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_51_52_Chemicals" ;
+    <ontology/substanceHead/#resource> "Cream of Tartar" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_pharmaceuticals/#concept> .

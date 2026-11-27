@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0609/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Elephants Teeth"@en ;
+    skos:altLabel "elephant ivory"@en ;
+    skos:broader <id/grp/grp_fertilizers_animal_materials/#concept> ;
+    skos:definition "The name given to the teeth or tusks of the elephant, and of the walrus or sea-horse. Each male elephant come to maturity has 2 tusks. These are hollow at the root, tapering, and of various sizes, depending principally on the age of the animal. Colour externally yellowish, brownish, and sometimes dark, internally white. The best are large, straight, and light-coloured, without flaws; not very hollow in the stump, but solid and thick. The most esteemed come from Africa, being of a closer texture, and less liable to turn yellow, than those from the East Indies. The trade in London thus divide them:— First sort, weighing 70 lbs. or upwards; second sort, weighing 56 lbs. to 60 lbs.; [J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 883]"@en ;
+    skos:editorialNote "Curated fields — definition use: Previous text was only a cross-reference ('See IVORY')."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0609" ;
+    skos:prefLabel "Elephants Teeth"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/dictionaryprac00mccu/page/n883>, <https://archive.org/details/generalcommercia00mort/page/n285> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_wild_hunted" ;
+    <ontology/lastAttested/#resource> "1847"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "58"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Elephants Teeth" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

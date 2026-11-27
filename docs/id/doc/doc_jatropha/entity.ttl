@@ -1,0 +1,22 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_jatropha/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Jatropha"@en ;
+    skos:broader <id/grp/grp_oilseeds/#concept> ;
+    skos:definition "A genus of woody plants, chiefly natives of America. Four species are indigenous to India and three others naturalised or cultivated. **J. Curcas**, *Linn.*; *Rec. Bot. Surv. Ind.*, iii., 101, 275. The Physic Nut, *bagberenda*, *safed arand*, *rattanjot*, *magalieranda*, *kaat-amunak*, *thinbaw-kyetsu*, etc. [Sir George Watt, The Commercial Products of India (1908), scan p. 711]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_jatropha" ;
+    skos:prefLabel "Jatropha"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0012 (Seeds Unenumerated Other Sorts). Attested in: Sir George Watt, The Commercial Products of India (1908), scan p. 711."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b31361584/page/n711> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0012/#concept> .

@@ -1,0 +1,35 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/04/0436/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Castor"@en ;
+    skos:altLabel "beaver castor"@en, "castoreum"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:definition "an animal substance possessing a disagreeable odour, obtained from the beaver, *Castor fiber*, and once much used as an antispasmodic in medicine. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 87]"@en ;
+    skos:editorialNote "Curated fields — source_taxon remove: Eurasian beaver; the rows are Canadian. | source_taxon add: North American beaver, source of the castoreum exported from Canada and Hudson's Bay. | bridge_1866 drop: The 1866 'Castor' concept is the castor-oil seed; this heading is castoreum."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q162724> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0436" ;
+    skos:prefLabel "Castor"@en ;
+    skos:scopeNote "Historical boundary object: in 1800–1852 British/Canadian customs ledgers (measured in lbs from Canada/Hudson's Bay), 'Castor' denotes beaver castoreum (North American beaver, Castor canadensis), not castor oil."@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n87>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_wild_hunted" ;
+    <ontology/lastAttested/#resource> "1852"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "85"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_54_Medicinal_Pharmaceutical" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q81056> ;
+    <ontology/substanceHead/#resource> "Castor" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

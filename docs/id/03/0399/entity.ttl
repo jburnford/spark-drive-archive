@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0399/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Quicksilver"@en ;
+    skos:altLabel "mercury"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300011026>, <http://www.wikidata.org/entity/Q925>, <http://zbw.eu/stw/descriptor/14307-4>, <customs-1866/metal/#concept> ;
+    skos:broader <id/grp/grp_metals_semi_finished/#concept> ;
+    skos:definition "the commercial name for mercury: our imports average $2\\frac{1}{2}$ to 3 $\\frac{1}{2}$ million pounds a year, chiefly from California and Spain. Alloyed with tin-foil, quicksilver forms the reflecting surface of looking-glasses, and by its ready solution of gold or silver, and subsequent dissipation by a moderate heat, it becomes the great instrument in the arts of gilding and silvering copper and brass. The same property makes it so available in extracting these precious metals from their ores. It is also the basis of many very powerful medicines. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 322]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0399" ;
+    skos:prefLabel "Quicksilver"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n322>, <https://archive.org/details/generalcommercia00mort/page/n841> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "92"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "smelted_semi" ;
+    <ontology/sitcCode/#resource> "SITC4_67_68_Metals" ;
+    <ontology/substanceHead/#resource> "Quicksilver" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_metallurgy_tinplate/#concept>, <ontology/ind_pharmaceuticals/#concept> .

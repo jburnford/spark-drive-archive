@@ -1,0 +1,14 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_perfumery_cosmetics/use_perfumery_cosmetics__0573/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Spices Cloves used in Perfumery, Pomades & Essential Oils"@en ;
+    skos:editorialNote "Review decision (prune): Quote(s) removed that do not show this use (trade list, different substance, or the commodity as a comparison)."@en ;
+    <ontology/assertsCommodity/#resource> <id/05/0573/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_perfumery_cosmetics/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_perfumery_cosmetics/use_perfumery_cosmetics__0573__q1/#resource>, <ontology/use_perfumery_cosmetics/use_perfumery_cosmetics__0573__q2/#resource> ;
+    <ontology/productionRole/#resource> "flavouring_or_scent" ;
+    <ontology/reviewStatus/#resource> "reviewed" .

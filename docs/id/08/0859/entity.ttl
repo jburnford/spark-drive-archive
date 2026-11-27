@@ -1,0 +1,35 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/08/0859/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cork"@en ;
+    skos:broadMatch <customs-1866/bark/#concept> ;
+    skos:broader <id/sub/sub_wood_pulp__wd_q49444/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300011862>, <http://zbw.eu/stw/descriptor/14793-4> ;
+    skos:definition "the modified liber of the *Quercus suber*, largely used for stoppers of bottles and casks, and many other purposes. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 119]"@en ;
+    skos:editorialNote "Curated fields — source_taxon remove: Amur cork tree, not commercial cork (Quercus suber)."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q49444> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0859" ;
+    skos:prefLabel "Cork"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n119>, <https://archive.org/details/generalcommercia00mort/page/n251>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "33"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_25_Pulp_and_Waste_Paper" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q156137> ;
+    <ontology/substanceHead/#resource> "Cork" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

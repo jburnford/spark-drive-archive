@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/12/1200/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Fruit Preserved without sugar by chemicals or artificial heat or artificial cold Tinned or bottled Apples including gallon apples"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300011868>, <http://www.wikidata.org/entity/Q1364> ;
+    skos:broader <id/sub/sub_fruits_nut_wd_q1364/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1200" ;
+    skos:prefLabel "Fruit Preserved without sugar by chemicals or artificial heat or artificial cold Tinned or bottled Apples including gallon apples"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade_1910_1940_ext/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1937"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1940"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "18"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_05_Vegetables_and_Fruit" ;
+    <ontology/substanceHead/#resource> "Fruit Preserved without sugar by chemicals or artificial heat or artificial cold Tinned or bottled Apples including gallon apples" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

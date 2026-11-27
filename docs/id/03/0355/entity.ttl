@@ -1,0 +1,35 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0355/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Gambier"@en ;
+    skos:broadMatch <customs-1866/plant/#concept> ;
+    skos:broader <id/grp/grp_vegetable_tannins/#concept> ;
+    skos:definition "an extract prepared at Singapore from the *Uncaria Gambir*, and used as a dye and tanning substance. It is misnamed in trade circles *Terra Japonica*. The imports in the last few years have averaged 6000 tons per annum. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 180]"@en ;
+    skos:editorialNote "Curated classification (wd_term=gambier; wd_relation=skos:exactMatch): Gambier (Uncaria gambir extract) has its own Wikidata item; it had been close-matched to catechu (Acacia cutch). Layer-1 observations: 108 rows, 1861–1920. Series: HCPP_Annual Statement of Trade ×108. Units: Tons ×84; CWTS (Hundredweights) ×24. Top routes: World → United Kingdom ×29; Straits Settlements → United Kingdom ×14; Singapore and Eastern Straits Settlements → United Kingdom ×13; Other Foreign Countries → United Kingdom ×8."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q19840126> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0355" ;
+    skos:prefLabel "Gambier"@en ;
+    skos:related <id/02/0206/#concept> ;
+    skos:scopeNote "Historical Southeast Asian vegetable tanning extract (Uncaria gambir); closely allied in 19th-century British trade ledgers with Cutch and Terra Japonica."@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n180>, <https://archive.org/details/b21780535/page/n468>, <https://www.gutenberg.org/ebooks/15191> ;
+    <ontology/firstAttested/#resource> "1861"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1920"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "108"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q50852915>, <http://www.wikidata.org/entity/Q910384> ;
+    <ontology/substanceHead/#resource> "Gambier" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

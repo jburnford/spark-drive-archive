@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/11/1128/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cigarettes"@en ;
+    skos:altLabel "cigarette"@en ;
+    skos:broader <id/grp/grp_tobacco/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_9857>, <http://vocab.getty.edu/aat/300419976>, <http://www.wikidata.org/entity/Q1578>, <http://zbw.eu/stw/descriptor/14998-0> ;
+    skos:definition "fine tobacco rolled in paper for smoking like cigars. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 102]"@en ;
+    skos:editorialNote "Curated classification (group=grp_tobacco; processing_state=manufactured; wd_term=cigarette; wd_relation=skos:closeMatch): Cigarettes are manufactured tobacco. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article). Layer-1 observations: 20 rows, 1906–1906. Series: HCPP_Annual Statement of Trade ×20. Units: Lbs. (Pounds) ×20. Top routes: Brazil → United Kingdom ×1; France → United Kingdom ×1; World → United Kingdom ×1; Belgium → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1128" ;
+    skos:prefLabel "Cigarettes"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n102> ;
+    <ontology/firstAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "20"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_12_Tobacco" ;
+    <ontology/substanceHead/#resource> "Cigarettes" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

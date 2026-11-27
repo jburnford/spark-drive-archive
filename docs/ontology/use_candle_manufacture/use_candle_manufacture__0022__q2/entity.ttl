@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_candle_manufacture/use_candle_manufacture__0022__q2/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 955" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n955> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Tallow used in Candle Manufacture: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 955"@en ;
+    <ontology/quoteText/#resource> "TALLOW: (GER. Talg. DU. Ongel. DA. Tælg, Talg. SW. Talg. FR. Suif. IT. Sevo, Sego. SP. and PORT. Sebo. RUS. Salo toplenoe. POL. Zoy. LAT. Sebum,) a sort of animal fat, melted down and clarified, being used in making soap, and candles, in the dressing of leather, and by salt-boilers for the purpose of imparting a large grain to the salt. Tallow is either yell..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

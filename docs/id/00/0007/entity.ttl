@@ -1,0 +1,35 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0007/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Barley"@en ;
+    skos:broadMatch <customs-1866/corn/#concept> ;
+    skos:broader <id/sub/sub_cereals_gr_wd_q61665121/#concept> ;
+    skos:definition "a common grain, the genus *Hordeum*, of which there are many cultivated varieties used for human food, for cattle-feeding, and especially for malting. Barley is valuable for culinary purposes, especially for thickening broths, soups, and [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 38]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q61665121> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0007" ;
+    skos:prefLabel "Barley"@en ;
+    skos:related <id/00/0013/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_annual_statement_of_trade_1910_1940_ext/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n38>, <https://archive.org/details/b21780535/page/n39>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_grain" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1940"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "1156"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_unprocessed" ;
+    <ontology/sitcCode/#resource> "SITC4_04_Cereals_and_Preparations" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q11577> ;
+    <ontology/substanceHead/#resource> "Barley" ;
+    <ontology/theodoridisBucket/#resource> "grain_and_flour" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_brewing_distilling/#concept> .

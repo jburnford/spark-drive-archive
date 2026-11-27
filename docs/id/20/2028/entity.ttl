@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/20/2028/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Bear"@en ;
+    skos:broader <id/grp/grp_customs_residuals/#concept> ;
+    skos:definition "There are several species of this quadruped; the most important, however, are the brown and black bears, *Ursus Arctos et Americanus*, and the Polar bear, *Ursus maritimus*. The bear is an object of commercial utility for man-geries and zoological collections, and also for its skin and grease. The flesh of the black bear is extremely delicate, the hams in particular being much esteemed. The white bear is eaten by the Esquimaux and the Danes of Greenland, and, when young and cooked after the manner of a beefsteak, is by no means to be despised, although rather insipid; [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 44]"@en ;
+    skos:editorialNote "Curated fields — source_taxon remove: Only the polar bear had been attached; single Canadian row (1839). | source_taxon add: American black bear, the common bear of the Canadian trade."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "2028" ;
+    skos:prefLabel "Bear"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n44> ;
+    <ontology/firstAttested/#resource> "1839"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "other" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_wild_hunted" ;
+    <ontology/lastAttested/#resource> "1839"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q122783> ;
+    <ontology/substanceHead/#resource> "Bear" ;
+    <ontology/theodoridisBucket/#resource> "unclassified" .

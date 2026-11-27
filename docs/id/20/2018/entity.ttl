@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/20/2018/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Canvas"@en ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q4259259> ;
+    skos:broader <id/grp/grp_yarns_cordage/#concept> ;
+    skos:definition "a strong kind of flaxen fabric, used for ship's sails, awnings, tents, &c., manufactured in Ireland and Scotland. No. 1. is the coarsest and strongest kind. There are some other more open kinds of canvas made for tapestry and buckram. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 79]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "2018" ;
+    skos:prefLabel "Canvas"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n79>, <https://archive.org/details/dictionaryprac00mccu/page/n326>, <https://archive.org/details/generalcommercia00mort/page/n199> ;
+    <ontology/firstAttested/#resource> "1837"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1837"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_65_Textile_Yarn_and_Fabrics" ;
+    <ontology/substanceHead/#resource> "Canvas" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

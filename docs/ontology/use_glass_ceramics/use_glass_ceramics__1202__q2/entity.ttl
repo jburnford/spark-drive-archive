@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__1202__q2/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 1024" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n1024/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Zaffre used in Glassmaking, Pottery & Porcelain: Mortimer (1823), General Commercial Dictionary, scan p. 1024"@en ;
+    <ontology/quoteText/#resource> "Z E DZ I N ZAFFRE is the oxyde of cobalt, employed in painting pottery-ware and cobalt of a blue colour. See COBALT. ZE A, Indian Corn. The only species, the mays, or maize."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

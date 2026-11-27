@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1936/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Carpets Turkey"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300185756>, <http://www.wikidata.org/entity/Q163446>, <http://zbw.eu/stw/descriptor/14897-6> ;
+    skos:broader <id/sub/sub_woven_fabr_wd_q163446/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_woven_fabrics_apparel; processing_state=manufactured; wd_term=carpet; wd_relation=skos:broadMatch): Turkey carpets (KEW CUST 5, 1800, origin 'Turkey and Levant', counted by number) are textiles; classifier matched 'Turkey' as poultry. Layer-1 observations: 2 rows, 1800–1800. Series: KEW_CUST 5 ×2. Units: Number ×2. Top routes: World → United Kingdom ×1; Turkey and Levant → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1936" ;
+    skos:prefLabel "Carpets Turkey"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
+    <ontology/substanceHead/#resource> "Carpets Turkey" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

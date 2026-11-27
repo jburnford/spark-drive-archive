@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/16/1677/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Iron and Steel Bolts and Nuts"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300036363>, <http://www.wikidata.org/entity/Q2002016> ;
+    skos:broader <id/grp/grp_metal_machinery_hardware/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1677" ;
+    skos:prefLabel "Iron and Steel Bolts and Nuts"@en ;
+    skos:related <id/03/0305/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q677> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/materialConcept/#resource> <id/03/0305/#concept> ;
+    <ontology/observationCount/#resource> "7"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_69_7_Metalwares_and_Machinery" ;
+    <ontology/substanceHead/#resource> "Iron and Steel Bolts and Nuts" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

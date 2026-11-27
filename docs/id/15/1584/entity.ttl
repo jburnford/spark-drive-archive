@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/15/1584/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Turkey"@en ;
+    skos:broader <id/grp/grp_live_food_animals/#concept> ;
+    skos:definition "a large domesticated fowl, the *Meleagris gallopavo*, which is bred in large numbers, in the home counties and Ireland, for the London markets, about 130,000 being annually sold in the metropolis. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 404]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1584" ;
+    skos:prefLabel "Turkey"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n404>, <https://archive.org/details/dictionaryprac00mccu/page/n1796> ;
+    <ontology/firstAttested/#resource> "1808"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1822"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "8"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "live" ;
+    <ontology/sitcCode/#resource> "SITC4_00_Live_Animals" ;
+    <ontology/substanceHead/#resource> "Turkey" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

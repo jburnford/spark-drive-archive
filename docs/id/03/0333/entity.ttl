@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0333/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Laths"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300014892>, <http://vocab.getty.edu/aat/300389657>, <http://www.wikidata.org/entity/Q3092965> ;
+    skos:broader <id/sub/sub_sawn_lumbe_wd_q3092965/#concept> ;
+    skos:definition "a thin cleft strip of wood, used in house-building; a runner nailed to a roof to support tiles. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 235]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0333" ;
+    skos:prefLabel "Laths"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n235> ;
+    <ontology/firstAttested/#resource> "1819"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "116"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "sawn_hewn" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/substanceHead/#resource> "Laths" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0250__q1/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 229" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n229/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Train or Blubber (Whale Oils) used in Leather Tanning, Tawing & Currying: Mortimer (1823), General Commercial Dictionary, scan p. 229"@en ;
+    <ontology/quoteText/#resource> "Cod-oil is applied to nearly the same purposes as whale-oil: it is much used by curriers, and is a good lamp-oil. COFFEE. (GER. Koffe, Koffebohnen."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

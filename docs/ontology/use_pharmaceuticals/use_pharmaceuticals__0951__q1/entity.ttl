@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0951__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 322" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n322> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Quinine Sulphate of used in Pharmaceuticals & Druggists' Preparations: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 322"@en ;
+    <ontology/quoteText/#resource> "QUININE: a valuable alkaloid, extracted from Cinchona bark, and used as a stimulant and tonic in intermittents. The sulphate of quinine is used to a great extent in medicine, for a medicinal wine, and in other forms."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

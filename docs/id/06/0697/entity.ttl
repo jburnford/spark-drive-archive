@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0697/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Spirits"@en ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q56139> ;
+    skos:broader <id/sub/sub_alcoholic__wd_q56139/#concept> ;
+    skos:editorialNote "Curated fields — definition drop: Customs-duty prose from McCulloch (1870 Act), not a definition."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0697" ;
+    skos:prefLabel "Spirits"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/dictionaryprac00mccu/page/n1765>, <https://archive.org/details/dictionaryprac00mccu/page/n1910> ;
+    <ontology/firstAttested/#resource> "1869"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1892"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "48"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "refined_extract" ;
+    <ontology/sitcCode/#resource> "SITC4_11_Beverages" ;
+    <ontology/substanceHead/#resource> "Spirits" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_perfumery_cosmetics/#concept>, <ontology/ind_pharmaceuticals/#concept>, <ontology/ind_varnish_paint_lacquer/#concept> .

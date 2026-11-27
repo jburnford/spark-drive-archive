@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_chocolate_confectionery/use_chocolate_confectionery__0290__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 218" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n218> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Isinglass used in Chocolate & Confectionery: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 218"@en ;
+    <ontology/quoteText/#resource> "ISINGLASS: the commercial name for the purest form of animal jelly obtained from the swimming-bladder of various fish. It is a substance well known in commerce, and employed both in the arts and domestic economy, being used in confectionery and cooking, and for clarifying wine and beer. The best isinglass is obtained in Russia from the sturgeon, and is divid..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

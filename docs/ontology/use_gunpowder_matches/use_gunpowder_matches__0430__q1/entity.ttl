@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_gunpowder_matches/use_gunpowder_matches__0430__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 378" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n378> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Brimstone used in Gunpowder, Explosives & Lucifer Matches: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 378"@en ;
+    <ontology/quoteText/#resource> "SULPHUR: a simple inflammable body, of great importance in chemistry and the arts. It is found abundantly in depositions near volcanoes, and is also obtained by the roasting of pyrites. It is used extensively in the manufacture of gunpowder, and of sulphuric acid. We import annually about 75,000 tons."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0039/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Staves - Other"@en ;
+    skos:broader <id/grp/grp_cooperage_ship_timber/#concept> ;
+    skos:definition "shaped lengths of wood for making casks, chiefly of white or red oak; but also made of ash and other wood. They are sold by the standard mille, or thousand, of 1200, or ten standard hundreds of 120 pieces. Staves vary in length, according to the purpose they are intended for, from 31 inches long to 72 inches, and in breadth from 3 to 7 inches; in thickness from $\\frac{3}{4}$ to 3 inches. Prepared staves are reckoned in some parts of the Continent by the schock. Thus a long thousand of staves usually consists of 20 schock, each of 60 pipe staves; [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 371]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0039" ;
+    skos:prefLabel "Staves - Other"@en ;
+    skos:relatedMatch <http://www.wikidata.org/entity/Q10289> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n371> ;
+    <ontology/firstAttested/#resource> "1827"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1896"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "555"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "sawn_hewn" ;
+    <ontology/sitcCode/#resource> "SITC4_63_Cork_and_Wood_Manufactures" ;
+    <ontology/substanceHead/#resource> "Staves" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

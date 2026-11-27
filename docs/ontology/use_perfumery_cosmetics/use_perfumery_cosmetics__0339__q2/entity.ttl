@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_perfumery_cosmetics/use_perfumery_cosmetics__0339__q2/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 289" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n289/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Safflower used in Perfumery, Pomades & Essential Oils: Watt (1908), Commercial Products of India, scan p. 289"@en ;
+    <ontology/quoteText/#resource> "Japan, 176-7) it can hardly be regarded as more than a botanical curiosity in that country—the cosmetic beni being manufactured from foreign (mostly Indian) supplies of safflower. [Cf."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

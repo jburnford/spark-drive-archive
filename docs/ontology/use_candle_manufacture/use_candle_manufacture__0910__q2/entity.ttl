@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_candle_manufacture/use_candle_manufacture__0910__q2/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 1614" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1614/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Stearine used in Candle Manufacture: McCulloch (1880), Dictionary of Commerce, scan p. 1614"@en ;
+    <ontology/quoteText/#resource> "This beautiful wax, one parcel of which varies but little from another, has a bright cream colour, is nearly of the consistence of bees' wax, bears without softening a high degree of atmospheric heat; and as it contains a large percentage of stearine, it is highly suitable for the manufacture of candles, particularly of those known as 'composite,' as well as..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

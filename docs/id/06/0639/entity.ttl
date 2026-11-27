@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0639/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Flax Rough or Undressed"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_2970>, <http://vocab.getty.edu/aat/300014041>, <http://www.wikidata.org/entity/Q47089651> ;
+    skos:broader <id/sub/sub_bast_plant_wd_q47089651/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0639" ;
+    skos:prefLabel "Flax Rough or Undressed"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1881"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "55"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_unprocessed" ;
+    <ontology/sitcCode/#resource> "SITC4_26_Textile_Fibres" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q45108> ;
+    <ontology/substanceHead/#resource> "Flax Rough or" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

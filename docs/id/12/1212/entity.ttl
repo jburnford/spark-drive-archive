@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/12/1212/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Perfumery Unenumerated"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300015166>, <http://www.wikidata.org/entity/Q131746>, <http://zbw.eu/stw/descriptor/14737-0> ;
+    skos:broader <id/sub/sub_waxes_soap_wd_q131746/#concept> ;
+    skos:definition "(_Parfumerie_, Fr.; _Wohlriechende-kunst_, Germ.); consists in the preparation of different products, such as fats or pommades, essential oils, distilled spirits, pastes, pastilles, and essences. Fats ought to be pounded in a marble mortar, without addition of water, till all the membranes be completely torn; then subjected to the heat of a water-bath in a proper vessel. The fat soon melts, and the albumen of the blood coagulating, carries with it all the foreign substances; the liquid matter should be skimmed, and passed through a canvas filter. _Of pommades by infusion._--Rose, orange-flower, and cassia. Take 334 pounds of hog’s lard, and 166 of beef suet. These 500 pounds are put into a pan called _bugadier_; [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1212" ;
+    skos:prefLabel "Perfumery Unenumerated"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1848"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1876"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "17"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_55_Oils_Perfumes_Cleansing" ;
+    <ontology/substanceHead/#resource> "Perfumery" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

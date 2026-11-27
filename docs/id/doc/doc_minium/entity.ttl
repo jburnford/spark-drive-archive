@@ -1,0 +1,24 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_minium/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Minium"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q408757> ;
+    skos:definition "(Eng. and Fr., _Red lead_; _Mennige_, Germ.) This pigment is a peculiar oxide of lead, consisting of two atoms of the protoxide and one of the peroxide; but, as found in commerce, it always contains a little extra protoxide, or yellow massicot. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_minium" ;
+    skos:prefLabel "Minium"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0054 (Dye Stuffs Unenumerated). Attested in: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562), P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 260."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n260>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0054/#concept> ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_varnish_paint_lacquer/#concept> .

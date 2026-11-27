@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0697__q3/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 916" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n916/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Spirits used in Pharmaceuticals & Druggists' Preparations: Watt (1908), Commercial Products of India, scan p. 916"@en ;
+    <ontology/quoteText/#resource> "The process adopted was that recommended in the British Pharmacopœia, which consists in exhausting the drug by percolation with alcohol, concentrating the percolate and precipitating the resin by adding water."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

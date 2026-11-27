@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_woollen_silk_dyeing/use_woollen_silk_dyeing__0975__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. BRONZING" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Sulphuric Acid used in Woollen, Silk & Worsted Dyeing: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. BRONZING"@en ;
+    <ontology/quoteText/#resource> "Instead of the indigo vat, Saxon blue may be employed to ground the stuff before dyeing it with madder, or 5 pounds of madder, with 1 pound of alum, a solution of one tenth of a pound of indigo in sulphuric acid, may be used with the proper quantity of water for 20 pounds of wool; for dark shades some iron mordant may be added."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

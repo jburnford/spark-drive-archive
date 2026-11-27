@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_poppy_seed_oil/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Poppy Seed Oil"@en ;
+    skos:broader <id/grp/grp_vegetable_oils/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q1757003> ;
+    skos:definition "a bland drylag oil, obtained from poppy-seed, which is more extensively used in the Madras presidency, and some other parts of India, than any other, both in meals and for food. Exposed to the rays of the sun, it becomes perfectly colourless. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 308]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_poppy_seed_oil" ;
+    skos:prefLabel "Poppy Seed Oil"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0124 (Oil Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 308."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n308> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_42_Fixed_Vegetable_Fats_and_Oils" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0124/#concept> .

@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_hats_brushes_upholstery/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Hat-Making, Brushes, Upholstery & Turnery"@en ;
+    skos:definition "Felt and silk hat-making, brushmaking, upholstery stuffing, and ornamental turnery — working beaver, rabbit/coney, and nutria pelts with shellac stiffening, nitrate of mercury carroting, and logwood/copperas black dye; hog bristles, horsehair, piassava, coir, and kapok; and ivory, whalebone, tortoise-shell, mother-of-pearl, cork, and rattan."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Hat-Making, Brushes, Upholstery & Turnery"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0096/#concept>, <id/01/0188/#concept>, <id/02/0224/#concept>, <id/02/0225/#concept>, <id/02/0255/#concept>, <id/02/0291/#concept>, <id/05/0502/#concept>, <id/06/0677/#concept>, <id/08/0869/#concept>, <id/09/0942/#concept>, <id/09/0975/#concept>, <id/11/1143/#concept>, <id/14/1443/#concept>, <id/20/2002/#concept>, <id/doc/doc_kapok/#concept>, <id/doc/doc_verdigris/#concept> .

@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/20/2005/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Goats"@en ;
+    skos:broader <id/grp/grp_customs_residuals/#concept> ;
+    skos:definition "a genus of animals, the *Capra*, furnishing many articles to commerce, in the flesh of the young kid, goats' milk, hair, &c. The skin of the kid forms the softest and most beautiful leather for gloves. The long wool of the Cashmere and Angora goats is much esteemed for manufacturing purposes. Goat is also the name for a rough surveying instrument used in road-making in Ceylon. It consists of a ten-foot rod attached to one permanent leg, with a leg graduated to inches, moving in a socket at the other extremity; in Scotland, a cavern or small inlet of the sea; a trench. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 186]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "2005" ;
+    skos:prefLabel "Goats"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n186> ;
+    <ontology/firstAttested/#resource> "1820"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "other" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/lastAttested/#resource> "1820"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/substanceHead/#resource> "Goats" ;
+    <ontology/theodoridisBucket/#resource> "unclassified" .

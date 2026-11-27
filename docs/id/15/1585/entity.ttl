@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/15/1585/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Bark canoe"@en ;
+    skos:broader <id/grp/grp_metal_machinery_hardware/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_metal_machinery_hardware; processing_state=manufactured): Vehicles and craft (wagons, gigs, canoes), cf. Carriages and Carts. Layer-1 observations: 8 rows, 1809–1822. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×8. Units: Number ×8. Top routes: Quebec QC → Great Britain ×8."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1585" ;
+    skos:prefLabel "Bark canoe"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1809"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1822"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "8"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_69_7_Metalwares_and_Machinery" ;
+    <ontology/substanceHead/#resource> "Bark canoe" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

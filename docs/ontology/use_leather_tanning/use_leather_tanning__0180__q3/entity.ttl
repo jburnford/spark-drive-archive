@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0180__q3/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 1086" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n1086/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Myrabolans used in Leather Tanning, Tawing & Currying: Watt (1908), Commercial Products of India, scan p. 1086"@en ;
+    <ontology/quoteText/#resource> "Trade Names. Dye and Tan.—The dried fruit of this species constitutes the “Chebulic” and “Black” myrobalan of commerce, one of the most valuable of Indian tanning materials."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

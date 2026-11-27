@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_plantain/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Plantain"@en ;
+    skos:broader <id/grp/grp_fruits_nuts_vegetables/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q123458126> ;
+    skos:definition "a succulent shrub or tree, the *Musa Paradisiaca*, largely cultivated in the tropics for its fruit, eaten boiled or roasted, or prepared into dough and meal; bags are made of the leaves, and the stalk furnishes a large quantity of useful fibre for paper making or for cordage. Another species, *M. textilis*, furnishes a valuable fibre for rope. See MANILA-HEMP. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 303]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_plantain" ;
+    skos:prefLabel "Plantain"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0402 (Fruit Raw unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 303."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n303> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_05_Vegetables_and_Fruit" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/04/0402/#concept> .

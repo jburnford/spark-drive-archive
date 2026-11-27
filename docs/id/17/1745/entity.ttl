@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/17/1745/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Linseed Oil Not Pure"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_4353>, <http://vocab.getty.edu/aat/300014276>, <http://vocab.getty.edu/aat/300014292>, <http://www.wikidata.org/entity/Q818405> ;
+    skos:broader <id/sub/sub_vegetable__wd_q818405/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1745" ;
+    skos:prefLabel "Linseed Oil Not Pure"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "6"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "refined_extract" ;
+    <ontology/sitcCode/#resource> "SITC4_42_Fixed_Vegetable_Fats_and_Oils" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q45108> ;
+    <ontology/substanceHead/#resource> "Linseed Oil Not Pure" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

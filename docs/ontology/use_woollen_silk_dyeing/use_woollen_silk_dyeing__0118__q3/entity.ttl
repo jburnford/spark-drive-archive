@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_woollen_silk_dyeing/use_woollen_silk_dyeing__0118__q3/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 283" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n283/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Cochineal used in Woollen, Silk & Worsted Dyeing: Mortimer (1823), General Commercial Dictionary, scan p. 283"@en ;
+    <ontology/quoteText/#resource> "Silk is first dyed crimson, by means of cochineal, and then dipped into the indigo vat."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

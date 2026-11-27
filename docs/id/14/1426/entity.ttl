@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/14/1426/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Capers"@en ;
+    skos:broadMatch <customs-1866/fruit/#concept> ;
+    skos:broader <id/grp/grp_spices_condiments/#concept> ;
+    skos:definition "(*Capers*. GER. *Kapern*. DU. *Kappers*. DA. *Kapers, Kappers*. SW. *Kapris, Capris*. FR. *Capres*. IT. *Cappari*. SP. *Alcapparras*. PORT. *Alcapparras*. RUS. *Kaperszii*. POL. *Kapary*.) *Caparis spinosa*, or common caper, a low shrub, generally growing out of the joints of old walls or fissures of rocks in the warm parts of Europe. This plant is with great difficulty preserved in England. It grows in great perfection in the southern parts of France, and in Italy. The capers sold in the shops are the full-grown buds of the flowers gathered before they blow, and spread in the shade till they begin to grow flaccid. Then they are put in a vessel, vinegar added to them, covered with a board, and let to remain for eight days; then being taken out of the vessel, they are squeezed gently; and fresh vinegar added, and let to stand for eight days more. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 199]"@en ;
+    skos:editorialNote "Curated classification (group=grp_spices_condiments): Capers / pickled cucumbers are condiments (cf. Pickles, htc:1062). Layer-1 observations: 11 rows, 1800–1800. Series: KEW_CUST 5 ×11. Units: Lbs. (Pounds) ×11. Top routes: France → United Kingdom ×1; Holland → United Kingdom ×1; Italy → United Kingdom ×1; World → United Kingdom ×1."@en, "Curated fields — definition use: Homonym: Scots 'caper' = oat-cake; heading is pickled caper buds."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q3229775> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1426" ;
+    skos:prefLabel "Capers"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/dictionaryprac00mccu/page/n329>, <https://archive.org/details/generalcommercia00mort/page/n199> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "11"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_07_Coffee_Tea_Cocoa_Spices" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q156251> ;
+    <ontology/substanceHead/#resource> "Capers" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

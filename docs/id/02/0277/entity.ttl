@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0277/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Animals Unenumerated"@en ;
+    skos:broader <id/grp/grp_live_food_animals/#concept> ;
+    skos:editorialNote "Curated fields — definition drop: Definition is ANIMAL CHARCOAL; heading is live animals."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0277" ;
+    skos:prefLabel "Animals Unenumerated"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1842"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "139"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "live" ;
+    <ontology/sitcCode/#resource> "SITC4_00_Live_Animals" ;
+    <ontology/substanceHead/#resource> "Animals" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

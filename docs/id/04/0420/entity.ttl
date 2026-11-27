@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/04/0420/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Sponge"@en ;
+    skos:broadMatch <customs-1866/sea_life/#concept> ;
+    skos:broader <id/grp/grp_fertilizers_animal_materials/#concept> ;
+    skos:definition "a marine product, of which there are many varieties. Large quantities of both coarse and fine sponge come into commerce for toilet and surgical use, for common washing purposes, for making into cloth, hats, and for other uses [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 368]"@en ;
+    skos:editorialNote "Curated fields — definition excerpt: Unrelated homonym senses in the same dictionary entry removed."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0420" ;
+    skos:prefLabel "Sponge"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n368>, <https://archive.org/details/b21780535/page/n508> ;
+    <ontology/firstAttested/#resource> "1829"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "marine" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "88"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Sponge" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_sugar_refining/use_sugar_refining__0162__q3/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 349" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n349/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bones (except Whalefins) used in Sugar Refining: McCulloch (1880), Dictionary of Commerce, scan p. 349"@en ;
+    <ontology/quoteText/#resource> "Animal charcoal has great value in the art of the sugar refiner, in that of the dyer, and in various departments of economical chemistry. CHARLESTON. A city and sea-port of the United States, in South Carolina, in lat. 32° 46' 33\" N., long. 79° 49' W."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

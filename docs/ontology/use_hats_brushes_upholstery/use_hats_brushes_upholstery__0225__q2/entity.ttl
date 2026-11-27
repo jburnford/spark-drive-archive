@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__0225__q2/#resource> dcterms:bibliographicCitation "J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 265" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n265> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bristles used in Hat-Making, Brushes, Upholstery & Turnery: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 265"@en ;
+    <ontology/quoteText/#resource> "BRISTLES: (Fr. soies; Ger. borsten; Dutch, borstels; Ital. setole; Span. cerdas, setas; Pol. szeczyny; Russ. schtschetina; Lat. setæ). The strong glossy hairs growing on the back of the hog and the wild boar. These are very extensively used by brushmakers, shoemakers, saddlers &c. and form a considerable article of import. British bristles are not to be had,..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

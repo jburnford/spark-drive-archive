@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/15/1504/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Oil Seed"@en ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q7445643> ;
+    skos:broader <id/sub/sub_vegetable__wd_q7445643/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_vegetable_oils; processing_state=refined_extract; wd_term=seed oil; wd_relation=skos:broadMatch): 'Oil, Seed' (Annual Statement 1896, in tons, flagged 'New Commodity') is seed oil, the inverted customs form of htc:0790 'Seed Oil'; it had been anchored to 'oil seed' (the seeds). Layer-1 observations: 10 rows, 1896–1896. Series: HCPP_Annual Statement of Trade ×10. Units: Tons ×10. Top routes: Denmark → United Kingdom ×1; France → United Kingdom ×1; Holland → United Kingdom ×1; World → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1504" ;
+    skos:prefLabel "Oil Seed"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1896"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1896"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "10"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "refined_extract" ;
+    <ontology/sitcCode/#resource> "SITC4_42_Fixed_Vegetable_Fats_and_Oils" ;
+    <ontology/substanceHead/#resource> "Oil Seed" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_rubber_waterproofing/#concept>, <ontology/ind_soap_manufacture/#concept>, <ontology/ind_varnish_paint_lacquer/#concept> .

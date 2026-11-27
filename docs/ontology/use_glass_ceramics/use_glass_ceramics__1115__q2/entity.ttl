@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__1115__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. GLASS" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Borax used in Glassmaking, Pottery & Porcelain: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. GLASS"@en ;
+    <ontology/quoteText/#resource> "A good optical glass has been made in Germany with 7 parts of pure red lead, 3 parts of finely ground quartz, and 2 parts of calcined borax. 5. Plate glass. This, like English crown-glass,"@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

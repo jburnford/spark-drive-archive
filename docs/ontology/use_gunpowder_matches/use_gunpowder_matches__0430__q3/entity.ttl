@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_gunpowder_matches/use_gunpowder_matches__0430__q3/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 744" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n744/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Brimstone used in Gunpowder, Explosives & Lucifer Matches: McCulloch (1880), Dictionary of Commerce, scan p. 744"@en ;
+    <ontology/quoteText/#resource> "The proportions of the ingredients vary very considerably; but good gunpowder may be composed of the following: viz. 76 parts of nitre, 15 of charcoal, and 10 of sulphur."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

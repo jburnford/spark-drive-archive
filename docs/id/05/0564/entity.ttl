@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/05/0564/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Ultramarine"@en ;
+    skos:broadMatch <customs-1866/mineral/#concept> ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300013200> ;
+    skos:definition "(_Outremer_, Fr.; _Ultramarins_, Germ.); is a beautiful blue pigment obtained from the variegated blue mineral, called lazulite (_lapis lazuli_), by the following process:--Grind the stone to fragments, rejecting all the colourless bits, calcine at a red heat, quench in water, and then grind to an impalpable powder along with water, in a paint-mill, (see PAINTS, GRINDING OF,) or with a porphyry slab and muller. The paste being dried, is to be rubbed to powder, and passed through a silk sieve. 100 parts of it are to be mixed with 40 of rosin, 20 of white wax, 25 of linseed oil, and 15 of Burgundy pitch, previously melted together. This resinous compound is to be poured hot into cold water; [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q219660> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0564" ;
+    skos:prefLabel "Ultramarine"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n406>, <https://archive.org/details/dictionaryprac00mccu/page/n1611>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1855"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1869"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "64"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/substanceHead/#resource> "Ultramarine" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

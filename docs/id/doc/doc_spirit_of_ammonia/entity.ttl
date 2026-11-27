@@ -1,0 +1,22 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_spirit_of_ammonia/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Spirit of Ammonia"@en ;
+    skos:broader <id/grp/grp_industrial_chemicals_alkalis/#concept> ;
+    skos:definition "is, properly speaking, alcohol combined with ammonia gas; but the term is often applied to water of ammonia. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_spirit_of_ammonia" ;
+    skos:prefLabel "Spirit of Ammonia"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0506 (Chemical Manufactures and Products Unenumerated). Attested in: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_11_Beverages" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/05/0506/#concept> .

@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0061/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Hay"@en ;
+    skos:broader <id/grp/grp_fodder_oilcakes/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300266414> ;
+    skos:definition "(Ger. hew; Dutch, hovi; Fr. foin; Ital. fieno; Span. heno; Lat. fenum). Any kind of grass, cut and dried for the food of cattle. The business of hay-making is said to be better understood in Middlesex than in any other part of the kingdom. The great object is to preserve the green colour of the grass as much as possible, and to have it juicy, fresh, and free from all sorts of mustiness. The sale of hay within the bills of mortality, and 30 miles of the cities of London and Westminster, is regulated by the Act 36 Geo. III. c. 88; 4 & 5 Wm. IV. c. 21; and 19 & 20 Vict. c. 114. [J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 787]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q336989> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0061" ;
+    skos:prefLabel "Hay"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/dictionaryprac00mccu/page/n787>, <https://archive.org/details/generalcommercia00mort/page/n494> ;
+    <ontology/firstAttested/#resource> "1853"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fodder_feed" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "455"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_08_Animal_Feeding_Stuff" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q43238> ;
+    <ontology/substanceHead/#resource> "Hay" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

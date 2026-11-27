@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_sugar_refining/use_sugar_refining__0162__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. SUGAR" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bones (except Whalefins) used in Sugar Refining: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. SUGAR"@en ;
+    <ontology/quoteText/#resource> "When the blowing up cistern is charged with sugar, finely ground bone black, and blood, the mixture must be passed through a proper system of filters."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

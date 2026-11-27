@@ -1,0 +1,14 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__0136/#resource> a <ontology/EndUseAssertion/#resource> ;
+    rdfs:label "Pearl and Pot Ashes used in Calico Cloth & Calico Printing"@en ;
+    skos:editorialNote "Review decision (prune): Role corrected from the quote itself: potash as an alkali; the bichromate quote belongs to a different salt."@en ;
+    <ontology/assertsCommodity/#resource> <id/01/0136/#concept> ;
+    <ontology/assertsIndustry/#resource> <ontology/ind_calico_printing/#concept> ;
+    <ontology/hasEvidence/#resource> <ontology/use_calico_printing/use_calico_printing__0136__q1/#resource>, <ontology/use_calico_printing/use_calico_printing__0136__q2/#resource> ;
+    <ontology/productionRole/#resource> "alkali_or_reagent" ;
+    <ontology/reviewStatus/#resource> "reviewed" .

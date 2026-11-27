@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1342/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Fruit Juice not containing Spirit"@en ;
+    skos:broader <id/grp/grp_fruits_nuts_vegetables/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_fruits_nuts_vegetables): Fruit juice explicitly 'not containing Spirit'; belongs with the other fruit-juice headings (htc:0179, htc:0816). Layer-1 observations: 13 rows, 1830–1901. Series: HCPP_Annual Statement of Trade ×7; KEW_CUST 4 ×6. Units: Gallons ×13. Top routes: Canada → England ×6; Canada → United Kingdom ×1; Italy → United Kingdom ×1; World → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1342" ;
+    skos:prefLabel "Fruit Juice not containing Spirit"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1830"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1901"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "13"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "refined_extract" ;
+    <ontology/sitcCode/#resource> "SITC4_05_Vegetables_and_Fruit" ;
+    <ontology/substanceHead/#resource> "Fruit Juice not containing Spirit" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

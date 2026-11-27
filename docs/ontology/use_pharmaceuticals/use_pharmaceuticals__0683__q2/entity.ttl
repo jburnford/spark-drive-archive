@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0683__q2/#resource> dcterms:bibliographicCitation "J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1352" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1352> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Senna used in Pharmaceuticals & Druggists' Preparations: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1352"@en ;
+    <ontology/quoteText/#resource> "SENNA: (Fr. séné; Ger. sennablätter; Ital. senna; Span. sen; Lat. cassia senna; Arab. suna). The plant (cassia senna) which yields the leaves known in commerce and the materia medica by the name of senna, is an annual, growing wild in the interior of Africa, and is more especially a native of Upper Egypt. The leaves are collected by the Arabs frequenting the..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

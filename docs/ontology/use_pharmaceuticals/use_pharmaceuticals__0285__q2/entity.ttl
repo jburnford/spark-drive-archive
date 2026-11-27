@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0285__q2/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section THE POPPY" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/15191> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Opium used in Pharmaceuticals & Druggists' Preparations: P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section THE POPPY"@en ;
+    <ontology/quoteText/#resource> "A plant known in Jamaica under the name of bull hoof yields a narcotic which has been administered successfully in the shape of tincture and a syrup, instead of opium."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

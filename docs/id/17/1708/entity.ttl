@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/17/1708/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Bowsprits"@en ;
+    skos:altLabel "bowsprit"@en ;
+    skos:broader <id/grp/grp_cooperage_ship_timber/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q523831> ;
+    skos:definition "a kind of mast, resting slopewise on the head of the main stem, and having its lower end fastened to the partners of the foremast, and farther supported by the fore-stay. It carries the sprit-sail, sprit-top-sail, and jack-staff; and its length is usually the same with that of the fore-mast. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 172]"@en ;
+    skos:editorialNote "Curated classification (group=grp_cooperage_ship_timber; wd_term=bowsprit; wd_relation=skos:closeMatch): Naval/cooperage woodware (anchor stocks, capstan bars, boat-hook staffs, bowsprits, empty casks). Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article). Layer-1 observations: 6 rows, 1807–1814. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×6. Units: Pieces ×6. Top routes: Quebec QC → Great Britain ×6."@en, "Curated fields — definition excerpt: Definition ran on into the next entry (BOWYERS)."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1708" ;
+    skos:prefLabel "Bowsprits"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n172> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1814"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "6"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "sawn_hewn" ;
+    <ontology/sitcCode/#resource> "SITC4_63_Cork_and_Wood_Manufactures" ;
+    <ontology/substanceHead/#resource> "Bowsprits" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

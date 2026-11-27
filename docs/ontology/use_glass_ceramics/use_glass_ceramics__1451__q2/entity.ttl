@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__1451__q2/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 759" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n759> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Clay unmanufactured used in Glassmaking, Pottery & Porcelain: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 759"@en ;
+    <ontology/quoteText/#resource> "PIPE-CLAY: (GER. Pfeifenthon. DU. Pypåarde. DA. Pihejord. SW. Piplera. FR. Terre à pipes. IT. Terra da pippe. SP. Tierra de pipa. PORT. Terra de cachimbos.) The difference between the porcelain clay, and those of more moderate purity, called pipe-clays, of which we have plenty in Devonshire, is commonly, that the former remains white when burned in an open f..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

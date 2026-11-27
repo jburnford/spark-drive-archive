@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0199/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Bark Peruvian"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0199" ;
+    skos:prefLabel "Bark Peruvian"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "177"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_54_Medicinal_Pharmaceutical" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q160090> ;
+    <ontology/substanceHead/#resource> "Bark Peruvian" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_pharmaceuticals/#concept> .

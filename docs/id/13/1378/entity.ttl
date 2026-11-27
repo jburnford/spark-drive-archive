@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1378/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Meats viz Tongues"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_4669>, <http://vocab.getty.edu/aat/300389813>, <http://www.wikidata.org/entity/Q10990>, <http://zbw.eu/stw/descriptor/14122-2> ;
+    skos:broader <id/sub/sub_meats_prov_wd_q10990/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_meats_provisions): 'Meats viz. Tongues' is explicitly a meat heading (KEW CUST 4, counted by number); classifier matched fish 'tongues'. Layer-1 observations: 12 rows, 1818–1886. Series: KEW_CUST 4 ×3; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×9. Units: Lbs. (Pounds) ×7; Number ×3; Barrels ×1; Kegs ×1. Top routes: Quebec → All Countries ×3; Quebec → Great Britain ×3; Quebec QC → Great Britain ×2; Canada → London ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1378" ;
+    skos:prefLabel "Meats viz Tongues"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1818"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1887"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "12"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_01_Meat_and_Preparations" ;
+    <ontology/substanceHead/#resource> "Meats viz Tongues" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

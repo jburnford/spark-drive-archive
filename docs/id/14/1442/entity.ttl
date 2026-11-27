@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/14/1442/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Trefoil Seeds"@en ;
+    skos:broader <id/grp/grp_fodder_oilcakes/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_fodder_oilcakes): Trefoil and timothy are forage-grass seeds, same class as Clover and Grass Seeds (htc:0316). Layer-1 observations: 11 rows, 1856–1866. Series: HCPP_Annual Statement of Trade ×11. Units: CWTS (Hundredweights) ×11. Top routes: France → United Kingdom ×3; World → United Kingdom ×3; Other Parts → United Kingdom ×3; Belgium → United Kingdom ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1442" ;
+    skos:prefLabel "Trefoil Seeds"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fodder_feed" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "11"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_08_Animal_Feeding_Stuff" ;
+    <ontology/substanceHead/#resource> "Trefoil Seeds" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

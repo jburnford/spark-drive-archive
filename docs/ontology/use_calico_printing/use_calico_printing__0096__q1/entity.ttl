@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__0096__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 245" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n245> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Dye Woods Logwood used in Calico Cloth & Calico Printing: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 245"@en ;
+    <ontology/quoteText/#resource> "LOGWOOD: a dye-wood used by the calico printer and others, obtained from the Hamatoxylon Campechianum, which affords the most durable deep red and black dye. Our imports have been on the increase of late years, and in 1856 we received about 89,000 tons."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0686/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Watches"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300041615>, <http://www.wikidata.org/entity/Q178794> ;
+    skos:broader <id/sub/sub_metal_mach_wd_q178794/#concept> ;
+    skos:definition "are movements or machines for the measuring of time, having their motion regulated by a spiral spring. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 990]"@en ;
+    skos:editorialNote "Curated fields — definition excerpt: Definition ran on into the next sub-entry."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0686" ;
+    skos:prefLabel "Watches"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n990> ;
+    <ontology/firstAttested/#resource> "1844"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "49"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_69_7_Metalwares_and_Machinery" ;
+    <ontology/substanceHead/#resource> "Watches" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/14/1420/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Copper fine, Contained in ore, matte, regulus; and black or coarse copper, and copper cement"@en ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q63219186> ;
+    skos:broader <id/sub/sub_metallic_o_wd_q63219186/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_metallic_ores; processing_state=raw_ore): Ore/concentrate heading (chromite / chromate of iron in tons; metal 'contained in ore, matte, regulus'; pyrites); belongs with Metallic Ores & Concentrates like its sibling headings. Layer-1 observations: 12 rows, 1893–1895. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×12. Units: Lbs. (Pounds) ×12. Top routes: Canada → United States ×2; Canada → All Countries ×2; Ontario → All Countries ×2; Quebec → All Countries ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1420" ;
+    skos:prefLabel "Copper fine, Contained in ore, matte, regulus; and black or coarse copper, and copper cement"@en ;
+    skos:related <id/02/0296/#concept> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1893"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1896"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q753> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "12"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_ore" ;
+    <ontology/sitcCode/#resource> "SITC4_28_Metalliferous_Ores" ;
+    <ontology/substanceHead/#resource> "Copper fine, Contained in ore, matte, regulus; and black or coarse copper, and copper cement" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

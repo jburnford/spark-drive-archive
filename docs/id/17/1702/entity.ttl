@@ -1,0 +1,34 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/17/1702/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Myrrh"@en ;
+    skos:broadMatch <customs-1866/oleoresin/#concept> ;
+    skos:broader <id/grp/grp_gums_resins_naval_stores/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300380203> ;
+    skos:definition "an aromatic medicinal gum-resin obtained from the *Balsamodendron myrrha*. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 268]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q203635> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1702" ;
+    skos:prefLabel "Myrrh"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n268>, <https://archive.org/details/dictionaryprac00mccu/page/n999>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "6"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q164609>, <http://www.wikidata.org/entity/Q50839421> ;
+    <ontology/substanceHead/#resource> "Myrrh" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_perfumery_cosmetics/#concept>, <ontology/ind_pharmaceuticals/#concept> .

@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/10/1012/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Clams or other"@en ;
+    skos:broader <id/grp/grp_fish_seafood/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_fish_seafood): Shellfish / alewives (a herring) belong with Fish & Shellfish. Layer-1 observations: 25 rows, 1891–1897. Series: CSP_Canadian Trade and Navigation ×4; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×21. Units: Barrels ×25. Top routes: Canada → All Countries ×5; Canada → Newfoundland ×4; Nova Scotia → All Countries ×4; Canada → United States ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1012" ;
+    skos:prefLabel "Clams or other"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1891"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fisheries_marine" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "marine" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "25"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_03_Fish_and_Seafood" ;
+    <ontology/substanceHead/#resource> "Clams or other" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

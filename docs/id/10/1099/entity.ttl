@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/10/1099/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Rabbits"@en ;
+    skos:broader <id/grp/grp_meats_provisions/#concept> ;
+    skos:definition "In addition to the large number taken at home, we import 124,000 cwt. of rabbits yearly for food, valued at £342,000. Many millions of rabbit and hare skins are used annually in England. So numerous have these rodents become since their introduction to Australia, that in the 12 years ending 1888, 25 million rabbit skins were exported from Victoria alone. About two million hare skins come into the market here, half of which are exported. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 498]"@en ;
+    skos:editorialNote "Curated classification (group=grp_meats_provisions): Rabbits here are imported by weight (cwt, Annual Statement 1886–1900, from Holland, Belgium, New Zealand), i.e. carcasses, not live animals. Layer-1 observations: 21 rows, 1886–1900. Series: HCPP_Annual Statement of Trade ×21. Units: CWTS (Hundredweights) ×21. Top routes: Holland → United Kingdom ×3; World → United Kingdom ×3; Belgium → United Kingdom ×3; New Zealand → United Kingdom ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1099" ;
+    skos:prefLabel "Rabbits"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n498> ;
+    <ontology/firstAttested/#resource> "1886"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1900"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "21"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_01_Meat_and_Preparations" ;
+    <ontology/substanceHead/#resource> "Rabbits" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/20/2012/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Citrate of Lime"@en ;
+    skos:broader <id/grp/grp_industrial_chemicals_alkalis/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_industrial_chemicals_alkalis; processing_state=manufactured; land_basis=mineral): Borate/acetate/citrate 'of Lime' are calcium salts (chemical manufactures); classifier matched the citrus fruit 'lime'. Layer-1 observations: 1 rows, 1832–1832. Series: KEW_CUST 4 ×1. Units: Lbs. (Pounds) ×1. Top routes: Canada → England ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "2012" ;
+    skos:prefLabel "Citrate of Lime"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1832"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1832"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_51_52_Chemicals" ;
+    <ontology/substanceHead/#resource> "Citrate of Lime" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

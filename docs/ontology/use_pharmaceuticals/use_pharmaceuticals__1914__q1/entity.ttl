@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__1914__q1/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 186" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n186/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Olibanum used in Pharmaceuticals & Druggists' Preparations: Watt (1908), Commercial Products of India, scan p. 186"@en ;
+    <ontology/quoteText/#resource> "It is computed that each tree yields annually about 2 lb. It is, however, probable that nearly all that has been written about its MEDICINAL properties refers to the imported olibanum, from which it must be carefully distinguished."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

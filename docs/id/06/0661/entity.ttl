@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0661/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Coals"@en ;
+    skos:broader <id/sub/sub_fossil_fue_wd_q24489/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q24489>, <http://zbw.eu/stw/descriptor/14200-1> ;
+    skos:definition "fossil fuel, which enters largely into commerce for domestic, manufacturing, and propelling purposes for steam-engines, on land and on sea. At the present time not less than 40,000,000 tons of coal are annually raised in the United Kingdom. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 107]"@en ;
+    skos:editorialNote "Curated fields — definition use: Auto-match had picked a statistics fragment."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0661" ;
+    skos:prefLabel "Coals"@en ;
+    skos:related <id/01/0111/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n107>, <https://archive.org/details/dictionaryprac00mccu/page/n1694>, <https://archive.org/details/dictionaryprac00mccu/page/n1877> ;
+    <ontology/firstAttested/#resource> "1829"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1881"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "51"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_32_33_Mineral_Fuels" ;
+    <ontology/substanceHead/#resource> "Coals" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

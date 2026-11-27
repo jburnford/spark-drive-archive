@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_soap_manufacture/use_soap_manufacture__0557__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 269" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n269> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Alkali used in Soap Manufacture: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 269"@en ;
+    <ontology/quoteText/#resource> "NATRON: a native sesqui-carbonate of soda, of which two kinds are obtained in Egypt, the white and the sulfate. It is employed in the manufacture of soap and glass, for bleaching and other purposes."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

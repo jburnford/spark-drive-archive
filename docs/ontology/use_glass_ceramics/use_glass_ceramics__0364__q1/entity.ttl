@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__0364__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. TIN" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Tin in Blocks Ingots Bars or Slabs used in Glassmaking, Pottery & Porcelain: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. TIN"@en ;
+    <ontology/quoteText/#resource> "Tin-foil coated with quicksilver makes the reflecting surface of glass mirrors. (See GLASS.) Nitrate of tin affords the basis of the scarlet dye on wool, and of many bright colours to the calico-printer and the cotton-dyer. (See SCARLET and TIN MORDANTS.) A compound of tin with gold, gives the fine crimson and purple colours to stained glass and artificial g..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

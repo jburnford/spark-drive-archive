@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0573__q3/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 366" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n366/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Spices Cloves used in Pharmaceuticals & Druggists' Preparations: McCulloch (1880), Dictionary of Commerce, scan p. 366"@en ;
+    <ontology/quoteText/#resource> "The use of cloves in cookery is familiar to every one, but they enter also largely into perfumery, and are used in the Pharmacopœias of this country and the United States. (Thomson's Dispensatory; Milburn's Oriental Commerce; British Pharmacopœia, 1867.)"@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

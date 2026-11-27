@@ -1,0 +1,11 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/sub/sub_tanned_lea_wd_q286/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Leather (substance group)"@en ;
+    skos:broader <id/grp/grp_tanned_leather/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:prefLabel "Leather (substance group)"@en .

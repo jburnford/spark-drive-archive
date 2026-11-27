@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0165/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Lath & Lathwood"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300014892>, <http://vocab.getty.edu/aat/300389657>, <http://www.wikidata.org/entity/Q3092965> ;
+    skos:broader <id/sub/sub_sawn_lumbe_wd_q3092965/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0165" ;
+    skos:prefLabel "Lath & Lathwood"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1855"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1869"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "205"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "sawn_hewn" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/substanceHead/#resource> "Lath & Lathwood" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

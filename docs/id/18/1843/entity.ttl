@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/18/1843/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Shot"@en ;
+    skos:broader <id/grp/grp_metal_machinery_hardware/#concept> ;
+    skos:definition "an alloy of lead and arsenic run into very small globules, by dropping through a culicender, at the top of a shot-tower, into a tub of water at the bottom. It is afterwards sorted through sieves into the different sizes, No. 0 to 4. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 354]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1843" ;
+    skos:prefLabel "Shot"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n354>, <https://archive.org/details/generalcommercia00mort/page/n925> ;
+    <ontology/firstAttested/#resource> "1837"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1840"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_69_7_Metalwares_and_Machinery" ;
+    <ontology/substanceHead/#resource> "Shot" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

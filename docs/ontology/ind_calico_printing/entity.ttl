@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_calico_printing/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Calico Cloth & Calico Printing"@en ;
+    skos:definition "Cotton weaving, bleaching, dyeing, and calico printing — combining raw cotton with bleaching powder and alkalis, botanical/insect/mineral/coal-tar dyestuffs, metallic mordants, and gum/starch thickeners."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Calico Cloth & Calico Printing"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0008/#concept>, <id/00/0036/#concept>, <id/00/0062/#concept>, <id/00/0072/#concept>, <id/00/0096/#concept>, <id/01/0109/#concept>, <id/01/0118/#concept>, <id/01/0136/#concept>, <id/01/0141/#concept>, <id/01/0168/#concept>, <id/01/0172/#concept>, <id/01/0185/#concept>, <id/02/0203/#concept>, <id/02/0275/#concept>, <id/02/0299/#concept>, <id/03/0302/#concept>, <id/03/0339/#concept>, <id/03/0348/#concept>, <id/03/0364/#concept>, <id/05/0524/#concept>, <id/05/0536/#concept>, <id/05/0557/#concept>, <id/05/0562/#concept>, <id/06/0677/#concept>, <id/08/0852/#concept>, <id/08/0871/#concept>, <id/09/0975/#concept>, <id/09/0986/#concept>, <id/11/1115/#concept>, <id/12/1265/#concept>, <id/13/1304/#concept>, <id/13/1322/#concept>, <id/13/1375/#concept>, <id/14/1492/#concept>, <id/16/1692/#concept>, <id/18/1825/#concept>, <id/18/1899/#concept>, <id/19/1932/#concept>, <id/doc/doc_bichromate_of_potash/#concept>, <id/doc/doc_blue_vitriol/#concept>, <id/doc/doc_chlorate_of_potash/#concept>, <id/doc/doc_citric_acid/#concept>, <id/doc/doc_muriatic_acid/#concept>, <id/doc/doc_nitric_acid/#concept>, <id/doc/doc_oxalic_acid/#concept>, <id/doc/doc_prussian_blue/#concept>, <id/doc/doc_sugar_of_lead/#concept>, <id/doc/doc_verdigris/#concept> .

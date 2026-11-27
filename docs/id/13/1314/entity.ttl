@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1314/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Oil Turpentine Oil or Spirit of"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300015288>, <http://vocab.getty.edu/aat/300375603>, <http://www.wikidata.org/entity/Q201382> ;
+    skos:broader <id/sub/sub_gums_resin_wd_q201382/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_gums_resins_naval_stores): Oil/spirit of turpentine is a naval store distilled from pine resin, not a potable spirit; classifier matched 'Spirit'. Layer-1 observations: 14 rows, 1856–1876. Series: HCPP_Annual Statement of Trade ×14. Units: CWTS (Hundredweights) ×14. Top routes: World → United Kingdom ×3; France → United Kingdom ×2; United States → United Kingdom ×1; Russia → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1314" ;
+    skos:prefLabel "Oil Turpentine Oil or Spirit of"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1876"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "14"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "refined_extract" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Oil Turpentine Oil or Spirit of" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

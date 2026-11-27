@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0364/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Tin in Blocks Ingots Bars or Slabs"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_7782>, <http://vocab.getty.edu/aat/300133748>, <http://www.wikidata.org/entity/Q1096>, <http://zbw.eu/stw/descriptor/14310-1> ;
+    skos:broader <id/sub/sub_metals_sem_wd_q1096/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0364" ;
+    skos:prefLabel "Tin in Blocks Ingots Bars or Slabs"@en ;
+    skos:related <id/03/0397/#concept>, <id/04/0457/#concept>, <id/18/1857/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "105"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "smelted_semi" ;
+    <ontology/sitcCode/#resource> "SITC4_67_68_Metals" ;
+    <ontology/substanceHead/#resource> "Tin in Blocks Ingots Bars or Slabs" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_calico_printing/#concept>, <ontology/ind_glass_ceramics/#concept>, <ontology/ind_metallurgy_tinplate/#concept>, <ontology/ind_woollen_silk_dyeing/#concept> .

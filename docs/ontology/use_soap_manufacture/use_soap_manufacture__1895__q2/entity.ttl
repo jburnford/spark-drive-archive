@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_soap_manufacture/use_soap_manufacture__1895__q2/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 886" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n886/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Kelp used in Soap Manufacture: McCulloch (1880), Dictionary of Commerce, scan p. 886"@en ;
+    <ontology/quoteText/#resource> "The purification of kelp, so as to render it fit for soap-making, is a much more troublesome and expensive process than the decomposition of salt; and the greatest quantity of alkali used is now obtained by the latter method."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

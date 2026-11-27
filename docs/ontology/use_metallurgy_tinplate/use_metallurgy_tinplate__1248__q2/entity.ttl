@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_metallurgy_tinplate/use_metallurgy_tinplate__1248__q2/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 1512" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1512/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Charcoal used in Metallurgy, Smelting, Brass & Tinplate: McCulloch (1880), Dictionary of Commerce, scan p. 1512"@en ;
+    <ontology/quoteText/#resource> "The ore so obtained is preserved in heaps, and smelted periodically with charcoal in a blast furnace."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

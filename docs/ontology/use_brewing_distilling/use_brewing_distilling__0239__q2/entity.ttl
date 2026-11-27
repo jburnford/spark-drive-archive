@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_brewing_distilling/use_brewing_distilling__0239__q2/#resource> dcterms:bibliographicCitation "J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 952" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n952> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Malt used in Brewing, Malting & Distilling: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 952"@en ;
+    <ontology/quoteText/#resource> "MALT: (Ger. maly; Dutch, mout; Fr. mal, blégerme; Ital. malto; Span. cebada retonada ó entallecida; Russ. solod; Lat. maltum). The term malt is applied to designate grain which, being steeped in water, is made to germinate to a certain extent, after which the process is checked by the application of heat. This evolves the saccharine principle of the grain, w..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

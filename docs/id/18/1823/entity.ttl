@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/18/1823/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Furs and skins of marine animal"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300011811>, <http://www.wikidata.org/entity/Q197204>, <http://zbw.eu/stw/descriptor/14916-0> ;
+    skos:broader <id/sub/sub_furs_marin_wd_q197204/#concept> ;
+    skos:editorialNote "Curated classification (land_basis=marine): Marine origin (whalebone, shells, sea otter, marine-animal and fish skins). Layer-1 observations: 5 rows, 1883–1884. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×5. Units: (no unit) ×3; Gallons ×2. Top routes: Quebec → United States ×2; Quebec → All Countries ×2; Quebec → Great Britain ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1823" ;
+    skos:prefLabel "Furs and skins of marine animal"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1883"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "marine" ;
+    <ontology/lastAttested/#resource> "1885"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_21_Hides_Skins_Furskins_Raw" ;
+    <ontology/substanceHead/#resource> "Furs and skins of marine animal" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

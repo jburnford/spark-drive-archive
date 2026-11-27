@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_metallurgy_tinplate/use_metallurgy_tinplate__0364__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 53" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n53> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Tin in Blocks Ingots Bars or Slabs used in Metallurgy, Smelting, Brass & Tinplate: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 53"@en ;
+    <ontology/quoteText/#resource> "BLOCK TIN: tin cast into blocks or ingots; tin ore which has been treated with copper and sulphuric acid, and is ready for smelting. Metal reduced from the tin stone or ore is less pure than that made from stream or grain tin. A block of tin weighs about the sixth of a ton."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

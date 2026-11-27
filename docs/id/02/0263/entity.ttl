@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0263/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Silk Raw"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300014072>, <http://www.wikidata.org/entity/Q37681>, <http://zbw.eu/stw/descriptor/14125-3> ;
+    skos:broader <id/sub/sub_animal_fib_wd_q37681/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0263" ;
+    skos:prefLabel "Silk Raw"@en ;
+    skos:related <id/04/0465/#concept>, <id/05/0581/#concept>, <id/06/0622/#concept>, <id/06/0641/#concept>, <id/06/0692/#concept>, <id/07/0729/#concept>, <id/07/0764/#concept>, <id/07/0796/#concept>, <id/09/0902/#concept>, <id/09/0948/#concept>, <id/09/0990/#concept>, <id/09/0996/#concept>, <id/10/1007/#concept>, <id/10/1089/#concept>, <id/10/1094/#concept>, <id/11/1179/#concept>, <id/12/1273/#concept>, <id/12/1279/#concept>, <id/12/1284/#concept>, <id/13/1309/#concept>, <id/13/1316/#concept>, <id/13/1341/#concept>, <id/13/1364/#concept>, <id/13/1384/#concept>, <id/14/1434/#concept>, <id/14/1435/#concept>, <id/15/1535/#concept>, <id/15/1596/#concept>, <id/16/1601/#concept>, <id/17/1719/#concept>, <id/17/1720/#concept>, <id/17/1776/#concept>, <id/17/1788/#concept>, <id/17/1796/#concept>, <id/18/1848/#concept>, <id/18/1849/#concept>, <id/18/1856/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "145"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_unprocessed" ;
+    <ontology/sitcCode/#resource> "SITC4_26_Textile_Fibres" ;
+    <ontology/substanceHead/#resource> "Silk Raw" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_woollen_silk_dyeing/#concept> .

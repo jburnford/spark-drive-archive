@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_candle_manufacture/use_candle_manufacture__0129__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 45" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n45> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bees Wax used in Candle Manufacture: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 45"@en ;
+    <ontology/quoteText/#resource> "BEES-WAX: the wax-comb after the honey is removed, which is used for making candles, sealing-wax, polishing furniture, &c. We import quantities from India, Africa, and other parts of the world. Two kinds occur in commerce, the yellow and the white or bleached."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

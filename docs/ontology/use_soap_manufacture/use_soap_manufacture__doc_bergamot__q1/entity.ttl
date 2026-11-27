@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_soap_manufacture/use_soap_manufacture__doc_bergamot__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. SOAP" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bergamot used in Soap Manufacture: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. SOAP"@en ;
+    <ontology/quoteText/#resource> "Perfumes:--Powder of cloves, of pale roses, gilliflower, each 4-1/2 ounces; essence of bergamot, and essence of musk, each 3-1/2 ounces."@en ;
+    <ontology/retrievalMode/#resource> "essay_context" .

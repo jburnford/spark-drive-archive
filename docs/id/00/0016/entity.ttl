@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0016/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Shingles"@en ;
+    skos:broadMatch <http://www.wikidata.org/entity/Q199388> ;
+    skos:broader <id/grp/grp_sawn_lumber/#concept> ;
+    skos:definition "in building, are small pieces of wood, or quartered oaken boards, sawn to a certain scantling, or, as is more usual, cleft to about an inch thick at one end, and made like wedges, four or five inches broad, and eight or nine inches long. Shingles are also used instead of tiles or slates, especially for churches or steeples; however, this covering is dear; yet where tiles are very scarce, and a light covering required, it is preferable to thatch; and where the shingles are made of good oak, cleft, and not sawed, and well seasoned in water and the sun, they make a sure, light, and durable, covering. The building is first to be covered all over with boards, and the shingles nailed upon them. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 913]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0016" ;
+    skos:prefLabel "Shingles"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n913> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "903"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "sawn_hewn" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/substanceHead/#resource> "Shingles" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

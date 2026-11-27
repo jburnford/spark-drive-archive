@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/09/0927/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Meats"@en ;
+    skos:altLabel "meat"@en ;
+    skos:broader <id/sub/sub_meats_prov_wd_q10990/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_4669>, <http://vocab.getty.edu/aat/300389813>, <http://zbw.eu/stw/descriptor/14122-2> ;
+    skos:editorialNote "Curated fields — definition drop: Statistical table preamble from McCulloch, not a definition. | source_taxon remove: Wikidata noise on a meat heading. | source_taxon remove: Wikidata noise on a meat heading."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q10990> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0927" ;
+    skos:prefLabel "Meats"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/dictionaryprac00mccu/page/n1899> ;
+    <ontology/firstAttested/#resource> "1863"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1864"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "30"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_01_Meat_and_Preparations" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q5113>, <http://www.wikidata.org/entity/Q7377> ;
+    <ontology/substanceHead/#resource> "Meats" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

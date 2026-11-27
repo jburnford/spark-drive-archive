@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/20/2049/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Barytes"@en ;
+    skos:broadMatch <customs-1866/chemical/#concept> ;
+    skos:broader <id/grp/grp_industrial_minerals/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300013788> ;
+    skos:definition "a heavy spar or sulphate, the white varieties of which are ground and made into paint. The nitrates are used for producing a green flame; nearly all the salts are virulent poisons. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 40]"@en ;
+    skos:editorialNote "Curated classification (group=grp_industrial_minerals): Named mineral (slates, felspar, barytes, kieselguhr) left in the residual bin. Layer-1 observations: 1 rows, 1871–1871. Series: CSP_Canadian Trade and Navigation ×1. Units: Tons ×1. Top routes: Nova Scotia → United States ×1."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q184196> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "2049" ;
+    skos:prefLabel "Barytes"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n40> ;
+    <ontology/firstAttested/#resource> "1871"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1871"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_27_Crude_Fertilizers_and_Minerals" ;
+    <ontology/substanceHead/#resource> "Barytes" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

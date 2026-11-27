@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__0062__q3/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 85" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n85/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Indigo used in Calico Cloth & Calico Printing: McCulloch (1880), Dictionary of Commerce, scan p. 85"@en ;
+    <ontology/quoteText/#resource> "ALKALI39 used by dyers and calico printers for discharging the blue colour of indigo from calico; also for dyeing blue colours. Cyanide of Potassium—may be prepared by heating to dull redness, in a covered iron crucible, a mixture of 8 parts dry yellow prussiate with 3 parts dry carbonate of potash, until the fused mass has lost its yellow colour, and ceases..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

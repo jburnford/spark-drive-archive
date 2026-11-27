@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__1873__q2/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 227" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n227> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Cobalt Ore used in Glassmaking, Pottery & Porcelain: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 227"@en ;
+    <ontology/quoteText/#resource> "COBALT: (GER. Kobalt. DU. Kobald. DA. Kobold. SW. Cobolt. FR. Cobalt. IT. SP. and PORT. Cobalto. RUS. and POL. Kobolt. LAT. Cobaltum,) a metal found in the form of an ore, in Saxony, Sweden, in the Mendip Hills in Somersetshire, and in Cornwall. It is principally employed in the state of oxide, in which it is of a beautiful blue colour, called zaffre. There ..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

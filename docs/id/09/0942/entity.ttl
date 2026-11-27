@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/09/0942/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Tortoise or Turtle Shell Unmanufactured"@en ;
+    skos:broader <id/grp/grp_fertilizers_animal_materials/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_fertilizers_animal_materials; land_basis=marine): Marine animal raw material (mother-of-pearl, tortoise/turtle shell, pearls) left in the residual bin. Layer-1 observations: 28 rows, 1800–1861. Series: HCPP_Annual Statement of Trade ×24; KEW_CUST 5 ×3; KEW_CUST 4 ×1. Units: Lbs. (Pounds) ×28. Top routes: Holland → United Kingdom ×3; World → United Kingdom ×3; Australia → United Kingdom ×2; New Granada → United Kingdom ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0942" ;
+    skos:prefLabel "Tortoise or Turtle Shell Unmanufactured"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "marine" ;
+    <ontology/lastAttested/#resource> "1861"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "28"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_unprocessed" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Tortoise or Turtle Shell" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_hats_brushes_upholstery/#concept> .

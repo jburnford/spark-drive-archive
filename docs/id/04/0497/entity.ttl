@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/04/0497/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Stones Marble Slate and other Sorts of Stone Rough Hewn or Manufactured"@en ;
+    skos:broader <id/grp/grp_industrial_minerals/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_industrial_minerals; land_basis=mineral): Sawn/hewn stone and marble are quarry products; classifier matched 'sawn' (lumber) or 'manufactured'. Layer-1 observations: 72 rows, 1832–1891. Series: HCPP_Annual Statement of Trade ×58; CSP_Canadian Trade and Navigation ×10; KEW_CUST 4 ×4. Units: Tons ×53; (no unit) ×10; CWTS (Hundredweights) ×5; Hundredweights.Quarters.Pounds ×2. Top routes: France → United Kingdom ×6; World → United Kingdom ×6; Belgium → United Kingdom ×6; Italy → United Kingdom ×5."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0497" ;
+    skos:prefLabel "Stones Marble Slate and other Sorts of Stone Rough Hewn or Manufactured"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1832"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1891"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "72"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_27_Crude_Fertilizers_and_Minerals" ;
+    <ontology/substanceHead/#resource> "Stones Marble Slate and" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

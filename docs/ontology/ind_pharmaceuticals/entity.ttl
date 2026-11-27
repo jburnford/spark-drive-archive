@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_pharmaceuticals/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Pharmaceuticals & Druggists' Preparations"@en ;
+    skos:definition "19th-century apothecary, pharmacopoeia, and fine-chemical drug manufacture (e.g., Howard & Sons, Allen & Hanburys) — extracting alkaloids and preparing tinctures, pills, plasters, and ointments from cinchona/quinine, opium/morphia/laudanum, coca/cocaine, nux vomica/strychnine, quicksilver/calomel, ipecacuanha, jalap, senna, rhubarb, aloes, camphor, castor/cod-liver oils, and iodine."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Pharmaceuticals & Druggists' Preparations"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0025/#concept>, <id/00/0097/#concept>, <id/01/0172/#concept>, <id/01/0185/#concept>, <id/01/0199/#concept>, <id/02/0285/#concept>, <id/03/0327/#concept>, <id/03/0360/#concept>, <id/03/0386/#concept>, <id/03/0399/#concept>, <id/04/0400/#concept>, <id/04/0460/#concept>, <id/05/0573/#concept>, <id/05/0578/#concept>, <id/06/0682/#concept>, <id/06/0683/#concept>, <id/06/0695/#concept>, <id/06/0697/#concept>, <id/07/0750/#concept>, <id/09/0911/#concept>, <id/09/0930/#concept>, <id/09/0951/#concept>, <id/10/1020/#concept>, <id/12/1201/#concept>, <id/13/1349/#concept>, <id/15/1520/#concept>, <id/15/1599/#concept>, <id/17/1701/#concept>, <id/17/1702/#concept>, <id/19/1914/#concept>, <id/19/1943/#concept>, <id/doc/doc_almond_oil/#concept>, <id/doc/doc_atropa_belladonna/#concept>, <id/doc/doc_calomel/#concept>, <id/doc/doc_cardamom/#concept>, <id/doc/doc_cocaine/#concept>, <id/doc/doc_gamboge/#concept>, <id/doc/doc_gentian/#concept>, <id/doc/doc_iodine/#concept>, <id/doc/doc_laudanum/#concept>, <id/doc/doc_morphia/#concept>, <id/doc/doc_neem_oil/#concept>, <id/doc/doc_nux_vomica/#concept>, <id/doc/doc_storax/#concept> .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_candle_manufacture/use_candle_manufacture__0835__q1/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 831" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n831/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Paraffin used in Candle Manufacture: Watt (1908), Commercial Products of India, scan p. 831"@en ;
+    <ontology/quoteText/#resource> "A striking evidence of the prosperity of the Burma candle trade may be had from the existence of an export trade in candles. Candle-making in India.—Except in the new industry of manufacture of candles from the mineral wax and paraffin that has recently assumed considerable proportions both in Rangoon and Calcutta, India cannot be said to possess candle work..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

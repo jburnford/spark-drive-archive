@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_candle_manufacture/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Candle Manufacture"@en ;
+    skos:definition "Dipped, mould, composite, stearine, wax, spermaceti, and paraffin candle manufacture — combining tallow, palm/coconut stearine, beeswax, spermaceti, and paraffin with cotton wicks and sulphuric acid/borax treatments."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Candle Manufacture"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0022/#concept>, <id/01/0129/#concept>, <id/03/0386/#concept>, <id/08/0835/#concept>, <id/09/0910/#concept> .

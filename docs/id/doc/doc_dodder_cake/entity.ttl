@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_dodder_cake/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Dodder Cake"@en ;
+    skos:broader <id/grp/grp_fodder_oilcakes/#concept> ;
+    skos:definition "an oil cake made in Lubeck from the mare of the seed of the *Camelina sativa*. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 141]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_dodder_cake" ;
+    skos:prefLabel "Dodder Cake"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:1026 (Oil Seed Cake Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 141."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n141> ;
+    <ontology/ghostAcresDomain/#resource> "fodder_feed" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_08_Animal_Feeding_Stuff" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q163958> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/10/1026/#concept> .

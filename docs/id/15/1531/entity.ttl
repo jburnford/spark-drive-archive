@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/15/1531/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Liqueurs Cordials Mixtures and other Not Sweetened Unenumerated Tested"@en ;
+    skos:broader <id/grp/grp_alcoholic_beverages/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_alcoholic_beverages): Liqueurs, cordials, claret and bitters are alcoholic beverages left in the residual bin. Layer-1 observations: 9 rows, 1850–1906. Series: HCPP_Annual Statement of Trade ×7; KEW_CUST 4 ×2. Units: Proof Gallons ×8; Gallons ×1. Top routes: Canada → England ×2; France → United Kingdom ×1; World → United Kingdom ×1; United States of America → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1531" ;
+    skos:prefLabel "Liqueurs Cordials Mixtures and other Not Sweetened Unenumerated Tested"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1850"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "9"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_11_Beverages" ;
+    <ontology/substanceHead/#resource> "Liqueurs Cordials Mixtures and other Not Sweetened" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

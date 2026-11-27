@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__0255__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. HAT MANUFACTURE" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Horse Hair used in Hat-Making, Brushes, Upholstery & Turnery: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. HAT MANUFACTURE"@en ;
+    <ontology/quoteText/#resource> "A solution of caoutchouc is often applied to whalebone and horse-hair hat bodies."@en ;
+    <ontology/retrievalMode/#resource> "essay_context" .

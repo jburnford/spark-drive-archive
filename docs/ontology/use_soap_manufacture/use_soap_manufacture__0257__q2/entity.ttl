@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_soap_manufacture/use_soap_manufacture__0257__q2/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 209" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n209> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Salt used in Soap Manufacture: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 209"@en ;
+    <ontology/quoteText/#resource> "CAT-SALT: a name given by our salt-workers, to a very beautifully granulated kind of common salt. It is formed out of the bitter or leach-brine, which runs from the salt when taken out of the pan. When the common salt is taken from the boiling-pans, it is put into long wooden troughs, with holes bored at the bottom, for the brine to drain out: under these tr..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

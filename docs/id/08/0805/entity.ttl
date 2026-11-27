@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/08/0805/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Vegetable Ivory"@en ;
+    skos:broader <id/grp/grp_fertilizers_animal_materials/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300379935> ;
+    skos:editorialNote "Curated classification (land_basis=terrestrial_forest): Vegetable ivory is the tagua palm nut: forest, not pasture. Layer-1 observations: 38 rows, 1886–1906. Series: HCPP_Annual Statement of Trade ×35; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×3. Units: CWTS (Hundredweights) ×35; (no unit) ×3. Top routes: World → United Kingdom ×5; Germany → United Kingdom ×5; Other Foreign Countries → United Kingdom ×5; Ecuador → United Kingdom ×5."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1668576> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0805" ;
+    skos:prefLabel "Vegetable Ivory"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n219>, <https://archive.org/details/b21780535/page/n410> ;
+    <ontology/firstAttested/#resource> "1886"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "38"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q160336> ;
+    <ontology/substanceHead/#resource> "Vegetable Ivory" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

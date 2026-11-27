@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0029__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 274" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n274> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Timber Oak used in Shipbuilding, Rope, Cordage & Sailcloth: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 274"@en ;
+    <ontology/quoteText/#resource> "LIVE OAK: the Quercus vivens, a native of the Southern States of North America, which is used with the red cedar for ship-building."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

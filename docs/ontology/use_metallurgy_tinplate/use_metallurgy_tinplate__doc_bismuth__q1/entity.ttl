@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_metallurgy_tinplate/use_metallurgy_tinplate__doc_bismuth__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 50" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n50> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bismuth used in Metallurgy, Smelting, Brass & Tinplate: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 50"@en ;
+    <ontology/quoteText/#resource> "BISMUTH: a reddish-white metal, occurring in brilliant plates, obtained chiefly in Saxony, and used as an alloy in type-metal and pewter. It is sometimes called by workmen tin-glass."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

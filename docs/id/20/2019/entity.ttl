@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/20/2019/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Church Ornaments"@en ;
+    skos:broader <id/grp/grp_glass_ceramics_paper_woodware/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_glass_ceramics_paper_woodware; processing_state=manufactured): Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin. Layer-1 observations: 1 rows, 1837–1837. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×1. Units: Packages ×1. Top routes: Montreal and Quebec → British North America ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "2019" ;
+    skos:prefLabel "Church Ornaments"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1837"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1837"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_64_66_89_Paper_Glass_Misc_Manufactures" ;
+    <ontology/substanceHead/#resource> "Church Ornaments" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

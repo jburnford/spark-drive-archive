@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_soap_manufacture/use_soap_manufacture__0025__q2/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 714" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n714/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Lard used in Soap Manufacture: Watt (1908), Commercial Products of India, scan p. 714"@en ;
+    <ontology/quoteText/#resource> "Lard thus manufactured will keep for about two months only, but formerly for a much longer time—a circumstance due apparently to the fact that fat of the freshest and best quality is not always used. Rendering House. The best quality of lard is much used in cooking and in preparing ointments, etc., the second in the manufacture of lard oil, the third as a lo..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/16/1651/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Bean meal"@en ;
+    skos:broader <id/grp/grp_pulses_legumes/#concept> ;
+    skos:definition "the flour of beans, which is used for fattening hogs and cattle, and in some countries is still mixed surreptitiously with the flour of wheat for making bread. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 43]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1651" ;
+    skos:prefLabel "Bean meal"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n43> ;
+    <ontology/firstAttested/#resource> "1861"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_grain" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1881"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "7"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "milled_ground" ;
+    <ontology/sitcCode/#resource> "SITC4_05_Vegetables_and_Fruit" ;
+    <ontology/substanceHead/#resource> "Bean meal" ;
+    <ontology/theodoridisBucket/#resource> "grain_and_flour" .

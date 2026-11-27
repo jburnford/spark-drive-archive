@@ -1,0 +1,24 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_nux_vomica/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Nux Vomica"@en ;
+    skos:altLabel "Strychnos Nux Vomica"@en, "poison nut"@en, "quaker buttons"@en, "semen strychnos"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:definition "Nux vomica is better known as the strychnine tree. The seeds contain roughly 1.5% strychnine. The dried blossoms of nux vomica contain 1%, and while the bark contains no strychnine, other poisonous compounds such as brucine are present.( https://en.wikipedia.org/wiki/Strychnos_nux-vomica) Three preparations are listed in the Pharmacopeia (extract, strychnia, and tincture), and the only mention in the Compendium comes [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_nux_vomica" ;
+    skos:prefLabel "Nux Vomica"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865), Danika Drugs.xlsx (SKOS Sheet), 1866 British Customs Commodities List (Danika / HGIS Lab), P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 274, Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 678. Research note: CDM1865: another form for Strychnine? (167)."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n274>, <https://archive.org/details/generalcommercia00mort/page/n678>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_pharmaceuticals/#concept> .

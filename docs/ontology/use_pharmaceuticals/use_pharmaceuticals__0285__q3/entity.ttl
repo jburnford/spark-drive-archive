@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0285__q3/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 1083" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1083/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Opium used in Pharmaceuticals & Druggists' Preparations: McCulloch (1880), Dictionary of Commerce, scan p. 1083"@en ;
+    <ontology/quoteText/#resource> "East Indian opium has a strong empyreumatic smell; but not much of the peculiar narcotic, heavy odour of the Turkey opium; the taste is more bitter, and equally nauseous, but it has less acrimony."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

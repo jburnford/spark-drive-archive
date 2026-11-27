@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_ochro/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Ochro"@en ;
+    skos:broader <id/grp/grp_fruits_nuts_vegetables/#concept> ;
+    skos:definition "a name given in the West Indies to the *Abelmoschus esculentus*, cultivated in gardens for its mucilage; the young capsules being used to thicken soups. The seeds may also be added like barley to soups, and have been roasted as a substitute for coffee. The bark of the plant furnishes, like all the tribe, a strong fibre. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 275]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_ochro" ;
+    skos:prefLabel "Ochro"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0085 (Vegetables Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 275."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n275> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_05_Vegetables_and_Fruit" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q80531> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0085/#concept> .

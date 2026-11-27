@@ -1,0 +1,25 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_gentian/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Gentian"@en ;
+    skos:altLabel "Gentian Root"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q1254524> ;
+    skos:definition "Gentian root comes from the genus of flowering plants, Gentiana. (https://en.wikipedia.org/wiki/Gentiana) Gentian is used to treat a wide range of ailments in the Compendium, including gout, scrofula, worms, dyspepsia, epilepsy, and jaundice. [Danika Drugs Project: British Pharmacopoeia (1867) / Savory (1865)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_gentian" ;
+    skos:prefLabel "Gentian"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865), 1866 British Customs Commodities List (Danika / HGIS Lab), Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 459, J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 729."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/dictionaryprac00mccu/page/n729>, <https://archive.org/details/generalcommercia00mort/page/n459> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_pharmaceuticals/#concept> .

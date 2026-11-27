@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/09/0974/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Manufactures of Felt"@en ;
+    skos:broader <id/grp/grp_woven_fabrics_apparel/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_woven_fabrics_apparel): Textile manufactures (jute, silk broad stuffs, hair cloth, felt, dry goods, sails) belong with Woven Textiles, not paper/glass/sundries. Layer-1 observations: 27 rows, 1889–1897. Series: CSP_Canadian Trade and Navigation ×2; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×25. Units: (no unit) ×27. Top routes: Quebec → All Countries ×5; Canada → United States ×4; Canada → Newfoundland ×4; Canada → All Countries ×4."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0974" ;
+    skos:prefLabel "Manufactures of Felt"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1889"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "27"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
+    <ontology/substanceHead/#resource> "Manufactures of Felt" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

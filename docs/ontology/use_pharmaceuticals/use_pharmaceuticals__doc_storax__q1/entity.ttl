@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__doc_storax__q1/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 945" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n945> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Storax used in Pharmaceuticals & Druggists' Preparations: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 945"@en ;
+    <ontology/quoteText/#resource> "STORAX: (GER. Storax. DU. Styrax, Storax. DA. and SW. Storax. FR. Styrax, Storax. IT. Storace, Strace, Storax. SR. Estoraque. PORT. Estoraque, Storaque. RUS. Stirax. POL. Styrax. LAT. Styrax, Storax,) the most fragrant of the solid resins, and indeed of all the known vegetable substances. It is obtained from a tree of the same name, said to grow most plentif..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

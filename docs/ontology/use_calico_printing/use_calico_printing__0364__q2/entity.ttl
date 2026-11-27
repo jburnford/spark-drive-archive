@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__0364__q2/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 83" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n83/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Tin in Blocks Ingots Bars or Slabs used in Calico Cloth & Calico Printing: McCulloch (1880), Dictionary of Commerce, scan p. 83"@en ;
+    <ontology/quoteText/#resource> "It is obtained tolerably pure as an intermediate product in the manufacture of carbonate of soda from cryolite. Stannate of Soda.—It is extensively used in dyeing and calico printing: it is prepared in a great variety of ways, generally by fusing tin or tin-ore with soda or a salt of soda. Arsenate of Soda.—This is used largely in calico printing 'dunging li..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

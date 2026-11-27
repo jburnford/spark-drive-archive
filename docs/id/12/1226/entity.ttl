@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/12/1226/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Dead Rabbits"@en ;
+    skos:broader <id/grp/grp_meats_provisions/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_meats_provisions): Tripe / dead rabbits are meat. Layer-1 observations: 17 rows, 1901–1906. Series: HCPP_Annual Statement of Trade ×17. Units: CWTS (Hundredweights) ×17. Top routes: France → United Kingdom ×2; World → United Kingdom ×2; Belgium → United Kingdom ×2; New Zealand → United Kingdom ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1226" ;
+    skos:prefLabel "Dead Rabbits"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1901"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "17"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_01_Meat_and_Preparations" ;
+    <ontology/substanceHead/#resource> "Dead Rabbits" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

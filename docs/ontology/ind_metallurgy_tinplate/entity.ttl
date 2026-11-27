@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_metallurgy_tinplate/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Metallurgy, Smelting, Brass & Tinplate"@en ;
+    skos:definition "Iron, copper, lead, tin, and zinc smelting, brass founding, type-metal, and tinplate manufacture — combining metallic ores and unwrought metals with coal, coke, charcoal, limestone, borax, plumbago crucibles, sulphuric/muriatic pickling acids, sal ammoniac, and palm oil/tallow tinplate baths."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Metallurgy, Smelting, Brass & Tinplate"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0065/#concept>, <id/01/0111/#concept>, <id/01/0130/#concept>, <id/01/0196/#concept>, <id/02/0299/#concept>, <id/03/0348/#concept>, <id/03/0364/#concept>, <id/03/0399/#concept>, <id/04/0484/#concept>, <id/05/0562/#concept>, <id/09/0911/#concept>, <id/09/0975/#concept>, <id/10/1050/#concept>, <id/11/1111/#concept>, <id/11/1115/#concept>, <id/12/1248/#concept>, <id/14/1451/#concept>, <id/18/1873/#concept>, <id/doc/doc_bismuth/#concept>, <id/doc/doc_muriatic_acid/#concept>, <id/doc/doc_nitric_acid/#concept>, <id/doc/doc_sal_ammoniac/#concept> .

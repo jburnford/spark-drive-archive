@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/09/0950/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Wood and Timber (Not Sawn or Split)"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_8421>, <http://vocab.getty.edu/aat/300011914>, <http://www.wikidata.org/entity/Q287>, <http://zbw.eu/stw/descriptor/14150-4> ;
+    skos:broader <id/sub/sub_hewn_round_wd_q287/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_hewn_round_timber; processing_state=unspecified): Saw logs / shingle bolts / timber 'not sawn or split' are unsawn round wood; classifier filed them as sawn lumber. Layer-1 observations: 28 rows, 1843–1870. Series: HCPP_Annual Statement of Trade ×16; KEW_CUST 4 ×12. Units: Loads ×16; Loads ft ×12. Top routes: Canada → England ×12; World → London ×3; Sweden → United Kingdom ×1; United States → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0950" ;
+    skos:prefLabel "Wood and Timber (Not Sawn or Split)"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1843"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1870"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "28"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/substanceHead/#resource> "Wood and Timber" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0326/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Coffee Raw"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300254662>, <http://www.wikidata.org/entity/Q8486> ;
+    skos:broader <id/sub/sub_stimulant__wd_q8486/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0326" ;
+    skos:prefLabel "Coffee Raw"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1891"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "119"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_unprocessed" ;
+    <ontology/sitcCode/#resource> "SITC4_07_Coffee_Tea_Cocoa_Spices" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q47685> ;
+    <ontology/substanceHead/#resource> "Coffee Raw" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0384/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Hogs"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_4397>, <http://www.wikidata.org/entity/Q103459>, <http://zbw.eu/stw/descriptor/14145-4> ;
+    skos:broader <id/sub/sub_live_food__wd_q103459/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0384" ;
+    skos:prefLabel "Hogs"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1851"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1855"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "98"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "live" ;
+    <ontology/sitcCode/#resource> "SITC4_00_Live_Animals" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q787> ;
+    <ontology/substanceHead/#resource> "Hogs" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

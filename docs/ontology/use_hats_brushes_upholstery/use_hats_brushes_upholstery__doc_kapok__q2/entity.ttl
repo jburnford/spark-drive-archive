@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__doc_kapok__q2/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 534" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n534/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Kapok used in Hat-Making, Brushes, Upholstery & Turnery: Watt (1908), Commercial Products of India, scan p. 534"@en ;
+    <ontology/quoteText/#resource> "This is perhaps more than a botanical peculiarity, and doubtless accounts for some of the characteristics of the floss, which is used in nature as a packing material for the seeds, but is not, like cotton, formed from the seeds themselves. Kapok is of better quality than the corresponding cotton of Bombax as it is more elastic, and when used for upholstery i..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

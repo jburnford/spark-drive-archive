@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__0172__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 277" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n277> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Olive Oil used in Calico Cloth & Calico Printing: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 277"@en ;
+    <ontology/quoteText/#resource> "OLIVE-OIL: oil obtained by expression from the pericarp of the fruit of Olea Europæa, which forms an extensive article of commerce, and is used largely for food, in liniments, and in calico-printing. The average imports of 1855 and 1856 were 23,400 tons."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

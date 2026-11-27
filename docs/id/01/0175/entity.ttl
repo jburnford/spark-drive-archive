@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0175/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Goods Unenumerated Manufactured"@en ;
+    skos:broader <id/grp/grp_glass_ceramics_paper_woodware/#concept> ;
+    skos:definition "a general name for moveables, but usually restricted to merchandise; heavy traffic; property; wares. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 188]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0175" ;
+    skos:prefLabel "Goods Unenumerated Manufactured"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n188> ;
+    <ontology/firstAttested/#resource> "1820"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "customs_residual_category" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "200"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_64_66_89_Paper_Glass_Misc_Manufactures" ;
+    <ontology/substanceHead/#resource> "Goods" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

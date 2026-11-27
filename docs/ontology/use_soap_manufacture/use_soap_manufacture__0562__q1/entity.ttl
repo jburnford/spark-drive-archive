@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_soap_manufacture/use_soap_manufacture__0562__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 111" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n111> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Rosin used in Soap Manufacture: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 111"@en ;
+    <ontology/quoteText/#resource> "COLOPHONY: a name for the ordinary rosin or resin of commerce, being the residuum remaining in the body of the still after common turpentine has been submitted to distillation, for the manufacture of the oil of turpentine. The black colophony is the cooled brittle mass, in the state in which it leaves the still; the amber or yellow-coloured, is the same resi..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

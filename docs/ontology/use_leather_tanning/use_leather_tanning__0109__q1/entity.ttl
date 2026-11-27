@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0109__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 379" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n379> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Shumach used in Leather Tanning, Tawing & Currying: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 379"@en ;
+    <ontology/quoteText/#resource> "SUMACH: the dried and chopped leaves and shoots of the Rhus cortaria, a shrub growing in Southern Europe. When ground to powder in a mill, sumach is largely used for dyeing and tanning. The colouring matter is yellow. Our imports, average about 18,000 tons per annum."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

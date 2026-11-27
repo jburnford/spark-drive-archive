@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/07/0788/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Oil Mineral or Earth Refined"@en ;
+    skos:broader <id/grp/grp_fossil_fuels_mineral_oils/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_fossil_fuels_mineral_oils): 'Mineral or Earth Oil' is petroleum (Canadian exports in gallons, incl. Sarnia ON → United States); same commodity as htc:0840/htc:1056. Layer-1 observations: 39 rows, 1875–1881. Series: CSP_Canadian Trade and Navigation ×13; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×26. Units: Gallons ×39. Top routes: Quebec → All Countries ×8; Quebec → Newfoundland ×7; Quebec → Labrador ×4; Quebec → United States ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0788" ;
+    skos:prefLabel "Oil Mineral or Earth Refined"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1875"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1882"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "39"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "refined_extract" ;
+    <ontology/sitcCode/#resource> "SITC4_32_33_Mineral_Fuels" ;
+    <ontology/substanceHead/#resource> "Oil Mineral or Earth Refined" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

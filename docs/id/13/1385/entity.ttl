@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1385/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Seeds Carraway"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300400469>, <http://www.wikidata.org/entity/Q40763>, <http://zbw.eu/stw/descriptor/14079-5> ;
+    skos:broader <id/grp/grp_spices_condiments/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_spices_condiments): Caraway seed is a spice, not an oilseed. Layer-1 observations: 12 rows, 1848–1866. Series: HCPP_Annual Statement of Trade ×11; KEW_CUST 4 ×1. Units: CWTS (Hundredweights) ×11; Hundredweights.Quarters.Pounds ×1. Top routes: Holland → United Kingdom ×3; World → United Kingdom ×3; Other Parts → United Kingdom ×3; Canada → England ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1385" ;
+    skos:prefLabel "Seeds Carraway"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1848"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "12"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_07_Coffee_Tea_Cocoa_Spices" ;
+    <ontology/substanceHead/#resource> "Seeds Carraway" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

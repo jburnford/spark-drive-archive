@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/16/1669/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Metals, viz. Platinum, contained in concentrates or other forms"@en ;
+    skos:broader <id/grp/grp_metallic_ores/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_metallic_ores; processing_state=raw_ore): Ore/concentrate heading (chromite / chromate of iron in tons; metal 'contained in ore, matte, regulus'; pyrites); belongs with Metallic Ores & Concentrates like its sibling headings. Layer-1 observations: 7 rows, 1895–1901. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×6. Units: Ounces ×6; Lbs. (Pounds) ×1. Top routes: Canada → United States ×3; Canada → All Countries ×2; British Columbia → All Countries ×1; Ontario → All Countries ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1669" ;
+    skos:prefLabel "Metals, viz. Platinum, contained in concentrates or other forms"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1895"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1901"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "7"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_ore" ;
+    <ontology/sitcCode/#resource> "SITC4_28_Metalliferous_Ores" ;
+    <ontology/substanceHead/#resource> "Metals, viz. Platinum, contained in concentrates or other forms" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

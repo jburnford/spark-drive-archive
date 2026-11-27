@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__0015__q2/#resource> dcterms:bibliographicCitation "Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 368" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n368/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Caoutchouc used in Varnish, Paint & Lacquer: Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 368"@en ;
+    <ontology/quoteText/#resource> "A tent of this kind introduced into a wound or cavity enlarges as the wax softens. SPONGING-HOUSE, the lock-up house of a sheriff's officer, where debtors are lodged before they are conveyed to prison. SPONGIO-PILNE, a substitute for the ordinary poultice, made of small pieces of sponge and wool or cloth felted together, on an impermeable back, and held by a..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

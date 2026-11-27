@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/09/0975/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Sulphuric Acid"@en ;
+    skos:broadMatch <customs-1866/chemical/#concept> ;
+    skos:broader <id/grp/grp_industrial_chemicals_alkalis/#concept> ;
+    skos:definition "one of the most important chemical agents used in the arts and manufactures, made by conducting the burning lumps of sulphur through a leaden vessel, exposed to the action of an oxide, water, and steam. It is used in the manufacture of soda-ash, in bleaching woolens, straw, &c., and for a variety of chemical productions, to the extent of 300,000 tons per annum. It is also called oil of vitriol. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 379]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0975" ;
+    skos:prefLabel "Sulphuric Acid"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n379> ;
+    <ontology/firstAttested/#resource> "1889"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "27"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_51_52_Chemicals" ;
+    <ontology/substanceHead/#resource> "Sulphuric Acid" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_calico_printing/#concept>, <ontology/ind_hats_brushes_upholstery/#concept>, <ontology/ind_leather_tanning/#concept>, <ontology/ind_metallurgy_tinplate/#concept>, <ontology/ind_woollen_silk_dyeing/#concept> .

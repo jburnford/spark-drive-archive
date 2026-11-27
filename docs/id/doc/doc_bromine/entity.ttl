@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_bromine/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Bromine"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q879> ;
+    skos:definition "one of the archæal elements, which being developed from its combinations at the positive pole of the voltaic circuit, has been therefore deemed to be idio-electro-positive like oxygen and chlorine. It derives its name from its nauseous smell, Βρῶμος, _fœtor_. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_bromine" ;
+    skos:prefLabel "Bromine"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562), P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 64."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n64>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> .

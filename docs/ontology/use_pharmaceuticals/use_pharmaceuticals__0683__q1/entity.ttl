@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0683__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 348" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n348> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Senna used in Pharmaceuticals & Druggists' Preparations: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 348"@en ;
+    <ontology/quoteText/#resource> "SENNA: the leaflets of several species of Cassia, used in medicine for their purgative properties. C. elongata and C. acutifolia, furnish the Timnevelly and Alexandrian senna, which are the best. The latter constitutes the bulk of the imports into Europe. It is much adulterated with the leaves of Cynanchum Argel, Tephrosia Apollinea, and Coriaria myrtifolia...."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

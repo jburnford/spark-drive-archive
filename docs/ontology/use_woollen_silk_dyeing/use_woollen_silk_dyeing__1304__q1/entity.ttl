@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_woollen_silk_dyeing/use_woollen_silk_dyeing__1304__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 321" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n321> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bark Quercitron used in Woollen, Silk & Worsted Dyeing: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 321"@en ;
+    <ontology/quoteText/#resource> "QUERCITRON: a name for the black oak (Quercus tinctoria) of the United States, the wood of which is valuable for building, and for cutting into staves: the bark is used for tanning, while the cellular integument is extensively employed in dyeing wool, silk, and paper hangings, and forms an important article of export from Philadelphia."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

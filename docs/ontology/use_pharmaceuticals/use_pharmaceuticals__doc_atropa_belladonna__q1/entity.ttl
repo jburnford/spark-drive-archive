@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__doc_atropa_belladonna__q1/#resource> dcterms:bibliographicCitation "Sir George Watt, The Commercial Products of India (1908), scan p. 107" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n107> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Atropa Belladonna used in Pharmaceuticals & Druggists' Preparations: Sir George Watt, The Commercial Products of India (1908), scan p. 107"@en ;
+    <ontology/quoteText/#resource> "ATROPA BELLADONNA: Linn.; Fl. Br. Ind., iv., 241; SOLANACEÆ. Deadly Nightshade, sangangúr, angúr-shéfa, súchí, girbúti, ustrung, yebraj, luckmuna. A coarse glabrous herb native of the Western Himalaya from Simla to Kashmir at altitudes of 6,000 to 12,000 feet; distributed to Europe and North Persia. D.E.P., i., 351-3. Belladonna. The officinal parts of the p..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

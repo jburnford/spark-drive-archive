@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0066/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Rags"@en ;
+    skos:altLabel "rag"@en ;
+    skos:broader <id/sub/sub_bast_plant_wd_q1567420/#concept> ;
+    skos:definition "the fragments and shreds of worn-out garments and drapery, woollen or linen, collected for various purposes throughout the kingdom, and amounting, with those imported, to more than 70,000 tons a-year, worth fully a million sterling. Woollen rags are used for manure, for working up into shoddy, or coarse cloths and druggets, and for flock-paper; linen rags for making lint, and paper; and cotton rags for paper-pulp. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 324]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1567420> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0066" ;
+    skos:prefLabel "Rags"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n324>, <https://archive.org/details/generalcommercia00mort/page/n842> ;
+    <ontology/firstAttested/#resource> "1825"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "434"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_26_Textile_Fibres" ;
+    <ontology/substanceHead/#resource> "Rags" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_paper_making/#concept> .

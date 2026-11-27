@@ -1,0 +1,17 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/08/0843_r1/#resource> a <ontology/ScopedReading/#resource> ;
+    rdfs:label "Cocoa nuts read as coconuts (series ^HCPP_Annual Statement of Trade, 1856–1866, unit ^Number$)"@en ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q3342808> ;
+    skos:note "Annual Statements 1856–66 enter the article by number, from the British West India Islands and British Guiana; cacao was entered by weight under 'Cocoa'."@en ;
+    <ontology/matchedObservationCount/#resource> "25"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/readingOf/#resource> <id/08/0843/#concept> ;
+    <ontology/readingStatus/#resource> "supported" ;
+    <ontology/scopeSeries/#resource> "^HCPP_Annual Statement of Trade" ;
+    <ontology/scopeUnit/#resource> "^Number$" ;
+    <ontology/scopeYearFrom/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/scopeYearTo/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> .

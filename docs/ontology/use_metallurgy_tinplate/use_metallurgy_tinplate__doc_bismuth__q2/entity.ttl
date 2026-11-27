@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_metallurgy_tinplate/use_metallurgy_tinplate__doc_bismuth__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. BISMUTH" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bismuth used in Metallurgy, Smelting, Brass & Tinplate: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. BISMUTH"@en ;
+    <ontology/quoteText/#resource> "An alloy of 1 bismuth, 2 tin, and 1 lead, is employed as a soft solder by the pewterers; and the same has been proposed as a bath for tempering steel instruments."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

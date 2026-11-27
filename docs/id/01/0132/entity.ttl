@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0132/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Valonia"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300187374>, <http://www.wikidata.org/entity/Q187607> ;
+    skos:broader <id/sub/sub_vegetable__wd_q187607/#concept> ;
+    skos:definition "a commercial name for the large capsules or acorn cups of the *Quercus agilops*, which are imported in considerable quantities for the use of tanners, being much more portable and concentrated in tanning properties than bark. In 1862, there were imported 29,720 tons of valonea. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 409]"@en ;
+    skos:editorialNote "Curated classification (wd_term=tannin; wd_relation=skos:broadMatch): Valonia is acorn cups, not bark (Ure 1853 s.v. VALONIA: 'a kind of acorn ... the husk or cup contains abundance of tannin'). Layer-1 observations: 250 rows, 1800–1920. Series: HCPP_Annual Statement of Trade ×230; HCPP_Other ×12; KEW_CUST 5 ×7. Units: Tons ×208; CWTS (Hundredweights) ×42. Top routes: World → United Kingdom ×57; Greece → United Kingdom ×43; Turkey → United Kingdom ×22; Turkey Asiatic → United Kingdom ×22."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0132" ;
+    skos:prefLabel "Valonia"@en ;
+    skos:related <id/00/0041/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n409>, <https://archive.org/details/dictionaryprac00mccu/page/n1612>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1920"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "250"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Valonia" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_leather_tanning/#concept> .

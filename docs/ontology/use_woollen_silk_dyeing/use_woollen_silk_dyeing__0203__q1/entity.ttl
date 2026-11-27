@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_woollen_silk_dyeing/use_woollen_silk_dyeing__0203__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. FUSTIC" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Wood and Timber Dye Woods Fustic used in Woollen, Silk & Worsted Dyeing: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. FUSTIC"@en ;
+    <ontology/quoteText/#resource> "FUSTIC: (Bois jaune, Fr.; Gelbholz, Germ.) The old fustic of the English dyer, as the article fustet is their yellow fustic. It is the wood of the Morus tinctoria. It is light, not hard, and pale yellow with orange veins; it contains two colouring matters, one resinous, and another soluble in water. The latter resembles weld, but it has more of an orange cas..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,24 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_tung_oil/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Tung Oil"@en ;
+    skos:altLabel "Aleurites Fordii"@en ;
+    skos:broader <id/grp/grp_vegetable_oils/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q2094522> ;
+    skos:definition "a valuable oil expressed in China from the seeds of *Elaeococca oleifera*, which is much used for painting boats, furniture, &c. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 404]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_tung_oil" ;
+    skos:prefLabel "Tung Oil"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0124 (Oil Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 404."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n404> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0124/#concept> .

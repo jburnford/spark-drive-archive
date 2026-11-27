@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__1765__q1/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 223" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n223> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Vermillion used in Varnish, Paint & Lacquer: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 223"@en ;
+    <ontology/quoteText/#resource> "CINNABAR: (GER. Zinnober. DU. Cinaber, Vermilioen. DA. Zinober. SW. Cinnober. FR. Cinnobre. IT. Cinabro. SP. and PORT. Cinabrio. RUS. Kinowar. POL. Cynobr. LAT. Cinnabrium.) Native cin- nabar is a ponderous mineral substance composed of mercury and sulphur, found in Spain, Hungary, and in several other parts of the world. The finest sort is brought from the ..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0132__q3/#resource> dcterms:bibliographicCitation "Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 274" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n274/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Valonia used in Leather Tanning, Tawing & Currying: Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 274"@en ;
+    <ontology/quoteText/#resource> "Under the heads of Cork, Quercitron, and Valonia, other products of oak will be found noticed. OAK-BARK, the bark of the oak which is largely used for tanning; the inner cortical of young trees being preferred, as containing a larger proportion of tannin."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

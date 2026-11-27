@@ -12,6 +12,8 @@ from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
 
+from public_rdf import SITE, public_id
+
 BASE = Path(__file__).resolve().parents[2] / "human_trade"
 REPO_ROOT = Path(__file__).resolve().parents[2]
 GROUND = BASE / "layer1_human" / "grounding"
@@ -267,6 +269,8 @@ def main():
         "polity_pairs": polity_cnt,
     }
 
+    concept_ids = {item[key] for item in compact for key in ("id", "br") if item[key]}
+    record_paths = {cid: public_id(cid, "concept").split(":", 1)[1] for cid in sorted(concept_ids)}
     html_doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -446,6 +450,7 @@ details.tree-sub > summary {{ cursor: pointer; font-weight: 600; font-size: 0.83
 <header>
   <h1>Open Empire — 19th-Century Archival Trade SKOS Vocabulary &amp; Text-Mining Gazetteer</h1>
   <p>4-tier historical commodity SKOS vocabulary (9 Macro-Sectors → 44 Commodity Groups → {len(sub_ids)} S14-safe Substance Groups → <strong>2,066 Layer-1 customs-enumerated</strong> + <strong>{len(doc_concepts):,} document-attested text-mining</strong> <code>htc:</code> concepts, <strong>{gaz_cnt:,}</strong> gazetteer surface forms; dual-typed as <code>skos:Concept</code> &amp; <code>crm:E55_Type</code> for LINCS / CIDOC CRM compatibility), enriched from 6 19th-century commercial dictionaries, Danika's Drugs Project (<em>British Pharmacopoeia</em> 1867 / Savory 1865 / 1866 Customs List), Wikidata, AGROVOC, STW, Getty AAT, and Catalogue of Life. Generated {date.today().isoformat()}.</p>
+<p><a href="{SITE}data/open-empire.ttl.gz" style="color:inherit">Download the full graph (Turtle, gzip)</a> · <a href="{SITE}void.ttl" style="color:inherit">Dataset description (VoID)</a> · <a href="{SITE}identifier-crosswalk.tsv" style="color:inherit">Identifier crosswalk</a></p>
 </header>
 
 <div class="container">
@@ -774,39 +779,52 @@ function resetAndRender() {{
   renderTable();
 }}
 
+const SITE = {json.dumps(SITE)};
+const RECORD_PATHS = {json.dumps(record_paths)};
+function recordUrl(id) {{
+  return SITE + 'id/' + RECORD_PATHS[id];
+}}
+
 function buildTtlSnippet(c) {{
-  let lines = [
-    `${{c.id}} a skos:Concept, crm:E55_Type ;`,
-    `    rdfs:label "${{c.l.replace(/"/g, '\\"')}}"@en ;`,
-    `    skos:inScheme htc:scheme ;`,
-    `    skos:prefLabel "${{c.l.replace(/"/g, '\\"')}}"@en ;`,
+  const concept = id => '<' + recordUrl(id) + '>';
+  const term = name => '<' + SITE + 'ontology/' + name + '/#resource>';
+  const lines = [
+    '@prefix skos: <http://www.w3.org/2004/02/skos/core#> .',
+    '@prefix wd: <http://www.wikidata.org/entity/> .',
+    '@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .',
+    '@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .',
+    '',
+    concept(c.id) + ' a skos:Concept, crm:E55_Type'
   ];
-  if (c.alts.length) lines.push(`    skos:altLabel ${{c.alts.map(a => '"' + a.replace(/"/g, '\\"') + '"@en').join(', ')}} ;`);
-  lines.push(`    skos:broader ${{c.br}} ;`);
-  if (c.basis === 'doc') {{
-    lines.push(`    oe:attestationBasis "document_attested" ;`);
-    if (c.sub) lines.push(`    oe:subsumedInCustomsHeading ${{c.sub}} ;`);
+  const properties = [
+    '    rdfs:label ' + JSON.stringify(c.l) + '@en',
+    '    skos:prefLabel ' + JSON.stringify(c.l) + '@en',
+    '    skos:inScheme <' + SITE + 'id/scheme/#resource>',
+    '    skos:broader ' + concept(c.br),
+    '    ' + term('attestationBasis') + ' ' + JSON.stringify(c.basis === 'doc' ? 'document_attested' : 'customs_enumerated')
+  ];
+  for (const [property, value] of [['landBasis', c.lb], ['sitcCode', c.si],
+      ...(c.basis === 'customs' ? [['substanceHead', c.h], ['processingState', c.s]] : [])]) {{
+    properties.push('    ' + term(property) + ' ' + JSON.stringify(value));
   }}
-  if (c.relc.length) lines.push(`    skos:related ${{c.relc.join(', ')}} ;`);
-  if (c.comb.length) lines.push(`    oe:combinesConcept ${{c.comb.join(', ')}} ;`);
-  if (c.matc.length) lines.push(`    oe:materialConcept ${{c.matc.join(', ')}} ;`);
-  if (c.def) lines.push(`    skos:definition "${{c.def.slice(0, 220).replace(/"/g, '\\"')}}${{c.def.length > 220 ? '...' : ''}}"@en ;`);
-  if (c.sn) lines.push(`    skos:scopeNote "${{c.sn.replace(/"/g, '\\"')}}"@en ;`);
-  if (c.dsrc.length) lines.push(`    oe:dictionarySource ${{c.dsrc.map(x => '<' + x[1] + '>').join(', ')}} ;`);
-  lines.push(`    oe:macroSector ${{c.sec}} ;`);
-  lines.push(`    oe:commodityGroup ${{c.grp}} ;`);
-  lines.push(`    oe:substanceHead "${{c.h.replace(/"/g, '\\"')}}" ;`);
-  lines.push(`    oe:processingState "${{c.s}}" ;`);
-  lines.push(`    oe:landBasis "${{c.lb}}" ;`);
-  lines.push(`    oe:sitcCode "${{c.si}}" ;`);
-  if (c.wd.length) lines.push(`    ${{c.rel}} ${{c.wd.map(x => 'wd:' + x[0]).join(', ')}} ;`);
-  if (c.ag.length) lines.push(`    ${{c.agrel}} ${{c.ag.map(x => 'agrovoc:' + x).join(', ')}} ;`);
-  if (c.stw.length) lines.push(`    ${{c.stwrel}} ${{c.stw.map(x => 'stw:' + x).join(', ')}} ;`);
-  if (c.aat.length) lines.push(`    ${{c.aatrel}} ${{c.aat.map(x => 'aat:' + x).join(', ')}} ;`);
-  if (c.tx.length) lines.push(`    oe:sourceTaxon ${{c.tx.map(x => 'wd:' + x[0]).join(', ')}} ;`);
-  if (c.mat.length) lines.push(`    oe:madeOfMaterial ${{c.mat.map(x => 'wd:' + x[0]).join(', ')}} ;`);
-  lines[lines.length - 1] = lines[lines.length - 1].replace(/ ;$/, ' .');
-  return lines.join('\\n');
+  for (const [property, values] of [
+      [term('dictionarySource'), c.dsrc.map(x => '<' + x[1] + '>')],
+      [term('sourceTaxon'), c.tx.map(x => 'wd:' + x[0])],
+      [term('madeOfMaterial'), c.mat.map(x => 'wd:' + x[0])],
+      [c.agrel, c.ag.map(x => '<http://aims.fao.org/aos/agrovoc/' + x + '>')],
+      [c.stwrel, c.stw.map(x => '<http://zbw.eu/stw/descriptor/' + x + '>')],
+      [c.aatrel, c.aat.map(x => '<http://vocab.getty.edu/aat/' + x + '>')]]) {{
+    if (values.length) properties.push('    ' + property + ' ' + values.join(', '));
+  }}
+  if (c.alts.length) properties.push('    skos:altLabel ' + c.alts.map(a => JSON.stringify(a) + '@en').join(', '));
+  if (c.def) properties.push('    skos:definition ' + JSON.stringify(c.def) + '@en');
+  if (c.sn) properties.push('    skos:scopeNote ' + JSON.stringify(c.sn) + '@en');
+  if (c.wd.length) properties.push('    ' + c.rel + ' ' + c.wd.map(x => 'wd:' + x[0]).join(', '));
+  for (const [property, ids] of [['skos:related', c.relc], [term('combinesConcept'), c.comb],
+      [term('materialConcept'), c.matc], [term('subsumedInCustomsHeading'), c.sub ? [c.sub] : []]]) {{
+    if (ids.length) properties.push('    ' + property + ' ' + ids.map(concept).join(', '));
+  }}
+  return lines.join('\\n') + ' ;\\n' + properties.join(' ;\\n') + ' .';
 }}
 
 function renderTable() {{
@@ -840,7 +858,7 @@ function renderTable() {{
 
     htmlRows.push(`
       <tr class="data-row" onclick="toggleDetail('${{c.id}}')">
-        <td class="mono">${{c.id}}</td>
+        <td class="mono"><a href="${{recordUrl(c.id)}}" onclick="event.stopPropagation()">${{esc(c.id)}}</a></td>
         <td>
           <strong>${{esc(c.l)}}</strong>
           ${{c.basis === 'doc' ? ' <span class="badge b-doc" title="Document-attested minor 19th-c. commodity for text mining">Doc-Attested</span>' : ''}}

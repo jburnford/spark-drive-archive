@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__0118__q2/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 893" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n893/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Cochineal used in Varnish, Paint & Lacquer: McCulloch (1880), Dictionary of Commerce, scan p. 893"@en ;
+    <ontology/quoteText/#resource> "Lac yields a fine red dye, which, though not so bright as the true Mexican cochineal, is said to be more permanent; and the resinous part is extensively used in the manufacture of sealing-wax and hats, and as a varnish."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

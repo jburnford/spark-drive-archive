@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0334/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Farinaceous Substances and Manufactures thereof"@en ;
+    skos:broader <id/grp/grp_cereals_grains/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_cereals_grains; processing_state=manufactured): Farinaceous preparations (macaroni, vermicelli, crackers/biscuit, starch, dextrine) belong with Cereals; other starch headings (htc:1561, htc:1572) are already here. Layer-1 observations: 115 rows, 1871–1906. Series: HCPP_Annual Statement of Trade ×115. Units: (no unit) ×105; CWTS (Hundredweights) ×10. Top routes: France → United Kingdom ×8; World → United Kingdom ×8; United States of America → United Kingdom ×8; Germany → United Kingdom ×8."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0334" ;
+    skos:prefLabel "Farinaceous Substances and Manufactures thereof"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1871"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_grain" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "115"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_04_Cereals_and_Preparations" ;
+    <ontology/substanceHead/#resource> "Farinaceous Substances and Manufactures thereof" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

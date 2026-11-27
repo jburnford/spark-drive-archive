@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/18/1862/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Revolvers"@en ;
+    skos:broader <id/grp/grp_metal_machinery_hardware/#concept> ;
+    skos:definition "a firearm with several loading chambers, that can be discharged in succession through the same barrel by one lock. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 499]"@en ;
+    skos:editorialNote "Curated classification (group=grp_metal_machinery_hardware; processing_state=manufactured): Named tool, ironware, arm or instrument left in the residual bin. Layer-1 observations: 4 rows, 1881–1881. Series: HCPP_Annual Statement of Trade ×4. Units: Number ×4. Top routes: United Kingdom → World ×1; United Kingdom → British Possessions in South Africa ×1; United Kingdom → Australasia ×1; United Kingdom → Other Countries ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1862" ;
+    skos:prefLabel "Revolvers"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n499> ;
+    <ontology/firstAttested/#resource> "1881"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1881"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_69_7_Metalwares_and_Machinery" ;
+    <ontology/substanceHead/#resource> "Revolvers" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

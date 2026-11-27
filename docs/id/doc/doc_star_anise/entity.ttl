@@ -1,0 +1,24 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_star_anise/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Star Anise"@en ;
+    skos:broader <id/grp/grp_spices_condiments/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q1760637> ;
+    skos:definition "the *Illicium anisatum*, a native of China and Japan, the aromatic and carminative fruit of which is used in the preparation of liqueurs. The star-shaped capsules and seeds abound in an essential oil, easily procured by distillation with water. See **ANISEED**. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 371]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_star_anise" ;
+    skos:prefLabel "Star Anise"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0408 (Spices Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 371."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n371> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_07_Coffee_Tea_Cocoa_Spices" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q27019> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/04/0408/#concept> .

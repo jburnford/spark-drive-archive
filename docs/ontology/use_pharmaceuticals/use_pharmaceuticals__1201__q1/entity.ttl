@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__1201__q1/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 884" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n884/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Jalap used in Pharmaceuticals & Druggists' Preparations: McCulloch (1880), Dictionary of Commerce, scan p. 884"@en ;
+    <ontology/quoteText/#resource> "Med.; Brande's Pharmacy; British Pharmacopoeia, 1867.) Jalap is adulterated with various roots of a similar appearance and botanical character."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

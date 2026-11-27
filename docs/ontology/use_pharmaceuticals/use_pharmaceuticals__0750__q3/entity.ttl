@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0750__q3/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 116" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n116/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Cream of Tartar used in Pharmaceuticals & Druggists' Preparations: McCulloch (1880), Dictionary of Commerce, scan p. 116"@en ;
+    <ontology/quoteText/#resource> "Pure argol, or cream of tartar, is extensively used in medicine."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0100/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Furs and skins"@en ;
+    skos:broader <id/grp/grp_furs_marine_pelts/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0100" ;
+    skos:prefLabel "Furs and skins"@en ;
+    skos:related <id/00/0099/#concept>, <id/03/0325/#concept> ;
+    skos:relatedMatch <http://aims.fao.org/aos/agrovoc/c_3609>, <http://vocab.getty.edu/aat/300011811>, <http://vocab.getty.edu/aat/300011844>, <http://www.wikidata.org/entity/Q197204>, <http://www.wikidata.org/entity/Q3291230>, <http://zbw.eu/stw/descriptor/14127-6>, <http://zbw.eu/stw/descriptor/14916-0> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/combinesConcept/#resource> <id/00/0099/#concept>, <id/03/0325/#concept> ;
+    <ontology/firstAttested/#resource> "1850"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "grounded_compound_commodity" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_wild_hunted" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "320"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_21_Hides_Skins_Furskins_Raw" ;
+    <ontology/substanceHead/#resource> "Furs and skins" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

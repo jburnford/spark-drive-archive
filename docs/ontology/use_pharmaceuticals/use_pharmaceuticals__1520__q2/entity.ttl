@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__1520__q2/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 544" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n544/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Juniper Berries used in Pharmaceuticals & Druggists' Preparations: Mortimer (1823), General Commercial Dictionary, scan p. 544"@en ;
+    <ontology/quoteText/#resource> "They are chiefly used in medicine, nearly for the same purposes as the common fig. JUNIPER-BERRIES. (GER. Wacholderbeeren. DU. Dambesien, Geneverbessen. DA. Eneber. SW. Enbär. FR. Bais de genièvre. IT. Coccole di ginipro. SP. Bayas de enebro. PORT. Bagas de zimbro. RUS. Moshshuchit. POL. Jalowice jagody. LAT. Juniperi baccæ.) There are twelve species of the ..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

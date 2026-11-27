@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_perfumery_cosmetics/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Perfumery, Pomades & Essential Oils"@en ;
+    skos:definition "Eau de Cologne, scented spirits, pomades, incense, and cosmetics — infusing alcohol, lard, and olive/almond oils with essential oils (bergamot, otto of roses, lavender, citronella, sandalwood), animal fixatives (musk, ambergris, castor), and fragrant resins/spices (benzoin, myrrh, olibanum, vanilla, cloves)."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Perfumery, Pomades & Essential Oils"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0025/#concept>, <id/03/0339/#concept>, <id/04/0445/#concept>, <id/05/0573/#concept>, <id/06/0618/#concept>, <id/06/0697/#concept>, <id/15/1599/#concept>, <id/17/1702/#concept>, <id/19/1914/#concept>, <id/doc/doc_alkanet/#concept>, <id/doc/doc_ambergris/#concept>, <id/doc/doc_musk/#concept>, <id/doc/doc_otto_of_roses/#concept>, <id/doc/doc_sandal_wood/#concept>, <id/doc/doc_storax/#concept>, <id/doc/doc_vanilla/#concept> .

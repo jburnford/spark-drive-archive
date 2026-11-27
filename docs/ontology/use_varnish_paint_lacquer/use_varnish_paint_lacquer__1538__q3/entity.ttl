@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__1538__q3/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. MASTIC" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Gum Mastic used in Varnish, Paint & Lacquer: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. MASTIC"@en ;
+    <ontology/quoteText/#resource> "MASTIC: (Eng. and Fr.; Mastix, Germ.), is a resin produced by making incisions in the Pistacia Lentiscus, a tree cultivated in the Levant, and chiefly in the island of Chios. It comes to us in yellow, brittle, transparent, rounded tears; which soften between the teeth; with bitterish taste and aromatic smell, and a specific gravity of 1·07. Mastic consists o..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

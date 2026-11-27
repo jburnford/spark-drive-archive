@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_metallurgy_tinplate/use_metallurgy_tinplate__0399__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. REFINING OF GOLD AND SILVER" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Quicksilver used in Metallurgy, Smelting, Brass & Tinplate: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. REFINING OF GOLD AND SILVER"@en ;
+    <ontology/quoteText/#resource> "After the mercury has dissolved out of the ground crucibles all the particles of silver which it can find, the residuary earthy matter is sold to the sweep-washers."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

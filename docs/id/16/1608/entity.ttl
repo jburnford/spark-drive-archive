@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/16/1608/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Butterine"@en ;
+    skos:broader <id/grp/grp_animal_fats_tallow/#concept> ;
+    skos:definition "an artificial butter made with tallow, oil, and other ingredients, also known as margarine. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 448]"@en ;
+    skos:editorialNote "Curated classification (group=grp_animal_fats_tallow): Butterine is the trade name for oleomargarine (cf. htc:0976). Layer-1 observations: 8 rows, 1886–1886. Series: HCPP_Annual Statement of Trade ×8. Units: CWTS (Hundredweights) ×8. Top routes: Holland → United Kingdom ×1; World → United Kingdom ×1; Belgium → United Kingdom ×1; Russia → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1608" ;
+    skos:prefLabel "Butterine"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n448> ;
+    <ontology/firstAttested/#resource> "1886"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1886"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "8"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_41_Animal_Oils_and_Fats" ;
+    <ontology/substanceHead/#resource> "Butterine" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

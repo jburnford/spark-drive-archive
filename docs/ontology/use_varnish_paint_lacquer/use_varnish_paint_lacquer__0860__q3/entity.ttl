@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__0860__q3/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. VARNISH" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Gum Copal used in Varnish, Paint & Lacquer: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. VARNISH"@en ;
+    <ontology/quoteText/#resource> "Indeed, the whitest copal varnish can be made only in this way; for if the drying oil have been heated to nearly its boiling point, it becomes coloured, and darkens the varnish."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

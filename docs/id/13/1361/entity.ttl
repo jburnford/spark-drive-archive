@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1361/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Paper Making Materials Esparto and other Vegetable Fibres"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300014036>, <http://www.wikidata.org/entity/Q928533> ;
+    skos:broader <id/sub/sub_bast_plant_wd_q928533/#concept> ;
+    skos:editorialNote "Curated classification (wd_term=esparto; wd_relation=skos:broadMatch): Heading is esparto and other vegetable fibres for paper-making, not paper. Layer-1 observations: 13 rows, 1896–1906. Series: HCPP_Annual Statement of Trade ×13. Units: Tons ×13. Top routes: World → United Kingdom ×2; Spain → United Kingdom ×2; Algeria → United Kingdom ×2; Other Foreign Countries → United Kingdom ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1361" ;
+    skos:prefLabel "Paper Making Materials Esparto and other Vegetable Fibres"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1896"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "13"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_26_Textile_Fibres" ;
+    <ontology/substanceHead/#resource> "Paper Making Materials Esparto and other Vegetable Fibres" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

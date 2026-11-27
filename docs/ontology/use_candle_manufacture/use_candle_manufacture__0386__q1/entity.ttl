@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_candle_manufacture/use_candle_manufacture__0386__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 366" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n366> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Train Blubber and Spermaceti (Whale Oils) used in Candle Manufacture: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 366"@en ;
+    <ontology/quoteText/#resource> "SPERMACETI: a kind of waxy body which separates in cold weather from the oil obtained from the head-matter of the sperm whale (Physeter macrocephalus). It is used for making candles with about 3 per cent. of bees'-wax added to prevent crystallization."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__1683__q2/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 790" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n790/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Painters Colours and Pigments White Lead used in Glassmaking, Pottery & Porcelain: Mortimer (1823), General Commercial Dictionary, scan p. 790"@en ;
+    <ontology/quoteText/#resource> "The yellow glaze is made by mixing together in water, till it becomes as thick as cream, 112 lb. of white lead, 24 lb. of ground flint, and 6 lb. of ground flint glass."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

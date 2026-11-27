@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_cordage_shipbuilding/use_cordage_shipbuilding__0289__q3/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 421" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n421/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Hemp Rough or Undressed used in Shipbuilding, Rope, Cordage & Sailcloth: Watt (1908), Commercial Products of India, scan p. 421"@en ;
+    <ontology/quoteText/#resource> "About the period indicated the East India Company made a great effort to discover a good substitute for Russian hemp, to be employed in the manufacture of ropes and sail canvas."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

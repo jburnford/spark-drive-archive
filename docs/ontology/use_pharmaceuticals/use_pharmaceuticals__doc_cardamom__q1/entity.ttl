@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__doc_cardamom__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 81" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n81> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Cardamom used in Pharmaceuticals & Druggists' Preparations: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 81"@en ;
+    <ontology/quoteText/#resource> "CARDAMOMS: the capsules of various not very clearly defined species of Amonum, Elettaria and other plants; the acrid, pungent seeds of which are used in medicine as aromatic tonics, and carminatives, and to give an artificial strength to spirits, wine and beer. In the East they form a universal ingredient in soups, curries, pillaus, ketchups and sauces, &c."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

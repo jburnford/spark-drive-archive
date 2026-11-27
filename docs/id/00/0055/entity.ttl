@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0055/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Meal"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300389812>, <http://www.wikidata.org/entity/Q36465> ;
+    skos:broader <id/sub/sub_cereals_gr_wd_q36465/#concept> ;
+    skos:definition "(GER. *Mehl.* DU. and DA. *Meal.* SW. *Mjöl.* FR. and IT. *Farine.* SP. *Harina.* PORT. *Farinha.* RUS. *Muka.* POL. *Maka.* LAT. *Farina,*) the edible part of wheat, oats, rye, barley, and pulse of different kinds, ground into a species of flour. The difference between flour, properly so called, and meal, is, that the former is freed from the husky part, and other impurities of the species of corn whereof it is made, but the latter is not. Meal is denominated according to the kind of grain that affords it; such as oat-meal, rye-meal, barley-meal, &c. Scotland is famous for oat-meal; England, America, and Normandy in France, excel most in meal of wheat. See CORN. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 628]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0055" ;
+    skos:prefLabel "Meal"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n628> ;
+    <ontology/firstAttested/#resource> "1841"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_grain" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1876"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "481"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "milled_ground" ;
+    <ontology/sitcCode/#resource> "SITC4_04_Cereals_and_Preparations" ;
+    <ontology/substanceHead/#resource> "Meal" ;
+    <ontology/theodoridisBucket/#resource> "grain_and_flour" .

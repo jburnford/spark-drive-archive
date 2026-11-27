@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0002/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Butter"@en ;
+    skos:broadMatch <customs-1866/dairy/#concept> ;
+    skos:broader <id/sub/sub_dairy_eggs_wd_q34172/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_1162>, <http://vocab.getty.edu/aat/300389819> ;
+    skos:definition "a common name for all animal and vegetable solid oils and fats, but popularly applied to that from the milk of the cow, used for food. The home production of butter is very considerable; but we also import large quantities from the United States, the Continent, and Ireland. Fresh butter is sold in printed pats, or one pound rolls—salted butter in bulk. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 69]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q34172> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0002" ;
+    skos:prefLabel "Butter"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_annual_statement_of_trade_1910_1940_ext/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n69>, <https://archive.org/details/dictionaryprac00mccu/page/n275>, <https://archive.org/details/generalcommercia00mort/page/n187> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1940"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "2148"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "dairy_processed" ;
+    <ontology/sitcCode/#resource> "SITC4_02_Dairy_and_Eggs" ;
+    <ontology/substanceHead/#resource> "Butter" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

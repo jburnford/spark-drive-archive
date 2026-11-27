@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_gunpowder_matches/use_gunpowder_matches__doc_chlorate_of_potash__q3/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 84" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n84/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Chlorate of Potash used in Gunpowder, Explosives & Lucifer Matches: McCulloch (1880), Dictionary of Commerce, scan p. 84"@en ;
+    <ontology/quoteText/#resource> "Chlorate of potash is extensively used in the preparation of lucifer matches, and in pyrotechnical mixtures."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

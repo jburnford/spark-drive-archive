@@ -29,7 +29,12 @@ def check(name, ok, detail=""):
 
 def main():
     man = json.loads((ROOT / "MANIFEST.json").read_text(encoding="utf-8"))
-    H, OE = Namespace(man["namespace"]), Namespace(man["ontology_namespace"])
+    H = Namespace(man["namespace"])
+    scheme = H["scheme/#resource"]
+
+    def oe(name):
+        return URIRef(man["ontology_namespace"] + name + "/#resource")
+
     print(f"Vocabulary version {man['vocabulary_version']} (Wikidata snapshot {man['wikidata_snapshot']})")
 
     bad = []
@@ -52,29 +57,29 @@ def main():
     core, ext, net = g["commodities_skos"], g["commodities_skos_extended"], g["end_use_network_skos"]
     check("extended vocabulary contains every core triple", len(core - ext) == 0, len(core - ext))
 
-    members = set(ext.subjects(SKOS.inScheme, H.scheme))
-    inputs = set(net.subjects(OE.usedInIndustry, None))
-    check(f"all {len(inputs)} end-use commodities join to a vocabulary concept by IRI", inputs <= members, len(inputs - members))
-    fwd = set(net.subject_objects(OE.usedInIndustry))
-    inv = {(o, s) for s, o in net.subject_objects(OE.usesCommodityInput)}
+    members = set(ext.subjects(SKOS.inScheme, scheme))
+    inputs = set(net.subjects(oe("usedInIndustry"), None))
+    check(f"all {len(inputs)} end-use commodities join to a vocabulary concept by IRI", bool(inputs) and inputs <= members, len(inputs - members))
+    fwd = set(net.subject_objects(oe("usedInIndustry")))
+    inv = {(o, s) for s, o in net.subject_objects(oe("usesCommodityInput"))}
     check("every end-use link has its inverse", fwd == inv)
-    asserts = set(net.subjects(RDF.type, OE.EndUseAssertion))
-    pairs = {(next(net.objects(a, OE.assertsCommodity)), next(net.objects(a, OE.assertsIndustry))) for a in asserts}
-    check(f"every end-use link has an evidence record ({len(asserts)})", pairs == fwd)
-    check("every evidence record cites at least one passage", all(any(net.objects(a, OE.hasEvidence)) for a in asserts))
+    asserts = set(net.subjects(RDF.type, oe("EndUseAssertion")))
+    pairs = {(next(net.objects(a, oe("assertsCommodity"))), next(net.objects(a, oe("assertsIndustry")))) for a in asserts}
+    check(f"every end-use link has an evidence record ({len(asserts)})", bool(asserts) and pairs == fwd)
+    check("every evidence record cites at least one passage", all(any(net.objects(a, oe("hasEvidence"))) for a in asserts))
 
     registry = sum(1 for _ in open(GROUND / "htc_id_registry.tsv", encoding="utf-8")) - 1
     docs = sum(1 for l in open(GROUND / "document_attested_concepts.jsonl", encoding="utf-8") if l.strip())
-    n_cust = len(set(ext.subjects(OE.attestationBasis, Literal("customs_enumerated"))))
-    n_doc = len(set(ext.subjects(OE.attestationBasis, Literal("document_attested"))))
+    n_cust = len(set(ext.subjects(oe("attestationBasis"), Literal("customs_enumerated"))))
+    n_doc = len(set(ext.subjects(oe("attestationBasis"), Literal("document_attested"))))
     check(f"tier filter: customs_enumerated = registry ({registry})", n_cust == registry, n_cust)
     check(f"tier filter: document_attested = document table ({docs})", n_doc == docs, n_doc)
 
-    concepts = {s for s in ext.subjects(SKOS.inScheme, H.scheme) if (s, RDF.type, SKOS.Concept) in ext}
+    concepts = {s for s in ext.subjects(SKOS.inScheme, scheme) if (s, RDF.type, SKOS.Concept) in ext}
     broader = defaultdict(set)
     for s, o in ext.subject_objects(SKOS.broader):
         broader[s].add(o)
-    tops = set(ext.objects(H.scheme, SKOS.hasTopConcept))
+    tops = set(ext.objects(scheme, SKOS.hasTopConcept))
     check("no concept has more than one parent", not [c for c in concepts if len(broader[c]) > 1])
     check("no orphan concepts", not [c for c in concepts if c not in broader and c not in tops])
 
@@ -97,11 +102,14 @@ def main():
         exact[o].add(s)
     check("no external item is the exactMatch of two concepts", not [o for o, v in exact.items() if len(v) > 1])
 
-    years = [int(o) for p in (OE.firstAttested, OE.lastAttested) for o in ext.objects(None, p)]
+    years = [int(o) for p in (oe("firstAttested"), oe("lastAttested")) for o in ext.objects(None, p)]
     check(f"attestation years within 1600–1950 ({min(years)}–{max(years)})", all(1600 <= y <= 1950 for y in years))
-    readings = set(ext.subjects(RDF.type, OE.ScopedReading))
+    readings = set(ext.subjects(RDF.type, oe("ScopedReading")))
     check(f"every scoped reading points at a registered heading ({len(readings)})",
-          all(any(o in concepts for o in ext.objects(r, OE.readingOf)) for r in readings))
+          all(any(o in concepts for o in ext.objects(r, oe("readingOf"))) for r in readings))
+
+    from verify_entity_pages import verify_pages
+    verify_pages(man, ext, net, check)
 
     print(f"\n{'ALL CHECKS PASSED' if not FAIL else str(len(FAIL)) + ' CHECK(S) FAILED: ' + '; '.join(FAIL)}")
     sys.exit(1 if FAIL else 0)

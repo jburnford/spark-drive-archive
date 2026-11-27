@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/17/1768/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Bark"@en ;
+    skos:broadMatch <customs-1866/forest_product/#concept> ;
+    skos:broader <id/grp/grp_customs_residuals/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300011860> ;
+    skos:definition "The outer rind of trees. There is an immense variety of barks known in commerce as cinnamon, Peruvian bark, oak bark, quercitron &c. The term *bark* is, however, generally employed to express either Peruvian bark, or oak bark and quercitron, and it is these only we here notice. Peruvian bark (Fr. quinquina; Ger. kronchina; Dutch, china-bast; Span. quina, quenina; Lat. quenina, Cortex Peruvianus). There are several sorts of this bark known in commerce. The first sort is the *pale* bark of the shops. It is the original cinchona of Peru, and is the produce of different varieties of the *Chinchona officinalis* of Linnaeus. [J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 195]"@en ;
+    skos:editorialNote "Curated fields — source_taxon remove: Generic bark heading; the 1866 bridge treats it as tanning bark."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q184453> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1768" ;
+    skos:prefLabel "Bark"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n38>, <https://archive.org/details/dictionaryprac00mccu/page/n195> ;
+    <ontology/firstAttested/#resource> "1818"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "other" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/lastAttested/#resource> "1833"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/substanceHead/#resource> "Bark" ;
+    <ontology/theodoridisBucket/#resource> "unclassified" .

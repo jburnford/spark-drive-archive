@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1904/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Timothy Seed"@en ;
+    skos:broader <id/grp/grp_fodder_oilcakes/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_fodder_oilcakes): Trefoil and timothy are forage-grass seeds, same class as Clover and Grass Seeds (htc:0316). Layer-1 observations: 3 rows, 1837–1837. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×3. Units: Minots ×1; Casks ×1; Tierces ×1. Top routes: Montreal and Quebec → Great Britain ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1904" ;
+    skos:prefLabel "Timothy Seed"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1837"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fodder_feed" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1837"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "3"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_08_Animal_Feeding_Stuff" ;
+    <ontology/substanceHead/#resource> "Timothy Seed" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

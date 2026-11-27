@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_chocolate_confectionery/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Chocolate & Confectionery"@en ;
+    skos:definition "Chocolate bars, drinking chocolate, cocoa butter, and sugar confectionery — combining roasted cacao beans with cane sugar, aromatic spices (vanilla, cinnamon, cloves, cassia), gums, almonds, starches, and milk."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Chocolate & Confectionery"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0097/#concept>, <id/01/0118/#concept>, <id/01/0138/#concept>, <id/02/0290/#concept>, <id/03/0360/#concept>, <id/04/0460/#concept>, <id/05/0573/#concept>, <id/06/0695/#concept>, <id/14/1400/#concept>, <id/14/1492/#concept>, <id/16/1639/#concept>, <id/19/1937/#concept>, <id/doc/doc_ambergris/#concept>, <id/doc/doc_musk/#concept>, <id/doc/doc_vanilla/#concept> .

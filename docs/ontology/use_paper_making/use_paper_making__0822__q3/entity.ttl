@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_paper_making/use_paper_making__0822__q3/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 1104" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1104/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Esparto and other Vegetable Fibres for making Paper used in Paper Making & Cardboard: McCulloch (1880), Dictionary of Commerce, scan p. 1104"@en ;
+    <ontology/quoteText/#resource> "This led our paper makers to search diligently for good substitutes for rags, and their choice seems to have fallen chiefly on Esparto."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

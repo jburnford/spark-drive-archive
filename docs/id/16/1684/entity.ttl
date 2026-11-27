@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/16/1684/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Petroleum Oil Spirit"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300013001>, <http://www.wikidata.org/entity/Q22656>, <http://zbw.eu/stw/descriptor/14197-6> ;
+    skos:broader <id/sub/sub_fossil_fue_wd_q22656/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_fossil_fuels_mineral_oils; processing_state=refined_extract): Heading names petroleum spirit (a mineral-oil fraction); the classifier matched the word 'Spirit' and filed it under beverages. Layer-1 observations: 7 rows, 1906–1906. Series: HCPP_Annual Statement of Trade ×7. Units: Gallons ×7. Top routes: World → United Kingdom ×1; United States of America → United Kingdom ×1; Germany → United Kingdom ×1; Other Foreign Countries → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1684" ;
+    skos:prefLabel "Petroleum Oil Spirit"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "7"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "refined_extract" ;
+    <ontology/sitcCode/#resource> "SITC4_32_33_Mineral_Fuels" ;
+    <ontology/substanceHead/#resource> "Petroleum Oil Spirit" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

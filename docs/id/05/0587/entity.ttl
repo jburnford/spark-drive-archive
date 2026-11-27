@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/05/0587/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Aniline"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:definition "a product obtained from coal-tar, the base of many beautiful dyes. These are numerous, there are black, blue, green, purple, violet, and yellow anilines; also rosaniline, fuchsine or magenta, azuline, etc.: see **COAL TAR DYES**. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 440]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q186414> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0587" ;
+    skos:prefLabel "Aniline"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n440>, <https://archive.org/details/dictionaryprac00mccu/page/n107> ;
+    <ontology/firstAttested/#resource> "1886"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1909"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "61"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/substanceHead/#resource> "Aniline" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

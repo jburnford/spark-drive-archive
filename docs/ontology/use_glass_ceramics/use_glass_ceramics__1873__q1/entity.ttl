@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__1873__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 108" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n108> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Cobalt Ore used in Glassmaking, Pottery & Porcelain: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 108"@en ;
+    <ontology/quoteText/#resource> "COBALT: a mineral, the oxides of which are used for colouring glass and porcelain blue."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0327__q3/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 203" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n203/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Oil Castor used in Pharmaceuticals & Druggists' Preparations: Watt (1908), Commercial Products of India, scan p. 203"@en ;
+    <ontology/quoteText/#resource> "Applied externally the powder, made into an ointment with castor oil, is held to be beneficial in hydrocele, and the burnt seeds reduced to a powder are regarded as a valuable DENTIFRICE, especially in spongy gums."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_prussian_blue/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Prussian Blue"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:definition "and PRUSSIATE OF POTASH, are two important articles of chemical manufacture, which must be considered together. The first is called by English chemists, _Ferrocyanodide of iron_, the _Cyanure ferroso-ferrique_ of Berzelius; _Eisenblausaures eisenoxyd_, or _eisencyanür_ + _eisencyanid_, Germ.; [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_prussian_blue" ;
+    skos:prefLabel "Prussian Blue"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0054 (Dye Stuffs Unenumerated). Attested in: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562), Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 816."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n317>, <https://archive.org/details/generalcommercia00mort/page/n816>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0054/#concept> ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_calico_printing/#concept>, <ontology/ind_varnish_paint_lacquer/#concept> .

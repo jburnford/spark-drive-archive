@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0673/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Grapes"@en ;
+    skos:broader <id/grp/grp_fruits_nuts_vegetables/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300379338>, <http://zbw.eu/stw/descriptor/14102-1> ;
+    skos:definition "the fruit of the vine, forming a large article of commerce in different countries, either ripe, dried as raisins, or when collected, for making wine. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 191]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q10978> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0673" ;
+    skos:prefLabel "Grapes"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n191>, <https://archive.org/details/dictionaryprac00mccu/page/n739> ;
+    <ontology/firstAttested/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "50"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_05_Vegetables_and_Fruit" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q191019>, <http://www.wikidata.org/entity/Q20634>, <http://www.wikidata.org/entity/Q30046> ;
+    <ontology/substanceHead/#resource> "Grapes" ;
+    <ontology/theodoridisBucket/#resource> "other_food_drink_spices" .

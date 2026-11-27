@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1989/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "pine logs (duty $3 and $2 per M. ft, board measure)"@en ;
+    skos:broader <id/grp/grp_hewn_round_timber/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_hewn_round_timber; processing_state=unspecified): Saw logs / shingle bolts / timber 'not sawn or split' are unsawn round wood; classifier filed them as sawn lumber. Layer-1 observations: 2 rows, 1888–1888. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×2. Units: M. Feet ×2. Top routes: Quebec → United States ×1; Quebec → All Countries ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1989" ;
+    skos:prefLabel "pine logs (duty $3 and $2 per M. ft, board measure)"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1888"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1889"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/substanceHead/#resource> "pine logs" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/15/1523/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Vermicelli"@en ;
+    skos:broader <id/grp/grp_cereals_grains/#concept> ;
+    skos:definition "the flour of a hard small-grained wheat, made into dough, and formed into smaller pipes or threads than macaroni, and then dried until hard. It is drawn out into slender cylinders, more or less tortuous, like worms, whence the Italian name. Macaroni is made of a less compact dough than vermicelli. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 412]"@en ;
+    skos:editorialNote "Curated classification (group=grp_cereals_grains; processing_state=manufactured): Farinaceous preparations (macaroni, vermicelli, crackers/biscuit, starch, dextrine) belong with Cereals; other starch headings (htc:1561, htc:1572) are already here. Layer-1 observations: 9 rows, 1800–1822. Series: KEW_CUST 5 ×8; KEW_CUST 4 ×1. Units: Lbs. (Pounds) ×9. Top routes: France → United Kingdom ×1; Italy → United Kingdom ×1; World → United Kingdom ×1; Russia → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1523" ;
+    skos:prefLabel "Vermicelli"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n412>, <https://archive.org/details/generalcommercia00mort/page/n981>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_grain" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1822"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "9"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_04_Cereals_and_Preparations" ;
+    <ontology/substanceHead/#resource> "Vermicelli" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

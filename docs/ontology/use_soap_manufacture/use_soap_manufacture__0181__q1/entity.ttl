@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_soap_manufacture/use_soap_manufacture__0181__q1/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 285" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n285> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Palm Oil used in Soap Manufacture: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 285"@en ;
+    <ontology/quoteText/#resource> "PALM-OIL: a dark-yellow oil obtained from the fruit of the oil-palm of the west coast of Africa, the Elais Guineensis. It is used with other solid oils for making soap and candles. Our imports amount to about 40,000 tons a year."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__doc_oxalic_acid__q2/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 20" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n20/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Oxalic Acid used in Calico Cloth & Calico Printing: Mortimer (1823), General Commercial Dictionary, scan p. 20"@en ;
+    <ontology/quoteText/#resource> "It is used by calico-printers, either pure or in the form of super-oxalate of potash, instead of citric acid; but the pure oxalic acid is apt to leave a stain on the linen, and the super-oxalate of potash is not sufficiently soluble in water to render the solution of a sufficient strength for many 10"@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

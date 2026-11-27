@@ -1,0 +1,22 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_german_millet/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "German Millet"@en ;
+    skos:broader <id/grp/grp_cereals_grains/#concept> ;
+    skos:definition "the *Setaria Germanica*, a grass cultivated in Southern Europe and India, the seed being employed as food where better grain cannot be had. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 183]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_german_millet" ;
+    skos:prefLabel "German Millet"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0421 (Grains Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 183."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n183> ;
+    <ontology/ghostAcresDomain/#resource> "food_grain" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_04_Cereals_and_Preparations" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/04/0421/#concept> .

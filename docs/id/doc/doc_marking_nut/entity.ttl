@@ -1,0 +1,22 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_marking_nut/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Marking Nut"@en ;
+    skos:broader <id/grp/grp_oilseeds/#concept> ;
+    skos:definition "a name for the seed of the *Semicarpus anacardium*: the pure black acrid juice of the pulp is universally employed in the East for marking cotton cloth, the colour being improved and prevented from running by its being mixed with lime water. The fleshy receptacle on which the seeds rest, is roasted and eaten, and tastes very like roasted apples. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 253]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_marking_nut" ;
+    skos:prefLabel "Marking Nut"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0012 (Seeds Unenumerated Other Sorts). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 253."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n253> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0012/#concept> .

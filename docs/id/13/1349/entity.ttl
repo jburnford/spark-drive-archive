@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1349/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Scammony"@en ;
+    skos:broadMatch <customs-1866/plant_root/#concept> ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:definition "a entharctic gum-resin from the root of *Convolvulus Scammonia*, which is seldom to be obtained pure, being largely adulterated with chalk. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 343]"@en ;
+    skos:editorialNote "Curated classification (group=grp_drugs_medicinal_botanicals): Named materia medica (castoreum, ginseng, cubebs, scammony, maidenhair, liquorice juice, quassia, cocculus indicus, serpentary, asafoetida, cantharides, hellebore, pipsissewa, ipecacuanha) left in the residual bin. Layer-1 observations: 13 rows, 1856–1866. Series: HCPP_Annual Statement of Trade ×13. Units: Lbs. (Pounds) ×13. Top routes: World → United Kingdom ×3; Other Parts → United Kingdom ×3; Turkey Proper → United Kingdom ×3; Syria and Palestine → United Kingdom ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1349" ;
+    skos:prefLabel "Scammony"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n343>, <https://archive.org/details/generalcommercia00mort/page/n898> ;
+    <ontology/firstAttested/#resource> "1856"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "13"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_54_Medicinal_Pharmaceutical" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q310388> ;
+    <ontology/substanceHead/#resource> "Scammony" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_pharmaceuticals/#concept> .

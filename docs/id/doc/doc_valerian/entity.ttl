@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_valerian/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Valerian"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:definition "the common name for a genus of plants which have stimulant and aromatic qualities. The true valerian (*Valeriana officinalis*), is a remarkable feline stimulant. All the species have some medicinal properties. *V. celtica* is largely employed as a substitute for spikenard (*Nardostachys Jatamansi*) by Eastern nations. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 409]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_valerian" ;
+    skos:prefLabel "Valerian"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 409, Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 975."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n409>, <https://archive.org/details/generalcommercia00mort/page/n975> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q157819>, <http://www.wikidata.org/entity/Q24853263> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> .

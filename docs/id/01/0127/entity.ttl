@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0127/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Tongues"@en ;
+    skos:broader <id/grp/grp_meats_provisions/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_meats_provisions; wd_term=NONE): Tongues exported from Quebec in kegs / by number and in lbs sit in the provisions list beside beef and pork (cf. htc:1378 'Meats viz Tongues' in the same CUST 4 ledgers); fish tongues are separately headed 'Tongues and Sounds' (htc:0513). Layer-1 observations: 257 rows, 1807–1897. Series: KEW_CUST 4 ×45; CSP_Canadian Trade and Navigation ×16; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×196. Units: Kegs ×126; Lbs. (Pounds) ×68; Number ×30; (no unit) ×18. Top routes: Canada → England ×27; Quebec QC → Great Britain ×26; Quebec → All Countries ×23; Quebec → Great Britain ×19."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0127" ;
+    skos:prefLabel "Tongues"@en ;
+    skos:scopeNote "Ambiguous heading: read as salted neats' (ox) tongues from the provisions context of the Quebec export lists and CUST 4 ('Meats viz Tongues'); cod tongues are entered separately as 'Tongues and Sounds'."@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n395>, <https://archive.org/details/b21780535/page/n514> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "257"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_01_Meat_and_Preparations" ;
+    <ontology/substanceHead/#resource> "Tongues" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

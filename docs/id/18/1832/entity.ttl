@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/18/1832/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Saccharum Saturni"@en ;
+    skos:broader <id/grp/grp_industrial_chemicals_alkalis/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_industrial_chemicals_alkalis): Named chemical (ethers, chloroform, chloral, collodion, methyl alcohol, calcium carbide, glycerine, sugar of lead, magnesia, argol = crude tartar, cordite) left in the residual bin. Layer-1 observations: 4 rows, 1800–1800. Series: KEW_CUST 5 ×4. Units: Lbs. (Pounds) ×4. Top routes: Holland → United Kingdom ×1; World → United Kingdom ×1; Prussia → United Kingdom ×1; Germany → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1832" ;
+    skos:prefLabel "Saccharum Saturni"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_51_52_Chemicals" ;
+    <ontology/substanceHead/#resource> "Saccharum Saturni" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

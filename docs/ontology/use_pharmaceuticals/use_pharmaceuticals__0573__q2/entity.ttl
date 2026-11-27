@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0573__q2/#resource> dcterms:bibliographicCitation "Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 147" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n147/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Spices Cloves used in Pharmaceuticals & Druggists' Preparations: Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 147"@en ;
+    <ontology/quoteText/#resource> "They appear almost vitrified by heat. DUTCH-DROPS, a balsam or popular nostrum, prepared with oil of turpentine, tincture of gualacum, nitric ether, succinic acid, and oil of cloves."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

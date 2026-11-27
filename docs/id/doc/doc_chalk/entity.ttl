@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_chalk/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Chalk"@en ;
+    skos:broader <id/grp/grp_industrial_minerals/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q183670> ;
+    skos:definition "(_Craie_, Fr.; _Kreide_, Germ.) A friable carbonate of lime, white, opaque, soft, dull, or without any appearance of polish in its fracture. Its specific gravity varies from 2·4 to 2·6. It usually contains a little silica, alumina, and oxide of iron. It may be purified by trituration, and elutriation. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_chalk" ;
+    skos:prefLabel "Chalk"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:1905 (Minerals Unenumerated). Attested in: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562), P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 93."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n93>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/sitcCode/#resource> "SITC4_27_Crude_Fertilizers_and_Minerals" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/19/1905/#concept> .

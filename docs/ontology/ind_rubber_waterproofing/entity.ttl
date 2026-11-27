@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_rubber_waterproofing/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "India-Rubber, Gutta-Percha & Waterproofing"@en ;
+    skos:definition "Vulcanized india-rubber goods, mackintosh waterproof fabrics, elastic webbing, and gutta-percha submarine telegraph cable insulation — combining caoutchouc and gutta-percha with sulphur, coal-tar naphtha, turpentine, white lead, zinc, and woven cotton/linen."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "India-Rubber, Gutta-Percha & Waterproofing"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0015/#concept>, <id/06/0696/#concept>, <id/12/1216/#concept>, <id/15/1504/#concept> .

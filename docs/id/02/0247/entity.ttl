@@ -1,0 +1,34 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0247/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Feathers"@en ;
+    skos:altLabel "feather"@en ;
+    skos:broader <id/sub/sub_animal_fib_wd_q50998618/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300011809> ;
+    skos:definition "(_Plumes_, Fr.; _Federn_, Germ.), constitute the subject of the manufacture of the _Plumassier_, a name given by the French (and also the English) to the artisan who prepares the feathers of certain birds for ornaments to the toilette of ladies and for military men, and to him also who combines the feathers in various forms. We shall content ourselves with describing the method of preparing ostrich feathers, as most others are prepared in the same way. Several qualities are distinguished in the feathers of the ostrich; those of the male, in particular, are whiter and more beautiful. Those upon the back and above the wings are preferred; next, those of the wings, and lastly, of the tail. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q50998618> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0247" ;
+    skos:prefLabel "Feathers"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n161>, <https://archive.org/details/dictionaryprac00mccu/page/n697>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1875"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "151"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_26_Textile_Fibres" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q5113> ;
+    <ontology/substanceHead/#resource> "Feathers" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

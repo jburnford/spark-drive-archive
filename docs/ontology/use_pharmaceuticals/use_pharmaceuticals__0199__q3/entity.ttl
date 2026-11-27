@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0199__q3/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 70" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n70/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bark Peruvian used in Pharmaceuticals & Druggists' Preparations: Watt (1908), Commercial Products of India, scan p. 70"@en ;
+    <ontology/quoteText/#resource> "But the metal is chiefly known in India in the form of the imported nitrate which is largely employed in the preparation of red-coloured flames in fireworks. ALKALOIDS (see Aconitum, Cinchona, Papaver, etc.)."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/14/1453/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Fowling Pieces"@en ;
+    skos:broader <id/grp/grp_metal_machinery_hardware/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_metal_machinery_hardware; processing_state=manufactured): Named tool, ironware, arm or instrument left in the residual bin. Layer-1 observations: 11 rows, 1881–1881. Series: HCPP_Annual Statement of Trade ×11. Units: Number ×11. Top routes: United Kingdom → Brazil ×1; United Kingdom → France ×1; United Kingdom → World ×1; United Kingdom → British North America ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1453" ;
+    skos:prefLabel "Fowling Pieces"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1881"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1881"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "11"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_69_7_Metalwares_and_Machinery" ;
+    <ontology/substanceHead/#resource> "Fowling Pieces" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

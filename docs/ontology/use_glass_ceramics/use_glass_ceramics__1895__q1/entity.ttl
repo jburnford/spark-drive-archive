@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__1895__q1/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 547" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n547> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Kelp used in Glassmaking, Pottery & Porcelain: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 547"@en ;
+    <ontology/quoteText/#resource> "KELP: in the glass trade, a term used for a sort of potash made use of in many of the glass-works, particularly for the green glass. It is the calcined ashes of a plant called by the same name; and in some places \"sea-tags,\" or \"laces,\" a sort of thick-leaved fucus or sea-wrack. This plant is thrown on the rocks and shores in great quantities, and in the sum..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

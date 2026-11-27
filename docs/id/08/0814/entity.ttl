@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/08/0814/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Paper Making Materials Other Paper Making Materials"@en ;
+    skos:broader <id/grp/grp_wood_pulp_fuel/#concept> ;
+    skos:editorialNote "Curated classification (wd_term=NONE): Anchor contradicted the heading ('not on paper' / 'Other Paper Making Materials' are not paper). Layer-1 observations: 37 rows, 1896–1906. Series: HCPP_Annual Statement of Trade ×37. Units: Tons ×37. Top routes: Denmark → United Kingdom ×3; France → United Kingdom ×3; World → United Kingdom ×3; Belgium → United Kingdom ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0814" ;
+    skos:prefLabel "Paper Making Materials Other Paper Making Materials"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1896"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "37"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_25_Pulp_and_Waste_Paper" ;
+    <ontology/substanceHead/#resource> "Paper Making Materials Other Paper Making Materials" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

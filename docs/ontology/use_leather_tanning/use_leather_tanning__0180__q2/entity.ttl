@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0180__q2/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section MYROBALANS" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/15191> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Myrabolans used in Leather Tanning, Tawing & Currying: P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section MYROBALANS"@en ;
+    <ontology/quoteText/#resource> "MYROBALANS: This is a name applied to the almond-like kernels of a nut or dried fruit of the plum kind, of which there are several sorts known in the East. They are the produce of various species of Terminalia, as T. Bellerica, chebula, citrina, and angustifolia. They vary from the size of olives to that of gall nuts, and have a rough, bitter, and unpleasant..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,22 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_broom_corn/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Broom Corn"@en ;
+    skos:broader <id/grp/grp_bast_plant_fibres/#concept> ;
+    skos:definition "the *Sorghum dora*, which is cultivated for its brush to make brooms; the grain of the panicles forms excellent food for poultry. In many of the United States of America it is extensively grown—the annual produce of the plant, in the State of New York, is valued at one million sterling. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 64]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_broom_corn" ;
+    skos:prefLabel "Broom Corn"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0822 (Esparto and other Vegetable Fibres for making Paper). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 64, P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854, Project Gutenberg #15191)."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n64>, <https://www.gutenberg.org/ebooks/15191> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_04_Cereals_and_Preparations" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/08/0822/#concept> .

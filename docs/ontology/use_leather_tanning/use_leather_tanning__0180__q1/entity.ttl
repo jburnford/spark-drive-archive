@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0180__q1/#resource> dcterms:bibliographicCitation "J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 999" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n999> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Myrabolans used in Leather Tanning, Tawing & Currying: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 999"@en ;
+    <ontology/quoteText/#resource> "MYROBALANS: The dried fruits of different varieties of terminalia. The fruit, varying from the size of an olive to that of a gall-nut, consists of a white pentangular nut, covered by a substance about 2 lines in thickness. The latter, which is the only valuable part, is mucilaginous and highly astringent; and being separated from the nut is employed, with th..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

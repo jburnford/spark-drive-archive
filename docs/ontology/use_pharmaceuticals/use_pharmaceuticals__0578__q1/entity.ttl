@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0578__q1/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 975" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n975> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Turpentine Oil used in Pharmaceuticals & Druggists' Preparations: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 975"@en ;
+    <ontology/quoteText/#resource> "TURPENTINE: Oil of, (GER. Terpentinöl. DU. Terpentynolie. DA. Terpentinolja. SW. Terpentinaljo. FR. Eau de raze, Huile de terebenthine, Huile d'étherée. IT. Acqua di rasa. SR. Aguarras. PORT. Aguarras. RUS. Skipidarnoe masslo. POL. Oley Terpentinowy,) is the essential oil drawn from turpentine by distillation: there are two sorts of this oil; the best red, a..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

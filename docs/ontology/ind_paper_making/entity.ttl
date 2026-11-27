@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_paper_making/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Paper Making & Cardboard"@en ;
+    skos:definition "Paper, pasteboard, and millboard manufacture — pulping linen/cotton rags, esparto grass, wood pulp, straw, hemp, and jute, bleached with chloride of lime, sized with rosin/alum/gelatine/starch, and loaded or tinted with kaolin, smalt, and ultramarine."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Paper Making & Cardboard"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0066/#concept>, <id/01/0168/#concept>, <id/02/0226/#concept>, <id/05/0529/#concept>, <id/05/0557/#concept>, <id/05/0562/#concept>, <id/08/0807/#concept>, <id/08/0822/#concept>, <id/10/1015/#concept>, <id/13/1322/#concept>, <id/19/1932/#concept> .

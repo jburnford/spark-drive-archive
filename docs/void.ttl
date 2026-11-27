@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<void.ttl#dataset> a void:Dataset ;
+    dcterms:title "Open Empire historical trade vocabulary and industry network"@en ;
+    foaf:homepage <https://jimclifford.ca/spark-drive-archive/> ;
+    void:dataDump <data/open-empire.ttl.gz> ;
+    void:triples 69869 ;
+    void:exampleResource <id/00/0056/#concept> ;
+    void:vocabulary <http://www.w3.org/2004/02/skos/core#> .

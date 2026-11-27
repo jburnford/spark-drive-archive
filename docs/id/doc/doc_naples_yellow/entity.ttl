@@ -1,0 +1,22 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_naples_yellow/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Naples Yellow"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:definition "(**GER.** *Napelgelb*, *Neapolitanisch gelb*. **DU.** *Napels geel*. **DA.** and **SW.** *Neapelgult*. **FR.** *Jaune de Naples*. **IT.** *Giallolino*. **SP.** *Amarillo de Napoles*. **PORT.** *Amarelo de Napoles*. **RUS.** *Spelt Neapolitanskaja*.) According to Professor Beckmann, this colour is prepared by calcining lead with antimony and potash in a reverboratory furnace. The proportions are different, but the antimony appears never to exceed four-fifths of the lead, or be less than half; and the potash varies from two-fifths of the weight of the metals to an eighteenth. Sometimes also common salt is added. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 654]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_naples_yellow" ;
+    skos:prefLabel "Naples Yellow"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0054 (Dye Stuffs Unenumerated). Attested in: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 654, P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 269."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n269>, <https://archive.org/details/generalcommercia00mort/page/n654>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0054/#concept> .

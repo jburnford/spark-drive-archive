@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/14/1402/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Felspar"@en ;
+    skos:broader <id/grp/grp_industrial_minerals/#concept> ;
+    skos:definition "a silicious mineral, of which there are several varieties, displaying elegant and varied iridescent colours. Cornish stone or porcelain clay is one of the products of decomposed felspar. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 162]"@en ;
+    skos:editorialNote "Curated classification (group=grp_industrial_minerals): Named mineral (slates, felspar, barytes, kieselguhr) left in the residual bin. Layer-1 observations: 12 rows, 1893–1901. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×9. Units: Tons ×12. Top routes: Canada → United States ×3; Canada → All Countries ×3; Ontario → All Countries ×3; Canada → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1402" ;
+    skos:prefLabel "Felspar"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n162>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1893"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1901"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "12"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_27_Crude_Fertilizers_and_Minerals" ;
+    <ontology/substanceHead/#resource> "Felspar" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

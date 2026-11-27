@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/20/2062/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Butter and Milk Mixtures of"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_1162>, <http://vocab.getty.edu/aat/300389819>, <http://www.wikidata.org/entity/Q34172> ;
+    skos:broader <id/sub/sub_dairy_eggs_wd_q34172/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "2062" ;
+    skos:prefLabel "Butter and Milk Mixtures of"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "dairy_processed" ;
+    <ontology/sitcCode/#resource> "SITC4_02_Dairy_and_Eggs" ;
+    <ontology/substanceHead/#resource> "Butter and Milk Mixtures of" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

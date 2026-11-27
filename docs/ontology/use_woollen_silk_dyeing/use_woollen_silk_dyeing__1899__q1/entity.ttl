@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_woollen_silk_dyeing/use_woollen_silk_dyeing__1899__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. FEATHERS" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Weld used in Woollen, Silk & Worsted Dyeing: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. FEATHERS"@en ;
+    <ontology/quoteText/#resource> "After fifteen days’ exposure, they are cleared with soap as above described. Rose colour or pink, is given with safflower and lemon juice. Deep red, by a boiling hot bath of Brazil wood, after aluming. Crimson. The above deep red feathers are passed through a bath of cudbear. Prune de Monsieur. The deep red is passed through an alkaline bath. Blues of every ..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

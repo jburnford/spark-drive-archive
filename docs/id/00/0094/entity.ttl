@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0094/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Soap"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300014329>, <http://www.wikidata.org/entity/Q34396>, <http://zbw.eu/stw/descriptor/14738-5> ;
+    skos:broader <id/sub/sub_waxes_soap_wd_q34396/#concept> ;
+    skos:definition "a detergent substance, soft soap being made of fish oil, tallow, and a ley of caustic potash; hard, from almost any fatty matter, in combination with soda; white or mottled soaps contain no resin. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 363]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0094" ;
+    skos:prefLabel "Soap"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n363>, <https://archive.org/details/dictionaryprac00mccu/page/n1430>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "337"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_55_Oils_Perfumes_Cleansing" ;
+    <ontology/substanceHead/#resource> "Soap" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

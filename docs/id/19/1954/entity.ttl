@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1954/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Lintseed Oil"@en ;
+    skos:broader <id/grp/grp_vegetable_oils/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_vegetable_oils): Named vegetable oil left in the residual bin (coconut oil; 'lintseed' = linseed oil). Layer-1 observations: 2 rows, 1820–1822. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×2. Units: Barrels ×1; Kegs ×1. Top routes: Quebec QC → Great Britain ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1954" ;
+    skos:prefLabel "Lintseed Oil"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1820"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1822"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "refined_extract" ;
+    <ontology/sitcCode/#resource> "SITC4_42_Fixed_Vegetable_Fats_and_Oils" ;
+    <ontology/substanceHead/#resource> "Lintseed Oil" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

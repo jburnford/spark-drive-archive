@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/08/0854/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Fertilizers"@en ;
+    skos:broader <id/grp/grp_fertilizers_animal_materials/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_2867>, <http://vocab.getty.edu/aat/300015131>, <http://zbw.eu/stw/descriptor/13427-6> ;
+    skos:definition "a manure; an application to the soil, organic or inorganic. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 163]"@en ;
+    skos:editorialNote "Curated classification (group=grp_fertilizers_animal_materials): Fertilizers / manures left in the residual bin (cf. Manure Unenumerated, htc:0448). Layer-1 observations: 34 rows, 1889–1897. Series: CSP_Canadian Trade and Navigation ×2; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×32. Units: (no unit) ×34. Top routes: Quebec → All Countries ×5; Canada → United States ×4; Canada → All Countries ×4; Ontario → All Countries ×4."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q83323> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0854" ;
+    skos:prefLabel "Fertilizers"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n163> ;
+    <ontology/firstAttested/#resource> "1889"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "34"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Fertilizers" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

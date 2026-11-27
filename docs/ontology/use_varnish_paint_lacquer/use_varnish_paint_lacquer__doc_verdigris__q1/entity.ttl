@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__doc_verdigris__q1/#resource> dcterms:bibliographicCitation "J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1621" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1621> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Verdigris used in Varnish, Paint & Lacquer: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 1621"@en ;
+    <ontology/quoteText/#resource> "VERDIGRIS: (Ger. grünspan; Fr. vert-de-gris, verdet; Ital. verderame; Span. cardenillo, verdin, verde-gris; Russ. jar). A kind of rust of copper, of a beautiful bluish-green colour, formed from the corrosion of copper by fermented vegetables. Its specific gravity is 1.78. Its taste is disagreeably metallic: and, like all the compounds into which copper enter..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

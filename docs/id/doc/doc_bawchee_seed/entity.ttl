@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_bawchee_seed/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Bawchee Seed"@en ;
+    skos:broader <id/grp/grp_oilseeds/#concept> ;
+    skos:definition "an oil seed, the produce of *Psoralea corylifolia*, recently imported in small quantities from India. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 43]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_bawchee_seed" ;
+    skos:prefLabel "Bawchee Seed"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0012 (Seeds Unenumerated Other Sorts). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 43."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n43> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/sitcCode/#resource> "SITC4_22_Oil_Seeds_and_Oleaginous_Fruits" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q3595165> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0012/#concept> .

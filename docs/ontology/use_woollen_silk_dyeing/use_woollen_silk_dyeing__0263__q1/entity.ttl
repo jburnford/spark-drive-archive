@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_woollen_silk_dyeing/use_woollen_silk_dyeing__0263__q1/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. SILK MANUFACTURE" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Silk Raw used in Woollen, Silk & Worsted Dyeing: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. SILK MANUFACTURE"@en ;
+    <ontology/quoteText/#resource> "SILK MANUFACTURE. (Fabrique de soie, Fr.; Seidenfabrik, Germ.) This may be divided into two branches: 1. the production of raw silk; 2. its filature and preparation in the mill, for the purposes of the weaver and other textile artisans."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

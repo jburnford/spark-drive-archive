@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1951/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Pig"@en ;
+    skos:broadMatch <customs-1866/animal/#concept> ;
+    skos:broader <id/grp/grp_live_food_animals/#concept> ;
+    skos:definition "a well-known domestic animal whose valuable commercial products are noticed under Bacon, Pork, Lard, &c. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 298]"@en ;
+    skos:editorialNote "Curated fields — definition excerpt: Unrelated homonym senses in the same dictionary entry removed."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1951" ;
+    skos:prefLabel "Pig"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n298> ;
+    <ontology/firstAttested/#resource> "1809"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_animal" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1820"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "live" ;
+    <ontology/sitcCode/#resource> "SITC4_00_Live_Animals" ;
+    <ontology/substanceHead/#resource> "Pig" ;
+    <ontology/theodoridisBucket/#resource> "animals_and_animal_products" .

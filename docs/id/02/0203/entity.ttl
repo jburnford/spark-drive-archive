@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0203/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Wood and Timber Dye Woods Fustic"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_8421>, <http://vocab.getty.edu/aat/300011914>, <http://www.wikidata.org/entity/Q287>, <http://zbw.eu/stw/descriptor/14150-4> ;
+    skos:broader <id/sub/sub_natural_dy_wd_q287/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_natural_dyestuffs; land_basis=terrestrial_forest): Heading is explicitly a dyewood (fustic, Brazil wood, sapan, Nicaragua wood, red/Guinea wood, braziletto); filed with Dye Woods Logwood (htc:0096) rather than building timber. Layer-1 observations: 176 rows, 1800–1869. Series: HCPP_Annual Statement of Trade ×109; HCPP_Other ×54; KEW_CUST 4 ×7; KEW_CUST 5 ×6. Units: Tons ×169; Tons.Hundredweights.Quarters.Pounds ×7. Top routes: World → United Kingdom ×15; Mexico → United Kingdom ×12; Brazil → United Kingdom ×11; New Granada → United Kingdom ×10."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0203" ;
+    skos:prefLabel "Wood and Timber Dye Woods Fustic"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1869"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "176"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/substanceHead/#resource> "Wood and Timber Dye Woods Fustic" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_calico_printing/#concept>, <ontology/ind_woollen_silk_dyeing/#concept> .

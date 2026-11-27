@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0370/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Linen Yarn"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300014252>, <http://www.wikidata.org/entity/Q49007>, <http://zbw.eu/stw/descriptor/14885-6> ;
+    skos:broader <id/sub/sub_yarns_cord_wd_q49007/#concept> ;
+    skos:definition "spun flax. Besides our large home consumption, we exported, in 1856, about 25 million pounds of linen yarn. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 241]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0370" ;
+    skos:prefLabel "Linen Yarn"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n241>, <https://archive.org/details/b21780535/page/n481> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q1426327> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "102"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_65_Textile_Yarn_and_Fabrics" ;
+    <ontology/substanceHead/#resource> "Linen Yarn" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

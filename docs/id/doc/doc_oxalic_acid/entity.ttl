@@ -1,0 +1,25 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_oxalic_acid/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Oxalic Acid"@en ;
+    skos:broader <id/grp/grp_industrial_chemicals_alkalis/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q184832> ;
+    skos:definition "(_Acide oxalique_, Fr.; _Sauerkleesaüre_, Germ.); which is the object of a considerable chemical manufacture. It is usually prepared upon the small scale by digesting four parts of nitric acid of specific gravity 1·4, upon one part of sugar, in a glass retort; but on the large scale, in a series of salt-glazed stoneware pipkins, two-thirds filled, and set in a water bath. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_oxalic_acid" ;
+    skos:prefLabel "Oxalic Acid"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0506 (Chemical Manufactures and Products Unenumerated). Attested in: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562), P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 281."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n281>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/sitcCode/#resource> "SITC4_51_52_Chemicals" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q158576> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/05/0506/#concept> ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_calico_printing/#concept> .

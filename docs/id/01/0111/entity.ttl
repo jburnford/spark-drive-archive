@@ -1,0 +1,34 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0111/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Coal"@en ;
+    skos:broader <id/sub/sub_fossil_fue_wd_q24489/#concept> ;
+    skos:closeMatch <http://zbw.eu/stw/descriptor/14200-1> ;
+    skos:definition "fossil fuel, which enters largely into commerce for domestic, manufacturing, and propelling purposes for steam-engines, on land and on sea. At the present time not less than 40,000,000 tons of coal are annually raised in the United Kingdom. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 107]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q24489> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0111" ;
+    skos:prefLabel "Coal"@en ;
+    skos:related <id/06/0661/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n107>, <https://archive.org/details/b31361584/page/n344> ;
+    <ontology/firstAttested/#resource> "1837"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "283"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_32_33_Mineral_Fuels" ;
+    <ontology/substanceHead/#resource> "Coal" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_metallurgy_tinplate/#concept> .

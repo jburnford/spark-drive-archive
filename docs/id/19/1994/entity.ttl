@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1994/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Mittens"@en ;
+    skos:broader <id/grp/grp_woven_fabrics_apparel/#concept> ;
+    skos:definition "MITTS, thin ladies' gloves without fingers, of silk, net or lace; men's warm wrappings for the hands made of cloth, worsted, &c., differing from gloves in having no separate divisions for the fingers. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 261]"@en ;
+    skos:editorialNote "Curated classification (group=grp_woven_fabrics_apparel; processing_state=manufactured): Named textile/apparel article (woollens, moccasins, mittens, wrought inkle = linen tape per Simmonds 1892 s.v. INKLE, floorcloth) left in the residual bin. Layer-1 observations: 1 rows, 1807–1807. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×1. Units: Pairs ×1. Top routes: Quebec QC → Great Britain ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1994" ;
+    skos:prefLabel "Mittens"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n261> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_65_84_85_Textiles_Apparel_Footwear" ;
+    <ontology/substanceHead/#resource> "Mittens" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

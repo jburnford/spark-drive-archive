@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/04/0448/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Manure Unenumerated"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300255447>, <http://www.wikidata.org/entity/Q185716> ;
+    skos:broader <id/grp/grp_fertilizers_animal_materials/#concept> ;
+    skos:definition "any thing applied to fertilize land. In this and some European countries where the soil has been much exhausted by repeated cropping, a large trade is carried on in natural and artificial manures. Several of these, as guano, super-phosphate of lime, &c, are noticed under their separate heads. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 251]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0448" ;
+    skos:prefLabel "Manure Unenumerated"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n251> ;
+    <ontology/firstAttested/#resource> "1871"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "animal_husbandry" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_pasture" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "84"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Manure" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

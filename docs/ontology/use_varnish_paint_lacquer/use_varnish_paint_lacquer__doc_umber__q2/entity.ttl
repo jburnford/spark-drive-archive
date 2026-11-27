@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_varnish_paint_lacquer/use_varnish_paint_lacquer__doc_umber__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. UMBER" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Umber used in Varnish, Paint & Lacquer: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. UMBER"@en ;
+    <ontology/quoteText/#resource> "UMBER: is a massive mineral; fracture large and flat; conchoidal in the great, very fine earthy in the small; dull; colour, liver, chestnut,--dark yellowish brown; opaque; does not soil, but writes; adheres strongly to the tongue, feels a little rough and meagre, and is very soft; specific gravity 2·2. It occurs in beds with brown jasper in the Island of Cyp..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

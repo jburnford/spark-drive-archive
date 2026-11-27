@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/10/1023/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Mineral Pigment Iron Oxides Ochres &c"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_natural_dyestuffs; processing_state=unspecified; land_basis=mineral): Mineral pigments (iron-oxide ochres; zinc white) belong with Painters' Colours and Pigments, not smelted metals. Layer-1 observations: 24 rows, 1812–1901. Series: CSP_Canadian Trade and Navigation ×5; KEW_CUST 4 ×4; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×14. Units: Lbs. (Pounds) ×19; Hundredweights.Quarters.Pounds ×4; Casks ×1. Top routes: Canada → United States ×4; Canada → All Countries ×3; Quebec → All Countries ×3; Canada → England ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1023" ;
+    skos:prefLabel "Mineral Pigment Iron Oxides Ochres &c"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1812"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1901"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "24"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/substanceHead/#resource> "Mineral Pigment Iron Oxides Ochres &c" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_soap_manufacture/#concept>, <ontology/ind_varnish_paint_lacquer/#concept> .

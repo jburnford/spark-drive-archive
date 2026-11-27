@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/14/1484/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Manuscripts"@en ;
+    skos:altLabel "manuscript"@en ;
+    skos:broader <id/grp/grp_glass_ceramics_paper_woodware/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300028569>, <http://www.wikidata.org/entity/Q87167> ;
+    skos:definition "a letter or document written by the hand. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 251]"@en ;
+    skos:editorialNote "Curated classification (group=grp_glass_ceramics_paper_woodware; processing_state=manufactured; wd_term=manuscript; wd_relation=skos:closeMatch): Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin. Verified Wikidata anchor retained as closeMatch (the heading is the plural trade article). Layer-1 observations: 10 rows, 1825–1850. Series: KEW_CUST 4 ×10. Units: Lbs. (Pounds) ×10. Top routes: Canada → England ×10."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1484" ;
+    skos:prefLabel "Manuscripts"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n251> ;
+    <ontology/firstAttested/#resource> "1825"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1850"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "10"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_64_66_89_Paper_Glass_Misc_Manufactures" ;
+    <ontology/substanceHead/#resource> "Manuscripts" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

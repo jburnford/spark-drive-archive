@@ -1,0 +1,9 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/mappings/#resource> dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    rdfs:label "Commodity mappings"@en ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/jburnford/spark-drive-archive/main/human_trade/layer1_human/grounding/commodities_mappings.sssom.tsv> .

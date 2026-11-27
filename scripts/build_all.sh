@@ -14,5 +14,6 @@ PY="${PYTHON:-python3}"
 "$PY" scripts/unpack_unenumerated_from_books.py          # catalogue of unenumerated commodities
 "$PY" scripts/build_end_use_network.py                   # end-use network and evidence records
 "$PY" human_trade/scripts/build_skos_html_inspector.py   # HTML inspector and docs/index.html
+"$PY" scripts/build_entity_pages.py
 "$PY" scripts/build_manifest.py
 "$PY" scripts/verify.py

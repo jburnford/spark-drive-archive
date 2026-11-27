@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_glass_ceramics/use_glass_ceramics__0136__q2/#resource> dcterms:bibliographicCitation "Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 788" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n788> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Pearl and Pot Ashes used in Glassmaking, Pottery & Porcelain: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 788"@en ;
+    <ontology/quoteText/#resource> "POT-ASH: (GER. Pottasche. DU. Potas. DA. Potaske. SW. Potaska. FR. Potasse. IT. Potassa. SP. and PORT. Potassa. RUS. Potash. POL. Potasz. LAT. Cineres clavellati,) an alkaline salt, chiefly procured by lixiviation, from the ashes of burnt wood, and other vegetable substances. When pure, it is in form of a whitish powder, of a highly acrid taste, and quickly ..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

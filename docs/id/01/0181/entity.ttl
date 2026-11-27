@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0181/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Palm Oil"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_5514>, <http://vocab.getty.edu/aat/300390962>, <http://www.wikidata.org/entity/Q231458>, <http://zbw.eu/stw/descriptor/18077-3> ;
+    skos:broader <id/sub/sub_vegetable__wd_q231458/#concept> ;
+    skos:definition "a dark-yellow oil obtained from the fruit of the oil-palm of the west coast of Africa, the *Elais Guineensis*. It is used with other solid oils for making soap and candles. Our imports amount to about 40,000 tons a year. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 285]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0181" ;
+    skos:prefLabel "Palm Oil"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n285>, <https://archive.org/details/dictionaryprac00mccu/page/n1098>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1790"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1901"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "189"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "refined_extract" ;
+    <ontology/sitcCode/#resource> "SITC4_42_Fixed_Vegetable_Fats_and_Oils" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q165403> ;
+    <ontology/substanceHead/#resource> "Palm Oil" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_soap_manufacture/#concept> .

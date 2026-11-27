@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/18/1888/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Match Blocks"@en ;
+    skos:broader <id/grp/grp_hewn_round_timber/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_hewn_round_timber): Match blocks, ash bolts and coach spokes are rough-wrought wood. Layer-1 observations: 4 rows, 1897–1897. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×4. Units: (no unit) ×4. Top routes: Canada → United States ×1; Canada → All Countries ×1; Ontario → All Countries ×1; Quebec → All Countries ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1888" ;
+    skos:prefLabel "Match Blocks"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1897"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/substanceHead/#resource> "Match Blocks" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

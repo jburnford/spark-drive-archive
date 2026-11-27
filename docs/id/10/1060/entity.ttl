@@ -1,0 +1,28 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/10/1060/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Piling"@en ;
+    skos:broader <id/grp/grp_hewn_round_timber/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_hewn_round_timber): Hop poles, hoop/telegraph poles and piling are round timber; classifier matched 'hop' (the brewing crop) or left the heading in residuals. Layer-1 observations: 23 rows, 1893–1897. Series: CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×23. Units: (no unit) ×23. Top routes: Canada → United States ×3; Canada → All Countries ×3; Quebec → All Countries ×3; Nova Scotia → All Countries ×3."@en, "Curated fields — definition drop: 'Piling' as stowage of staves; heading is timber piles (Canada 1893–97)."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1060" ;
+    skos:prefLabel "Piling"@en ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n494> ;
+    <ontology/firstAttested/#resource> "1893"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1898"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "23"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/substanceHead/#resource> "Piling" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

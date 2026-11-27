@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0275__q3/#resource> dcterms:bibliographicCitation "Watt (1908), Commercial Products of India, scan p. 201" ;
+    dcterms:source <https://archive.org/details/b31361584/page/n201/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Cutch used in Leather Tanning, Tawing & Currying: Watt (1908), Commercial Products of India, scan p. 201"@en ;
+    <ontology/quoteText/#resource> "It seems possible that if the bark or wood were utilised as in preparing Catechu, a pure tanning extract might be obtained."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

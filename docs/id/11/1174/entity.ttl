@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/11/1174/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Iron Anchors Grapnels Chains and Cables"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300219429>, <http://www.wikidata.org/entity/Q168432> ;
+    skos:broader <id/grp/grp_metal_machinery_hardware/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_metal_machinery_hardware): Iron anchors, grapnels, chains and (chain) cables are ironwork; classifier matched 'cables' as cordage. Layer-1 observations: 18 rows, 1837–1881. Series: HCPP_Annual Statement of Trade ×16; CSP_Canadian_Exports_BlankSeries (inferred, series not printed) ×2. Units: Tons ×16; Number ×2. Top routes: Montreal and Quebec → British North America ×2; United Kingdom → Denmark ×1; United Kingdom → France ×1; United Kingdom → Holland ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1174" ;
+    skos:prefLabel "Iron Anchors Grapnels Chains and Cables"@en ;
+    skos:related <id/03/0305/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1837"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1881"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q677> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/materialConcept/#resource> <id/03/0305/#concept> ;
+    <ontology/observationCount/#resource> "18"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_69_7_Metalwares_and_Machinery" ;
+    <ontology/substanceHead/#resource> "Iron Anchors Grapnels Chains and Cables" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_chocolate_confectionery/use_chocolate_confectionery__0360__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. CHLORINE" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Sugar used in Chocolate & Confectionery: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. CHLORINE"@en ;
+    <ontology/quoteText/#resource> "The chocolate paste has usually in France a little vanilla incorporated with it, and a considerable quantity of sugar, which varies from one third of its weight to equal parts."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

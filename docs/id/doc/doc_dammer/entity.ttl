@@ -1,0 +1,25 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_dammer/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Dammer"@en ;
+    skos:altLabel "Gum Dammar"@en ;
+    skos:broader <id/grp/grp_gums_resins_naval_stores/#concept> ;
+    skos:definition "a valuable resin of two kinds, obtained in India, the white from the *Valeriana Indica* and *Shorea robusta*, and the black from *Canarium commune*: a name sometimes given in Scotland to a miner. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 132]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_dammer" ;
+    skos:prefLabel "Dammer"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0220 (Gum Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 132."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n132> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q15246728>, <http://www.wikidata.org/entity/Q909828> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/02/0220/#concept> ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_varnish_paint_lacquer/#concept> .

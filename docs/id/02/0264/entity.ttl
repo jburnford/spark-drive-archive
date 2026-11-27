@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0264/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Wax"@en ;
+    skos:broader <id/sub/sub_waxes_soap_wd_q124695/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300014585> ;
+    skos:definition "(_Cire_, Fr.; _Wachs_, Germ.); is the substance which forms the cells of bees. It was long supposed to be derived from the pollen of plants, swallowed by these insects, and merely voided under this new form; but it has been proved by the experiments, first of Mr. Hunter, and more especially of M. Huber, to be the peculiar secretion of a certain organ, which forms a part of the small sacs, situated on the sides of the median line of the abdomen of the bee. On raising the lower segments of the abdomen, these sacs may be observed, as also scales or spangles of wax, arranged in pairs upon each segment. There are none, however, under the rings of the males and the queen. Each individual has only eight wax sacs, or pouches; [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q124695> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0264" ;
+    skos:prefLabel "Wax"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n420>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1871"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fats_oils_soap" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "145"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_55_Oils_Perfumes_Cleansing" ;
+    <ontology/substanceHead/#resource> "Wax" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

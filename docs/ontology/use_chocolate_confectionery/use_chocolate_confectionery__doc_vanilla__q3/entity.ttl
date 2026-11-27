@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_chocolate_confectionery/use_chocolate_confectionery__doc_vanilla__q3/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section VANILLA" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/15191> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Vanilla used in Chocolate & Confectionery: P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section VANILLA"@en ;
+    <ontology/quoteText/#resource> "VANILLA: The fleshy, pod-like, odoriferous fruit of different species of Epidendrum constitute the substance called vanilla, which is used in confectionery for giving a delicious perfume to chocolate, liqueurs, &c. As an aromatic it is much sought after by confectioners, for flavoring ices and creams; and also by perfumers, liqueurists, and distillers. The b..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0660/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Skins Undressed Mink"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_3609>, <http://vocab.getty.edu/aat/300011844>, <http://www.wikidata.org/entity/Q3291230>, <http://zbw.eu/stw/descriptor/14127-6> ;
+    skos:broader <id/sub/sub_raw_hides__wd_q3291230/#concept> ;
+    skos:editorialNote "Curated fields — definition drop: Tanners' definition of small-animal skins (sheep, goats, dogs) attached to bear/wolf/otter/mink fur pelts. | bridge_1866 set_relation: Species-specific or qualified heading is narrower than the 1866 concept (consistent with sibling headings)."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0660" ;
+    skos:prefLabel "Skins Undressed Mink"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n359>, <https://archive.org/details/dictionaryprac00mccu/page/n1765>, <https://archive.org/details/dictionaryprac00mccu/page/n1910> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_wild_hunted" ;
+    <ontology/lastAttested/#resource> "1859"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "51"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_unprocessed" ;
+    <ontology/sitcCode/#resource> "SITC4_21_Hides_Skins_Furskins_Raw" ;
+    <ontology/substanceHead/#resource> "Skins" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

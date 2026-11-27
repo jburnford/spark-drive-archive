@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0911__q1/#resource> dcterms:bibliographicCitation "Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 225" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n225/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Antimony Ore used in Pharmaceuticals & Druggists' Preparations: Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 225"@en ;
+    <ontology/quoteText/#resource> "Also the name for a brick-red mineral powder, a fictitious sulphuret of antimony, for dyeing, and formerly used in medicine."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

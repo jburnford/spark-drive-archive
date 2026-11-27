@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/08/0886/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Zinc or Spelter Ore"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300152583>, <http://www.wikidata.org/entity/Q102798> ;
+    skos:broader <id/sub/sub_metallic_o_wd_q102798/#concept> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0886" ;
+    skos:prefLabel "Zinc or Spelter Ore"@en ;
+    skos:related <id/04/0484/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1831"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1881"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q758> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "31"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "raw_ore" ;
+    <ontology/sitcCode/#resource> "SITC4_28_Metalliferous_Ores" ;
+    <ontology/substanceHead/#resource> "Zinc or Spelter Ore" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

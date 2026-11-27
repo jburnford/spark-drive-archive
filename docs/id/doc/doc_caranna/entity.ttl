@@ -1,0 +1,22 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_caranna/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Caranna"@en ;
+    skos:broader <id/grp/grp_gums_resins_naval_stores/#concept> ;
+    skos:definition "is a tenacious, resinous concrete; while fresh, it is ductile like pitch, but hard and friable when it has been kept for any time; outwardly of an ash colour inclining to black; inwardly of an obscure brown. It is brought to us from New Spain and other parts of America in little masses rolled up in leaves of flag. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 201]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_caranna" ;
+    skos:prefLabel "Caranna"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0220 (Gum Unenumerated). Attested in: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 201."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n201> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/02/0220/#concept> .

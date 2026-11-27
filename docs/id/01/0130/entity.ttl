@@ -1,0 +1,36 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0130/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Plumbago"@en ;
+    skos:altLabel "black lead"@en, "graphite"@en ;
+    skos:broadMatch <customs-1866/mineral/#concept> ;
+    skos:broader <id/sub/sub_industrial_wd_q5309/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300011098>, <http://zbw.eu/stw/descriptor/30374-4> ;
+    skos:definition "an emburet of iron commonly known as black lead, and also called graphite, used for making crucibles and leads for pencils; we import large quantities from Ceylon. A genus of plants with acrid, caustic properties. *See* **LEAD-WORK**. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 305]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q5309> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0130" ;
+    skos:prefLabel "Plumbago"@en ;
+    skos:related <id/12/1267/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n305>, <https://archive.org/details/dictionaryprac00mccu/page/n212> ;
+    <ontology/firstAttested/#resource> "1861"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1909"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "253"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_27_Crude_Fertilizers_and_Minerals" ;
+    <ontology/substanceHead/#resource> "Plumbago" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_metallurgy_tinplate/#concept> .

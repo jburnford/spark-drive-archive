@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/01/0182/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Mahogany - Furniture, Hardwoods or Veneers"@en ;
+    skos:broadMatch <customs-1866/timber/#concept> ;
+    skos:broader <id/grp/grp_sawn_lumber/#concept> ;
+    skos:definition "a well-known valuable furniture wood, chiefly imported from Honduras, where it is obtained from a large forest tree, the *Swietenia Mahagoni*. African mahogany is the wood of *Khaya senegalensis*. The wood of the Toon-tree (*Cedrela Toona*) is sometimes called Indian mahogany. Our imports of mahogany average about 33,000 tons per annum. The stringent bark is used in the West Indies as a substitute for cinchona, but contains no alkaline principle. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 249]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0182" ;
+    skos:prefLabel "Mahogany - Furniture, Hardwoods or Veneers"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n249>, <https://archive.org/details/generalcommercia00mort/page/n608> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "189"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q1247582>, <http://www.wikidata.org/entity/Q50838988>, <http://www.wikidata.org/entity/Q927609> ;
+    <ontology/substanceHead/#resource> "Mahogany" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

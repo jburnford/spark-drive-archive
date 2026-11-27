@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_leather_tanning/use_leather_tanning__0041__q2/#resource> dcterms:bibliographicCitation "P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section BARKS FOR TANNING" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/15191> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Bark For Tanners and Dyers Use used in Leather Tanning, Tawing & Currying: P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854; Project Gutenberg #15191), section BARKS FOR TANNING"@en ;
+    <ontology/quoteText/#resource> "Oak bark contains usually the largest proportion of tannin, and according to Davy's experiments eight-and-a-half pounds of oak bark are equivalent for tanning purposes to two-and-a-quarter of galls, three of sumach, seven-and-a-half of Leicester willow, eleven of Spanish chesnut, eighteen of elm, and twenty-one of common willow bark."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

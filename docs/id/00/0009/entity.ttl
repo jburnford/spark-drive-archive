@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0009/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Flour"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300389812>, <http://www.wikidata.org/entity/Q36465> ;
+    skos:broader <id/sub/sub_cereals_gr_wd_q36465/#concept> ;
+    skos:definition "in ordinary parlance the meal of wheat finely ground and sifted, and in which a large trade is carried on by land and by sea. The term flour is, however, also applied to the meal of rice, potatoes, &c. Flour is usually put up in packs or loads of 240 lbs., or sacks of 280 lbs. In 1856 wo imported four million cwts. of flour chiefly from the United States and Canada. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 170]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0009" ;
+    skos:prefLabel "Flour"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n170>, <https://archive.org/details/b21780535/page/n466>, <https://archive.org/details/generalcommercia00mort/page/n433> ;
+    <ontology/firstAttested/#resource> "1807"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "food_grain" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1876"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "1143"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "milled_ground" ;
+    <ontology/sitcCode/#resource> "SITC4_04_Cereals_and_Preparations" ;
+    <ontology/substanceHead/#resource> "Flour" ;
+    <ontology/theodoridisBucket/#resource> "grain_and_flour" .

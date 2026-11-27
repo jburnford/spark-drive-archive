@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/05/0584/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Ice"@en ;
+    skos:broader <id/grp/grp_customs_residuals/#concept> ;
+    skos:definition "congealed water, which enters into commerce for cooling liquids and for confectioners' purposes: large quantities are shipped from America to other countries. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 212]"@en ;
+    skos:editorialNote "Curated fields — definition excerpt: Unrelated homonym senses in the same dictionary entry removed."@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q19614624> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0584" ;
+    skos:prefLabel "Ice"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_csp_canadian_trade_and_navigation/#resource>, <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n212>, <https://archive.org/details/dictionaryprac00mccu/page/n798> ;
+    <ontology/firstAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "other" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/inferredPrimarySource/#resource> <ontology/series_csp_canadian_exports_blankseries/#resource> ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "61"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/substanceHead/#resource> "Ice" ;
+    <ontology/theodoridisBucket/#resource> "unclassified" .

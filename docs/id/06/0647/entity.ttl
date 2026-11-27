@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/06/0647/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Timber viz Anchor Stocks"@en ;
+    skos:broadMatch <http://aims.fao.org/aos/agrovoc/c_8421>, <http://vocab.getty.edu/aat/300011914>, <http://www.wikidata.org/entity/Q287>, <http://zbw.eu/stw/descriptor/14150-4> ;
+    skos:broader <id/sub/sub_cooperage__wd_q287/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_cooperage_ship_timber): Naval/cooperage woodware (anchor stocks, capstan bars, boat-hook staffs, bowsprits, empty casks). Layer-1 observations: 54 rows, 1809–1836. Series: KEW_CUST 4 ×54. Units: Number ×54. Top routes: Canada → England ×23; Canada → London ×9; Canada → Great Britain ×8; Canada → Other English Ports ×8."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0647" ;
+    skos:prefLabel "Timber viz Anchor Stocks"@en ;
+    skos:related <id/00/0070/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1809"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1836"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/madeOfMaterial/#resource> <http://www.wikidata.org/entity/Q287> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/materialConcept/#resource> <id/00/0070/#concept> ;
+    <ontology/observationCount/#resource> "54"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_63_Cork_and_Wood_Manufactures" ;
+    <ontology/substanceHead/#resource> "Timber viz Anchor Stocks" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

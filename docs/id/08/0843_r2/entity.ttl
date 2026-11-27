@@ -1,0 +1,16 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/08/0843_r2/#resource> a <ontology/ScopedReading/#resource> ;
+    rdfs:label "Cocoa nuts read as cacao (cocoa beans) or coconuts (series ^KEW_CUST, 1800–1840, unit pound|hundredweight|cwt|lbs)"@en ;
+    skos:note "CUST 4 and CUST 5 ledgers 1800–1840 enter these rows by weight; early ledgers used 'cocoa nuts' for cacao as well as for coconuts, and nothing in the rows settles which."@en ;
+    <ontology/matchedObservationCount/#resource> "8"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/readingOf/#resource> <id/08/0843/#concept> ;
+    <ontology/readingStatus/#resource> "unresolved" ;
+    <ontology/scopeSeries/#resource> "^KEW_CUST" ;
+    <ontology/scopeUnit/#resource> "pound|hundredweight|cwt|lbs" ;
+    <ontology/scopeYearFrom/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/scopeYearTo/#resource> "1840"^^<http://www.w3.org/2001/XMLSchema#integer> .

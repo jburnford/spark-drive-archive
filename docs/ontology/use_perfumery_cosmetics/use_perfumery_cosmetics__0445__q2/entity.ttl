@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_perfumery_cosmetics/use_perfumery_cosmetics__0445__q2/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 676" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n676/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Almonds used in Perfumery, Pomades & Essential Oils: Mortimer (1823), General Commercial Dictionary, scan p. 676"@en ;
+    <ontology/quoteText/#resource> "The oil expressed from them is little inferior to the oil of almonds; and is used by chemists, painters, perfumers, &c. for receiving and retaining odours."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

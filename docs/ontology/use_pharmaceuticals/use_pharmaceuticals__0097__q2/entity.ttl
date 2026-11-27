@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__0097__q2/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 24" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n24/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Honey used in Pharmaceuticals & Druggists' Preparations: Mortimer (1823), General Commercial Dictionary, scan p. 24"@en ;
+    <ontology/quoteText/#resource> "It grows like oats, but in quality resembles rice. ÆGYPTIACUM, a name formerly given to several medicinal preparations, the only one of which now in use is that called mel ægyptiacum, which is composed of honey and verdigris."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__2002__q1/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 543" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n543/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Copperas used in Hat-Making, Brushes, Upholstery & Turnery: Mortimer (1823), General Commercial Dictionary, scan p. 543"@en ;
+    <ontology/quoteText/#resource> "Sulphate of iron is used by hatters and dyers, when precipitated by gallic acid, for forming a black dye; it is also used for making ink; in the manufacture of Prussian blue; in preparing leather; and in forming colcothar for painters."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

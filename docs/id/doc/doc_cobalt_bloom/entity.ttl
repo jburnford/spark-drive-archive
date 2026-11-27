@@ -1,0 +1,22 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_cobalt_bloom/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Cobalt Bloom"@en ;
+    skos:broader <id/grp/grp_metallic_ores/#concept> ;
+    skos:definition "the red arseniate of cobalt; a beautiful mineral found with the ores of cobalt, and used in the manufacture of small. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 108]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_cobalt_bloom" ;
+    skos:prefLabel "Cobalt Bloom"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0382 (Ore Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 108."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n108> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/sitcCode/#resource> "SITC4_28_Metalliferous_Ores" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/03/0382/#concept> .

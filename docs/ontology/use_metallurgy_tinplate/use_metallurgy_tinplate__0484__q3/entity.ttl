@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_metallurgy_tinplate/use_metallurgy_tinplate__0484__q3/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 937" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n937/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Zinc Crude in Cakes used in Metallurgy, Smelting, Brass & Tinplate: Mortimer (1823), General Commercial Dictionary, scan p. 937"@en ;
+    <ontology/quoteText/#resource> "Spelter solder is made of one part of brass, and two of spelter, or zinc, and is used by the braziers and coppersmiths for soldering brass, copper, 925 SOU and iron."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_dogwood/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Dogwood"@en ;
+    skos:broader <id/grp/grp_hewn_round_timber/#concept> ;
+    skos:definition "the produce of *Piscidia erythrina*, a deciduous tree indigenous to the tropics; the bark of the roots is used as a narcotic to stupefy fish. The dogwood of America (*Cornus florida*) is used for inlaying by cabinet-makers; the bark is also an esteemed tonic, and used in the manufacture of ink and false quinine. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 141]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_dogwood" ;
+    skos:prefLabel "Dogwood"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0070 (Wood Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 141, P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 462."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n141>, <https://archive.org/details/b21780535/page/n462> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q50851235>, <http://www.wikidata.org/entity/Q887221> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0070/#concept> .

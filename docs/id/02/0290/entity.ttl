@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/02/0290/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Isinglass"@en ;
+    skos:broadMatch <customs-1866/fish_part_collagen/#concept> ;
+    skos:broader <id/grp/grp_fertilizers_animal_materials/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300014822> ;
+    skos:definition "or Fish-glue, called in Latin _ichthyocolla_, is a whitish, dry, tough, semi-transparent substance, twisted into different shapes, often in the form of a lyre, and consisting of membranes rolled together. Good isinglass is unchangeable in the air, has a leathery aspect, and a mawkish taste nearly insipid; when steeped in cold water it swells, softens, and separates in membranous laminæ. At the boiling heat it dissolves in water, and the solution, on cooling, forms a white jelly, which is semi-transparent, soluble in weak acids, but is precipitated from them by alkalies. It is gelatine nearly pure; and if not brittle, like other glue, this depends on its fibrous and elastic texture. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q1255331> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0290" ;
+    skos:prefLabel "Isinglass"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n218>, <https://archive.org/details/b31361584/page/n707>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "wild_hunted_fished" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "marine" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "130"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Isinglass" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_brewing_distilling/#concept>, <ontology/ind_chocolate_confectionery/#concept> .

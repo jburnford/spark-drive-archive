@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_pharmaceuticals/use_pharmaceuticals__doc_nux_vomica__q2/#resource> dcterms:bibliographicCitation "Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. STRYCHNIA" ;
+    dcterms:source <https://www.gutenberg.org/ebooks/44562> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Nux Vomica used in Pharmaceuticals & Druggists' Preparations: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (2nd ed., 1840; Project Gutenberg #44562), s.v. STRYCHNIA"@en ;
+    <ontology/quoteText/#resource> "STRYCHNIA, is an alkaline base, extracted from the Strychnos nux vomica, Strychnos ignatia, and the Upas tiente; which has been employed in medicine by some of the poison doctors, but is of no use in any of the arts."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

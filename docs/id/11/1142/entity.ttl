@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/11/1142/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Tartaric Acid"@en ;
+    skos:broadMatch <customs-1866/chemical/#concept> ;
+    skos:broader <id/grp/grp_industrial_chemicals_alkalis/#concept> ;
+    skos:definition "(_Acide tartarique_, Fr.; _Weinsteinsäure_, Germ.) This is prepared by adding gradually to a boiling-hot solution of 100 parts of tartar, in a large copper boiler, 26 of chalk, made into a smooth pap with water. A brisk effervescence ensues, by the disengagement of the carbonic acid of the chalk, while its base combines with the acid excess in the tartar, and forms an insoluble precipitate of tartrate of lime. The supernatant liquor, which is a solution of neutral tartrate of potassa, must be drawn off by a syphon, and decomposed by a solution of chloride of calcium (muriate of lime). 28-1/2 parts of the dry chloride are sufficient for 100 of tartar. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q194322> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1142" ;
+    skos:prefLabel "Tartaric Acid"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_4/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n386>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1845"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "19"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_51_52_Chemicals" ;
+    <ontology/substanceHead/#resource> "Tartaric Acid" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

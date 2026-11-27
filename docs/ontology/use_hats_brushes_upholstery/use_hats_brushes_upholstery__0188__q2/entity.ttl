@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_hats_brushes_upholstery/use_hats_brushes_upholstery__0188__q2/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 678" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n678/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Skins Furs Pelts Beaver used in Hat-Making, Brushes, Upholstery & Turnery: McCulloch (1880), Dictionary of Commerce, scan p. 678"@en ;
+    <ontology/quoteText/#resource> "The finest is used as a substitute for beaver in the manufacture of hats, and the coarser or stronger sort is employed in the fabrication of a stuff which resembles fine woollen cloth."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

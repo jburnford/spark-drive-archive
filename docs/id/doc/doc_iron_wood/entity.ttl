@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_iron_wood/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Iron Wood"@en ;
+    skos:broader <id/grp/grp_hewn_round_timber/#concept> ;
+    skos:definition "a common name for many trees, producing hard, ponderous, close-grained woods; in America, for the *Ostrya Virginica*, a tree which only grows to a small size, but the white wood is compact, finely grained and heavy. There is an iron-wood in Brazil, but the tree yielding it is not defined. Another iron-wood entering into commerce is the *Metrosideros verus*, brought from China. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 218]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_iron_wood" ;
+    skos:prefLabel "Iron Wood"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0070 (Wood Unenumerated). Attested in: P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 218, Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 543."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n218>, <https://archive.org/details/dictionaryprac00mccu/page/n883>, <https://archive.org/details/generalcommercia00mort/page/n543> ;
+    <ontology/ghostAcresDomain/#resource> "timber_forestry" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/sitcCode/#resource> "SITC4_24_Cork_and_Wood" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q111600246>, <http://www.wikidata.org/entity/Q50826620> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0070/#concept> .

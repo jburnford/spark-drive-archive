@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/03/0308/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Wool Cotton"@en ;
+    skos:altLabel "cotton wool"@en, "raw cotton"@en ;
+    skos:broader <id/sub/sub_bast_plant_wd_q11457/#concept> ;
+    skos:closeMatch <http://aims.fao.org/aos/agrovoc/c_1926>, <http://vocab.getty.edu/aat/300183670>, <http://www.wikidata.org/entity/Q11457>, <http://zbw.eu/stw/descriptor/14055-5> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0308" ;
+    skos:prefLabel "Wool Cotton"@en ;
+    skos:related <id/03/0300/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_hcpp_other/#resource>, <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "fibres_textiles" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1847"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "124"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_26_Textile_Fibres" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q133481>, <http://www.wikidata.org/entity/Q311515> ;
+    <ontology/substanceHead/#resource> "Wool Cotton" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

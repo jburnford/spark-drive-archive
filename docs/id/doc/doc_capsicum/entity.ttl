@@ -1,0 +1,24 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_capsicum/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Capsicum"@en ;
+    skos:altLabel "Chillies"@en, "Chillies and Cayenne Pepper"@en ;
+    skos:broader <id/grp/grp_spices_condiments/#concept> ;
+    skos:definition "*Guinea pepper*, is of three sorts, viz. 1. *Capsicum annuum*, the common long-podded capsicum. 2. *Capsicum baccacum*, the bird-pepper, grows nearly five feet high; the leaves are of a lucid green. This is the Cayenne-pepper. 3. *Capsicum grossum*, the bell-pepper. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 200]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_capsicum" ;
+    skos:prefLabel "Capsicum"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0408 (Spices Unenumerated). Attested in: Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 200."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n200> ;
+    <ontology/ghostAcresDomain/#resource> "food_colonial_grocery" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q1380> ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/04/0408/#concept> .

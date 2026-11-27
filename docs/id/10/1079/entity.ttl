@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/10/1079/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Slates"@en ;
+    skos:broader <id/sub/sub_industrial_wd_q207079/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300011646>, <http://www.wikidata.org/entity/Q207079> ;
+    skos:definition "small shaped plates or large slabs of slate, chiefly used for roofing. For commercial purposes slates are classed into the following principal varieties:—Doubles, measuring 13 inches by 7, and smaller, 11 by 7; ladies, 16 by 10, 16 by 8, 14 by 8, or 12 by 8; countesses, 20 by 10; viscountesses, 18 by 10; marchionesses, 22 by 12; duchesses, 24 by 12; princesses, 24 inches long, various breadths. A thousand slates number 1200, and 60 slates are also allowed over for breakage. There are also rags and queens, measuring 36 by 24; imperials and patent slates 30 by 24; Westmorelands, and some other kinds. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 360]"@en ;
+    skos:editorialNote "Curated classification (group=grp_industrial_minerals): Named mineral (slates, felspar, barytes, kieselguhr) left in the residual bin. Layer-1 observations: 22 rows, 1896–1906. Series: HCPP_Annual Statement of Trade ×22. Units: Number ×15; Tons ×7. Top routes: France → United Kingdom ×3; World → United Kingdom ×3; Belgium → United Kingdom ×3; United States of America → United Kingdom ×3."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1079" ;
+    skos:prefLabel "Slates"@en ;
+    skos:related <id/07/0724/#concept> ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n360>, <https://archive.org/details/generalcommercia00mort/page/n933>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1896"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "22"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_27_Crude_Fertilizers_and_Minerals" ;
+    <ontology/substanceHead/#resource> "Slates" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

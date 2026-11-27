@@ -1,0 +1,31 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/10/1057/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Soda Other Sorts"@en ;
+    skos:broadMatch <http://vocab.getty.edu/aat/300183897>, <http://www.wikidata.org/entity/Q190227> ;
+    skos:broader <id/sub/sub_industrial_wd_q190227/#concept> ;
+    skos:definition "(_Kohlensaures natron_, Germ.): is the soda of commerce in various states, either crystallized, in lumps, or in a crude powder called soda-ash. It exists in small quantities in certain mineral waters; as, for example, in those of Seltzer, Seydschutz, Carlsbad, and the volcanic springs of Iceland, especially the Geyser; it frequently occurs as an efflorescence in slender needles upon damp walls, being produced by the action of the lime upon the sea salt present in the mortar. The mineral soda is the sesquicarbonate, to be afterwards described. Of manufactured soda, the variety most antiently known is barilla, the incinerated ash of the _Salsola soda_. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:editorialNote "Curated fields — source_taxon remove: Barilla plant attached to industrial soda (1901–11)."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1057" ;
+    skos:prefLabel "Soda Other Sorts"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1901"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "23"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_51_52_Chemicals" ;
+    <ontology/substanceHead/#resource> "Soda" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

@@ -1,0 +1,30 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/19/1934/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Benjamin"@en ;
+    skos:broader <id/grp/grp_gums_resins_naval_stores/#concept> ;
+    skos:definition "an odoriferous gum-resin, obtained in Siam, and the Eastern Archipelago, from *Styrax Benzoin*, and used in perfume and license. It is of a yellowish gold colour with occasionally white almond-like masses in it; there are, however, two or three varieties which enter into commerce. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 46]"@en ;
+    skos:editorialNote "Curated classification (group=grp_gums_resins_naval_stores): Named gum-resin under an archaic spelling (olibanum; 'Benjamin' = benzoin, Simmonds 1892 s.v. BENJAMIN; 'camphire' = camphor) left in the residual bin. Layer-1 observations: 2 rows, 1800–1800. Series: KEW_CUST 5 ×2. Units: Lasts ×2. Top routes: World → United Kingdom ×1; East Indies and China → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1934" ;
+    skos:prefLabel "Benjamin"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n46>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q2732635> ;
+    <ontology/substanceHead/#resource> "Benjamin" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

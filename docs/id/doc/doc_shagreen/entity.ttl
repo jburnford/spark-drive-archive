@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_shagreen/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Shagreen"@en ;
+    skos:broader <id/grp/grp_furs_marine_pelts/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q1058858> ;
+    skos:definition "(_Chagrin_, Fr. and Germ.) The true oriental shagreen is essentially different from all modifications of leather and parchment. It approaches the latter somewhat, indeed, in its nature, since it consists of a dried skin, not combined with any tanning or foreign matter whatever. Its distinguishing characteristic is having the grain or hair side covered over with small rough round specks or granulations. [Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562)]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_shagreen" ;
+    skos:prefLabel "Shagreen"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0071 (Furs Unenumerated Undressed). Attested in: Andrew Ure, A Dictionary of Arts, Manufactures, and Mines (Project Gutenberg #44562), P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 350."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n350>, <https://archive.org/details/dictionaryprac00mccu/page/n1352>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/00/0071/#concept> .

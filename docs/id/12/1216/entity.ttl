@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/12/1216/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Naphtha"@en ;
+    skos:broadMatch <customs-1866/hydrocarbon/#concept> ;
+    skos:broader <id/grp/grp_fossil_fuels_mineral_oils/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300015282> ;
+    skos:definition "a mineral oil obtained from petroleum, shale, and other substances, used for burning in lamps, and, when containing paraffine, for lubricating machinery: coal naphtha consists principally of benzole. This aromatic bituminous oil is found oozing out of clefts in the rocks, or the ground; it soon solidifies when exposed to the atmosphere. *See PETROLEUM. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 269]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q898983> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1216" ;
+    skos:prefLabel "Naphtha"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n269>, <https://archive.org/details/generalcommercia00mort/page/n654>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1866"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "minerals_metals_energy" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_lexical" ;
+    <ontology/harvestMode/#resource> "mineral_extraction" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "mineral" ;
+    <ontology/lastAttested/#resource> "1891"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "17"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_32_33_Mineral_Fuels" ;
+    <ontology/substanceHead/#resource> "Naphtha" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_rubber_waterproofing/#concept>, <ontology/ind_varnish_paint_lacquer/#concept> .

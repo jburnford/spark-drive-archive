@@ -1,0 +1,29 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/14/1431/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Verdegris"@en ;
+    skos:broader <id/grp/grp_natural_dyestuffs/#concept> ;
+    skos:definition "(GER. *Grünspan*. DU. *Spaansch groen*. DA. *Spansk grønt*. SW. *Spank gröna*. FR. *Verde-gris*, *Verdet*. IT. *Verderame*. SP. *Cardenillo*, *Verdete*, *Verde-gris*. PORT. *Verdete*, *Verdegris*, *Cardinillo*. RUS. *Jar*. POL. *Gryszpan*. LAT. *Ærugo*, *Viride æris*,) is an acetat of copper, useful in the arts as a pigment. The principles on which it is formed are these : Acetic acid attacks copper very slowly in open vessels, converts it into an oxide, and dissolves it; but in close vessels no action takes place. This acid readily combines with the oxide of copper, and forms with it an acetat. This salt was known by the ancients; and various ways of preparing it are described by Pliny. It is usually obtained by exposing plates of copper to the action of vinegar, till they are converted to a blueish green powder, and then dissolving this powder in acetic acid, and crystallising it. Acetat of copper crystallises in four-sided truncated pyramids. [Thomas Mortimer (rev. Dickinson), A General Commercial Dictionary (1823), scan p. 980]"@en ;
+    skos:editorialNote "Curated classification (group=grp_natural_dyestuffs): Named dye or pigment (annotto, orchella, weld, rock moss = orchil lichen per Mortimer 1823 s.v. ROCK MOSS 'See ORCHILLA', vermilion, zaffre, verdigris, lampblack) left in the residual bin. Layer-1 observations: 11 rows, 1800–1848. Series: KEW_CUST 5 ×9; KEW_CUST 4 ×2. Units: Lbs. (Pounds) ×10; Hundredweights.Quarters.Pounds ×1. Top routes: Canada → England ×2; France → United Kingdom ×1; Holland → United Kingdom ×1; Italy → United Kingdom ×1."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1431" ;
+    skos:prefLabel "Verdegris"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/generalcommercia00mort/page/n980> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1848"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "11"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_53_Dyeing_Tanning_Colouring" ;
+    <ontology/substanceHead/#resource> "Verdegris" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

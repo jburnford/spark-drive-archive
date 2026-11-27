@@ -1,0 +1,23 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_myrobalans/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Myrobalans"@en ;
+    skos:altLabel "Myrobalan"@en, "myrobalan berry"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:definition "The dried fruits of different varieties of *terminalia*. The fruit, varying from the size of an olive to that of a gall-nut, consists of a white pentangular nut, covered by a substance about 2 lines in thickness. The latter, which is the only valuable part, is mucilaginous and highly astringent; [J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 999]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_myrobalans" ;
+    skos:prefLabel "Myrobalans"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: J. R. McCulloch, Dictionary of Commerce and Commercial Navigation (1880), scan p. 999, P. L. Simmonds, The Commercial Products of the Vegetable Kingdom (1854, Project Gutenberg #15191)."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/dictionaryprac00mccu/page/n999>, <https://www.gutenberg.org/ebooks/15191> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_local" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> .

@@ -1,0 +1,27 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/13/1366/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Jet Rockingham and Glazed Terra Cotta Ware"@en ;
+    skos:broader <id/grp/grp_glass_ceramics_paper_woodware/#concept> ;
+    skos:editorialNote "Curated classification (group=grp_glass_ceramics_paper_woodware; processing_state=manufactured): Named manufactured sundry (furniture, bedding, printed matter, jewellery, plated and ceramic wares, pianos) left in the residual bin. Layer-1 observations: 13 rows, 1906–1911. Series: HCPP_Annual Statement of Trade ×13. Units: CWTS (Hundredweights) ×13. Top routes: France → United Kingdom ×2; Italy → United Kingdom ×2; World → United Kingdom ×2; Belgium → United Kingdom ×2."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1366" ;
+    skos:prefLabel "Jet Rockingham and Glazed Terra Cotta Ware"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/firstAttested/#resource> "1906"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "manufactured_goods" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "manufacture" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "industrial_manufactured" ;
+    <ontology/lastAttested/#resource> "1911"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "13"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "manufactured" ;
+    <ontology/sitcCode/#resource> "SITC4_64_66_89_Paper_Glass_Misc_Manufactures" ;
+    <ontology/substanceHead/#resource> "Jet Rockingham and Glazed Terra Cotta Ware" ;
+    <ontology/theodoridisBucket/#resource> "manufactured_articles" .

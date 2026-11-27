@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_calico_printing/use_calico_printing__1825__q1/#resource> dcterms:bibliographicCitation "Mortimer (1823), General Commercial Dictionary, scan p. 71" ;
+    dcterms:source <https://archive.org/details/generalcommercia00mort/page/n71/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Arsenic used in Calico Cloth & Calico Printing: Mortimer (1823), General Commercial Dictionary, scan p. 71"@en ;
+    <ontology/quoteText/#resource> "Sulphuret of arsenic is much used in calico-printing, on account of its property of de-oxidizing indigo, and thus rendering it soluble in an alkaline solution."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

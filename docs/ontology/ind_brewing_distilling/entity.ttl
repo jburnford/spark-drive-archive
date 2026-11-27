@@ -1,0 +1,13 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/ind_brewing_distilling/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Brewing, Malting & Distilling"@en ;
+    skos:definition "Ale, porter, stout, beer brewing, and spirits/gin/whisky/rum distilling — mashing malted barley, grains, sugar, and molasses, bittering with hops (and substitutes like quassia), fining with isinglass, and rectifying gin/cordials with juniper berries, coriander, and spices."@en ;
+    skos:inScheme <ontology/industry_scheme/#resource> ;
+    skos:prefLabel "Brewing, Malting & Distilling"@en ;
+    skos:topConceptOf <ontology/industry_scheme/#resource> ;
+    <ontology/usesCommodityInput/#resource> <id/00/0007/#concept>, <id/00/0056/#concept>, <id/01/0135/#concept>, <id/02/0239/#concept>, <id/02/0290/#concept>, <id/03/0360/#concept>, <id/06/0695/#concept>, <id/15/1520/#concept>, <id/17/1701/#concept>, <id/doc/doc_cocculus_indicus/#concept>, <id/doc/doc_coriander/#concept> .

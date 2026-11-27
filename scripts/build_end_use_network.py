@@ -24,6 +24,7 @@ Outputs:
 """
 
 import os
+import sys
 import csv
 import json
 import re
@@ -38,10 +39,9 @@ OCR_ROOT = Path(os.environ.get("OE_OCR_ROOT", "/mnt/data/jic823/open_empire_corp
 GUT_ROOT = Path(os.environ.get("OE_GUTENBERG_ROOT", "/mnt/data/jic823/open_empire_corpus/raw/gutenberg"))
 
 TODAY = date.today().isoformat()
-# MUST be the namespaces of the commodity vocabulary (build_skos_v4.BASE_URI / OE_NS): with any other value
-# the industry graph and the commodity graph share compact ids but never join by IRI.
-BASE_URI = "https://open-empire.hgislab.usask.ca/vocab/human-trade-commodities/"
-OE_NS = "https://open-empire.hgislab.usask.ca/ns#"
+sys.path.insert(0, str(ROOT / "human_trade" / "scripts"))
+from public_rdf import NAMESPACES, write_graph
+
 
 PAGE_MARK_RE = re.compile(r"^(\d+)-{35,}\s*$", re.M)
 
@@ -1095,9 +1095,6 @@ def norm_key(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def ttl_str(s: str) -> str:
-    s = (s or "").replace("\\", "\\\\").replace('"', '\\"').replace("\n", " ").replace("\r", " ")
-    return f'"{s}"'
 
 
 def resolve_canonical_concepts():
@@ -1556,29 +1553,6 @@ def main():
 
     # 2. Export LINCS-Compliant SKOS / CIDOC-CRM Overlay (`end_use_network_skos.{ttl,jsonld}`)
     top_ids = list(INDUSTRIES.keys())
-    ttl_lines = [
-        f"@prefix htc: <{BASE_URI}> .",
-        f"@prefix oe: <{OE_NS}> .",
-        "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
-        "@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .",
-        "@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .",
-        "@prefix owl: <http://www.w3.org/2002/07/owl#> .",
-        "@prefix dcterms: <http://purl.org/dc/terms/> .",
-        "@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .",
-        "",
-        "# ============================================================================",
-        "# OPEN EMPIRE — 18-INDUSTRY END-USE OVERLAY NETWORK (LINCS / SKOS / CIDOC-CRM)",
-        "# ============================================================================",
-        "oe:industry_scheme a skos:ConceptScheme ;",
-        '    rdfs:label "Open Empire 19th-Century Manufacturing End-Use Scheme"@en ;',
-        '    dcterms:title "Open Empire 19th-Century Manufacturing End-Use Scheme"@en ;',
-        f'    dcterms:created "{TODAY}"^^xsd:date ;',
-        f"    skos:hasTopConcept {', '.join(top_ids)} .",
-        "",
-        'oe:usedInIndustry a owl:ObjectProperty ; rdfs:label "commodity used as input in manufacturing industry"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept ; owl:inverseOf oe:usesCommodityInput .',
-        'oe:usesCommodityInput a owl:ObjectProperty ; rdfs:label "manufacturing industry employs commodity input"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept ; owl:inverseOf oe:usedInIndustry .',
-        "",
-    ] + [f'{pid} a {ptype} ; rdfs:label {ttl_str(plabel)}@en .' for pid, ptype, plabel in EVIDENCE_TERMS] + [""]
 
     jld_graph = [
         {
@@ -1616,31 +1590,17 @@ def main():
         aid = f"oe:use_{r['industry_id'].split('ind_')[-1]}__{r['commodity_id'].split(':')[1]}"
         lbl = f"{r['commodity_label']} used in {r['industry_label']}"
         qids = [f"{aid}__q{i}" for i in range(1, len(r["evidence_quotes"]) + 1)]
-        triples = [
-            "a oe:EndUseAssertion", f"rdfs:label {ttl_str(lbl)}@en",
-            f"oe:assertsCommodity {r['commodity_id']}", f"oe:assertsIndustry {r['industry_id']}",
-            f"oe:productionRole {ttl_str(r['production_role'])}",
-            f"oe:reviewStatus {ttl_str(r['review_status'])}",
-        ]
         node = {"@id": aid, "@type": "oe:EndUseAssertion", "rdfs:label": {"@value": lbl, "@language": "en"},
                 "oe:assertsCommodity": {"@id": r["commodity_id"]}, "oe:assertsIndustry": {"@id": r["industry_id"]},
                 "oe:productionRole": r["production_role"], "oe:reviewStatus": r["review_status"]}
         if qids:
-            triples.append("oe:hasEvidence " + ", ".join(qids))
             node["oe:hasEvidence"] = [{"@id": x} for x in qids]
         if r.get("curation"):
             note = f"Review decision ({r['curation']['action']}): {r['curation']['rationale']}"
-            triples.append(f"skos:editorialNote {ttl_str(note)}@en")
             node["skos:editorialNote"] = {"@value": note, "@language": "en"}
-        ttl_lines.append(f"{aid} " + " ;\n    ".join(triples) + " .\n")
         jld_graph.append(node)
         for qid, q in zip(qids, r["evidence_quotes"]):
             qlbl = f"Evidence for {lbl}: {q['citation']}"
-            ttl_lines.append(
-                f"{qid} a oe:EvidenceQuote ;\n    rdfs:label {ttl_str(qlbl)}@en ;\n"
-                f"    oe:quoteText {ttl_str(q['quote'])}@en ;\n"
-                f"    dcterms:bibliographicCitation {ttl_str(q['citation'])} ;\n"
-                f"    dcterms:source <{q['uri']}> ;\n    oe:retrievalMode {ttl_str(q['mode'])} .\n")
             jld_graph.append({"@id": qid, "@type": "oe:EvidenceQuote", "rdfs:label": {"@value": qlbl, "@language": "en"},
                               "oe:quoteText": {"@value": q["quote"], "@language": "en"},
                               "dcterms:bibliographicCitation": q["citation"], "dcterms:source": {"@id": q["uri"]},
@@ -1648,14 +1608,6 @@ def main():
 
     for ind_id, cfg in INDUSTRIES.items():
         inputs = [r["commodity_id"] for r in by_ind[ind_id]]
-        triples = [
-            "a skos:Concept, crm:E55_Type",
-            f"rdfs:label {ttl_str(cfg['label'])}@en",
-            "skos:inScheme oe:industry_scheme",
-            "skos:topConceptOf oe:industry_scheme",
-            f"skos:prefLabel {ttl_str(cfg['label'])}@en",
-            f"skos:definition {ttl_str(cfg['description'])}@en",
-        ]
         node = {
             "@id": ind_id, "@type": ["skos:Concept", "crm:E55_Type"],
             "rdfs:label": {"@value": cfg["label"], "@language": "en"},
@@ -1665,29 +1617,21 @@ def main():
             "skos:definition": {"@value": cfg["description"], "@language": "en"},
         }
         if inputs:
-            triples.append("oe:usesCommodityInput " + ", ".join(inputs))
             node["oe:usesCommodityInput"] = [{"@id": x} for x in inputs]
-        ttl_lines.append(f"{ind_id} " + " ;\n    ".join(triples) + " .\n")
         jld_graph.append(node)
 
     for cid, clinks in sorted(by_comm.items()):
         inds = [r["industry_id"] for r in clinks]
         lbl = clinks[0]["commodity_label"]
-        ttl_lines.append(
-            f"{cid} a skos:Concept, crm:E55_Type ;\n"
-            f"    rdfs:label {ttl_str(lbl)}@en ;\n"
-            f"    oe:usedInIndustry {', '.join(inds)} .\n"
-        )
         jld_graph.append({
             "@id": cid, "@type": ["skos:Concept", "crm:E55_Type"],
             "rdfs:label": {"@value": lbl, "@language": "en"},
             "oe:usedInIndustry": [{"@id": x} for x in inds],
         })
 
-    (GROUND / "end_use_network_skos.ttl").write_text("\n".join(ttl_lines), encoding="utf-8")
-    (GROUND / "end_use_network_skos.jsonld").write_text(json.dumps({
+    write_graph(GROUND / "end_use_network_skos.jsonld", {
         "@context": {
-            "htc": BASE_URI, "oe": OE_NS,
+            "htc": NAMESPACES["htc"], "oe": NAMESPACES["oe"],
             "skos": "http://www.w3.org/2004/02/skos/core#",
             "crm": "http://www.cidoc-crm.org/cidoc-crm/",
             "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -1696,7 +1640,7 @@ def main():
             "xsd": "http://www.w3.org/2001/XMLSchema#",
         },
         "@graph": jld_graph,
-    }, indent=2, ensure_ascii=False), encoding="utf-8")
+    })
 
     # 3. Export Industry Metadata JSON for the HTML explorer
     ind_meta_out = {

@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_gunpowder_matches/use_gunpowder_matches__doc_nitric_acid__q1/#resource> dcterms:bibliographicCitation "McCulloch (1880), Dictionary of Commerce, scan p. 1707" ;
+    dcterms:source <https://archive.org/details/dictionaryprac00mccu/page/n1707/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Nitric acid used in Gunpowder, Explosives & Lucifer Matches: McCulloch (1880), Dictionary of Commerce, scan p. 1707"@en ;
+    <ontology/quoteText/#resource> "Glycerine when treated with nitric acid becomes nitro-glycerine or glonoin oil, a highly inflammable substance, discovered by M."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

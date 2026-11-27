@@ -1,0 +1,32 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/18/1831/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Manna"@en ;
+    skos:broadMatch <customs-1866/sap/#concept> ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:definition "a sweet gummy exudation from several plants: the Calabrian manna is produced in tears from a species of ash, the *Fraxinus rotundifolia*, while some is obtained from another species, the *F. florifera*. The oriental manna of the desert is from *Alhagi Maurorum*. Manna is used medicinally. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 251]"@en ;
+    skos:editorialNote "Curated fields — source_taxon remove: 'Oriental manna' aside; commercial manna is Fraxinus ornus."@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "1831" ;
+    skos:prefLabel "Manna"@en ;
+    skos:scopeNote "Historical materia medica heading: sweet medicinal exudate from manna ash (Fraxinus ornus) imported from Italy and Spain."@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_kew_cust_4/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n251>, <https://archive.org/details/dictionaryprac00mccu/page/n962>, <https://www.gutenberg.org/ebooks/44562> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "local_concept_only" ;
+    <ontology/harvestMode/#resource> "cultivated" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_crop" ;
+    <ontology/lastAttested/#resource> "1830"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/observationCount/#resource> "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_54_Medicinal_Pharmaceutical" ;
+    <ontology/sourceTaxon/#resource> <http://www.wikidata.org/entity/Q110502889>, <http://www.wikidata.org/entity/Q161421> ;
+    <ontology/substanceHead/#resource> "Manna" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" .

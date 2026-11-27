@@ -1,0 +1,12 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<ontology/use_metallurgy_tinplate/use_metallurgy_tinplate__1111__q3/#resource> dcterms:bibliographicCitation "Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 117" ;
+    dcterms:source <https://archive.org/details/b21780535/page/n117/mode/1up> ;
+    a <ontology/EvidenceQuote/#resource> ;
+    rdfs:label "Evidence for Nickel Ore used in Metallurgy, Smelting, Brass & Tinplate: Simmonds (1892), Commercial Dictionary of Trade Products, scan p. 117"@en ;
+    <ontology/quoteText/#resource> "It is not a legal tender for more than one shilling. \\ COPPER-FASTENED, a term applied to vessels or boats which have rivets and bolts of copper to secure the timber and planks, &c. COPPER-FOUNDER, one who casts copper-metal into moulds or shapes. COPPER-MINE, the works where the ores of copper are obtained. COPPER NICKEL, an ore found on the Continent, whic..."@en ;
+    <ontology/retrievalMode/#resource> "direct_sentence" .

@@ -1,0 +1,25 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/doc/doc_laudanum/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Laudanum"@en ;
+    skos:altLabel "Dover's powder"@en, "tincture of opium"@en ;
+    skos:broader <id/grp/grp_drugs_medicinal_botanicals/#concept> ;
+    skos:closeMatch <http://www.wikidata.org/entity/Q898739> ;
+    skos:definition "a preparation of opium; a soporific and anodyne tincture used medicinally. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 235]"@en ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "doc_laudanum" ;
+    skos:prefLabel "Laudanum"@en ;
+    skos:scopeNote "Document-attested minor 19th-century commodity absent as a standalone line in Layer-1 British/Canadian customs ledgers; typically subsumed under htc:0122 (Drugs Unenumerated). Attested in: Danika Drugs.xlsx (British Pharmacopoeia 1867 / Savory 1865), P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 235."@en ;
+    <ontology/attestationBasis/#resource> "document_attested" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n235> ;
+    <ontology/ghostAcresDomain/#resource> "drugs_botanicals_chemicals" ;
+    <ontology/groundingStatus/#resource> "document_attested_grounded" ;
+    <ontology/harvestMode/#resource> "unclassified" ;
+    <ontology/landBasis/#resource> "unclassified" ;
+    <ontology/sitcCode/#resource> "oe:sitcUnassigned" ;
+    <ontology/subsumedInCustomsHeading/#resource> <id/01/0122/#concept> ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_pharmaceuticals/#concept> .

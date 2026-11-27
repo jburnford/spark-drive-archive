@@ -1,0 +1,33 @@
+@base <https://jimclifford.ca/spark-drive-archive/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<id/00/0072/#concept> a <http://www.cidoc-crm.org/cidoc-crm/E55_Type>, skos:Concept ;
+    rdfs:label "Galls"@en ;
+    skos:altLabel "gall"@en ;
+    skos:broader <id/grp/grp_vegetable_tannins/#concept> ;
+    skos:closeMatch <http://vocab.getty.edu/aat/300375063> ;
+    skos:definition "spherical concretions and excrescences formed upon the leaves and leaf stalks of several species of oak and tamarisk in the South of Europe. They are made by the puncture of the female gall fly. There are blue or black, green and white galls; the last are of little value. Those from Aleppo are the best. In India, myrobalans and the fruit of different species of *Terminalia*, are called galls. The imports of galls have been increasing lately, and about 1300 bags of 1 or 2 cwt. are imported in some years. [P. L. Simmonds, The Commercial Dictionary of Trade Products (1892), scan p. 179]"@en ;
+    skos:exactMatch <http://www.wikidata.org/entity/Q224107> ;
+    skos:inScheme <id/scheme/#resource> ;
+    skos:notation "0072" ;
+    skos:prefLabel "Galls"@en ;
+    <http://www.w3.org/ns/prov#hadPrimarySource> <ontology/series_hcpp_annual_statement_of_trade/#resource>, <ontology/series_kew_cust_5/#resource> ;
+    <ontology/attestationBasis/#resource> "customs_enumerated" ;
+    <ontology/dictionarySource/#resource> <https://archive.org/details/b21780535/page/n179>, <https://archive.org/details/b21780535/page/n468>, <https://archive.org/details/generalcommercia00mort/page/n455> ;
+    <ontology/firstAttested/#resource> "1800"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/ghostAcresDomain/#resource> "tannins_leather" ;
+    <ontology/groundingStatus/#resource> "grounded_wikidata_v4" ;
+    <ontology/harvestMode/#resource> "forest_harvest" ;
+    <ontology/isAggregate/#resource> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    <ontology/landBasis/#resource> "terrestrial_forest" ;
+    <ontology/lastAttested/#resource> "1920"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/mappingAuthority/#resource> "wikidata_slim:2026-11-09" ;
+    <ontology/observationCount/#resource> "400"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    <ontology/processingState/#resource> "unspecified" ;
+    <ontology/sitcCode/#resource> "SITC4_29_Crude_Animal_Vegetable_Materials" ;
+    <ontology/substanceHead/#resource> "Galls" ;
+    <ontology/theodoridisBucket/#resource> "raw_materials" ;
+    <ontology/usedInIndustry/#resource> <ontology/ind_calico_printing/#concept>, <ontology/ind_leather_tanning/#concept>, <ontology/ind_woollen_silk_dyeing/#concept> .
