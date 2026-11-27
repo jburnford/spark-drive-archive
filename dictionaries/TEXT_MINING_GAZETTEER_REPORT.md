@@ -1,12 +1,12 @@
 # 19th-Century Commodity Text-Mining Gazetteer & Extended SKOS Report
 
-Generated 2026-11-25 by `scripts/build_commodity_gazetteer.py` for downstream NER and text mining across open 19th-century botanical, commercial, and archival corpora (zero quantity estimation).
+Generated 2026-11-26 by `scripts/build_commodity_gazetteer.py` for downstream NER and text mining across open 19th-century botanical, commercial, and archival corpora (zero quantity estimation).
 
 ## Coverage Summary
 - **Layer-1 Customs-Enumerated Core (`htc:0001`–`htc:2066`):** **2,066** concepts (enriched with 278 additional vernacular `altLabel`s from Danika's Drugs Project & 1866 Customs List)
 - **Document-Attested Non-Enumerated Tier (`htc:doc_*`):** **394** concepts (43 from Danika's Drugs / 1866 Customs List + 351 from the 6 commercial dictionaries; **95** grounded to verified Wikidata QIDs; **165** with verified CoL/Wikidata Linnaean taxa)
 - **Total Combined SKOS Concepts (`commodities_skos_extended.ttl`):** **2,460** verbatim + document-attested concepts
-- **Total Text-Mining Surface Forms (`commodity_gazetteer.tsv`):** **3,426** form-concept pairs over **3,259** distinct normalised strings (`prefLabel` + `altLabel` + Latin binomials + curated `text_form` and `source_plant` forms; **13** flagged `ambiguous_alone`). A hit is a retrieval candidate, not a classified shipment.
+- **Total Text-Mining Surface Forms (`commodity_gazetteer.tsv`):** **3,664** form-concept pairs over **3,497** distinct normalised strings (`prefLabel` + `altLabel` + Latin binomials + curated `text_form` and `source_plant` forms; **53** flagged `ambiguous_alone`). A hit is a retrieval candidate, not a classified shipment.
 
 ## Document-Attested Concepts by Subsumed Customs Catch-All
 | Catch-All Customs Heading | Document-Attested Concepts |

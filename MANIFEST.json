@@ -8,7 +8,7 @@
     "curated_doc_tier_decisions.tsv": 299,
     "curated_end_use_link_decisions.tsv": 120,
     "curated_field_fixes.tsv": 172,
-    "curated_gazetteer_forms.tsv": 36,
+    "curated_gazetteer_forms.tsv": 314,
     "curated_overrides.tsv": 285,
     "curated_scoped_readings.tsv": 3
   },
@@ -49,12 +49,12 @@
       "bytes": 3105294
     },
     "human_trade/layer1_human/grounding/commodity_gazetteer.jsonl": {
-      "sha256": "00c001a6f3f209a745c10f4de31283ee5283f42b2be9b4bdefb96aeb0fe84657",
-      "bytes": 1701778
+      "sha256": "705c5ec90af024183483777f390208a032d7bd0fc9155f5c9354d05a9eec838e",
+      "bytes": 1813873
     },
     "human_trade/layer1_human/grounding/commodity_gazetteer.tsv": {
-      "sha256": "777acff5b95c628bd389f276f76d86d06e7271230ad87fc2e1cc73ffc4f8c76b",
-      "bytes": 738230
+      "sha256": "0c9580a1dd8d3a03463cd7e0368c146dd210c3e95e69b3c4307c64bd2ce373c2",
+      "bytes": 783233
     },
     "human_trade/layer1_human/grounding/commodity_rejections.tsv": {
       "sha256": "d2bf1ead2cdd76a6dc720fd891ba0c54c2c0d589fb6f6846a678d650d810faf6",
@@ -73,8 +73,8 @@
       "bytes": 26601
     },
     "human_trade/layer1_human/grounding/curated_gazetteer_forms.tsv": {
-      "sha256": "644d05589d6c3e40699087435b23ca5a3d386383859537b1ae6adfa11d402528",
-      "bytes": 6948
+      "sha256": "96f058379e59ffb8be0f09fe8db0760d76977fea5afc0024d2b573a65f541325",
+      "bytes": 85503
     },
     "human_trade/layer1_human/grounding/curated_overrides.tsv": {
       "sha256": "57a294369f58ab55b606409e5b7b62026e5490dd2da6c5d564055486a3f7ec04",
@@ -101,11 +101,11 @@
       "bytes": 197569
     },
     "human_trade/layer1_human/grounding/end_use_network_skos.jsonld": {
-      "sha256": "ddf697eec76e0a91d5eed9f27aa4431a467321457615cb6e53d1cce99726cbf0",
+      "sha256": "4bffa9ceb2d634812bb15d91745d6885203a60669b845d272ebe28c3a8e8f051",
       "bytes": 846613
     },
     "human_trade/layer1_human/grounding/end_use_network_skos.ttl": {
-      "sha256": "8c33c33f29deed0c792e0829a813f44cbf663a5d31e6db16456efd9c552d3c14",
+      "sha256": "b1da78993d62c49e397010419635027f8ffa1c1a81bb2f8f413da34366b846b5",
       "bytes": 593525
     },
     "human_trade/layer1_human/grounding/htc_id_registry.tsv": {
@@ -117,7 +117,7 @@
       "bytes": 1294343
     },
     "human_trade/layer1_human/grounding/open_empire_layer1_skos_v4.html": {
-      "sha256": "098f1d2f6e75a2a77d9e05375689dab97db844757c370bc07cf8f692e50b6c08",
+      "sha256": "629371fcd49ed6f99ae70806afc0a9e173a124c0e9a03cd531f4ca060ea27a48",
       "bytes": 3613193
     },
     "human_trade/layer1_human/grounding/place_year_polities.tsv": {
@@ -161,7 +161,7 @@
       "bytes": 4348312
     },
     "docs/index.html": {
-      "sha256": "098f1d2f6e75a2a77d9e05375689dab97db844757c370bc07cf8f692e50b6c08",
+      "sha256": "629371fcd49ed6f99ae70806afc0a9e173a124c0e9a03cd531f4ca060ea27a48",
       "bytes": 3613193
     },
     "human_trade/layer1_human/names/commodities.tsv": {

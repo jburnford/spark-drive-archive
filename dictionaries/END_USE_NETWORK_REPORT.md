@@ -1,6 +1,6 @@
 # 19th-Century Industrial End-Use Network Report (18 Major Manufacturing Industries)
 
-Generated 2026-11-25 by `scripts/build_end_use_network.py` across **6,648 full-text pages** from 6 19th-century commercial & manufacturing books (Ure 1840, Simmonds 1854 & 1892, McCulloch 1880, Mortimer 1823, Watt 1908). Every quote is verbatim from the cited book; links were mined by keyword co-occurrence and then hand-reviewed (see `curated_end_use_link_decisions.tsv`) — co-occurrence alone is not proof of use.
+Generated 2026-11-26 by `scripts/build_end_use_network.py` across **6,648 full-text pages** from 6 19th-century commercial & manufacturing books (Ure 1840, Simmonds 1854 & 1892, McCulloch 1880, Mortimer 1823, Watt 1908). Every quote is verbatim from the cited book; links were mined by keyword co-occurrence and then hand-reviewed (see `curated_end_use_link_decisions.tsv`) — co-occurrence alone is not proof of use.
 
 **Totals:** **18** industries · **320** commodity→industry links · **198** distinct commodities (`150` Layer-1 customs + `48` Document-Attested) · **2,326** keyword-matched sentences (mentions; the links file shows up to 3 verbatim quotes per link).
 

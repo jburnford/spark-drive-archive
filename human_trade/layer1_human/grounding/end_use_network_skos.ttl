@@ -13,7 +13,7 @@
 oe:industry_scheme a skos:ConceptScheme ;
     rdfs:label "Open Empire 19th-Century Manufacturing End-Use Scheme"@en ;
     dcterms:title "Open Empire 19th-Century Manufacturing End-Use Scheme"@en ;
-    dcterms:created "2026-11-25"^^xsd:date ;
+    dcterms:created "2026-11-26"^^xsd:date ;
     skos:hasTopConcept oe:ind_soap_manufacture, oe:ind_calico_printing, oe:ind_woollen_silk_dyeing, oe:ind_chocolate_confectionery, oe:ind_leather_tanning, oe:ind_candle_manufacture, oe:ind_paper_making, oe:ind_varnish_paint_lacquer, oe:ind_glass_ceramics, oe:ind_rubber_waterproofing, oe:ind_brewing_distilling, oe:ind_sugar_refining, oe:ind_cordage_shipbuilding, oe:ind_gunpowder_matches, oe:ind_perfumery_cosmetics, oe:ind_pharmaceuticals, oe:ind_metallurgy_tinplate, oe:ind_hats_brushes_upholstery .
 
 oe:usedInIndustry a owl:ObjectProperty ; rdfs:label "commodity used as input in manufacturing industry"@en ; rdfs:domain skos:Concept ; rdfs:range skos:Concept ; owl:inverseOf oe:usesCommodityInput .
